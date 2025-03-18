@@ -1,0 +1,742 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}German Possessive Articles{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/possessive.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+                <a href="index.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="a1-topics.html" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>German Possessive Articles: A Comprehensive Guide</h1>
+            <p>
+                Possessive articles in German (called <em>Possessivartikel</em> or <em>Possessivpronomen</em> in their article form) are used to show ownership—like "my," "your," or "their" in English. They’re essential for talking about what belongs to whom, and they change based on the <strong>gender</strong> (masculine, feminine, neuter), <strong>number</strong> (singular, plural), and <strong>case</strong> (nominative, accusative, dative, genitive) of the noun they describe. This guide explains possessive articles in detail—how they work, their forms in nominative, accusative, and dative cases (the most common for beginners), and plenty of examples. It’s long, clear, and packed with practice to help you master them. Let’s get started!
+            </p>
+        </section>
+
+        <!-- What Are Possessive Articles? -->
+        <section id="what-are">
+            <h2>What Are Possessive Articles?</h2>
+            <div class="subsection">
+                <p>
+                    Possessive articles are words that indicate possession and act like articles (e.g., "the" or "a") before a noun. In German, they agree with the noun they modify, not just the person who owns it. For example:
+                </p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>English: "my book" (same "my" for all nouns).</li>
+                        <li>German: <em>mein Buch</em> (neuter), <em>meine Tasche</em> (feminine)—"my" changes.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Key Features</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><strong>Owner</strong>: Each pronoun (ich, du, er, etc.) has its own possessive form (mein, dein, sein, etc.).</li>
+                        <li><strong>Noun Agreement</strong>: The ending changes based on the noun’s gender, number, and case.</li>
+                        <li><strong>No Standalone Use</strong>: These are articles, not pronouns—they always come with a noun (unlike <em>meins</em>—a possessive pronoun, covered later).</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Possessive Articles in Nominative Case -->
+        <section id="nominative">
+            <h2>Possessive Articles in Nominative Case</h2>
+            <div class="subsection">
+                <p>
+                    The <strong>nominative case</strong> is used for the subject—the person or thing doing the action. Here’s how possessive articles look in nominative:
+                </p>
+            </div>
+            <div class="subsection">
+                <h3>Full Chart (Nominative)</h3>
+                <div class="examples">
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Owner</th>
+                                    <th>Masc. (der)</th>
+                                    <th>Fem. (die)</th>
+                                    <th>Neut. (das)</th>
+                                    <th>Plural (die)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ich (my)</td>
+                                    <td>mein</td>
+                                    <td>meine</td>
+                                    <td>mein</td>
+                                    <td>meine</td>
+                                </tr>
+                                <tr>
+                                    <td>du (your, inf.)</td>
+                                    <td>dein</td>
+                                    <td>deine</td>
+                                    <td>dein</td>
+                                    <td>deine</td>
+                                </tr>
+                                <tr>
+                                    <td>er (his)</td>
+                                    <td>sein</td>
+                                    <td>seine</td>
+                                    <td>sein</td>
+                                    <td>seine</td>
+                                </tr>
+                                <tr>
+                                    <td>sie (her)</td>
+                                    <td>ihr</td>
+                                    <td>ihre</td>
+                                    <td>ihr</td>
+                                    <td>ihre</td>
+                                </tr>
+                                <tr>
+                                    <td>es (its)</td>
+                                    <td>sein</td>
+                                    <td>seine</td>
+                                    <td>sein</td>
+                                    <td>seine</td>
+                                </tr>
+                                <tr>
+                                    <td>wir (our)</td>
+                                    <td>unser</td>
+                                    <td>unsere</td>
+                                    <td>unser</td>
+                                    <td>unsere</td>
+                                </tr>
+                                <tr>
+                                    <td>ihr (your, pl.)</td>
+                                    <td>euer</td>
+                                    <td>eure</td>
+                                    <td>euer</td>
+                                    <td>eure</td>
+                                </tr>
+                                <tr>
+                                    <td>sie (their)</td>
+                                    <td>ihr</td>
+                                    <td>ihre</td>
+                                    <td>ihr</td>
+                                    <td>ihre</td>
+                                </tr>
+                                <tr>
+                                    <td>Sie (your, form.)</td>
+                                    <td>Ihr</td>
+                                    <td>Ihre</td>
+                                    <td>Ihr</td>
+                                    <td>Ihre</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Rules</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><strong>Masculine/Neuter</strong>: Base form (mein, dein, sein, etc.).</li>
+                        <li><strong>Feminine/Plural</strong>: Add <em>-e</em> (meine, deine, seine, etc.).</li>
+                        <li><strong>Euer</strong>: Drops the internal <em>-e-</em> before adding <em>-e</em> (euer → eure).</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Examples (Nominative)</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>Mein</em> Vater ist groß. (My father is tall.) – Masculine</li>
+                        <li><em>Meine</em> Mutter kocht. (My mother cooks.) – Feminine</li>
+                        <li><em>Mein</em> Haus ist neu. (My house is new.) – Neuter</li>
+                        <li><em>Meine</em> Freunde kommen. (My friends come.) – Plural</li>
+                        <li><em>Dein</em> Hund bellt. (Your dog barks.) – Masculine</li>
+                        <li><em>Deine</em> Schwester singt. (Your sister sings.) – Feminine</li>
+                        <li><em>Dein</em> Auto fährt. (Your car drives.) – Neuter</li>
+                        <li><em>Deine</em> Bücher liegen hier. (Your books are here.) – Plural</li>
+                        <li><em>Sein</em> Bruder spielt. (His brother plays.) – Masculine</li>
+                        <li><em>Ihre</em> Katze schläft. (Her cat sleeps.) – Feminine</li>
+                        <li><em>Unser</em> Garten blüht. (Our garden blooms.) – Masculine</li>
+                        <li><em>Eure</em> Lehrerin redet. (Your teacher talks.) – Feminine</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Possessive Articles in Accusative Case -->
+        <section id="accusative">
+            <h2>Possessive Articles in Accusative Case</h2>
+            <div class="subsection">
+                <p>
+                    The <strong>accusative case</strong> is for the direct object—the thing or person receiving the action. Possessive articles adjust their endings here too.
+                </p>
+            </div>
+            <div class="subsection">
+                <h3>Full Chart (Accusative)</h3>
+                <div class="examples">
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Owner</th>
+                                    <th>Masc. (den)</th>
+                                    <th>Fem. (die)</th>
+                                    <th>Neut. (das)</th>
+                                    <th>Plural (die)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ich (my)</td>
+                                    <td>meinen</td>
+                                    <td>meine</td>
+                                    <td>mein</td>
+                                    <td>meine</td>
+                                </tr>
+                                <tr>
+                                    <td>du (your, inf.)</td>
+                                    <td>deinen</td>
+                                    <td>deine</td>
+                                    <td>dein</td>
+                                    <td>deine</td>
+                                </tr>
+                                <tr>
+                                    <td>er (his)</td>
+                                    <td>seinen</td>
+                                    <td>seine</td>
+                                    <td>sein</td>
+                                    <td>seine</td>
+                                </tr>
+                                <tr>
+                                    <td>sie (her)</td>
+                                    <td>ihren</td>
+                                    <td>ihre</td>
+                                    <td>ihr</td>
+                                    <td>ihre</td>
+                                </tr>
+                                <tr>
+                                    <td>es (its)</td>
+                                    <td>seinen</td>
+                                    <td>seine</td>
+                                    <td>sein</td>
+                                    <td>seine</td>
+                                </tr>
+                                <tr>
+                                    <td>wir (our)</td>
+                                    <td>unseren</td>
+                                    <td>unsere</td>
+                                    <td>unser</td>
+                                    <td>unsere</td>
+                                </tr>
+                                <tr>
+                                    <td>ihr (your, pl.)</td>
+                                    <td>euren</td>
+                                    <td>eure</td>
+                                    <td>euer</td>
+                                    <td>eure</td>
+                                </tr>
+                                <tr>
+                                    <td>sie (their)</td>
+                                    <td>ihren</td>
+                                    <td>ihre</td>
+                                    <td>ihr</td>
+                                    <td>ihre</td>
+                                </tr>
+                                <tr>
+                                    <td>Sie (your, form.)</td>
+                                    <td>Ihren</td>
+                                    <td>Ihre</td>
+                                    <td>Ihr</td>
+                                    <td>Ihre</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Rules</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><strong>Masculine</strong>: Add <em>-en</em> (mein → meinen).</li>
+                        <li><strong>Feminine/Plural</strong>: Same as nominative (meine, deine, etc.).</li>
+                        <li><strong>Neuter</strong>: Same as nominative (mein, dein, etc.).</li>
+                        <li><strong>Euer</strong>: Drops <em>-e-</em> before adding <em>-en</em> (euer → euren) or stays <em>eure</em>.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Examples (Accusative)</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>Ich sehe <em>meinen</em> Vater. (I see my father.) – Masculine</li>
+                        <li>Ich liebe <em>meine</em> Mutter. (I love my mother.) – Feminine</li>
+                        <li>Ich habe <em>mein</em> Haus. (I have my house.) – Neuter</li>
+                        <li>Ich treffe <em>meine</em> Freunde. (I meet my friends.) – Plural</li>
+                        <li>Du kaufst <em>deinen</em> Hund. (You buy your dog.) – Masculine</li>
+                        <li>Du magst <em>deine</em> Schwester. (You like your sister.) – Feminine</li>
+                        <li>Du reparierst <em>dein</em> Auto. (You repair your car.) – Neuter</li>
+                        <li>Du liest <em>deine</em> Bücher. (You read your books.) – Plural</li>
+                        <li>Er besucht <em>seinen</em> Bruder. (He visits his brother.) – Masculine</li>
+                        <li>Sie füttert <em>ihre</em> Katze. (She feeds her cat.) – Feminine</li>
+                        <li>Wir brauchen <em>unseren</em> Garten. (We need our garden.) – Masculine</li>
+                        <li>Ihr hört <em>eure</em> Lehrerin. (You all hear your teacher.) – Feminine</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Possessive Articles in Dative Case -->
+        <section id="dative">
+            <h2>Possessive Articles in Dative Case</h2>
+            <div class="subsection">
+                <p>
+                    The <strong>dative case</strong> is used for the indirect object—the person or thing receiving the direct object or benefitting from the action. Possessive articles in dative also change their endings to match the noun’s gender and number.
+                </p>
+            </div>
+            <div class="subsection">
+                <h3>Full Chart (Dative)</h3>
+                <div class="examples">
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Owner</th>
+                                    <th>Masc. (dem)</th>
+                                    <th>Fem. (der)</th>
+                                    <th>Neut. (dem)</th>
+                                    <th>Plural (den)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ich (my)</td>
+                                    <td>meinem</td>
+                                    <td>meiner</td>
+                                    <td>meinem</td>
+                                    <td>meinen</td>
+                                </tr>
+                                <tr>
+                                    <td>du (your, inf.)</td>
+                                    <td>deinem</td>
+                                    <td>deiner</td>
+                                    <td>deinem</td>
+                                    <td>deinen</td>
+                                </tr>
+                                <tr>
+                                    <td>er (his)</td>
+                                    <td>seinem</td>
+                                    <td>seiner</td>
+                                    <td>seinem</td>
+                                    <td>seinen</td>
+                                </tr>
+                                <tr>
+                                    <td>sie (her)</td>
+                                    <td>ihrem</td>
+                                    <td>ihrer</td>
+                                    <td>ihrem</td>
+                                    <td>ihren</td>
+                                </tr>
+                                <tr>
+                                    <td>es (its)</td>
+                                    <td>seinem</td>
+                                    <td>seiner</td>
+                                    <td>seinem</td>
+                                    <td>seinen</td>
+                                </tr>
+                                <tr>
+                                    <td>wir (our)</td>
+                                    <td>unserem</td>
+                                    <td>unserer</td>
+                                    <td>unserem</td>
+                                    <td>unseren</td>
+                                </tr>
+                                <tr>
+                                    <td>ihr (your, pl.)</td>
+                                    <td>eurem</td>
+                                    <td>eurer</td>
+                                    <td>eurem</td>
+                                    <td>euren</td>
+                                </tr>
+                                <tr>
+                                    <td>sie (their)</td>
+                                    <td>ihrem</td>
+                                    <td>ihrer</td>
+                                    <td>ihrem</td>
+                                    <td>ihren</td>
+                                </tr>
+                                <tr>
+                                    <td>Sie (your, form.)</td>
+                                    <td>Ihrem</td>
+                                    <td>Ihrer</td>
+                                    <td>Ihrem</td>
+                                    <td>Ihren</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Rules</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><strong>Masculine/Neuter</strong>: Add <em>-em</em> (mein → meinem).</li>
+                        <li><strong>Feminine</strong>: Add <em>-er</em> (meine → meiner).</li>
+                        <li><strong>Plural</strong>: Add <em>-en</em> (meine → meinen).</li>
+                        <li><strong>Euer</strong>: Drops the internal <em>-e-</em> before adding endings: <em>euer</em> → <em>eurem</em> (masc./neut.), <em>eurer</em> (fem.), <em>euren</em> (pl.).</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Examples (Dative)</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>Ich gebe <em>meinem</em> Vater ein Geschenk. (I give my father a gift.) – Masculine</li>
+                        <li>Ich helfe <em>meiner</em> Mutter. (I help my mother.) – Feminine</li>
+                        <li>Ich zeige <em>meinem</em> Kind das Spiel. (I show my child the game.) – Neuter</li>
+                        <li>Ich schreibe <em>meinen</em> Freunden. (I write to my friends.) – Plural</li>
+                        <li>Du gibst <em>deinem</em> Bruder ein Buch. (You give your brother a book.) – Masculine</li>
+                        <li>Du hilfst <em>deiner</em> Schwester. (You help your sister.) – Feminine</li>
+                        <li>Du zeigst <em>deinem</em> Hund den Ball. (You show your dog the ball.) – Neuter</li>
+                        <li>Du schreibst <em>deinen</em> Lehrern. (You write to your teachers.) – Plural</li>
+                        <li>Er gibt <em>seinem</em> Freund einen Tipp. (He gives his friend a tip.) – Masculine</li>
+                        <li>Sie schenkt <em>ihrer</em> Katze ein Spielzeug. (She gives her cat a toy.) – Feminine</li>
+                        <li>Wir helfen <em>unserem</em> Nachbarn. (We help our neighbor.) – Masculine</li>
+                        <li>Ihr gebt <em>eurer</em> Lehrerin Blumen. (You all give your teacher flowers.) – Feminine</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- How Possessive Articles Work in Sentences -->
+        <section id="how-to-use">
+            <h2>How Possessive Articles Work in Sentences</h2>
+            <div class="subsection">
+                <h3>Word Order</h3>
+                <p>
+                    Possessive articles come <strong>before the noun</strong> they describe, followed by the noun in the correct case.
+                </p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>Nominative: <em>Mein</em> Hund bellt. (My dog barks.)</li>
+                        <li>Accusative: Ich sehe <em>meinen</em> Hund. (I see my dog.)</li>
+                        <li>Dative: Ich gebe <em>meinem</em> Hund einen Knochen. (I give my dog a bone.)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Combining with Verbs</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>Use with accusative verbs (e.g., <em>sehen, haben, kaufen</em>): Ich kaufe <em>meinen</em> Mantel. (I buy my coat.)</li>
+                        <li>Use with dative verbs (e.g., <em>geben, helfen, zeigen</em>): Ich helfe <em>meiner</em> Schwester. (I help my sister.)</li>
+                        <li>Use as subjects with any verb: <em>Deine</em> Tasche liegt dort. (Your bag is over there.)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Adding Adjectives</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>If an adjective follows, it takes an ending based on the case and article:</li>
+                        <li>Nominative: <em>Mein kleiner</em> Hund. (My little dog.)</li>
+                        <li>Accusative: Ich sehe <em>meinen kleinen</em> Hund. (I see my little dog.)</li>
+                        <li>Dative: Ich gebe <em>meinem kleinen</em> Hund einen Knochen. (I give my little dog a bone.)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Special Notes -->
+        <section id="special-notes">
+            <h2>Special Notes</h2>
+            <div class="subsection">
+                <h3><em>Euer</em> and <em>Unser</em></h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><strong>Euer (your, plural informal)</strong>: Drops the middle <em>-e-</em> before adding endings: <em>euer</em> → <em>eure</em> (fem./pl., nom./acc.), <em>euren</em> (masc. acc., pl. dat.), <em>eurem</em> (masc./neut. dat.), <em>eurer</em> (fem. dat.). Example: <em>Euer</em> Hund (nom.), <em>Euren</em> Hund (acc.), <em>Eurem</em> Hund (dat.).</li>
+                        <li><strong>Unser (our)</strong>: Keeps the <em>-er</em> but adjusts endings: <em>unser</em> (masc./neut., nom./acc.), <em>unsere</em> (fem./pl., nom./acc.), <em>unseren</em> (masc. acc., pl. dat.), <em>unserem</em> (masc./neut. dat.), <em>unserer</em> (fem. dat.). Example: <em>Unser</em> Haus (nom.), <em>Unseren</em> Garten (acc.), <em>Unserem</em> Kind (dat.).</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Same Forms</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>sein</em> (his/its) and <em>ihr</em> (her/their) look alike but depend on the owner: <em>Sein</em> Hund (his dog), <em>Ihr</em> Hund (her/their dog).</li>
+                        <li>Context or the verb’s subject clarifies it: <em>Er</em> liebt <em>seinen</em> Hund. (He loves his dog.) vs. <em>Sie</em> liebt <em>ihren</em> Hund. (She loves her dog.)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>No Noun? Use Possessive Pronouns</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>Possessive articles need a noun. Without one, use standalone pronouns: <em>Mein</em> Buch → <em>Meins</em> (mine).</li>
+                        <li>This guide focuses on articles, not pronouns.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practice Exercises -->
+        <section id="practice">
+            <h2>Practice Exercises</h2>
+            <p>Try these exercises to get comfortable with possessive articles. Answers are below each one.</p>
+
+            <div class="subsection" id="exercise1">
+                <h3>Exercise 1: Fill in the Nominative Possessive Article</h3>
+                <p>Add the correct nominative form:</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>____ (my) Vater ist alt.</li>
+                        <button class="toggle-btn">See Answer</button>
+                        <div class="hidden"><p><strong>Answer:</strong> <em>Mein</em> Vater ist alt. (My father is old.)</p></div>
+
+                        <li>____ (your, inf.) Schwester tanzt.</li>
+                        <button class="toggle-btn">See Answer</button>
+                        <div class="hidden"><p><strong>Answer:</strong> <em>Deine</em> Schwester tanzt. (Your sister dances.)</p></div>
+
+                        <li>____ (his) Hund läuft.</li>
+                        <button class="toggle-btn">See Answer</button>
+                        <div class="hidden"><p><strong>Answer:</strong> <em>Sein</em> Hund läuft. (His dog runs.)</p></div>
+
+                        <li>____ (our) Freunde kommen.</li>
+                        <button class="toggle-btn">See Answer</button>
+                        <div class="hidden"><p><strong>Answer:</strong> <em>Unsere</em> Freunde kommen. (Our friends come.)</p></div>
+
+                        <li>____ (your, pl.) Lehrer redet.</li>
+                        <button class="toggle-btn">See Answer</button>
+                        <div class="hidden"><p><strong>Answer:</strong> <em>Euer</em> Lehrer redet. (Your teacher talks.)</p></div>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise2">
+                <h3>Exercise 2: Fill in the Accusative Possessive Article</h3>
+                <p>Add the correct accusative form:</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>Ich sehe ____ (my) Vater.</li>
+                        <button class="toggle-btn">See Answer</button>
+                        <div class="hidden"><p><strong>Answer:</strong> Ich sehe <em>meinen</em> Vater. (I see my father.)</p></div>
+
+                        <li>Du kaufst ____ (your, inf.) Tasche.</li>
+                        <button class="toggle-btn">See Answer</button>
+                        <div class="hidden"><p><strong>Answer:</strong> Du kaufst <em>deine</em> Tasche. (You buy your bag.)</p></div>
+
+                        <li>Er liebt ____ (his) Bruder.</li>
+                        <button class="toggle-btn">See Answer</button>
+                        <div class="hidden"><p><strong>Answer:</strong> Er liebt <em>seinen</em> Bruder. (He loves his brother.)</p></div>
+
+                        <li>Wir brauchen ____ (our) Auto.</li>
+                        <button class="toggle-btn">See Answer</button>
+                        <div class="hidden"><p><strong>Answer:</strong> Wir brauchen <em>unser</em> Auto. (We need our car.)</p></div>
+
+                        <li>Ihr trefft ____ (your, pl.) Freunde.</li>
+                        <button class="toggle-btn">See Answer</button>
+                        <div class="hidden"><p><strong>Answer:</strong> Ihr trefft <em>eure</em> Freunde. (You all meet your friends.)</p></div>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise3">
+                <h3>Exercise 3: Translate to German (Nominative)</h3>
+                <p>Translate the following English sentences into German using nominative possessive articles:</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>My house is big.</li>
+                        <button class="toggle-btn">See Answer</button>
+                        <div class="hidden"><p><strong>Answer:</strong> <em>Mein</em> Haus ist groß.</p></div>
+
+                        <li>Your (inf.) dog barks.</li>
+                        <button class="toggle-btn">See Answer</button>
+                        <div class="hidden"><p><strong>Answer:</strong> <em>Dein</em> Hund bellt.</p></div>
+
+                        <li>Her cat sleeps.</li>
+                        <button class="toggle-btn">See Answer</button>
+                        <div class="hidden"><p><strong>Answer:</strong> <em>Ihre</em> Katze schläft.</p></div>
+
+                        <li>Our garden blooms.</li>
+                        <button class="toggle-btn">See Answer</button>
+                        <div class="hidden"><p><strong>Answer:</strong> <em>Unser</em> Garten blüht.</p></div>
+
+                        <li>Their books are here.</li>
+                        <button class="toggle-btn">See Answer</button>
+                        <div class="hidden"><p><strong>Answer:</strong> <em>Ihre</em> Bücher sind hier.</p></div>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise4">
+                <h3>Exercise 4: Translate to German (Accusative)</h3>
+                <p>Translate the following English sentences into German using accusative possessive articles:</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>I see my father.</li>
+                        <button class="toggle-btn">See Answer</button>
+                        <div class="hidden"><p><strong>Answer:</strong> Ich sehe <em>meinen</em> Vater.</p></div>
+
+                        <li>You (inf.) buy your book.</li>
+                        <button class="toggle-btn">See Answer</button>
+                        <div class="hidden"><p><strong>Answer:</strong> Du kaufst <em>dein</em> Buch.</p></div>
+
+                        <li>He visits his friend.</li>
+                        <button class="toggle-btn">See Answer</button>
+                        <div class="hidden"><p><strong>Answer:</strong> Er besucht <em>seinen</em> Freund.</p></div>
+
+                        <li>We need our money.</li>
+                        <button class="toggle-btn">See Answer</button>
+                        <div class="hidden"><p><strong>Answer:</strong> Wir brauchen <em>unser</em> Geld.</p></div>
+
+                        <li>They love their mother.</li>
+                        <button class="toggle-btn">See Answer</button>
+                        <div class="hidden"><p><strong>Answer:</strong> Sie lieben <em>ihre</em> Mutter.</p></div>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise5">
+                <h3>Exercise 5: Mix Nominative and Accusative</h3>
+                <p>Write 5 sentences using possessive articles—3 nominative, 2 accusative:</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>____ (my) Bruder spielt Fußball. (My brother plays soccer.) – Nom.</li>
+                        <button class="toggle-btn">See Answer</button>
+                        <div class="hidden"><p><strong>Answer:</strong> <em>Mein</em> Bruder spielt Fußball.</p></div>
+
+                        <li>____ (your, inf.) Tasche ist schön. (Your bag is nice.) – Nom.</li>
+                        <button class="toggle-btn">See Answer</button>
+                        <div class="hidden"><p><strong>Answer:</strong> <em>Deine</em> Tasche ist schön.</p></div>
+
+                        <li>____ (our) Katzen schlafen. (Our cats sleep.) – Nom.</li>
+                        <button class="toggle-btn">See Answer</button>
+                        <div class="hidden"><p><strong>Answer:</strong> <em>Unsere</em> Katzen schlafen.</p></div>
+
+                        <li>Ich sehe ____ (my) Hund. (I see my dog.) – Acc.</li>
+                        <button class="toggle-btn">See Answer</button>
+                        <div class="hidden"><p><strong>Answer:</strong> Ich sehe <em>meinen</em> Hund.</p></div>
+
+                        <li>Er kauft ____ (his) Bücher. (He buys his books.) – Acc.</li>
+                        <button class="toggle-btn">See Answer</button>
+                        <div class="hidden"><p><strong>Answer:</strong> Er kauft <em>seine</em> Bücher.</p></div>
+                    </ul>
+                    <button class="toggle-btn try-yourself">Try It Yourself</button>
+                    <div class="hidden">
+                        <p>Write your own 5 sentences using possessive articles—mix nominative and accusative!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips -->
+        <section id="tips">
+            <h2>Tips to Master Possessive Articles</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Memorize Base Forms</strong>: Learn <em>mein, dein, sein, ihr, unser, euer</em>—say them daily.</li>
+                    <li><strong>Practice Endings</strong>: Focus on masculine accusative (<em>-en</em>) and dative (<em>-em</em>)—they’re the biggest changes.</li>
+                    <li><strong>Match the Noun</strong>: Always check the noun’s gender and case—<em>mein Hund</em> (masc. nom.), <em>meinen Hund</em> (masc. acc.), <em>meinem Hund</em> (masc. dat.).</li>
+                    <li><strong>Use in Speech</strong>: Say <em>mein Name, deine Schule, meinem Freund</em> aloud to build habits.</li>
+                    <li><strong>Spot in Texts</strong>: Read simple German stories, underline possessive articles, and note their case.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Resources -->
+        <section id="resources">
+            <h2>Resources for Extra Practice</h2>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <h4>Goethe Institute</h4>
+                    <p>Grammar exercises.</p>
+                    <a href="https://www.goethe.de/en/spr/ueb.html" class="resource-btn">Visit Goethe Grammar</a>
+                </div>
+                <div class="resource-card">
+                    <h4>YouTube – Easy German</h4>
+                    <p>Accusative in action.</p>
+                    <a href="https://www.youtube.com/@EasyGerman" class="resource-btn">Visit Easy German</a>
+                </div>
+                <div class="resource-card">
+                    <h4>Schubert Verlag</h4>
+                    <p>Free accusative tasks.</p>
+                    <a href="https://www.schubert-verlag.de/aufgaben/uebungen_a1/a1_uebungen_index.htm" class="resource-btn">Visit Schubert Verlag</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Thoughts -->
+        <section id="final-thoughts">
+            <h2>You’re Ready!</h2>
+            <p>
+                This guide covers possessive articles fully—forms, rules, and examples for nominative, accusative, and dative cases. Practice the exercises, apply the tips, and you’ll get the hang of it. Next, you could explore genitive possessive articles or standalone possessive pronouns—your move!
+            </p>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="nouns.html" class="see-also-rect">German Nouns</a>
+                <a href="cases.html" class="see-also-rect">German Cases</a>
+                <a href="articles.html" class="see-also-rect">German Articles</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="articles.html" class="next-btn">Next: German Articles →</a>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Toggle answers for exercises
+            const buttons = document.querySelectorAll('.toggle-btn');
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const hiddenContent = this.nextElementSibling;
+                    if (hiddenContent.classList.contains('hidden')) {
+                        hiddenContent.classList.remove('hidden');
+                    } else {
+                        hiddenContent.classList.add('hidden');
+                    }
+                });
+            });
+
+            // Dark/Light mode toggle
+            const modeToggle = document.getElementById('mode-toggle');
+            const body = document.body;
+            modeToggle.addEventListener('click', function() {
+                body.classList.toggle('dark-mode');
+                const isDark = body.classList.contains('dark-mode');
+                modeToggle.querySelector('svg').setAttribute('d', isDark ? 
+                    'M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z' : 
+                    'M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z');
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

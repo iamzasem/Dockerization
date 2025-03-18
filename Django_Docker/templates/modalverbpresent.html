@@ -1,0 +1,864 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}German Modal Verbs in Present Tense{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/modalverbpresent.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+                <a href="a1-topics.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="javascript:history.back()" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>German Modal Verbs in Present Tense: A Comprehensive Guide with Examples and Creative Exercises</h1>
+            <p>
+                Modal verbs (<em>Modalverben</em>) in German are special verbs that "modify" the meaning of another verb, expressing ability, permission, necessity, or possibility—like "can," "must," or "want" in English. In the present tense, they’re widely used and follow a unique conjugation pattern. This guide covers all six German modal verbs—<em>können, müssen, dürfen, sollen, wollen, mögen</em>—in the present tense, with detailed explanations, tons of example sentences, and creative exercises to practice. It’s thorough, clear, and packed with ideas to help you master them. Let’s jump in!
+            </p>
+        </section>
+
+        <!-- What Are Modal Verbs? -->
+        <section id="what-are">
+            <h2>What Are Modal Verbs?</h2>
+            <div class="subsection">
+                <p>
+                    Modal verbs pair with a main verb (usually in the infinitive form) to add nuance. In German:
+                </p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>They conjugate based on the subject.</li>
+                        <li>The main verb goes to the <strong>end</strong> of the sentence in the infinitive.</li>
+                        <li>Example: <em>Ich kann schwimmen.</em> (I can swim.)—<em>kann</em> (modal) + <em>schwimmen</em> (infinitive).</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>The Six Modal Verbs</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>können</em> – to be able to, can</li>
+                        <li><em>müssen</em> – to have to, must</li>
+                        <li><em>dürfen</em> – to be allowed to, may</li>
+                        <li><em>sollen</em> – to be supposed to, should</li>
+                        <li><em>wollen</em> – to want to</li>
+                        <li><em>mögen</em> – to like to (or "may" in some contexts)</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal Verbs in Present Tense -->
+        <section id="conjugation">
+            <h2>Modal Verbs in Present Tense: Conjugation and Examples</h2>
+            <p>
+                Modal verbs have irregular conjugations in the present tense—especially in the singular forms (<em>ich, du, er/sie/es</em>), where vowel changes often occur. Below, each verb is conjugated with many example sentences.
+            </p>
+
+            <!-- können -->
+            <div class="subsection">
+                <h3>1. <em>können</em> (to be able to, can)</h3>
+                <div class="examples">
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Conjugation</th>
+                                    <th>Example Sentence</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>ich</td><td>kann</td><td>Ich <em>kann</em> Deutsch sprechen. (I can speak German.)</td></tr>
+                                <tr><td>du</td><td>kannst</td><td>Du <em>kannst</em> schnell laufen. (You can run fast.)</td></tr>
+                                <tr><td>er/sie/es</td><td>kann</td><td>Er <em>kann</em> gut kochen. (He can cook well.)</td></tr>
+                                <tr><td>wir</td><td>können</td><td>Wir <em>können</em> heute spielen. (We can play today.)</td></tr>
+                                <tr><td>ihr</td><td>könnt</td><td>Ihr <em>könnt</em> das Lied singen. (You all can sing the song.)</td></tr>
+                                <tr><td>sie/Sie</td><td>können</td><td>Sie <em>können</em> mir helfen. (They/You can help me.)</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p><strong>More Examples:</strong></p>
+                    <ul class="example-list">
+                        <li>Ich <em>kann</em> Klavier spielen. (I can play the piano.)</li>
+                        <li>Du <em>kannst</em> morgen kommen. (You can come tomorrow.)</li>
+                        <li>Sie <em>kann</em> nicht schwimmen. (She can’t swim.)</li>
+                        <li>Wir <em>können</em> den Film sehen. (We can see the movie.)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- müssen -->
+            <div class="subsection">
+                <h3>2. <em>müssen</em> (to have to, must)</h3>
+                <div class="examples">
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Conjugation</th>
+                                    <th>Example Sentence</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>ich</td><td>muss</td><td>Ich <em>muss</em> zur Schule gehen. (I must go to school.)</td></tr>
+                                <tr><td>du</td><td>musst</td><td>Du <em>musst</em> das Buch lesen. (You must read the book.)</td></tr>
+                                <tr><td>er/sie/es</td><td>muss</td><td>Er <em>muss</em> früh aufstehen. (He must get up early.)</td></tr>
+                                <tr><td>wir</td><td>müssen</td><td>Wir <em>müssen</em> arbeiten. (We must work.)</td></tr>
+                                <tr><td>ihr</td><td>müsst</td><td>Ihr <em>müsst</em> leise sein. (You all must be quiet.)</td></tr>
+                                <tr><td>sie/Sie</td><td>müssen</td><td>Sie <em>müssen</em> den Arzt rufen. (They/You must call the doctor.)</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p><strong>More Examples:</strong></p>
+                    <ul class="example-list">
+                        <li>Ich <em>muss</em> jetzt essen. (I must eat now.)</li>
+                        <li>Du <em>musst</em> deine Schuhe anziehen. (You must put on your shoes.)</li>
+                        <li>Es <em>muss</em> regnen. (It must rain.)</li>
+                        <li>Wir <em>müssen</em> den Bus nehmen. (We must take the bus.)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- dürfen -->
+            <div class="subsection">
+                <h3>3. <em>dürfen</em> (to be allowed to, may)</h3>
+                <div class="examples">
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Conjugation</th>
+                                    <th>Example Sentence</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>ich</td><td>darf</td><td>Ich <em>darf</em> ins Kino gehen. (I may go to the cinema.)</td></tr>
+                                <tr><td>du</td><td>darfst</td><td>Du <em>darfst</em> hier spielen. (You may play here.)</td></tr>
+                                <tr><td>er/sie/es</td><td>darf</td><td>Sie <em>darf</em> das Auto fahren. (She may drive the car.)</td></tr>
+                                <tr><td>wir</td><td>dürfen</td><td>Wir <em>dürfen</em> laut singen. (We may sing loudly.)</td></tr>
+                                <tr><td>ihr</td><td>dürft</td><td>Ihr <em>dürft</em> Süßigkeiten essen. (You all may eat candy.)</td></tr>
+                                <tr><td>sie/Sie</td><td>dürfen</td><td>Sie <em>dürfen</em> rauchen. (They/You may smoke.)</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p><strong>More Examples:</strong></p>
+                    <ul class="example-list">
+                        <li>Ich <em>darf</em> nicht lügen. (I may not lie.)</li>
+                        <li>Du <em>darfst</em> den Hund streicheln. (You may pet the dog.)</li>
+                        <li>Er <em>darf</em> heute bleiben. (He may stay today.)</li>
+                        <li>Wir <em>dürfen</em> im Park laufen. (We may run in the park.)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- sollen -->
+            <div class="subsection">
+                <h3>4. <em>sollen</em> (to be supposed to, should)</h3>
+                <div class="examples">
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Conjugation</th>
+                                    <th>Example Sentence</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>ich</td><td>soll</td><td>Ich <em>soll</em> meine Hausaufgaben machen. (I should do my homework.)</td></tr>
+                                <tr><td>du</td><td>sollst</td><td>Du <em>sollst</em> pünktlich sein. (You should be on time.)</td></tr>
+                                <tr><td>er/sie/es</td><td>soll</td><td>Er <em>soll</em> den Müll wegbringen. (He should take out the trash.)</td></tr>
+                                <tr><td>wir</td><td>sollen</td><td>Wir <em>sollen</em> helfen. (We should help.)</td></tr>
+                                <tr><td>ihr</td><td>sollt</td><td>Ihr <em>sollt</em> leise sprechen. (You all should speak quietly.)</td></tr>
+                                <tr><td>sie/Sie</td><td>sollen</td><td>Sie <em>sollen</em> das Formular ausfüllen. (They/You should fill out the form.)</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p><strong>More Examples:</strong></p>
+                    <ul class="example-list">
+                        <li>Ich <em>soll</em> mehr Wasser trinken. (I should drink more water.)</li>
+                        <li>Du <em>sollst</em> nicht rennen. (You shouldn’t run.)</li>
+                        <li>Sie <em>soll</em> später kommen. (She should come later.)</li>
+                        <li>Wir <em>sollen</em> den Plan besprechen. (We should discuss the plan.)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- wollen -->
+            <div class="subsection">
+                <h3>5. <em>wollen</em> (to want to)</h3>
+                <div class="examples">
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Conjugation</th>
+                                    <th>Example Sentence</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>ich</td><td>will</td><td>Ich <em>will</em> ein Eis essen. (I want to eat ice cream.)</td></tr>
+                                <tr><td>du</td><td>willst</td><td>Du <em>willst</em> ins Kino gehen. (You want to go to the cinema.)</td></tr>
+                                <tr><td>er/sie/es</td><td>will</td><td>Er <em>will</em> Fußball spielen. (He wants to play soccer.)</td></tr>
+                                <tr><td>wir</td><td>wollen</td><td>Wir <em>wollen</em> reisen. (We want to travel.)</td></tr>
+                                <tr><td>ihr</td><td>wollt</td><td>Ihr <em>wollt</em> tanzen. (You all want to dance.)</td></tr>
+                                <tr><td>sie/Sie</td><td>wollen</td><td>Sie <em>wollen</em> Deutsch lernen. (They/You want to learn German.)</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p><strong>More Examples:</strong></p>
+                    <ul class="example-list">
+                        <li>Ich <em>will</em> ein Buch kaufen. (I want to buy a book.)</li>
+                        <li>Du <em>willst</em> nicht arbeiten. (You don’t want to work.)</li>
+                        <li>Es <em>will</em> bellen. (It wants to bark.)</li>
+                        <li>Wir <em>wollen</em> morgen feiern. (We want to celebrate tomorrow.)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- mögen -->
+            <div class="subsection">
+                <h3>6. <em>mögen</em> (to like to)</h3>
+                <div class="examples">
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Conjugation</th>
+                                    <th>Example Sentence</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>ich</td><td>mag</td><td>Ich <em>mag</em> Pizza essen. (I like to eat pizza.)</td></tr>
+                                <tr><td>du</td><td>magst</td><td>Du <em>magst</em> Musik hören. (You like to listen to music.)</td></tr>
+                                <tr><td>er/sie/es</td><td>mag</td><td>Sie <em>mag</em> tanzen. (She likes to dance.)</td></tr>
+                                <tr><td>wir</td><td>mögen</td><td>Wir <em>mögen</em> Filme sehen. (We like to watch movies.)</td></tr>
+                                <tr><td>ihr</td><td>mögt</td><td>Ihr <em>mögt</em> Sport machen. (You all like to do sports.)</td></tr>
+                                <tr><td>sie/Sie</td><td>mögen</td><td>Sie <em>mögen</em> Kaffee trinken. (They/You like to drink coffee.)</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p><strong>More Examples:</strong></p>
+                    <ul class="example-list">
+                        <li>Ich <em>mag</em> keine Suppe essen. (I don’t like to eat soup.)</li>
+                        <li>Du <em>magst</em> im Park laufen. (You like to run in the park.)</li>
+                        <li>Er <em>mag</em> Bücher lesen. (He likes to read books.)</li>
+                        <li>Wir <em>mögen</em> laut singen. (We like to sing loudly.)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Notes -->
+        <section id="key-notes">
+            <h2>Key Notes on Modal Verbs</h2>
+            <div class="subsection">
+                <h3>Conjugation Patterns</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>Singular (<em>ich, er/sie/es</em>): Often lose the umlaut (<em>können → kann</em>) or change vowels (<em>mögen → mag</em>).</li>
+                        <li>Plural (<em>wir, ihr, sie/Sie</em>): Usually keep the base form with regular endings (<em>-en, -t, -en</em>).</li>
+                        <li><em>müssen</em> and <em>wollen</em>: No umlaut ever.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Sentence Structure</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>Modal verb is conjugated, main verb is infinitive at the end: <em>Ich will Deutsch lernen.</em> (I want to learn German.)</li>
+                        <li>Negation (<em>nicht</em>) goes before the infinitive: <em>Ich kann nicht schwimmen.</em> (I can’t swim.)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Double Modal Verbs (Rare in Present)</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>Two modals can pair up (e.g., <em>wollen + können</em>), but it’s less common: <em>Ich will schwimmen können.</em> (I want to be able to swim.)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Creative Exercises -->
+        <section id="practice">
+            <h2>Creative Exercises to Practice Modal Verbs</h2>
+            <p>Try these exercises to get comfortable with modal verbs. Select the correct answers from the options provided.</p>
+
+            <div class="subsection" id="exercise1">
+                <h3>Exercise 1: Fill in the Modal Verb</h3>
+                <p>Choose the correct modal verb and conjugate it.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Ich ___ Gitarre spielen.
+                            <select class="answer-select" data-correct="kann">
+                                <option value="">Select</option>
+                                <option value="kann">kann</option>
+                                <option value="kannst">kannst</option>
+                                <option value="können">können</option>
+                            </select>
+                        </li>
+                        <li>Du ___ das Fenster öffnen.
+                            <select class="answer-select" data-correct="musst">
+                                <option value="">Select</option>
+                                <option value="muss">muss</option>
+                                <option value="musst">musst</option>
+                                <option value="müssen">müssen</option>
+                            </select>
+                        </li>
+                        <li>Wir ___ im Garten spielen.
+                            <select class="answer-select" data-correct="dürfen">
+                                <option value="">Select</option>
+                                <option value="darf">darf</option>
+                                <option value="dürft">dürft</option>
+                                <option value="dürfen">dürfen</option>
+                            </select>
+                        </li>
+                        <li>Er ___ mehr lernen.
+                            <select class="answer-select" data-correct="soll">
+                                <option value="">Select</option>
+                                <option value="soll">soll</option>
+                                <option value="sollst">sollst</option>
+                                <option value="sollen">sollen</option>
+                            </select>
+                        </li>
+                        <li>Ihr ___ tanzen gehen.
+                            <select class="answer-select" data-correct="wollt">
+                                <option value="">Select</option>
+                                <option value="will">will</option>
+                                <option value="wollt">wollt</option>
+                                <option value="wollen">wollen</option>
+                            </select>
+                        </li>
+                        <li>Sie ___ Katzen füttern.
+                            <select class="answer-select" data-correct="mögen">
+                                <option value="">Select</option>
+                                <option value="mag">mag</option>
+                                <option value="mögt">mögt</option>
+                                <option value="mögen">mögen</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li>Ich <em>kann</em> Gitarre spielen.</li>
+                            <li>Du <em>musst</em> das Fenster öffnen.</li>
+                            <li>Wir <em>dürfen</em> im Garten spielen.</li>
+                            <li>Er <em>soll</em> mehr lernen.</li>
+                            <li>Ihr <em>wollt</em> tanzen gehen.</li>
+                            <li>Sie <em>mögen</em> Katzen füttern.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise2">
+                <h3>Exercise 2: Create Your Day</h3>
+                <p>Fill in the blanks with the correct modal verb for your day.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Ich ___ morgens joggen.
+                            <select class="answer-select" data-correct="kann">
+                                <option value="">Select</option>
+                                <option value="kann">kann</option>
+                                <option value="muss">muss</option>
+                                <option value="darf">darf</option>
+                            </select>
+                        </li>
+                        <li>Ich ___ zur Arbeit gehen.
+                            <select class="answer-select" data-correct="muss">
+                                <option value="">Select</option>
+                                <option value="kann">kann</option>
+                                <option value="muss">muss</option>
+                                <option value="soll">soll</option>
+                            </select>
+                        </li>
+                        <li>Ich ___ eine Pause machen.
+                            <select class="answer-select" data-correct="darf">
+                                <option value="">Select</option>
+                                <option value="darf">darf</option>
+                                <option value="soll">soll</option>
+                                <option value="will">will</option>
+                            </select>
+                        </li>
+                        <li>Ich ___ meine E-Mails lesen.
+                            <select class="answer-select" data-correct="soll">
+                                <option value="">Select</option>
+                                <option value="darf">darf</option>
+                                <option value="soll">soll</option>
+                                <option value="mag">mag</option>
+                            </select>
+                        </li>
+                        <li>Ich ___ abends kochen.
+                            <select class="answer-select" data-correct="will">
+                                <option value="">Select</option>
+                                <option value="will">will</option>
+                                <option value="mag">mag</option>
+                                <option value="kann">kann</option>
+                            </select>
+                        </li>
+                        <li>Ich ___ Musik hören.
+                            <select class="answer-select" data-correct="mag">
+                                <option value="">Select</option>
+                                <option value="will">will</option>
+                                <option value="mag">mag</option>
+                                <option value="muss">muss</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li>Ich <em>kann</em> morgens joggen.</li>
+                            <li>Ich <em>muss</em> zur Arbeit gehen.</li>
+                            <li>Ich <em>darf</em> eine Pause machen.</li>
+                            <li>Ich <em>soll</em> meine E-Mails lesen.</li>
+                            <li>Ich <em>will</em> abends kochen.</li>
+                            <li>Ich <em>mag</em> Musik hören.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise3">
+                <h3>Exercise 3: Modal Verb Story</h3>
+                <p>Fill in the blanks with the correct modal verb to complete the story.</p>
+                <div class="examples">
+                    <p>Ich ___ (1) gut zeichnen, aber ich ___ (2) heute lernen. Meine Schwester ___ (3) ins Kino gehen. Wir ___ (4) ihr helfen. Sie ___ (5) einen Film sehen. Ich ___ (6) Popcorn essen.</p>
+                    <ol class="example-list">
+                        <li><select class="answer-select" data-correct="kann">
+                            <option value="">Select</option>
+                            <option value="kann">kann</option>
+                            <option value="muss">muss</option>
+                            <option value="darf">darf</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="muss">
+                            <option value="">Select</option>
+                            <option value="kann">kann</option>
+                            <option value="muss">muss</option>
+                            <option value="soll">soll</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="darf">
+                            <option value="">Select</option>
+                            <option value="darf">darf</option>
+                            <option value="soll">soll</option>
+                            <option value="will">will</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="sollen">
+                            <option value="">Select</option>
+                            <option value="darf">darf</option>
+                            <option value="sollen">sollen</option>
+                            <option value="wollen">wollen</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="will">
+                            <option value="">Select</option>
+                            <option value="will">will</option>
+                            <option value="mag">mag</option>
+                            <option value="kann">kann</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="mag">
+                            <option value="">Select</option>
+                            <option value="will">will</option>
+                            <option value="mag">mag</option>
+                            <option value="muss">muss</option>
+                        </select></li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong> Ich <em>kann</em> gut zeichnen, aber ich <em>muss</em> heute lernen. Meine Schwester <em>darf</em> ins Kino gehen. Wir <em>sollen</em> ihr helfen. Sie <em>will</em> einen Film sehen. Ich <em>mag</em> Popcorn essen.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise4">
+                <h3>Exercise 4: Question Time</h3>
+                <p>Fill in the blanks with the correct modal verb for the questions.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>___ du singen?
+                            <select class="answer-select" data-correct="kannst">
+                                <option value="">Select</option>
+                                <option value="kannst">kannst</option>
+                                <option value="musst">musst</option>
+                                <option value="darfst">darfst</option>
+                            </select>
+                        </li>
+                        <li>___ du arbeiten?
+                            <select class="answer-select" data-correct="musst">
+                                <option value="">Select</option>
+                                <option value="kannst">kannst</option>
+                                <option value="musst">musst</option>
+                                <option value="sollst">sollst</option>
+                            </select>
+                        </li>
+                        <li>___ er spielen?
+                            <select class="answer-select" data-correct="darf">
+                                <option value="">Select</option>
+                                <option value="darf">darf</option>
+                                <option value="soll">soll</option>
+                                <option value="will">will</option>
+                            </select>
+                        </li>
+                        <li>___ ich kommen?
+                            <select class="answer-select" data-correct="soll">
+                                <option value="">Select</option>
+                                <option value="darf">darf</option>
+                                <option value="soll">soll</option>
+                                <option value="will">will</option>
+                            </select>
+                        </li>
+                        <li>___ ihr reisen?
+                            <select class="answer-select" data-correct="wollt">
+                                <option value="">Select</option>
+                                <option value="will">will</option>
+                                <option value="wollt">wollt</option>
+                                <option value="mögt">mögt</option>
+                            </select>
+                        </li>
+                        <li>___ du tanzen?
+                            <select class="answer-select" data-correct="magst">
+                                <option value="">Select</option>
+                                <option value="willst">willst</option>
+                                <option value="magst">magst</option>
+                                <option value="kannst">kannst</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Kannst</em> du singen? → Ja, ich <em>kann</em> singen.</li>
+                            <li><em>Musst</em> du arbeiten? → Nein, ich <em>muss</em> nicht arbeiten.</li>
+                            <li><em>Darf</em> er spielen? → Ja, er <em>darf</em> spielen.</li>
+                            <li><em>Soll</em> ich kommen? → Ja, du <em>sollst</em> kommen.</li>
+                            <li><em>Wollt</em> ihr reisen? → Nein, wir <em>wollen</em> nicht reisen.</li>
+                            <li><em>Magst</em> du tanzen? → Ja, ich <em>mag</em> tanzen.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise5">
+                <h3>Exercise 5: Modal Verb Swap</h3>
+                <p>Swap the modal verb with another one and choose the correct conjugation.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Ich <em>muss</em> das Buch lesen. → Ich ___ das Buch lesen.
+                            <select class="answer-select" data-correct="will">
+                                <option value="">Select</option>
+                                <option value="kann">kann</option>
+                                <option value="will">will</option>
+                                <option value="darf">darf</option>
+                            </select>
+                        </li>
+                        <li>Du <em>kannst</em> schwimmen. → Du ___ schwimmen.
+                            <select class="answer-select" data-correct="darfst">
+                                <option value="">Select</option>
+                                <option value="musst">musst</option>
+                                <option value="darfst">darfst</option>
+                                <option value="sollst">sollst</option>
+                            </select>
+                        </li>
+                        <li>Wir <em>wollen</em> essen. → Wir ___ essen.
+                            <select class="answer-select" data-correct="sollen">
+                                <option value="">Select</option>
+                                <option value="können">können</option>
+                                <option value="sollen">sollen</option>
+                                <option value="mögen">mögen</option>
+                            </select>
+                        </li>
+                        <li>Er <em>mag</em> laufen. → Er ___ laufen.
+                            <select class="answer-select" data-correct="kann">
+                                <option value="">Select</option>
+                                <option value="kann">kann</option>
+                                <option value="muss">muss</option>
+                                <option value="darf">darf</option>
+                            </select>
+                        </li>
+                        <li>Ihr <em>dürft</em> spielen. → Ihr ___ spielen.
+                            <select class="answer-select" data-correct="müsst">
+                                <option value="">Select</option>
+                                <option value="könnt">könnt</option>
+                                <option value="müsst">müsst</option>
+                                <option value="wollt">wollt</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li>Ich <em>will</em> das Buch lesen.</li>
+                            <li>Du <em>darfst</em> schwimmen.</li>
+                            <li>Wir <em>sollen</em> essen.</li>
+                            <li>Er <em>kann</em> laufen.</li>
+                            <li>Ihr <em>müsst</em> spielen.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise6">
+                <h3>Exercise 6: Daily Rules Game</h3>
+                <p>Fill in the blanks with the correct modal verb for house rules.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Ihr ___ die Schuhe ausziehen.
+                            <select class="answer-select" data-correct="müsst">
+                                <option value="">Select</option>
+                                <option value="könnt">könnt</option>
+                                <option value="müsst">müsst</option>
+                                <option value="dürft">dürft</option>
+                            </select>
+                        </li>
+                        <li>Ihr ___ im Wohnzimmer spielen.
+                            <select class="answer-select" data-correct="dürft">
+                                <option value="">Select</option>
+                                <option value="müsst">müsst</option>
+                                <option value="dürft">dürft</option>
+                                <option value="sollt">sollt</option>
+                            </select>
+                        </li>
+                        <li>Du ___ den Tisch decken.
+                            <select class="answer-select" data-correct="sollst">
+                                <option value="">Select</option>
+                                <option value="musst">musst</option>
+                                <option value="darfst">darfst</option>
+                                <option value="sollst">sollst</option>
+                            </select>
+                        </li>
+                        <li>Wir ___ leise sein.
+                            <select class="answer-select" data-correct="müssen">
+                                <option value="">Select</option>
+                                <option value="können">können</option>
+                                <option value="müssen">müssen</option>
+                                <option value="sollen">sollen</option>
+                            </select>
+                        </li>
+                        <li>Er ___ fernsehen.
+                            <select class="answer-select" data-correct="darf">
+                                <option value="">Select</option>
+                                <option value="muss">muss</option>
+                                <option value="darf">darf</option>
+                                <option value="will">will</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li>Ihr <em>müsst</em> die Schuhe ausziehen.</li>
+                            <li>Ihr <em>dürft</em> im Wohnzimmer spielen.</li>
+                            <li>Du <em>sollst</em> den Tisch decken.</li>
+                            <li>Wir <em>müssen</em> leise sein.</li>
+                            <li>Er <em>darf</em> fernsehen.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise7">
+                <h3>Exercise 7: What’s Possible?</h3>
+                <p>Fill in the blanks with the correct form of <em>können</em>.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Ich ___ Fahrrad fahren.
+                            <select class="answer-select" data-correct="kann">
+                                <option value="">Select</option>
+                                <option value="kann">kann</option>
+                                <option value="kannst">kannst</option>
+                                <option value="können">können</option>
+                            </select>
+                        </li>
+                        <li>Ich ___ nicht fliegen.
+                            <select class="answer-select" data-correct="kann">
+                                <option value="">Select</option>
+                                <option value="kann">kann</option>
+                                <option value="kannst">kannst</option>
+                                <option value="könnt">könnt</option>
+                            </select>
+                        </li>
+                        <li>Du ___ kochen.
+                            <select class="answer-select" data-correct="kannst">
+                                <option value="">Select</option>
+                                <option value="kann">kann</option>
+                                <option value="kannst">kannst</option>
+                                <option value="können">können</option>
+                            </select>
+                        </li>
+                        <li>Wir ___ singen.
+                            <select class="answer-select" data-correct="können">
+                                <option value="">Select</option>
+                                <option value="kann">kann</option>
+                                <option value="könnt">könnt</option>
+                                <option value="können">können</option>
+                            </select>
+                        </li>
+                        <li>Sie ___ nicht tanzen.
+                            <select class="answer-select" data-correct="kann">
+                                <option value="">Select</option>
+                                <option value="kann">kann</option>
+                                <option value="kannst">kannst</option>
+                                <option value="können">können</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li>Ich <em>kann</em> Fahrrad fahren.</li>
+                            <li>Ich <em>kann</em> nicht fliegen.</li>
+                            <li>Du <em>kannst</em> kochen.</li>
+                            <li>Wir <em>können</em> singen.</li>
+                            <li>Sie <em>kann</em> nicht tanzen.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips -->
+        <section id="tips">
+            <h2>Tips to Master Modal Verbs</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Sing the Conjugations</strong>: Chant <em>kann, kannst, kann, können, könnt, können</em>—make it a song!</li>
+                    <li><strong>Pair with Actions</strong>: Say <em>Ich will essen</em> while eating—connect words to life.</li>
+                    <li><strong>Flip Negatives</strong>: Turn <em>Ich muss gehen</em> into <em>Ich muss nicht gehen</em>—practice both.</li>
+                    <li><strong>Listen Up</strong>: Watch German cartoons, note modals like <em>Darf ich?</em> or <em>Ich will!</em></li>
+                    <li><strong>Daily Modal</strong>: Use one modal each day—Monday <em>können</em>, Tuesday <em>müssen</em>, etc.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Resources -->
+        <section id="resources">
+            <h2>Resources for Extra Practice</h2>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <h4>YouTube – Easy German</h4>
+                    <p>Modals in real talk.</p>
+                    <a href="https://www.youtube.com/@EasyGerman" class="resource-btn">Visit Easy German</a>
+                </div>
+                <div class="resource-card">
+                    <h4>Schubert Verlag</h4>
+                    <p>Free modal exercises.</p>
+                    <a href="https://www.schubert-verlag.de/aufgaben/uebungen_a1/a1_uebungen_index.htm" class="resource-btn">Visit Schubert Verlag</a>
+                </div>
+                <div class="resource-card">
+                    <h4>Goethe Institute</h4>
+                    <p>Grammar practice.</p>
+                    <a href="https://www.goethe.de/en/spr/ueb.html" class="resource-btn">Visit Goethe Grammar</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Thoughts -->
+        <section id="final-thoughts">
+            <h2>You’re Ready!</h2>
+            <p>
+                This guide gives you all the modal verbs in present tense, with heaps of examples and fun exercises. Try them out, get creative, and you’ll be using <em>können</em> to <em>mögen</em> like a pro! Next, you could tackle modals in past tense or mix them with other grammar—your choice!
+            </p>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="verbs.html" class="see-also-rect">German Verbs</a>
+                <a href="presenttense.html" class="see-also-rect">Present Tense</a>
+                <a href="sentence-structure.html" class="see-also-rect">Sentence Structure</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="presenttense.html" class="next-btn">Next: Present Tense →</a>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Dark/Light mode toggle
+            const modeToggle = document.getElementById('mode-toggle');
+            const body = document.body;
+            modeToggle.addEventListener('click', function() {
+                body.classList.toggle('dark-mode');
+                const isDark = body.classList.contains('dark-mode');
+                modeToggle.querySelector('svg').setAttribute('d', isDark ? 
+                    'M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z' : 
+                    'M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z');
+            });
+
+            // Check Answers functionality
+            document.querySelectorAll('.check-answers').forEach(button => {
+                button.addEventListener('click', function() {
+                    const exercise = this.closest('.subsection');
+                    const selects = exercise.querySelectorAll('.answer-select');
+                    selects.forEach(select => {
+                        const correctAnswer = select.getAttribute('data-correct');
+                        const userAnswer = select.value;
+                        if (userAnswer === correctAnswer) {
+                            select.style.border = '2px solid #2e7d32';
+                        } else if (userAnswer !== '') {
+                            select.style.border = '2px solid #d32f2f';
+                        } else {
+                            select.style.border = '1px solid #ccc';
+                        }
+                    });
+                });
+            });
+
+            // Show Answers functionality
+            document.querySelectorAll('.show-answers').forEach(button => {
+                button.addEventListener('click', function() {
+                    const exercise = this.closest('.subsection');
+                    const answers = exercise.querySelector('.answers');
+                    if (answers.classList.contains('hidden')) {
+                        answers.classList.remove('hidden');
+                    } else {
+                        answers.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

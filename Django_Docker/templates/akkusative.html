@@ -1,0 +1,1017 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}German Accusative Articles and Beyond{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/dative.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+                <a href="index.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="a1-topics.html" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>German Accusative Articles and Beyond: An Advanced Guide</h1>
+            <p>
+                This guide begins with <strong>accusative articles</strong> and expands to explore the full scope of the accusative case—its role as the direct object marker, associated prepositions, common verbs, pronouns, possessive articles, and extra uses. It’s detailed, progressively challenging, and loaded with examples and exercises to master the accusative. Here we go!
+            </p>
+        </section>
+
+        <!-- Accusative Articles -->
+        <section id="accusative-articles">
+            <h2>Accusative Articles</h2>
+            <p>Accusative articles mark the <strong>direct object</strong>—the person or thing directly affected by the verb—and adjust based on the noun’s gender and number.</p>
+            <div class="subsection">
+                <h3>Definite Articles (der, die, das)</h3>
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>Gender/Number</th>
+                            <th>Nominative</th>
+                            <th>Accusative</th>
+                            <th>Example Sentences</th>
+                        </tr>
+                        <tr>
+                            <td>Masculine (der)</td>
+                            <td>der</td>
+                            <td>den</td>
+                            <td>Ich sehe <em>den</em> Hund im Garten. (I see the dog in the garden.)<br>Er kauft <em>den</em> Tisch fürs Haus. (He buys the table for the house.)</td>
+                        </tr>
+                        <tr>
+                            <td>Feminine (die)</td>
+                            <td>die</td>
+                            <td>die</td>
+                            <td>Sie liest <em>die</em> Zeitung jeden Tag. (She reads the newspaper every day.)<br>Ich liebe <em>die</em> Blumen im Park. (I love the flowers in the park.)</td>
+                        </tr>
+                        <tr>
+                            <td>Neuter (das)</td>
+                            <td>das</td>
+                            <td>das</td>
+                            <td>Wir haben <em>das</em> Auto gestern gewaschen. (We washed the car yesterday.)<br>Er nimmt <em>das</em> Buch mit. (He takes the book with him.)</td>
+                        </tr>
+                        <tr>
+                            <td>Plural (die)</td>
+                            <td>die</td>
+                            <td>die</td>
+                            <td>Ich treffe <em>die</em> Freunde später. (I meet the friends later.)<br>Sie kocht <em>die</em> Suppen für uns. (She cooks the soups for us.)</td>
+                        </tr>
+                    </table>
+                </div>
+                <p><strong>Note:</strong> Only masculine changes (der → den); feminine, neuter, and plural stay the same as nominative.</p>
+            </div>
+            <div class="subsection">
+                <h3>Indefinite Articles (ein, eine)</h3>
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>Gender/Number</th>
+                            <th>Nominative</th>
+                            <th>Accusative</th>
+                            <th>Example Sentences</th>
+                        </tr>
+                        <tr>
+                            <td>Masculine (ein)</td>
+                            <td>ein</td>
+                            <td>einen</td>
+                            <td>Ich kaufe <em>einen</em> Apfel im Laden. (I buy an apple in the store.)<br>Er sieht <em>einen</em> Film heute Abend. (He watches a movie tonight.)</td>
+                        </tr>
+                        <tr>
+                            <td>Feminine (eine)</td>
+                            <td>eine</td>
+                            <td>eine</td>
+                            <td>Sie schreibt <em>eine</em> E-Mail an ihre Freundin. (She writes an email to her friend.)<br>Ich esse <em>eine</em> Orange zum Frühstück. (I eat an orange for breakfast.)</td>
+                        </tr>
+                        <tr>
+                            <td>Neuter (ein)</td>
+                            <td>ein</td>
+                            <td>ein</td>
+                            <td>Wir brauchen <em>ein</em> neues Bett. (We need a new bed.)<br>Er malt <em>ein</em> Bild für die Schule. (He paints a picture for school.)</td>
+                        </tr>
+                        <tr>
+                            <td>Plural (keine)</td>
+                            <td>-</td>
+                            <td>keine</td>
+                            <td>Ich sehe <em>keine</em> Wolken am Himmel. (I see no clouds in the sky.)<br>Sie kauft <em>keine</em> Schuhe heute. (She buys no shoes today.)</td>
+                        </tr>
+                    </table>
+                </div>
+                <p><strong>Note:</strong> Masculine changes (ein → einen); feminine and neuter stay the same. <em>Keine</em> (none) is used for plural.</p>
+            </div>
+        </section>
+
+        <!-- Accusative Prepositions -->
+        <section id="prepositions">
+            <h2>Accusative Prepositions</h2>
+            <p>These prepositions <strong>always</strong> take the accusative case, often indicating direction, time, or purpose. Here are the five main ones with expanded examples:</p>
+            <div class="examples">
+                <ol class="example-list">
+                    <li><strong>durch</strong> (through)
+                        <ul>
+                            <li>Wir laufen <em>durch den Wald</em>. (We run through the forest.)</li>
+                            <li>Sie fährt <em>durch die Stadt</em> zur Arbeit. (She drives through the city to work.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>für</strong> (for)
+                        <ul>
+                            <li>Ich kaufe <em>für die Kinder</em> ein Spielzeug. (I buy a toy for the children.)</li>
+                            <li>Er kocht <em>für seine Freundin</em> ein Abendessen. (He cooks dinner for his girlfriend.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>gegen</strong> (against, around [time])
+                        <ul>
+                            <li>Er tritt <em>gegen den Ball</em>. (He kicks against the ball.)</li>
+                            <li>Wir treffen uns <em>gegen sieben Uhr</em>. (We meet around seven o’clock.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>ohne</strong> (without)
+                        <ul>
+                            <li>Sie geht <em>ohne den Regenschirm</em> aus. (She goes out without the umbrella.)</li>
+                            <li>Ich esse <em>ohne eine Gabel</em>. (I eat without a fork.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>um</strong> (around, at [time])
+                        <ul>
+                            <li>Die Kinder rennen <em>um den Tisch</em>. (The children run around the table.)</li>
+                            <li>Ich komme <em>um sechs Uhr</em> nach Hause. (I come home at six o’clock.)</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            <p><strong>Memory Trick:</strong> “DOGFU” – <em>durch, ohne, gegen, für, um</em>.</p>
+        </section>
+
+        <!-- Accusative Verbs -->
+        <section id="verbs">
+            <h2>20 Most Common Accusative Verbs</h2>
+            <p>These verbs typically take a direct object in the accusative case—here are the top 20 with varied examples:</p>
+            <div class="examples">
+                <ol class="example-list">
+                    <li><strong>sehen</strong> (to see)
+                        <ul>
+                            <li>Ich sehe <em>den Sonnenuntergang</em>. (I see the sunset.)</li>
+                            <li>Sie sieht <em>einen Vogel</em> im Baum. (She sees a bird in the tree.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>kaufen</strong> (to buy)
+                        <ul>
+                            <li>Er kauft <em>das Fahrrad</em> im Laden. (He buys the bike in the store.)</li>
+                            <li>Wir kaufen <em>eine Lampe</em> fürs Zimmer. (We buy a lamp for the room.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>haben</strong> (to have)
+                        <ul>
+                            <li>Ich habe <em>einen Hund</em> zu Hause. (I have a dog at home.)</li>
+                            <li>Sie haben <em>die Schlüssel</em> verloren. (They have lost the keys.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>essen</strong> (to eat)
+                        <ul>
+                            <li>Wir essen <em>die Pizza</em> zusammen. (We eat the pizza together.)</li>
+                            <li>Er isst <em>einen Apfel</em> nach der Schule. (He eats an apple after school.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>trinken</strong> (to drink)
+                        <ul>
+                            <li>Sie trinkt <em>das Wasser</em> schnell. (She drinks the water quickly.)</li>
+                            <li>Ich trinke <em>eine Cola</em> im Café. (I drink a cola in the café.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>nehmen</strong> (to take)
+                        <ul>
+                            <li>Er nimmt <em>den Stift</em> vom Tisch. (He takes the pen from the table.)</li>
+                            <li>Wir nehmen <em>ein Taxi</em> in die Stadt. (We take a taxi into the city.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>machen</strong> (to make/do)
+                        <ul>
+                            <li>Ich mache <em>den Kuchen</em> für die Party. (I make the cake for the party.)</li>
+                            <li>Sie macht <em>eine Übung</em> im Unterricht. (She does an exercise in class.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>schreiben</strong> (to write)
+                        <ul>
+                            <li>Er schreibt <em>den Brief</em> am Abend. (He writes the letter in the evening.)</li>
+                            <li>Ich schreibe <em>eine Notiz</em> für dich. (I write a note for you.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>lesen</strong> (to read)
+                        <ul>
+                            <li>Wir lesen <em>das Buch</em> im Bett. (We read the book in bed.)</li>
+                            <li>Sie liest <em>eine Geschichte</em> den Kindern vor. (She reads a story to the children.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>hören</strong> (to hear/listen)
+                        <ul>
+                            <li>Ich höre <em>die Musik</em> laut. (I hear the music loudly.)</li>
+                            <li>Er hört <em>einen Podcast</em> auf dem Weg. (He listens to a podcast on the way.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>finden</strong> (to find)
+                        <ul>
+                            <li>Sie findet <em>den Schlüssel</em> im Garten. (She finds the key in the garden.)</li>
+                            <li>Wir finden <em>eine Lösung</em> zusammen. (We find a solution together.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>lieben</strong> (to love)
+                        <ul>
+                            <li>Er liebt <em>die Katze</em> sehr. (He loves the cat a lot.)</li>
+                            <li>Ich liebe <em>einen Film</em> von gestern. (I love a movie from yesterday.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>treffen</strong> (to meet)
+                        <ul>
+                            <li>Wir treffen <em>die Lehrerin</em> nach der Stunde. (We meet the teacher after class.)</li>
+                            <li>Sie trifft <em>einen Freund</em> im Park. (She meets a friend in the park.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>fragen</strong> (to ask)
+                        <ul>
+                            <li>Ich frage <em>den Mann</em> nach dem Weg. (I ask the man for the way.)</li>
+                            <li>Er fragt <em>eine Frau</em> nach der Uhrzeit. (He asks a woman for the time.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>spielen</strong> (to play)
+                        <ul>
+                            <li>Die Kinder spielen <em>das Spiel</em> draußen. (The children play the game outside.)</li>
+                            <li>Wir spielen <em>eine Runde</em> Karten. (We play a round of cards.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>verstehen</strong> (to understand)
+                        <ul>
+                            <li>Sie versteht <em>den Text</em> gut. (She understands the text well.)</li>
+                            <li>Ich verstehe <em>eine Regel</em> nicht. (I don’t understand a rule.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>öffnen</strong> (to open)
+                        <ul>
+                            <li>Er öffnet <em>die Tür</em> langsam. (He opens the door slowly.)</li>
+                            <li>Wir öffnen <em>ein Fenster</em> im Raum. (We open a window in the room.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>schließen</strong> (to close)
+                        <ul>
+                            <li>Ich schließe <em>das Tor</em> abends. (I close the gate in the evening.)</li>
+                            <li>Sie schließt <em>eine Schublade</em>. (She closes a drawer.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>brauchen</strong> (to need)
+                        <ul>
+                            <li>Wir brauchen <em>den Computer</em> für die Arbeit. (We need the computer for work.)</li>
+                            <li>Er braucht <em>eine Tasche</em> für die Reise. (He needs a bag for the trip.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>besuchen</strong> (to visit)
+                        <ul>
+                            <li>Sie besucht <em>die Oma</em> am Wochenende. (She visits the grandma on the weekend.)</li>
+                            <li>Ich besuche <em>einen Freund</em> in Berlin. (I visit a friend in Berlin.)</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Personal Pronouns -->
+        <section id="pronouns">
+            <h2>Personal Pronouns in Accusative</h2>
+            <p>Accusative personal pronouns replace nouns as direct objects.</p>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Nominative</th>
+                        <th>Accusative</th>
+                        <th>Example Sentences</th>
+                    </tr>
+                    <tr>
+                        <td>ich</td>
+                        <td>mich</td>
+                        <td>Er sieht <em>mich</em> im Spiegel. (He sees me in the mirror.)<br>Sie ruft <em>mich</em> an. (She calls me.)</td>
+                    </tr>
+                    <tr>
+                        <td>du</td>
+                        <td>dich</td>
+                        <td>Ich treffe <em>dich</em> später. (I meet you later.)<br>Wir hören <em>dich</em> singen. (We hear you sing.)</td>
+                    </tr>
+                    <tr>
+                        <td>er</td>
+                        <td>ihn</td>
+                        <td>Sie liebt <em>ihn</em> sehr. (She loves him a lot.)<br>Ich frage <em>ihn</em> nach dem Plan. (I ask him about the plan.)</td>
+                    </tr>
+                    <tr>
+                        <td>sie</td>
+                        <td>sie</td>
+                        <td>Er kauft <em>sie</em> im Laden. (He buys her/it in the store—context matters.)<br>Wir sehen <em>sie</em> im Park. (We see her in the park.)</td>
+                    </tr>
+                    <tr>
+                        <td>es</td>
+                        <td>es</td>
+                        <td>Ich esse <em>es</em> schnell. (I eat it quickly.)<br>Sie nimmt <em>es</em> mit zur Schule. (She takes it to school.)</td>
+                    </tr>
+                    <tr>
+                        <td>wir</td>
+                        <td>uns</td>
+                        <td>Er besucht <em>uns</em> morgen. (He visits us tomorrow.)<br>Sie schreibt <em>uns</em> eine Nachricht. (She writes us a message.)</td>
+                    </tr>
+                    <tr>
+                        <td>ihr</td>
+                        <td>euch</td>
+                        <td>Ich liebe <em>euch</em> alle. (I love you all.)<br>Wir brauchen <em>euch</em> im Team. (We need you all in the team.)</td>
+                    </tr>
+                    <tr>
+                        <td>sie</td>
+                        <td>sie</td>
+                        <td>Er trifft <em>sie</em> nach der Arbeit. (He meets them after work.)<br>Ich sehe <em>sie</em> im Kino. (I see them in the cinema.)</td>
+                    </tr>
+                    <tr>
+                        <td>Sie</td>
+                        <td>Sie</td>
+                        <td>Wir verstehen <em>Sie</em> gut. (We understand you [formal] well.)<br>Ich besuche <em>Sie</em> nächste Woche. (I visit you next week.)</td>
+                    </tr>
+                </table>
+            </div>
+            <p><strong>Order:</strong> Accusative before dative (<em>mich dir</em>), unless dative is a pronoun (<em>mir dich</em>).</p>
+        </section>
+
+        <!-- Possessive Articles -->
+        <section id="possessives">
+            <h2>Possessive Articles in Accusative</h2>
+            <p>Possessive articles in accusative show ownership, adjusting to the noun’s gender and number.</p>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Owner</th>
+                        <th>Masc. (den/einen)</th>
+                        <th>Fem. (die/eine)</th>
+                        <th>Neut. (das/ein)</th>
+                        <th>Plural (die/keine)</th>
+                        <th>Example Sentences</th>
+                    </tr>
+                    <tr>
+                        <td>ich (my)</td>
+                        <td>meinen</td>
+                        <td>meine</td>
+                        <td>mein</td>
+                        <td>meine</td>
+                        <td>Ich sehe <em>meinen</em> Bruder oft. (I see my brother often.)<br>Ich kaufe <em>meine</em> Tasche morgen. (I buy my bag tomorrow.)</td>
+                    </tr>
+                    <tr>
+                        <td>du (your, inf.)</td>
+                        <td>deinen</td>
+                        <td>deine</td>
+                        <td>dein</td>
+                        <td>deine</td>
+                        <td>Er trifft <em>deinen</em> Freund im Café. (He meets your friend in the café.)<br>Sie liest <em>deine</em> Zeitung. (She reads your newspaper.)</td>
+                    </tr>
+                    <tr>
+                        <td>er (his)</td>
+                        <td>seinen</td>
+                        <td>seine</td>
+                        <td>sein</td>
+                        <td>seine</td>
+                        <td>Wir hören <em>seinen</em> Hund bellen. (We hear his dog bark.)<br>Er liebt <em>seine</em> Katze. (He loves his cat.)</td>
+                    </tr>
+                    <tr>
+                        <td>sie (her)</td>
+                        <td>ihren</td>
+                        <td>ihre</td>
+                        <td>ihr</td>
+                        <td>ihre</td>
+                        <td>Ich esse <em>ihren</em> Kuchen gerne. (I eat her cake gladly.)<br>Sie besucht <em>ihre</em> Oma oft. (She visits her grandma often.)</td>
+                    </tr>
+                    <tr>
+                        <td>es (its)</td>
+                        <td>seinen</td>
+                        <td>seine</td>
+                        <td>sein</td>
+                        <td>seine</td>
+                        <td>Er nimmt <em>sein</em> Spielzeug mit. (It takes its toy along.)<br>Ich sehe <em>seine</em> Farben. (I see its colors.)</td>
+                    </tr>
+                    <tr>
+                        <td>wir (our)</td>
+                        <td>unseren</td>
+                        <td>unsere</td>
+                        <td>unser</td>
+                        <td>unsere</td>
+                        <td>Wir brauchen <em>unseren</em> Wagen heute. (We need our car today.)<br>Sie spielen <em>unsere</em> Lieder. (They play our songs.)</td>
+                    </tr>
+                    <tr>
+                        <td>ihr (your, pl.)</td>
+                        <td>euren</td>
+                        <td>eure</td>
+                        <td>euer</td>
+                        <td>eure</td>
+                        <td>Ich finde <em>euren</em> Schlüssel. (I find your key.)<br>Er öffnet <em>eure</em> Tür. (He opens your door.)</td>
+                    </tr>
+                    <tr>
+                        <td>sie (their)</td>
+                        <td>ihren</td>
+                        <td>ihre</td>
+                        <td>ihr</td>
+                        <td>ihre</td>
+                        <td>Wir lesen <em>ihren</em> Brief laut. (We read their letter aloud.)<br>Sie trinken <em>ihre</em> Getränke. (They drink their drinks.)</td>
+                    </tr>
+                    <tr>
+                        <td>Sie (your, form.)</td>
+                        <td>Ihren</td>
+                        <td>Ihre</td>
+                        <td>Ihr</td>
+                        <td>Ihre</td>
+                        <td>Ich verstehe <em>Ihren</em> Plan gut. (I understand your plan well.)<br>Wir kaufen <em>Ihre</em> Produkte. (We buy your products.)</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- Broader Context -->
+        <section id="context">
+            <h2>The Accusative Case: Broader Context</h2>
+            <p>The accusative case primarily marks:</p>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Direct Object</strong>: The receiver of the action.
+                        <ul>
+                            <li>Ich schreibe <em>den Brief</em> jetzt. (I write the letter now.)</li>
+                            <li>Sie besucht <em>eine Stadt</em> im Sommer. (She visits a city in summer.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Accusative Verbs</strong>: Require accusative naturally.
+                        <ul>
+                            <li>Er liebt <em>das Lied</em> sehr. (He loves the song a lot.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Prepositions</strong>: Indicate direction or time.
+                        <ul>
+                            <li>Wir gehen <em>durch den Park</em>. (We go through the park.)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Additional Uses -->
+        <section id="additional-uses">
+            <h2>Additional Uses of Accusative</h2>
+            <div class="examples">
+                <ol class="example-list">
+                    <li><strong>Time Expressions</strong> (duration or point):
+                        <ul>
+                            <li>Ich warte <em>einen Moment</em>. (I wait a moment.)</li>
+                            <li>Wir bleiben <em>drei Tage</em> hier. (We stay three days here.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Direction with Two-Way Prepositions</strong>:
+                        <ul>
+                            <li>Sie legt das Buch <em>auf den Tisch</em>. (She puts the book on the table.)</li>
+                            <li>Er geht <em>in die Schule</em>. (He goes into the school.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Measurements/Extent</strong>:
+                        <ul>
+                            <li>Der Weg ist <em>einen Kilometer</em> lang. (The path is one kilometer long.)</li>
+                            <li>Das kostet <em>fünf Euro</em>. (That costs five euros.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Fixed Phrases</strong>:
+                        <ul>
+                            <li>Ich habe <em>einen Hunger</em>! (I’m so hungry!—lit. I have a hunger.)</li>
+                            <li>Er kennt <em>den Trick</em>. (He knows the trick.)</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Exercises -->
+        <section id="practice">
+            <h2>Creative Exercises with Multiple-Choice Options</h2>
+
+            <div class="subsection" id="exercise1">
+                <h3>Exercise 1: Accusative Articles</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Ich sehe ___ Hund im Park.
+                            <select class="answer-select" data-correct="den">
+                                <option value="">Select</option>
+                                <option value="den">den</option>
+                                <option value="einen">einen</option>
+                                <option value="das">das</option>
+                            </select>
+                        </li>
+                        <li>Sie kauft ___ Tasche im Laden.
+                            <select class="answer-select" data-correct="eine">
+                                <option value="">Select</option>
+                                <option value="eine">eine</option>
+                                <option value="die">die</option>
+                                <option value="einen">einen</option>
+                            </select>
+                        </li>
+                        <li>Wir essen ___ Pizza heute Abend.
+                            <select class="answer-select" data-correct="die">
+                                <option value="">Select</option>
+                                <option value="die">die</option>
+                                <option value="das">das</option>
+                                <option value="einen">einen</option>
+                            </select>
+                        </li>
+                        <li>Er nimmt ___ Stift vom Tisch.
+                            <select class="answer-select" data-correct="den">
+                                <option value="">Select</option>
+                                <option value="einen">einen</option>
+                                <option value="den">den</option>
+                                <option value="ein">ein</option>
+                            </select>
+                        </li>
+                        <li>Ich liebe ___ Blumen im Garten.
+                            <select class="answer-select" data-correct="die">
+                                <option value="">Select</option>
+                                <option value="die">die</option>
+                                <option value="eine">eine</option>
+                                <option value="keinen">keinen</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li>Ich sehe <em>den</em> Hund im Park.</li>
+                            <li>Sie kauft <em>eine</em> Tasche im Laden.</li>
+                            <li>Wir essen <em>die</em> Pizza heute Abend.</li>
+                            <li>Er nimmt <em>den</em> Stift vom Tisch.</li>
+                            <li>Ich liebe <em>die</em> Blumen im Garten.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise2">
+                <h3>Exercise 2: Accusative Prepositions</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Wir gehen ___ Park spazieren.
+                            <select class="answer-select" data-correct="durch den">
+                                <option value="">Select</option>
+                                <option value="durch den">durch den</option>
+                                <option value="für den">für den</option>
+                                <option value="um den">um den</option>
+                            </select>
+                        </li>
+                        <li>Ich kaufe ein Geschenk ___ meine Schwester.
+                            <select class="answer-select" data-correct="für meine">
+                                <option value="">Select</option>
+                                <option value="für meine">für meine</option>
+                                <option value="ohne meine">ohne meine</option>
+                                <option value="gegen meine">gegen meine</option>
+                            </select>
+                        </li>
+                        <li>Er tritt ___ Ball kräftig.
+                            <select class="answer-select" data-correct="gegen den">
+                                <option value="">Select</option>
+                                <option value="gegen den">gegen den</option>
+                                <option value="durch den">durch den</option>
+                                <option value="um den">um den</option>
+                            </select>
+                        </li>
+                        <li>Sie läuft ___ Regenschirm.
+                            <select class="answer-select" data-correct="ohne den">
+                                <option value="">Select</option>
+                                <option value="ohne den">ohne den</option>
+                                <option value="für den">für den</option>
+                                <option value="durch den">durch den</option>
+                            </select>
+                        </li>
+                        <li>Wir treffen uns ___ sechs Uhr.
+                            <select class="answer-select" data-correct="gegen sechs Uhr">
+                                <option value="">Select</option>
+                                <option value="um sechs Uhr">um sechs Uhr</option>
+                                <option value="gegen sechs Uhr">gegen sechs Uhr</option>
+                                <option value="für sechs Uhr">für sechs Uhr</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li>Wir gehen <em>durch den</em> Park spazieren.</li>
+                            <li>Ich kaufe ein Geschenk <em>für meine</em> Schwester.</li>
+                            <li>Er tritt <em>gegen den</em> Ball kräftig.</li>
+                            <li>Sie läuft <em>ohne den</em> Regenschirm.</li>
+                            <li>Wir treffen uns <em>gegen sechs Uhr</em>.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise3">
+                <h3>Exercise 3: Accusative Verbs</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Ich ___ den Film heute Abend.
+                            <select class="answer-select" data-correct="sehe">
+                                <option value="">Select</option>
+                                <option value="sehe">sehe</option>
+                                <option value="helfe">helfe</option>
+                                <option value="danke">danke</option>
+                            </select>
+                        </li>
+                        <li>Sie ___ eine Karte im Laden.
+                            <select class="answer-select" data-correct="kauft">
+                                <option value="">Select</option>
+                                <option value="kauft">kauft</option>
+                                <option value="gibt">gibt</option>
+                                <option value="antwortet">antwortet</option>
+                            </select>
+                        </li>
+                        <li>Wir ___ das Spiel draußen.
+                            <select class="answer-select" data-correct="spielen">
+                                <option value="">Select</option>
+                                <option value="spielen">spielen</option>
+                                <option value="folgen">folgen</option>
+                                <option value="gehören">gehören</option>
+                            </select>
+                        </li>
+                        <li>Er ___ den Brief jetzt.
+                            <select class="answer-select" data-correct="schreibt">
+                                <option value="">Select</option>
+                                <option value="schreibt">schreibt</option>
+                                <option value="passt">passt</option>
+                                <option value="schmeckt">schmeckt</option>
+                            </select>
+                        </li>
+                        <li>Ich ___ einen Freund morgen.
+                            <select class="answer-select" data-correct="besuche">
+                                <option value="">Select</option>
+                                <option value="besuche">besuche</option>
+                                <option value="vertraue">vertraue</option>
+                                <option value="gratuliere">gratuliere</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li>Ich <em>sehe</em> den Film heute Abend.</li>
+                            <li>Sie <em>kauft</em> eine Karte im Laden.</li>
+                            <li>Wir <em>spielen</em> das Spiel draußen.</li>
+                            <li>Er <em>schreibt</em> den Brief jetzt.</li>
+                            <li>Ich <em>besuche</em> einen Freund morgen.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise4">
+                <h3>Exercise 4: Personal Pronouns in Accusative</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Er trifft ___ im Café.
+                            <select class="answer-select" data-correct="mich">
+                                <option value="">Select</option>
+                                <option value="mich">mich</option>
+                                <option value="mir">mir</option>
+                                <option value="mein">mein</option>
+                            </select>
+                        </li>
+                        <li>Ich sehe ___ im Park.
+                            <select class="answer-select" data-correct="dich">
+                                <option value="">Select</option>
+                                <option value="dich">dich</option>
+                                <option value="dir">dir</option>
+                                <option value="dein">dein</option>
+                            </select>
+                        </li>
+                        <li>Sie liebt ___ sehr.
+                            <select class="answer-select" data-correct="ihn">
+                                <option value="">Select</option>
+                                <option value="ihn">ihn</option>
+                                <option value="ihm">ihm</option>
+                                <option value="sein">sein</option>
+                            </select>
+                        </li>
+                        <li>Wir brauchen ___ im Team.
+                            <select class="answer-select" data-correct="euch">
+                                <option value="">Select</option>
+                                <option value="euch">euch</option>
+                                <option value="euer">euer</option>
+                            </select>
+                        </li>
+                        <li>Er besucht ___ nächste Woche.
+                            <select class="answer-select" data-correct="sie">
+                                <option value="">Select</option>
+                                <option value="sie">sie</option>
+                                <option value="ihnen">ihnen</option>
+                                <option value="ihr">ihr</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li>Er trifft <em>mich</em> im Café.</li>
+                            <li>Ich sehe <em>dich</em> im Park.</li>
+                            <li>Sie liebt <em>ihn</em> sehr.</li>
+                            <li>Wir brauchen <em>euch</em> im Team.</li>
+                            <li>Er besucht <em>sie</em> nächste Woche.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise5">
+                <h3>Exercise 5: Possessive Articles in Accusative</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Ich sehe ___ Bruder im Garten.
+                            <select class="answer-select" data-correct="meinen">
+                                <option value="">Select</option>
+                                <option value="meinen">meinen</option>
+                                <option value="meine">meine</option>
+                                <option value="meinem">meinem</option>
+                            </select>
+                        </li>
+                        <li>Sie kauft ___ Tasche morgen.
+                            <select class="answer-select" data-correct="ihre">
+                                <option value="">Select</option>
+                                <option value="ihre">ihre</option>
+                                <option value="ihren">ihren</option>
+                                <option value="ihr">ihr</option>
+                            </select>
+                        </li>
+                        <li>Wir spielen ___ Spiel heute.
+                            <select class="answer-select" data-correct="unser">
+                                <option value="">Select</option>
+                                <option value="unser">unser</option>
+                                <option value="unseren">unseren</option>
+                                <option value="unsere">unsere</option>
+                            </select>
+                        </li>
+                        <li>Er liebt ___ Katze sehr.
+                            <select class="answer-select" data-correct="seine">
+                                <option value="">Select</option>
+                                <option value="seine">seine</option>
+                                <option value="seinen">seinen</option>
+                                <option value="seinem">seinem</option>
+                            </select>
+                        </li>
+                        <li>Ich besuche ___ Freund in Berlin.
+                            <select class="answer-select" data-correct="deinen">
+                                <option value="">Select</option>
+                                <option value="deinen">deinen</option>
+                                <option value="deine">deine</option>
+                                <option value="deinem">deinem</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li>Ich sehe <em>meinen</em> Bruder im Garten.</li>
+                            <li>Sie kauft <em>ihre</em> Tasche morgen.</li>
+                            <li>Wir spielen <em>unser</em> Spiel heute.</li>
+                            <li>Er liebt <em>seine</em> Katze sehr.</li>
+                            <li>Ich besuche <em>deinen</em> Freund in Berlin.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise6">
+                <h3>Exercise 6: Additional Uses</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Ich warte ___ Moment bitte.
+                            <select class="answer-select" data-correct="einen">
+                                <option value="">Select</option>
+                                <option value="einen">einen</option>
+                                <option value="einem">einem</option>
+                                <option value="ein">ein</option>
+                            </select>
+                        </li>
+                        <li>Sie legt das Buch ___ Tisch.
+                            <select class="answer-select" data-correct="auf den">
+                                <option value="">Select</option>
+                                <option value="auf den">auf den</option>
+                                <option value="auf dem">auf dem</option>
+                                <option value="auf das">auf das</option>
+                            </select>
+                        </li>
+                        <li>Wir bleiben ___ Tage hier.
+                            <select class="answer-select" data-correct="drei">
+                                <option value="">Select</option>
+                                <option value="drei">drei</option>
+                                <option value="dreien">dreien</option>
+                            </select>
+                        </li>
+                        <li>Das kostet ___ Euro heute.
+                            <select class="answer-select" data-correct="fünf">
+                                <option value="">Select</option>
+                                <option value="fünf">fünf</option>
+                                <option value="fünfen">fünfen</option>
+                                <option value="fünfem">fünfem</option>
+                            </select>
+                        </li>
+                        <li>Ich habe ___ Durst!
+                            <select class="answer-select" data-correct="einen">
+                                <option value="">Select</option>
+                                <option value="einen">einen</option>
+                                <option value="einem">einem</option>
+                                <option value="ein">ein</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li>Ich warte <em>einen</em> Moment bitte.</li>
+                            <li>Sie legt das Buch <em>auf den</em> Tisch.</li>
+                            <li>Wir bleiben <em>drei</em> Tage hier.</li>
+                            <li>Das kostet <em>fünf</em> Euro heute.</li>
+                            <li>Ich habe <em>einen</em> Durst!</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise7">
+                <h3>Exercise 7: Mixed Accusative Story</h3>
+                <p>Fill in the blanks with the correct accusative form across all topics.</p>
+                <div class="examples">
+                    <p>Gestern ___ (1) ich <em>meinen</em> Freund im Café. Er ___ (2) <em>eine</em> Cola für mich. Wir gingen ___ (3) <em>den</em> Park spazieren. Dort ___ (4) wir <em>die</em> Kinder spielen. Es ___ (5) <em>uns</em> Spaß.</p>
+                    <ol class="example-list">
+                        <li><select class="answer-select" data-correct="traf">
+                            <option value="">Select</option>
+                            <option value="traf">traf</option>
+                            <option value="half">half</option>
+                            <option value="dankte">dankte</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="kaufte">
+                            <option value="">Select</option>
+                            <option value="kaufte">kaufte</option>
+                            <option value="gab">gab</option>
+                            <option value="erklärte">erklärte</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="durch">
+                            <option value="">Select</option>
+                            <option value="durch">durch</option>
+                            <option value="mit">mit</option>
+                            <option value="zu">zu</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="sahen">
+                            <option value="">Select</option>
+                            <option value="sahen">sahen</option>
+                            <option value="winkten">winkten</option>
+                            <option value="folgten">folgten</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="machte">
+                            <option value="">Select</option>
+                            <option value="machte">machte</option>
+                            <option value="schmeckte">schmeckte</option>
+                            <option value="gehörte">gehörte</option>
+                        </select></li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong> Gestern <em>traf</em> ich <em>meinen</em> Freund im Café. Er <em>kaufte</em> <em>eine</em> Cola für mich. Wir gingen <em>durch</em> <em>den</em> Park spazieren. Dort <em>sahen</em> wir <em>die</em> Kinder spielen. Es <em>machte</em> <em>uns</em> Spaß.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips -->
+        <section id="tips">
+            <h2>Tips to Master Accusative</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Drill Articles</strong>: Pair <em>den, die, das</em> with nouns—<em>den Hund, die Tasche, das Auto</em>.</li>
+                    <li><strong>Preposition Practice</strong>: Use <em>durch, für, gegen</em> in sentences—tie to actions.</li>
+                    <li><strong>Verb-Object Pairs</strong>: Memorize <em>sehen-den Film, kaufen-eine Tasche</em>—say aloud.</li>
+                    <li><strong>Pronoun Flow</strong>: Practice <em>mich, dich, ihn</em>—<em>Er sieht mich…</em></li>
+                    <li><strong>Spot Direct Objects</strong>: Ask “what?” after verbs—<em>Ich esse die Suppe</em>.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Resources -->
+        <section id="resources">
+            <h2>Resources for Extra Practice</h2>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <h4>YouTube – Deutsch mit Marija</h4>
+                    <p>Accusative lessons.</p>
+                    <a href="https://www.youtube.com/@deutschmitmarija" class="resource-btn">Visit Deutsch mit Marija</a>
+                </div>
+                <div class="resource-card">
+                    <h4>German.net</h4>
+                    <p>Grammar exercises.</p>
+                    <a href="https://german.net/" class="resource-btn">Visit German.net</a>
+                </div>
+                <div class="resource-card">
+                    <h4>Babbel</h4>
+                    <p>Interactive practice.</p>
+                    <a href="https://www.babbel.com/learn-german" class="resource-btn">Visit Babbel</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Thoughts -->
+        <section id="final-thoughts">
+            <h2>You’re Ready!</h2>
+            <p>
+                This guide mirrors the dative structure, starting with accusative articles and scaling up, with extra examples and exercises. Work through them, and you’ll command the accusative with ease! Next, you could compare accusative and dative or explore Perfekt tense—your call!
+            </p>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="dative.html" class="see-also-rect">German Dative</a>
+                <a href="verbs.html" class="see-also-rect">German Verbs</a>
+                <a href="trennbare.html" class="see-also-rect">Trennbare Verben</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="dative.html" class="next-btn">Next: German Dative →</a>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Dark/Light mode toggle
+            const modeToggle = document.getElementById('mode-toggle');
+            const body = document.body;
+            modeToggle.addEventListener('click', function() {
+                body.classList.toggle('dark-mode');
+                const isDark = body.classList.contains('dark-mode');
+                modeToggle.querySelector('svg').setAttribute('d', isDark ? 
+                    'M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z' : 
+                    'M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z');
+            });
+
+            // Check Answers functionality
+            document.querySelectorAll('.check-answers').forEach(button => {
+                button.addEventListener('click', function() {
+                    const exercise = this.closest('.subsection');
+                    const selects = exercise.querySelectorAll('.answer-select');
+                    selects.forEach(select => {
+                        const correctAnswer = select.getAttribute('data-correct');
+                        const userAnswer = select.value;
+                        if (userAnswer === correctAnswer) {
+                            select.style.border = '2px solid #2e7d32';
+                        } else if (userAnswer !== '') {
+                            select.style.border = '2px solid #d32f2f';
+                        } else {
+                            select.style.border = '1px solid #ccc';
+                        }
+                    });
+                });
+            });
+
+            // Show Answers functionality
+            document.querySelectorAll('.show-answers').forEach(button => {
+                button.addEventListener('click', function() {
+                    const exercise = this.closest('.subsection');
+                    const answers = exercise.querySelector('.answers');
+                    if (answers.classList.contains('hidden')) {
+                        answers.classList.remove('hidden');
+                    } else {
+                        answers.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

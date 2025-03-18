@@ -1,0 +1,570 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}German Adjective Endings: Definite, Indefinite, and No Article{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/adjend.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+                <a href="index.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="javascript:history.back()" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>German Adjective Endings: Definite, Indefinite, and No Article</h1>
+            <p>
+                In German, adjectives change their endings depending on what comes before them—<strong>definite articles</strong> (e.g., <em>der</em>), <strong>indefinite articles</strong> (e.g., <em>ein</em>), or <strong>no article</strong>—and the case, gender, and number of the noun they describe. This guide breaks it all down: how endings work, why they vary, and how to use them correctly in every situation. With detailed tables, examples galore, and exercises, you’ll nail adjective endings like a pro. Let’s get started!
+            </p>
+        </section>
+
+        <!-- Why Adjective Endings Change -->
+        <section id="why-change">
+            <h2>Why Adjective Endings Change</h2>
+            <p>Adjective endings signal the <strong>case</strong> (nominative, accusative, dative, genitive), <strong>gender</strong> (masculine, feminine, neuter), and <strong>number</strong> (singular, plural) of the noun. The article (or lack of one) determines how much “work” the adjective ending does:</p>
+            <ul class="example-list">
+                <li><strong>Definite Article</strong>: Shows case/gender, so endings are simpler (weak).</li>
+                <li><strong>Indefinite Article</strong>: Shows some info, endings add more (mixed).</li>
+                <li><strong>No Article</strong>: Endings carry the full load (strong).</li>
+            </ul>
+        </section>
+
+        <!-- The Three Scenarios -->
+        <section id="scenarios">
+            <h2>The Three Scenarios</h2>
+            <div class="subsection">
+                <h3>1. After Definite Articles (<em>der, die, das</em>)</h3>
+                <p><strong>Weak Endings</strong>: The definite article does most of the signaling, so adjectives take <em>-e</em> or <em>-en</em>.</p>
+                <div class="table-container">
+                    <table>
+                        <tr><th>Case</th><th>Masculine</th><th>Feminine</th><th>Neuter</th><th>Plural</th></tr>
+                        <tr><td>Nominative</td><td>der große Hund</td><td>die große Katze</td><td>das große Kind</td><td>die großen Kinder</td></tr>
+                        <tr><td>Accusative</td><td>den großen Hund</td><td>die große Katze</td><td>das große Kind</td><td>die großen Kinder</td></tr>
+                        <tr><td>Dative</td><td>dem großen Hund</td><td>der großen Katze</td><td>dem großen Kind</td><td>den großen Kindern</td></tr>
+                        <tr><td>Genitive</td><td>des großen Hundes</td><td>der großen Katze</td><td>des großen Kindes</td><td>der großen Kinder</td></tr>
+                    </table>
+                </div>
+                <p><strong>Pattern</strong>: Nominative singular = <em>-e</em>; all else = <em>-en</em> (except accusative feminine/neuter = <em>-e</em>).</p>
+            </div>
+            <div class="subsection">
+                <h3>2. After Indefinite Articles (<em>ein, eine, ein</em>)</h3>
+                <p><strong>Mixed Endings</strong>: Adjectives add more detail with <em>-er, -e, -es, -en</em>, used with <em>ein</em>, <em>kein</em>, etc.</p>
+                <div class="table-container">
+                    <table>
+                        <tr><th>Case</th><th>Masculine</th><th>Feminine</th><th>Neuter</th><th>Plural (kein)</th></tr>
+                        <tr><td>Nominative</td><td>ein großer Hund</td><td>eine große Katze</td><td>ein großes Kind</td><td>keine großen Kinder</td></tr>
+                        <tr><td>Accusative</td><td>einen großen Hund</td><td>eine große Katze</td><td>ein großes Kind</td><td>keine großen Kinder</td></tr>
+                        <tr><td>Dative</td><td>einem großen Hund</td><td>einer großen Katze</td><td>einem großen Kind</td><td>keinen großen Kindern</td></tr>
+                        <tr><td>Genitive</td><td>eines großen Hundes</td><td>einer großen Katze</td><td>eines großen Kindes</td><td>keiner großen Kinder</td></tr>
+                    </table>
+                </div>
+                <p><strong>Pattern</strong>: Nominative = <em>-er, -e, -es</em>; accusative masculine = <em>-en</em>; dative/genitive = <em>-en</em>.</p>
+            </div>
+            <div class="subsection">
+                <h3>3. Without an Article (Zero Article)</h3>
+                <p><strong>Strong Endings</strong>: Adjectives take <em>-er, -e, -es, -em, -en</em> to show case/gender fully.</p>
+                <div class="table-container">
+                    <table>
+                        <tr><th>Case</th><th>Masculine</th><th>Feminine</th><th>Neuter</th><th>Plural</th></tr>
+                        <tr><td>Nominative</td><td>großer Hund</td><td>große Katze</td><td>großes Kind</td><td>große Kinder</td></tr>
+                        <tr><td>Accusative</td><td>großen Hund</td><td>große Katze</td><td>großes Kind</td><td>große Kinder</td></tr>
+                        <tr><td>Dative</td><td>großem Hund</td><td>großer Katze</td><td>großem Kind</td><td>großen Kindern</td></tr>
+                        <tr><td>Genitive</td><td>großen Hundes</td><td>großer Katze</td><td>großen Kindes</td><td>großer Kinder</td></tr>
+                    </table>
+                </div>
+                <p><strong>Pattern</strong>: Mimics definite article endings without the article.</p>
+            </div>
+        </section>
+
+        <!-- Deep Rules and Nuances -->
+        <section id="nuances">
+            <h2>Deep Rules and Nuances</h2>
+            <div class="subsection">
+                <h3>Weak Endings (Definite)</h3>
+                <ul class="example-list">
+                    <li><em>-e</em>: Nominative singular, accusative feminine/neuter.</li>
+                    <li><em>-en</em>: All else (e.g., <em>den großen Hund</em>).</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>Mixed Endings (Indefinite)</h3>
+                <ul class="example-list">
+                    <li>Strong in nominative (<em>ein großer Hund</em>).</li>
+                    <li>Weak in dative/genitive (<em>einem großen Hund</em>).</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>Strong Endings (No Article)</h3>
+                <ul class="example-list">
+                    <li>Full endings like <em>großer Hund, großem Kind</em>.</li>
+                    <li>Common with plurals (<em>große Kinder</em>).</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>Exceptions</h3>
+                <ul class="example-list">
+                    <li>Adjectives in <em>-e</em>: <em>die blaue Katze</em> (no double <em>-e</em>).</li>
+                    <li>Uninflected: <em>ein super Tag</em>.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Example Sentences -->
+        <section id="examples">
+            <h2>Tons of Example Sentences</h2>
+            <div class="subsection">
+                <h3>Definite Article (<em>der, die, das</em>)</h3>
+                <div class="examples">
+                    <h4>Nominative</h4>
+                    <ol class="example-list">
+                        <li><em>Der große Hund bellt.</em> (The big dog barks.)</li>
+                        <li><em>Die kleine Katze schläft.</em> (The small cat sleeps.)</li>
+                        <li><em>Das junge Kind spielt.</em> (The young child plays.)</li>
+                        <li><em>Die neuen Kinder lachen.</em> (The new children laugh.)</li>
+                    </ol>
+                    <h4>Accusative</h4>
+                    <ol class="example-list">
+                        <li><em>Ich sehe den großen Hund.</em> (I see the big dog.)</li>
+                        <li><em>Er mag die kleine Katze.</em> (He likes the small cat.)</li>
+                        <li><em>Sie nimmt das junge Kind.</em> (She takes the young child.)</li>
+                        <li><em>Wir treffen die neuen Kinder.</em> (We meet the new children.)</li>
+                    </ol>
+                    <h4>Dative</h4>
+                    <ol class="example-list">
+                        <li><em>Ich helfe dem großen Hund.</em> (I help the big dog.)</li>
+                        <li><em>Sie gibt der kleinen Katze Milch.</em> (She gives milk to the small cat.)</li>
+                        <li><em>Er winkt dem jungen Kind.</em> (He waves to the young child.)</li>
+                        <li><em>Wir danken den neuen Kindern.</em> (We thank the new children.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Indefinite Article (<em>ein, eine, ein</em>)</h3>
+                <div class="examples">
+                    <h4>Nominative</h4>
+                    <ol class="example-list">
+                        <li><em>Ein großer Hund läuft.</em> (A big dog runs.)</li>
+                        <li><em>Eine kleine Katze miaut.</em> (A small cat meows.)</li>
+                        <li><em>Ein junges Kind weint.</em> (A young child cries.)</li>
+                        <li><em>Keine neuen Kinder kommen.</em> (No new children come.)</li>
+                    </ol>
+                    <h4>Accusative</h4>
+                    <ol class="example-list">
+                        <li><em>Ich sehe einen großen Hund.</em> (I see a big dog.)</li>
+                        <li><em>Er kauft eine kleine Katze.</em> (He buys a small cat.)</li>
+                        <li><em>Sie hat ein junges Kind.</em> (She has a young child.)</li>
+                        <li><em>Wir hören keine neuen Kinder.</em> (We hear no new children.)</li>
+                    </ol>
+                    <h4>Dative</h4>
+                    <ol class="example-list">
+                        <li><em>Ich helfe einem großen Hund.</em> (I help a big dog.)</li>
+                        <li><em>Sie gibt einer kleinen Katze Futter.</em> (She gives food to a small cat.)</li>
+                        <li><em>Er schreibt einem jungen Kind.</em> (He writes to a young child.)</li>
+                        <li><em>Wir winken keinen neuen Kindern.</em> (We wave to no new children.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>No Article</h3>
+                <div class="examples">
+                    <h4>Nominative</h4>
+                    <ol class="example-list">
+                        <li><em>Großer Hund bellt laut.</em> (Big dog barks loudly.)</li>
+                        <li><em>Große Katze schläft ruhig.</em> (Big cat sleeps quietly.)</li>
+                        <li><em>Großes Kind spielt draußen.</em> (Big child plays outside.)</li>
+                        <li><em>Große Kinder rennen schnell.</em> (Big children run fast.)</li>
+                    </ol>
+                    <h4>Accusative</h4>
+                    <ol class="example-list">
+                        <li><em>Ich sehe großen Hund.</em> (I see big dog.)</li>
+                        <li><em>Er mag große Katze.</em> (He likes big cat.)</li>
+                        <li><em>Sie nimmt großes Kind.</em> (She takes big child.)</li>
+                        <li><em>Wir treffen große Kinder.</em> (We meet big children.)</li>
+                    </ol>
+                    <h4>Dative</h4>
+                    <ol class="example-list">
+                        <li><em>Ich helfe großem Hund.</em> (I help big dog.)</li>
+                        <li><em>Sie gibt großer Katze Milch.</em> (She gives milk to big cat.)</li>
+                        <li><em>Er winkt großem Kind.</em> (He waves to big child.)</li>
+                        <li><em>Wir danken großen Kindern.</em> (We thank big children.)</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercises -->
+        <section id="practice">
+            <h2>Creative Exercises with Multiple-Choice Options</h2>
+
+            <div class="subsection" id="exercise1">
+                <h3>Exercise 1: Definite Article Endings</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>___ Hund läuft schnell. (nominative, masculine)
+                            <select class="answer-select" data-correct="Der große">
+                                <option value="">Select</option>
+                                <option value="Der große">Der große</option>
+                                <option value="Der großen">Der großen</option>
+                                <option value="Dem großen">Dem großen</option>
+                            </select>
+                        </li>
+                        <li>Ich sehe ___ Katze. (accusative, feminine)
+                            <select class="answer-select" data-correct="die große">
+                                <option value="">Select</option>
+                                <option value="die große">die große</option>
+                                <option value="den großen">den großen</option>
+                                <option value="der großen">der großen</option>
+                            </select>
+                        </li>
+                        <li>Ich helfe ___ Kind. (dative, neuter)
+                            <select class="answer-select" data-correct="dem großen">
+                                <option value="">Select</option>
+                                <option value="dem großen">dem großen</option>
+                                <option value="das große">das große</option>
+                                <option value="den großen">den großen</option>
+                            </select>
+                        </li>
+                        <li>Wir sehen ___ Kinder. (accusative, plural)
+                            <select class="answer-select" data-correct="die großen">
+                                <option value="">Select</option>
+                                <option value="die großen">die großen</option>
+                                <option value="der großen">der großen</option>
+                                <option value="den großen">den großen</option>
+                            </select>
+                        </li>
+                        <li>Das ist ___ Hund. (nominative, masculine)
+                            <select class="answer-select" data-correct="der kleine">
+                                <option value="">Select</option>
+                                <option value="der kleine">der kleine</option>
+                                <option value="dem kleinen">dem kleinen</option>
+                                <option value="den kleinen">den kleinen</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Der große</em></li>
+                            <li><em>die große</em></li>
+                            <li><em>dem großen</em></li>
+                            <li><em>die großen</em></li>
+                            <li><em>der kleine</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise2">
+                <h3>Exercise 2: Indefinite Article Endings</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>___ Hund bellt. (nominative, masculine)
+                            <select class="answer-select" data-correct="Ein großer">
+                                <option value="">Select</option>
+                                <option value="Ein großer">Ein großer</option>
+                                <option value="Eine große">Eine große</option>
+                                <option value="Ein großes">Ein großes</option>
+                            </select>
+                        </li>
+                        <li>Ich kaufe ___ Katze. (accusative, feminine)
+                            <select class="answer-select" data-correct="eine kleine">
+                                <option value="">Select</option>
+                                <option value="eine kleine">eine kleine</option>
+                                <option value="einen kleinen">einen kleinen</option>
+                                <option value="einem kleinen">einem kleinen</option>
+                            </select>
+                        </li>
+                        <li>Er hilft ___ Kind. (dative, neuter)
+                            <select class="answer-select" data-correct="einem jungen">
+                                <option value="">Select</option>
+                                <option value="einem jungen">einem jungen</option>
+                                <option value="ein junges">ein junges</option>
+                                <option value="einen jungen">einen jungen</option>
+                            </select>
+                        </li>
+                        <li>Wir hören ___ Kinder. (accusative, plural with <em>kein</em>)
+                            <select class="answer-select" data-correct="keine neuen">
+                                <option value="">Select</option>
+                                <option value="keine neuen">keine neuen</option>
+                                <option value="keinen neuen">keinen neuen</option>
+                                <option value="keiner neuen">keiner neuen</option>
+                            </select>
+                        </li>
+                        <li>___ Hund läuft weg. (nominative, masculine)
+                            <select class="answer-select" data-correct="Ein schneller">
+                                <option value="">Select</option>
+                                <option value="Ein schneller">Ein schneller</option>
+                                <option value="Einen schnellen">Einen schnellen</option>
+                                <option value="Einem schnellen">Einem schnellen</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Ein großer</em></li>
+                            <li><em>eine kleine</em></li>
+                            <li><em>einem jungen</em></li>
+                            <li><em>keine neuen</em></li>
+                            <li><em>Ein schneller</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise3">
+                <h3>Exercise 3: No Article Endings</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>___ Hund schläft. (nominative, masculine)
+                            <select class="answer-select" data-correct="Großer">
+                                <option value="">Select</option>
+                                <option value="Großer">Großer</option>
+                                <option value="Großem">Großem</option>
+                                <option value="Großen">Großen</option>
+                            </select>
+                        </li>
+                        <li>Ich sehe ___ Katze. (accusative, feminine)
+                            <select class="answer-select" data-correct="große">
+                                <option value="">Select</option>
+                                <option value="große">große</option>
+                                <option value="großer">großer</option>
+                                <option value="großes">großes</option>
+                            </select>
+                        </li>
+                        <li>Ich helfe ___ Kind. (dative, neuter)
+                            <select class="answer-select" data-correct="großem">
+                                <option value="">Select</option>
+                                <option value="großem">großem</option>
+                                <option value="großes">großes</option>
+                                <option value="großen">großen</option>
+                            </select>
+                        </li>
+                        <li>Wir treffen ___ Kinder. (accusative, plural)
+                            <select class="answer-select" data-correct="große">
+                                <option value="">Select</option>
+                                <option value="große">große</option>
+                                <option value="großen">großen</option>
+                                <option value="großer">großer</option>
+                            </select>
+                        </li>
+                        <li>___ Hund bellt laut. (nominative, masculine)
+                            <select class="answer-select" data-correct="Schneller">
+                                <option value="">Select</option>
+                                <option value="Schneller">Schneller</option>
+                                <option value="Schnellem">Schnellem</option>
+                                <option value="Schnellen">Schnellen</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Großer</em></li>
+                            <li><em>große</em></li>
+                            <li><em>großem</em></li>
+                            <li><em>große</em></li>
+                            <li><em>Schneller</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise4">
+                <h3>Exercise 4: Mixed Scenarios</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>___ Hund ist süß. (nominative, definite)
+                            <select class="answer-select" data-correct="Der kleine">
+                                <option value="">Select</option>
+                                <option value="Der kleine">Der kleine</option>
+                                <option value="Ein kleiner">Ein kleiner</option>
+                                <option value="Kleiner">Kleiner</option>
+                            </select>
+                        </li>
+                        <li>Ich sehe ___ Katze. (accusative, indefinite)
+                            <select class="answer-select" data-correct="eine schöne">
+                                <option value="">Select</option>
+                                <option value="eine schöne">eine schöne</option>
+                                <option value="die schöne">die schöne</option>
+                                <option value="schöne">schöne</option>
+                            </select>
+                        </li>
+                        <li>___ Kind spielt draußen. (nominative, no article)
+                            <select class="answer-select" data-correct="Junges">
+                                <option value="">Select</option>
+                                <option value="Junges">Junges</option>
+                                <option value="Ein junges">Ein junges</option>
+                                <option value="Das junge">Das junge</option>
+                            </select>
+                        </li>
+                        <li>Wir helfen ___ Kindern. (dative, definite)
+                            <select class="answer-select" data-correct="den neuen">
+                                <option value="">Select</option>
+                                <option value="den neuen">den neuen</option>
+                                <option value="neuen">neuen</option>
+                                <option value="keinen neuen">keinen neuen</option>
+                            </select>
+                        </li>
+                        <li>Er mag ___ Hund. (accusative, indefinite)
+                            <select class="answer-select" data-correct="einen großen">
+                                <option value="">Select</option>
+                                <option value="einen großen">einen großen</option>
+                                <option value="den großen">den großen</option>
+                                <option value="großen">großen</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Der kleine</em></li>
+                            <li><em>eine schöne</em></li>
+                            <li><em>Junges</em></li>
+                            <li><em>den neuen</em></li>
+                            <li><em>einen großen</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips to Master Adjective Endings -->
+        <section id="tips">
+            <h2>Deep Tips to Master Adjective Endings</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Spot the Article</strong>: Definite (<em>der</em>) = weak; Indefinite (<em>ein</em>) = mixed; None = strong.</li>
+                    <li><strong>Case First</strong>: Identify case, then match ending.</li>
+                    <li><strong>Gender Check</strong>: Masculine (<em>-er</em>), feminine (<em>-e</em>), neuter (<em>-es</em>), plural (<em>-en/e</em>).</li>
+                    <li><strong>Sing It</strong>: Chant <em>der große, ein großer, großer</em>.</li>
+                    <li><strong>Daily Use</strong>: Describe—<em>Der alte Baum, ein alter Baum, alter Baum</em>.</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>Compare and Contrast</h3>
+                <ul class="example-list">
+                    <li><em>Definite</em>: <em>Der große Hund</em> (weak).</li>
+                    <li><em>Indefinite</em>: <em>Ein großer Hund</em> (mixed).</li>
+                    <li><em>No Article</em>: <em>Großer Hund</em> (strong).</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Final Thoughts -->
+        <section id="final-thoughts">
+            <h2>You’re Ready!</h2>
+            <p>
+                This deep guide covers adjective endings after definite articles, indefinite articles, and no article—rules, tables, examples, and exercises. You’re ready to describe anything in German! Next, you could mix this with Komparativ/Superlativ or tackle prepositional phrases—your choice!
+            </p>
+        </section>
+
+        <!-- Resources for Extra Practice -->
+        <section id="resources">
+            <h2>Resources for Extra Practice</h2>
+            <div class="see-also-links">
+                <a href="https://www.goethe.de/de/spr/ueb.html" class="see-also-rect">
+                    Goethe A1/A2 Wortliste<br>Adjectives in context.<br><br>
+                    <button class="resource-btn">Visit Goethe Wortliste</button>
+                </a>
+                <a href="https://www.youtube.com/c/easygerman" class="see-also-rect">
+                    YouTube – EASY German<br>Hear adjectives in talk.<br><br>
+                    <button class="resource-btn">Visit EASY German</button>
+                </a>
+                <a href="https://www.schubert-verlag.de/" class="see-also-rect">
+                    Schubert Verlag<br>Free adjective exercises.<br><br>
+                    <button class="resource-btn">Visit Schubert Verlag</button>
+                </a>
+            </div>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="dative.html" class="see-also-rect">German Dative</a>
+                <a href="weil.html" class="see-also-rect">German Weil</a>
+                <a href="dass.html" class="see-also-rect">German Dass</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="komparativ.html" class="next-btn">Next: Komparativ/Superlativ →</a>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Dark/Light mode toggle
+            const modeToggle = document.getElementById('mode-toggle');
+            const body = document.body;
+            modeToggle.addEventListener('click', function() {
+                body.classList.toggle('dark-mode');
+                const isDark = body.classList.contains('dark-mode');
+                modeToggle.querySelector('svg').setAttribute('d', isDark ? 
+                    'M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z' : 
+                    'M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z');
+            });
+
+            // Check Answers functionality
+            document.querySelectorAll('.check-answers').forEach(button => {
+                button.addEventListener('click', function() {
+                    const exercise = this.closest('.subsection');
+                    const selects = exercise.querySelectorAll('.answer-select');
+                    selects.forEach(select => {
+                        const correctAnswer = select.getAttribute('data-correct');
+                        const userAnswer = select.value;
+                        if (userAnswer === correctAnswer) {
+                            select.style.border = '2px solid #2e7d32';
+                        } else if (userAnswer !== '') {
+                            select.style.border = '2px solid #d32f2f';
+                        } else {
+                            select.style.border = '1px solid #ccc';
+                        }
+                    });
+                });
+            });
+
+            // Show Answers functionality
+            document.querySelectorAll('.show-answers').forEach(button => {
+                button.addEventListener('click', function() {
+                    const exercise = this.closest('.subsection');
+                    const answers = exercise.querySelector('.answers');
+                    if (answers.classList.contains('hidden')) {
+                        answers.classList.remove('hidden');
+                    } else {
+                        answers.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

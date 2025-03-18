@@ -1,0 +1,333 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}German Articles{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/articles.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+                <a href="index.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="a1-topics.html" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>German Articles Explained</h1>
+            <p>
+                Learning German can be an exciting journey, but one of the first hurdles beginners face is understanding <strong>German articles</strong>. These small words that come before nouns—like <em>der</em>, <em>die</em>, <em>das</em>, <em>ein</em>, and <em>eine</em>—are essential because they tell us about the noun’s <strong>gender</strong>, <strong>number</strong>, and <strong>case</strong>. Unlike English, where we simply use "the" or "a/an," German articles change depending on the context. Don’t worry—this guide will break it all down with clear explanations, handy tables, and example sentences. Plus, you’ll find practice questions at the end to help you learn more. Let’s get started!
+            </p>
+           
+        </section>
+
+        <!-- Key Points: Understanding German Articles -->
+        <section id="key-points">
+            <h2>Understanding German Articles</h2>
+            <div class="subsection">
+                <h3>What Are German Articles?</h3>
+                <p>
+                    Articles in German are words that precede nouns and provide crucial information about them. They indicate:
+                    <ul>
+                        <li><strong>Gender</strong>: Every German noun is either masculine, feminine, or neuter.</li>
+                        <li><strong>Number</strong>: Whether the noun is singular or plural.</li>
+                        <li><strong>Case</strong>: The noun’s role in the sentence (e.g., subject, object). German has four cases: <strong>nominative</strong>, <strong>accusative</strong>, <strong>dative</strong>, and <strong>genitive</strong>.</li>
+                    </ul>
+                    There are two types of articles:
+                    <ol>
+                        <li><strong>Definite Articles</strong>: Similar to "the" in English, used for specific nouns.</li>
+                        <li><strong>Indefinite Articles</strong>: Similar to "a" or "an" in English, used for non-specific nouns.</li>
+                    </ol>
+                </p>
+            </div>
+            <div class="subsection">
+                <h3>Definite Articles</h3>
+                <p>
+                    Definite articles refer to specific things, like "the dog" or "the house." In German, the definite article changes based on the noun’s gender, number, and case. Here’s a table to show you how:
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Case</th>
+                            <th>Masculine</th>
+                            <th>Feminine</th>
+                            <th>Neuter</th>
+                            <th>Plural</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nominative</td>
+                            <td>der</td>
+                            <td>die</td>
+                            <td>das</td>
+                            <td>die</td>
+                        </tr>
+                        <tr>
+                            <td>Accusative</td>
+                            <td>den</td>
+                            <td>die</td>
+                            <td>das</td>
+                            <td>die</td>
+                        </tr>
+                        <tr>
+                            <td>Dative</td>
+                            <td>dem</td>
+                            <td>der</td>
+                            <td>dem</td>
+                            <td>den</td>
+                        </tr>
+                        <tr>
+                            <td>Genitive</td>
+                            <td>des</td>
+                            <td>der</td>
+                            <td>des</td>
+                            <td>der</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    <strong>What Do the Cases Mean?</strong>
+                    <ul>
+                        <li><strong>Nominative</strong>: Used for the subject of the sentence (who or what is doing something).</li>
+                        <li><strong>Accusative</strong>: Used for the direct object (who or what is being acted upon).</li>
+                        <li><strong>Dative</strong>: Used for the indirect object (to whom or for whom something is done).</li>
+                        <li><strong>Genitive</strong>: Used to show possession (like "of the" in English).</li>
+                    </ul>
+                </p>
+                <div class="examples">
+                    <p><strong>Example Sentences</strong></p>
+                    <ul class="example-list">
+                        <li><strong>Masculine: Hund (dog)</strong></li>
+                        <ul>
+                            <li>Nominative: <em>Der Hund</em> bellt. (The dog barks.)</li>
+                            <li>Accusative: Ich sehe <em>den Hund</em>. (I see the dog.)</li>
+                            <li>Dative: Ich gebe <em>dem Hund</em> einen Knochen. (I give the dog a bone.)</li>
+                            <li>Genitive: Das ist das Haus <em>des Hundes</em>. (That is the dog’s house.)</li>
+                        </ul>
+                        <li><strong>Feminine: Katze (cat)</strong></li>
+                        <ul>
+                            <li>Nominative: <em>Die Katze</em> schläft. (The cat sleeps.)</li>
+                            <li>Accusative: Ich sehe <em>die Katze</em>. (I see the cat.)</li>
+                            <li>Dative: Ich gebe <em>der Katze</em> Milch. (I give the cat milk.)</li>
+                            <li>Genitive: Die Farbe <em>der Katze</em> ist schwarz. (The cat’s color is black.)</li>
+                        </ul>
+                        <li><strong>Neuter: Kind (child)</strong></li>
+                        <ul>
+                            <li>Nominative: <em>Das Kind</em> spielt. (The child plays.)</li>
+                            <li>Accusative: Ich sehe <em>das Kind</em>. (I see the child.)</li>
+                            <li>Dative: Ich gebe <em>dem Kind</em> ein Spielzeug. (I give the child a toy.)</li>
+                            <li>Genitive: Der Name <em>des Kindes</em> ist Max. (The child’s name is Max.)</li>
+                        </ul>
+                        <li><strong>Plural: Hunde (dogs)</strong></li>
+                        <ul>
+                            <li>Nominative: <em>Die Hunde</em> bellen. (The dogs bark.)</li>
+                            <li>Accusative: Ich sehe <em>die Hunde</em>. (I see the dogs.)</li>
+                            <li>Dative: Ich gebe <em>den Hunden</em> Knochen. (I give the dogs bones.)</li>
+                            <li>Genitive: Die Farbe <em>der Hunde</em> ist braun. (The dogs’ color is brown.)</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Indefinite Articles</h3>
+                <p>
+                    Indefinite articles are used for non-specific nouns, like "a dog" or "an apple." They also change based on gender and case, but they’re only used with singular nouns (plurals don’t have indefinite articles in German).
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Case</th>
+                            <th>Masculine</th>
+                            <th>Feminine</th>
+                            <th>Neuter</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nominative</td>
+                            <td>ein</td>
+                            <td>eine</td>
+                            <td>ein</td>
+                        </tr>
+                        <tr>
+                            <td>Accusative</td>
+                            <td>einen</td>
+                            <td>eine</td>
+                            <td>ein</td>
+                        </tr>
+                        <tr>
+                            <td>Dative</td>
+                            <td>einem</td>
+                            <td>einer</td>
+                            <td>einem</td>
+                        </tr>
+                        <tr>
+                            <td>Genitive</td>
+                            <td>eines</td>
+                            <td>einer</td>
+                            <td>eines</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="examples">
+                    <p><strong>Example Sentences</strong></p>
+                    <ul class="example-list">
+                        <li><strong>Masculine: Hund (dog)</strong></li>
+                        <ul>
+                            <li>Nominative: <em>Ein Hund</em> bellt. (A dog barks.)</li>
+                            <li>Accusative: Ich sehe <em>einen Hund</em>. (I see a dog.)</li>
+                            <li>Dative: Ich gebe <em>einem Hund</em> einen Knochen. (I give a dog a bone.)</li>
+                            <li>Genitive: Das ist das Haus <em>eines Hundes</em>. (That is a dog’s house.)</li>
+                        </ul>
+                        <li><strong>Feminine: Katze (cat)</strong></li>
+                        <ul>
+                            <li>Nominative: <em>Eine Katze</em> schläft. (A cat sleeps.)</li>
+                            <li>Accusative: Ich sehe <em>eine Katze</em>. (I see a cat.)</li>
+                            <li>Dative: Ich gebe <em>einer Katze</em> Milch. (I give a cat milk.)</li>
+                            <li>Genitive: Die Farbe <em>einer Katze</em> ist schwarz. (A cat’s color is black.)</li>
+                        </ul>
+                        <li><strong>Neuter: Kind (child)</strong></li>
+                        <ul>
+                            <li>Nominative: <em>Ein Kind</em> spielt. (A child plays.)</li>
+                            <li>Accusative: Ich sehe <em>ein Kind</em>. (I see a child.)</li>
+                            <li>Dative: Ich gebe <em>einem Kind</em> ein Spielzeug. (I give a child a toy.)</li>
+                            <li>Genitive: Der Name <em>eines Kindes</em> ist Max. (A child’s name is Max.)</li>
+                        </ul>
+                    </ul>
+                    <p><strong>Note</strong>: For plural nouns, German doesn’t use indefinite articles. Instead, you might omit the article or use words like <em>einige</em> (some), but that’s a topic for later!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips for Learning German Articles -->
+        <section id="how-to">
+            <h2>Tips for Learning German Articles</h2>
+            <div class="subsection">
+                <p>
+                    Mastering German articles takes practice, but these tips can make it easier:
+                    <ol>
+                        <li><strong>Learn Nouns with Their Articles</strong>: Always memorize nouns with their definite article, e.g., <em>der Hund</em>, <em>die Katze</em>, <em>das Kind</em>. This helps you remember the gender.</li>
+                        <li><strong>Practice Simple Sentences</strong>: Use the nouns you know in sentences to get comfortable with how articles change.</li>
+                        <li><strong>Look for Patterns</strong>: Some noun endings hint at gender. For example, many nouns ending in <em>-e</em> are feminine (e.g., <em>die Lampe</em> – the lamp).</li>
+                        <li><strong>Be Patient</strong>: Mistakes are part of learning. Keep practicing, and it’ll get easier over time!</li>
+                    </ol>
+                </p>
+            </div>
+        </section>
+
+        <!-- Practice Questions -->
+        <section id="practice">
+            <h2>Practice Questions</h2>
+            <div class="subsection">
+                <h3>Exercise 1: Definite Articles</h3>
+                <ol>
+                    <li>____ Auto ist schnell. (The car is fast.)</li>
+                    <button class="toggle-btn">Show Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> Das Auto</p></div>
+                    <li>Ich sehe ____ Frau. (I see the woman.)</li>
+                    <button class="toggle-btn">Show Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> die Frau</p></div>
+                    <li>Ich gebe ____ Kind ein Buch. (I give the child a book.)</li>
+                    <button class="toggle-btn">Show Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> dem Kind</p></div>
+                    <li>Das ist das Haus ____ Mannes. (That is the man’s house.)</li>
+                    <button class="toggle-btn">Show Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> des Mannes</p></div>
+                </ol>
+            </div>
+            <div class="subsection">
+                <h3>Exercise 2: Indefinite Articles</h3>
+                <ol>
+                    <li>____ Hund bellt. (A dog barks.)</li>
+                    <button class="toggle-btn">Show Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> Ein Hund</p></div>
+                    <li>Ich habe ____ Katze. (I have a cat.)</li>
+                    <button class="toggle-btn">Show Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> eine Katze</p></div>
+                    <li>Ich gebe ____ Kind ein Spielzeug. (I give a child a toy.)</li>
+                    <button class="toggle-btn">Show Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> einem Kind</p></div>
+                    <li>Die Farbe ____ Blume ist rot. (A flower’s color is red.)</li>
+                    <button class="toggle-btn">Show Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> einer Blume</p></div>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Final Thoughts -->
+        <section id="tips">
+            <h2>Final Thoughts</h2>
+            <p>
+                German articles might seem tricky at first, but with this guide, you’ve got the tools to start mastering them. Use the tables as a quick reference, practice with the example sentences, and try the exercises to build your confidence. The key is consistency—keep learning new nouns with their articles, and soon, choosing the right one will feel natural. Happy learning!
+            </p>
+           
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="nouns.html" class="see-also-btn">German Nouns</a>
+                <a href="adjectives.html" class="see-also-btn">German Adjectives</a>
+                <a href="conjugation.html" class="see-also-btn">German Conjugation</a>
+                <a href="cases.html" class="see-also-btn">German Cases</a>
+                <a href="prepositions.html" class="see-also-btn">German Prepositions</a>
+                <a href="structure.html" class="see-also-btn">Sentence Structure</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="adjectives.html" class="next-btn">Next: German Adjectives →</a>
+        </div>
+    </main>
+
+    <script>
+        // Inline JavaScript for toggle functionality and dark/light mode
+        document.addEventListener('DOMContentLoaded', function() {
+            // Toggle content
+            const buttons = document.querySelectorAll('.toggle-btn');
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const hiddenContent = this.nextElementSibling;
+                    if (hiddenContent.classList.contains('hidden')) {
+                        hiddenContent.classList.remove('hidden');
+                        this.textContent = 'Hide Answer';
+                    } else {
+                        hiddenContent.classList.add('hidden');
+                        this.textContent = 'Show Answer';
+                    }
+                });
+            });
+
+            // Dark/Light mode toggle
+            const modeToggle = document.getElementById('mode-toggle');
+            const body = document.body;
+            modeToggle.addEventListener('click', function() {
+                body.classList.toggle('dark-mode');
+                const isDark = body.classList.contains('dark-mode');
+                modeToggle.querySelector('svg').innerHTML = isDark ? 
+                    '<path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>' : 
+                    '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>';
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

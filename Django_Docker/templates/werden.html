@@ -1,0 +1,619 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}German Werden: The Complete Guide to “To Become” and Beyond{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/werden.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+                <a href="index.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="javascript:history.back()" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>German <em>Werden</em>: The Complete Guide to “To Become” and Beyond</h1>
+            <p>
+                The verb <strong>werden</strong> is one of the most powerful and flexible verbs in German. It means “to become,” serves as an auxiliary for the future tense, and is key to forming the passive voice. This guide explores all its roles, provides conjugation tables for present, past, and subjunctive forms, and offers practical examples and exercises. It’s thorough, clear, and packed with detail—let’s get started!
+            </p>
+        </section>
+
+        <!-- What is Werden -->
+        <section id="what-is">
+            <h2>What is <em>Werden</em>?</h2>
+            <p><em>Werden</em> is an irregular (strong) verb with multiple roles:</p>
+            <ul class="example-list">
+                <li><strong>Main Verb</strong>: “To become” (change of state or transformation).</li>
+                <li><strong>Auxiliary Verb</strong>: Forms the future tense (<em>Ich werde kommen</em> – I will come).</li>
+                <li><strong>Passive Voice</strong>: Combines with past participles (<em>Das Haus wird gebaut</em> – The house is being built).</li>
+            </ul>
+            <h3>Key Features</h3>
+            <ul class="example-list">
+                <li><strong>Irregular</strong>: Stem changes in past and subjunctive (<em>wurde, würde</em>).</li>
+                <li><strong>Word Order</strong>: As an auxiliary, it takes second position; infinitive or participle goes to the end.</li>
+                <li><strong>Versatility</strong>: Context determines its meaning—watch for clues!</li>
+            </ul>
+        </section>
+
+        <!-- Conjugation -->
+        <section id="conjugation">
+            <h2>Conjugation of <em>Werden</em></h2>
+            <div class="subsection">
+                <h3>1. Present Tense (Präsens)</h3>
+                <div class="table-container">
+                    <table>
+                        <tr><th>Person</th><th>Conjugation</th><th>Example</th></tr>
+                        <tr><td>ich</td><td>werde</td><td>Ich werde müde. (I become tired.)</td></tr>
+                        <tr><td>du</td><td>wirst</td><td>Du wirst Arzt. (You become a doctor.)</td></tr>
+                        <tr><td>er/sie/es</td><td>wird</td><td>Er wird größer. (He becomes bigger.)</td></tr>
+                        <tr><td>wir</td><td>werden</td><td>Wir werden Freunde. (We become friends.)</td></tr>
+                        <tr><td>ihr</td><td>werdet</td><td>Ihr werdet langsam. (You all become slow.)</td></tr>
+                        <tr><td>sie/Sie</td><td>werden</td><td>Sie werden alt. (They become old.)</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>2. Simple Past (Präteritum)</h3>
+                <div class="table-container">
+                    <table>
+                        <tr><th>Person</th><th>Conjugation</th><th>Example</th></tr>
+                        <tr><td>ich</td><td>wurde</td><td>Ich wurde müde. (I became tired.)</td></tr>
+                        <tr><td>du</td><td>wurdest</td><td>Du wurdest Arzt. (You became a doctor.)</td></tr>
+                        <tr><td>er/sie/es</td><td>wurde</td><td>Sie wurde größer. (She became bigger.)</td></tr>
+                        <tr><td>wir</td><td>wurden</td><td>Wir wurden Freunde. (We became friends.)</td></tr>
+                        <tr><td>ihr</td><td>wurdet</td><td>Ihr wurdet langsam. (You all became slow.)</td></tr>
+                        <tr><td>sie/Sie</td><td>wurden</td><td>Sie wurden alt. (They became old.)</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>3. Perfect (Perfekt)</h3>
+                <p>Auxiliary: <em>sein</em> + <em>geworden</em> (past participle).</p>
+                <div class="table-container">
+                    <table>
+                        <tr><th>Person</th><th>Conjugation</th><th>Example</th></tr>
+                        <tr><td>ich</td><td>bin geworden</td><td>Ich bin müde geworden. (I’ve become tired.)</td></tr>
+                        <tr><td>du</td><td>bist geworden</td><td>Du bist Arzt geworden. (You’ve become a doctor.)</td></tr>
+                        <tr><td>er/sie/es</td><td>ist geworden</td><td>Er ist größer geworden. (He’s become bigger.)</td></tr>
+                        <tr><td>wir</td><td>sind geworden</td><td>Wir sind Freunde geworden. (We’ve become friends.)</td></tr>
+                        <tr><td>ihr</td><td>seid geworden</td><td>Ihr seid langsam geworden. (You’ve become slow.)</td></tr>
+                        <tr><td>sie/Sie</td><td>sind geworden</td><td>Sie sind alt geworden. (They’ve become old.)</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>4. Pluperfect (Plusquamperfekt)</h3>
+                <p><em>sein</em> in Präteritum + <em>geworden</em>.</p>
+                <div class="table-container">
+                    <table>
+                        <tr><th>Person</th><th>Conjugation</th><th>Example</th></tr>
+                        <tr><td>ich</td><td>war geworden</td><td>Ich war müde geworden. (I had become tired.)</td></tr>
+                        <tr><td>du</td><td>warst geworden</td><td>Du warst Arzt geworden. (You had become a doctor.)</td></tr>
+                        <tr><td>er/sie/es</td><td>war geworden</td><td>Sie war größer geworden. (She had become bigger.)</td></tr>
+                        <tr><td>wir</td><td>waren geworden</td><td>Wir waren Freunde geworden. (We had become friends.)</td></tr>
+                        <tr><td>ihr</td><td>wart geworden</td><td>Ihr wart langsam geworden. (You had become slow.)</td></tr>
+                        <tr><td>sie/Sie</td><td>waren geworden</td><td>Sie waren alt geworden. (They had become old.)</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>5. Future (Futur I)</h3>
+                <p><em>werden</em> + infinitive of main verb.</p>
+                <div class="table-container">
+                    <table>
+                        <tr><th>Person</th><th>Conjugation</th><th>Example</th></tr>
+                        <tr><td>ich</td><td>werde kommen</td><td>Ich werde kommen. (I will come.)</td></tr>
+                        <tr><td>du</td><td>wirst kommen</td><td>Du wirst kommen. (You will come.)</td></tr>
+                        <tr><td>er/sie/es</td><td>wird kommen</td><td>Er wird kommen. (He will come.)</td></tr>
+                        <tr><td>wir</td><td>werden kommen</td><td>Wir werden kommen. (We will come.)</td></tr>
+                        <tr><td>ihr</td><td>werdet kommen</td><td>Ihr werdet kommen. (You all will come.)</td></tr>
+                        <tr><td>sie/Sie</td><td>werden kommen</td><td>Sie werden kommen. (They will come.)</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>6. Subjunctive II (Konjunktiv II)</h3>
+                <p>Used for hypotheticals (<em>würde</em> + infinitive for future or main verb meaning).</p>
+                <div class="table-container">
+                    <table>
+                        <tr><th>Person</th><th>Conjugation</th><th>Example</th></tr>
+                        <tr><td>ich</td><td>würde</td><td>Ich würde müde. (I would become tired.)</td></tr>
+                        <tr><td>du</td><td>würdest</td><td>Du würdest Arzt. (You would become a doctor.)</td></tr>
+                        <tr><td>er/sie/es</td><td>würde</td><td>Sie würde größer. (She would become bigger.)</td></tr>
+                        <tr><td>wir</td><td>würden</td><td>Wir würden Freunde. (We would become friends.)</td></tr>
+                        <tr><td>ihr</td><td>würdet</td><td>Ihr würdet langsam. (You would become slow.)</td></tr>
+                        <tr><td>sie/Sie</td><td>würden</td><td>Sie würden alt. (They would become old.)</td></tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Uses of Werden -->
+        <section id="uses">
+            <h2>Uses of <em>Werden</em></h2>
+            <div class="subsection">
+                <h3>1. Main Verb: “To Become”</h3>
+                <p>Describes a change of state, profession, or quality. Often paired with adjectives, nouns, or prepositional phrases.</p>
+                <div class="examples">
+                    <h4>Examples</h4>
+                    <ul class="example-list">
+                        <li><em>Ich werde müde.</em> (I become tired—adjective.)</li>
+                        <li><em>Er wird Lehrer.</em> (He becomes a teacher—noun.)</li>
+                        <li><em>Das Wetter wird besser.</em> (The weather becomes better—adjective.)</li>
+                        <li><em>Sie wurde alt.</em> (She became old—past.)</li>
+                        <li><em>Wir sind Freunde geworden.</em> (We’ve become friends—perfect.)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>2. Auxiliary for Future Tense</h3>
+                <p><em>Werden</em> + infinitive = “will” + verb. Predicts or plans future actions.</p>
+                <div class="examples">
+                    <h4>Examples</h4>
+                    <ul class="example-list">
+                        <li><em>Ich werde morgen kommen.</em> (I will come tomorrow.)</li>
+                        <li><em>Du wirst das lernen.</em> (You will learn that.)</li>
+                        <li><em>Sie wird uns helfen.</em> (She will help us.)</li>
+                        <li><em>Wir werden reisen.</em> (We will travel.)</li>
+                        <li><em>Ihr werdet es sehen.</em> (You all will see it.)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>3. Passive Voice</h3>
+                <p><em>Werden</em> + past participle = something is being done.</p>
+                <div class="examples">
+                    <h4>Examples</h4>
+                    <ul class="example-list">
+                        <li><strong>Present Passive</strong>: <em>Das Haus wird gebaut.</em> (The house is being built.)</li>
+                        <li><em>Das Buch wird gelesen.</em> (The book is being read.)</li>
+                        <li><strong>Past Passive</strong>: <em>Das Haus wurde gebaut.</em> (The house was built.)</li>
+                        <li><em>Das Essen wurde gekocht.</em> (The food was cooked.)</li>
+                        <li><strong>Future Passive</strong>: <em>Das Auto wird repariert werden.</em> (The car will be repaired.)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deep Details and Nuances -->
+        <section id="nuances">
+            <h2>Deep Details and Nuances</h2>
+            <div class="subsection">
+                <h3>1. <em>Werden</em> vs. <em>Sein</em></h3>
+                <ul class="example-list">
+                    <li><em>Werden</em>: Change or process (<em>Ich werde müde</em> – I become tired).</li>
+                    <li><em>Sein</em>: State (<em>Ich bin müde</em> – I am tired).</li>
+                    <li>Combo: <em>Ich bin müde geworden</em> (I’ve become tired—completed change).</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>2. Passive vs. Zustandspassiv</h3>
+                <ul class="example-list">
+                    <li><strong>Process Passive</strong> (<em>werden</em>): Action happening—<em>Das Haus wird gebaut.</em> (The house is being built—ongoing.)</li>
+                    <li><strong>State Passive</strong> (<em>sein</em>): Resulting state—<em>Das Haus ist gebaut.</em> (The house is built—finished.)</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>3. Word Order</h3>
+                <ul class="example-list">
+                    <li><strong>Future</strong>: <em>Werden</em> second, infinitive last—<em>Ich werde morgen kommen.</em></li>
+                    <li><strong>Passive</strong>: <em>Werden</em> second, participle last—<em>Das Buch wird gelesen.</em></li>
+                    <li><strong>Questions</strong>: <em>Werden</em> first—<em>Wird das gemacht?</em> (Is that being done?)</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>4. Subjunctive Use</h3>
+                <ul class="example-list">
+                    <li><em>Würde</em> + infinitive for hypothetical futures or politeness.</li>
+                    <li><em>Ich würde das tun.</em> (I would do that.)</li>
+                    <li><em>Würdest du helfen?</em> (Would you help?)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Example Sentences -->
+        <section id="examples">
+            <h2>Tons of Example Sentences</h2>
+            <div class="subsection">
+                <h3>As “To Become”</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Ich werde langsam müde.</em> (I’m becoming slowly tired.)</li>
+                        <li><em>Du wirst ein guter Arzt.</em> (You’ll become a good doctor.)</li>
+                        <li><em>Das Kind wurde größer.</em> (The child became bigger.)</li>
+                        <li><em>Wir werden bald alt.</em> (We’ll become old soon.)</li>
+                        <li><em>Ihr seid Freunde geworden.</em> (You’ve become friends.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>As Future Tense</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Ich werde morgen lernen.</em> (I will learn tomorrow.)</li>
+                        <li><em>Er wird uns besuchen.</em> (He will visit us.)</li>
+                        <li><em>Sie wird das kaufen.</em> (She will buy that.)</li>
+                        <li><em>Wir werden bald ankommen.</em> (We will arrive soon.)</li>
+                        <li><em>Ihr werdet es verstehen.</em> (You all will understand it.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>As Passive Voice</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Das Auto wird gewaschen.</em> (The car is being washed.)</li>
+                        <li><em>Das Buch wurde geschrieben.</em> (The book was written.)</li>
+                        <li><em>Die Tür wird geöffnet.</em> (The door is being opened.)</li>
+                        <li><em>Das Essen wurde gestern gekocht.</em> (The food was cooked yesterday.)</li>
+                        <li><em>Die Arbeit wird morgen erledigt.</em> (The work will be done tomorrow.)</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercises -->
+        <section id="practice">
+            <h2>Creative Exercises with Multiple-Choice Options</h2>
+            <div class="subsection" id="exercise1">
+                <h3>Exercise 1: Conjugation of <em>Werden</em></h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Ich ___ müde. (present)
+                            <select class="answer-select" data-correct="werde">
+                                <option value="">Select</option>
+                                <option value="werde">werde</option>
+                                <option value="wird">wird</option>
+                                <option value="wurde">wurde</option>
+                            </select>
+                        </li>
+                        <li>Du ___ Arzt. (simple past)
+                            <select class="answer-select" data-correct="wurdest">
+                                <option value="">Select</option>
+                                <option value="wirst">wirst</option>
+                                <option value="wurdest">wurdest</option>
+                                <option value="würde">würde</option>
+                            </select>
+                        </li>
+                        <li>Er ___ größer geworden. (perfect)
+                            <select class="answer-select" data-correct="ist">
+                                <option value="">Select</option>
+                                <option value="ist">ist</option>
+                                <option value="war">war</option>
+                                <option value="wird">wird</option>
+                            </select>
+                        </li>
+                        <li>Wir ___ kommen. (future)
+                            <select class="answer-select" data-correct="werden">
+                                <option value="">Select</option>
+                                <option value="werden">werden</option>
+                                <option value="wurde">wurde</option>
+                                <option value="würdet">würdet</option>
+                            </select>
+                        </li>
+                        <li>Ihr ___ langsam. (subjunctive II)
+                            <select class="answer-select" data-correct="würdet">
+                                <option value="">Select</option>
+                                <option value="werdet">werdet</option>
+                                <option value="würdet">würdet</option>
+                                <option value="wurdet">wurdet</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>werde</em></li>
+                            <li><em>wurdest</em></li>
+                            <li><em>ist</em></li>
+                            <li><em>werden</em></li>
+                            <li><em>würdet</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection" id="exercise2">
+                <h3>Exercise 2: <em>Werden</em> as Main Verb</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Sie ___ alt. (present)
+                            <select class="answer-select" data-correct="wird">
+                                <option value="">Select</option>
+                                <option value="wird">wird</option>
+                                <option value="wurde">wurde</option>
+                                <option value="würde">würde</option>
+                            </select>
+                        </li>
+                        <li>Ich ___ Lehrer. (past)
+                            <select class="answer-select" data-correct="wurde">
+                                <option value="">Select</option>
+                                <option value="wurde">wurde</option>
+                                <option value="wird">wird</option>
+                                <option value="bin">bin</option>
+                            </select>
+                        </li>
+                        <li>Wir ___ Freunde geworden. (perfect)
+                            <select class="answer-select" data-correct="sind">
+                                <option value="">Select</option>
+                                <option value="sind">sind</option>
+                                <option value="waren">waren</option>
+                                <option value="werden">werden</option>
+                            </select>
+                        </li>
+                        <li>Das Wetter ___ besser. (future)
+                            <select class="answer-select" data-correct="wird">
+                                <option value="">Select</option>
+                                <option value="wird">wird</option>
+                                <option value="wurde">wurde</option>
+                                <option value="wäre">wäre</option>
+                            </select>
+                        </li>
+                        <li>Er ___ müde. (subjunctive II)
+                            <select class="answer-select" data-correct="würde">
+                                <option value="">Select</option>
+                                <option value="würde">würde</option>
+                                <option value="wird">wird</option>
+                                <option value="war">war</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>wird</em></li>
+                            <li><em>wurde</em></li>
+                            <li><em>sind</em></li>
+                            <li><em>wird</em></li>
+                            <li><em>würde</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection" id="exercise3">
+                <h3>Exercise 3: <em>Werden</em> as Auxiliary/Passive</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Das Haus ___ gebaut. (present passive)
+                            <select class="answer-select" data-correct="wird">
+                                <option value="">Select</option>
+                                <option value="wird">wird</option>
+                                <option value="wurde">wurde</option>
+                                <option value="würde">würde</option>
+                            </select>
+                        </li>
+                        <li>Ich ___ morgen helfen. (future)
+                            <select class="answer-select" data-correct="werde">
+                                <option value="">Select</option>
+                                <option value="werde">werde</option>
+                                <option value="wurde">wurde</option>
+                                <option value="bin">bin</option>
+                            </select>
+                        </li>
+                        <li>Das Buch ___ gelesen. (past passive)
+                            <select class="answer-select" data-correct="wurde">
+                                <option value="">Select</option>
+                                <option value="wurde">wurde</option>
+                                <option value="wird">wird</option>
+                                <option value="war">war</option>
+                            </select>
+                        </li>
+                        <li>Die Arbeit ___ erledigt werden. (future passive)
+                            <select class="answer-select" data-correct="wird">
+                                <option value="">Select</option>
+                                <option value="wird">wird</option>
+                                <option value="wurde">wurde</option>
+                                <option value="wäre">wäre</option>
+                            </select>
+                        </li>
+                        <li>Wir ___ besucht. (present passive)
+                            <select class="answer-select" data-correct="werden">
+                                <option value="">Select</option>
+                                <option value="werden">werden</option>
+                                <option value="wurden">wurden</option>
+                                <option value="würden">würden</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>wird</em></li>
+                            <li><em>werde</em></li>
+                            <li><em>wurde</em></li>
+                            <li><em>wird</em></li>
+                            <li><em>werden</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection" id="exercise4">
+                <h3>Exercise 4: Mixed <em>Werden</em> Story</h3>
+                <p>Fill in with the correct form of <em>werden</em>.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Ich ___ müde, wenn ich arbeite.
+                            <select class="answer-select" data-correct="werde">
+                                <option value="">Select</option>
+                                <option value="werde">werde</option>
+                                <option value="wurde">wurde</option>
+                                <option value="würde">würde</option>
+                            </select>
+                        </li>
+                        <li>Gestern ___ das Haus gebaut.
+                            <select class="answer-select" data-correct="wurde">
+                                <option value="">Select</option>
+                                <option value="wurde">wurde</option>
+                                <option value="wird">wird</option>
+                                <option value="war">war</option>
+                            </select>
+                        </li>
+                        <li>Er ___ uns morgen besuchen.
+                            <select class="answer-select" data-correct="wird">
+                                <option value="">Select</option>
+                                <option value="wird">wird</option>
+                                <option value="wurde">wurde</option>
+                                <option value="würde">würde</option>
+                            </select>
+                        </li>
+                        <li>Wir ___ Freunde, wenn wir uns treffen.
+                            <select class="answer-select" data-correct="werden">
+                                <option value="">Select</option>
+                                <option value="werden">werden</option>
+                                <option value="wurden">wurden</option>
+                                <option value="würden">würden</option>
+                            </select>
+                        </li>
+                        <li>Das Auto ___ gewaschen.
+                            <select class="answer-select" data-correct="wird">
+                                <option value="">Select</option>
+                                <option value="wird">wird</option>
+                                <option value="wurde">wurde</option>
+                                <option value="ist">ist</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>werde</em></li>
+                            <li><em>wurde</em></li>
+                            <li><em>wird</em></li>
+                            <li><em>werden</em></li>
+                            <li><em>wird</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips -->
+        <section id="tips">
+            <h2>Deep Tips to Master <em>Werden</em></h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Role Check</strong>: “Become” (<em>Ich werde müde</em>), future (<em>Ich werde kommen</em>), or passive (<em>Es wird gemacht</em>)?</li>
+                    <li><strong>Stem Switch</strong>: Present (<em>wird</em>), past (<em>wurde</em>), subjunctive (<em>würde</em>)—practice the shifts!</li>
+                    <li><strong>Passive Clue</strong>: Look for past participle (<em>gebaut, gelesen</em>)—<em>werden</em> is nearby.</li>
+                    <li><strong>Daily Use</strong>: Say <em>Ich werde müde</em> when tired, <em>Das wird gemacht</em> when fixing something.</li>
+                    <li><strong>Compare</strong>: <em>Ich bin müde</em> (state) vs. <em>Ich werde müde</em> (process)—feel the difference!</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Final Thoughts -->
+        <section id="final-thoughts">
+            <h2>You’re Ready!</h2>
+            <p>
+                This deep guide covers <em>werden</em>—conjugation, uses, examples, and exercises. You’re ready to use it in all its forms! Next, you could explore passive with <em>sein</em> or mix <em>werden</em> with <em>wenn</em>—your choice!
+            </p>
+        </section>
+
+        <!-- Resources -->
+        <section id="resources">
+            <h2>Resources for Extra Practice</h2>
+            <div class="see-also-links">
+                <a href="https://www.goethe.de/de/spr/ueb.html" class="see-also-rect">
+                    Goethe A1/A2 Wortliste<br><em>Werden</em> in context.<br><br>
+                    <button class="resource-btn">Visit Goethe Wortliste</button>
+                </a>
+                <a href="https://www.youtube.com/c/easygerman" class="see-also-rect">
+                    YouTube – EASY German<br>Hear <em>werden</em> in talk.<br><br>
+                    <button class="resource-btn">Visit EASY German</button>
+                </a>
+                <a href="https://www.schubert-verlag.de/" class="see-also-rect">
+                    Schubert Verlag<br>Free <em>werden</em> exercises.<br><br>
+                    <button class="resource-btn">Visit Schubert Verlag</button>
+                </a>
+            </div>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="dative.html" class="see-also-rect">German Dative</a>
+                <a href="adjend.html" class="see-also-rect">Adjective Endings</a>
+                <a href="wenn.html" class="see-also-rect">German Wenn</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="wenn.html" class="next-btn">Next: German Wenn →</a>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Dark/Light mode toggle
+            const modeToggle = document.getElementById('mode-toggle');
+            const body = document.body;
+            modeToggle.addEventListener('click', function() {
+                body.classList.toggle('dark-mode');
+                const isDark = body.classList.contains('dark-mode');
+                modeToggle.querySelector('svg').setAttribute('d', isDark ? 
+                    'M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z' : 
+                    'M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z');
+            });
+
+            // Check Answers functionality
+            document.querySelectorAll('.check-answers').forEach(button => {
+                button.addEventListener('click', function() {
+                    const exercise = this.closest('.subsection');
+                    const selects = exercise.querySelectorAll('.answer-select');
+                    selects.forEach(select => {
+                        const correctAnswer = select.getAttribute('data-correct');
+                        const userAnswer = select.value;
+                        if (userAnswer === correctAnswer) {
+                            select.style.border = '2px solid #2e7d32';
+                        } else if (userAnswer !== '') {
+                            select.style.border = '2px solid #d32f2f';
+                        } else {
+                            select.style.border = '1px solid #ccc';
+                        }
+                    });
+                });
+            });
+
+            // Show Answers functionality
+            document.querySelectorAll('.show-answers').forEach(button => {
+                button.addEventListener('click', function() {
+                    const exercise = this.closest('.subsection');
+                    const answers = exercise.querySelector('.answers');
+                    if (answers.classList.contains('hidden')) {
+                        answers.classList.remove('hidden');
+                    } else {
+                        answers.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

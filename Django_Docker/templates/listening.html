@@ -1,0 +1,386 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}German Listening and Pronunciation{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/listening.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+                <a href="index.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="javascript:history.back()" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>German Listening and Pronunciation: A Simple Guide for Beginners</h1>
+            <p>
+                Learning to <strong>listen</strong> and <strong>pronounce</strong> German words correctly is a big step toward speaking the language confidently. German sounds different from English, with unique letters, vowel sounds, and rhythms, but don’t worry—it’s totally doable! This guide will break down the essentials of German pronunciation and listening skills in a way that’s easy for beginners to grasp. You’ll learn the key sounds, how to practice them, and how to train your ears to understand spoken German. Plus, I’ll include some great YouTube channels with links where you can watch native speakers teach pronunciation. Let’s get started!
+            </p>
+        </section>
+
+        <!-- Why Listening and Pronunciation Matter -->
+        <section id="key-points">
+            <h2>Why Listening and Pronunciation Matter</h2>
+            <div class="subsection">
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><strong>Listening:</strong> Understanding spoken German helps you follow conversations, catch new words, and get used to how native speakers talk.</li>
+                        <li><strong>Pronunciation:</strong> Saying words right makes you easier to understand and boosts your confidence when speaking.</li>
+                    </ul>
+                    <p>
+                        German has some tricky sounds (like <em>ch</em> or <em>ü</em>), but with practice, you’ll nail them. Listening and pronunciation go hand in hand—the more you hear, the better you’ll speak!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pronunciation Basics -->
+        <section id="pronunciation">
+            <h2>German Pronunciation Basics</h2>
+            <div class="subsection">
+                <p>
+                    German has 26 letters like English, plus a few extras: <strong>ä, ö, ü</strong>, and <strong>ß</strong> (called "Eszett"). Here’s a simple rundown of the key sounds and rules.
+                </p>
+            </div>
+            <div class="subsection">
+                <h3>1. Vowels (A, E, I, O, U)</h3>
+                <p>German vowels can be <strong>short</strong> or <strong>long</strong>, and this changes how they sound:</p>
+                <div class="examples">
+                    <p><strong>Short vowels:</strong> Quick and sharp.</p>
+                    <ul class="example-list">
+                        <li><em>A</em> – like "u" in "cut" (e.g., <em>Haus</em> – "house").</li>
+                        <li><em>E</em> – like "e" in "bed" (e.g., <em>Bett</em> – "bed").</li>
+                        <li><em>I</em> – like "i" in "sit" (e.g., <em>ist</em> – "is").</li>
+                        <li><em>O</em> – like "o" in "hot" (e.g., <em>Hof</em> – "yard").</li>
+                        <li><em>U</em> – like "u" in "put" (e.g., <em>Hut</em> – "hat").</li>
+                    </ul>
+                    <p><strong>Long vowels:</strong> Held longer, often marked by a double vowel or an <em>h</em> after.</p>
+                    <ul class="example-list">
+                        <li><em>A</em> – like "ah" in "father" (e.g., <em>Haar</em> – "hair").</li>
+                        <li><em>E</em> – like "ay" in "say" but shorter (e.g., <em>See</em> – "lake").</li>
+                        <li><em>I</em> – like "ee" in "see" (e.g., <em>Liebe</em> – "love").</li>
+                        <li><em>O</em> – like "oh" in "open" (e.g., <em>Boot</em> – "boat").</li>
+                        <li><em>U</em> – like "oo" in "moon" (e.g., <em>Huhn</em> – "chicken").</li>
+                    </ul>
+                    <p><strong>Tip:</strong> Double vowels (like <em>aa</em>, <em>ee</em>) or an <em>h</em> after a vowel (like <em>ah</em>, <em>eh</em>) usually mean it’s long.</p>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>2. Umlauts (Ä, Ö, Ü)</h3>
+                <p>These are the dots over vowels, and they change the sound:</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>Ä</em> – like "e" in "bed" but brighter (e.g., <em>Mädchen</em> – "girl").</li>
+                        <li><em>Ö</em> – no exact English match; round your lips like "o" and say "e" (e.g., <em>König</em> – "king").</li>
+                        <li><em>Ü</em> – round your lips like "u" and say "ee" (e.g., <em>Mütter</em> – "mothers").</li>
+                    </ul>
+                    <p><strong>Practice Trick:</strong> Say the English sound, then tighten your lips into a small circle—voilà, umlauts!</p>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>3. Consonants</h3>
+                <p>Most German consonants are like English, but watch these:</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>B, D, G</em>: At the <strong>end</strong> of a word, they sound like <em>p, t, k</em>.</li>
+                        <li><em>Hund</em> (dog) sounds like "Hunt."</li>
+                        <li><em>Tag</em> (day) sounds like "Tak."</li>
+                        <li><em>Ch</em>: Two sounds:</li>
+                        <li>After <em>a, o, u</em> – like a cat hiss from the throat (e.g., <em>Buch</em> – "book").</li>
+                        <li>After <em>e, i</em> – softer, like "h" in "huge" (e.g., <em>ich</em> – "I").</li>
+                        <li><em>R</em>: A little growl in the throat (e.g., <em>rot</em> – "red").</li>
+                        <li><em>S</em>: Before <em>p</em> or <em>t</em>, it’s like "sh" (e.g., <em>Spinne</em> – "spider" sounds "Shpinne").</li>
+                        <li><em>ß</em>: Like a sharp "s" (e.g., <em>Straße</em> – "street").</li>
+                        <li><em>W</em>: Like English "v" (e.g., <em>Wasser</em> – "Vasser" – "water").</li>
+                        <li><em>V</em>: Usually like "f" (e.g., <em>Vogel</em> – "Fogel" – "bird").</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>4. Stress</h3>
+                <div class="examples">
+                    <p>German words usually stress the <strong>first syllable</strong>:</p>
+                    <ul class="example-list">
+                        <li><em>Apfel</em> – "AP-fel" (apple).</li>
+                        <li><em>Hallo</em> – "HAL-lo" (hello).</li>
+                    </ul>
+                    <p>If there’s a prefix (like <em>ver-</em> or <em>be-</em>), the stress might stay on the root word:</p>
+                    <ul class="example-list">
+                        <li><em>verstehen</em> – "fer-SHTAY-en" (to understand).</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Listening Skills -->
+        <section id="listening">
+            <h2>Listening Skills: How to Understand Spoken German</h2>
+            <div class="subsection">
+                <p>
+                    German can sound fast or mumbled at first, but your ears will adjust with practice. Here’s how to get better at listening:
+                </p>
+            </div>
+            <div class="subsection">
+                <h3>1. Start Slow</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>Begin with slow, clear speech—like beginner videos or podcasts.</li>
+                        <li>Focus on catching <strong>key words</strong> (nouns, verbs) instead of every word.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>2. Repeat and Mimic</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>Listen to a sentence, pause, and repeat it out loud.</li>
+                        <li>Example: Hear <em>Ich gehe zur Schule</em> (I go to school), then say it yourself.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>3. Use Subtitles</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>Watch videos with German subtitles first, then turn them off.</li>
+                        <li>Example: <em>Der Hund bellt</em> (The dog barks)—see it, hear it, say it.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>4. Everyday Words First</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>Hallo</em> (hello), <em>Danke</em> (thanks), <em>Ja</em> (yes), <em>Nein</em> (no), <em>Bitte</em> (please).</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>5. Listen Actively</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>Guess meanings from context (e.g., <em>Hund</em> + barking sound = "dog").</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practice Tips -->
+        <section id="practice-tips">
+            <h2>Practice Tips for Listening and Pronunciation</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Shadowing:</strong> Play a sentence, then say it at the same time as the speaker.</li>
+                    <li><strong>Record Yourself:</strong> Record saying words like <em>Haus</em> or <em>ich</em>. Compare to a native speaker.</li>
+                    <li><strong>Break Words Down:</strong> Say <em>Mädchen</em> (girl) as "Mäd-chen" slowly, then speed up.</li>
+                    <li><strong>Sing Songs:</strong> Try "99 Luftballons" for rhythm and pronunciation.</li>
+                    <li><strong>Talk to Yourself:</strong> Say <em>Ich bin müde</em> (I’m tired) around the house.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- YouTube Channels -->
+        <section id="youtube">
+            <h2>YouTube Channels for Pronunciation and Listening</h2>
+            <div class="subsection">
+                <p>Here are some awesome YouTube channels where you can watch native speakers teach pronunciation and practice listening.</p>
+            </div>
+            <div class="subsection">
+                <h3>1. Learn German with Anja</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><strong>Why It’s Great:</strong> Anja speaks clearly and breaks down sounds like <em>ch</em> and <em>ü</em>.</li>
+                        <li><strong>What You’ll Find:</strong> Pronunciation lessons, beginner vocab, listening practice.</li>
+                        <li><strong>Link:</strong> <a href="https://www.youtube.com/@GermanwithAnja" target="_blank">Learn German with Anja</a></li>
+                        <li><strong>Try This:</strong> Her video on German sounds like <em>r</em> and umlauts.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>2. Deutsch für Euch</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><strong>Why It’s Great:</strong> Katja teaches in English and German, focusing on clear pronunciation.</li>
+                        <li><strong>What You’ll Find:</strong> Lessons on tricky sounds (<em>ch</em>, <em>ß</em>), plus vocab.</li>
+                        <li><strong>Link:</strong> <a href="https://www.youtube.com/@DeutschFuerEuch" target="_blank">Deutsch für Euch</a></li>
+                        <li><strong>Try This:</strong> Her first episode on pronunciation basics.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>3. Easy German</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><strong>Why It’s Great:</strong> Real street interviews with subtitles in German and English.</li>
+                        <li><strong>What You’ll Find:</strong> Everyday conversations to train your ears.</li>
+                        <li><strong>Link:</strong> <a href="https://www.youtube.com/@EasyGerman" target="_blank">Easy German</a></li>
+                        <li><strong>Try This:</strong> "What Do Germans Think About…?" videos.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>4. Get Germanized</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><strong>Why It’s Great:</strong> Dominik explains pronunciation and culture in a chill way.</li>
+                        <li><strong>What You’ll Find:</strong> Lessons on sounds, slang, and real German.</li>
+                        <li><strong>Link:</strong> <a href="https://www.youtube.com/@MeisterLehnsherr" target="_blank">Get Germanized</a></li>
+                        <li><strong>Try This:</strong> His video on German <em>r</em> and <em>ch</em> sounds.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>5. LanguageSheep</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><strong>Why It’s Great:</strong> Focuses on tough sounds like <em>ch</em>, <em>r</em>, and umlauts.</li>
+                        <li><strong>What You’ll Find:</strong> Sound breakdowns and listening drills.</li>
+                        <li><strong>Link:</strong> <a href="https://www.youtube.com/@LanguageSheep" target="_blank">LanguageSheep</a></li>
+                        <li><strong>Try This:</strong> Videos on <em>ch</em> pronunciation.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Common Challenges -->
+        <section id="challenges">
+            <h2>Common Pronunciation Challenges (and Fixes)</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Ch Sound:</strong></li>
+                    <li>After <em>a, o, u</em>: Practice a throaty hiss (e.g., <em>Bach</em> – "stream").</li>
+                    <li>After <em>e, i</em>: Softer, like "sh" but lighter (e.g., <em>mich</em> – "me").</li>
+                    <li>Fix: Gargle water lightly, then try without water.</li>
+                    <li><strong>R Sound:</strong></li>
+                    <li>Not rolled—more like a soft growl.</li>
+                    <li>Fix: Say "uh" and add a gentle throat rumble (e.g., <em>rot</em> – "red").</li>
+                    <li><strong>Umlauts (Ä, Ö, Ü):</strong></li>
+                    <li>Round your lips and push the sound forward.</li>
+                    <li>Fix: Practice <em>Mädchen</em>, <em>König</em>, <em>Mütter</em> in front of a mirror.</li>
+                    <li><strong>W vs. V:</strong></li>
+                    <li><em>W</em> is "v" (e.g., <em>Wasser</em> – "Vasser").</li>
+                    <li><em>V</em> is "f" (e.g., <em>Vater</em> – "Fater" – "father").</li>
+                    <li>Fix: Swap them in practice sentences.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Practice Exercises -->
+        <section id="practice">
+            <h2>Practice Exercises</h2>
+            <div class="subsection">
+                <h3>Exercise 1: Repeat After Me</h3>
+                <p>Say these words out loud, focusing on the bold sounds:</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>Haus</em> – short <strong>au</strong> like "ow."</li>
+                        <li><em>See</em> – long <strong>ee</strong> like "say."</li>
+                        <li><em>ich</em> – soft <strong>ch</strong> like "huge."</li>
+                        <li><em>rot</em> – throaty <strong>r</strong>.</li>
+                        <li><em>Mädchen</em> – bright <strong>ä</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Exercise 2: Listen and Match</h3>
+                <p>Watch a video from one of the channels above. Write down 5 words you hear, then repeat them. Check if you got the sounds right by replaying.</p>
+            </div>
+            <div class="subsection">
+                <h3>Exercise 3: Sentence Practice</h3>
+                <p>Say these sentences slowly, then faster:</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>Ich sehe den Hund.</em> (I see the dog.)</li>
+                        <li>Focus: <em>ch</em> in <em>ich</em>, <em>e</em> in <em>sehe</em>.</li>
+                        <li><em>Der König wohnt hier.</em> (The king lives here.)</li>
+                        <li>Focus: <em>ö</em> in <em>König</em>.</li>
+                        <li><em>Wir fahren zum Park.</em> (We drive to the park.)</li>
+                        <li>Focus: <em>w</em> like "v", <em>r</em> in <em>fahren</em>.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips -->
+        <section id="tips">
+            <h2>Tips to Improve Fast</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Daily Listening:</strong> Spend 10 minutes with a YouTube video or German song.</li>
+                    <li><strong>Mimic Native Speakers:</strong> Copy their tone and speed from the channels.</li>
+                    <li><strong>Focus on One Sound:</strong> Pick <em>ch</em> or <em>r</em> and practice it all week.</li>
+                    <li><strong>Talk Out Loud:</strong> Say words like <em>Hallo</em> or <em>Danke</em> daily.</li>
+                    <li><strong>Be Patient:</strong> Your tongue and ears need time to adjust—keep going!</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Final Thoughts -->
+        <section id="final-thoughts">
+            <h2>Wrapping Up</h2>
+            <p>
+                You’ve got the tools to master German listening and pronunciation! Start with the basics—vowels, umlauts, and tricky consonants—then practice with the YouTube channels I linked. Listen every day, repeat what you hear, and soon you’ll sound more German than you think. Check out <em>Learn German with Anja</em> or <em>Easy German</em> to hear real voices and practice along. <em>Viel Spaß beim Üben!</em> (Have fun practicing!)
+            </p>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="nouns.html" class="see-also-btn">German Nouns</a>
+                <a href="structure.html" class="see-also-btn">German Sentence Structure</a>
+                <a href="prepositions.html" class="see-also-btn">German Prepositions</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="structure.html" class="next-btn">Next: German Sentence Structure →</a>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('.toggle-btn');
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const hiddenContent = this.nextElementSibling;
+                    if (hiddenContent.classList.contains('hidden')) {
+                        hiddenContent.classList.remove('hidden');
+                    } else {
+                        hiddenContent.classList.add('hidden');
+                    }
+                });
+            });
+
+            const modeToggle = document.getElementById('mode-toggle');
+            const body = document.body;
+            modeToggle.addEventListener('click', function() {
+                body.classList.toggle('dark-mode');
+                const isDark = body.classList.contains('dark-mode');
+                modeToggle.querySelector('svg').setAttribute('d', isDark ? 
+                    'M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z' : 
+                    'M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z');
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

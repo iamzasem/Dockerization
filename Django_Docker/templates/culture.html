@@ -1,0 +1,432 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}German Culture{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/culture.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+                <a href="index.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="javascript:history.back()" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>German Culture: An Epic Journey</h1>
+            <p>
+                German culture is a treasure chest overflowing with history, traditions, and surprises that have shaped the world in ways you might not expect. From ancient tribes to a modern powerhouse, Germany’s story is packed with fascinating moments, mouthwatering foods, incredible music, and quirky customs. This super-duper long guide dives deep into Germany’s past, its vibrant culture, tasty dishes, musical legacy, political evolution, and its unexpected ties with Nepal. I’ll sprinkle in <strong>surprising facts</strong>, <strong>interesting facts</strong>, and <strong>cool data</strong> to make it extra juicy. Plus, I’ll suggest spots for imaginary images, link to articles, and share YouTube channels for more. Get ready for a massive, exciting adventure!
+            </p>
+        </section>
+
+        <!-- History Section -->
+        <section id="history">
+            <h2>The History of Germany: From Tribes to Today</h2>
+            <p>Germany’s history is a rollercoaster of triumphs, struggles, and rebirths. Here’s the full scoop.</p>
+
+            <div class="subsection">
+                <h3>Ancient Times: Germanic Tribes (Before 100 AD)</h3>
+                <p>
+                    Before Germany was a country, it was a wild land of Germanic tribes like the Cherusci, Suebi, and Saxons. These folks were tough—farmers, hunters, and warriors who loved freedom. In 9 AD, Arminius, a Germanic chieftain, ambushed three Roman legions in the Teutoburg Forest, stopping Rome’s push north. No fancy cities yet, just scattered tribes speaking early Germanic tongues.
+                </p>
+                <div class="examples">
+                    <p><strong>Surprising Fact:</strong> Arminius was trained by the Romans before betraying them—talk about a double agent!</p>
+                    <img src="one.jpg" alt="Germanic warriors facing Roman soldiers">
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>Holy Roman Empire (800–1806)</h3>
+                <p>
+                    In 800 AD, Charlemagne got crowned Emperor, starting the Holy Roman Empire—a loose collection of German-speaking lands. It wasn’t one tight nation but a patchwork of kingdoms and cities, buzzing with trade, art, and ideas. It lasted over 1,000 years until Napoleon crushed it in 1806.
+                </p>
+                <div class="examples">
+                    <p><strong>Interesting Fact:</strong> The Empire’s full name was “Holy Roman Empire of the German Nation”—quite a mouthful!</p>
+                    <p><strong>Data:</strong> At its peak, it had over 300 tiny states—imagine the chaos!</p>
+                    <img src="two.jpg" alt="Medieval town with cathedral and knights">
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>Prussia and Unification (1815–1871)</h3>
+                <p>
+                    After Napoleon’s mess, Prussia—a strong northern state—rose up. Otto von Bismarck, a crafty leader, united Germany in 1871 after beating France in the Franco-Prussian War. The new German Empire was born, with factories booming and an army to match.
+                </p>
+                <div class="examples">
+                    <p><strong>Surprising Fact:</strong> Bismarck once fought 25 duels as a student and never lost—tough guy!</p>
+                    <img src="three.jpg" alt="Bismarck with a map of Germany">
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>World Wars and Division (1914–1945)</h3>
+                <p>
+                    Germany leapt into World War I (1914–1918), lost, and fell into chaos with the Weimar Republic. Then came Hitler and the Nazis in 1933, sparking World War II (1939–1945). After defeat, Germany split in 1949: West Germany (democratic) and East Germany (communist).
+                </p>
+                <div class="examples">
+                    <p><strong>Interesting Fact:</strong> During WWII, Germany built the world’s first jet fighter, the Messerschmitt Me 262—too late to win, though.</p>
+                    <p><strong>Data:</strong> The Berlin Wall, built in 1961, was 155 kilometers long—dividing families for 28 years.</p>
+                    <img src="four.jpg" alt="Berlin in rubble with Brandenburg Gate">
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>Reunification and Modern Germany (1990–Today)</h3>
+                <p>
+                    The Berlin Wall fell in 1989, and Germany reunited in 1990. Now, it’s Europe’s economic giant, a leader in the EU, and a global voice for peace and green tech.
+                </p>
+                <div class="examples">
+                    <p><strong>Surprising Fact:</strong> Reunification cost over €2 trillion—Germany rebuilt half a country!</p>
+                    <img src="five.jpg" alt="Crowd tearing down Berlin Wall with fireworks">
+                </div>
+            </div>
+        </section>
+
+        <!-- Traditions and Everyday Life -->
+        <section id="traditions">
+            <h2>German Culture: Traditions and Everyday Life</h2>
+            <p>German culture is a blend of old-school charm and modern coolness, with surprises around every corner.</p>
+
+            <div class="subsection">
+                <h3>Traditions</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><strong>Oktoberfest:</strong> Started in 1810 for a prince’s wedding, now it’s a Munich mega-party. Over 6 million people drink beer and munch pretzels yearly.
+                            <ul>
+                                <li><strong>Surprising Fact:</strong> The beer tents serve over 7 million liters of beer—enough to fill 3 Olympic pools!</li>
+                                <li><img src="six.jpg" alt="Oktoberfest with beer mugs and pretzels"></li>
+                            </ul>
+                        </li>
+                        <li><strong>Christmas Markets:</strong> Since the 14th century, these winter fairs sell Glühwein (mulled wine) and crafts. Dresden’s market is the oldest, from 1434.
+                            <ul>
+                                <li><strong>Interesting Fact:</strong> Germans invented the Christmas tree—thank them next December!</li>
+                            </ul>
+                        </li>
+                        <li><strong>Karneval/Fasching:</strong> A wild pre-Lent party in places like Cologne, with costumes and parades.
+                            <ul>
+                                <li><strong>Data:</strong> Cologne’s Karneval draws 1.5 million people—crazy crowds!</li>
+                            </ul>
+                        </li>
+                        <li><strong>Schultüte:</strong> Kids get a giant cone of treats on their first school day—sweet motivation!</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>Everyday Life</h3>
+                <p>
+                    Germans are <strong>punctual</strong>—5 minutes early is on time. <strong>Recycling Kings:</strong> They sort trash into 5+ bins—over 60% of waste gets recycled! <strong>Bread Obsession:</strong> With 3,200 types of bread, it’s a UNESCO cultural treasure.
+                </p>
+                <div class="examples">
+                    <p><strong>Surprising Fact:</strong> Germans can legally drink beer at 16—earlier than driving!</p>
+                    <img src="seven.jpg" alt="Tidy street with bakery and clock">
+                </div>
+            </div>
+        </section>
+
+        <!-- Foods Section -->
+        <section id="foods">
+            <h2>German Foods: Hearty, Tasty, and Full of Surprises</h2>
+            <p>German cuisine is all about filling your belly with flavor—and some unexpected twists.</p>
+
+            <div class="subsection">
+                <h3>Classics</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><strong>Bratwurst:</strong> Grilled sausages with mustard—over 40 varieties exist!
+                            <ul>
+                                <li><strong>Interesting Fact:</strong> Nuremberg’s tiny Rostbratwurst are so famous, they’re EU-protected.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Sauerkraut:</strong> Fermented cabbage—good for your gut and great with pork.</li>
+                        <li><strong>Schnitzel:</strong> Breaded meat, fried crispy—Wiener Schnitzel’s actually Austrian, but Germans love it.
+                            <ul>
+                                <li><img src="eight.jpg" alt="Schnitzel with sauerkraut"></li>
+                            </ul>
+                        </li>
+                        <li><strong>Pretzels:</strong> Soft, salty, and twisted—Bavaria’s pride.</li>
+                        <li><strong>Black Forest Cake:</strong> Chocolate, cherries, and cream—named after a forest, not the color.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>Regional Gems</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><strong>North:</strong> <em>Labskaus</em>—a weird mix of corned beef, beets, and potatoes, topped with a fried egg.
+                            <ul>
+                                <li><strong>Surprising Fact:</strong> Sailors ate it to fight scurvy—those beets helped!</li>
+                            </ul>
+                        </li>
+                        <li><strong>South:</strong> <em>Weißwurst</em>—white sausage with sweet mustard, eaten before noon.</li>
+                        <li><strong>East:</strong> <em>Rinderroulade</em>—beef rolls stuffed with bacon and pickles.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>Drinks</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><strong>Beer:</strong> Over 7,000 brands—Pilsner, Weißbier, you name it.
+                            <ul>
+                                <li><strong>Data:</strong> Germans drink 104 liters of beer per person yearly—tops in Europe!</li>
+                                <li><img src="nine.jpg" alt="Weißbier with pretzel"></li>
+                            </ul>
+                        </li>
+                        <li><strong>Wine:</strong> Riesling’s the star—Germany’s vineyards date back to Roman times.</li>
+                        <li><strong>Apfelwein:</strong> Apple cider from Frankfurt—tart and refreshing.</li>
+                    </ul>
+                    <p><strong>Surprising Fact:</strong> Germans invented gummy bears—Haribo’s from Bonn!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Music Section -->
+        <section id="music">
+            <h2>German Music: From Classical to Crazy</h2>
+            <p>Germany’s music history is legendary, with surprises that’ll make you tap your feet.</p>
+
+            <div class="subsection">
+                <h3>Classical Masters</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><strong>Bach:</strong> Baroque king—his <em>Brandenburg Concertos</em> are pure gold.</li>
+                        <li><strong>Beethoven:</strong> Deaf by his late years, still wrote <em>Symphony No. 9</em>.
+                            <ul>
+                                <li><strong>Interesting Fact:</strong> His “Ode to Joy” is the EU’s anthem!</li>
+                            </ul>
+                        </li>
+                        <li><strong>Wagner:</strong> Opera titan—his <em>Ride of the Valkyries</em> is epic.
+                            <ul>
+                                <li><img src="ten.jpg" alt="Beethoven composing by candlelight"></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>Folk Tunes</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><strong>Oom-Pah:</strong> Brass bands at Oktoberfest—think tubas and accordions.</li>
+                        <li><strong>Schlager:</strong> Cheesy pop hits like <em>Ein Stern</em> by DJ Ötzi—Germans adore it.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>Modern Beats</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><strong>Kraftwerk:</strong> Electronic pioneers—<em>Autobahn</em> (1974) changed music forever.</li>
+                        <li><strong>Rammstein:</strong> Metal with fire shows—<em>Du Hast</em> is a global hit.
+                            <ul>
+                                <li><strong>Surprising Fact:</strong> They’ve been banned in some places for wild lyrics!</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p><strong>Data:</strong> Germany’s music market is worth €2 billion—third globally!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Politics Section -->
+        <section id="politics">
+            <h2>German Politics: Strength and Smarts</h2>
+            <p>Germany’s political path is a comeback story with big impact.</p>
+
+            <div class="subsection">
+                <h3>Past to Present</h3>
+                <p>
+                    Post-WWII, West Germany rebuilt as a democracy, East went communist. Reunited in 1990, it’s now a federal republic with 16 states. <strong>Chancellor Power:</strong> Angela Merkel (2005–2021) was called the “world’s most powerful woman.” <strong>EU Leader:</strong> Germany pumps €370 billion yearly into the EU economy.
+                </p>
+                <div class="examples">
+                    <p><strong>Surprising Fact:</strong> Germany’s constitution (Grundgesetz) from 1949 is still rocking—no amendments needed for reunification!</p>
+                    <img src="eleven.jpg" alt="Reichstag glass dome glowing">
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>Cool Stats</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><strong>Data:</strong> 83 million people—Europe’s most populous nation.</li>
+                        <li><strong>Green Goals:</strong> Aims for 80% renewable energy by 2050—wind turbines everywhere!</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Germany and Nepal -->
+        <section id="nepal-relations">
+            <h2>Germany and Nepal: A Hidden Friendship</h2>
+            <p>Germany and Nepal share a cool bond—small but mighty.</p>
+
+            <div class="subsection">
+                <h3>Ties</h3>
+                <p>
+                    <strong>Diplomacy:</strong> Started in 1958—Germany’s been aiding Nepal with schools and solar power. <strong>Travel:</strong> Germans flock to Nepal’s Himalayas—over 20,000 visit yearly. <strong>Community:</strong> 4,000+ Nepalis in Germany bring <em>momo</em> and Dashain vibes.
+                </p>
+                <div class="examples">
+                    <p><strong>Interesting Fact:</strong> German climbers helped map Everest in the ‘20s!</p>
+                    <img src="twelve.jpg" alt="German trekker with momo and Everest">
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>Trade and Aid</h3>
+                <p>
+                    Nepal exports carpets; Germany sends tech. <strong>Data:</strong> Germany’s given Nepal €500 million in aid since the ‘60s.
+                </p>
+            </div>
+        </section>
+
+        <!-- Surprising and Interesting Facts -->
+        <section id="facts">
+            <h2>Surprising and Interesting Facts About German Culture</h2>
+
+            <div class="subsection">
+                <h3>Surprising Facts</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><strong>Longest Word:</strong> <em>Rindfleischetikettierungsüberwachungsaufgabenübertragungsgesetz</em> (63 letters)—a beef labeling law!</li>
+                        <li><strong>Toilet Tech:</strong> Germans invented the flush toilet in 1775—thanks, Johann!</li>
+                        <li><strong>Car Pioneers:</strong> Karl Benz made the first car in 1885—hello, Mercedes!</li>
+                        <li><strong>Book Heaven:</strong> Frankfurt Book Fair is the world’s oldest, from 1454.</li>
+                        <li><strong>Zoo Stars:</strong> Berlin Zoo has more species (1,500) than anywhere else.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>Interesting Facts</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><strong>No Speed Limit:</strong> Parts of the Autobahn let you zoom—no cap!</li>
+                        <li><strong>Fairy Tales:</strong> The Brothers Grimm (Hansel and Gretel) were German—spooky stuff!</li>
+                        <li><strong>Clock Crazy:</strong> The cuckoo clock came from the Black Forest.</li>
+                        <li><strong>Bread Law:</strong> Bakeries can’t call bread “bread” unless it’s traditional—serious rules!</li>
+                        <li><strong>Data:</strong> 91% of Germans speak German as their first language—super unified!</li>
+                    </ul>
+                    <img src="thirteen.jpg" alt="Car on Autobahn with castle and cuckoo clock">
+                </div>
+            </div>
+        </section>
+
+        <!-- Links to Explore More -->
+        <section id="links">
+            <h2>Links to Explore More</h2>
+
+            <div class="subsection">
+                <h3>Articles</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><div class="link-box"><a href="https://www.expatica.com/de/lifestyle/culture/" target="_blank">German Culture on Expatica</a> – Everyday life details.</div></li>
+                        <li><div class="link-box"><a href="https://www.seriouseats.com/german-food-guide" target="_blank">German Food History on Serious Eats</a> – Deep food dive.</div></li>
+                        <li><div class="link-box"><a href="https://www.dw.com/en/german-music/a-18842863" target="_blank">German Music on DW</a> – Classical to modern.</div></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>YouTube Channels</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><div class="link-box"><strong>Easy German:</strong> Real chats about culture. <a href="https://www.youtube.com/@EasyGerman" target="_blank">[Easy German]</a></div></li>
+                        <li><div class="link-box"><strong>Get Germanized:</strong> Fun facts and traditions. <a href="https://www.youtube.com/@MeisterLehnsherr" target="_blank">[Get Germanized]</a></div></li>
+                        <li><div class="link-box"><strong>DW Euromaxx:</strong> Slick culture vids. <a href="https://www.youtube.com/@dw_euromaxx" target="_blank">[DW Euromaxx]</a></div></li>
+                        <li><div class="link-box"><strong>Wolle’s World:</strong> Travel and culture gems. <a href="https://www.youtube.com/@WoltersWorld" target="_blank">[Wolle’s World]</a></div></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practice Time -->
+        <section id="practice">
+            <h2>Practice Time!</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Speak:</strong> Say <em>Ich liebe deutsche Kultur!</em> (I love German culture!) 5 times.</li>
+                    <li><strong>Eat:</strong> Make a mini-pretzel or sausage snack—taste the culture!</li>
+                    <li><strong>Watch:</strong> Pick a DW Euromaxx video and note 3 cool facts.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Wrapping Up -->
+        <section id="conclusion">
+            <h2>Wrapping Up</h2>
+            <p>
+                Germany’s culture is a giant, thrilling mix of history, food, music, politics, and wild facts—like inventing gummy bears and having no speed limits! From ancient tribes to Berlin’s buzz, it’s a land of depth and surprises. Nepal’s in the mix too, with trekkers and momo. Check the links, watch the channels, and dive into this amazing world. <em>Auf Wiedersehen und viel Spaß!</em> (Goodbye and have fun!)
+            </p>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="nouns.html" class="see-also-btn">German Nouns</a>
+                <a href="articles.html" class="see-also-btn">German Articles</a>
+                <a href="adjectives.html" class="see-also-btn">German Adjectives</a>
+                <a href="conjugation.html" class="see-also-btn">German Conjugation</a>
+                <a href="cases.html" class="see-also-btn">German Cases</a>
+                <a href="prepositions.html" class="see-also-btn">German Prepositions</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="nouns.html" class="next-btn">Next: German Nouns →</a>
+        </div>
+    </main>
+
+    <script>
+        // Inline JavaScript for toggle functionality and dark/light mode
+        document.addEventListener('DOMContentLoaded', function() {
+            // Toggle content
+            const buttons = document.querySelectorAll('.toggle-btn');
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const hiddenContent = this.nextElementSibling;
+                    if (hiddenContent.classList.contains('hidden')) {
+                        hiddenContent.classList.remove('hidden');
+                    } else {
+                        hiddenContent.classList.add('hidden');
+                    }
+                });
+            });
+
+            // Dark/Light mode toggle
+            const modeToggle = document.getElementById('mode-toggle');
+            const body = document.body;
+            modeToggle.addEventListener('click', function() {
+                body.classList.toggle('dark-mode');
+                const isDark = body.classList.contains('dark-mode');
+                modeToggle.querySelector('svg').setAttribute('d', isDark ? 
+                    'M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z' : 
+                    'M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z');
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

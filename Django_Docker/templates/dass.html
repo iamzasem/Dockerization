@@ -1,0 +1,557 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}German Dass: The Complete Guide to “That”{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/dass.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+                <a href="index.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="javascript:history.back()" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>German <em>Dass</em>: The Complete Guide to “That”</h1>
+            <p>
+                The word <strong>dass</strong> (with double <em>s</em>) means “that” in German and is a subordinating conjunction. It’s used to introduce a statement or fact—like “I know that you’re here” or “She said that it’s true.” This guide explores how <em>dass</em> functions, its special word order, practical examples across contexts, and exercises to lock it in. It’s deep, clear, and packed with practice—let’s get started!
+            </p>
+        </section>
+
+        <!-- What is Dass? -->
+        <section id="what-is-dass">
+            <h2>What is <em>Dass</em>?</h2>
+            <p><em>Dass</em> connects a main clause (Hauptsatz) with a subordinate clause (Nebensatz) to explain something believed, known, said, or thought. It’s like a bridge that introduces a fact or statement.</p>
+            <div class="subsection">
+                <h3>Key Features</h3>
+                <ul class="example-list">
+                    <li><strong>Subordinating Conjunction</strong>: It makes the clause it introduces dependent.</li>
+                    <li><strong>Word Order</strong>: The verb in the <em>dass</em> clause goes to the <strong>end</strong>.</li>
+                    <li><strong>Spelling</strong>: <em>Dass</em> (conjunction) vs. <em>das</em> (article/pronoun)—don’t mix them up!</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>Basic Structure</h3>
+                <p><strong>Main Clause</strong>: Normal word order (subject + verb). <strong>Dass Clause</strong>: <em>Dass</em> + subject + other stuff + verb (at the end).</p>
+                <ul class="example-list">
+                    <li><em>Ich weiß, dass du hier bist.</em>
+                        <ul>
+                            <li>Main: <em>Ich weiß</em> (I know).</li>
+                            <li>Dass: <em>dass du hier bist</em> (that you are here—verb <em>bist</em> at the end).</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- How to Use Dass -->
+        <section id="using-dass">
+            <h2>How to Use <em>Dass</em></h2>
+            <div class="subsection">
+                <h3>After Verbs of Knowing, Thinking, or Saying</h3>
+                <p><em>Dass</em> often follows verbs like <em>wissen</em> (to know), <em>denken</em> (to think), <em>sagen</em> (to say), or <em>glauben</em> (to believe).</p>
+                <ul class="example-list">
+                    <li><em>Ich weiß, dass es regnet.</em> (I know that it’s raining.)</li>
+                    <li><em>Er denkt, dass wir kommen.</em> (He thinks that we’re coming.)</li>
+                    <li><em>Sie sagt, dass sie müde ist.</em> (She says that she’s tired.)</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>After Expressions of Feeling</h3>
+                <p>Use <em>dass</em> with feelings like <em>es freut mich</em> (I’m happy) or <em>es tut mir leid</em> (I’m sorry).</p>
+                <ul class="example-list">
+                    <li><em>Es freut mich, dass du gewonnen hast.</em> (I’m happy that you won.)</li>
+                    <li><em>Es tut mir leid, dass er krank ist.</em> (I’m sorry that he’s sick.)</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>Optional Dass</h3>
+                <p>In informal speech, <em>dass</em> can sometimes be dropped, leaving an infinitive or normal word order (but this isn’t standard).</p>
+                <ul class="example-list">
+                    <li>Formal: <em>Ich hoffe, dass du kommst.</em> (I hope that you come.)</li>
+                    <li>Informal: <em>Ich hoffe, du kommst.</em> (I hope you come.)</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>Punctuation</h3>
+                <p>Use a <strong>comma</strong> before <em>dass</em> to separate the main clause and the <em>dass</em> clause.</p>
+                <ul class="example-list">
+                    <li><em>Ich glaube, dass es stimmt.</em> (I believe that it’s true.)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Word Order with Dass -->
+        <section id="word-order">
+            <h2>Word Order with <em>Dass</em></h2>
+            <p>The big rule: In a <em>dass</em> clause, the <strong>conjugated verb</strong> goes to the end. If there’s a helping verb (e.g., in Perfekt), the auxiliary (<em>haben/sein</em>) goes last, after the participle.</p>
+            <div class="subsection">
+                <h3>Examples</h3>
+                <ul class="example-list">
+                    <li>Present: <em>Ich sehe, dass du spielst.</em> (I see that you’re playing—<em>spielst</em> at the end.)</li>
+                    <li>Perfekt: <em>Er sagt, dass er gearbeitet hat.</em> (He says that he worked—<em>hat</em> at the end.)</li>
+                    <li>Modal: <em>Sie weiß, dass ich kommen kann.</em> (She knows that I can come—<em>kann</em> at the end.)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Example Sentences -->
+        <section id="examples">
+            <h2>Tons of Example Sentences</h2>
+            <div class="subsection">
+                <h3>Daily Life</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Ich weiß, dass es heute regnet.</em> (I know that it’s raining today.)</li>
+                        <li><em>Sie glaubt, dass ich zu spät bin.</em> (She believes that I’m too late.)</li>
+                        <li><em>Er sagt, dass er Hunger hat.</em> (He says that he’s hungry.)</li>
+                        <li><em>Ich hoffe, dass das Wetter besser wird.</em> (I hope that the weather gets better.)</li>
+                        <li><em>Wir sehen, dass die Kinder spielen.</em> (We see that the children are playing.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>School and Work</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Der Lehrer erklärt, dass die Prüfung schwer ist.</em> (The teacher explains that the exam is hard.)</li>
+                        <li><em>Ich denke, dass ich morgen fertig bin.</em> (I think that I’ll be done tomorrow.)</li>
+                        <li><em>Sie weiß, dass die Arbeit wichtig ist.</em> (She knows that the work is important.)</li>
+                        <li><em>Er sagt, dass er Überstunden gemacht hat.</em> (He says that he worked overtime.)</li>
+                        <li><em>Wir hoffen, dass der Chef zufrieden ist.</em> (We hope that the boss is satisfied.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Friends and Feelings</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Es freut mich, dass du hier bist.</em> (I’m happy that you’re here.)</li>
+                        <li><em>Ich bin sicher, dass sie mich mag.</em> (I’m sure that she likes me.)</li>
+                        <li><em>Er erzählt, dass er im Urlaub war.</em> (He tells us that he was on vacation.)</li>
+                        <li><em>Es tut mir leid, dass du traurig bist.</em> (I’m sorry that you’re sad.)</li>
+                        <li><em>Sie glaubt, dass das Spiel Spaß macht.</em> (She believes that the game is fun.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Past Tense (Perfekt and Präteritum)</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Ich weiß, dass du gestern gekommen bist.</em> (I know that you came yesterday.)</li>
+                        <li><em>Er sagt, dass er das Buch gelesen hat.</em> (He says that he read the book.)</li>
+                        <li><em>Sie denkt, dass wir es konnten.</em> (She thinks that we could do it.)</li>
+                        <li><em>Ich hoffe, dass sie geschlafen hat.</em> (I hope that she slept.)</li>
+                        <li><em>Wir sehen, dass er gelaufen ist.</em> (We see that he ran.)</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deep Details and Nuances -->
+        <section id="nuances">
+            <h2>Deep Details and Nuances</h2>
+            <div class="subsection">
+                <h3><em>Dass</em> vs. <em>Das</em></h3>
+                <ul class="example-list">
+                    <li><em>Dass</em> (conjunction): Introduces a clause with verb at the end.
+                        <ul><li><em>Ich weiß, dass du recht hast.</em> (I know that you’re right.)</li></ul>
+                    </li>
+                    <li><em>Das</em> (article/pronoun): Stands alone or with a noun, no verb shift.
+                        <ul><li><em>Ich weiß das.</em> (I know that—pronoun, no clause.)</li>
+                            <li><em>Das ist mein Buch.</em> (That is my book—article.)</li></ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>Verbs That Love <em>Dass</em></h3>
+                <ul class="example-list">
+                    <li>Knowledge: <em>wissen, verstehen</em> (understand).</li>
+                    <li>Opinion: <em>denken, glauben, meinen</em> (mean/opine).</li>
+                    <li>Speech: <em>sagen, erzählen, erklären</em> (explain).</li>
+                    <li>Feeling: <em>freuen, leid tun, hoffen</em>.</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>Questions to <em>Dass</em></h3>
+                <p>Indirect questions often use <em>dass</em> instead of a question word.</p>
+                <ul class="example-list">
+                    <li>Direct: <em>Wann kommst du?</em> (When are you coming?)</li>
+                    <li>Indirect: <em>Ich frage, dass du kommst.</em> (I ask that you’re coming—verb at end.)</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>Avoiding <em>Dass</em></h3>
+                <ul class="example-list">
+                    <li>With <em>zu</em> + infinitive: <em>Ich hoffe, dich zu sehen.</em> (I hope to see you.)</li>
+                    <li>Informal: <em>Ich denke, er ist hier.</em> (I think he’s here—no <em>dass</em>.)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Exercises -->
+        <section id="practice">
+            <h2>Creative Exercises with Multiple-Choice Options</h2>
+
+            <div class="subsection" id="exercise1">
+                <h3>Exercise 1: Pick the Correct <em>Dass</em> Sentence</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>I know that you’re tired.
+                            <select class="answer-select" data-correct="Ich weiß, dass du müde bist.">
+                                <option value="">Select</option>
+                                <option value="Ich weiß, dass du müde bist.">Ich weiß, dass du müde bist.</option>
+                                <option value="Ich weiß, dass du bist müde.">Ich weiß, dass du bist müde.</option>
+                                <option value="Ich weiß, dass müde du bist.">Ich weiß, dass müde du bist.</option>
+                            </select>
+                        </li>
+                        <li>She says that it’s cold.
+                            <select class="answer-select" data-correct="Sie sagt, dass es kalt ist.">
+                                <option value="">Select</option>
+                                <option value="Sie sagt, dass es kalt ist.">Sie sagt, dass es kalt ist.</option>
+                                <option value="Sie sagt, dass es ist kalt.">Sie sagt, dass es ist kalt.</option>
+                                <option value="Sie sagt, dass kalt es ist.">Sie sagt, dass kalt es ist.</option>
+                            </select>
+                        </li>
+                        <li>We hope that he comes.
+                            <select class="answer-select" data-correct="Wir hoffen, dass er kommt.">
+                                <option value="">Select</option>
+                                <option value="Wir hoffen, dass er kommt.">Wir hoffen, dass er kommt.</option>
+                                <option value="Wir hoffen, dass er kommen tut.">Wir hoffen, dass er kommen tut.</option>
+                                <option value="Wir hoffen, dass kommt er.">Wir hoffen, dass kommt er.</option>
+                            </select>
+                        </li>
+                        <li>He thinks that I’ve won.
+                            <select class="answer-select" data-correct="Er denkt, dass ich gewonnen habe.">
+                                <option value="">Select</option>
+                                <option value="Er denkt, dass ich gewonnen habe.">Er denkt, dass ich gewonnen habe.</option>
+                                <option value="Er denkt, dass ich habe gewonnen.">Er denkt, dass ich habe gewonnen.</option>
+                                <option value="Er denkt, dass gewonnen ich habe.">Er denkt, dass gewonnen ich habe.</option>
+                            </select>
+                        </li>
+                        <li>I’m happy that you’re here.
+                            <select class="answer-select" data-correct="Es freut mich, dass du hier bist.">
+                                <option value="">Select</option>
+                                <option value="Es freut mich, dass du hier bist.">Es freut mich, dass du hier bist.</option>
+                                <option value="Es freut mich, dass du bist hier.">Es freut mich, dass du bist hier.</option>
+                                <option value="Es freut mich, dass hier du bist.">Es freut mich, dass hier du bist.</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Ich weiß, dass du müde bist.</em></li>
+                            <li><em>Sie sagt, dass es kalt ist.</em></li>
+                            <li><em>Wir hoffen, dass er kommt.</em></li>
+                            <li><em>Er denkt, dass ich gewonnen habe.</em></li>
+                            <li><em>Es freut mich, dass du hier bist.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise2">
+                <h3>Exercise 2: <em>Dass</em> or <em>Das</em>?</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Ich weiß ___ du kommst.
+                            <select class="answer-select" data-correct="dass">
+                                <option value="">Select</option>
+                                <option value="dass">dass</option>
+                                <option value="das">das</option>
+                                <option value="da">da</option>
+                            </select>
+                        </li>
+                        <li>Ich weiß ___ schon.
+                            <select class="answer-select" data-correct="das">
+                                <option value="">Select</option>
+                                <option value="dass">dass</option>
+                                <option value="das">das</option>
+                                <option value="da">da</option>
+                            </select>
+                        </li>
+                        <li>Sie sagt ___ sie müde ist.
+                            <select class="answer-select" data-correct="dass">
+                                <option value="">Select</option>
+                                <option value="dass">dass</option>
+                                <option value="das">das</option>
+                                <option value="da">da</option>
+                            </select>
+                        </li>
+                        <li>___ ist mein Buch.
+                            <select class="answer-select" data-correct="das">
+                                <option value="">Select</option>
+                                <option value="dass">dass</option>
+                                <option value="das">das</option>
+                                <option value="da">da</option>
+                            </select>
+                        </li>
+                        <li>Er denkt ___ es regnet.
+                            <select class="answer-select" data-correct="dass">
+                                <option value="">Select</option>
+                                <option value="dass">dass</option>
+                                <option value="das">das</option>
+                                <option value="da">da</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>dass</em> (Ich weiß, dass du kommst.)</li>
+                            <li><em>das</em> (Ich weiß das schon.)</li>
+                            <li><em>dass</em> (Sie sagt, dass sie müde ist.)</li>
+                            <li><em>das</em> (Das ist mein Buch.)</li>
+                            <li><em>dass</em> (Er denkt, dass es regnet.)</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise3">
+                <h3>Exercise 3: Word Order with <em>Dass</em></h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Ich sehe ___ die Kinder spielen.
+                            <select class="answer-select" data-correct="dass">
+                                <option value="">Select</option>
+                                <option value="dass">dass</option>
+                                <option value="dass spielen die Kinder">dass spielen die Kinder</option>
+                                <option value="dass die Kinder spielen tun">dass die Kinder spielen tun</option>
+                            </select>
+                        </li>
+                        <li>Sie weiß ___ er gestern hier war.
+                            <select class="answer-select" data-correct="dass">
+                                <option value="">Select</option>
+                                <option value="dass">dass</option>
+                                <option value="dass er war hier gestern">dass er war hier gestern</option>
+                                <option value="dass gestern er hier war">dass gestern er hier war</option>
+                            </select>
+                        </li>
+                        <li>Er sagt ___ sie das gemacht hat.
+                            <select class="answer-select" data-correct="dass">
+                                <option value="">Select</option>
+                                <option value="dass">dass</option>
+                                <option value="dass sie hat das gemacht">dass sie hat das gemacht</option>
+                                <option value="dass das sie gemacht hat">dass das sie gemacht hat</option>
+                            </select>
+                        </li>
+                        <li>Ich hoffe ___ du mich verstehst.
+                            <select class="answer-select" data-correct="dass">
+                                <option value="">Select</option>
+                                <option value="dass">dass</option>
+                                <option value="dass verstehst du mich">dass verstehst du mich</option>
+                                <option value="dass du verstehst mich">dass du verstehst mich</option>
+                            </select>
+                        </li>
+                        <li>Es tut mir leid ___ er krank ist.
+                            <select class="answer-select" data-correct="dass">
+                                <option value="">Select</option>
+                                <option value="dass">dass</option>
+                                <option value="dass er ist krank">dass er ist krank</option>
+                                <option value="dass krank er ist">dass krank er ist</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>dass</em> (Ich sehe, dass die Kinder spielen.)</li>
+                            <li><em>dass</em> (Sie weiß, dass er gestern hier war.)</li>
+                            <li><em>dass</em> (Er sagt, dass sie das gemacht hat.)</li>
+                            <li><em>dass</em> (Ich hoffe, dass du mich verstehst.)</li>
+                            <li><em>dass</em> (Es tut mir leid, dass er krank ist.)</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise4">
+                <h3>Exercise 4: Mixed <em>Dass</em> Story</h3>
+                <p>Fill in with the correct <em>dass</em> clause.</p>
+                <div class="examples">
+                    <p>Ich weiß ___ (1) du heute kommst. Sie sagt ___ (2) sie müde ist. Er denkt ___ (3) wir das können. Es freut mich ___ (4) ihr hier seid. Wir hoffen ___ (5) es morgen schöner wird.</p>
+                    <ol class="example-list">
+                        <li><select class="answer-select" data-correct="dass">
+                            <option value="">Select</option>
+                            <option value="dass">dass</option>
+                            <option value="dass kommst du heute">dass kommst du heute</option>
+                            <option value="dass du heute kommst">dass du heute kommst</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="dass">
+                            <option value="">Select</option>
+                            <option value="dass">dass</option>
+                            <option value="dass sie ist müde">dass sie ist müde</option>
+                            <option value="dass müde sie ist">dass müde sie ist</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="dass">
+                            <option value="">Select</option>
+                            <option value="dass">dass</option>
+                            <option value="dass wir können das">dass wir können das</option>
+                            <option value="dass das wir können">dass das wir können</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="dass">
+                            <option value="">Select</option>
+                            <option value="dass">dass</option>
+                            <option value="dass ihr seid hier">dass ihr seid hier</option>
+                            <option value="dass hier ihr seid">dass hier ihr seid</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="dass">
+                            <option value="">Select</option>
+                            <option value="dass">dass</option>
+                            <option value="dass es wird morgen schöner">dass es wird morgen schöner</option>
+                            <option value="dass morgen es schöner wird">dass morgen es schöner wird</option>
+                        </select></li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong><br>
+                        Ich weiß, <em>dass</em> du heute kommst. Sie sagt, <em>dass</em> sie müde ist. Er denkt, <em>dass</em> wir das können. Es freut mich, <em>dass</em> ihr hier seid. Wir hoffen, <em>dass</em> es morgen schöner wird.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips to Master Dass -->
+        <section id="tips">
+            <h2>Deep Tips to Master <em>Dass</em></h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Verb Last</strong>: Train your brain—<em>dass</em> = verb to the end (<em>dass du bist</em>—not <em>dass du bist hier</em>).</li>
+                    <li><strong>Comma Check</strong>: Always pause with a comma—<em>Ich weiß,</em> then <em>dass…</em>.</li>
+                    <li><strong>Daily Use</strong>: Say <em>Ich denke, dass es stimmt</em> when chatting—make it natural.</li>
+                    <li><strong>Spot <em>Das</em></strong>: If no clause follows, it’s <em>das</em>—<em>Ich weiß das</em> (not <em>dass</em>).</li>
+                    <li><strong>Listen</strong>: Catch <em>dass</em> in podcasts or songs—<em>Ich weiß, dass du mich liebst…</em></li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>Compare with <em>Weil</em></h3>
+                <ul class="example-list">
+                    <li><em>Weil</em> (because): Explains why, verb at end.
+                        <ul><li><em>Ich bin müde, weil ich gearbeitet habe.</em> (I’m tired because I worked.)</li></ul>
+                    </li>
+                    <li><em>Dass</em> (that): States a fact, verb at end.
+                        <ul><li><em>Ich weiß, dass ich gearbeitet habe.</em> (I know that I worked.)</li></ul>
+                    </li>
+                    <li>Difference: <em>Weil</em> = reason; <em>Dass</em> = statement.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Final Thoughts -->
+        <section id="final-thoughts">
+            <h2>You’re Ready!</h2>
+            <p>
+                This deep guide covers <em>dass</em>—rules, examples, nuances, and exercises. You’re ready to use “that” like a pro in German! Next, you could explore <em>ob</em> (whether) or mix <em>dass</em> with Komparativ—your choice!
+            </p>
+        </section>
+
+        <!-- Resources for Extra Practice -->
+        <section id="resources">
+            <h2>Resources for Extra Practice</h2>
+            <div class="see-also-links">
+                <a href="https://www.goethe.de/de/spr/ueb.html" class="see-also-rect">
+                    Goethe A1/A2 Wortliste<br>Verbs in context.<br><br>
+                    <button class="resource-btn">Visit Goethe Wortliste</button>
+                </a>
+                <a href="https://www.youtube.com/c/easygerman" class="see-also-rect">
+                    YouTube – EASY German<br>Hear verbs in real talk.<br><br>
+                    <button class="resource-btn">Visit EASY German</button>
+                </a>
+                <a href="https://www.schubert-verlag.de/" class="see-also-rect">
+                    Schubert Verlag<br>Free verb exercises.<br><br>
+                    <button class="resource-btn">Visit Schubert Verlag</button>
+                </a>
+            </div>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="weil.html" class="see-also-rect">German Weil</a>
+                <a href="dative.html" class="see-also-rect">German Dative</a>
+                <a href="partizip2.html" class="see-also-rect">Perfekt & Partizip II</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="ob.html" class="next-btn">Next: German Ob (Whether) →</a>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Dark/Light mode toggle
+            const modeToggle = document.getElementById('mode-toggle');
+            const body = document.body;
+            modeToggle.addEventListener('click', function() {
+                body.classList.toggle('dark-mode');
+                const isDark = body.classList.contains('dark-mode');
+                modeToggle.querySelector('svg').setAttribute('d', isDark ? 
+                    'M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z' : 
+                    'M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z');
+            });
+
+            // Check Answers functionality
+            document.querySelectorAll('.check-answers').forEach(button => {
+                button.addEventListener('click', function() {
+                    const exercise = this.closest('.subsection');
+                    const selects = exercise.querySelectorAll('.answer-select');
+                    selects.forEach(select => {
+                        const correctAnswer = select.getAttribute('data-correct');
+                        const userAnswer = select.value;
+                        if (userAnswer === correctAnswer) {
+                            select.style.border = '2px solid #2e7d32';
+                        } else if (userAnswer !== '') {
+                            select.style.border = '2px solid #d32f2f';
+                        } else {
+                            select.style.border = '1px solid #ccc';
+                        }
+                    });
+                });
+            });
+
+            // Show Answers functionality
+            document.querySelectorAll('.show-answers').forEach(button => {
+                button.addEventListener('click', function() {
+                    const exercise = this.closest('.subsection');
+                    const answers = exercise.querySelector('.answers');
+                    if (answers.classList.contains('hidden')) {
+                        answers.classList.remove('hidden');
+                    } else {
+                        answers.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

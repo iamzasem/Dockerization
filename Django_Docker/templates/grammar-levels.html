@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}German Grammar Learning{% endblock title %}
+
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/grammar_levels.css' %}">
+
+<header>
+    <div class="nav-buttons">
+        <a href="german.html" class="nav-button home-btn" title="Back to Home">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+        </a>
+        <a href="german.html" class="nav-button back-btn" title="Go Back">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 12H5M12 19l-7-7 7-7"></path>
+            </svg>
+        </a>
+    </div>
+    <div class="container header-container">
+        <h1>German Grammar Levels</h1>
+        <p class="subtitle">Choose Your Proficiency Level</p>
+    </div>
+</header>
+
+<main class="container">
+    <h2>Select Your Level</h2>
+    
+    <div class="card-container">
+        <!-- A1 Level Card -->
+        <a href="a1-topics.html" class="main-card level-a1">
+            <div class="card-header">A1 Level</div>
+            <div class="card-body">
+                <div class="card-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#48bb78" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                        <path d="M8 4v16M16 4v16"></path>
+                        <path d="M12 10v8M8 14h8"></path>
+                    </svg>
+                </div>
+                <p class="card-text">Beginner grammar for absolute starters—learn the basics.</p>
+            </div>
+            <div class="card-footer">Explore A1 →</div>
+        </a>
+        
+        <!-- A2 Level Card -->
+        <a href="a2-topics.html" class="main-card level-a2">
+            <div class="card-header">A2 Level</div>
+            <div class="card-body">
+                <div class="card-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ed8936" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                        <text x="12" y="14" font-size="12" fill="#ed8936" text-anchor="middle">ab</text>
+                    </svg>
+                </div>
+                <p class="card-text">Elementary grammar to boost communication skills.</p>
+            </div>
+            <div class="card-footer">Explore A2 →</div>
+        </a>
+        
+        <!-- B1 Level Card -->
+        <a href="b1-topics.html" class="main-card level-b1">
+            <div class="card-header">B1 Level</div>
+            <div class="card-body">
+                <div class="card-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#f56565" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                        <text x="12" y="14" font-size="12" fill="#f56565" text-anchor="middle">abc</text>
+                    </svg>
+                </div>
+                <p class="card-text">Intermediate grammar for enhanced fluency.</p>
+            </div>
+            <div class="card-footer">Explore B1 →</div>
+        </a>
+    </div>
+</main>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const cards = document.querySelectorAll('.main-card');
+        cards.forEach((card, index) => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(15px)';
+            setTimeout(() => {
+                card.style.transition = 'all 0.5s ease';
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+            }, index * 300);
+        });
+    });
+</script>
+{% endblock body %}

@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}My Travel Admin{% endblock title %}
+
+{% block body %}
+<section class="admin-section">
+    <h1>My Travel Admin</h1>
+    
+    <!-- Add Album Form -->
+    <div class="form-container">
+        <h2>Add New Album</h2>
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <label for="album_name">Album Name:</label>
+            <input type="text" id="album_name" name="album_name" required>
+            <label for="cover_image">Cover Image:</label>
+            <input type="file" id="cover_image" name="cover_image" accept="image/*" required>
+            <button type="submit" name="add_album">Add Album</button>
+        </form>
+    </div>
+
+    <!-- Add Photo Form -->
+    <div class="form-container">
+        <h2>Add Photo to Album</h2>
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <label for="album">Select Album:</label>
+            <select id="album" name="album" required>
+                <option value="">Choose an album</option>
+                {% for album in albums %}
+                    <option value="{{ album.id }}">{{ album.name }}</option>
+                {% endfor %}
+            </select>
+            <label for="photo_title">Photo Title:</label>
+            <input type="text" id="photo_title" name="photo_title" required>
+            <label for="photo_image">Photo:</label>
+            <input type="file" id="photo_image" name="photo_image" accept="image/*" required>
+            <button type="submit" name="add_photo">Add Photo</button>
+        </form>
+    </div>
+
+    <!-- List Existing Albums -->
+    <div class="album-list">
+        <h2>Your Albums</h2>
+        {% for album in albums %}
+            <div class="album-item">
+                <h3>{{ album.name }}</h3>
+                <img src="{{ album.cover_image.url }}" alt="{{ album.name }}" width="100">
+            </div>
+        {% empty %}
+            <p>No albums yet. Add one above!</p>
+        {% endfor %}
+    </div>
+</section>
+
+<style>
+    .admin-section {
+        padding: 40px 20px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    h1 {
+        text-align: center;
+        color: #0a2463;
+        margin-bottom: 30px;
+    }
+    .form-container {
+        background: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    label {
+        display: block;
+        margin: 10px 0 5px;
+        font-weight: bold;
+    }
+    input, select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    button {
+        background: #0a2463;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    button:hover {
+        background: #0c2f8a;
+    }
+    .album-list {
+        margin-top: 20px;
+    }
+    .album-item {
+        background: #f9fafb;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+    }
+</style>
+
+{% endblock %}

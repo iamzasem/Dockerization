@@ -1,0 +1,626 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}✉️ Contact{% endblock title %}
+
+{% block body %}
+<style>
+  :root {
+    --primary-color: #6366f1;
+    --secondary-color: #4f46e5;
+    --dark-color: #1e1b4b;
+    --light-color: #f9fafb;
+    --transition: all 0.3s ease;
+  }
+
+  .contact-page {
+    font-family: 'Inter', sans-serif;
+    background-color: #f5f5f5;
+    background-image: 
+      radial-gradient(circle at 25px 25px, rgba(99, 102, 241, 0.15) 2%, transparent 0%),
+      radial-gradient(circle at 75px 75px, rgba(99, 102, 241, 0.1) 2%, transparent 0%);
+    background-size: 100px 100px;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  /* Floating Shapes */
+  .floating-shapes {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 100px); /* Adjust based on nav bar height */
+    top: 100px; /* Push below nav bar */
+    left: 0;
+    z-index: -1; /* Ensure it stays below navbar */
+    overflow: hidden;
+  }
+
+  .shape {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(99, 102, 241, 0.1);
+    animation: float 15s infinite ease-in-out;
+  }
+
+  .shape-1 { width: 200px; height: 200px; top: -100px; right: 10%; animation-delay: 0s; }
+  .shape-2 { width: 150px; height: 150px; bottom: 20%; left: 10%; animation-delay: 2s; }
+  .shape-3 { width: 300px; height: 300px; bottom: -150px; right: 20%; animation-delay: 4s; }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(5deg); }
+  }
+
+  /* Contact Card */
+  .contact-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: var(--transition);
+  }
+
+  .contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  }
+
+  .contact-icon {
+    font-size: 1.5rem;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: var(--primary-color);
+    color: white;
+    transition: var(--transition);
+  }
+
+  .contact-link {
+    color: var(--dark-color);
+    text-decoration: none;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 12px;
+  }
+
+  .contact-link:hover {
+    background: rgba(99, 102, 241, 0.1);
+  }
+
+  .contact-link:hover .contact-icon {
+    transform: scale(1.1);
+    background: var(--secondary-color);
+  }
+
+  /* Form Styling */
+  .form-container {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: var(--transition);
+  }
+
+  .form-header {
+    background: var(--primary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .form-control {
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-size: 1rem;
+    transition: var(--transition);
+  }
+
+  .form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+  }
+
+  .input-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+
+  .input-group label {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    color: #64748b;
+    background: white;
+    padding: 0 5px;
+    font-size: 0.9rem;
+    transition: var(--transition);
+    pointer-events: none;
+  }
+
+  .input-group input:focus ~ label,
+  .input-group input:not(:placeholder-shown) ~ label,
+  .input-group textarea:focus ~ label,
+  .input-group textarea:not(:placeholder-shown) ~ label,
+  .input-group select:focus ~ label,
+  .input-group select.has-value ~ label {
+    top: -10px;
+    left: 10px;
+    font-size: 0.8rem;
+    color: var(--primary-color);
+    font-weight: 600;
+  }
+
+  .btn-primary {
+    background: var(--primary-color);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: var(--transition);
+  }
+
+  .btn-primary:hover {
+    background: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.3);
+  }
+
+  /* Why Choose Me Cards */
+  .why-me-card {
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    height: 100%;
+    transition: var(--transition);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .why-me-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .why-me-icon {
+    font-size: 2.5rem;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 0 auto 20px;
+    background: rgba(99, 102, 241, 0.1);
+    color: var(--primary-color);
+    transition: var(--transition);
+  }
+
+  .why-me-card:hover .why-me-icon {
+    background: var(--primary-color);
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  /* Call to Action Section */
+  .cta-section {
+    background: linear-gradient(135deg, var(--dark-color) 0%, #2d3748 100%);
+    border-radius: 16px;
+    padding: 60px 40px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cta-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+      radial-gradient(circle at 20% 30%, rgba(99, 102, 241, 0.3) 0%, transparent 50%),
+      radial-gradient(circle at 80% 70%, rgba(79, 70, 229, 0.3) 0%, transparent 50%);
+  }
+
+  .cta-button {
+    background: white;
+    color: var(--dark-color);
+    font-weight: 700;
+    padding: 15px 30px;
+    border-radius: 12px;
+    transition: var(--transition);
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .cta-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: 0.5s;
+    z-index: -1;
+  }
+
+  .cta-button:hover::before {
+    left: 100%;
+  }
+
+  .cta-button:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+  }
+
+  /* Social Media Icons */
+  .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--light-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    transition: var(--transition);
+  }
+
+  .social-icon:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-5px);
+  }
+
+  /* Loader and Success Message */
+  .loader {
+    display: none;
+    width: 30px;
+    height: 30px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s ease-in-out infinite;
+  }
+
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+
+  .success-message {
+    display: none;
+    background: #10b981;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+
+  .success-message.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Responsive Adjustments */
+  @media (max-width: 992px) {
+    .contact-info, .form-container {
+      margin-bottom: 40px;
+    }
+  }
+
+  /* Fix dropdown visibility */
+  .navbar .dropdown-menu {
+    z-index: 1050; /* Ensure dropdown appears above other content */
+
+    /* WhatsApp-specific styles */
+.whatsapp-link {
+  background: #25D366; /* WhatsApp green */
+  color: white;
+  padding: 15px;
+  border-radius: 12px;
+  transition: var(--transition);
+}
+
+.whatsapp-link:hover {
+  background: #20c058; /* Slightly darker green on hover */
+  color: white;
+}
+
+.whatsapp-icon {
+  background: white;
+  color: #25D366; /* Green icon */
+  border-radius: 12px;
+  transition: var(--transition);
+}
+
+.whatsapp-link:hover .whatsapp-icon {
+  transform: scale(1.1);
+  background: white;
+  color: #20c058; /* Match hover state */
+}
+  }
+</style>
+
+<div class="contact-page">
+  <!-- Floating Background Shapes -->
+  <div class="floating-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+  </div>
+
+  <main class="container py-5" id="wp--skip-link--target">
+    <div class="container">
+      <!-- Page Heading -->
+      <div class="row mb-5">
+        <div class="col-12 text-center" data-aos="fade-down">
+          <h1 class="display-3 fw-bold text-primary mb-3">Get In Touch</h1>
+          <p class="lead col-lg-8 mx-auto">I'm always interested in hearing about new projects and opportunities. Let's connect and create something amazing together!</p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Contact Info Column -->
+
+        <a href="{{ whatsapp_url }}" class="contact-link whatsapp-link hoverable" target="_blank">
+          <div class="contact-icon whatsapp-icon"><i class="bi bi-whatsapp"></i></div>
+          <div>
+            <span class="d-block fw-bold">Chat on WhatsApp</span>
+            <span>Message me directly</span>
+          </div>
+        </a>
+
+        <div class="col-lg-5" data-aos="fade-right" data-aos-delay="100">
+          <div class="contact-card p-4 mb-4">
+            <h2 class="h3 fw-bold mb-4 border-bottom pb-3">Contact Information</h2>
+            <div class="d-flex flex-column gap-3">
+              <a href="tel:+9779817065650" class="contact-link hoverable">
+                <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
+                <div>
+                  <span class="d-block fw-bold">Phone</span>
+                  <span>+977-9817065650</span>
+                </div>
+              </a>
+              <a href="mailto:iamzasemworks@gmail.com" class="contact-link hoverable">
+                <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+                <div>
+                  <span class="d-block fw-bold">Email</span>
+                  <span>iamzasemworks@gmail.com</span>
+                </div>
+              </a>
+              <a href="#" class="contact-link hoverable">
+                <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                <div>
+                  <span class="d-block fw-bold">Location</span>
+                  <span>Kathmandu, Nepal</span>
+                </div>
+              </a>
+            </div>
+            <div class="mt-4 border-top pt-4">
+              <h3 class="h5 fw-bold mb-3">Connect With Me</h3>
+              <div class="social-icons">
+                <a href="https://www.linkedin.com/in/iamzasem/" class="social-icon hoverable" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/iamzasem" class="social-icon hoverable" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="https://x.com/iamzasem" class="social-icon hoverable" target="_blank"><i class="bi bi-twitter-x"></i></a>
+                <a href="https://instagram.com/iamzasem" class="social-icon hoverable" target="_blank"><i class="bi bi-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-card p-4" data-aos="fade-right" data-aos-delay="200">
+            <h3 class="h5 fw-bold mb-3">Current Availability</h3>
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <div class="spinner-grow text-success" role="status" style="width: 10px; height: 10px;">
+                <span class="visually-hidden">Available</span>
+              </div>
+              <span class="fw-semibold">Available for new projects</span>
+            </div>
+            <p class="text-muted mb-0">I'm currently taking on select projects and collaborations. Get in touch to discuss your ideas!</p>
+          </div>
+        </div>
+
+        <!-- Form Column -->
+        <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
+          <div class="form-container">
+            <div class="form-header">
+              <h2 class="h3 fw-bold mb-0">Send Me a Message</h2>
+            </div>
+            <form class="p-4" id="contact-form" method="POST" action="{% url 'contact' %}" novalidate>
+              {% csrf_token %}
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="first-name" placeholder=" " required>
+                    <label for="first-name">First Name*</label>
+                    <div class="invalid-feedback">Please enter your first name</div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="last-name" placeholder=" ">
+                    <label for="last-name">Last Name</label>
+                  </div>
+                </div>
+              </div>
+              <div class="input-group">
+                <input type="email" class="form-control" id="email" placeholder=" " required>
+                <label for="email">Email Address*</label>
+                <div class="invalid-feedback">Please enter a valid email address</div>
+              </div>
+              <div class="input-group">
+                <input type="tel" class="form-control" id="phone" placeholder=" ">
+                <label for="phone">Phone Number</label>
+              </div>
+              <div class="input-group">
+                <select class="form-select form-control" id="project-type">
+                  <option value="" selected disabled>Select Project Type</option>
+                  <option value="website">Website Development</option>
+                  <option value="app">App Development</option>
+                  <option value="design">UI/UX Design</option>
+                  <option value="other">Other</option>
+                </select>
+                <label for="project-type">Project Type</label>
+              </div>
+              <div class="input-group">
+                <textarea class="form-control" id="message" rows="4" placeholder=" " required></textarea>
+                <label for="message">Message*</label>
+                <div class="invalid-feedback">Please enter your message</div>
+              </div>
+              <div class="text-end">
+                <button type="submit" class="btn btn-primary btn-lg d-inline-flex align-items-center gap-2 hoverable">
+                  <span>Send Message</span>
+                  <div class="loader"></div>
+                  <i class="bi bi-send-fill"></i>
+                </button>
+              </div>
+              <div class="success-message" aria-live="polite">
+                <i class="bi bi-check-circle-fill me-2"></i>
+                Your message has been sent successfully! I'll get back to you soon.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Why Choose Me Section -->
+      <div class="row mt-5 pt-5 g-4">
+        <div class="col-12 text-center mb-5" data-aos="fade-up">
+          <h2 class="display-5 fw-bold text-primary">Why Choose Me?</h2>
+          <p class="lead col-lg-8 mx-auto">I bring a unique blend of creativity, technical expertise, and a passion for delivering exceptional results.</p>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="why-me-card text-center">
+            <div class="why-me-icon"><i class="bi bi-award"></i></div>
+            <h3 class="h4 fw-bold">Seasoned Expert</h3>
+            <p class="mb-0">With years of experience, I bring best practices & industry insights that lead to exceptional business outcomes.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="why-me-card text-center">
+            <div class="why-me-icon"><i class="bi bi-people"></i></div>
+            <h3 class="h4 fw-bold">Trusted Partner</h3>
+            <p class="mb-0">Your success is my success. I will guide you through the digital landscape and celebrate every milestone together.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="why-me-card text-center">
+            <div class="why-me-icon"><i class="bi bi-lightning"></i></div>
+            <h3 class="h4 fw-bold">Open Communication</h3>
+            <p class="mb-0">From project kick-off to the final delivery, I keep communication open and transparent at every step.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Call to Action Section -->
+      <div class="row mt-5 pt-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-12">
+          <div class="cta-section text-center">
+            <h2 class="display-5 fw-bold text-white mb-4">Transform Your Digital Presence Today</h2>
+            <p class="lead text-white opacity-75 col-lg-8 mx-auto mb-5">Ready to stand out from the crowd? Let's create something extraordinary together that showcases your unique vision and goals.</p>
+            <a href="https://iamzasem.my.canva.site/works" class="cta-button d-inline-flex align-items-center gap-2 hoverable">
+              <span>Start a Project</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Initialize AOS only if not already initialized in base.html
+    if (typeof AOS !== 'undefined' && !window.AOS_initialized) {
+      AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true
+      });
+      window.AOS_initialized = true; // Flag to prevent re-initialization
+    }
+
+    // Form Handling
+    const form = document.getElementById('contact-form');
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const loader = document.querySelector('.loader');
+    const successMessage = document.querySelector('.success-message');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      let isValid = true;
+      const requiredFields = form.querySelectorAll('[required]');
+
+      requiredFields.forEach(field => {
+        if (!field.value.trim()) {
+          field.classList.add('is-invalid');
+          isValid = false;
+        } else {
+          field.classList.remove('is-invalid');
+          if (field.type === 'email') {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(field.value)) {
+              field.classList.add('is-invalid');
+              isValid = false;
+            }
+          }
+        }
+      });
+
+      if (isValid) {
+        submitBtn.querySelector('span').textContent = 'Sending...';
+        loader.style.display = 'block';
+        submitBtn.disabled = true;
+
+        setTimeout(() => {
+          loader.style.display = 'none';
+          successMessage.style.display = 'block';
+          successMessage.classList.add('show');
+          form.reset();
+          submitBtn.querySelector('span').textContent = 'Send Message';
+          submitBtn.disabled = false;
+
+          setTimeout(() => {
+            successMessage.classList.remove('show');
+            setTimeout(() => successMessage.style.display = 'none', 500);
+          }, 5000);
+        }, 2000);
+      }
+    });
+
+    // Input Validation Reset
+    const formInputs = form.querySelectorAll('input, textarea, select');
+    formInputs.forEach(input => {
+      input.addEventListener('input', function() {
+        this.classList.remove('is-invalid');
+      });
+    });
+
+    // Select Label Handling
+    const selectInput = document.getElementById('project-type');
+    selectInput.addEventListener('change', function() {
+      if (this.value) this.classList.add('has-value');
+      else this.classList.remove('has-value');
+    });
+  });
+</script>
+{% endblock body %}

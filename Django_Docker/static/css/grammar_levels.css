@@ -1,0 +1,383 @@
+/* Base Styles */
+:root {
+    --primary-color: #4a90e2; /* Soft Blue */
+    --secondary-color: rgb(0, 82, 224); /* Dark Blue */
+    --accent-color: rgb(235, 184, 0); /* Warm Gold */
+    --dark-bg: #1a202c; /* Rich Dark */
+    --card-bg: #2d3748; /* Slightly Lighter Dark */
+    --light-text: #e2e8f0; /* Soft Light Gray */
+    --shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    --header-blue: #1e90ff; /* Dodger Blue for header */
+    --header-dark: #0052e0; /* Darker Blue */
+    --a1-start: #48bb78; /* Green Start for A1 */
+    --a1-end: #2f855a; /* Green End for A1 */
+    --a2-start: #ed8936; /* Orange Start for A2 */
+    --a2-end: #c05621; /* Orange End for A2 */
+    --b1-start: #f56565; /* Red Start for B1 */
+    --b1-end: #c53030; /* Red End for B1 */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, var(--dark-bg) 0%, var(--card-bg) 100%);
+    color: var(--light-text);
+    line-height: 1.6;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Subtle Background Pattern */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(74, 144, 226, 0.05) 25%, transparent 25%, transparent 75%, rgba(74, 144, 226, 0.05) 75%);
+    background-size: 60px 60px;
+    opacity: 0.4;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.header-container {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: relative;
+}
+
+header {
+    background: linear-gradient(90deg, var(--header-dark), var(--header-blue));
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+    border-radius: 0px;
+    box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(30deg);
+    transition: all 0.5s ease;
+}
+
+header:hover::after {
+    left: 100%;
+}
+
+.nav-buttons {
+    position: absolute;
+    left: 2rem; /* Left side of the webpage on larger screens */
+    top: 2rem;
+    display: flex;
+    gap: 1rem;
+    z-index: 10; /* Ensure buttons are above other elements */
+}
+
+.nav-button {
+    background: rgba(74, 144, 226, 0.15);
+    border: 1px solid rgba(74, 144, 226, 0.5);
+    color: var(--light-text);
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.4s ease;
+}
+
+.nav-button:hover::before {
+    left: 100%;
+}
+
+.nav-button:hover {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(74, 144, 226, 0.4);
+}
+
+.nav-button svg {
+    width: 22px;
+    height: 22px;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: bolder;
+    color: white;
+    margin-bottom: 0.3rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--light-text);
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    color: var(--light-text);
+}
+
+/* Card Styles */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem; /* Reduced gap between cards */
+    justify-content: center;
+    align-items: stretch; /* Ensure cards are of equal height */
+}
+
+.main-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: var(--light-text);
+    width: 320px; /* Fixed width for equal size */
+    height: 300px; /* Uniform height to match content */
+    border: 1px solid rgba(74, 144, 226, 0.2);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures footer aligns at bottom */
+}
+
+.main-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+    border-color: var(--primary-color);
+}
+
+.level-a1 .card-header { background: linear-gradient(90deg, var(--a1-start), var(--a1-end)); }
+.level-a2 .card-header { background: linear-gradient(90deg, var(--a2-start), var(--a2-end)); }
+.level-b1 .card-header { background: linear-gradient(90deg, var(--b1-start), var(--b1-end)); }
+
+.card-header {
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--light-text);
+    position: relative;
+    border-bottom: 1px solid rgba(74, 144, 226, 0.2);
+}
+
+.card-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2px;
+    background: var(--accent-color);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.main-card:hover .card-header::after {
+    opacity: 1;
+}
+
+.card-body {
+    padding: 1rem; /* Reduced padding to ensure space for footer */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.card-icon {
+    margin-bottom: 0.5rem; /* Reduced margin to fit content */
+}
+
+.card-icon svg {
+    width: 48px;
+    height: 48px;
+    transition: transform 0.3s ease;
+}
+
+.main-card:hover .card-icon svg {
+    transform: scale(1.1);
+}
+
+.card-text {
+    font-size: 1rem;
+    opacity: 0.9;
+    color: var(--light-text);
+    font-weight: 400;
+    padding: 0 1rem;
+    line-height: 1.4; /* Adjusted line height to prevent overflow */
+}
+
+.card-footer {
+    background: rgba(74, 144, 226, 0.15);
+    padding: 0.8rem;
+    text-align: center;
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 0.95rem;
+    border-top: 1px solid rgba(74, 144, 226, 0.2);
+    transition: all 0.3s ease;
+    width: 100%;
+    text-align: center;
+    display: block; /* Ensure visibility on all screen sizes */
+}
+
+.card-footer:hover {
+    background: rgba(74, 144, 226, 0.25);
+    color: var(--accent-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+    }
+    
+    .header-container {
+        max-width: 450px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .main-card {
+        width: 300px;
+        height: 280px;
+    }
+    
+    .nav-buttons {
+        position: static; /* Move buttons to top of header container */
+        display: flex;
+        justify-content: center; /* Center buttons */
+        margin-bottom: 0.5rem; /* Minimal gap */
+    }
+    
+    header {
+        height: 170px; /* Adjust header height dynamically */
+        padding-top: 3rem; /* Reduced padding for shorter height */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .card-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .header-container {
+        max-width: 100%;
+    }
+    
+    .main-card {
+        width: 100%;
+        height: 260px; /* Adjusted height to fit content */
+    }
+    
+    h1 {
+        font-size: 1.6rem;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+    }
+    
+    .nav-buttons {
+        margin-bottom: 0.3rem; /* Even smaller gap on mobile */
+    }
+    
+    header {
+        padding-top: 2.5rem; /* Further reduced for shorter height */
+    }
+    
+    .card-header {
+        padding: 0.8rem;
+        font-size: 1.2rem;
+    }
+    
+    .card-body {
+        padding: 0.8rem;
+    }
+    
+    .card-icon {
+        margin-bottom: 0.3rem;
+    }
+    
+    .card-icon svg {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .card-text {
+        font-size: 0.9rem;
+        padding: 0 0.5rem;
+        line-height: 1.3;
+    }
+    
+    .card-footer {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+}

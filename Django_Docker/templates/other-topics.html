@@ -1,0 +1,173 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head_extra %}
+<link rel="stylesheet" href="{% static 'css/other-topic.css' %}">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+{% endblock head_extra %}
+{% block title %}German Language Topics{% endblock title %}
+
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/other-topic.css' %}">
+<div class="container">
+    <header>
+        <div class="nav-buttons">
+            <a href="{% url 'german' %}" class="nav-button home-btn" title="Back to Home">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+            </a>
+            <a href="javascript:history.back()" class="nav-button back-btn" title="Go Back">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                </svg>
+            </a>
+        </div>
+        <div class="header-container">
+            <h1>German Language Topics</h1>
+            <p class="subtitle">Explore essential German learning components</p>
+        </div>
+    </header>
+
+    <main>
+        <h2>Select a Topic</h2>
+        <div class="topic-grid">
+            <a href="{% url 'nouns' %}" class="topic-card">
+                <div class="topic-header">
+                    <div class="topic-number">1</div>
+                    <div class="topic-title">German Nouns</div>
+                </div>
+                <div class="topic-body">
+                    <p class="topic-description">Gender rules and plural forms.</p>
+                </div>
+                <div class="topic-footer">View Topic →</div>
+            </a>
+            <a href="{% url 'articles' %}" class="topic-card">
+                <div class="topic-header">
+                    <div class="topic-number">2</div>
+                    <div class="topic-title">German Articles</div>
+                </div>
+                <div class="topic-body">
+                    <p class="topic-description">Master der, die, das.</p>
+                </div>
+                <div class="topic-footer">View Topic →</div>
+            </a>
+            <a href="{% url 'adjectives' %}" class="topic-card">
+                <div class="topic-header">
+                    <div class="topic-number">3</div>
+                    <div class="topic-title">German Adjectives</div>
+                </div>
+                <div class="topic-body">
+                    <p class="topic-description">Declensions and comparisons.</p>
+                </div>
+                <div class="topic-footer">View Topic →</div>
+            </a>
+            <a href="{% url 'conjugation' %}" class="topic-card">
+                <div class="topic-header">
+                    <div class="topic-number">4</div>
+                    <div class="topic-title">German Conjugation</div>
+                </div>
+                <div class="topic-body">
+                    <p class="topic-description">Verb tenses and forms.</p>
+                </div>
+                <div class="topic-footer">View Topic →</div>
+            </a>
+            <a href="{% url 'cases' %}" class="topic-card">
+                <div class="topic-header">
+                    <div class="topic-number">5</div>
+                    <div class="topic-title">German Cases</div>
+                </div>
+                <div class="topic-body">
+                    <p class="topic-description">Nominative to Genitive.</p>
+                </div>
+                <div class="topic-footer">View Topic →</div>
+            </a>
+            <a href="{% url 'prepositions' %}" class="topic-card">
+                <div class="topic-header">
+                    <div class="topic-number">6</div>
+                    <div class="topic-title">German Prepositions</div>
+                </div>
+                <div class="topic-body">
+                    <p class="topic-description">Case-specific usage.</p>
+                </div>
+                <div class="topic-footer">View Topic →</div>
+            </a>
+            <a href="{% url 'structure' %}" class="topic-card">
+                <div class="topic-header">
+                    <div class="topic-number">7</div>
+                    <div class="topic-title">Sentence Structure</div>
+                </div>
+                <div class="topic-body">
+                    <p class="topic-description">Word order rules.</p>
+                </div>
+                <div class="topic-footer">View Topic →</div>
+            </a>
+            <a href="{% url 'listening' %}" class="topic-card">
+                <div class="topic-header">
+                    <div class="topic-number">8</div>
+                    <div class="topic-title">Listening & Pronunciation</div>
+                </div>
+                <div class="topic-body">
+                    <p class="topic-description">Improve sound recognition.</p>
+                </div>
+                <div class="topic-footer">View Topic →</div>
+            </a>
+            <a href="{% url 'writing' %}" class="topic-card">
+                <div class="topic-header">
+                    <div class="topic-number">9</div>
+                    <div class="topic-title">German Writing</div>
+                </div>
+                <div class="topic-body">
+                    <p class="topic-description">Letters and essays.</p>
+                </div>
+                <div class="topic-footer">View Topic →</div>
+            </a>
+            <a href="{% url 'speaking' %}" class="topic-card">
+                <div class="topic-header">
+                    <div class="topic-number">10</div>
+                    <div class="topic-title">German Speaking</div>
+                </div>
+                <div class="topic-body">
+                    <p class="topic-description">Conversation skills.</p>
+                </div>
+                <div class="topic-footer">View Topic →</div>
+            </a>
+            <a href="{% url 'culture' %}" class="topic-card">
+                <div class="topic-header">
+                    <div class="topic-number">11</div>
+                    <div class="topic-title">German Culture</div>
+                </div>
+                <div class="topic-body">
+                    <p class="topic-description">Festivals and customs.</p>
+                </div>
+                <div class="topic-footer">View Topic →</div>
+            </a>
+            <a href="{% url 'exam' %}" class="topic-card">
+                <div class="topic-header">
+                    <div class="topic-number">12</div>
+                    <div class="topic-title">Exam Preparation</div>
+                </div>
+                <div class="topic-body">
+                    <p class="topic-description">Goethe exam tips.</p>
+                </div>
+                <div class="topic-footer">View Topic →</div>
+            </a>
+        </div>
+    </main>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const cards = document.querySelectorAll('.topic-card');
+        cards.forEach((card, index) => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(15px)';
+            setTimeout(() => {
+                card.style.transition = 'all 0.5s ease';
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+            }, index * 300);
+        });
+    });
+</script>
+{% endblock body %}

@@ -1,0 +1,486 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}German Sentence Structure{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/structure.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+                <a href="index.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="javascript:history.back()" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>German Sentence Structure: A Simple Guide to Word Order Rules for Beginners</h1>
+            <p>
+                German sentence structure might seem tricky at first, but it follows clear rules that you can learn step by step. Unlike English, where word order is mostly fixed (like "I see the dog"), German is more flexible—but only if you know how to use its rules! This guide will explain everything about German word order in a way that’s easy for beginners to understand. You’ll learn how to build sentences, where to put verbs, nouns, and other words, and how to avoid mistakes—all with tons of examples. By the end, you’ll have everything you need to make correct German sentences. Let’s dive in!
+            </p>
+        </section>
+
+        <!-- Why Word Order Matters -->
+        <section id="key-points">
+            <h2>Why Word Order Matters</h2>
+            <div class="subsection">
+                <p>
+                    In English, word order tells you who’s doing what:
+                </p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>"The dog bites the man" vs. "The man bites the dog."</li>
+                    </ul>
+                    <p>
+                        In German, <strong>cases</strong> (like nominative, accusative, and dative) do a lot of that work, so word order can change without losing meaning. But German still has strict rules—especially about where the <strong>verb</strong> goes. The verb is the heart of a German sentence, and its position is key.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Verb Second (V2) -->
+        <section id="verb-second">
+            <h2>The Basic Rule: Verb Second (V2)</h2>
+            <div class="subsection">
+                <p>
+                    In a simple German sentence (called a <strong>main clause</strong>), the <strong>verb</strong> is always the <strong>second part</strong>. This doesn’t mean the second word—it means the second "piece" of the sentence. The first piece can be the subject, a time word, or something else, but the verb comes right after.
+                </p>
+            </div>
+            <div class="subsection">
+                <h3>How It Works</h3>
+                <div class="examples">
+                    <p><strong>Subject-Verb-Object (SVO):</strong> This is the most common order, like English.</p>
+                    <ul class="example-list">
+                        <li><em>Ich sehe den Hund.</em> (I see the dog.)</li>
+                        <li>1st: <em>Ich</em> (subject), 2nd: <em>sehe</em> (verb), then: <em>den Hund</em> (object).</li>
+                        <li><em>Die Katze schläft.</em> (The cat sleeps.)</li>
+                        <li>1st: <em>Die Katze</em>, 2nd: <em>schläft</em>.</li>
+                    </ul>
+                    <p><strong>Something Else First:</strong> If you start with something besides the subject (like a time or place), the verb is still second, and the subject comes after.</p>
+                    <ul class="example-list">
+                        <li><em>Heute sehe ich den Hund.</em> (Today, I see the dog.)</li>
+                        <li>1st: <em>Heute</em> (time), 2nd: <em>sehe</em> (verb), then: <em>ich den Hund</em>.</li>
+                        <li><em>Im Park spielt das Kind.</em> (In the park, the child plays.)</li>
+                        <li>1st: <em>Im Park</em> (place), 2nd: <em>spielt</em>, then: <em>das Kind</em>.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Examples</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>Der Mann liest das Buch.</em> (The man reads the book.)</li>
+                        <li><em>Morgen liest der Mann das Buch.</em> (Tomorrow, the man reads the book.)</li>
+                        <li><em>Im Haus wohnt die Frau.</em> (In the house, the woman lives.)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Key Point</h3>
+                <p>No matter what starts the sentence, the verb is <strong>always second</strong> in a main clause. This is called the <strong>V2 rule</strong>.</p>
+            </div>
+        </section>
+
+        <!-- Time, Manner, Place (TMP) -->
+        <section id="tmp">
+            <h2>Time, Manner, Place (TMP) Rule</h2>
+            <div class="subsection">
+                <p>
+                    When you add extra information—like <strong>when</strong> (time), <strong>how</strong> (manner), or <strong>where</strong> (place)—it follows a specific order after the verb: <strong>Time, Manner, Place (TMP)</strong>.
+                </p>
+            </div>
+            <div class="subsection">
+                <h3>How It Works</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><strong>Time:</strong> When something happens (e.g., <em>heute</em> – today).</li>
+                        <li><strong>Manner:</strong> How it happens (e.g., <em>schnell</em> – quickly).</li>
+                        <li><strong>Place:</strong> Where it happens (e.g., <em>im Park</em> – in the park).</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Examples</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>Ich gehe heute schnell ins Kino.</em> (I go today quickly to the cinema.)</li>
+                        <li>Verb: <em>gehe</em>, then: <em>heute</em> (time), <em>schnell</em> (manner), <em>ins Kino</em> (place).</li>
+                        <li><em>Der Hund läuft morgen laut im Garten.</em> (The dog runs tomorrow loudly in the garden.)</li>
+                        <li><em>Sie liest jeden Tag leise im Zimmer.</em> (She reads every day quietly in the room.)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Key Point</h3>
+                <p>After the verb, stick to <strong>TMP</strong>: Time first, then Manner, then Place. It keeps your sentence clear.</p>
+            </div>
+        </section>
+
+        <!-- Separable Verbs -->
+        <section id="separable-verbs">
+            <h2>Verbs with Two Parts (Separable Verbs)</h2>
+            <div class="subsection">
+                <p>
+                    Some German verbs have two pieces: a <strong>prefix</strong> (like <em>an-</em> or <em>aus-</em>) and a <strong>main part</strong>. In a main clause, the prefix splits off and goes to the <strong>end</strong> of the sentence, while the main part stays second.
+                </p>
+            </div>
+            <div class="subsection">
+                <h3>Common Separable Verbs</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>anfangen</em> (to start)</li>
+                        <li><em>ausgehen</em> (to go out)</li>
+                        <li><em>einkaufen</em> (to shop)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>How It Works</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>Ich fange die Arbeit an.</em> (I start the work.)</li>
+                        <li><em>Wir gehen heute aus.</em> (We go out today.)</li>
+                        <li><em>Sie kauft im Laden ein.</em> (She shops in the store.)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Examples</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>Er ruft seine Freundin an.</em> (He calls his friend.)</li>
+                        <li><em>Ich mache das Licht aus.</em> (I turn off the light.)</li>
+                        <li><em>Wir stehen früh auf.</em> (We get up early.)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Key Point</h3>
+                <p>The main verb part follows the V2 rule, and the prefix waits at the end.</p>
+            </div>
+        </section>
+
+        <!-- Two Verbs -->
+        <section id="two-verbs">
+            <h2>Sentences with Two Verbs (Modal Verbs and Infinitives)</h2>
+            <div class="subsection">
+                <p>
+                    When you use a <strong>modal verb</strong> (like <em>können</em> – can, <em>wollen</em> – want) or a helping verb (like <em>haben</em> – have) with another verb, the second verb (in its <strong>infinitive</strong> form, like <em>sehen</em> or <em>gehen</em>) goes to the <strong>end</strong> of the sentence.
+                </p>
+            </div>
+            <div class="subsection">
+                <h3>How It Works</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>Ich will den Hund sehen.</em> (I want to see the dog.)</li>
+                        <li><em>Er kann gut kochen.</em> (He can cook well.)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Examples</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>Sie muss morgen arbeiten.</em> (She must work tomorrow.)</li>
+                        <li><em>Wir wollen im Park spielen.</em> (We want to play in the park.)</li>
+                        <li><em>Du kannst das Buch lesen.</em> (You can read the book.)</li>
+                        <li><em>Ich habe das Auto gekauft.</em> (I have bought the car.)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Key Point</h3>
+                <p>The helping or modal verb follows V2, and the second verb (infinitive or participle) goes to the end.</p>
+            </div>
+        </section>
+
+        <!-- Questions -->
+        <section id="questions">
+            <h2>Questions</h2>
+            <div class="subsection">
+                <h3>Yes/No Questions</h3>
+                <p>For questions with a yes or no answer, the <strong>verb comes first</strong>, followed by the subject.</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>Siehst du den Hund?</em> (Do you see the dog?)</li>
+                        <li><em>Spielt das Kind?</em> (Does the child play?)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Examples</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>Arbeitet der Mann?</em> (Does the man work?)</li>
+                        <li><em>Geht sie zur Schule?</em> (Does she go to school?)</li>
+                        <li><em>Hast du Zeit?</em> (Do you have time?)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Question Words (W-Questions)</h3>
+                <p>For questions with words like <em>wer</em> (who), <em>was</em> (what), <em>wo</em> (where), <em>wann</em> (when), or <em>wie</em> (how):</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>Wo wohnt der Mann?</em> (Where does the man live?)</li>
+                        <li><em>Wann kommt sie?</em> (When does she come?)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Examples</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>Was liest du?</em> (What are you reading?)</li>
+                        <li><em>Wer hilft dem Kind?</em> (Who helps the child?)</li>
+                        <li><em>Wie fährt er?</em> (How does he drive?)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Key Point</h3>
+                <p>Verb is first for yes/no questions, second for W-questions.</p>
+            </div>
+        </section>
+
+        <!-- Subordinate Clauses -->
+        <section id="subordinate">
+            <h2>Subordinate Clauses (Verb at the End)</h2>
+            <div class="subsection">
+                <p>
+                    A <strong>subordinate clause</strong> is an extra part of a sentence that starts with words like <em>weil</em> (because), <em>dass</em> (that), <em>wenn</em> (if), or <em>ob</em> (whether). In these clauses, the <strong>verb goes to the end</strong>.
+                </p>
+            </div>
+            <div class="subsection">
+                <h3>How It Works</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>Ich bin müde, weil ich arbeite.</em> (I’m tired because I work.)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Examples</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>Er weiß, dass du kommst.</em> (He knows that you’re coming.)</li>
+                        <li><em>Ich bleibe, wenn es regnet.</em> (I stay if it rains.)</li>
+                        <li><em>Sie fragt, ob wir spielen.</em> (She asks whether we’re playing.)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Key Point</h3>
+                <p>In subordinate clauses, flip the order—verb goes to the end.</p>
+            </div>
+        </section>
+
+        <!-- Negation -->
+        <section id="negation">
+            <h2>Negation with "Nicht"</h2>
+            <div class="subsection">
+                <p>
+                    The word <em>nicht</em> (not) usually goes <strong>after the verb</strong> and <strong>before</strong> what it’s negating (like an object or extra info).
+                </p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>Ich sehe den Hund nicht.</em> (I don’t see the dog.)</li>
+                        <li><em>Er spielt nicht im Park.</em> (He doesn’t play in the park.)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Examples</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>Sie liest das Buch nicht.</em> (She doesn’t read the book.)</li>
+                        <li><em>Wir gehen heute nicht aus.</em> (We don’t go out today.)</li>
+                        <li><em>Das Kind schläft nicht.</em> (The child doesn’t sleep.)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Key Point</h3>
+                <p><em>Nicht</em> comes after the verb but before what’s being denied.</p>
+            </div>
+        </section>
+
+        <!-- Practice Time -->
+        <section id="practice">
+            <h2>Practice Time!</h2>
+            <p>Try these exercises to test your word order skills. Answers are below each one.</p>
+            <div class="subsection">
+                <h3>Exercise 1: Rearrange the Words</h3>
+                <p>Put these words in the right order.</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>sehe / ich / den Hund</li>
+                    </ul>
+                    <button class="toggle-btn">See Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> <em>Ich sehe den Hund.</em> (I see the dog.)</p></div>
+                    <ul class="example-list">
+                        <li>morgen / spielt / das Kind</li>
+                    </ul>
+                    <button class="toggle-btn">See Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> <em>Morgen spielt das Kind.</em> (Tomorrow, the child plays.)</p></div>
+                    <ul class="example-list">
+                        <li>im Park / läuft / der Hund</li>
+                    </ul>
+                    <button class="toggle-btn">See Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> <em>Im Park läuft der Hund.</em> (In the park, the dog runs.)</p></div>
+                    <ul class="example-list">
+                        <li>heute / ich / gehe / schnell / zur Schule</li>
+                    </ul>
+                    <button class="toggle-btn">See Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> <em>Heute gehe ich schnell zur Schule.</em> (Today, I go quickly to school.)</p></div>
+                    <ul class="example-list">
+                        <li>ruft / er / an / seine Freundin</li>
+                    </ul>
+                    <button class="toggle-btn">See Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> <em>Er ruft seine Freundin an.</em> (He calls his friend.)</p></div>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Exercise 2: Fix the Sentence</h3>
+                <p>Correct the word order.</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>Ich den Hund sehe.</em></li>
+                    </ul>
+                    <button class="toggle-btn">See Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> <em>Ich sehe den Hund.</em> (I see the dog.)</p></div>
+                    <ul class="example-list">
+                        <li><em>Der Mann das Buch liest.</em></li>
+                    </ul>
+                    <button class="toggle-btn">See Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> <em>Der Mann liest das Buch.</em> (The man reads the book.)</p></div>
+                    <ul class="example-list">
+                        <li><em>Spielt im Garten das Kind.</em></li>
+                    </ul>
+                    <button class="toggle-btn">See Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> <em>Im Garten spielt das Kind.</em> (In the park, the child plays.)</p></div>
+                    <ul class="example-list">
+                        <li><em>Sie weiß nicht das.</em></li>
+                    </ul>
+                    <button class="toggle-btn">See Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> <em>Sie weiß das nicht.</em> (She doesn’t know that.)</p></div>
+                    <ul class="example-list">
+                        <li><em>Ich will sehen den Film.</em></li>
+                    </ul>
+                    <button class="toggle-btn">See Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> <em>Ich will den Film sehen.</em> (I want to see the movie.)</p></div>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Exercise 3: Make Questions</h3>
+                <p>Turn these into questions.</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>Du liest das Buch.</em></li>
+                    </ul>
+                    <button class="toggle-btn">See Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> <em>Liest du das Buch?</em> (Do you read the book?)</p></div>
+                    <ul class="example-list">
+                        <li><em>Der Mann wohnt hier.</em></li>
+                    </ul>
+                    <button class="toggle-btn">See Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> <em>Wo wohnt der Mann?</em> (Where does the man live?)</p></div>
+                    <ul class="example-list">
+                        <li><em>Sie spielt im Park.</em></li>
+                    </ul>
+                    <button class="toggle-btn">See Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> <em>Spielt sie im Park?</em> (Does she play in the park?)</p></div>
+                    <ul class="example-list">
+                        <li><em>Wir kommen morgen.</em></li>
+                    </ul>
+                    <button class="toggle-btn">See Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> <em>Wann kommen wir?</em> (When do we come?)</p></div>
+                    <ul class="example-list">
+                        <li><em>Er hilft dem Kind.</em></li>
+                    </ul>
+                    <button class="toggle-btn">See Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> <em>Hilft er dem Kind?</em> (Does he help the child?)</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips -->
+        <section id="tips">
+            <h2>Tips to Master Word Order</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Verb Second:</strong> Always put the verb second in main clauses.</li>
+                    <li><strong>TMP:</strong> After the verb, order is Time, Manner, Place.</li>
+                    <li><strong>End Spot:</strong> Infinitives, prefixes, and subordinate verbs go to the end.</li>
+                    <li><strong>Practice:</strong> Start with simple sentences like <em>Ich sehe den Hund</em>, then add more.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Final Thoughts -->
+        <section id="final-thoughts">
+            <h2>You’ve Got It!</h2>
+            <p>
+                Now you know German word order: verb second in main clauses, TMP for extras, end spot for second verbs, and verb last in subordinate clauses. With these rules and examples, you can build sentences like a pro. Keep practicing, and it’ll feel natural soon. <em>Viel Erfolg!</em> (Good luck!)
+            </p>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="nouns.html" class="see-also-btn">German Nouns</a>
+                <a href="cases.html" class="see-also-btn">German Cases</a>
+                <a href="prepositions.html" class="see-also-btn">German Prepositions</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="prepositions.html" class="next-btn">Next: German Prepositions →</a>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('.toggle-btn');
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const hiddenContent = this.nextElementSibling;
+                    if (hiddenContent.classList.contains('hidden')) {
+                        hiddenContent.classList.remove('hidden');
+                    } else {
+                        hiddenContent.classList.add('hidden');
+                    }
+                });
+            });
+
+            const modeToggle = document.getElementById('mode-toggle');
+            const body = document.body;
+            modeToggle.addEventListener('click', function() {
+                body.classList.toggle('dark-mode');
+                const isDark = body.classList.contains('dark-mode');
+                modeToggle.querySelector('svg').setAttribute('d', isDark ? 
+                    'M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z' : 
+                    'M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z');
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

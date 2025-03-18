@@ -1,0 +1,777 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Thumbnail {% endblock title %}
+
+{% block body %}
+<style>
+    /* Base Styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+        background: linear-gradient(135deg, #f9fafb, #e6f0fa);
+        color: #2d3748;
+        line-height: 1.8;
+        overflow-x: hidden;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        background: linear-gradient(135deg, #2c5282, #1a365d);
+        color: #e6f0fa;
+        padding: 150px 20px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 2;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .hero-section h1 {
+        font-size: 60px;
+        font-weight: 800;
+        margin-bottom: 30px;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+        color: #38b2ac;
+        animation: fadeInUp 1s ease-out;
+    }
+
+    .hero-section p {
+        font-size: 24px;
+        margin-bottom: 40px;
+        opacity: 0.9;
+        font-weight: 500;
+    }
+
+    .cta-button {
+        display: inline-block;
+        background: linear-gradient(135deg, #2c5282, #1a365d);
+        color: #e6f0fa;
+        padding: 20px 45px;
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: 700;
+        font-size: 20px;
+        transition: all 0.4s ease;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        animation: fadeInUp 1.2s ease-out;
+    }
+
+    .cta-button:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Floating Elements */
+    .floating-element {
+        position: absolute;
+        padding: 10px 20px;
+        background: rgba(56, 178, 172, 0.2); /* More transparent to avoid obscuring text */
+        border: 1px solid #38b2ac;
+        border-radius: 50px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        color: #38b2ac;
+        z-index: 1;
+        opacity: 0;
+        animation: floatIn 1s ease-out forwards, float 8s ease-in-out infinite;
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    /* Adjusted positions to avoid overlap with text */
+    .floating-element-1 { top: 10%; left: 5%; animation-delay: 0.3s; }
+    .floating-element-2 { top: 20%; right: 5%; animation-delay: 0.5s; }
+    .floating-element-3 { bottom: 10%; left: 5%; animation-delay: 0.7s; }
+    .floating-element-4 { bottom: 20%; right: 5%; animation-delay: 0.9s; }
+    .floating-element-5 { top: 15%; left: 50%; transform: translateX(-50%); animation-delay: 1.1s; }
+
+    .floating-icon {
+        position: absolute;
+        font-size: 30px;
+        color: rgba(56, 178, 172, 0.5);
+        opacity: 0;
+        animation: pulse 3s ease-in-out infinite, fadeIn 1.5s ease-out forwards;
+    }
+
+    .icon-1 { top: 5%; left: 10%; animation-delay: 0.5s; }
+    .icon-2 { top: 30%; right: 10%; animation-delay: 0.7s; }
+    .icon-3 { bottom: 5%; left: 15%; animation-delay: 0.9s; }
+
+    @keyframes float {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-20px); }
+        100% { transform: translateY(0); }
+    }
+
+    @keyframes floatIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.15); }
+        100% { transform: scale(1); }
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    /* Sections */
+    .section {
+        padding: 120px 20px;
+        text-align: center;
+    }
+
+    .section h2 {
+        font-size: 48px;
+        font-weight: 800;
+        margin-bottom: 60px;
+        color: #2c5282;
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+        animation: fadeInUp 1.2s ease-out;
+    }
+
+    .section p {
+        max-width: 900px;
+        margin: 0 auto 70px;
+        font-size: 22px;
+        color: #4a5568;
+        font-weight: 500;
+    }
+
+    /* Portfolio Showcase */
+    .portfolio-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 60px;
+        max-width: 1400px;
+        margin: 0 auto 80px;
+        animation: fadeInUp 1.5s ease-out;
+    }
+
+    .portfolio-item {
+        width: 380px;
+        background-color: white;
+        border-radius: 20px;
+        overflow: hidden;
+        transition: all 0.5s ease;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        animation: fadeInUp 1.5s ease-out;
+    }
+
+    .portfolio-item:hover {
+        transform: translateY(-15px);
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    }
+
+    .portfolio-item img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .portfolio-item div {
+        padding: 40px;
+    }
+
+    .portfolio-item h3 {
+        margin: 0 0 20px;
+        font-size: 26px;
+        font-weight: 700;
+        color: #2c5282;
+    }
+
+    .portfolio-item p {
+        margin: 0;
+        font-size: 18px;
+        color: #4a5568;
+    }
+
+    /* What We Offer Section */
+    .feature-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 60px;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .feature-item {
+        flex: 1;
+        min-width: 320px;
+        background-color: white;
+        padding: 50px;
+        border-radius: 20px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        transition: all 0.5s ease;
+        animation: fadeInUp 1.7s ease-out;
+    }
+
+    .feature-item:hover {
+        transform: translateY(-10px);
+    }
+
+    .feature-item div {
+        font-size: 50px;
+        margin-bottom: 35px;
+        color: #38b2ac;
+    }
+
+    .feature-item h3 {
+        margin: 0 0 25px;
+        font-size: 26px;
+        font-weight: 700;
+        color: #2c5282;
+    }
+
+    .feature-item p {
+        font-size: 18px;
+        color: #4a5568;
+    }
+
+    /* Process Section */
+    .process-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .process-item {
+        flex: 1;
+        min-width: 280px;
+        padding: 0 25px;
+        transition: all 0.5s ease;
+        animation: fadeInUp 2s ease-out;
+    }
+
+    .process-item:hover {
+        transform: scale(1.1);
+    }
+
+    .process-number {
+        width: 120px;
+        height: 120px;
+        line-height: 120px;
+        background: linear-gradient(135deg, #2c5282, #1a365d);
+        color: #e6f0fa;
+        font-size: 36px;
+        font-weight: 800;
+        border-radius: 50%;
+        margin: 0 auto 50px;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+        transition: all 0.4s ease;
+    }
+
+    .process-item:hover .process-number {
+        transform: rotate(360deg);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .process-item h3 {
+        margin: 0 0 25px;
+        font-size: 26px;
+        font-weight: 700;
+        color: #2c5282;
+    }
+
+    .process-item p {
+        font-size: 18px;
+        color: #4a5568;
+    }
+
+    /* Pricing Section */
+    .pricing-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .pricing-item {
+        flex: 1;
+        min-width: 280px;
+        background-color: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        transition: all 0.4s ease;
+        animation: fadeInUp 2.2s ease-out;
+    }
+
+    .pricing-item:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    }
+
+    .pricing-header {
+        background: linear-gradient(135deg, #1a365d, #2c5282);
+        color: #e6f0fa;
+        padding: 30px 0;
+    }
+
+    .pricing-header h3 {
+        margin: 0;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .pricing-header div {
+        font-size: 36px;
+        font-weight: 700;
+        margin: 15px 0;
+        color: #38b2ac;
+    }
+
+    .pricing-header p {
+        margin: 0;
+        opacity: 0.8;
+        font-size: 14px;
+    }
+
+    .pricing-body {
+        padding: 30px;
+    }
+
+    .pricing-body ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+    }
+
+    .pricing-body li {
+        margin: 15px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .pricing-body span {
+        color: #38b2ac;
+        font-weight: 700;
+        margin-right: 12px;
+        font-size: 18px;
+    }
+
+    .pricing-item .cta-button {
+        display: block;
+        margin-top: 30px;
+        padding: 12px 25px;
+    }
+
+    .popular-tag {
+        position: absolute;
+        top: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #38b2ac;
+        color: #e6f0fa;
+        padding: 6px 20px;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: 700;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Custom Pricing Card */
+    .custom-pricing {
+        flex: 1;
+        min-width: 280px;
+        background-color: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        transition: all 0.4s ease;
+        animation: fadeInUp 2.4s ease-out;
+    }
+
+    .custom-pricing:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    }
+
+    .custom-pricing-header {
+        background: linear-gradient(135deg, #1a365d, #2c5282);
+        color: #e6f0fa;
+        padding: 30px 0;
+        text-align: center;
+    }
+
+    .custom-pricing-header h3 {
+        margin: 0;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .custom-pricing-body {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .custom-pricing-body input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+
+    .custom-pricing-body select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        font-size: 16px;
+        background-color: white;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        cursor: pointer;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 1024px) {
+        .hero-section h1 {
+            font-size: 48px;
+        }
+
+        .hero-section p {
+            font-size: 20px;
+        }
+
+        .cta-button {
+            padding: 18px 35px;
+            font-size: 18px;
+        }
+
+        .portfolio-item, .feature-item, .process-item, .pricing-item, .custom-pricing {
+            min-width: 300px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .hero-section {
+            padding: 100px 15px;
+        }
+
+        .hero-section h1 {
+            font-size: 36px;
+        }
+
+        .hero-section p {
+            font-size: 18px;
+        }
+
+        .floating-element, .floating-icon {
+            display: none;
+        }
+
+        .section {
+            padding: 80px 15px;
+        }
+
+        .section h2 {
+            font-size: 36px;
+        }
+
+        .section p {
+            font-size: 18px;
+        }
+
+        .portfolio-item, .feature-item, .process-item, .pricing-item, .custom-pricing {
+            width: 100%;
+            min-width: 100%;
+        }
+
+        .cta-button {
+            width: 100%;
+            padding: 12px 20px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .hero-section h1 {
+            font-size: 28px;
+        }
+
+        .hero-section p {
+            font-size: 16px;
+        }
+
+        .cta-button {
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+
+        .section h2 {
+            font-size: 28px;
+        }
+
+        .section p {
+            font-size: 16px;
+        }
+    }
+</style>
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="hero-content">
+        <h1>Professional Thumbnail Design</h1>
+        <p>Elevate your content with custom thumbnails that boost click-through rates and captivate your audience.</p>
+        <a href="https://wa.me/9779845996160?text=Hi%20Zasem,%20Can%20we%20talk?" class="cta-button" target="_blank">Start Your Project</a>
+    </div>
+
+    <!-- Floating Elements -->
+    <div class="floating-element floating-element-1">
+        <span class="badge-icon">🎨</span>
+        <span class="badge-text">Creative Excellence</span>
+    </div>
+    <div class="floating-element floating-element-2">
+        <span class="badge-icon">📊</span>
+        <span class="badge-text">Data-Driven</span>
+    </div>
+    <div class="floating-element floating-element-3">
+        <span class="badge-icon">⏳</span>
+        <span class="badge-text">Fast Delivery</span>
+    </div>
+    <div class="floating-element floating-element-4">
+        <span class="badge-icon">🔍</span>
+        <span class="badge-text">Tailored Solutions</span>
+    </div>
+    <div class="floating-element floating-element-5">
+        <span class="badge-icon">🌟</span>
+        <span class="badge-text">Premium Quality</span>
+    </div>
+
+    <!-- Floating Icons -->
+    <div class="floating-icon icon-1">✨</div>
+    <div class="floating-icon icon-2">🎯</div>
+    <div class="floating-icon icon-3">🚀</div>
+</section>
+
+<!-- Portfolio Showcase -->
+<section class="section" id="portfolio">
+    <h2>Our Portfolio</h2>
+    <p>Explore a selection of our expertly crafted thumbnails designed to enhance your content’s visibility.</p>
+    <div class="portfolio-grid">
+        <div class="portfolio-item">
+            <img src="{% static 'gaming_thumbnail.jpg' %}" alt="Gaming Thumbnail">
+            <div>
+                <h3>Gaming Channel</h3>
+                <p>Dynamic designs that highlight the thrill of gaming.</p>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="{% static 'tutorial_channel.jpg' %}" alt="Tutorial Thumbnail">
+            <div>
+                <h3>Tutorial Series</h3>
+                <p>Clear, informative visuals for educational content.</p>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="{% static 'social-media.jpg' %}" alt="Vlog Thumbnail">
+            <div>
+                <h3>Lifestyle Vlog</h3>
+                <p>Vibrant styles to connect with your viewers.</p>
+            </div>
+        </div>
+    </div>
+    <a href="https://iamzasem.my.canva.site/works" class="cta-button" target="_blank">View Full Portfolio</a>
+</section>
+
+<!-- What We Offer Section -->
+<section class="section" id="features">
+    <h2>What We Offer</h2>
+    <p>Discover the advantages of partnering with a thumbnail design expert to grow your audience.</p>
+    <div class="feature-grid">
+        <div class="feature-item">
+            <div>📈</div>
+            <h3>Increased Engagement</h3>
+            <p>Achieve up to <strong>50%</strong> higher click-through rates with our designs.</p>
+        </div>
+        <div class="feature-item">
+            <div>🎯</div>
+            <h3>Targeted Customization</h3>
+            <p>Tailored thumbnails for your niche and platform.</p>
+        </div>
+        <div class="feature-item">
+            <div>⏱️</div>
+            <h3>Quick Turnaround</h3>
+            <p>Deliveries completed in as little as <strong>24 hours</strong>.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Process Section -->
+<section class="section process-section">
+    <h2>Our Design Process</h2>
+    <p>A structured approach to deliver thumbnails that exceed your expectations.</p>
+    <div class="process-grid">
+        <div class="process-item">
+            <div class="process-number">1</div>
+            <h3>Research</h3>
+            <p>We study your content and audience for optimal results.</p>
+        </div>
+        <div class="process-item">
+            <div class="process-number">2</div>
+            <h3>Conceptualization</h3>
+            <p>We develop multiple high-impact design ideas.</p>
+        </div>
+        <div class="process-item">
+            <div class="process-number">3</div>
+            <h3>Creation</h3>
+            <p>We craft thumbnails using industry-leading tools.</p>
+        </div>
+        <div class="process-item">
+            <div class="process-number">4</div>
+            <h3>Perfection</h3>
+            <p>We refine based on your feedback until <strong>100% satisfaction</strong>.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Section -->
+<section class="section pricing-section">
+    <h2>Pricing Packages</h2>
+    <p>Select a plan that fits your needs and budget to elevate your content strategy.</p>
+    <div class="pricing-grid">
+        <div class="pricing-item">
+            <div class="pricing-header">
+                <h3>Starter</h3>
+                <div>$29</div>
+                <p>per thumbnail</p>
+            </div>
+            <div class="pricing-body">
+                <ul>
+                    <li><span>✓</span> 2 design concepts</li>
+                    <li><span>✓</span> 1 revision round</li>
+                    <li><span>✓</span> 48-hour delivery</li>
+                    <li><span>✓</span> Source file included</li>
+                </ul>
+                <a href="https://wa.me/9779845996160?text=Hi%20Zasem,%20I%20want%20to%20select%20the%20Starter%20package%20at%20$29%20per%20thumbnail" class="cta-button" target="_blank">Select Package</a>
+            </div>
+        </div>
+        <div class="pricing-item" style="transform: scale(1.05); position: relative; z-index: 1;">
+            <div class="popular-tag">Most Popular</div>
+            <div class="pricing-header">
+                <h3>Professional</h3>
+                <div>$49</div>
+                <p>per thumbnail</p>
+            </div>
+            <div class="pricing-body">
+                <ul>
+                    <li><span>✓</span> 4 design concepts</li>
+                    <li><span>✓</span> 3 revision rounds</li>
+                    <li><span>✓</span> 24-hour delivery</li>
+                    <li><span>✓</span> Source file included</li>
+                    <li><span>✓</span> A/B testing variants</li>
+                </ul>
+                <a href="https://wa.me/9779845996160?text=Hi%20Zasem,%20I%20want%20to%20select%20the%20Professional%20package%20at%20$49%20per%20thumbnail" class="cta-button" target="_blank">Select Package</a>
+            </div>
+        </div>
+        <div class="pricing-item">
+            <div class="pricing-header">
+                <h3>Premium</h3>
+                <div>$149</div>
+                <p>monthly (5 thumbnails)</p>
+            </div>
+            <div class="pricing-body">
+                <ul>
+                    <li><span>✓</span> Unlimited concepts</li>
+                    <li><span>✓</span> Unlimited revisions</li>
+                    <li><span>✓</span> 24-hour delivery</li>
+                    <li><span>✓</span> Source files included</li>
+                    <li><span>✓</span> A/B testing variants</li>
+                    <li><span>✓</span> Channel branding guide</li>
+                </ul>
+                <a href="https://wa.me/9779845996160?text=Hi%20Zasem,%20I%20want%20to%20select%20the%20Premium%20package%20at%20$149%20monthly%20(5%20thumbnails)" class="cta-button" target="_blank">Select Package</a>
+            </div>
+        </div>
+        <div class="custom-pricing">
+            <div class="custom-pricing-header">
+                <h3>Set Your Own Price</h3>
+            </div>
+            <div class="custom-pricing-body">
+                <input type="number" id="customPrice" placeholder="Enter your price" min="1" required>
+                <select id="currency">
+                    <option value="USD">🇺🇸 USD ($)</option>
+                    <option value="EUR">🇪🇺 EUR (€)</option>
+                    <option value="GBP">🇬🇧 GBP (£)</option>
+                    <option value="NPR">🇳🇵 NPR (₹)</option>
+                    <option value="INR">🇮🇳 INR (₹)</option>
+                    <option value="AUD">🇦🇺 AUD ($)</option>
+                    <option value="CAD">🇨🇦 CAD ($)</option>
+                    <option value="JPY">🇯🇵 JPY (¥)</option>
+                    <option value="CNY">🇨🇳 CNY (¥)</option>
+                    <option value="BRL">🇧🇷 BRL (R$)</option>
+                    <option value="RUB">🇷🇺 RUB (₽)</option>
+                    <option value="ZAR">🇿🇦 ZAR (R)</option>
+                    <option value="MXN">🇲🇽 MXN ($)</option>
+                    <option value="SGD">🇸🇬 SGD ($)</option>
+                    <option value="KRW">🇰🇷 KRW (₩)</option>
+                    <option value="AED">🇦🇪 AED (د.إ)</option>
+                    <option value="CHF">🇨🇭 CHF (Fr)</option>
+                    <option value="TRY">🇹🇷 TRY (₺)</option>
+                    <option value="PHP">🇵🇭 PHP (₱)</option>
+                    <option value="NGN">🇳🇬 NGN (₦)</option>
+                    <option value="THB">🇹🇭 THB (฿)</option>
+                </select>
+                <a href="#" id="customButton" class="cta-button" target="_blank">Select Package</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Custom Pricing Button Logic
+    document.getElementById('customButton').addEventListener('click', function(e) {
+        e.preventDefault();
+        const price = document.getElementById('customPrice').value;
+        const currency = document.getElementById('currency').value;
+        if (price) {
+            const message = `Hi%20Zasem,%20I%20want%20to%20set%20my%20own%20price%20of%20${currency}%20${price}%20for%20a%20custom%20thumbnail%20package`;
+            window.open(`https://wa.me/9779845996160?text=${message}`, '_blank');
+        } else {
+            alert('Please enter a price.');
+        }
+    });
+</script>
+{% endblock body %}

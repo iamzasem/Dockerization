@@ -1,0 +1,553 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}German Indefinite Pronouns: A Comprehensive Guide{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/dative.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+                <a href="a1-topics.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="javascript:history.back()" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>German Indefinite Pronouns: A Comprehensive Guide</h1>
+            <p>
+                Indefinite pronouns in German are essential tools for referring to unspecified people, things, or quantities. They allow speakers to make general statements, talk about unknown entities, or describe amounts without being specific. This guide focuses on key indefinite pronouns such as <strong>man</strong>, <strong>jemand</strong>, <strong>niemand</strong>, <strong>alles</strong>, <strong>alle</strong>, <strong>einige</strong>, <strong>keiner</strong>, <strong>etwas</strong>, <strong>nichts</strong>, <strong>viele</strong>, <strong>wenige</strong>, and <strong>manche</strong>. We’ll explore their meanings, usage, forms (including declensions where applicable), and provide examples, followed by creative multiple-choice exercises to test your understanding. Let’s get started!
+            </p>
+        </section>
+
+        <!-- What Are Indefinite Pronouns -->
+        <section id="what-are">
+            <h2>What Are Indefinite Pronouns?</h2>
+            <p>
+                Indefinite pronouns refer to non-specific persons, things, or amounts. Unlike definite pronouns (e.g., "he," "she," "it"), they don’t point to a particular entity. In German, they play a crucial role in everyday communication, from general observations to expressing absence or abundance.
+            </p>
+            <h3>Key Examples Covered Here</h3>
+            <ul>
+                <li><strong>man</strong> – one, you (general), people</li>
+                <li><strong>jemand</strong> – someone, somebody</li>
+                <li><strong>niemand</strong> – no one, nobody</li>
+                <li><strong>alles</strong> – everything</li>
+                <li><strong>alle</strong> – everyone, all</li>
+                <li><strong>einige</strong> – some, a few</li>
+                <li><strong>keiner</strong> – none, no one</li>
+                <li><strong>etwas</strong> – something</li>
+                <li><strong>nichts</strong> – nothing</li>
+                <li><strong>viele</strong> – many</li>
+                <li><strong>wenige</strong> – few</li>
+                <li><strong>manche</strong> – some, certain people/things</li>
+            </ul>
+        </section>
+
+        <!-- Detailed Explanation of Each Pronoun -->
+        <section id="pronouns">
+            <h2>Detailed Explanation of Each Pronoun</h2>
+
+            <div class="subsection">
+                <h3>1. man</h3>
+                <p><strong>Meaning</strong>: "one," "you" (in a general sense), "people"</p>
+                <p><strong>Usage</strong>: Used for general statements or when the subject is unspecified. It’s always singular and pairs with third-person singular verbs.</p>
+                <p><strong>Example</strong>: <em>Man sollte jeden Tag lernen.</em> (One should learn every day.)</p>
+            </div>
+
+            <div class="subsection">
+                <h3>2. jemand</h3>
+                <p><strong>Meaning</strong>: "someone," "somebody"</p>
+                <p><strong>Usage</strong>: Refers to an unspecified person.</p>
+                <p><strong>Declension</strong>:</p>
+                <ul>
+                    <li>Nominative/Accusative: <em>jemand</em></li>
+                    <li>Genitive: <em>jemandes</em> (e.g., <em>Das ist jemandes Tasche.</em> – That is someone’s bag.)</li>
+                    <li>Dative: <em>jemandem</em> (e.g., <em>Ich helfe jemandem.</em> – I help someone.)</li>
+                </ul>
+                <p><strong>Example</strong>: <em>Jemand klopft an die Tür.</em> (Someone is knocking on the door.)</p>
+            </div>
+
+            <div class="subsection">
+                <h3>3. niemand</h3>
+                <p><strong>Meaning</strong>: "no one," "nobody"</p>
+                <p><strong>Usage</strong>: Indicates the absence of a person.</p>
+                <p><strong>Declension</strong>:</p>
+                <ul>
+                    <li>Nominative/Accusative: <em>niemand</em></li>
+                    <li>Genitive: <em>niemandes</em> (e.g., <em>Das gehört niemandem.</em> – That belongs to no one.)</li>
+                    <li>Dative: <em>niemandem</em> (e.g., <em>Ich spreche mit niemandem.</em> – I speak to no one.)</li>
+                </ul>
+                <p><strong>Example</strong>: <em>Niemand hat geantwortet.</em> (No one answered.)</p>
+            </div>
+
+            <div class="subsection">
+                <h3>4. alles</h3>
+                <p><strong>Meaning</strong>: "everything"</p>
+                <p><strong>Usage</strong>: Refers to all things, typically indeclinable.</p>
+                <p><strong>Example</strong>: <em>Alles ist möglich.</em> (Everything is possible.)</p>
+                <p><strong>Note</strong>: Can appear in expressions like <em>alles Gute</em> (all the best), showing genitive usage.</p>
+            </div>
+
+            <div class="subsection">
+                <h3>5. alle</h3>
+                <p><strong>Meaning</strong>: "everyone," "all"</p>
+                <p><strong>Usage</strong>: Refers to all people or things in a group.</p>
+                <p><strong>Declension</strong> (changes with case):</p>
+                <ul>
+                    <li>Nominative: <em>alle</em></li>
+                    <li>Genitive: <em>aller</em> (e.g., <em>aller Kinder</em> – of all children)</li>
+                    <li>Dative: <em>allen</em> (e.g., <em>allen Freunden</em> – to all friends)</li>
+                    <li>Accusative: <em>alle</em></li>
+                </ul>
+                <p><strong>Example</strong>: <em>Alle kommen zur Party.</em> (Everyone is coming to the party.)</p>
+            </div>
+
+            <div class="subsection">
+                <h3>6. einige</h3>
+                <p><strong>Meaning</strong>: "some," "a few"</p>
+                <p><strong>Usage</strong>: Indicates an unspecified small number of people or things.</p>
+                <p><strong>Declension</strong>:</p>
+                <ul>
+                    <li>Nominative: <em>einige</em></li>
+                    <li>Genitive: <em>einiger</em> (e.g., <em>einiger Leute</em> – of some people)</li>
+                    <li>Dative: <em>einigen</em> (e.g., <em>einigen Kindern</em> – to some children)</li>
+                    <li>Accusative: <em>einige</em></li>
+                </ul>
+                <p><strong>Example</strong>: <em>Einige Schüler sind krank.</em> (Some students are sick.)</p>
+            </div>
+
+            <div class="subsection">
+                <h3>7. keiner</h3>
+                <p><strong>Meaning</strong>: "none," "no one"</p>
+                <p><strong>Usage</strong>: Denies the existence of any person or thing.</p>
+                <p><strong>Declension</strong> (varies by gender and case):</p>
+                <ul>
+                    <li>Masculine: <em>keiner</em> (nom.), <em>keines</em> (gen.), <em>keinem</em> (dat.), <em>keinen</em> (acc.)</li>
+                    <li>Feminine: <em>keine</em> (nom./acc.), <em>keiner</em> (gen./dat.)</li>
+                    <li>Neuter: <em>keines</em> (nom./acc.), <em>keines</em> (gen.), <em>keinem</em> (dat.)</li>
+                    <li>Plural: <em>keine</em> (nom./acc.), <em>keiner</em> (gen.), <em>keinen</em> (dat.)</li>
+                </ul>
+                <p><strong>Example</strong>: <em>Keiner weiß die Antwort.</em> (No one knows the answer.)</p>
+            </div>
+
+            <div class="subsection">
+                <h3>8. etwas</h3>
+                <p><strong>Meaning</strong>: "something"</p>
+                <p><strong>Usage</strong>: Refers to an unspecified thing, indeclinable.</p>
+                <p><strong>Example</strong>: <em>Ich brauche etwas Zeit.</em> (I need some time.)</p>
+            </div>
+
+            <div class="subsection">
+                <h3>9. nichts</h3>
+                <p><strong>Meaning</strong>: "nothing"</p>
+                <p><strong>Usage</strong>: Indicates the absence of anything, indeclinable.</p>
+                <p><strong>Example</strong>: <em>Nichts ist verloren.</em> (Nothing is lost.)</p>
+            </div>
+
+            <div class="subsection">
+                <h3>10. viele</h3>
+                <p><strong>Meaning</strong>: "many"</p>
+                <p><strong>Usage</strong>: Refers to a large number of people or things.</p>
+                <p><strong>Declension</strong>:</p>
+                <ul>
+                    <li>Nominative: <em>viele</em></li>
+                    <li>Genitive: <em>vieler</em> (e.g., <em>vieler Bücher</em> – of many books)</li>
+                    <li>Dative: <em>vielen</em> (e.g., <em>vielen Freunden</em> – to many friends)</li>
+                    <li>Accusative: <em>viele</em></li>
+                </ul>
+                <p><strong>Example</strong>: <em>Viele Touristen besuchen Berlin.</em> (Many tourists visit Berlin.)</p>
+            </div>
+
+            <div class="subsection">
+                <h3>11. wenige</h3>
+                <p><strong>Meaning</strong>: "few"</p>
+                <p><strong>Usage</strong>: Refers to a small number of people or things.</p>
+                <p><strong>Declension</strong>:</p>
+                <ul>
+                    <li>Nominative: <em>wenige</em></li>
+                    <li>Genitive: <em>weniger</em> (e.g., <em>weniger Leute</em> – of few people)</li>
+                    <li>Dative: <em>wenigen</em> (e.g., <em>wenigen Kindern</em> – to few children)</li>
+                    <li>Accusative: <em>wenige</em></li>
+                </ul>
+                <p><strong>Example</strong>: <em>Wenige verstehen das Problem.</em> (Few understand the problem.)</p>
+            </div>
+
+            <div class="subsection">
+                <h3>12. manche</h3>
+                <p><strong>Meaning</strong>: "some," "certain people/things"</p>
+                <p><strong>Usage</strong>: Refers to an unspecified portion, often with a sense of distinction.</p>
+                <p><strong>Declension</strong>:</p>
+                <ul>
+                    <li>Nominative: <em>manche</em></li>
+                    <li>Genitive: <em>mancher</em> (e.g., <em>mancher Freunde</em> – of some friends)</li>
+                    <li>Dative: <em>manchen</em> (e.g., <em>manchen Leuten</em> – to some people)</li>
+                    <li>Accusative: <em>manche</em></li>
+                </ul>
+                <p><strong>Example</strong>: <em>Manche glauben an Wunder.</em> (Some believe in miracles.)</p>
+            </div>
+        </section>
+
+        <!-- Special Notes and Tips -->
+        <section id="tips">
+            <h2>Special Notes and Tips</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>man vs. jemand</strong>: Use <em>man</em> for general statements (<em>Man lebt nur einmal.</em> – One only lives once), and <em>jemand</em> for a specific but unknown person (<em>Jemand hat mein Buch.</em> – Someone has my book).</li>
+                    <li><strong>alles vs. alle</strong>: <em>Alles</em> is for things (<em>Alles ist teuer.</em> – Everything is expensive), while <em>alle</em> is for people or groups (<em>Alle sind müde.</em> – Everyone is tired).</li>
+                    <li><strong>Declinable vs. Indeclinable</strong>: Pronouns like <em>alles</em>, <em>etwas</em>, and <em>nichts</em> don’t change, while <em>alle</em>, <em>einige</em>, <em>keiner</em>, <em>viele</em>, <em>wenige</em>, and <em>manche</em> adjust based on case and gender.</li>
+                    <li><strong>Common Mistake</strong>: Don’t confuse <em>niemand</em> (no one) with <em>keiner</em> (none/no one); <em>niemand</em> is simpler and doesn’t decline as much.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Exercises -->
+        <section id="practice">
+            <h2>Creative Exercises with Multiple-Choice Options</h2>
+
+            <div class="subsection" id="exercise1">
+                <h3>Exercise 1: Basic Usage</h3>
+                <p>Choose the correct pronoun.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>___ sollte höflich sein.
+                            <select class="answer-select" data-correct="Man">
+                                <option value="">Select</option>
+                                <option value="Jemand">Jemand</option>
+                                <option value="Man">Man</option>
+                                <option value="Niemand">Niemand</option>
+                            </select>
+                        </li>
+                        <li>Ich habe ___ gefunden.
+                            <select class="answer-select" data-correct="etwas">
+                                <option value="">Select</option>
+                                <option value="etwas">etwas</option>
+                                <option value="nichts">nichts</option>
+                                <option value="alles">alles</option>
+                            </select>
+                        </li>
+                        <li>___ Leute sind nett.
+                            <select class="answer-select" data-correct="Manche">
+                                <option value="">Select</option>
+                                <option value="Viele">Viele</option>
+                                <option value="Wenige">Wenige</option>
+                                <option value="Manche">Manche</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Man</em> sollte höflich sein.</li>
+                            <li>Ich habe <em>etwas</em> gefunden.</li>
+                            <li><em>Manche</em> Leute sind nett.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise2">
+                <h3>Exercise 2: Declension Focus</h3>
+                <p>Choose the correct form of the pronoun.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Ich helfe ___.
+                            <select class="answer-select" data-correct="jemandem">
+                                <option value="">Select</option>
+                                <option value="jemand">jemand</option>
+                                <option value="jemandem">jemandem</option>
+                                <option value="jemandes">jemandes</option>
+                            </select>
+                        </li>
+                        <li>Das gehört ___.
+                            <select class="answer-select" data-correct="niemandes">
+                                <option value="">Select</option>
+                                <option value="niemand">niemand</option>
+                                <option value="niemandem">niemandem</option>
+                                <option value="niemandes">niemandes</option>
+                            </select>
+                        </li>
+                        <li>Ich danke ___ Freunden.
+                            <select class="answer-select" data-correct="allen">
+                                <option value="">Select</option>
+                                <option value="allen">allen</option>
+                                <option value="alle">alle</option>
+                                <option value="aller">aller</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li>Ich helfe <em>jemandem</em>.</li>
+                            <li>Das gehört <em>niemandes</em>.</li>
+                            <li>Ich danke <em>allen</em> Freunden.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise3">
+                <h3>Exercise 3: Context Clues</h3>
+                <p>Choose the pronoun that fits the sentence.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>___ hat mein Handy genommen.
+                            <select class="answer-select" data-correct="Jemand">
+                                <option value="">Select</option>
+                                <option value="Jemand">Jemand</option>
+                                <option value="Niemand">Niemand</option>
+                                <option value="Man">Man</option>
+                            </select>
+                        </li>
+                        <li>___ ist heute perfekt.
+                            <select class="answer-select" data-correct="Alles">
+                                <option value="">Select</option>
+                                <option value="Alles">Alles</option>
+                                <option value="Alle">Alle</option>
+                                <option value="Einige">Einige</option>
+                            </select>
+                        </li>
+                        <li>___ wissen die Wahrheit.
+                            <select class="answer-select" data-correct="Wenige">
+                                <option value="">Select</option>
+                                <option value="Viele">Viele</option>
+                                <option value="Wenige">Wenige</option>
+                                <option value="Keiner">Keiner</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Jemand</em> hat mein Handy genommen.</li>
+                            <li><em>Alles</em> ist heute perfekt.</li>
+                            <li><em>Wenige</em> wissen die Wahrheit.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise4">
+                <h3>Exercise 4: Mixed Pronouns</h3>
+                <p>Fill in the blank with the correct pronoun.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>___ sind zur Feier gekommen.
+                            <select class="answer-select" data-correct="Alle">
+                                <option value="">Select</option>
+                                <option value="Alle">Alle</option>
+                                <option value="Alles">Alles</option>
+                                <option value="Manche">Manche</option>
+                            </select>
+                        </li>
+                        <li>Ich kenne ___ hier.
+                            <select class="answer-select" data-correct="niemand">
+                                <option value="">Select</option>
+                                <option value="niemand">niemand</option>
+                                <option value="jemand">jemand</option>
+                                <option value="man">man</option>
+                            </select>
+                        </li>
+                        <li>___ Gute zum Geburtstag!
+                            <select class="answer-select" data-correct="Alles">
+                                <option value="">Select</option>
+                                <option value="Alles">Alles</option>
+                                <option value="Alle">Alle</option>
+                                <option value="Einige">Einige</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Alle</em> sind zur Feier gekommen.</li>
+                            <li>Ich kenne <em>niemand</em> hier.</li>
+                            <li><em>Alles</em> Gute zum Geburtstag!</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise5">
+                <h3>Exercise 5: Story Completion</h3>
+                <p>Fill in the blanks with the correct pronoun.</p>
+                <div class="examples">
+                    <p>___ (1) sagt, dass Lernen wichtig ist. ___ (2) hilft mir dabei. ___ (3) Leute finden es langweilig, aber ___ (4) denken, es ist nützlich. Am Ende ist ___ (5) klar.</p>
+                    <ol class="example-list">
+                        <li>
+                            <select class="answer-select" data-correct="Man">
+                                <option value="">Select</option>
+                                <option value="Man">Man</option>
+                                <option value="Jemand">Jemand</option>
+                                <option value="Niemand">Niemand</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select class="answer-select" data-correct="Jemand">
+                                <option value="">Select</option>
+                                <option value="Jemand">Jemand</option>
+                                <option value="Niemand">Niemand</option>
+                                <option value="Keiner">Keiner</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select class="answer-select" data-correct="Einige">
+                                <option value="">Select</option>
+                                <option value="Einige">Einige</option>
+                                <option value="Viele">Viele</option>
+                                <option value="Wenige">Wenige</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select class="answer-select" data-correct="Manche">
+                                <option value="">Select</option>
+                                <option value="Manche">Manche</option>
+                                <option value="Alles">Alles</option>
+                                <option value="Alle">Alle</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select class="answer-select" data-correct="alles">
+                                <option value="">Select</option>
+                                <option value="alles">alles</option>
+                                <option value="alle">alle</option>
+                                <option value="nichts">nichts</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong> <em>Man</em> sagt, dass Lernen wichtig ist. <em>Jemand</em> hilft mir dabei. <em>Einige</em> Leute finden es langweilig, aber <em>manche</em> denken, es ist nützlich. Am Ende ist <em>alles</em> klar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips to Master Indefinite Pronouns -->
+        <section id="master-tips">
+            <h2>Tips to Master Indefinite Pronouns</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Practice Context</strong>: Write 3 sentences for each pronoun to see how they fit.</li>
+                    <li><strong>Flashcards</strong>: Pair pronouns with meanings and examples (e.g., <em>man</em> – "one" – <em>Man lebt nur einmal.</em>).</li>
+                    <li><strong>Listen Up</strong>: Watch German shows or listen to podcasts—note how natives use <em>man</em>, <em>jemand</em>, etc.</li>
+                    <li><strong>Declension Drills</strong>: Focus on <em>alle</em>, <em>einige</em>, <em>keiner</em>—practice their forms with nouns.</li>
+                    <li><strong>Compare</strong>: Contrast <em>alles</em> vs. <em>alle</em>, <em>jemand</em> vs. <em>niemand</em> in similar sentences.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Resources -->
+        <section id="resources">
+            <h2>Resources for Extra Practice</h2>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <h4>DeutschAkademie</h4>
+                    <p>Free grammar exercises.</p>
+                    <a href="https://www.deutschakademie.de/online-deutschkurs/" class="resource-btn">Visit DeutschAkademie</a>
+                </div>
+                <div class="resource-card">
+                    <h4>GermanPod101</h4>
+                    <p>Audio lessons on pronouns.</p>
+                    <a href="https://www.germanpod101.com/" class="resource-btn">Visit GermanPod101</a>
+                </div>
+                <div class="resource-card">
+                    <h4>DW Learn German</h4>
+                    <p>Interactive pronoun practice.</p>
+                    <a href="https://learngerman.dw.com/en/overview" class="resource-btn">Visit DW Learn German</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Thoughts -->
+        <section id="final-thoughts">
+            <h2>You’re Ready!</h2>
+            <p>
+                This guide gives you a full rundown of German indefinite pronouns like <em>man</em>, <em>jemand</em>, <em>niemand</em>, and more—complete with usage, forms, examples, and exercises. Work through the activities, and you’ll be using these pronouns like a pro! Next, you might explore German relative pronouns or adjectives—keep learning!
+            </p>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="relative-pronouns.html" class="see-also-rect">German Relative Pronouns</a>
+                <a href="adjectives.html" class="see-also-rect">German Adjectives</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="relative-pronouns.html" class="next-btn">Next: German Relative Pronouns →</a>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Dark/Light mode toggle
+            const modeToggle = document.getElementById('mode-toggle');
+            const body = document.body;
+            modeToggle.addEventListener('click', function() {
+                body.classList.toggle('dark-mode');
+                const isDark = body.classList.contains('dark-mode');
+                modeToggle.querySelector('svg').setAttribute('d', isDark ? 
+                    'M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z' : 
+                    'M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z');
+            });
+
+            // Check Answers functionality
+            document.querySelectorAll('.check-answers').forEach(button => {
+                button.addEventListener('click', function() {
+                    const exercise = this.closest('.subsection');
+                    const selects = exercise.querySelectorAll('.answer-select');
+                    selects.forEach(select => {
+                        const correctAnswer = select.getAttribute('data-correct');
+                        const userAnswer = select.value;
+                        if (userAnswer === correctAnswer) {
+                            select.style.border = '2px solid #2e7d32'; // Green for correct
+                        } else if (userAnswer !== '') {
+                            select.style.border = '2px solid #d32f2f'; // Red for incorrect
+                        } else {
+                            select.style.border = '1px solid #ccc'; // Default
+                        }
+                    });
+                });
+            });
+
+            // Show Answers functionality
+            document.querySelectorAll('.show-answers').forEach(button => {
+                button.addEventListener('click', function() {
+                    const exercise = this.closest('.subsection');
+                    const answers = exercise.querySelector('.answers');
+                    answers.classList.toggle('hidden');
+                });
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

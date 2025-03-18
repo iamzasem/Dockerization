@@ -1,0 +1,460 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}German Imperative: All Forms and Examples{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/imperative.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+                <a href="a1-topics.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="javascript:history.back()" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>German Imperative: A Simple Guide with All Forms, Examples, and Tasks</h1>
+            <p>
+                The <strong>imperative</strong> in German is how you give commands, instructions, or requests—like "Go!" or "Listen!" It’s straightforward once you know the forms, which change based on who you’re talking to: <em>du</em> (informal singular), <em>ihr</em> (informal plural), <em>Sie</em> (formal singular/plural), and sometimes <em>wir</em> (we, for suggestions). This guide explains each form simply, gives plenty of example sentences, and includes tasks to practice. Let’s get started!
+            </p>
+        </section>
+
+        <!-- What is the Imperative -->
+        <section id="what-is">
+            <h2>What is the Imperative?</h2>
+            <p>
+                The imperative is the verb form used to tell someone what to do. In German:
+            </p>
+            <div class="examples">
+                <ul class="example-list">
+                    <li>It’s based on the <strong>present tense</strong>.</li>
+                    <li>The verb often comes <strong>first</strong> in the sentence.</li>
+                    <li>It skips the subject (<em>du</em>, <em>ihr</em>, <em>Sie</em>) in most cases, except for <em>wir</em>.</li>
+                </ul>
+            </div>
+            <p>
+                There are four imperative forms in German, and we’ll cover them all with clear rules and examples.
+            </p>
+        </section>
+
+        <!-- Imperative for Du -->
+        <section id="du">
+            <h2>1. Imperative for <em>Du</em> (Informal Singular)</h2>
+            <div class="subsection">
+                <h3>How It Works</h3>
+                <p>
+                    Use the present tense <em>du</em> form (e.g., <em>du machst</em>).<br>
+                    Drop the <em>-st</em> ending, leaving the stem.<br>
+                    For some verbs, add an <em>-e</em> if the stem ends in a hard sound (like <em>t</em> or <em>d</em>) or for smoothness.<br>
+                    No <em>du</em> in the sentence—just the verb.
+                </p>
+            </div>
+            <div class="subsection">
+                <h3>Rules</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>Regular verbs: Stem only (e.g., <em>machst</em> → <em>mach</em>).</li>
+                        <li>Stem ends in <em>t/d/n</em>: Add <em>-e</em> (e.g., <em>arbeitest</em> → <em>arbeite</em>).</li>
+                        <li>Irregular verbs: Check if the stem vowel changes (e.g., <em>liest</em> → <em>lies</em>).</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Examples</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Mach</em> die Tür zu! (Close the door!) <br> - From <em>machst</em> (you do/make).</li>
+                        <li><em>Lies</em> das Buch! (Read the book!) <br> - From <em>liest</em> (you read), vowel change <em>ie</em> stays.</li>
+                        <li><em>Arbeite</em> schneller! (Work faster!) <br> - From <em>arbeitest</em>, add <em>-e</em> for <em>t</em> sound.</li>
+                        <li><em>Geh</em> nach Hause! (Go home!) <br> - From <em>gehst</em>, drop <em>-st</em>.</li>
+                        <li><em>Hör</em> mir zu! (Listen to me!) <br> - From <em>hörst</em>, drop <em>-st</em>.</li>
+                        <li><em>Komm</em> her! (Come here!) <br> - From <em>kommst</em>, drop <em>-st</em>.</li>
+                        <li><em>Iss</em> dein Brot! (Eat your bread!) <br> - From <em>isst</em>, drop <em>-st</em>.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Imperative for Ihr -->
+        <section id="ihr">
+            <h2>2. Imperative for <em>Ihr</em> (Informal Plural)</h2>
+            <div class="subsection">
+                <h3>How It Works</h3>
+                <p>
+                    Use the present tense <em>ihr</em> form (e.g., <em>ihr macht</em>).<br>
+                    Keep it exactly as is—no changes.<br>
+                    Skip <em>ihr</em> in the sentence—just the verb.
+                </p>
+            </div>
+            <div class="subsection">
+                <h3>Rules</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>Always matches the <em>ihr</em> conjugation.</li>
+                        <li>No extra endings or tweaks.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Examples</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Macht</em> die Fenster auf! (Open the windows!) <br> - From <em>ihr macht</em>.</li>
+                        <li><em>Lest</em> die Zeitung! (Read the newspaper!) <br> - From <em>ihr lest</em>.</li>
+                        <li><em>Arbeitet</em> zusammen! (Work together!) <br> - From <em>ihr arbeitet</em>.</li>
+                        <li><em>Geht</em> in den Park! (Go to the park!) <br> - From <em>ihr geht</em>.</li>
+                        <li><em>Hört</em> die Musik! (Listen to the music!) <br> - From <em>ihr hört</em>.</li>
+                        <li><em>Kommt</em> später! (Come later!) <br> - From <em>ihr kommt</em>.</li>
+                        <li><em>Esst</em> jetzt! (Eat now!) <br> - From <em>ihr esst</em>.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Imperative for Sie -->
+        <section id="sie">
+            <h2>3. Imperative for <em>Sie</em> (Formal Singular/Plural)</h2>
+            <div class="subsection">
+                <h3>How It Works</h3>
+                <p>
+                    Use the present tense <em>Sie</em> form (e.g., <em>Sie machen</em>).<br>
+                    Keep it as is—no changes.<br>
+                    Put <em>Sie</em> <strong>after</strong> the verb (unlike <em>du</em> and <em>ihr</em>, where the subject is dropped).
+                </p>
+            </div>
+            <div class="subsection">
+                <h3>Rules</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>Always polite, used for adults or strangers.</li>
+                        <li>Verb first, then <em>Sie</em>.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Examples</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Machen Sie</em> die Tür zu! (Close the door!) <br> - From <em>Sie machen</em>.</li>
+                        <li><em>Lesen Sie</em> das Buch! (Read the book!) <br> - From <em>Sie lesen</em>.</li>
+                        <li><em>Arbeiten Sie</em> bitte hier! (Work here, please!) <br> - From <em>Sie arbeiten</em>.</li>
+                        <li><em>Gehen Sie</em> nach links! (Go left!) <br> - From <em>Sie gehen</em>.</li>
+                        <li><em>Hören Sie</em> mir zu! (Listen to me!) <br> - From <em>Sie hören</em>.</li>
+                        <li><em>Kommen Sie</em> morgen! (Come tomorrow!) <br> - From <em>Sie kommen</em>.</li>
+                        <li><em>Essen Sie</em> mit uns! (Eat with us!) <br> - From <em>Sie essen</em>.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Imperative for Wir -->
+        <section id="wir">
+            <h2>4. Imperative for <em>Wir</em> (We, Suggestions)</h2>
+            <div class="subsection">
+                <h3>How It Works</h3>
+                <p>
+                    Use the present tense <em>wir</em> form (e.g., <em>wir machen</em>).<br>
+                    Keep <em>wir</em> in the sentence—verb first, then <em>wir</em>.<br>
+                    Often softened with <em>mal</em> (once) for a casual vibe.
+                </p>
+            </div>
+            <div class="subsection">
+                <h3>Rules</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>Suggests "let’s do it" rather than a strict command.</li>
+                        <li>Verb stays in <em>wir</em> form.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Examples</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Machen wir</em> das zusammen! (Let’s do it together!) <br> - From <em>wir machen</em>.</li>
+                        <li><em>Lesen wir</em> ein Buch! (Let’s read a book!) <br> - From <em>wir lesen</em>.</li>
+                        <li><em>Arbeiten wir</em> heute! (Let’s work today!) <br> - From <em>wir arbeiten</em>.</li>
+                        <li><em>Gehen wir</em> ins Kino! (Let’s go to the cinema!) <br> - From <em>wir gehen</em>.</li>
+                        <li><em>Hören wir</em> Musik! (Let’s listen to music!) <br> - From <em>wir hören</em>.</li>
+                        <li><em>Kommen wir</em> mal später! (Let’s come later!) <br> - From <em>wir kommen</em>.</li>
+                        <li><em>Essen wir</em> draußen! (Let’s eat outside!) <br> - From <em>wir essen</em>.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Special Cases -->
+        <section id="special-cases">
+            <h2>Special Cases</h2>
+            <div class="subsection">
+                <h3>Verbs with Vowel Changes</h3>
+                <p>
+                    Some verbs change vowels in <em>du</em> form but keep the change in imperative:
+                </p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>nehmen</em> (to take): du nimmst → <em>Nimm</em> das! (Take it!)</li>
+                        <li><em>schlafen</em> (to sleep): du schläfst → <em>Schlaf</em> gut! (Sleep well!)</li>
+                        <li><em>fahren</em> (to drive): du fährst → <em>Fahr</em> langsam! (Drive slowly!)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3><em>Sein</em> and <em>Haben</em></h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>sein</em> (to be):
+                            <ul>
+                                <li><em>Du</em>: <em>Sei</em> leise! (Be quiet!)</li>
+                                <li><em>Ihr</em>: <em>Seid</em> still! (Be still!)</li>
+                                <li><em>Sie</em>: <em>Seien Sie</em> höflich! (Be polite!)</li>
+                                <li><em>Wir</em>: <em>Seien wir</em> nett! (Let’s be nice!)</li>
+                            </ul>
+                        </li>
+                        <li><em>haben</em> (to have):
+                            <ul>
+                                <li><em>Du</em>: <em>Hab</em> Geduld! (Have patience!)</li>
+                                <li><em>Ihr</em>: <em>Habt</em> Spaß! (Have fun!)</li>
+                                <li><em>Sie</em>: <em>Haben Sie</em> Mut! (Have courage!)</li>
+                                <li><em>Wir</em>: <em>Haben wir</em> Zeit! (Let’s have time!)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Adding Politeness or Emphasis -->
+        <section id="politeness">
+            <h2>Adding Politeness or Emphasis</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Bitte</strong> (please): Softens commands.
+                        <ul>
+                            <li><em>Geh bitte nach Hause!</em> (Please go home!)</li>
+                            <li><em>Machen Sie bitte die Tür zu!</em> (Please close the door!)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Mal</strong> (once): Casual tone.
+                        <ul>
+                            <li><em>Komm mal her!</em> (Come here for a sec!)</li>
+                            <li><em>Hör mal zu!</em> (Listen up!)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Exclamation</strong>: Adds urgency.
+                        <ul>
+                            <li><em>Geh jetzt!</em> (Go now!)</li>
+                            <li><em>Lies das sofort!</em> (Read it right away!)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Example Sentences for All Forms -->
+        <section id="examples-all">
+            <h2>Example Sentences for All Forms</h2>
+            <div class="subsection">
+                <h3>Verb: <em>öffnen</em> (to open)</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>Du</em>: <em>Öffne</em> das Fenster! (Open the window!)</li>
+                        <li><em>Ihr</em>: <em>Öffnet</em> die Tür! (Open the door!)</li>
+                        <li><em>Sie</em>: <em>Öffnen Sie</em> den Brief! (Open the letter!)</li>
+                        <li><em>Wir</em>: <em>Öffnen wir</em> die Kiste! (Let’s open the box!)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Verb: <em>trinken</em> (to drink)</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>Du</em>: <em>Trink</em> Wasser! (Drink water!)</li>
+                        <li><em>Ihr</em>: <em>Trinkt</em> jetzt! (Drink now!)</li>
+                        <li><em>Sie</em>: <em>Trinken Sie</em> Tee! (Drink tea!)</li>
+                        <li><em>Wir</em>: <em>Trinken wir</em> zusammen! (Let’s drink together!)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Verb: <em>helfen</em> (to help)</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>Du</em>: <em>Hilf</em> mir! (Help me!)</li>
+                        <li><em>Ihr</em>: <em>Helft</em> uns! (Help us!)</li>
+                        <li><em>Sie</em>: <em>Helfen Sie</em> bitte! (Help, please!)</li>
+                        <li><em>Wir</em>: <em>Helfen wir</em> ihnen! (Let’s help them!)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practice Tasks -->
+        <section id="practice">
+            <h2>Practice Tasks</h2>
+            <div class="subsection">
+                <h3>Task 1: Form the Imperative</h3>
+                <p>Turn these <em>du</em> forms into imperatives:</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Du spielst. → <em>Spiel!</em> (Play!)</li>
+                        <li>Du hörst. → <em>Hör!</em> (Listen!)</li>
+                        <li>Du arbeitest. → <em>Arbeite!</em> (Work!)</li>
+                        <li>Du liest. → <em>Lies!</em> (Read!)</li>
+                        <li>Du nimmst. → <em>Nimm!</em> (Take!)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Task 2: Write Commands</h3>
+                <p>Write an imperative sentence for each form using the verb <em>kommen</em> (to come):</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Du</em>: <em>Komm her!</em> (Come here!)</li>
+                        <li><em>Ihr</em>: <em>Kommt später!</em> (Come later!)</li>
+                        <li><em>Sie</em>: <em>Kommen Sie bitte!</em> (Come, please!)</li>
+                        <li><em>Wir</em>: <em>Kommen wir morgen!</em> (Let’s come tomorrow!)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Task 3: Mix and Match</h3>
+                <p>Create 5 imperative sentences with these verbs: <em>essen</em> (eat), <em>laufen</em> (run), <em>schreiben</em> (write), <em>sehen</em> (see), <em>kaufen</em> (buy). Use different forms (<em>du, ihr, Sie, wir</em>):</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Iss</em> dein Brot! (Eat your bread!) [<em>du</em>]</li>
+                        <li><em>Lauft</em> schneller! (Run faster!) [<em>ihr</em>]</li>
+                        <li><em>Schreiben Sie</em> einen Brief! (Write a letter!) [<em>Sie</em>]</li>
+                        <li><em>Sehen wir</em> den Film! (Let’s see the movie!) [<em>wir</em>]</li>
+                        <li><em>Kauf</em> Milch! (Buy milk!) [<em>du</em>]</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Task 4: Add Politeness</h3>
+                <p>Take these <em>du</em> imperatives and add <em>bitte</em> or <em>mal</em>:</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Geh weg!</em> → <em>Geh bitte weg!</em> (Please go away!)</li>
+                        <li><em>Hör zu!</em> → <em>Hör mal zu!</em> (Listen up!)</li>
+                        <li><em>Komm her!</em> → <em>Komm bitte her!</em> (Please come here!)</li>
+                        <li><em>Mach das!</em> → <em>Mach mal das!</em> (Do that for a sec!)</li>
+                        <li><em>Lies das!</em> → <em>Lies bitte das!</em> (Please read that!)</li>
+                    </ol>
+                </div>
+                <button class="toggle-btn">Try It Yourself</button>
+                <div class="hidden">
+                    <p>Try adding <em>bitte</em> or <em>mal</em> to your own <em>du</em> imperatives and practice saying them!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips to Master Imperatives -->
+        <section id="tips">
+            <h2>Tips to Master Imperatives</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Say Aloud</strong>: Practice each form 5 times—<em>Mach! Macht! Machen Sie! Machen wir!</em>—to feel the rhythm.</li>
+                    <li><strong>Use Daily</strong>: Command yourself—<em>Steh auf!</em> (Get up!), <em>Iss jetzt!</em> (Eat now!).</li>
+                    <li><strong>Listen</strong>: Watch German shows, note commands like <em>Komm her!</em> or <em>Hör zu!</em>.</li>
+                    <li><strong>Switch Forms</strong>: Take <em>Geh!</em> and rewrite for <em>ihr, Sie, wir</em>.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Resources for Extra Practice -->
+        <section id="resources">
+            <h2>Resources for Extra Practice</h2>
+            <div class="resource-container">
+                <div class="resource-card">
+                    <h3>YouTube – Easy German</h3>
+                    <p>Hear imperatives in conversations.</p>
+                    <a href="https://www.youtube.com/@EasyGerman" class="resource-btn" target="_blank">Visit Easy German</a>
+                </div>
+                <div class="resource-card">
+                    <h3>Schubert Verlag</h3>
+                    <p>Free exercises.</p>
+                    <a href="https://www.schubert-verlag.de/aufgaben/uebungen_a1/a1_uebungen_index.htm" class="resource-btn" target="_blank">Visit Schubert Verlag</a>
+                </div>
+                <div class="resource-card">
+                    <h3>Goethe Institute</h3>
+                    <p>Basic grammar help.</p>
+                    <a href="https://www.goethe.de/en/spr/ueb.html" class="resource-btn" target="_blank">Visit Goethe Grammar</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusion -->
+        <section id="conclusion">
+            <p>
+                Keep practicing these forms, and you’ll be giving commands like a native in no time! Try the tasks, tweak them, and make them your own. Next, you could explore past tense or more verb tricks—up to you!
+            </p>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="nouns.html" class="see-also-btn">German Nouns</a>
+                <a href="personal-pronouns.html" class="see-also-btn">Personal Pronouns</a>
+                <a href="verbs-wfrage-ja-nein-normaler.html" class="see-also-btn">Verbs: W-Fragen & More</a>
+                <a href="articles.html" class="see-also-btn">German Articles</a>
+                <a href="adjectives.html" class="see-also-btn">German Adjectives</a>
+                <a href="conjugation.html" class="see-also-btn">German Conjugation</a>
+                <a href="cases.html" class="see-also-btn">German Cases</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="verbs-wfrage-ja-nein-normaler.html" class="next-btn">Next: Verbs: W-Fragen & More →</a>
+        </div>
+    </main>
+
+    <script>
+        // Inline JavaScript for toggle functionality and dark/light mode
+        document.addEventListener('DOMContentLoaded', function() {
+            // Toggle content
+            const buttons = document.querySelectorAll('.toggle-btn');
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const hiddenContent = this.nextElementSibling;
+                    if (hiddenContent.classList.contains('hidden')) {
+                        hiddenContent.classList.remove('hidden');
+                    } else {
+                        hiddenContent.classList.add('hidden');
+                    }
+                });
+            });
+
+            // Dark/Light mode toggle
+            const modeToggle = document.getElementById('mode-toggle');
+            const body = document.body;
+            modeToggle.addEventListener('click', function() {
+                body.classList.toggle('dark-mode');
+                const isDark = body.classList.contains('dark-mode');
+                modeToggle.querySelector('svg').setAttribute('d', isDark ? 
+                    'M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z' : 
+                    'M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z');
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

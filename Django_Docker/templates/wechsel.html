@@ -1,0 +1,738 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}German Wechselpräpositionen (Two-Way Prepositions){% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/wechsel.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+                <a href="a1-topics.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="javascript:history.back()" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>German Wechselpräpositionen (Two-Way Prepositions): A Complete Guide</h1>
+            <p>
+                <strong>Wechselpräpositionen</strong> (two-way prepositions) are a unique group of prepositions in German that can take either the <strong>accusative</strong> or <strong>dative</strong> case, depending on whether they indicate <strong>movement</strong> (direction toward something) or <strong>non-movement</strong> (location or static position). This guide breaks down the concept, provides all required articles, explains the movement vs. non-movement distinction, highlights tricky verbs, and offers exercises to solidify understanding. Let’s dive in!
+            </p>
+        </section>
+
+        <!-- What Are Wechselpräpositionen? -->
+        <section id="definition">
+            <h2>What Are Wechselpräpositionen?</h2>
+            <p>Wechselpräpositionen are prepositions that “switch” between accusative and dative based on context. There are nine main ones:</p>
+            <div class="examples">
+                <ol class="example-list">
+                    <li><strong>an</strong> (at, on, to)</li>
+                    <li><strong>auf</strong> (on, onto)</li>
+                    <li><strong>hinter</strong> (behind)</li>
+                    <li><strong>in</strong> (in, into)</li>
+                    <li><strong>neben</strong> (next to, beside)</li>
+                    <li><strong>über</strong> (above, over, across)</li>
+                    <li><strong>unter</strong> (under, below)</li>
+                    <li><strong>vor</strong> (in front of, before)</li>
+                    <li><strong>zwischen</strong> (between)</li>
+                </ol>
+            </div>
+            <p><strong>Memory Trick:</strong> “ANNA HINUVOZ” – <em>an, auf, hinter, in, neben, über, vor, zwischen</em> (plus <em>unter</em>).</p>
+            <div class="subsection">
+                <h3>The Core Concept: Movement vs. Non-Movement</h3>
+                <ul class="example-list">
+                    <li><strong>Movement (Accusative)</strong>: Indicates direction or destination—where something is going.
+                        <ul><li>Example: <em>Ich gehe in den Park.</em> (I go into the park—movement toward.)</li></ul>
+                    </li>
+                    <li><strong>Non-Movement (Dative)</strong>: Indicates location or a static position—where something is.
+                        <ul><li>Example: <em>Ich bin in dem Park.</em> (I am in the park—staying there.)</li></ul>
+                    </li>
+                </ul>
+                <p>This distinction is key to choosing the right case and article.</p>
+            </div>
+        </section>
+
+        <!-- Articles with Wechselpräpositionen -->
+        <section id="articles">
+            <h2>Accusative and Dative Articles with Wechselpräpositionen</h2>
+            <p>Each preposition pairs with articles that change based on the noun’s gender, number, and case (accusative for movement, dative for non-movement).</p>
+            <div class="subsection">
+                <h3>Definite Articles</h3>
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>Gender/Number</th>
+                            <th>Nominative</th>
+                            <th>Accusative (Movement)</th>
+                            <th>Dative (Non-Movement)</th>
+                            <th>Examples (Accusative → Dative)</th>
+                        </tr>
+                        <tr>
+                            <td>Masculine</td>
+                            <td>der</td>
+                            <td>den</td>
+                            <td>dem</td>
+                            <td><em>Ich hänge das Bild an den Haken.</em> (I hang the picture on the hook.) → <em>Das Bild hängt an dem Haken.</em> (The picture hangs on the hook.)</td>
+                        </tr>
+                        <tr>
+                            <td>Feminine</td>
+                            <td>die</td>
+                            <td>die</td>
+                            <td>der</td>
+                            <td><em>Ich lege das Buch auf die Bank.</em> (I put the book on the bench.) → <em>Das Buch liegt auf der Bank.</em> (The book lies on the bench.)</td>
+                        </tr>
+                        <tr>
+                            <td>Neuter</td>
+                            <td>das</td>
+                            <td>das</td>
+                            <td>dem</td>
+                            <td><em>Ich gehe in das Haus.</em> (I go into the house.) → <em>Ich bin in dem Haus.</em> (I am in the house.)</td>
+                        </tr>
+                        <tr>
+                            <td>Plural</td>
+                            <td>die</td>
+                            <td>die</td>
+                            <td>den (+n)</td>
+                            <td><em>Ich stelle die Blumen zwischen die Stühle.</em> (I place the flowers between the chairs.) → <em>Die Blumen stehen zwischen den Stühlen.</em> (The flowers stand between the chairs.)</td>
+                        </tr>
+                    </table>
+                </div>
+                <p><strong>Plural Note:</strong> Dative adds <em>-n</em> to nouns if they don’t end in <em>-n</em> or <em>-s</em> (e.g., <em>Stuhl</em> → <em>Stühlen</em>).</p>
+            </div>
+            <div class="subsection">
+                <h3>Indefinite Articles</h3>
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>Gender/Number</th>
+                            <th>Nominative</th>
+                            <th>Accusative (Movement)</th>
+                            <th>Dative (Non-Movement)</th>
+                            <th>Examples (Accusative → Dative)</th>
+                        </tr>
+                        <tr>
+                            <td>Masculine</td>
+                            <td>ein</td>
+                            <td>einen</td>
+                            <td>einem</td>
+                            <td><em>Ich stelle einen Tisch neben das Fenster.</em> (I place a table next to the window.) → <em>Ein Tisch steht neben einem Fenster.</em> (A table stands next to a window.)</td>
+                        </tr>
+                        <tr>
+                            <td>Feminine</td>
+                            <td>eine</td>
+                            <td>eine</td>
+                            <td>einer</td>
+                            <td><em>Ich lege eine Decke über die Couch.</em> (I put a blanket over the couch.) → <em>Eine Decke liegt über einer Couch.</em> (A blanket lies over a couch.)</td>
+                        </tr>
+                        <tr>
+                            <td>Neuter</td>
+                            <td>ein</td>
+                            <td>ein</td>
+                            <td>einem</td>
+                            <td><em>Ich hänge ein Bild über das Bett.</em> (I hang a picture above the bed.) → <em>Ein Bild hängt über einem Bett.</em> (A picture hangs above a bed.)</td>
+                        </tr>
+                        <tr>
+                            <td>Plural (keine)</td>
+                            <td>-</td>
+                            <td>keine</td>
+                            <td>keinen (+n)</td>
+                            <td><em>Ich stelle keine Bücher vor die Tür.</em> (I place no books in front of the door.) → <em>Keine Bücher stehen vor keinen Türen.</em> (No books stand in front of doors.)</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Movement vs. Non-Movement -->
+        <section id="movement">
+            <h2>Movement vs. Non-Movement Explained</h2>
+            <div class="subsection">
+                <h3>Movement (Accusative)</h3>
+                <p><strong>Definition:</strong> Indicates <strong>direction</strong>—where something or someone is going or being placed.</p>
+                <p><strong>Question:</strong> “Wohin?” (Where to?)</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>Ich lege den Schlüssel auf den Tisch.</em> (I put the key on the table—movement to the table.)</li>
+                        <li><em>Sie geht in die Küche.</em> (She goes into the kitchen—direction toward.)</li>
+                        <li><em>Er hängt das Bild an die Wand.</em> (He hangs the picture on the wall—moving it there.)</li>
+                        <li><em>Wir stellen die Lampe neben den Stuhl.</em> (We place the lamp next to the chair—movement to position.)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Non-Movement (Dative)</h3>
+                <p><strong>Definition:</strong> Indicates <strong>location</strong>—where something or someone already is or remains.</p>
+                <p><strong>Question:</strong> “Wo?” (Where?)</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>Der Schlüssel liegt auf dem Tisch.</em> (The key lies on the table—already there.)</li>
+                        <li><em>Sie ist in der Küche.</em> (She is in the kitchen—staying there.)</li>
+                        <li><em>Das Bild hängt an der Wand.</em> (The picture hangs on the wall—static position.)</li>
+                        <li><em>Die Lampe steht neben dem Stuhl.</em> (The lamp stands next to the chair—no movement.)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Visualizing the Difference</h3>
+                <ul class="example-list">
+                    <li><strong>Movement</strong>: Imagine an action with an arrow → (going somewhere).
+                        <ul><li><em>Ich springe auf den Tisch.</em> (I jump onto the table—action toward.)</li></ul>
+                    </li>
+                    <li><strong>Non-Movement</strong>: Imagine a dot • (staying put).
+                        <ul><li><em>Ich sitze auf dem Tisch.</em> (I sit on the table—already there.)</li></ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Examples for Each Preposition -->
+        <section id="examples">
+            <h2>Example Sentences for Each Wechselpräposition</h2>
+            <p>Here’s how each preposition works with accusative (movement) and dative (non-movement):</p>
+            <div class="examples">
+                <ol class="example-list">
+                    <li><strong>an</strong> (at, on, to)
+                        <ul>
+                            <li>Acc: <em>Ich hänge den Spiegel an die Wand.</em> (I hang the mirror on the wall.)</li>
+                            <li>Dat: <em>Der Spiegel hängt an der Wand.</em> (The mirror hangs on the wall.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>auf</strong> (on, onto)
+                        <ul>
+                            <li>Acc: <em>Sie legt das Buch auf den Tisch.</em> (She puts the book on the table.)</li>
+                            <li>Dat: <em>Das Buch liegt auf dem Tisch.</em> (The book lies on the table.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>hinter</strong> (behind)
+                        <ul>
+                            <li>Acc: <em>Ich stelle den Stuhl hinter das Sofa.</em> (I place the chair behind the sofa.)</li>
+                            <li>Dat: <em>Der Stuhl steht hinter dem Sofa.</em> (The chair stands behind the sofa.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>in</strong> (in, into)
+                        <ul>
+                            <li>Acc: <em>Wir gehen in den Park.</em> (We go into the park.)</li>
+                            <li>Dat: <em>Wir sind in dem Park.</em> (We are in the park.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>neben</strong> (next to, beside)
+                        <ul>
+                            <li>Acc: <em>Er legt die Tasche neben den Tisch.</em> (He puts the bag next to the table.)</li>
+                            <li>Dat: <em>Die Tasche liegt neben dem Tisch.</em> (The bag lies next to the table.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>über</strong> (above, over, across)
+                        <ul>
+                            <li>Acc: <em>Ich hänge die Lampe über den Tisch.</em> (I hang the lamp above the table.)</li>
+                            <li>Dat: <em>Die Lampe hängt über dem Tisch.</em> (The lamp hangs above the table.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>unter</strong> (under, below)
+                        <ul>
+                            <li>Acc: <em>Sie schiebt die Kiste unter das Bett.</em> (She pushes the box under the bed.)</li>
+                            <li>Dat: <em>Die Kiste steht unter dem Bett.</em> (The box stands under the bed.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>vor</strong> (in front of, before)
+                        <ul>
+                            <li>Acc: <em>Ich stelle das Auto vor das Haus.</em> (I park the car in front of the house.)</li>
+                            <li>Dat: <em>Das Auto steht vor dem Haus.</em> (The car stands in front of the house.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>zwischen</strong> (between)
+                        <ul>
+                            <li>Acc: <em>Wir legen die Decke zwischen die Stühle.</em> (We put the blanket between the chairs.)</li>
+                            <li>Dat: <em>Die Decke liegt zwischen den Stühlen.</em> (The blanket lies between the chairs.)</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Tricky Verbs -->
+        <section id="tricky-verbs">
+            <h2>Verbs That Seem to Imply Movement but Don’t (Dative)</h2>
+            <p>Some verbs might trick learners into thinking they indicate movement (accusative), but they describe a <strong>state</strong> or <strong>location</strong> (dative). Here are common examples:</p>
+            <div class="examples">
+                <ol class="example-list">
+                    <li><strong>liegen</strong> (to lie)
+                        <ul>
+                            <li>Seems like movement: It’s about position, not going somewhere.</li>
+                            <li><em>Das Buch liegt auf dem Tisch.</em> (The book lies on the table—dative, no motion.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>stehen</strong> (to stand)
+                        <ul>
+                            <li>Seems like movement: It’s static, not placement.</li>
+                            <li><em>Die Lampe steht neben dem Sofa.</em> (The lamp stands next to the sofa—dative.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>sitzen</strong> (to sit)
+                        <ul>
+                            <li>Seems like movement: It’s a fixed position.</li>
+                            <li><em>Ich sitze auf dem Stuhl.</em> (I sit on the chair—dative, not moving.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>hängen</strong> (to hang)
+                        <ul>
+                            <li>Seems like movement: Describes where it’s already hanging.</li>
+                            <li><em>Das Bild hängt an der Wand.</em> (The picture hangs on the wall—dative.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>bleiben</strong> (to stay/remain)
+                        <ul>
+                            <li>Seems like movement: It’s about staying put.</li>
+                            <li><em>Wir bleiben in dem Haus.</em> (We stay in the house—dative, no direction.)</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            <div class="subsection">
+                <h3>Contrast with Movement Verbs</h3>
+                <ul class="example-list">
+                    <li><strong>legen</strong> (to lay/put): <em>Ich lege das Buch auf den Tisch.</em> (Accusative—movement.)</li>
+                    <li><strong>stellen</strong> (to place): <em>Ich stelle die Lampe neben den Tisch.</em> (Accusative—movement.)</li>
+                    <li><strong>setzen</strong> (to set/sit down): <em>Ich setze mich auf den Stuhl.</em> (Accusative—movement.)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Additional Notes -->
+        <section id="notes">
+            <h2>Additional Notes</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Verb Dependency</strong>: The verb determines the case, not just the preposition.
+                        <ul>
+                            <li><em>Ich gehe in die Schule.</em> (Movement → accusative.)</li>
+                            <li><em>Ich warte in der Schule.</em> (Location → dative, even though “waiting” feels active.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Prepositional Phrases</strong>: Some fixed phrases override the rule.
+                        <ul>
+                            <li><em>Ich bin auf dem Weg.</em> (I’m on the way—dative, despite implying motion.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Word Order</strong>: Prepositional phrase usually follows the verb.
+                        <ul>
+                            <li><em>Sie springt auf den Tisch.</em> (She jumps onto the table.)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Exercises -->
+        <section id="practice">
+            <h2>Creative Exercises with Multiple-Choice Options</h2>
+
+            <div class="subsection" id="exercise1">
+                <h3>Exercise 1: Accusative or Dative Articles?</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Ich lege das Buch ___ Tisch.
+                            <select class="answer-select" data-correct="auf den">
+                                <option value="">Select</option>
+                                <option value="auf den">auf den</option>
+                                <option value="auf dem">auf dem</option>
+                                <option value="auf das">auf das</option>
+                            </select>
+                        </li>
+                        <li>Das Bild hängt ___ Wand.
+                            <select class="answer-select" data-correct="an dem">
+                                <option value="">Select</option>
+                                <option value="an der">an der</option>
+                                <option value="an den">an den</option>
+                                <option value="an dem">an dem</option>
+                            </select>
+                        </li>
+                        <li>Wir gehen ___ Park spazieren.
+                            <select class="answer-select" data-correct="in den">
+                                <option value="">Select</option>
+                                <option value="in den">in den</option>
+                                <option value="in dem">in dem</option>
+                                <option value="in das">in das</option>
+                            </select>
+                        </li>
+                        <li>Die Lampe steht ___ Sofa.
+                            <select class="answer-select" data-correct="neben dem">
+                                <option value="">Select</option>
+                                <option value="neben dem">neben dem</option>
+                                <option value="neben den">neben den</option>
+                                <option value="neben das">neben das</option>
+                            </select>
+                        </li>
+                        <li>Er stellt die Kiste ___ Bett.
+                            <select class="answer-select" data-correct="unter das">
+                                <option value="">Select</option>
+                                <option value="unter das">unter das</option>
+                                <option value="unter dem">unter dem</option>
+                                <option value="unter den">unter den</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li>Ich lege das Buch <em>auf den</em> Tisch.</li>
+                            <li>Das Bild hängt <em>an dem</em> Wand.</li>
+                            <li>Wir gehen <em>in den</em> Park spazieren.</li>
+                            <li>Die Lampe steht <em>neben dem</em> Sofa.</li>
+                            <li>Er stellt die Kiste <em>unter das</em> Bett.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise2">
+                <h3>Exercise 2: Movement or Non-Movement?</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Sie ist ___ Küche und kocht.
+                            <select class="answer-select" data-correct="in der">
+                                <option value="">Select</option>
+                                <option value="in der">in der</option>
+                                <option value="in die">in die</option>
+                                <option value="in dem">in dem</option>
+                            </select>
+                        </li>
+                        <li>Ich hänge die Jacke ___ Haken.
+                            <select class="answer-select" data-correct="an den">
+                                <option value="">Select</option>
+                                <option value="an den">an den</option>
+                                <option value="an dem">an dem</option>
+                                <option value="an die">an die</option>
+                            </select>
+                        </li>
+                        <li>Die Katze liegt ___ Tisch.
+                            <select class="answer-select" data-correct="unter dem">
+                                <option value="">Select</option>
+                                <option value="unter dem">unter dem</option>
+                                <option value="unter den">unter den</option>
+                                <option value="unter das">unter das</option>
+                            </select>
+                        </li>
+                        <li>Wir legen die Decke ___ Stühle.
+                            <select class="answer-select" data-correct="zwischen die">
+                                <option value="">Select</option>
+                                <option value="zwischen die">zwischen die</option>
+                                <option value="zwischen den">zwischen den</option>
+                                <option value="zwischen dem">zwischen dem</option>
+                            </select>
+                        </li>
+                        <li>Er sitzt ___ Bank im Park.
+                            <select class="answer-select" data-correct="auf der">
+                                <option value="">Select</option>
+                                <option value="auf der">auf der</option>
+                                <option value="auf die">auf die</option>
+                                <option value="auf den">auf den</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li>Sie ist <em>in der</em> Küche und kocht.</li>
+                            <li>Ich hänge die Jacke <em>an den</em> Haken.</li>
+                            <li>Die Katze liegt <em>unter dem</em> Tisch.</li>
+                            <li>Wir legen die Decke <em>zwischen die</em> Stühle.</li>
+                            <li>Er sitzt <em>auf der</em> Bank im Park.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise3">
+                <h3>Exercise 3: Tricky Verbs (Movement Misconceptions)</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Das Buch ___ auf dem Tisch.
+                            <select class="answer-select" data-correct="liegt">
+                                <option value="">Select</option>
+                                <option value="liegt">liegt</option>
+                                <option value="legt">legt</option>
+                                <option value="liest">liest</option>
+                            </select>
+                        </li>
+                        <li>Ich ___ die Tasche neben den Stuhl.
+                            <select class="answer-select" data-correct="stelle">
+                                <option value="">Select</option>
+                                <option value="stelle">stelle</option>
+                                <option value="stehe">stehe</option>
+                                <option value="steht">steht</option>
+                            </select>
+                        </li>
+                        <li>Wir ___ auf den Stühlen im Garten.
+                            <select class="answer-select" data-correct="sitzen">
+                                <option value="">Select</option>
+                                <option value="sitzen">sitzen</option>
+                                <option value="setzen">setzen</option>
+                                <option value="steht">steht</option>
+                            </select>
+                        </li>
+                        <li>Das Bild ___ an der Wand seit Jahren.
+                            <select class="answer-select" data-correct="hängt">
+                                <option value="">Select</option>
+                                <option value="hängt">hängt</option>
+                                <option value="hängt an">hängt an</option>
+                                <option value="legt">legt</option>
+                            </select>
+                        </li>
+                        <li>Sie ___ in dem Haus über Nacht.
+                            <select class="answer-select" data-correct="bleibt">
+                                <option value="">Select</option>
+                                <option value="bleibt">bleibt</option>
+                                <option value="geht">geht</option>
+                                <option value="legt">legt</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li>Das Buch <em>liegt</em> auf dem Tisch.</li>
+                            <li>Ich <em>stelle</em> die Tasche neben den Stuhl.</li>
+                            <li>Wir <em>sitzen</em> auf den Stühlen im Garten.</li>
+                            <li>Das Bild <em>hängt</em> an der Wand seit Jahren.</li>
+                            <li>Sie <em>bleibt</em> in dem Haus über Nacht.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise4">
+                <h3>Exercise 4: Mixed Prepositions</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Ich gehe ___ Schule jeden Morgen.
+                            <select class="answer-select" data-correct="in die">
+                                <option value="">Select</option>
+                                <option value="in die">in die</option>
+                                <option value="in der">in der</option>
+                                <option value="in dem">in dem</option>
+                            </select>
+                        </li>
+                        <li>Der Hund liegt ___ Bett und schläft.
+                            <select class="answer-select" data-correct="unter dem">
+                                <option value="">Select</option>
+                                <option value="unter dem">unter dem</option>
+                                <option value="unter den">unter den</option>
+                                <option value="unter das">unter das</option>
+                            </select>
+                        </li>
+                        <li>Sie hängt das Bild ___ Tür.
+                            <select class="answer-select" data-correct="vor die">
+                                <option value="">Select</option>
+                                <option value="vor die">vor die</option>
+                                <option value="vor dem">vor dem</option>
+                                <option value="vor den">vor den</option>
+                            </select>
+                        </li>
+                        <li>Wir sind ___ Park und spielen.
+                            <select class="answer-select" data-correct="in dem">
+                                <option value="">Select</option>
+                                <option value="in dem">in dem</option>
+                                <option value="in den">in den</option>
+                                <option value="in die">in die</option>
+                            </select>
+                        </li>
+                        <li>Er legt die Zeitung ___ Tisch.
+                            <select class="answer-select" data-correct="auf den">
+                                <option value="">Select</option>
+                                <option value="auf den">auf den</option>
+                                <option value="auf dem">auf dem</option>
+                                <option value="auf die">auf die</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li>Ich gehe <em>in die</em> Schule jeden Morgen.</li>
+                            <li>Der Hund liegt <em>unter dem</em> Bett und schläft.</li>
+                            <li>Sie hängt das Bild <em>vor die</em> Tür.</li>
+                            <li>Wir sind <em>in dem</em> Park und spielen.</li>
+                            <li>Er legt die Zeitung <em>auf den</em> Tisch.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise5">
+                <h3>Exercise 5: Story with Wechselpräpositionen</h3>
+                <p>Fill in the blanks with the correct form (movement or non-movement).</p>
+                <div class="examples">
+                    <p>Gestern ___ (1) ich <em>in die</em> Küche. Dort ___ (2) ich ein Glas <em>auf den</em> Tisch. Das Glas ___ (3) jetzt <em>auf dem</em> Tisch. Ich ___ (4) ein Bild <em>an die</em> Wand. Es ___ (5) jetzt <em>an der</em> Wand.</p>
+                    <ol class="example-list">
+                        <li><select class="answer-select" data-correct="ging">
+                            <option value="">Select</option>
+                            <option value="ging">ging</option>
+                            <option value="war">war</option>
+                            <option value="blieb">blieb</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="stellte">
+                            <option value="">Select</option>
+                            <option value="stellte">stellte</option>
+                            <option value="stand">stand</option>
+                            <option value="saß">saß</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="steht">
+                            <option value="">Select</option>
+                            <option value="steht">steht</option>
+                            <option value="stellt">stellt</option>
+                            <option value="geht">geht</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="hängte">
+                            <option value="">Select</option>
+                            <option value="hängte">hängte</option>
+                            <option value="hing">hing</option>
+                            <option value="legte">legte</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="hängt">
+                            <option value="">Select</option>
+                            <option value="hängt">hängt</option>
+                            <option value="hängt an">hängt an</option>
+                            <option value="stellt">stellt</option>
+                        </select></li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong> Gestern <em>ging</em> ich <em>in die</em> Küche. Dort <em>stellte</em> ich ein Glas <em>auf den</em> Tisch. Das Glas <em>steht</em> jetzt <em>auf dem</em> Tisch. Ich <em>hängte</em> ein Bild <em>an die</em> Wand. Es <em>hängt</em> jetzt <em>an der</em> Wand.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips -->
+        <section id="tips">
+            <h2>Tips to Master Wechselpräpositionen</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Ask “Wo?” or “Wohin?”</strong>: Test every sentence—<em>Wo bin ich?</em> (dative) vs. <em>Wohin gehe ich?</em> (accusative).</li>
+                    <li><strong>Pair Verbs</strong>: Link <em>legen</em> (accusative) with <em>liegen</em> (dative)—practice contrasts.</li>
+                    <li><strong>Visualize</strong>: Draw arrows for movement (<em>auf den Tisch</em> →) and dots for location (<em>auf dem Tisch</em> •).</li>
+                    <li><strong>Daily Use</strong>: Say <em>Ich gehe in die Schule</em> (morning) and <em>Ich bin in der Schule</em> (daytime).</li>
+                    <li><strong>Listen</strong>: Catch <em>an die Wand</em> vs. <em>an der Wand</em> in German media.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Resources -->
+        <section id="resources">
+            <h2>Resources for Extra Practice</h2>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <h4>YouTube – Your German Teacher</h4>
+                    <p>Two-way prepositions.</p>
+                    <a href="https://www.youtube.com/@YourGermanTeacher" class="resource-btn">Visit Your German Teacher</a>
+                </div>
+                <div class="resource-card">
+                    <h4>Deutsch Akademie</h4>
+                    <p>Exercises.</p>
+                    <a href="https://www.deutschakademie.de/online-deutschkurs/" class="resource-btn">Visit Deutsch Akademie</a>
+                </div>
+                <div class="resource-card">
+                    <h4>ThoughtCo</h4>
+                    <p>Grammar guides.</p>
+                    <a href="https://www.thoughtco.com/learn-german-4133187" class="resource-btn">Visit ThoughtCo</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Thoughts -->
+        <section id="final-thoughts">
+            <h2>You’re Ready!</h2>
+            <p>
+                This guide covers Wechselpräpositionen comprehensively, clarifying movement vs. non-movement and addressing tricky verbs. Work through the exercises, and you’ll nail these prepositions! Next, you could explore prepositional verbs or Perfekt with Wechselpräpositionen—your choice!
+            </p>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="dative.html" class="see-also-rect">German Dative</a>
+                <a href="akkusative.html" class="see-also-rect">German Accusative</a>
+                <a href="verbs.html" class="see-also-rect">German Verbs</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="akkusative.html" class="next-btn">Next: German Accusative →</a>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Dark/Light mode toggle
+            const modeToggle = document.getElementById('mode-toggle');
+            const body = document.body;
+            modeToggle.addEventListener('click', function() {
+                body.classList.toggle('dark-mode');
+                const isDark = body.classList.contains('dark-mode');
+                modeToggle.querySelector('svg').setAttribute('d', isDark ? 
+                    'M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z' : 
+                    'M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z');
+            });
+
+            // Check Answers functionality
+            document.querySelectorAll('.check-answers').forEach(button => {
+                button.addEventListener('click', function() {
+                    const exercise = this.closest('.subsection');
+                    const selects = exercise.querySelectorAll('.answer-select');
+                    selects.forEach(select => {
+                        const correctAnswer = select.getAttribute('data-correct');
+                        const userAnswer = select.value;
+                        if (userAnswer === correctAnswer) {
+                            select.style.border = '2px solid #2e7d32';
+                        } else if (userAnswer !== '') {
+                            select.style.border = '2px solid #d32f2f';
+                        } else {
+                            select.style.border = '1px solid #ccc';
+                        }
+                    });
+                });
+            });
+
+            // Show Answers functionality
+            document.querySelectorAll('.show-answers').forEach(button => {
+                button.addEventListener('click', function() {
+                    const exercise = this.closest('.subsection');
+                    const answers = exercise.querySelector('.answers');
+                    if (answers.classList.contains('hidden')) {
+                        answers.classList.remove('hidden');
+                    } else {
+                        answers.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

@@ -1,0 +1,501 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}German Cases{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/cases.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+                <a href="index.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="javascript:history.back()" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Main Introduction -->
+        <section id="intro">
+            <h1>German Cases: A Simple and Complete Guide to Nominative, Accusative, and Dative for Beginners</h1>
+            <p>
+                German cases might sound tricky, but they’re just a way to show what a noun (like "dog" or "book") is doing in a sentence. This guide focuses on the three main cases you’ll use most as a beginner: <strong>Nominative</strong>, <strong>Accusative</strong>, and <strong>Dative</strong>. We’ll skip extras like adjectives and keep it super simple, with tons of examples and explanations so you won’t need any other article. By the end, you’ll understand these cases completely—let’s go!
+            </p>
+        </section>
+
+        <!-- What Are Cases? -->
+        <section id="key-points">
+            <h2>What Are Cases?</h2>
+            <div class="subsection">
+                <p>
+                    Cases tell you the job of a noun in a sentence. In English, we use word order (like "The dog bites the man" vs. "The man bites the dog"). In German, cases do this work by changing the words like "the" or "a" (called <strong>articles</strong>) before a noun. German has four cases, but we’ll focus on the big three:
+                </p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><strong>Nominative</strong>: The "doer" of the action (the subject).</li>
+                        <li><strong>Accusative</strong>: The "receiver" of the action (the direct object).</li>
+                        <li><strong>Dative</strong>: The "to whom" or "for whom" something is done (the indirect object).</li>
+                    </ul>
+                    <p>
+                        We’ll use easy words like <em>Hund</em> (dog), <em>Katze</em> (cat), <em>Mann</em> (man), <em>Frau</em> (woman), and <em>Kind</em> (child) to show how they work.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nominative Case -->
+        <section id="nominative">
+            <h2>1. Nominative Case</h2>
+            <div class="subsection">
+                <h3>What It’s For</h3>
+                <p>The nominative case is for the <strong>subject</strong>—the person or thing doing the action. It’s the simplest case because it’s how you first learn nouns (like <em>der Hund</em> in the dictionary).</p>
+            </div>
+            <div class="subsection">
+                <h3>How to Spot It</h3>
+                <p>Ask: <strong>"Who or what is doing something?"</strong> The answer is in the nominative case.</p>
+            </div>
+            <div class="subsection">
+                <h3>Articles in Nominative</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><strong>Masculine</strong>: <em>der</em> (the), <em>ein</em> (a)</li>
+                        <li><strong>Feminine</strong>: <em>die</em>, <em>eine</em></li>
+                        <li><strong>Neuter</strong>: <em>das</em>, <em>ein</em></li>
+                        <li><strong>Plural</strong>: <em>die</em> (no "a" for plurals, use <em>keine</em> for "no")</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Examples</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>Der Hund</em> bellt laut. (The dog barks loudly.)</li>
+                        <li><em>Die Katze</em> springt hoch. (The cat jumps high.)</li>
+                        <li><em>Das Kind</em> lacht. (The child laughs.)</li>
+                        <li><em>Die Männer</em> arbeiten. (The men work.)</li>
+                        <li><em>Ein Junge</em> spielt. (A boy plays.)</li>
+                    </ul>
+                    <p>More examples:</p>
+                    <ul class="example-list">
+                        <li><em>Der Lehrer</em> spricht. (The teacher speaks.)</li>
+                        <li><em>Die Freundin</em> ruft an. (The friend calls.)</li>
+                        <li><em>Das Auto</em> fährt schnell. (The car drives fast.)</li>
+                        <li><em>Die Kinder</em> singen. (The children sing.)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Why It’s Easy</h3>
+                <p>Nominative is the starting point. It’s the form you see when you learn a new noun, like <em>der Tisch</em> (the table) or <em>die Lampe</em> (the lamp). Every sentence needs a subject, so you’ll use nominative all the time!</p>
+            </div>
+        </section>
+
+        <!-- Accusative Case -->
+        <section id="accusative">
+            <h2>2. Accusative Case</h2>
+            <div class="subsection">
+                <h3>What It’s For</h3>
+                <p>The accusative case is for the <strong>direct object</strong>—the person or thing that gets the action. It answers "Whom or what is the subject acting on?"</p>
+            </div>
+            <div class="subsection">
+                <h3>How to Spot It</h3>
+                <p>Ask: <strong>"Whom or what is being affected?"</strong> The answer is in the accusative case.</p>
+            </div>
+            <div class="subsection">
+                <h3>Articles in Accusative</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><strong>Masculine</strong>: <em>den</em>, <em>einen</em></li>
+                        <li><strong>Feminine</strong>: <em>die</em>, <em>eine</em></li>
+                        <li><strong>Neuter</strong>: <em>das</em>, <em>ein</em></li>
+                        <li><strong>Plural</strong>: <em>die</em> (same as nominative)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Examples</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>Ich sehe <em>den Hund</em>. (I see the dog.)</li>
+                        <li>Er liebt <em>die Katze</em>. (He loves the cat.)</li>
+                        <li>Sie kauft <em>das Buch</em>. (She buys the book.)</li>
+                        <li>Wir treffen <em>die Freunde</em>. (We meet the friends.)</li>
+                        <li>Er hat <em>einen Apfel</em>. (He has an apple.)</li>
+                    </ul>
+                    <p>More examples:</p>
+                    <ul class="example-list">
+                        <li>Ich höre <em>den Mann</em>. (I hear the man.)</li>
+                        <li>Sie liest <em>die Zeitung</em>. (She reads the newspaper.)</li>
+                        <li>Er öffnet <em>das Fenster</em>. (He opens the window.)</li>
+                        <li>Wir essen <em>die Pizza</em>. (We eat the pizza.)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Accusative Prepositions</h3>
+                <p>Some words (called <strong>prepositions</strong>) always use accusative:</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>durch</em> (through): Ich gehe <em>durch den Wald</em>. (I walk through the forest.)</li>
+                        <li><em>für</em> (for): Das ist <em>für den Jungen</em>. (This is for the boy.)</li>
+                        <li><em>gegen</em> (against): Er läuft <em>gegen die Wand</em>. (He runs against the wall.)</li>
+                        <li><em>ohne</em> (without): Ich gehe <em>ohne den Schirm</em>. (I go without the umbrella.)</li>
+                        <li><em>um</em> (around): Wir fahren <em>um den See</em>. (We drive around the lake.)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dative Case -->
+        <section id="dative">
+            <h2>3. Dative Case</h2>
+            <div class="subsection">
+                <h3>What It’s For</h3>
+                <p>The dative case is for the <strong>indirect object</strong>—the person or thing that gets the direct object. It answers "To whom?" or "For whom?" something is done.</p>
+            </div>
+            <div class="subsection">
+                <h3>How to Spot It</h3>
+                <p>Ask: <strong>"To whom or for whom is this happening?"</strong> The answer is in the dative case.</p>
+            </div>
+            <div class="subsection">
+                <h3>Articles in Dative</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><strong>Masculine</strong>: <em>dem</em>, <em>einem</em></li>
+                        <li><strong>Feminine</strong>: <em>der</em>, <em>einer</em></li>
+                        <li><strong>Neuter</strong>: <em>dem</em>, <em>einem</em></li>
+                        <li><strong>Plural</strong>: <em>den</em> (add <strong>-n</strong> to plural nouns if they don’t end in -n or -s)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Examples</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>Ich gebe <em>dem Hund</em> einen Knochen. (I give the dog a bone.)</li>
+                        <li>Sie hilft <em>der Frau</em>. (She helps the woman.)</li>
+                        <li>Er schenkt <em>dem Kind</em> ein Spielzeug. (He gives the child a toy.)</li>
+                        <li>Wir schreiben <em>den Freunden</em>. (We write to the friends.)</li>
+                        <li>Ich zeige <em>einem Mann</em> den Weg. (I show a man the way.)</li>
+                    </ul>
+                    <p>More examples:</p>
+                    <ul class="example-list">
+                        <li>Er spricht <em>dem Lehrer</em>. (He speaks to the teacher.)</li>
+                        <li>Ich danke <em>der Schwester</em>. (I thank the sister.)</li>
+                        <li>Sie gibt <em>dem Baby</em> Milch. (She gives the baby milk.)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Dative Prepositions</h3>
+                <p>These prepositions always use dative:</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>aus</em> (from): Ich komme <em>aus dem Haus</em>. (I come from the house.)</li>
+                        <li><em>bei</em> (at/with): Ich bin <em>bei dem Arzt</em>. (I’m at the doctor’s.)</li>
+                        <li><em>mit</em> (with): Ich spiele <em>mit dem Hund</em>. (I play with the dog.)</li>
+                        <li><em>nach</em> (to/after): Wir gehen <em>nach dem Park</em>. (We go to the park.)</li>
+                        <li><em>seit</em> (since): Ich wohne <em>seit dem Sommer</em> hier. (I’ve lived here since the summer.)</li>
+                        <li><em>von</em> (from): Das Geschenk ist <em>von der Oma</em>. (The gift is from the grandma.)</li>
+                        <li><em>zu</em> (to): Ich gehe <em>zu dem Laden</em>. (I go to the shop.)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cases Together -->
+        <section id="cases-together">
+            <h2>Nominative, Accusative, and Dative Together</h2>
+            <p>Let’s see how they work in one sentence:</p>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><em>Der Mann</em> gibt <em>dem Kind</em> <em>das Buch</em>.  
+                        <ul class="example-list">
+                            <li><em>Der Mann</em> (nominative): Who’s giving? The man.</li>
+                            <li><em>Das Buch</em> (accusative): What’s being given? The book.</li>
+                            <li><em>Dem Kind</em> (dative): To whom? The child.</li>
+                        </ul>
+                    </li>
+                    <li><em>Die Frau</em> zeigt <em>dem Hund</em> <em>den Ball</em>.  
+                        <ul class="example-list">
+                            <li><em>Die Frau</em> (nominative): Who’s showing? The woman.</li>
+                            <li><em>Den Ball</em> (accusative): What’s being shown? The ball.</li>
+                            <li><em>Dem Hund</em> (dative): To whom? The dog.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p><strong>Word Order Tip</strong>: In German, you can mix up the order, and cases keep it clear:</p>
+                <ul class="example-list">
+                    <li><em>Dem Kind</em> gibt <em>der Mann</em> <em>das Buch</em>. (Still "The man gives the child the book.")</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Article Tables -->
+        <section id="tables">
+            <h2>Quick Article Tables</h2>
+            <div class="subsection">
+                <h3>Definite Articles ("the")</h3>
+                <div class="examples">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Case</th>
+                                <th>Masculine</th>
+                                <th>Feminine</th>
+                                <th>Neuter</th>
+                                <th>Plural</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Nominative</td>
+                                <td>der</td>
+                                <td>die</td>
+                                <td>das</td>
+                                <td>die</td>
+                            </tr>
+                            <tr>
+                                <td>Accusative</td>
+                                <td>den</td>
+                                <td>die</td>
+                                <td>das</td>
+                                <td>die</td>
+                            </tr>
+                            <tr>
+                                <td>Dative</td>
+                                <td>dem</td>
+                                <td>der</td>
+                                <td>dem</td>
+                                <td>den</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Indefinite Articles ("a/an")</h3>
+                <div class="examples">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Case</th>
+                                <th>Masculine</th>
+                                <th>Feminine</th>
+                                <th>Neuter</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Nominative</td>
+                                <td>ein</td>
+                                <td>eine</td>
+                                <td>ein</td>
+                            </tr>
+                            <tr>
+                                <td>Accusative</td>
+                                <td>einen</td>
+                                <td>eine</td>
+                                <td>ein</td>
+                            </tr>
+                            <tr>
+                                <td>Dative</td>
+                                <td>einem</td>
+                                <td>einer</td>
+                                <td>einem</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Two-Way Prepositions -->
+        <section id="two-way">
+            <h2>Two-Way Prepositions (Accusative or Dative)</h2>
+            <p>Some prepositions can use <strong>accusative</strong> or <strong>dative</strong>, depending on what’s happening:</p>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><em>an</em> (at), <em>auf</em> (on), <em>hinter</em> (behind), <em>in</em> (in), <em>neben</em> (next to), <em>über</em> (over), <em>unter</em> (under), <em>vor</em> (in front of), <em>zwischen</em> (between)</li>
+                </ul>
+                <p><strong>Accusative (movement)</strong>: Going somewhere.</p>
+                <ul class="example-list">
+                    <li>Ich gehe <em>in den Garten</em>. (I go into the garden.)</li>
+                    <li>Er legt das Buch <em>auf den Tisch</em>. (He puts the book on the table.)</li>
+                </ul>
+                <p><strong>Dative (location)</strong>: Staying somewhere.</p>
+                <ul class="example-list">
+                    <li>Ich bin <em>im Garten</em>. (I’m in the garden.) (<em>in + dem = im</em>)</li>
+                    <li>Das Buch liegt <em>auf dem Tisch</em>. (The book is on the table.)</li>
+                </ul>
+                <p><strong>Trick</strong>: Movement = accusative. No movement = dative.</p>
+            </div>
+        </section>
+
+        <!-- Practice Questions -->
+        <section id="practice">
+            <h2>Practice Time!</h2>
+            <p>Try these exercises to get the hang of it. Answers are below each one.</p>
+            <div class="subsection">
+                <h3>Exercise 1: Pick the Article</h3>
+                <p>Fill in <em>der, den, dem, die, das</em>, etc.</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>____ Hund rennt. (The dog runs.)</li>
+                    </ul>
+                    <button class="toggle-btn">See Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> Der (nominative)</p></div>
+                    <ul class="example-list">
+                        <li>Ich sehe ____ Katze. (I see the cat.)</li>
+                    </ul>
+                    <button class="toggle-btn">See Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> die (accusative)</p></div>
+                    <ul class="example-list">
+                        <li>Er hilft ____ Mann. (He helps the man.)</li>
+                    </ul>
+                    <button class="toggle-btn">See Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> dem (dative)</p></div>
+                    <ul class="example-list">
+                        <li>____ Frau liest. (The woman reads.)</li>
+                    </ul>
+                    <button class="toggle-btn">See Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> Die (nominative)</p></div>
+                    <ul class="example-list">
+                        <li>Wir kaufen ____ Auto. (We buy the car.)</li>
+                    </ul>
+                    <button class="toggle-btn">See Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> das (accusative)</p></div>
+                    <ul class="example-list">
+                        <li>Ich gebe ____ Kind ein Spielzeug. (I give the child a toy.)</li>
+                    </ul>
+                    <button class="toggle-btn">See Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> dem (dative)</p></div>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Exercise 2: Which Case?</h3>
+                <p>Name the case of the bold word.</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><strong>Der Junge</strong> spielt. (The boy plays.)</li>
+                    </ul>
+                    <button class="toggle-btn">See Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> Nominative</p></div>
+                    <ul class="example-list">
+                        <li>Ich kenne <strong>den Lehrer</strong>. (I know the teacher.)</li>
+                    </ul>
+                    <button class="toggle-btn">See Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> Accusative</p></div>
+                    <ul class="example-list">
+                        <li>Sie spricht <strong>dem Freund</strong>. (She speaks to the friend.)</li>
+                    </ul>
+                    <button class="toggle-btn">See Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> Dative</p></div>
+                    <ul class="example-list">
+                        <li><strong>Die Schwester</strong> hilft. (The sister helps.)</li>
+                    </ul>
+                    <button class="toggle-btn">See Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> Nominative</p></div>
+                    <ul class="example-list">
+                        <li>Er liest <strong>das Buch</strong>. (He reads the book.)</li>
+                    </ul>
+                    <button class="toggle-btn">See Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> Accusative</p></div>
+                    <ul class="example-list">
+                        <li>Wir danken <strong>den Eltern</strong>. (We thank the parents.)</li>
+                    </ul>
+                    <button class="toggle-btn">See Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> Dative</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Common Mistakes -->
+        <section id="mistakes">
+            <h2>Common Mistakes to Avoid</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Nominative vs. Accusative</strong>: Nominative is the doer; accusative is what’s acted on. (<em>Der Hund</em> bellt vs. Ich sehe <em>den Hund</em>.)</li>
+                    <li><strong>Accusative vs. Dative</strong>: Accusative is the "what"; dative is the "to whom." (Ich gebe <em>den Ball</em> vs. Ich gebe <em>dem Hund den Ball</em>.)</li>
+                    <li><strong>Forgetting Prepositions</strong>: <em>Mit</em> needs dative (<em>mit dem Hund</em>), not accusative (<em>mit den Hund</em>).</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Tips -->
+        <section id="tips">
+            <h2>Tips to Learn Cases</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Ask Questions</strong>: "Who’s doing it?" (nominative), "What’s being done?" (accusative), "To whom?" (dative).</li>
+                    <li><strong>Learn Prepositions</strong>: They’re like signposts for cases.</li>
+                    <li><strong>Practice Short Sentences</strong>: Start with "Der Hund sieht den Mann" or "Ich helfe dem Kind."</li>
+                    <li><strong>Repeat the Tables</strong>: Say them out loud until they’re stuck in your head.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Final Thoughts -->
+        <section id="final-thoughts">
+            <h2>You’ve Got This!</h2>
+            <p>
+                Now you know <strong>nominative</strong> (the doer), <strong>accusative</strong> (the receiver), and <strong>dative</strong> (the "to whom"). With these examples, tables, and practice, you’ve got everything to use cases confidently. Keep practicing, and soon it’ll feel natural. <em>Viel Erfolg!</em> (Good luck!)
+            </p>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="nouns.html" class="see-also-btn">German Nouns</a>
+                <a href="articles.html" class="see-also-btn">German Articles</a>
+                <a href="adjectives.html" class="see-also-btn">German Adjectives</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="adjectives.html" class="next-btn">Next: German Adjectives →</a>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('.toggle-btn');
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const hiddenContent = this.nextElementSibling;
+                    if (hiddenContent.classList.contains('hidden')) {
+                        hiddenContent.classList.remove('hidden');
+                    } else {
+                        hiddenContent.classList.add('hidden');
+                    }
+                });
+            });
+
+            const modeToggle = document.getElementById('mode-toggle');
+            const body = document.body;
+            modeToggle.addEventListener('click', function() {
+                body.classList.toggle('dark-mode');
+                const isDark = body.classList.contains('dark-mode');
+                modeToggle.querySelector('svg').setAttribute('d', isDark ? 
+                    'M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z' : 
+                    'M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z');
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

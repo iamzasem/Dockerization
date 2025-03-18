@@ -1,0 +1,1031 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}German Dative Articles and Beyond{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/dative.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+                <a href="a1-topics.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="javascript:history.back()" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>German Dative Articles and Beyond: An Advanced Guide</h1>
+            <p>
+                This guide begins with <strong>dative articles</strong> and builds progressively to cover the broader dative case, including prepositions, verbs, personal pronouns, possessive articles, and additional uses. It’s designed to raise the level step-by-step, focusing on depth and complexity, with an abundance of example sentences for clarity. Exercises follow your preferred multiple-choice format, covering all topics. Let’s start with dative articles and expand from there!
+            </p>
+        </section>
+
+        <!-- Dative Articles -->
+        <section id="dative-articles">
+            <h2>Dative Articles</h2>
+            <p>Dative articles indicate the <strong>indirect object</strong> or relationships like location or recipient, adjusting to the noun’s gender and number in the dative case.</p>
+            <div class="subsection">
+                <h3>Definite Articles (der, die, das)</h3>
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>Gender/Number</th>
+                            <th>Nominative</th>
+                            <th>Dative</th>
+                            <th>Example Sentences</th>
+                        </tr>
+                        <tr>
+                            <td>Masculine (der)</td>
+                            <td>der</td>
+                            <td>dem</td>
+                            <td>Ich gebe <em>dem</em> Jungen ein Spielzeug. (I give the boy a toy.)<br>Er spricht <em>dem</em> Chef zu leise. (He speaks to the boss too quietly.)</td>
+                        </tr>
+                        <tr>
+                            <td>Feminine (die)</td>
+                            <td>die</td>
+                            <td>der</td>
+                            <td>Ich helfe <em>der</em> Lehrerin mit der Aufgabe. (I help the teacher with the task.)<br>Sie leiht <em>der</em> Nachbarin ein Buch. (She lends the neighbor a book.)</td>
+                        </tr>
+                        <tr>
+                            <td>Neuter (das)</td>
+                            <td>das</td>
+                            <td>dem</td>
+                            <td>Wir schreiben <em>dem</em> Kind einen Brief. (We write the child a letter.)<br>Das gehört <em>dem</em> Baby. (That belongs to the baby.)</td>
+                        </tr>
+                        <tr>
+                            <td>Plural (die)</td>
+                            <td>die</td>
+                            <td>den (+n)</td>
+                            <td>Ich danke <em>den</em> Freunden für die Hilfe. (I thank the friends for the help.)<br>Er zeigt <em>den</em> Kindern den Weg. (He shows the children the way.)</td>
+                        </tr>
+                    </table>
+                </div>
+                <p><strong>Note:</strong> Plural nouns add <em>-n</em> in dative if they don’t already end in <em>-n</em> or <em>-s</em> (e.g., <em>Freund</em> → <em>Freunden</em>, but <em>Autos</em> stays <em>Autos</em>).</p>
+            </div>
+            <div class="subsection">
+                <h3>Indefinite Articles (ein, eine)</h3>
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>Gender/Number</th>
+                            <th>Nominative</th>
+                            <th>Dative</th>
+                            <th>Example Sentences</th>
+                        </tr>
+                        <tr>
+                            <td>Masculine (ein)</td>
+                            <td>ein</td>
+                            <td>einem</td>
+                            <td>Ich erzähle <em>einem</em> Mann eine Geschichte. (I tell a man a story.)<br>Sie gibt <em>einem</em> Gast ein Getränk. (She gives a guest a drink.)</td>
+                        </tr>
+                        <tr>
+                            <td>Feminine (eine)</td>
+                            <td>eine</td>
+                            <td>einer</td>
+                            <td>Ich helfe <em>einer</em> alten Frau über die Straße. (I help an old woman across the street.)<br>Er schenkt <em>einer</em> Kollegin Blumen. (He gives a colleague flowers.)</td>
+                        </tr>
+                        <tr>
+                            <td>Neuter (ein)</td>
+                            <td>ein</td>
+                            <td>einem</td>
+                            <td>Wir antworten <em>einem</em> Kind geduldig. (We answer a child patiently.)<br>Das Spielzeug gehört <em>einem</em> Baby. (The toy belongs to a baby.)</td>
+                        </tr>
+                        <tr>
+                            <td>Plural (keine)</td>
+                            <td>-</td>
+                            <td>keinen (+n)</td>
+                            <td>Ich leihe <em>keinen</em> Freunden mein Fahrrad. (I lend my bike to no friends.)<br>Sie spricht <em>keinen</em> Gästen zu. (She speaks to no guests.)</td>
+                        </tr>
+                    </table>
+                </div>
+                <p><strong>Note:</strong> <em>Keine</em> (none) follows the same dative pattern as definite plural (<em>den</em> + <em>-n</em>).</p>
+            </div>
+        </section>
+
+        <!-- Dative Prepositions -->
+        <section id="prepositions">
+            <h2>Dative Prepositions</h2>
+            <p>Dative prepositions always trigger the dative case, often indicating location, time, or association. Here are the nine key ones with expanded examples:</p>
+            <div class="examples">
+                <ol class="example-list">
+                    <li><strong>aus</strong> (out of, from)
+                        <ul>
+                            <li>Ich hole das Buch <em>aus dem Regal</em>. (I take the book out of the shelf.)</li>
+                            <li>Sie kommt <em>aus dem kleinen Dorf</em>. (She comes from the small village.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>bei</strong> (at, near, with)
+                        <ul>
+                            <li>Er arbeitet <em>bei dem Bäcker</em>. (He works at the baker’s.)</li>
+                            <li>Ich bleibe <em>bei meiner Oma</em> über Nacht. (I stay with my grandma overnight.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>mit</strong> (with)
+                        <ul>
+                            <li>Wir fahren <em>mit dem Zug</em> nach Berlin. (We travel to Berlin with the train.)</li>
+                            <li>Sie tanzt <em>mit ihrem Bruder</em>. (She dances with her brother.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>nach</strong> (after, to [places])
+                        <ul>
+                            <li>Er kommt <em>nach der Arbeit</em> nach Hause. (He comes home after work.)</li>
+                            <li>Wir reisen <em>nach dem Süden</em>. (We travel to the south.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>seit</strong> (since, for [time])
+                        <ul>
+                            <li>Ich wohne <em>seit einem Jahr</em> hier. (I’ve lived here for a year.)</li>
+                            <li>Sie wartet <em>seit der Pause</em>. (She’s been waiting since the break.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>von</strong> (from, of)
+                        <ul>
+                            <li>Das Bild hängt <em>von der Wand</em>. (The picture hangs from the wall.)</li>
+                            <li>Er hat einen Brief <em>von seiner Mutter</em>. (He has a letter from his mother.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>zu</strong> (to [people/places])
+                        <ul>
+                            <li>Ich gehe <em>zu meinem Freund</em>. (I go to my friend.)</li>
+                            <li>Sie läuft <em>zu der Schule</em>. (She runs to the school.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>außer</strong> (except)
+                        <ul>
+                            <li>Alle helfen <em>außer dem Jungen</em>. (Everyone helps except the boy.)</li>
+                            <li>Niemand kommt <em>außer einer Freundin</em>. (No one comes except a friend.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>gegenüber</strong> (opposite, across from) <em>(often after noun)</em>
+                        <ul>
+                            <li>Das Geschäft liegt <em>dem Bahnhof gegenüber</em>. (The shop is across from the station.)</li>
+                            <li>Sie wohnt <em>einem Park gegenüber</em>. (She lives opposite a park.)</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Dative Verbs -->
+        <section id="verbs">
+            <h2>20 Most Common Dative Verbs</h2>
+            <p>These verbs require a dative object, often the recipient or beneficiary, and are used regularly. Expanded examples show variety:</p>
+            <div class="examples">
+                <ol class="example-list">
+                    <li><strong>helfen</strong> (to help)
+                        <ul>
+                            <li>Ich helfe <em>meinem Nachbarn</em> im Garten. (I help my neighbor in the garden.)</li>
+                            <li>Sie hilft <em>den Kindern</em> bei den Hausaufgaben. (She helps the children with homework.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>danken</strong> (to thank)
+                        <ul>
+                            <li>Er dankt <em>seiner Lehrerin</em> für die Unterstützung. (He thanks his teacher for the support.)</li>
+                            <li>Wir danken <em>dem Team</em> für die Mühe. (We thank the team for the effort.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>geben</strong> (to give)
+                        <ul>
+                            <li>Sie gibt <em>ihrem Bruder</em> ein Geschenk. (She gives her brother a gift.)</li>
+                            <li>Ich gebe <em>einem Fremden</em> den Weg an. (I give a stranger directions.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>schreiben</strong> (to write)
+                        <ul>
+                            <li>Ich schreibe <em>meiner Oma</em> einen Brief. (I write my grandma a letter.)</li>
+                            <li>Er schreibt <em>dem Chef</em> eine E-Mail. (He writes the boss an email.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>antworten</strong> (to answer)
+                        <ul>
+                            <li>Sie antwortet <em>der Frage</em> schnell. (She answers the question quickly.)</li>
+                            <li>Wir antworten <em>einem Freund</em> morgen. (We answer a friend tomorrow.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>gehören</strong> (to belong to)
+                        <ul>
+                            <li>Das Auto gehört <em>meinem Vater</em>. (The car belongs to my father.)</li>
+                            <li>Diese Schuhe gehören <em>der kleinen Schwester</em>. (These shoes belong to the little sister.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>passen</strong> (to fit)
+                        <ul>
+                            <li>Der Pullover passt <em>mir</em> perfekt. (The sweater fits me perfectly.)</li>
+                            <li>Die Jacke passt <em>dem Jungen</em> nicht. (The jacket doesn’t fit the boy.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>schmecken</strong> (to taste good)
+                        <ul>
+                            <li>Die Suppe schmeckt <em>ihm</em> gut. (The soup tastes good to him.)</li>
+                            <li>Das Brot schmeckt <em>den Gästen</em>. (The bread tastes good to the guests.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>folgen</strong> (to follow)
+                        <ul>
+                            <li>Wir folgen <em>dem Führer</em> durch die Stadt. (We follow the guide through the city.)</li>
+                            <li>Sie folgt <em>einer Regel</em>. (She follows a rule.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>glauben</strong> (to believe)
+                        <ul>
+                            <li>Ich glaube <em>meiner Freundin</em> immer. (I always believe my friend.)</li>
+                            <li>Er glaubt <em>dem Arzt</em> nicht. (He doesn’t believe the doctor.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>gratulieren</strong> (to congratulate)
+                        <ul>
+                            <li>Sie gratuliert <em>ihrem Kollegen</em> zum Erfolg. (She congratulates her colleague on the success.)</li>
+                            <li>Wir gratulieren <em>dem Gewinner</em>. (We congratulate the winner.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>begegnen</strong> (to meet [by chance])
+                        <ul>
+                            <li>Ich begegne <em>einem alten Freund</em> im Park. (I meet an old friend in the park.)</li>
+                            <li>Er begegnet <em>der Nachbarin</em> zufällig. (He meets the neighbor by chance.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>vertrauen</strong> (to trust)
+                        <ul>
+                            <li>Sie vertraut <em>ihrem Hund</em> völlig. (She trusts her dog completely.)</li>
+                            <li>Wir vertrauen <em>dem Experten</em>. (We trust the expert.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>zuhören</strong> (to listen to)
+                        <ul>
+                            <li>Ich höre <em>meiner Lehrerin</em> zu. (I listen to my teacher.)</li>
+                            <li>Er hört <em>dem Radio</em> zu. (He listens to the radio.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>sagen</strong> (to say/tell)
+                        <ul>
+                            <li>Sie sagt <em>ihren Eltern</em> die Wahrheit. (She tells her parents the truth.)</li>
+                            <li>Ich sage <em>einem Kind</em> eine Geschichte. (I tell a child a story.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>fehlen</strong> (to miss/be lacking)
+                        <ul>
+                            <li>Mir fehlt <em>meine Familie</em> sehr. (I miss my family a lot.)</li>
+                            <li>Den Schülern fehlt <em>der Mut</em>. (The students lack courage.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>wehtun</strong> (to hurt)
+                        <ul>
+                            <li>Der Fuß tut <em>mir</em> weh. (My foot hurts me.)</li>
+                            <li>Die Worte tun <em>ihm</em> weh. (The words hurt him.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>erklären</strong> (to explain)
+                        <ul>
+                            <li>Er erklärt <em>den Touristen</em> die Stadt. (He explains the city to the tourists.)</li>
+                            <li>Ich erkläre <em>einer Gruppe</em> die Regeln. (I explain the rules to a group.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>zeigen</strong> (to show)
+                        <ul>
+                            <li>Sie zeigt <em>ihrem Gast</em> das Haus. (She shows her guest the house.)</li>
+                            <li>Wir zeigen <em>dem neuen Schüler</em> die Schule. (We show the new student the school.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>winken</strong> (to wave)
+                        <ul>
+                            <li>Er winkt <em>seiner Mutter</em> vom Fenster. (He waves to his mother from the window.)</li>
+                            <li>Die Kinder winken <em>den Passanten</em>. (The children wave to the passersby.)</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Personal Pronouns -->
+        <section id="pronouns">
+            <h2>Personal Pronouns in Dative</h2>
+            <p>Dative personal pronouns replace nouns as indirect objects, showing “to whom” or “for whom.”</p>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Nominative</th>
+                        <th>Dative</th>
+                        <th>Example Sentences</th>
+                    </tr>
+                    <tr>
+                        <td>ich</td>
+                        <td>mir</td>
+                        <td>Er gibt <em>mir</em> den Schlüssel. (He gives me the key.)<br>Sie schreibt <em>mir</em> jeden Tag. (She writes to me every day.)</td>
+                    </tr>
+                    <tr>
+                        <td>du</td>
+                        <td>dir</td>
+                        <td>Ich helfe <em>dir</em> gerne. (I help you gladly.)<br>Wir zeigen <em>dir</em> den besten Weg. (We show you the best way.)</td>
+                    </tr>
+                    <tr>
+                        <td>er</td>
+                        <td>ihm</td>
+                        <td>Sie antwortet <em>ihm</em> nicht. (She doesn’t answer him.)<br>Das gehört <em>ihm</em> allein. (That belongs to him alone.)</td>
+                    </tr>
+                    <tr>
+                        <td>sie</td>
+                        <td>ihr</td>
+                        <td>Wir danken <em>ihr</em> für die Blumen. (We thank her for the flowers.)<br>Er sagt <em>ihr</em> ein Geheimnis. (He tells her a secret.)</td>
+                    </tr>
+                    <tr>
+                        <td>es</td>
+                        <td>ihm</td>
+                        <td>Das schmeckt <em>ihm</em> nicht. (That doesn’t taste good to it/him.)<br>Ich folge <em>ihm</em> ins Haus. (I follow it/him into the house.)</td>
+                    </tr>
+                    <tr>
+                        <td>wir</td>
+                        <td>uns</td>
+                        <td>Sie erklärt <em>uns</em> die Aufgabe. (She explains the task to us.)<br>Er gibt <em>uns</em> die Karten. (He gives us the tickets.)</td>
+                    </tr>
+                    <tr>
+                        <td>ihr</td>
+                        <td>euch</td>
+                        <td>Ich zeige <em>euch</em> mein Zimmer. (I show you all my room.)<br>Wir helfen <em>euch</em> morgen. (We help you all tomorrow.)</td>
+                    </tr>
+                    <tr>
+                        <td>sie</td>
+                        <td>ihnen</td>
+                        <td>Er vertraut <em>ihnen</em> völlig. (He trusts them completely.)<br>Sie winkt <em>ihnen</em> zu. (She waves to them.)</td>
+                    </tr>
+                    <tr>
+                        <td>Sie</td>
+                        <td>Ihnen</td>
+                        <td>Ich gratuliere <em>Ihnen</em> zum Geburtstag. (I congratulate you [formal] on your birthday.)<br>Wir antworten <em>Ihnen</em> bald. (We’ll answer you soon.)</td>
+                    </tr>
+                </table>
+            </div>
+            <p><strong>Order:</strong> Dative before accusative (<em>mir das</em>), unless accusative is a pronoun (<em>es mir</em>).</p>
+        </section>
+
+        <!-- Possessive Articles -->
+        <section id="possessives">
+            <h2>Possessive Articles in Dative</h2>
+            <p>Possessive articles in dative show ownership, adjusting to the noun’s gender and number.</p>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Owner</th>
+                        <th>Masc./Neut. (dem/einem)</th>
+                        <th>Fem. (der/einer)</th>
+                        <th>Plural (den/keinen)</th>
+                        <th>Example Sentences</th>
+                    </tr>
+                    <tr>
+                        <td>ich (my)</td>
+                        <td>meinem</td>
+                        <td>meiner</td>
+                        <td>meinen</td>
+                        <td>Ich helfe <em>meinem</em> Vater im Garten. (I help my father in the garden.)<br>Ich schreibe <em>meiner</em> Schwester oft. (I write to my sister often.)</td>
+                    </tr>
+                    <tr>
+                        <td>du (your, inf.)</td>
+                        <td>deinem</td>
+                        <td>deiner</td>
+                        <td>deinen</td>
+                        <td>Er gibt <em>deinem</em> Bruder ein Spiel. (He gives your brother a game.)<br>Sie dankt <em>deiner</em> Mutter. (She thanks your mother.)</td>
+                    </tr>
+                    <tr>
+                        <td>er (his)</td>
+                        <td>seinem</td>
+                        <td>seiner</td>
+                        <td>seinen</td>
+                        <td>Wir zeigen <em>seinem</em> Freund den Park. (We show his friend the park.)<br>Sie passt <em>seinen</em> Kindern auf. (She looks after his children.)</td>
+                    </tr>
+                    <tr>
+                        <td>sie (her)</td>
+                        <td>ihrem</td>
+                        <td>ihrer</td>
+                        <td>ihren</td>
+                        <td>Er sagt <em>ihrem</em> Chef die Meinung. (He tells her boss his opinion.)<br>Ich helfe <em>ihrer</em> Freundin heute. (I help her friend today.)</td>
+                    </tr>
+                    <tr>
+                        <td>es (its)</td>
+                        <td>seinem</td>
+                        <td>seiner</td>
+                        <td>seinen</td>
+                        <td>Das gehört <em>seinem</em> Besitzer. (That belongs to its owner.)<br>Wir folgen <em>seinen</em> Regeln. (We follow its rules.)</td>
+                    </tr>
+                    <tr>
+                        <td>wir (our)</td>
+                        <td>unserem</td>
+                        <td>unserer</td>
+                        <td>unseren</td>
+                        <td>Ich erkläre <em>unserem</em> Gast die Stadt. (I explain the city to our guest.)<br>Er dankt <em>unseren</em> Lehrern. (He thanks our teachers.)</td>
+                    </tr>
+                    <tr>
+                        <td>ihr (your, pl.)</td>
+                        <td>eurem</td>
+                        <td>eurer</td>
+                        <td>euren</td>
+                        <td>Sie zeigt <em>eurem</em> Hund ein Spielzeug. (She shows your dog a toy.)<br>Wir schreiben <em>euren</em> Eltern. (We write to your parents.)</td>
+                    </tr>
+                    <tr>
+                        <td>sie (their)</td>
+                        <td>ihrem</td>
+                        <td>ihrer</td>
+                        <td>ihren</td>
+                        <td>Ich gebe <em>ihrem</em> Kind ein Buch. (I give their child a book.)<br>Sie hilft <em>ihren</em> Nachbarn oft. (She often helps their neighbors.)</td>
+                    </tr>
+                    <tr>
+                        <td>Sie (your, form.)</td>
+                        <td>Ihrem</td>
+                        <td>Ihrer</td>
+                        <td>Ihren</td>
+                        <td>Wir antworten <em>Ihrem</em> Brief bald. (We’ll answer your letter soon.)<br>Ich gratuliere <em>Ihren</em> Erfolgen. (I congratulate your successes.)</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- Broader Context -->
+        <section id="context">
+            <h2>The Dative Case: Broader Context</h2>
+            <p>Now that we’ve built from articles, here’s how the dative case functions overall:</p>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Indirect Object</strong>: Receives the direct object or benefits from the action.
+                        <ul>
+                            <li>Ich leihe <em>dem Freund</em> mein Fahrrad. (I lend my bike to the friend.)</li>
+                            <li>Sie schickt <em>einer Kollegin</em> einen Brief. (She sends a colleague a letter.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Dative Verbs</strong>: Require dative naturally.
+                        <ul>
+                            <li>Er antwortet <em>dem Publikum</em> ruhig. (He answers the audience calmly.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Prepositions</strong>: Show static position or relationships.
+                        <ul>
+                            <li>Das Bild hängt <em>an der Wand</em>. (The picture hangs on the wall—dative for location.)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Additional Uses -->
+        <section id="additional-uses">
+            <h2>Additional Uses of Dative</h2>
+            <div class="examples">
+                <ol class="example-list">
+                    <li><strong>Expressions of Feeling/State</strong>:
+                        <ul>
+                            <li><em>Mir</em> ist heiß. (I’m hot—to me it’s hot.)</li>
+                            <li><em>Ihnen</em> ist langweilig. (They’re bored—to them it’s boring.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Possession</strong> (with body parts/items):
+                        <ul>
+                            <li><em>Dem Mädchen</em> fällt der Stift runter. (The girl’s pen falls down—to the girl the pen falls.)</li>
+                            <li><em>Einem Mann</em> fehlt die Tasche. (A man’s bag is missing—to a man the bag is lacking.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Two-Way Prepositions</strong> (location):
+                        <ul>
+                            <li>Ich sitze <em>auf dem Stuhl</em>. (I sit on the chair.)</li>
+                            <li>Die Katze liegt <em>unter dem Tisch</em>. (The cat lies under the table.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Fixed Phrases</strong>:
+                        <ul>
+                            <li>Es geht <em>mir</em> gut. (I’m doing well—to me it goes well.)</li>
+                            <li>Das tut <em>dir</em> gut. (That does you good—to you it does good.)</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Exercises -->
+        <section id="practice">
+            <h2>Creative Exercises with Multiple-Choice Options</h2>
+
+            <div class="subsection" id="exercise1">
+                <h3>Exercise 1: Dative Articles</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Ich helfe ___ alten Mann.
+                            <select class="answer-select" data-correct="einem">
+                                <option value="">Select</option>
+                                <option value="dem">dem</option>
+                                <option value="einem">einem</option>
+                                <option value="den">den</option>
+                            </select>
+                        </li>
+                        <li>Sie schreibt ___ Freundin zurück.
+                            <select class="answer-select" data-correct="einer">
+                                <option value="">Select</option>
+                                <option value="der">der</option>
+                                <option value="einer">einer</option>
+                                <option value="dem">dem</option>
+                            </select>
+                        </li>
+                        <li>Wir danken ___ Lehrern für die Mühe.
+                            <select class="answer-select" data-correct="den">
+                                <option value="">Select</option>
+                                <option value="den">den</option>
+                                <option value="dem">dem</option>
+                                <option value="einem">einem</option>
+                            </select>
+                        </li>
+                        <li>Er gibt ___ Kind ein Geschenk.
+                            <select class="answer-select" data-correct="dem">
+                                <option value="">Select</option>
+                                <option value="einem">einem</option>
+                                <option value="dem">dem</option>
+                                <option value="der">der</option>
+                            </select>
+                        </li>
+                        <li>Ich leihe ___ Nachbarn mein Auto.
+                            <select class="answer-select" data-correct="den (+n)">
+                                <option value="">Select</option>
+                                <option value="den">den</option>
+                                <option value="einem">einem</option>
+                                <option value="den (+n)">den (+n)</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li>Ich helfe <em>einem</em> alten Mann.</li>
+                            <li>Sie schreibt <em>einer</em> Freundin zurück.</li>
+                            <li>Wir danken <em>den</em> Lehrern für die Mühe.</li>
+                            <li>Er gibt <em>dem</em> Kind ein Geschenk.</li>
+                            <li>Ich leihe <em>den Nachbarn</em> mein Auto.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise2">
+                <h3>Exercise 2: Dative Prepositions</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Sie kommt ___ kleinen Stadt.
+                            <select class="answer-select" data-correct="aus der">
+                                <option value="">Select</option>
+                                <option value="aus der">aus der</option>
+                                <option value="mit der">mit der</option>
+                                <option value="zu der">zu der</option>
+                            </select>
+                        </li>
+                        <li>Ich wohne ___ meinem Onkel.
+                            <select class="answer-select" data-correct="bei meinem">
+                                <option value="">Select</option>
+                                <option value="bei meinem">bei meinem</option>
+                                <option value="zu meinem">zu meinem</option>
+                                <option value="von meinem">von meinem</option>
+                            </select>
+                        </li>
+                        <li>Wir fahren ___ Zug nach Hamburg.
+                            <select class="answer-select" data-correct="mit dem">
+                                <option value="">Select</option>
+                                <option value="mit dem">mit dem</option>
+                                <option value="nach dem">nach dem</option>
+                                <option value="aus dem">aus dem</option>
+                            </select>
+                        </li>
+                        <li>Er wartet ___ zwei Stunden.
+                            <select class="answer-select" data-correct="seit zwei">
+                                <option value="">Select</option>
+                                <option value="seit zwei">seit zwei</option>
+                                <option value="aus zwei">aus zwei</option>
+                                <option value="bei zwei">bei zwei</option>
+                            </select>
+                        </li>
+                        <li>Das Café ist ___ Park gegenüber.
+                            <select class="answer-select" data-correct="dem">
+                                <option value="">Select</option>
+                                <option value="dem">dem</option>
+                                <option value="der">der</option>
+                                <option value="den">den</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li>Sie kommt <em>aus der</em> kleinen Stadt.</li>
+                            <li>Ich wohne <em>bei meinem</em> Onkel.</li>
+                            <li>Wir fahren <em>mit dem</em> Zug nach Hamburg.</li>
+                            <li>Er wartet <em>seit zwei</em> Stunden.</li>
+                            <li>Das Café ist <em>dem</em> Park gegenüber.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise3">
+                <h3>Exercise 3: Dative Verbs</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Ich ___ meinem Bruder bei der Arbeit.
+                            <select class="answer-select" data-correct="helfe">
+                                <option value="">Select</option>
+                                <option value="helfe">helfe</option>
+                                <option value="sehe">sehe</option>
+                                <option value="kaufe">kaufe</option>
+                            </select>
+                        </li>
+                        <li>Sie ___ der Lehrerin für die Note.
+                            <select class="answer-select" data-correct="dankt">
+                                <option value="">Select</option>
+                                <option value="dankt">dankt</option>
+                                <option value="liest">liest</option>
+                                <option value="ruft">ruft</option>
+                            </select>
+                        </li>
+                        <li>Er ___ einem Freund die Lösung.
+                            <select class="answer-select" data-correct="erklärt">
+                                <option value="">Select</option>
+                                <option value="erklärt">erklärt</option>
+                                <option value="trinkt">trinkt</option>
+                                <option value="spielt">spielt</option>
+                            </select>
+                        </li>
+                        <li>Wir ___ unserem Gast die Tür.
+                            <select class="answer-select" data-correct="zeigen">
+                                <option value="">Select</option>
+                                <option value="zeigen">zeigen</option>
+                                <option value="machen">machen</option>
+                                <option value="essen">essen</option>
+                            </select>
+                        </li>
+                        <li>Das Essen ___ den Kindern gut.
+                            <select class="answer-select" data-correct="schmeckt">
+                                <option value="">Select</option>
+                                <option value="schmeckt">schmeckt</option>
+                                <option value="nimmt">nimmt</option>
+                                <option value="passt">passt</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li>Ich <em>helfe</em> meinem Bruder bei der Arbeit.</li>
+                            <li>Sie <em>dankt</em> der Lehrerin für die Note.</li>
+                            <li>Er <em>erklärt</em> einem Freund die Lösung.</li>
+                            <li>Wir <em>zeigen</em> unserem Gast die Tür.</li>
+                            <li>Das Essen <em>schmeckt</em> den Kindern gut.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise4">
+                <h3>Exercise 4: Personal Pronouns in Dative</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Sie gibt ___ das Geld zurück.
+                            <select class="answer-select" data-correct="mir">
+                                <option value="">Select</option>
+                                <option value="mir">mir</option>
+                                <option value="mich">mich</option>
+                                <option value="mein">mein</option>
+                            </select>
+                        </li>
+                        <li>Ich erkläre ___ die Aufgabe.
+                            <select class="answer-select" data-correct="dir">
+                                <option value="">Select</option>
+                                <option value="dir">dir</option>
+                                <option value="dich">dich</option>
+                                <option value="dein">dein</option>
+                            </select>
+                        </li>
+                        <li>Er winkt ___ vom Balkon.
+                            <select class="answer-select" data-correct="ihr">
+                                <option value="">Select</option>
+                                <option value="ihr">ihr</option>
+                                <option value="sie">sie</option>
+                                <option value="ihre">ihre</option>
+                            </select>
+                        </li>
+                        <li>Wir helfen ___ mit dem Umzug.
+                            <select class="answer-select" data-correct="euch">
+                                <option value="">Select</option>
+                                <option value="euch">euch</option>
+                                <option value="euer">euer</option>
+                            </select>
+                        </li>
+                        <li>Sie vertraut ___ bei der Arbeit.
+                            <select class="answer-select" data-correct="ihnen">
+                                <option value="">Select</option>
+                                <option value="ihnen">ihnen</option>
+                                <option value="sie">sie</option>
+                                <option value="ihr">ihr</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li>Sie gibt <em>mir</em> das Geld zurück.</li>
+                            <li>Ich erkläre <em>dir</em> die Aufgabe.</li>
+                            <li>Er winkt <em>ihr</em> vom Balkon.</li>
+                            <li>Wir helfen <em>euch</em> mit dem Umzug.</li>
+                            <li>Sie vertraut <em>ihnen</em> bei der Arbeit.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise5">
+                <h3>Exercise 5: Possessive Articles in Dative</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Ich helfe ___ Schwester heute.
+                            <select class="answer-select" data-correct="meiner">
+                                <option value="">Select</option>
+                                <option value="meiner">meiner</option>
+                                <option value="meinem">meinem</option>
+                                <option value="meinen">meinen</option>
+                            </select>
+                        </li>
+                        <li>Er gibt ___ Vater ein Werkzeug.
+                            <select class="answer-select" data-correct="seinem">
+                                <option value="">Select</option>
+                                <option value="seinem">seinem</option>
+                                <option value="seiner">seiner</option>
+                                <option value="seinen">seinen</option>
+                            </select>
+                        </li>
+                        <li>Wir zeigen ___ Freunden das Foto.
+                            <select class="answer-select" data-correct="unseren">
+                                <option value="">Select</option>
+                                <option value="unseren">unseren</option>
+                                <option value="unserer">unserer</option>
+                                <option value="meinem">meinem</option>
+                            </select>
+                        </li>
+                        <li>Sie schreibt ___ Kind eine Karte.
+                            <select class="answer-select" data-correct="ihrem">
+                                <option value="">Select</option>
+                                <option value="ihrem">ihrem</option>
+                                <option value="ihrer">ihrer</option>
+                                <option value="meinen">meinen</option>
+                            </select>
+                        </li>
+                        <li>Ihr folgt ___ Lehrerin zur Tür.
+                            <select class="answer-select" data-correct="eurer">
+                                <option value="">Select</option>
+                                <option value="eurer">eurer</option>
+                                <option value="eurem">eurem</option>
+                                <option value="meinen">meinen</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li>Ich helfe <em>meiner</em> Schwester heute.</li>
+                            <li>Er gibt <em>seinem</em> Vater ein Werkzeug.</li>
+                            <li>Wir zeigen <em>unseren</em> Freunden das Foto.</li>
+                            <li>Sie schreibt <em>ihrem</em> Kind eine Karte.</li>
+                            <li>Ihr folgt <em>eurer</em> Lehrerin zur Tür.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise6">
+                <h3>Exercise 6: Additional Uses</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>___ ist es warm im Zimmer.
+                            <select class="answer-select" data-correct="Mir">
+                                <option value="">Select</option>
+                                <option value="Mir">Mir</option>
+                                <option value="Mich">Mich</option>
+                                <option value="Mein">Mein</option>
+                            </select>
+                        </li>
+                        <li>Das Buch liegt ___ Tisch neben dem Glas.
+                            <select class="answer-select" data-correct="auf dem">
+                                <option value="">Select</option>
+                                <option value="auf dem">auf dem</option>
+                                <option value="auf den">auf den</option>
+                                <option value="auf der">auf der</option>
+                            </select>
+                        </li>
+                        <li><em>Einem Kind</em> fällt ___ Ball runter.
+                            <select class="answer-select" data-correct="der">
+                                <option value="">Select</option>
+                                <option value="der">der</option>
+                                <option value="dem">dem</option>
+                                <option value="den">den</option>
+                            </select>
+                        </li>
+                        <li>Es tut ___ leid, dass ich spät bin.
+                            <select class="answer-select" data-correct="mir">
+                                <option value="">Select</option>
+                                <option value="mir">mir</option>
+                                <option value="mich">mich</option>
+                                <option value="mein">mein</option>
+                            </select>
+                        </li>
+                        <li>Wie geht es ___ heute?
+                            <select class="answer-select" data-correct="dir">
+                                <option value="">Select</option>
+                                <option value="dir">dir</option>
+                                <option value="dich">dich</option>
+                                <option value="dein">dein</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Mir</em> ist es warm im Zimmer.</li>
+                            <li>Das Buch liegt <em>auf dem</em> Tisch neben dem Glas.</li>
+                            <li><em>Einem Kind</em> fällt <em>der</em> Ball runter.</li>
+                            <li>Es tut <em>mir</em> leid, dass ich spät bin.</li>
+                            <li>Wie geht es <em>dir</em> heute?</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise7">
+                <h3>Exercise 7: Mixed Dative Story</h3>
+                <p>Fill in the blanks with the correct dative form across all topics.</p>
+                <div class="examples">
+                    <p>Gestern ___ (1) ich <em>meinem</em> Freund ein Buch. Er ___ (2) <em>mir</em> für die Hilfe. Wir gingen ___ (3) <em>dem</em> Park spazieren. Dort ___ (4) er <em>seiner</em> Schwester. Es ___ (5) <em>uns</em> sehr gut.</p>
+                    <ol class="example-list">
+                        <li><select class="answer-select" data-correct="gab">
+                            <option value="">Select</option>
+                            <option value="gab">gab</option>
+                            <option value="sah">sah</option>
+                            <option value="kaufte">kaufte</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="dankte">
+                            <option value="">Select</option>
+                            <option value="dankte">dankte</option>
+                            <option value="las">las</option>
+                            <option value="rief">rief</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="zu">
+                            <option value="">Select</option>
+                            <option value="in">in</option>
+                            <option value="mit">mit</option>
+                            <option value="zu">zu</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="begegnete">
+                            <option value="">Select</option>
+                            <option value="begegnete">begegnete</option>
+                            <option value="trank">trank</option>
+                            <option value="spielte">spielte</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="ging">
+                            <option value="">Select</option>
+                            <option value="ging">ging</option>
+                            <option value="machte">machte</option>
+                            <option value="fehlte">fehlte</option>
+                        </select></li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong> Gestern <em>gab</em> ich <em>meinem</em> Freund ein Buch. Er <em>dankte</em> <em>mir</em> für die Hilfe. Wir gingen <em>zu</em> <em>dem</em> Park spazieren. Dort <em>begegnete</em> er <em>seiner</em> Schwester. Es <em>ging</em> <em>uns</em> sehr gut.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips -->
+        <section id="tips">
+            <h2>Tips to Master Dative</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Drill Articles</strong>: Pair <em>dem, der, den</em> with nouns—<em>dem Mann, der Frau, den Kindern</em>.</li>
+                    <li><strong>Preposition Practice</strong>: Write sentences with <em>mit, zu, von</em>—link to daily life.</li>
+                    <li><strong>Verb-Object Pairs</strong>: Memorize <em>helfen-dir, danken-dem Lehrer</em>—say aloud.</li>
+                    <li><strong>Pronoun Flow</strong>: Practice <em>mir, dir, ihm</em> in short phrases—<em>Er gibt mir…</em></li>
+                    <li><strong>Feel the Case</strong>: Use <em>Mir ist kalt</em>—connect to emotions or states.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Resources -->
+        <section id="resources">
+            <h2>Resources for Extra Practice</h2>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <h4>YouTube – Deutsch mit Marija</h4>
+                    <p>Dative deep dive.</p>
+                    <a href="https://www.youtube.com/@deutschmitmarija" class="resource-btn">Visit Deutsch mit Marija</a>
+                </div>
+                <div class="resource-card">
+                    <h4>German.net</h4>
+                    <p>Grammar exercises.</p>
+                    <a href="https://german.net/" class="resource-btn">Visit German.net</a>
+                </div>
+                <div class="resource-card">
+                    <h4>Babbel</h4>
+                    <p>Interactive lessons.</p>
+                    <a href="https://www.babbel.com/learn-german" class="resource-btn">Visit Babbel</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Thoughts -->
+        <section id="final-thoughts">
+            <h2>You’re Ready!</h2>
+            <p>
+                This guide starts with dative articles and scales up to advanced dative usage, with extra examples and tailored exercises. Work through them, and you’ll wield the dative like a native! Next, you could tackle genitive or combine dative with accusative—your move!
+            </p>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="verbs.html" class="see-also-rect">German Verbs</a>
+                <a href="trennbare.html" class="see-also-rect">Trennbare Verben</a>
+                <a href="praterituma1.html" class="see-also-rect">Präteritum</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="verbs.html" class="next-btn">Next: German Verbs →</a>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Dark/Light mode toggle
+            const modeToggle = document.getElementById('mode-toggle');
+            const body = document.body;
+            modeToggle.addEventListener('click', function() {
+                body.classList.toggle('dark-mode');
+                const isDark = body.classList.contains('dark-mode');
+                modeToggle.querySelector('svg').setAttribute('d', isDark ? 
+                    'M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z' : 
+                    'M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z');
+            });
+
+            // Check Answers functionality
+            document.querySelectorAll('.check-answers').forEach(button => {
+                button.addEventListener('click', function() {
+                    const exercise = this.closest('.subsection');
+                    const selects = exercise.querySelectorAll('.answer-select');
+                    selects.forEach(select => {
+                        const correctAnswer = select.getAttribute('data-correct');
+                        const userAnswer = select.value;
+                        if (userAnswer === correctAnswer) {
+                            select.style.border = '2px solid #2e7d32';
+                        } else if (userAnswer !== '') {
+                            select.style.border = '2px solid #d32f2f';
+                        } else {
+                            select.style.border = '1px solid #ccc';
+                        }
+                    });
+                });
+            });
+
+            // Show Answers functionality
+            document.querySelectorAll('.show-answers').forEach(button => {
+                button.addEventListener('click', function() {
+                    const exercise = this.closest('.subsection');
+                    const answers = exercise.querySelector('.answers');
+                    if (answers.classList.contains('hidden')) {
+                        answers.classList.remove('hidden');
+                    } else {
+                        answers.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

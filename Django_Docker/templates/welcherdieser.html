@@ -1,0 +1,607 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}German Interrogativartikel and Demonstrativartikel{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/dative.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+                <a href="index.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="a1-topics.html" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>German Interrogativartikel and Demonstrativartikel: The Ultimate Simple Guide</h1>
+            <p>
+                In German, <strong>Interrogativartikel</strong> (question articles) and <strong>Demonstrativartikel</strong> (demonstrative articles) help you ask questions or point out specific things. They’re like “which” and “this/that” in English, but they change depending on the noun’s gender, number, and case. This guide covers everything—forms, uses, examples, and exercises—so you’ll master them easily. Let’s dive in!
+            </p>
+        </section>
+
+        <!-- Interrogativartikel -->
+        <section id="interrogativ">
+            <h2>Interrogativartikel (Question Articles)</h2>
+            <div class="subsection">
+                <h3>What Are They?</h3>
+                <p>Interrogativartikel are words like “which” or “what” used to ask about specific nouns. The main ones are <strong>welcher, welche, welches</strong> (which), and they match the noun’s gender and case.</p>
+            </div>
+            <div class="subsection">
+                <h3>Forms of Welcher</h3>
+                <p>Adjusts to <strong>gender</strong> (masculine, feminine, neuter, plural) and <strong>case</strong> (nominative, accusative, dative). No genitive form here (it’s rare—<em>wessen</em> is used instead).</p>
+                <div class="table-container">
+                    <table>
+                        <tr><th>Case</th><th>Masculine</th><th>Feminine</th><th>Neuter</th><th>Plural</th></tr>
+                        <tr><td>Nominative</td><td>welcher</td><td>welche</td><td>welches</td><td>welche</td></tr>
+                        <tr><td>Accusative</td><td>welchen</td><td>welche</td><td>welches</td><td>welche</td></tr>
+                        <tr><td>Dative</td><td>welchem</td><td>welcher</td><td>welchem</td><td>welchen</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>How to Use Them</h3>
+                <p>Ask “which one?” about a specific noun. Always followed by a noun (unlike <em>wer</em> or <em>was</em>, which stand alone).</p>
+                <div class="examples">
+                    <h4>Nominative (Subject)</h4>
+                    <ol class="example-list">
+                        <li><em>Welcher Hund bellt so laut?</em> (Which dog is barking so loud?)</li>
+                        <li><em>Welche Katze gehört dir?</em> (Which cat belongs to you?)</li>
+                        <li><em>Welches Kind spielt im Park?</em> (Which child is playing in the park?)</li>
+                        <li><em>Welche Bücher liegen da?</em> (Which books are lying there?)</li>
+                    </ol>
+                    <h4>Accusative (Direct Object)</h4>
+                    <ol class="example-list">
+                        <li><em>Welchen Film schaust du?</em> (Which movie are you watching?)</li>
+                        <li><em>Welche Tasche kaufst du?</em> (Which bag are you buying?)</li>
+                        <li><em>Welches Spielzeug willst du?</em> (Which toy do you want?)</li>
+                        <li><em>Welche Freunde triffst du?</em> (Which friends are you meeting?)</li>
+                    </ol>
+                    <h4>Dative (Indirect Object)</h4>
+                    <ol class="example-list">
+                        <li><em>Welchem Mann hilfst du?</em> (Which man are you helping?)</li>
+                        <li><em>Welcher Frau gibst du das Buch?</em> (Which woman are you giving the book to?)</li>
+                        <li><em>Welchem Kind schreibst du?</em> (Which child are you writing to?)</li>
+                        <li><em>Welchen Leuten dankst du?</em> (Which people are you thanking?)</li>
+                    </ol>
+                </div>
+                <p><strong>Quick Tips:</strong></p>
+                <ul class="example-list">
+                    <li><strong>Gender Match</strong>: Check the noun’s gender—<em>Hund</em> (masc.), <em>Katze</em> (fem.), <em>Kind</em> (neut.).</li>
+                    <li><strong>Case Clue</strong>: Use the verb—<em>helfen</em> (dative), <em>kaufen</em> (accusative).</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Demonstrativartikel -->
+        <section id="demonstrativ">
+            <h2>Demonstrativartikel (Demonstrative Articles)</h2>
+            <div class="subsection">
+                <h3>What Are They?</h3>
+                <p>Demonstrativartikel are words like “this” or “that” to point out specific nouns. The main ones are <strong>dieser, diese, dieses</strong> (this/that), and they change by gender, number, and case.</p>
+            </div>
+            <div class="subsection">
+                <h3>Forms of Dieser</h3>
+                <p>Matches the noun’s <strong>gender</strong> and <strong>case</strong>. Can mean “this” (near) or “that” (far)—context decides.</p>
+                <div class="table-container">
+                    <table>
+                        <tr><th>Case</th><th>Masculine</th><th>Feminine</th><th>Neuter</th><th>Plural</th></tr>
+                        <tr><td>Nominative</td><td>dieser</td><td>diese</td><td>dieses</td><td>diese</td></tr>
+                        <tr><td>Accusative</td><td>diesen</td><td>diese</td><td>dieses</td><td>diese</td></tr>
+                        <tr><td>Dative</td><td>diesem</td><td>dieser</td><td>diesem</td><td>diesen</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>How to Use Them</h3>
+                <p>Point to something specific—nearby (<em>this</em>) or farther (<em>that</em>). Always followed by a noun (unlike <em>dies</em> or <em>das</em>, which can stand alone).</p>
+                <div class="examples">
+                    <h4>Nominative (Subject)</h4>
+                    <ol class="example-list">
+                        <li><em>Dieser Hund ist mein Freund.</em> (This dog is my friend.)</li>
+                        <li><em>Diese Katze schläft viel.</em> (This cat sleeps a lot.)</li>
+                        <li><em>Dieses Kind lacht laut.</em> (This child laughs loudly.)</li>
+                        <li><em>Diese Bücher sind neu.</em> (These books are new.)</li>
+                    </ol>
+                    <h4>Accusative (Direct Object)</h4>
+                    <ol class="example-list">
+                        <li><em>Ich sehe diesen Film heute.</em> (I’m watching this movie today.)</li>
+                        <li><em>Sie kauft diese Tasche.</em> (She’s buying this bag.)</li>
+                        <li><em>Wir nehmen dieses Spielzeug.</em> (We’re taking this toy.)</li>
+                        <li><em>Er liest diese Zeitungen.</em> (He’s reading these newspapers.)</li>
+                    </ol>
+                    <h4>Dative (Indirect Object)</h4>
+                    <ol class="example-list">
+                        <li><em>Ich helfe diesem Mann.</em> (I’m helping this man.)</li>
+                        <li><em>Sie gibt dieser Frau ein Geschenk.</em> (She’s giving this woman a gift.)</li>
+                        <li><em>Wir schreiben diesem Kind.</em> (We’re writing to this child.)</li>
+                        <li><em>Er dankt diesen Freunden.</em> (He’s thanking these friends.)</li>
+                    </ol>
+                </div>
+                <p><strong>Quick Tips:</strong></p>
+                <ul class="example-list">
+                    <li><strong>Specificity</strong>: Use <em>dieser</em> to emphasize—<em>Dieser Hund</em> (THIS dog, not another).</li>
+                    <li><strong>Context</strong>: <em>Dieser</em> can be “that” if far—<em>Dieser Baum da drüben</em> (That tree over there).</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Key Differences -->
+        <section id="differences">
+            <h2>Key Differences</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Interrogativartikel</strong>: Asks “Which one?” (<em>Welcher Hund?</em>—Which dog?)</li>
+                    <li><strong>Demonstrativartikel</strong>: Answers or points out (<em>Dieser Hund</em>—This dog.)</li>
+                    <li><strong>Tone</strong>: <em>Welcher</em> is curious; <em>dieser</em> is confident.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Example Sentences -->
+        <section id="examples">
+            <h2>Tons of Example Sentences</h2>
+            <div class="subsection">
+                <h3>Interrogativartikel</h3>
+                <div class="examples">
+                    <h4>Nominative</h4>
+                    <ol class="example-list">
+                        <li><em>Welcher Junge hat gewonnen?</em> (Which boy won?)</li>
+                        <li><em>Welche Lehrerin ist nett?</em> (Which teacher is nice?)</li>
+                        <li><em>Welches Auto fährt schnell?</em> (Which car drives fast?)</li>
+                        <li><em>Welche Schuhe passen dir?</em> (Which shoes fit you?)</li>
+                    </ol>
+                    <h4>Accusative</h4>
+                    <ol class="example-list">
+                        <li><em>Welchen Apfel isst du?</em> (Which apple are you eating?)</li>
+                        <li><em>Welche Jacke trägst du?</em> (Which jacket are you wearing?)</li>
+                        <li><em>Welches Lied hörst du?</em> (Which song are you listening to?)</li>
+                        <li><em>Welche Bilder malst du?</em> (Which pictures are you painting?)</li>
+                    </ol>
+                    <h4>Dative</h4>
+                    <ol class="example-list">
+                        <li><em>Welchem Freund schreibst du?</em> (Which friend are you writing to?)</li>
+                        <li><em>Welcher Schwester hilfst du?</em> (Which sister are you helping?)</li>
+                        <li><em>Welchem Baby gibst du Milch?</em> (Which baby are you giving milk to?)</li>
+                        <li><em>Welchen Gästen winkst du?</em> (Which guests are you waving to?)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Demonstrativartikel</h3>
+                <div class="examples">
+                    <h4>Nominative</h4>
+                    <ol class="example-list">
+                        <li><em>Dieser Tisch ist alt.</em> (This table is old.)</li>
+                        <li><em>Diese Blume riecht gut.</em> (This flower smells nice.)</li>
+                        <li><em>Dieses Haus ist groß.</em> (This house is big.)</li>
+                        <li><em>Diese Kinder spielen draußen.</em> (These children are playing outside.)</li>
+                    </ol>
+                    <h4>Accusative</h4>
+                    <ol class="example-list">
+                        <li><em>Ich kaufe diesen Stuhl.</em> (I’m buying this chair.)</li>
+                        <li><em>Sie sieht diese Show.</em> (She’s watching this show.)</li>
+                        <li><em>Wir nehmen dieses Essen.</em> (We’re taking this food.)</li>
+                        <li><em>Er liebt diese Spiele.</em> (He loves these games.)</li>
+                    </ol>
+                    <h4>Dative</h4>
+                    <ol class="example-list">
+                        <li><em>Ich folge diesem Weg.</em> (I’m following this path.)</li>
+                        <li><em>Sie erklärt dieser Gruppe die Regeln.</em> (She’s explaining the rules to this group.)</li>
+                        <li><em>Wir zeigen diesem Gast das Zimmer.</em> (We’re showing this guest the room.)</li>
+                        <li><em>Er vertraut diesen Leuten.</em> (He trusts these people.)</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sentence Structure -->
+        <section id="structure">
+            <h2>Sentence Structure</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Questions with Interrogativartikel</strong>: <em>Welcher</em> first, then verb, then rest.
+                        <ul><li><em>Welchen Film siehst du?</em> (Which movie are you watching?)</li></ul>
+                    </li>
+                    <li><strong>Statements with Demonstrativartikel</strong>: <em>Dieser</em> before noun, normal word order.
+                        <ul><li><em>Dieser Film ist toll.</em> (This movie is great.)</li></ul>
+                    </li>
+                    <li><strong>Negation</strong>: <em>Nicht</em> after verb, before object.
+                        <ul><li><em>Ich kenne diesen Mann nicht.</em> (I don’t know this man.)</li></ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Exercises -->
+        <section id="practice">
+            <h2>Creative Exercises with Multiple-Choice Options</h2>
+
+            <div class="subsection" id="exercise1">
+                <h3>Exercise 1: Interrogativartikel – Pick the Right Form</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>___ Hund gehört dir? (Nominative)
+                            <select class="answer-select" data-correct="welcher">
+                                <option value="">Select</option>
+                                <option value="welcher">welcher</option>
+                                <option value="welchen">welchen</option>
+                                <option value="welchem">welchem</option>
+                            </select>
+                        </li>
+                        <li>___ Tasche kaufst du? (Accusative)
+                            <select class="answer-select" data-correct="welche">
+                                <option value="">Select</option>
+                                <option value="welche">welche</option>
+                                <option value="welchen">welchen</option>
+                                <option value="welcher">welcher</option>
+                            </select>
+                        </li>
+                        <li>___ Kind hilfst du? (Dative)
+                            <select class="answer-select" data-correct="welchem">
+                                <option value="">Select</option>
+                                <option value="welchem">welchem</option>
+                                <option value="welches">welches</option>
+                                <option value="welchen">welchen</option>
+                            </select>
+                        </li>
+                        <li>___ Film schaust du? (Accusative)
+                            <select class="answer-select" data-correct="welchen">
+                                <option value="">Select</option>
+                                <option value="welchen">welchen</option>
+                                <option value="welcher">welcher</option>
+                                <option value="welches">welches</option>
+                            </select>
+                        </li>
+                        <li>___ Freunden dankst du? (Dative)
+                            <select class="answer-select" data-correct="welchen">
+                                <option value="">Select</option>
+                                <option value="welche">welche</option>
+                                <option value="welchen">welchen</option>
+                                <option value="welchem">welchem</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Welcher</em> Hund gehört dir?</li>
+                            <li><em>Welche</em> Tasche kaufst du?</li>
+                            <li><em>Welchem</em> Kind hilfst du?</li>
+                            <li><em>Welchen</em> Film schaust du?</li>
+                            <li><em>Welchen</em> Freunden dankst du?</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise2">
+                <h3>Exercise 2: Demonstrativartikel – Pick the Right Form</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>___ Hund ist süß. (Nominative)
+                            <select class="answer-select" data-correct="dieser">
+                                <option value="">Select</option>
+                                <option value="dieser">dieser</option>
+                                <option value="diesen">diesen</option>
+                                <option value="diesem">diesem</option>
+                            </select>
+                        </li>
+                        <li>Ich sehe ___ Katze. (Accusative)
+                            <select class="answer-select" data-correct="diese">
+                                <option value="">Select</option>
+                                <option value="diese">diese</option>
+                                <option value="diesen">diesen</option>
+                                <option value="dieser">dieser</option>
+                            </select>
+                        </li>
+                        <li>Ich helfe ___ Mann. (Dative)
+                            <select class="answer-select" data-correct="diesem">
+                                <option value="">Select</option>
+                                <option value="diesem">diesem</option>
+                                <option value="diesen">diesen</option>
+                                <option value="dieser">dieser</option>
+                            </select>
+                        </li>
+                        <li>Wir kaufen ___ Tisch. (Accusative)
+                            <select class="answer-select" data-correct="diesen">
+                                <option value="">Select</option>
+                                <option value="diesen">diesen</option>
+                                <option value="dieser">dieser</option>
+                                <option value="dieses">dieses</option>
+                            </select>
+                        </li>
+                        <li>Er winkt ___ Leuten. (Dative)
+                            <select class="answer-select" data-correct="diesen">
+                                <option value="">Select</option>
+                                <option value="diesen">diesen</option>
+                                <option value="diese">diese</option>
+                                <option value="diesem">diesem</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Dieser</em> Hund ist süß.</li>
+                            <li>Ich sehe <em>diese</em> Katze.</li>
+                            <li>Ich helfe <em>diesem</em> Mann.</li>
+                            <li>Wir kaufen <em>diesen</em> Tisch.</li>
+                            <li>Er winkt <em>diesen</em> Leuten.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise3">
+                <h3>Exercise 3: Interrogativartikel vs. Demonstrativartikel</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>___ Buch liest du? (Question)
+                            <select class="answer-select" data-correct="welches">
+                                <option value="">Select</option>
+                                <option value="welches">welches</option>
+                                <option value="dieses">dieses</option>
+                                <option value="welchem">welchem</option>
+                            </select>
+                        </li>
+                        <li>___ Buch ist meins. (Pointing)
+                            <select class="answer-select" data-correct="dieses">
+                                <option value="">Select</option>
+                                <option value="dieses">dieses</option>
+                                <option value="welches">welches</option>
+                                <option value="diesem">diesem</option>
+                            </select>
+                        </li>
+                        <li>___ Freund hilfst du? (Question)
+                            <select class="answer-select" data-correct="welchem">
+                                <option value="">Select</option>
+                                <option value="welchem">welchem</option>
+                                <option value="diesem">diesem</option>
+                                <option value="welchen">welchen</option>
+                            </select>
+                        </li>
+                        <li>Ich sehe ___ Auto. (Pointing)
+                            <select class="answer-select" data-correct="dieses">
+                                <option value="">Select</option>
+                                <option value="dieses">dieses</option>
+                                <option value="welches">welches</option>
+                                <option value="diesen">diesen</option>
+                            </select>
+                        </li>
+                        <li>___ Lehrer dankst du? (Question)
+                            <select class="answer-select" data-correct="welchem">
+                                <option value="">Select</option>
+                                <option value="welchem">welchem</option>
+                                <option value="diesem">diesem</option>
+                                <option value="welchen">welchen</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Welches</em> Buch liest du?</li>
+                            <li><em>Dieses</em> Buch ist meins.</li>
+                            <li><em>Welchem</em> Freund hilfst du?</li>
+                            <li>Ich sehe <em>dieses</em> Auto.</li>
+                            <li><em>Welchem</em> Lehrer dankst du?</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise4">
+                <h3>Exercise 4: Mixed Cases</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>___ Frau gehört das? (Nominative, Question)
+                            <select class="answer-select" data-correct="welche">
+                                <option value="">Select</option>
+                                <option value="welche">welche</option>
+                                <option value="diese">diese</option>
+                                <option value="welcher">welcher</option>
+                            </select>
+                        </li>
+                        <li>Ich kaufe ___ Stuhl. (Accusative, Pointing)
+                            <select class="answer-select" data-correct="diesen">
+                                <option value="">Select</option>
+                                <option value="diesen">diesen</option>
+                                <option value="welchen">welchen</option>
+                                <option value="diesem">diesem</option>
+                            </select>
+                        </li>
+                        <li>___ Kind gibst du das? (Dative, Question)
+                            <select class="answer-select" data-correct="welchem">
+                                <option value="">Select</option>
+                                <option value="welchem">welchem</option>
+                                <option value="diesem">diesem</option>
+                                <option value="welches">welches</option>
+                            </select>
+                        </li>
+                        <li>___ Blumen sind schön. (Nominative, Pointing)
+                            <select class="answer-select" data-correct="diese">
+                                <option value="">Select</option>
+                                <option value="diese">diese</option>
+                                <option value="welche">welche</option>
+                                <option value="diesen">diesen</option>
+                            </select>
+                        </li>
+                        <li>___ Hund siehst du? (Accusative, Question)
+                            <select class="answer-select" data-correct="welchen">
+                                <option value="">Select</option>
+                                <option value="welchen">welchen</option>
+                                <option value="diesen">diesen</option>
+                                <option value="welchem">welchem</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Welche</em> Frau gehört das?</li>
+                            <li>Ich kaufe <em>diesen</em> Stuhl.</li>
+                            <li><em>Welchem</em> Kind gibst du das?</li>
+                            <li><em>Diese</em> Blumen sind schön.</li>
+                            <li><em>Welchen</em> Hund siehst du?</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise5">
+                <h3>Exercise 5: Story with Both</h3>
+                <p>Fill in with the correct interrogativ- or demonstrativartikel.</p>
+                <div class="examples">
+                    <p>___ (1) Hund bellt da draußen? Ich sehe ___ (2) Hund jetzt. ___ (3) Katze gibst du Milch? Ich helfe ___ (4) Katze später. ___ (5) Bücher sind deine?</p>
+                    <ol class="example-list">
+                        <li><select class="answer-select" data-correct="welcher">
+                            <option value="">Select</option>
+                            <option value="welcher">welcher</option>
+                            <option value="dieser">dieser</option>
+                            <option value="welchem">welchem</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="diesen">
+                            <option value="">Select</option>
+                            <option value="diesen">diesen</option>
+                            <option value="welchen">welchen</option>
+                            <option value="dieser">dieser</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="welcher">
+                            <option value="">Select</option>
+                            <option value="welcher">welcher</option>
+                            <option value="dieser">dieser</option>
+                            <option value="welchem">welchem</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="dieser">
+                            <option value="">Select</option>
+                            <option value="dieser">dieser</option>
+                            <option value="welcher">welcher</option>
+                            <option value="diesem">diesem</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="welche">
+                            <option value="">Select</option>
+                            <option value="welche">welche</option>
+                            <option value="diese">diese</option>
+                            <option value="welchen">welchen</option>
+                        </select></li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong> <em>Welcher</em> Hund bellt da draußen? Ich sehe <em>diesen</em> Hund jetzt. <em>Welcher</em> Katze gibst du Milch? Ich helfe <em>dieser</em> Katze später. <em>Welche</em> Bücher sind deine?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips -->
+        <section id="tips">
+            <h2>Tips to Master Interrogativ- and Demonstrativartikel</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Sing the Forms</strong>: Chant <em>welcher, welche, welches</em> and <em>dieser, diese, dieses</em>—make it catchy!</li>
+                    <li><strong>Case Check</strong>: Ask “What’s the verb doing?”—<em>sehen</em> (accusative), <em>helfen</em> (dative).</li>
+                    <li><strong>Gender Game</strong>: Match nouns—<em>Hund</em> (welcher/dieser), <em>Tasche</em> (welche/diese).</li>
+                    <li><strong>Point and Ask</strong>: Practice pointing (<em>Dieser Baum!</em>) and asking (<em>Welcher Baum?</em>).</li>
+                    <li><strong>Daily Use</strong>: Say <em>Welches Brot willst du?</em> at breakfast, <em>Diese Tasse ist meine</em> at coffee time.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Final Thoughts -->
+        <section id="final-thoughts">
+            <h2>You’re Ready!</h2>
+            <p>
+                This guide covers interrogativ- and demonstrativartikel completely—forms, uses, examples, and exercises. You’re ready to ask and point like a native! Next, you could explore relative pronouns or mix these with Perfekt—your choice!
+            </p>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="dative.html" class="see-also-rect">German Dative</a>
+                <a href="akkusative.html" class="see-also-rect">German Accusative</a>
+                <a href="partizip2.html" class="see-also-rect">Perfekt & Partizip II</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="partizip2.html" class="next-btn">Next: Perfekt & Partizip II →</a>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Dark/Light mode toggle
+            const modeToggle = document.getElementById('mode-toggle');
+            const body = document.body;
+            modeToggle.addEventListener('click', function() {
+                body.classList.toggle('dark-mode');
+                const isDark = body.classList.contains('dark-mode');
+                modeToggle.querySelector('svg').setAttribute('d', isDark ? 
+                    'M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z' : 
+                    'M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z');
+            });
+
+            // Check Answers functionality
+            document.querySelectorAll('.check-answers').forEach(button => {
+                button.addEventListener('click', function() {
+                    const exercise = this.closest('.subsection');
+                    const selects = exercise.querySelectorAll('.answer-select');
+                    selects.forEach(select => {
+                        const correctAnswer = select.getAttribute('data-correct');
+                        const userAnswer = select.value;
+                        if (userAnswer === correctAnswer) {
+                            select.style.border = '2px solid #2e7d32';
+                        } else if (userAnswer !== '') {
+                            select.style.border = '2px solid #d32f2f';
+                        } else {
+                            select.style.border = '1px solid #ccc';
+                        }
+                    });
+                });
+            });
+
+            // Show Answers functionality
+            document.querySelectorAll('.show-answers').forEach(button => {
+                button.addEventListener('click', function() {
+                    const exercise = this.closest('.subsection');
+                    const answers = exercise.querySelector('.answers');
+                    if (answers.classList.contains('hidden')) {
+                        answers.classList.remove('hidden');
+                    } else {
+                        answers.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

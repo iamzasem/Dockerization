@@ -1,0 +1,418 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}German Personal Pronouns{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/personal-pronouns.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+                <a href="index.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="a1-topics.html" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>German Personal Pronouns: A Simple, Top-Tier Guide for Beginners</h1>
+            <p>
+                Personal pronouns are the backbone of any language, and in German, they’re your key to building clear, correct sentences. This guide is designed to be simple yet packed with top-tier detail—perfect for beginners who want to master German grammar without paying a dime. We’ll cover <strong>what personal pronouns are</strong>, <strong>how they work in German</strong>, and <strong>how to use them</strong> in all cases (nominative, accusative, dative) with examples and practice tips. No fluff—just straight-to-the-point, high-quality learning. Let’s dive into <em>Personalpronomen</em>!
+            </p>
+        </section>
+
+        <!-- What Are Personal Pronouns -->
+        <section id="what-are">
+            <h2>What Are Personal Pronouns?</h2>
+            <p>
+                Personal pronouns replace nouns to refer to people or things—like "I," "you," or "he" in English. In German, they change depending on:
+            </p>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Person</strong>: Who’s talking or being talked about (e.g., I, you, they).</li>
+                    <li><strong>Number</strong>: Singular (one person) or plural (more than one).</li>
+                    <li><strong>Case</strong>: Their role in the sentence—subject (nominative), direct object (accusative), or indirect object (dative).</li>
+                </ul>
+            </div>
+            <p>
+                German has more pronoun forms than English because of its case system, but don’t worry—we’ll break it down step by step.
+            </p>
+        </section>
+
+        <!-- German Personal Pronouns by Case -->
+        <section id="key-points">
+            <h2>German Personal Pronouns by Case</h2>
+            <p>
+                German uses <strong>four cases</strong> for pronouns: nominative, accusative, dative, and genitive. For beginners, we’ll focus on the first three (nominative, accusative, dative)—genitive comes later. Here’s the full chart, followed by explanations and examples.
+            </p>
+            <div class="examples">
+                <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+                    <tr>
+                        <th style="border: 1px solid #ccc; padding: 8px;">Person</th>
+                        <th style="border: 1px solid #ccc; padding: 8px;">Nominative (Subject)</th>
+                        <th style="border: 1px solid #ccc; padding: 8px;">Accusative (Direct Object)</th>
+                        <th style="border: 1px solid #ccc; padding: 8px;">Dative (Indirect Object)</th>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ccc; padding: 8px;"><strong>Ich</strong> (I)</td>
+                        <td style="border: 1px solid #ccc; padding: 8px;">ich</td>
+                        <td style="border: 1px solid #ccc; padding: 8px;">mich</td>
+                        <td style="border: 1px solid #ccc; padding: 8px;">mir</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ccc; padding: 8px;"><strong>Du</strong> (you, informal)</td>
+                        <td style="border: 1px solid #ccc; padding: 8px;">du</td>
+                        <td style="border: 1px solid #ccc; padding: 8px;">dich</td>
+                        <td style="border: 1px solid #ccc; padding: 8px;">dir</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ccc; padding: 8px;"><strong>Er</strong> (he)</td>
+                        <td style="border: 1px solid #ccc; padding: 8px;">er</td>
+                        <td style="border: 1px solid #ccc; padding: 8px;">ihn</td>
+                        <td style="border: 1px solid #ccc; padding: 8px;">ihm</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ccc; padding: 8px;"><strong>Sie</strong> (she)</td>
+                        <td style="border: 1px solid #ccc; padding: 8px;">sie</td>
+                        <td style="border: 1px solid #ccc; padding: 8px;">sie</td>
+                        <td style="border: 1px solid #ccc; padding: 8px;">ihr</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ccc; padding: 8px;"><strong>Es</strong> (it)</td>
+                        <td style="border: 1px solid #ccc; padding: 8px;">es</td>
+                        <td style="border: 1px solid #ccc; padding: 8px;">es</td>
+                        <td style="border: 1px solid #ccc; padding: 8px;">ihm</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ccc; padding: 8px;"><strong>Wir</strong> (we)</td>
+                        <td style="border: 1px solid #ccc; padding: 8px;">wir</td>
+                        <td style="border: 1px solid #ccc; padding: 8px;">uns</td>
+                        <td style="border: 1px solid #ccc; padding: 8px;">uns</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ccc; padding: 8px;"><strong>Ihr</strong> (you all, informal)</td>
+                        <td style="border: 1px solid #ccc; padding: 8px;">ihr</td>
+                        <td style="border: 1px solid #ccc; padding: 8px;">euch</td>
+                        <td style="border: 1px solid #ccc; padding: 8px;">euch</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ccc; padding: 8px;"><strong>Sie</strong> (they)</td>
+                        <td style="border: 1px solid #ccc; padding: 8px;">sie</td>
+                        <td style="border: 1px solid #ccc; padding: 8px;">sie</td>
+                        <td style="border: 1px solid #ccc; padding: 8px;">ihnen</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ccc; padding: 8px;"><strong>Sie</strong> (you, formal)</td>
+                        <td style="border: 1px solid #ccc; padding: 8px;">Sie</td>
+                        <td style="border: 1px solid #ccc; padding: 8px;">Sie</td>
+                        <td style="border: 1px solid #ccc; padding: 8px;">Ihnen</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- Nominative Case -->
+        <section id="nominative">
+            <h2>Nominative Case: The Subject</h2>
+            <div class="subsection">
+                <h3>What It Does</h3>
+                <p>
+                    The nominative case is for the <strong>subject</strong>—the person or thing doing the action.
+                </p>
+            </div>
+            <div class="subsection">
+                <h3>How It Works</h3>
+                <p>
+                    Use these pronouns when the pronoun starts the sentence or answers "who" or "what" is acting. Verb comes second (V2 rule).
+                </p>
+            </div>
+            <div class="subsection">
+                <h3>Examples</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>Ich</em> gehe zur Schule. (I go to school.) <br> - Who goes? <em>Ich</em> (I).</li>
+                        <li><em>Du</em> bist mein Freund. (You are my friend.) <br> - Who is? <em>Du</em> (you).</li>
+                        <li><em>Er</em> spielt Fußball. (He plays soccer.) <br> - Who plays? <em>Er</em> (he).</li>
+                        <li><em>Sie</em> wohnt in Berlin. (She lives in Berlin.) <br> - Who lives? <em>Sie</em> (she).</li>
+                        <li><em>Es</em> regnet heute. (It’s raining today.) <br> - What’s happening? <em>Es</em> (it).</li>
+                        <li><em>Wir</em> lernen Deutsch. (We learn German.) <br> - Who learns? <em>Wir</em> (we).</li>
+                        <li><em>Ihr</em> seid laut. (You all are loud.) <br> - Who’s loud? <em>Ihr</em> (you all).</li>
+                        <li><em>Sie</em> kommen später. (They come later.) <br> - Who comes? <em>Sie</em> (they).</li>
+                        <li><em>Sie</em> trinken Kaffee. (You [formal] drink coffee.) <br> - Who drinks? <em>Sie</em> (you).</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Practice Tip</h3>
+                <p>
+                    Write 5 sentences with nominative pronouns: <em>Ich esse. Du trinkst. Er läuft.</em> Say them loud to lock them in.
+                </p>
+            </div>
+        </section>
+
+        <!-- Accusative Case -->
+        <section id="accusative">
+            <h2>Accusative Case: The Direct Object</h2>
+            <div class="subsection">
+                <h3>What It Does</h3>
+                <p>
+                    The accusative case is for the <strong>direct object</strong>—the person or thing receiving the action.
+                </p>
+            </div>
+            <div class="subsection">
+                <h3>How It Works</h3>
+                <p>
+                    Use these after verbs like <em>sehen</em> (to see), <em>haben</em> (to have), or <em>kaufen</em> (to buy). Often follows accusative prepositions (<em>durch, für, gegen, ohne, um</em>).
+                </p>
+            </div>
+            <div class="subsection">
+                <h3>Examples</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>Ich sehe <em>dich</em>. (I see you.) <br> - Who’s seen? <em>Dich</em> (you).</li>
+                        <li>Er mag <em>mich</em>. (He likes me.) <br> - Who’s liked? <em>Mich</em> (me).</li>
+                        <li>Sie trifft <em>ihn</em>. (She meets him.) <br> - Who’s met? <em>Ihn</em> (him).</li>
+                        <li>Wir hören <em>sie</em>. (We hear her.) <br> - Who’s heard? <em>Sie</em> (her).</li>
+                        <li>Du hast <em>es</em>. (You have it.) <br> - What’s had? <em>Es</em> (it).</li>
+                        <li>Er hilft <em>uns</em>. (He helps us.) <br> - Who’s helped? <em>Uns</em> (us).</li>
+                        <li>Ich kenne <em>euch</em>. (I know you all.) <br> - Who’s known? <em>Euch</em> (you all).</li>
+                        <li>Sie kaufen <em>sie</em>. (They buy them.) <br> - What’s bought? <em>Sie</em> (them).</li>
+                        <li>Ich rufe <em>Sie</em> an. (I call you [formal].) <br> - Who’s called? <em>Sie</em> (you).</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Practice Tip</h3>
+                <p>
+                    Make 5 accusative sentences: <em>Ich sehe dich. Er mag es. Wir hören ihn.</em> Test yourself by switching subjects.
+                </p>
+            </div>
+        </section>
+
+        <!-- Dative Case -->
+        <section id="dative">
+            <h2>Dative Case: The Indirect Object</h2>
+            <div class="subsection">
+                <h3>What It Does</h3>
+                <p>
+                    The dative case is for the <strong>indirect object</strong>—the person or thing affected by the action, often "to" or "for" someone.
+                </p>
+            </div>
+            <div class="subsection">
+                <h3>How It Works</h3>
+                <p>
+                    Use after verbs like <em>geben</em> (to give), <em>helfen</em> (to help), <em>schreiben</em> (to write). Follows dative prepositions (<em>aus, bei, mit, nach, seit, von, zu</em>).
+                </p>
+            </div>
+            <div class="subsection">
+                <h3>Examples</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>Ich gebe <em>dir</em> ein Buch. (I give you a book.) <br> - To whom? <em>Dir</em> (you).</li>
+                        <li>Er hilft <em>mir</em>. (He helps me.) <br> - To whom? <em>Mir</em> (me).</li>
+                        <li>Sie schreibt <em>ihm</em>. (She writes to him.) <br> - To whom? <em>Ihm</em> (him).</li>
+                        <li>Wir danken <em>ihr</em>. (We thank her.) <br> - To whom? <em>Ihr</em> (her).</li>
+                        <li>Du gibst <em>ihm</em> den Ball. (You give him the ball.) <br> - To whom? <em>Ihm</em> (him—it’s neuter for <em>Ball</em>).</li>
+                        <li>Sie sprechen <em>uns</em>. (They talk to us.) <br> - To whom? <em>Uns</em> (us).</li>
+                        <li>Ich zeige <em>euch</em> den Weg. (I show you all the way.) <br> - To whom? <em>Euch</em> (you all).</li>
+                        <li>Er antwortet <em>ihnen</em>. (He answers them.) <br> - To whom? <em>Ihnen</em> (them).</li>
+                        <li>Ich sage <em>Ihnen</em> die Wahrheit. (I tell you [formal] the truth.) <br> - To whom? <em>Ihnen</em> (you).</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Practice Tip</h3>
+                <p>
+                    Create 5 dative sentences: <em>Ich helfe dir. Sie gibt mir Geld. Er schreibt ihnen.</em> Say them to feel the pattern.
+                </p>
+            </div>
+        </section>
+
+        <!-- Key Differences from English -->
+        <section id="differences">
+            <h2>Key Differences from English</h2>
+            <div class="examples">
+                <ol class="example-list">
+                    <li><strong>More Forms</strong>: English uses "you" for everything—German splits it into <em>du</em> (informal), <em>ihr</em> (plural informal), and <em>Sie</em> (formal).</li>
+                    <li><strong>Case Changes</strong>: English "he" stays "he"—German <em>er</em> becomes <em>ihn</em> (accusative) or <em>ihm</em> (dative).</li>
+                    <li><strong>No “It” Overuse</strong>: German <em>es</em> is only for neuter nouns (<em>das Buch</em>), not vague actions like English "It’s raining."</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- How to Use Pronouns in Sentences -->
+        <section id="how-to">
+            <h2>How to Use Pronouns in Sentences</h2>
+            <div class="subsection">
+                <h3>Word Order Rules</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><strong>Nominative</strong>: Always first (subject), verb second. <br> - <em>Ich</em> lese ein Buch. (I read a book.)</li>
+                        <li><strong>Accusative</strong>: After the verb, before extra info (TMP: time, manner, place). <br> - Ich sehe <em>dich</em> morgen. (I see you tomorrow.)</li>
+                        <li><strong>Dative</strong>: Usually before accusative if both are in the sentence. <br> - Ich gebe <em>dir</em> <em>es</em>. (I give it to you.) <br> - Exception: If accusative is a pronoun and dative is a noun, accusative comes first: <em>Ich gebe es dem Mann.</em> (I give it to the man.)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Combining Cases</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>Er gibt mir einen Apfel.</em> (He gives me an apple.) <br> - <em>Mir</em> (dative, to me), <em>einen Apfel</em> (accusative, the apple).</li>
+                        <li><em>Sie zeigt ihm den Weg.</em> (She shows him the way.) <br> - <em>Ihm</em> (dative, to him), <em>den Weg</em> (accusative, the way).</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Top-Tier Practice Exercises -->
+        <section id="practice">
+            <h2>Top-Tier Practice Exercises</h2>
+            <div class="subsection">
+                <h3>Exercise 1: Fill in the Pronoun</h3>
+                <p>Choose the correct form (nominative, accusative, dative).</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>___ (I) gehe zur Schule. → <em>Ich</em></li>
+                        <li>Er sieht ___ (me). → <em>mich</em></li>
+                        <li>Ich helfe ___ (you, informal). → <em>dir</em></li>
+                        <li>Sie gibt ___ (him) ein Geschenk. → <em>ihm</em></li>
+                        <li>Wir hören ___ (them) nicht. → <em>sie</em></li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Exercise 2: Translate to German</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>She likes you. → <em>Sie mag dich.</em></li>
+                        <li>We give them the book. → <em>Wir geben ihnen das Buch.</em></li>
+                        <li>He writes to me. → <em>Er schreibt mir.</em></li>
+                        <li>You all see us. → <em>Ihr seht uns.</em></li>
+                        <li>I show her the picture. → <em>Ich zeige ihr das Bild.</em></li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Exercise 3: Mix the Cases</h3>
+                <p>Write 5 sentences using nominative, accusative, and dative together.</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>Example: <em>Ich (nom) gebe dir (dat) das Buch (acc).</em> (I give you the book.)</li>
+                        <li>Try: <em>Er (nom) zeigt mir (dat) den Hund (acc).</em> (He shows me the dog.)</li>
+                    </ul>
+                </div>
+                <button class="toggle-btn">Try It Yourself</button>
+                <div class="hidden">
+                    <p>Write your own sentences, then check them against the example pattern!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advanced Tips for Mastery -->
+        <section id="tips">
+            <h2>Advanced Tips for Mastery</h2>
+            <div class="examples">
+                <ol class="example-list">
+                    <li><strong>Memorize the Chart</strong>: Write it out daily—10 minutes, 5 days. It’ll stick.</li>
+                    <li><strong>Listen and Repeat</strong>: Watch A1/A2 German videos (e.g., Easy German on YouTube), note pronouns, and mimic them.</li>
+                    <li><strong>Test Yourself</strong>: Cover one column of the chart, recall it—aim for zero mistakes.</li>
+                    <li><strong>Use in Real Life</strong>: Say <em>Ich sehe dich</em> to a friend or pet—make it fun.</li>
+                    <li><strong>Spot in Texts</strong>: Read a German story, underline every pronoun, and name its case.</li>
+                </ol>
+            </div>
+        </section>
+
+      <!-- Resources for Extra Practice -->
+<section id="resources">
+    <h2>Resources for Extra Practice</h2>
+    <div class="resource-container">
+        <div class="resource-card">
+            <h3>Goethe A1/A2 Wortliste</h3>
+            <p>Basic pronoun usage in context.</p>
+            <a href="https://www.goethe.de/pro/relaunch/prf/de/A1_Wortliste_2018.pdf" class="resource-btn" target="_blank">Visit Goethe Wortliste</a>
+        </div>
+        <div class="resource-card">
+            <h3>YouTube – Easy German</h3>
+            <p>Hear pronouns in action.</p>
+            <a href="https://www.youtube.com/@EasyGerman" class="resource-btn" target="_blank">Visit Easy German</a>
+        </div>
+        <div class="resource-card">
+            <h3>Schubert Verlag</h3>
+            <p>Free pronoun exercises.</p>
+            <a href="https://www.schubert-verlag.de/aufgaben/uebungen_a1/a1_uebungen_index.htm" class="resource-btn" target="_blank">Visit Schubert Verlag</a>
+        </div>
+    </div>
+</section>
+
+        <!-- Conclusion -->
+        <section id="conclusion">
+            <p>
+                This guide gives you top-tier clarity on German personal pronouns—free for all learners. Master these, and you’re set to tackle verbs, cases, and more. Keep practicing, and you’ll own <em>Personalpronomen</em> in no time!
+            </p>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="nouns.html" class="see-also-btn">German Nouns</a>
+                <a href="articles.html" class="see-also-btn">German Articles</a>
+                <a href="adjectives.html" class="see-also-btn">German Adjectives</a>
+                <a href="conjugation.html" class="see-also-btn">German Conjugation</a>
+                <a href="cases.html" class="see-also-btn">German Cases</a>
+                <a href="prepositions.html" class="see-also-btn">German Prepositions</a>
+                <a href="structure.html" class="see-also-btn">Sentence Structure</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="articles.html" class="next-btn">Next: German Articles →</a>
+        </div>
+    </main>
+
+    <script>
+        // Inline JavaScript for toggle functionality and dark/light mode
+        document.addEventListener('DOMContentLoaded', function() {
+            // Toggle content
+            const buttons = document.querySelectorAll('.toggle-btn');
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const hiddenContent = this.nextElementSibling;
+                    if (hiddenContent.classList.contains('hidden')) {
+                        hiddenContent.classList.remove('hidden');
+                    } else {
+                        hiddenContent.classList.add('hidden');
+                    }
+                });
+            });
+
+            // Dark/Light mode toggle
+            const modeToggle = document.getElementById('mode-toggle');
+            const body = document.body;
+            modeToggle.addEventListener('click', function() {
+                body.classList.toggle('dark-mode');
+                const isDark = body.classList.contains('dark-mode');
+                modeToggle.querySelector('svg').setAttribute('d', isDark ? 
+                    'M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z' : 
+                    'M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z');
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

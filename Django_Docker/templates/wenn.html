@@ -1,0 +1,547 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}German Wenn: The Complete Guide to “When” and “If”{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/wenn.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+                <a href="index.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="javascript:history.back()" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>German <em>Wenn</em>: The Complete Guide to “When” and “If”</h1>
+            <p>
+                The word <strong>wenn</strong> is a versatile subordinating conjunction in German, meaning either “when” (describing time) or “if” (describing conditions). Its meaning depends on context, and it always shifts the verb to the end of the clause it introduces. This guide explores both uses of <em>wenn</em>, provides detailed examples across tenses, explains its rules and exceptions, and includes exercises to solidify your understanding. It’s deep, practical, and packed with practice—let’s get started!
+            </p>
+        </section>
+
+        <!-- What is Wenn? -->
+        <section id="what-is-wenn">
+            <h2>What is <em>Wenn</em>?</h2>
+            <p><em>Wenn</em> connects a main clause (Hauptsatz) with a subordinate clause (Nebensatz) to express either time (“when”) or a condition (“if”).</p>
+            <div class="subsection">
+                <h3>Key Features</h3>
+                <ul class="example-list">
+                    <li><strong>Subordinating Conjunction</strong>: The clause it introduces is dependent.</li>
+                    <li><strong>Word Order</strong>: The verb in the <em>wenn</em> clause goes to the <strong>end</strong>.</li>
+                    <li><strong>No Umlaut</strong>: Don’t confuse it with <em>wann</em> (when, as a question word).</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>Basic Structure</h3>
+                <p><strong>Main Clause</strong>: Normal word order (subject + verb). <strong>Wenn Clause</strong>: <em>Wenn</em> + subject + other stuff + verb (at the end).</p>
+                <ul class="example-list">
+                    <li><em>Ich komme, wenn ich Zeit habe.</em>
+                        <ul>
+                            <li>Main: <em>Ich komme</em> (I come).</li>
+                            <li>Wenn: <em>wenn ich Zeit habe</em> (if/when I have time—verb <em>habe</em> at end).</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Two Meanings of Wenn -->
+        <section id="meanings">
+            <h2>Two Meanings of <em>Wenn</em></h2>
+            <div class="subsection">
+                <h3><em>Wenn</em> as “When” (Time)</h3>
+                <p>Describes <strong>when</strong> something happens—either once or as a habit. Often paired with present or past tenses.</p>
+                <ul class="example-list">
+                    <li>Present: <em>Ich esse, wenn ich Hunger habe.</em> (I eat when I’m hungry—regular action.)</li>
+                    <li>Past: <em>Ich war froh, wenn ich ihn sah.</em> (I was happy when I saw him—repeated.)</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3><em>Wenn</em> as “If” (Condition)</h3>
+                <p>Describes a <strong>condition</strong>—something happens <strong>if</strong> a situation is true. Works with present, future, or conditional tenses.</p>
+                <ul class="example-list">
+                    <li>Present: <em>Ich gehe, wenn es nicht regnet.</em> (I’ll go if it doesn’t rain.)</li>
+                    <li>Conditional: <em>Ich würde kommen, wenn ich könnte.</em> (I would come if I could.)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Word Order with Wenn -->
+        <section id="word-order">
+            <h2>Word Order with <em>Wenn</em></h2>
+            <p>In a <em>wenn</em> clause, the <strong>conjugated verb</strong> goes to the end. Tense and auxiliary verbs adjust accordingly.</p>
+            <div class="subsection">
+                <h3>Examples Across Tenses</h3>
+                <ul class="example-list">
+                    <li>Present: <em>Ich lache, wenn ich das sehe.</em> (I laugh when/if I see that—<em>sehe</em> at end.)</li>
+                    <li>Perfekt: <em>Ich war müde, wenn ich gearbeitet hatte.</em> (I was tired when I had worked—<em>hatte</em> at end.)</li>
+                    <li>Präteritum: <em>Er blieb, wenn es regnete.</em> (He stayed when it rained—<em>regnete</em> at end.)</li>
+                    <li>Konjunktiv II: <em>Ich käme, wenn ich Zeit hätte.</em> (I’d come if I had time—<em>hätte</em> at end.)</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>Punctuation</h3>
+                <p>Use a <strong>comma</strong> before <em>wenn</em> when it follows the main clause. No comma if <em>wenn</em> starts the sentence.</p>
+                <ul class="example-list">
+                    <li><em>Ich bleibe, wenn es kalt ist.</em> (I stay if/when it’s cold.)</li>
+                    <li><em>Wenn es regnet, bleibe ich.</em> (If it rains, I stay.)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Example Sentences -->
+        <section id="examples">
+            <h2>Tons of Example Sentences</h2>
+            <div class="subsection">
+                <h3><em>Wenn</em> as “When” (Time)</h3>
+                <div class="examples">
+                    <h4>Present (Habits)</h4>
+                    <ol class="example-list">
+                        <li><em>Ich trinke Kaffee, wenn ich aufstehe.</em> (I drink coffee when I get up.)</li>
+                        <li><em>Sie liest, wenn sie im Bus ist.</em> (She reads when she’s on the bus.)</li>
+                        <li><em>Wir spielen, wenn das Wetter gut ist.</em> (We play when the weather is good.)</li>
+                        <li><em>Er schläft, wenn er müde ist.</em> (He sleeps when he’s tired.)</li>
+                        <li><em>Ihr lacht, wenn ich Witze erzähle.</em> (You laugh when I tell jokes.)</li>
+                    </ol>
+                    <h4>Past (Repeated or Specific)</h4>
+                    <ol class="example-list">
+                        <li><em>Ich war froh, wenn ich Ferien hatte.</em> (I was happy when I had holidays—repeated.)</li>
+                        <li><em>Sie rief an, wenn sie Zeit hatte.</em> (She called when she had time—habit.)</li>
+                        <li><em>Er kam gestern, wenn ich kochte.</em> (He came yesterday when I was cooking—once.)</li>
+                        <li><em>Wir gingen spazieren, wenn es sonnig war.</em> (We went for a walk when it was sunny—repeated.)</li>
+                        <li><em>Das Baby weinte, wenn es Hunger hatte.</em> (The baby cried when it was hungry—past habit.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3><em>Wenn</em> as “If” (Condition)</h3>
+                <div class="examples">
+                    <h4>Present (Real Conditions)</h4>
+                    <ol class="example-list">
+                        <li><em>Ich gehe raus, wenn es nicht regnet.</em> (I go out if it doesn’t rain.)</li>
+                        <li><em>Er hilft dir, wenn du fragst.</em> (He helps you if you ask.)</li>
+                        <li><em>Sie bleibt, wenn sie Zeit hat.</em> (She stays if she has time.)</li>
+                        <li><em>Wir kaufen es, wenn es billig ist.</em> (We buy it if it’s cheap.)</li>
+                        <li><em>Ihr kommt mit, wenn ihr wollt.</em> (You come along if you want.)</li>
+                    </ol>
+                    <h4>Conditional (Hypothetical)</h4>
+                    <ol class="example-list">
+                        <li><em>Ich würde reisen, wenn ich Geld hätte.</em> (I would travel if I had money.)</li>
+                        <li><em>Er wäre hier, wenn er könnte.</em> (He’d be here if he could.)</li>
+                        <li><em>Sie würde lachen, wenn sie das sähe.</em> (She’d laugh if she saw that.)</li>
+                        <li><em>Wir würden spielen, wenn es nicht regnete.</em> (We’d play if it weren’t raining.)</li>
+                        <li><em>Ihr wärt froh, wenn ihr gewonnen hättet.</em> (You’d be happy if you had won.)</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deep Details and Nuances -->
+        <section id="nuances">
+            <h2>Deep Details and Nuances</h2>
+            <div class="subsection">
+                <h3><em>Wenn</em> vs. <em>Wann</em></h3>
+                <ul class="example-list">
+                    <li><em>Wenn</em> (when/if): Subordinating, verb at end.
+                        <ul><li><em>Ich komme, wenn ich Zeit habe.</em> (I come when/if I have time.)</li></ul>
+                    </li>
+                    <li><em>Wann</em> (when): Question word, verb second.
+                        <ul><li><em>Wann kommst du?</em> (When are you coming?)</li></ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3><em>Wenn</em> vs. <em>Als</em> (When in Past)</h3>
+                <ul class="example-list">
+                    <li><em>Wenn</em>: Repeated past events or conditions.
+                        <ul><li><em>Ich war froh, wenn ich ihn sah.</em> (I was happy when[ever] I saw him—repeated.)</li></ul>
+                    </li>
+                    <li><em>Als</em>: One-time past events.
+                        <ul><li><em>Ich war froh, als ich ihn sah.</em> (I was happy when I saw him—once.)</li></ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3><em>Wenn</em> with Konjunktiv</h3>
+                <p>Use Konjunktiv II or I for unreal/hypothetical “if” scenarios.</p>
+                <ul class="example-list">
+                    <li><em>Wenn ich reich wäre, würde ich reisen.</em> (If I were rich, I’d travel—Konjunktiv II.)</li>
+                    <li><em>Er sagte, dass er käme, wenn er Zeit habe.</em> (He said he’d come if he had time—Konjunktiv I.)</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>Dropping <em>Wenn</em> (Informal)</h3>
+                <p>In casual speech, <em>wenn</em> can be implied with Konjunktiv alone.</p>
+                <ul class="example-list">
+                    <li><em>Hätte ich Zeit, käme ich.</em> (If I had time, I’d come—<em>wenn</em> omitted.)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Exercises -->
+        <section id="practice">
+            <h2>Creative Exercises with Multiple-Choice Options</h2>
+
+            <div class="subsection" id="exercise1">
+                <h3>Exercise 1: <em>Wenn</em> as “When” or “If”</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>I eat ___ I’m hungry.
+                            <select class="answer-select" data-correct="wenn ich Hunger habe">
+                                <option value="">Select</option>
+                                <option value="wenn ich Hunger habe">wenn ich Hunger habe</option>
+                                <option value="wenn ich habe Hunger">wenn ich habe Hunger</option>
+                                <option value="wenn Hunger ich habe">wenn Hunger ich habe</option>
+                            </select>
+                        </li>
+                        <li>She calls ___ she has time.
+                            <select class="answer-select" data-correct="wenn sie Zeit hat">
+                                <option value="">Select</option>
+                                <option value="wenn sie Zeit hat">wenn sie Zeit hat</option>
+                                <option value="wenn sie hat Zeit">wenn sie hat Zeit</option>
+                                <option value="wenn Zeit sie hat">wenn Zeit sie hat</option>
+                            </select>
+                        </li>
+                        <li>I’ll go ___ it doesn’t rain.
+                            <select class="answer-select" data-correct="wenn es nicht regnet">
+                                <option value="">Select</option>
+                                <option value="wenn es nicht regnet">wenn es nicht regnet</option>
+                                <option value="wenn es regnet nicht">wenn es regnet nicht</option>
+                                <option value="wenn nicht es regnet">wenn nicht es regnet</option>
+                            </select>
+                        </li>
+                        <li>He was happy ___ he saw her.
+                            <select class="answer-select" data-correct="wenn er sie sah">
+                                <option value="">Select</option>
+                                <option value="wenn er sie sah">wenn er sie sah</option>
+                                <option value="wenn er sah sie">wenn er sah sie</option>
+                                <option value="wenn sie er sah">wenn sie er sah</option>
+                            </select>
+                        </li>
+                        <li>We’d travel ___ we had money.
+                            <select class="answer-select" data-correct="wenn wir Geld hätten">
+                                <option value="">Select</option>
+                                <option value="wenn wir Geld hätten">wenn wir Geld hätten</option>
+                                <option value="wenn wir hätten Geld">wenn wir hätten Geld</option>
+                                <option value="wenn Geld wir hätten">wenn Geld wir hätten</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>wenn ich Hunger habe</em></li>
+                            <li><em>wenn sie Zeit hat</em></li>
+                            <li><em>wenn es nicht regnet</em></li>
+                            <li><em>wenn er sie sah</em></li>
+                            <li><em>wenn wir Geld hätten</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise2">
+                <h3>Exercise 2: <em>Wenn</em> or <em>Wann</em>?</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>___ kommst du?
+                            <select class="answer-select" data-correct="Wann">
+                                <option value="">Select</option>
+                                <option value="Wenn">Wenn</option>
+                                <option value="Wann">Wann</option>
+                                <option value="Als">Als</option>
+                            </select>
+                        </li>
+                        <li>Ich weiß, ___ ich Zeit habe.
+                            <select class="answer-select" data-correct="wenn">
+                                <option value="">Select</option>
+                                <option value="wenn">wenn</option>
+                                <option value="wann">wann</option>
+                                <option value="als">als</option>
+                            </select>
+                        </li>
+                        <li>___ es regnet, bleibe ich.
+                            <select class="answer-select" data-correct="Wenn">
+                                <option value="">Select</option>
+                                <option value="Wenn">Wenn</option>
+                                <option value="Wann">Wann</option>
+                                <option value="Als">Als</option>
+                            </select>
+                        </li>
+                        <li>___ war das?
+                            <select class="answer-select" data-correct="Wann">
+                                <option value="">Select</option>
+                                <option value="Wenn">Wenn</option>
+                                <option value="Wann">Wann</option>
+                                <option value="Als">Als</option>
+                            </select>
+                        </li>
+                        <li>Er kommt, ___ er kann.
+                            <select class="answer-select" data-correct="wenn">
+                                <option value="">Select</option>
+                                <option value="wenn">wenn</option>
+                                <option value="wann">wann</option>
+                                <option value="als">als</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Wann</em></li>
+                            <li><em>wenn</em></li>
+                            <li><em>Wenn</em></li>
+                            <li><em>Wann</em></li>
+                            <li><em>wenn</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise3">
+                <h3>Exercise 3: Word Order with <em>Wenn</em></h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Ich lache ___ ich das höre.
+                            <select class="answer-select" data-correct="wenn">
+                                <option value="">Select</option>
+                                <option value="wenn">wenn</option>
+                                <option value="wenn ich höre das">wenn ich höre das</option>
+                                <option value="wenn das ich höre">wenn das ich höre</option>
+                            </select>
+                        </li>
+                        <li>Sie blieb ___ es regnete.
+                            <select class="answer-select" data-correct="wenn">
+                                <option value="">Select</option>
+                                <option value="wenn">wenn</option>
+                                <option value="wenn regnete es">wenn regnete es</option>
+                                <option value="wenn es regnete">wenn es regnete</option>
+                            </select>
+                        </li>
+                        <li>Ich würde gehen ___ ich Zeit hätte.
+                            <select class="answer-select" data-correct="wenn">
+                                <option value="">Select</option>
+                                <option value="wenn">wenn</option>
+                                <option value="wenn ich hätte Zeit">wenn ich hätte Zeit</option>
+                                <option value="wenn Zeit ich hätte">wenn Zeit ich hätte</option>
+                            </select>
+                        </li>
+                        <li>Wir spielen ___ das Wetter gut ist.
+                            <select class="answer-select" data-correct="wenn">
+                                <option value="">Select</option>
+                                <option value="wenn">wenn</option>
+                                <option value="wenn ist das Wetter gut">wenn ist das Wetter gut</option>
+                                <option value="wenn gut das Wetter ist">wenn gut das Wetter ist</option>
+                            </select>
+                        </li>
+                        <li>Er rief an ___ er Zeit hatte.
+                            <select class="answer-select" data-correct="wenn">
+                                <option value="">Select</option>
+                                <option value="wenn">wenn</option>
+                                <option value="wenn er hatte Zeit">wenn er hatte Zeit</option>
+                                <option value="wenn Zeit er hatte">wenn Zeit er hatte</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>wenn</em> (Ich lache, wenn ich das höre.)</li>
+                            <li><em>wenn</em> (Sie blieb, wenn es regnete.)</li>
+                            <li><em>wenn</em> (Ich würde gehen, wenn ich Zeit hätte.)</li>
+                            <li><em>wenn</em> (Wir spielen, wenn das Wetter gut ist.)</li>
+                            <li><em>wenn</em> (Er rief an, wenn er Zeit hatte.)</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise4">
+                <h3>Exercise 4: Mixed <em>Wenn</em> Story</h3>
+                <p>Fill in with the correct <em>wenn</em> clause.</p>
+                <div class="examples">
+                    <p>Ich gehe aus ___ (1) es nicht regnet. Er war froh ___ (2) er mich sah. Sie würde kommen ___ (3) sie könnte. Wir essen ___ (4) wir Hunger haben. Ich bleibe ___ (5) es kalt ist.</p>
+                    <ol class="example-list">
+                        <li><select class="answer-select" data-correct="wenn">
+                            <option value="">Select</option>
+                            <option value="wenn">wenn</option>
+                            <option value="wenn es regnet nicht">wenn es regnet nicht</option>
+                            <option value="wenn nicht es regnet">wenn nicht es regnet</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="wenn">
+                            <option value="">Select</option>
+                            <option value="wenn">wenn</option>
+                            <option value="wenn er sah mich">wenn er sah mich</option>
+                            <option value="wenn mich er sah">wenn mich er sah</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="wenn">
+                            <option value="">Select</option>
+                            <option value="wenn">wenn</option>
+                            <option value="wenn sie könnte nicht">wenn sie könnte nicht</option>
+                            <option value="wenn nicht sie könnte">wenn nicht sie könnte</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="wenn">
+                            <option value="">Select</option>
+                            <option value="wenn">wenn</option>
+                            <option value="wenn wir haben Hunger">wenn wir haben Hunger</option>
+                            <option value="wenn Hunger wir haben">wenn Hunger wir haben</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="wenn">
+                            <option value="">Select</option>
+                            <option value="wenn">wenn</option>
+                            <option value="wenn es ist kalt">wenn es ist kalt</option>
+                            <option value="wenn kalt es ist">wenn kalt es ist</option>
+                        </select></li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong><br>
+                        Ich gehe aus, <em>wenn</em> es nicht regnet. Er war froh, <em>wenn</em> er mich sah. Sie würde kommen, <em>wenn</em> sie könnte. Wir essen, <em>wenn</em> wir Hunger haben. Ich bleibe, <em>wenn</em> es kalt ist.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips to Master Wenn -->
+        <section id="tips">
+            <h2>Deep Tips to Master <em>Wenn</em></h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Verb Last</strong>: Train it—<em>wenn</em> = verb to the end (<em>wenn ich komme</em>, not <em>wenn ich komme hier</em>).</li>
+                    <li><strong>When or If</strong>: Check context—time (<em>wenn ich komme</em> = when) vs. condition (<em>wenn ich komme</em> = if).</li>
+                    <li><strong>Tense Clue</strong>: Present = real; Konjunktiv = hypothetical.</li>
+                    <li><strong>Daily Use</strong>: Say <em>Ich komme, wenn ich Zeit habe</em>—practice both meanings.</li>
+                    <li><strong>Compare</strong>: <em>Wenn</em> (repeated/condition) vs. <em>als</em> (one-time past)—<em>Wenn ich ihn sah</em> (habit) vs. <em>Als ich ihn sah</em> (once).</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>Compare with <em>Dass</em> and <em>Weil</em></h3>
+                <ul class="example-list">
+                    <li><em>Wenn</em> (when/if): Time or condition, verb at end.
+                        <ul><li><em>Ich komme, wenn ich Zeit habe.</em> (I come when/if I have time.)</li></ul>
+                    </li>
+                    <li><em>Dass</em> (that): Statement/fact, verb at end.
+                        <ul><li><em>Ich weiß, dass ich Zeit habe.</em> (I know that I have time.)</li></ul>
+                    </li>
+                    <li><em>Weil</em> (because): Reason, verb at end.
+                        <ul><li><em>Ich komme, weil ich Zeit habe.</em> (I come because I have time.)</li></ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Final Thoughts -->
+        <section id="final-thoughts">
+            <h2>You’re Ready!</h2>
+            <p>
+                This deep guide covers <em>wenn</em>—its dual roles, rules, examples, and exercises. You’re ready to use “when” and “if” like a native! Next, you could explore <em>falls</em> (in case) or mix <em>wenn</em> with Superlativ—your choice!
+            </p>
+        </section>
+
+        <!-- Resources for Extra Practice -->
+        <section id="resources">
+            <h2>Resources for Extra Practice</h2>
+            <div class="see-also-links">
+                <a href="https://www.goethe.de/de/spr/ueb.html" class="see-also-rect">
+                    Goethe A1/A2 Wortliste<br>Verbs in context.<br><br>
+                    <button class="resource-btn">Visit Goethe Wortliste</button>
+                </a>
+                <a href="https://www.youtube.com/c/easygerman" class="see-also-rect">
+                    YouTube – EASY German<br>Hear verbs in real talk.<br><br>
+                    <button class="resource-btn">Visit EASY German</button>
+                </a>
+                <a href="https://www.schubert-verlag.de/" class="see-also-rect">
+                    Schubert Verlag<br>Free verb exercises.<br><br>
+                    <button class="resource-btn">Visit Schubert Verlag</button>
+                </a>
+            </div>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="weil.html" class="see-also-rect">German Weil</a>
+                <a href="dass.html" class="see-also-rect">German Dass</a>
+                <a href="dative.html" class="see-also-rect">German Dative</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="falls.html" class="next-btn">Next: German Falls (In Case) →</a>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Dark/Light mode toggle
+            const modeToggle = document.getElementById('mode-toggle');
+            const body = document.body;
+            modeToggle.addEventListener('click', function() {
+                body.classList.toggle('dark-mode');
+                const isDark = body.classList.contains('dark-mode');
+                modeToggle.querySelector('svg').setAttribute('d', isDark ? 
+                    'M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z' : 
+                    'M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z');
+            });
+
+            // Check Answers functionality
+            document.querySelectorAll('.check-answers').forEach(button => {
+                button.addEventListener('click', function() {
+                    const exercise = this.closest('.subsection');
+                    const selects = exercise.querySelectorAll('.answer-select');
+                    selects.forEach(select => {
+                        const correctAnswer = select.getAttribute('data-correct');
+                        const userAnswer = select.value;
+                        if (userAnswer === correctAnswer) {
+                            select.style.border = '2px solid #2e7d32';
+                        } else if (userAnswer !== '') {
+                            select.style.border = '2px solid #d32f2f';
+                        } else {
+                            select.style.border = '1px solid #ccc';
+                        }
+                    });
+                });
+            });
+
+            // Show Answers functionality
+            document.querySelectorAll('.show-answers').forEach(button => {
+                button.addEventListener('click', function() {
+                    const exercise = this.closest('.subsection');
+                    const answers = exercise.querySelector('.answers');
+                    if (answers.classList.contains('hidden')) {
+                        answers.classList.remove('hidden');
+                    } else {
+                        answers.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

@@ -1,0 +1,627 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}German Reflexive Verbs and Pronouns{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/dative.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+                <a href="index.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="javascript:history.back()" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>German Reflexive Verbs and Pronouns: The Complete Guide</h1>
+            <p>
+                <strong>Reflexive verbs</strong> are verbs that reflect an action back onto the subject—like “I dress myself” or “She enjoys herself” in English. In German, they’re super common and always pair with <strong>reflexive pronouns</strong>. This guide explains how they work, lists common reflexive verbs, shows reflexive pronouns in accusative and dative cases, and gives you plenty of examples and practice. It’s straightforward and fun—let’s get started!
+            </p>
+        </section>
+
+        <!-- What Are Reflexive Verbs? -->
+        <section id="what-are-reflexive">
+            <h2>What Are Reflexive Verbs?</h2>
+            <p>Reflexive verbs are actions you do to yourself. In German, they need a reflexive pronoun (like <em>mich</em> or <em>sich</em>) to show the action bounces back to the subject. Some verbs are <strong>always reflexive</strong>, while others can be <strong>optional</strong>.</p>
+            <div class="subsection">
+                <h3>Two Types</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><strong>Always Reflexive</strong>: These verbs don’t make sense without a reflexive pronoun.
+                            <ul><li><em>Ich freue mich.</em> (I’m happy—I rejoice myself.)</li></ul>
+                        </li>
+                        <li><strong>Optional Reflexive</strong>: These can work with or without a reflexive pronoun, but the meaning changes.
+                            <ul><li><em>Ich wasche die Hände.</em> (I wash the hands.) vs. <em>Ich wasche mich.</em> (I wash myself.)</li></ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reflexive Pronouns -->
+        <section id="reflexive-pronouns">
+            <h2>Reflexive Pronouns</h2>
+            <p>Reflexive pronouns change based on the <strong>person</strong> (I, you, he, etc.) and <strong>case</strong> (accusative or dative). Most reflexive verbs use accusative, but some need dative.</p>
+            <div class="subsection">
+                <h3>Accusative Reflexive Pronouns</h3>
+                <p>Used when the reflexive pronoun is the <strong>direct object</strong> (the thing being acted on).</p>
+                <div class="table-container">
+                    <table>
+                        <tr><th>Person</th><th>Pronoun</th><th>Example</th></tr>
+                        <tr><td>ich</td><td>mich</td><td>Ich wasche <em>mich</em>. (I wash myself.)</td></tr>
+                        <tr><td>du</td><td>dich</td><td>Du kämmst <em>dich</em>. (You comb yourself.)</td></tr>
+                        <tr><td>er/sie/es</td><td>sich</td><td>Er freut <em>sich</em>. (He’s happy.)</td></tr>
+                        <tr><td>wir</td><td>uns</td><td>Wir setzen <em>uns</em>. (We sit down.)</td></tr>
+                        <tr><td>ihr</td><td>euch</td><td>Ihr beeilt <em>euch</em>. (You all hurry.)</td></tr>
+                        <tr><td>sie/Sie</td><td>sich</td><td>Sie rasieren <em>sich</em>. (They shave themselves.)</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Dative Reflexive Pronouns</h3>
+                <p>Used when the reflexive pronoun is the <strong>indirect object</strong> (to/for oneself), often with another direct object.</p>
+                <div class="table-container">
+                    <table>
+                        <tr><th>Person</th><th>Pronoun</th><th>Example</th></tr>
+                        <tr><td>ich</td><td>mir</td><td>Ich kaufe <em>mir</em> ein Buch. (I buy myself a book.)</td></tr>
+                        <tr><td>du</td><td>dir</td><td>Du gönnst <em>dir</em> eine Pause. (You treat yourself to a break.)</td></tr>
+                        <tr><td>er/sie/es</td><td>sich</td><td>Sie zieht <em>sich</em> die Jacke an. (She puts the jacket on herself.)</td></tr>
+                        <tr><td>wir</td><td>uns</td><td>Wir erzählen <em>uns</em> Geschichten. (We tell ourselves stories.)</td></tr>
+                        <tr><td>ihr</td><td>euch</td><td>Ihr holt <em>euch</em> Wasser. (You all get yourselves water.)</td></tr>
+                        <tr><td>sie/Sie</td><td>sich</td><td>Sie leihen <em>sich</em> ein Auto. (They lend themselves a car.)</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Accusative vs. Dative: How to Tell</h3>
+                <ul class="example-list">
+                    <li><strong>Accusative</strong>: The action directly affects “me” (<em>mich</em>, <em>dich</em>, <em>sich</em>).
+                        <ul><li><em>Ich wasche mich.</em> (I wash myself—direct action on me.)</li></ul>
+                    </li>
+                    <li><strong>Dative</strong>: There’s another object, and “me” gets the benefit (<em>mir</em>, <em>dir</em>, <em>sich</em>).
+                        <ul><li><em>Ich wasche mir die Hände.</em> (I wash my hands—to myself, hands are the direct object.)</li></ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Common Reflexive Verbs -->
+        <section id="common-verbs">
+            <h2>Common Reflexive Verbs</h2>
+            <div class="subsection">
+                <h3>Always Reflexive (Accusative)</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><strong>sich freuen</strong> (to be happy/rejoice)
+                            <ul><li><em>Ich freue mich über das Geschenk.</em> (I’m happy about the gift.)</li>
+                                <li><em>Er freut sich auf den Urlaub.</em> (He’s looking forward to the vacation.)</li></ul>
+                        </li>
+                        <li><strong>sich beeilen</strong> (to hurry)
+                            <ul><li><em>Wir beeilen uns jeden Morgen.</em> (We hurry every morning.)</li>
+                                <li><em>Beeil dich!</em> (Hurry up!)</li></ul>
+                        </li>
+                        <li><strong>sich setzen</strong> (to sit down)
+                            <ul><li><em>Sie setzen sich auf die Bank.</em> (They sit down on the bench.)</li>
+                                <li><em>Ich setze mich neben dich.</em> (I sit down next to you.)</li></ul>
+                        </li>
+                        <li><strong>sich erinnern</strong> (to remember)
+                            <ul><li><em>Erinnert ihr euch an den Tag?</em> (Do you all remember the day?)</li>
+                                <li><em>Ich erinnere mich an den Film.</em> (I remember the movie.)</li></ul>
+                        </li>
+                        <li><strong>sich fühlen</strong> (to feel)
+                            <ul><li><em>Ich fühle mich gut.</em> (I feel good.)</li>
+                                <li><em>Wie fühlst du dich?</em> (How do you feel?)</li></ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Optional Reflexive (Accusative)</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><strong>sich waschen</strong> (to wash oneself)
+                            <ul><li><em>Ich wasche mich jeden Tag.</em> (I wash myself every day.)</li>
+                                <li><em>Er wäscht sich schnell.</em> (He washes himself quickly.)</li>
+                                <li>(Non-reflexive: <em>Er wäscht das Auto.</em>—He washes the car.)</li></ul>
+                        </li>
+                        <li><strong>sich anziehen</strong> (to get dressed)
+                            <ul><li><em>Sie zieht sich an.</em> (She gets dressed.)</li>
+                                <li><em>Zieh dich warm an!</em> (Dress warmly!)</li>
+                                <li>(Non-reflexive: <em>Sie zieht die Schuhe an.</em>—She puts on the shoes.)</li></ul>
+                        </li>
+                        <li><strong>sich rasieren</strong> (to shave)
+                            <ul><li><em>Er rasiert sich jeden Morgen.</em> (He shaves every morning.)</li>
+                                <li><em>Rasierst du dich heute?</em> (Are you shaving today?)</li>
+                                <li>(Non-reflexive: <em>Er rasiert den Bart.</em>—He shaves the beard.)</li></ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Reflexive with Dative</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><strong>sich etwas kaufen</strong> (to buy oneself something)
+                            <ul><li><em>Ich kaufe mir ein Eis.</em> (I buy myself an ice cream.)</li>
+                                <li><em>Kaufst du dir ein neues Handy?</em> (Are you buying yourself a new phone?)</li></ul>
+                        </li>
+                        <li><strong>sich etwas vorstellen</strong> (to imagine something)
+                            <ul><li><em>Sie stellt sich den Urlaub vor.</em> (She imagines the vacation.)</li>
+                                <li><em>Wir stellen uns ein großes Haus vor.</em> (We imagine a big house.)</li></ul>
+                        </li>
+                        <li><strong>sich etwas merken</strong> (to remember something)
+                            <ul><li><em>Ich merke mir die Nummer.</em> (I remember the number.)</li>
+                                <li><em>Merkst du dir den Weg?</em> (Do you remember the way?)</li></ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sentence Structure -->
+        <section id="structure">
+            <h2>Sentence Structure</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Reflexive Pronoun Position</strong>: Right after the verb (second position in main clauses).
+                        <ul><li><em>Ich freue mich sehr.</em> (I’m very happy.)</li>
+                            <li><em>Sie wäscht sich die Hände.</em> (She washes her hands.)</li></ul>
+                    </li>
+                    <li><strong>Questions</strong>: Verb first, reflexive pronoun second.
+                        <ul><li><em>Fühlst du dich gut?</em> (Do you feel good?)</li></ul>
+                    </li>
+                    <li><strong>With Objects</strong>: Dative reflexive before accusative object.
+                        <ul><li><em>Ich kaufe mir ein Buch.</em> (I buy myself a book—<em>mir</em> before <em>ein Buch</em>.)</li></ul>
+                    </li>
+                    <li><strong>Negation</strong>: <em>Nicht</em> before reflexive pronoun or at the end.
+                        <ul><li><em>Ich freue mich nicht.</em> (I’m not happy.)</li>
+                            <li><em>Er wäscht sich nicht die Haare.</em> (He doesn’t wash his hair.)</li></ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Example Sentences -->
+        <section id="examples">
+            <h2>Tons of Example Sentences</h2>
+            <div class="subsection">
+                <h3>Accusative Reflexive</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Ich wasche mich jeden Morgen.</em> (I wash myself every morning.)</li>
+                        <li><em>Du kämmst dich vor dem Spiegel.</em> (You comb yourself in front of the mirror.)</li>
+                        <li><em>Er freut sich über die Nachricht.</em> (He’s happy about the news.)</li>
+                        <li><em>Sie setzt sich auf den Stuhl.</em> (She sits down on the chair.)</li>
+                        <li><em>Wir beeilen uns für die Schule.</em> (We hurry for school.)</li>
+                        <li><em>Ihr erinnert euch an den Urlaub.</em> (You all remember the vacation.)</li>
+                        <li><em>Sie fühlen sich nach dem Sport gut.</em> (They feel good after sports.)</li>
+                        <li><em>Zieh dich schnell an!</em> (Get dressed quickly!)</li>
+                        <li><em>Ich rasiere mich mit einem Rasierer.</em> (I shave myself with a razor.)</li>
+                        <li><em>Beeilt euch, wir sind spät!</em> (Hurry up, we’re late!)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Dative Reflexive</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Ich kaufe mir neue Schuhe.</em> (I buy myself new shoes.)</li>
+                        <li><em>Du gönnst dir ein Eis.</em> (You treat yourself to an ice cream.)</li>
+                        <li><em>Er stellt sich eine Reise vor.</em> (He imagines a trip.)</li>
+                        <li><em>Sie merkt sich die Adresse.</em> (She remembers the address.)</li>
+                        <li><em>Wir holen uns Wasser aus der Küche.</em> (We get ourselves water from the kitchen.)</li>
+                        <li><em>Ihr erzählt euch Witze.</em> (You all tell yourselves jokes.)</li>
+                        <li><em>Sie ziehen sich warme Jacken an.</em> (They put warm jackets on themselves.)</li>
+                        <li><em>Kauf dir etwas Schönes!</em> (Buy yourself something nice!)</li>
+                        <li><em>Ich wasche mir die Hände vor dem Essen.</em> (I wash my hands before eating.)</li>
+                        <li><em>Er leiht sich ein Buch aus.</em> (He borrows a book for himself.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Mixed Examples</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Ich freue mich auf das Wochenende.</em> (I’m looking forward to the weekend—accusative.)</li>
+                        <li><em>Du kaufst dir ein Ticket.</em> (You buy yourself a ticket—dative.)</li>
+                        <li><em>Sie wäscht sich das Gesicht.</em> (She washes her face—accusative <em>sich</em>, dative implied with <em>das Gesicht</em>.)</li>
+                        <li><em>Wir setzen uns ins Café.</em> (We sit down in the café—accusative.)</li>
+                        <li><em>Er gönnt sich einen Kaffee.</em> (He treats himself to a coffee—dative.)</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercises -->
+        <section id="practice">
+            <h2>Creative Exercises with Multiple-Choice Options</h2>
+
+            <div class="subsection" id="exercise1">
+                <h3>Exercise 1: Pick the Reflexive Pronoun (Accusative)</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Ich ___ jeden Tag. (waschen)
+                            <select class="answer-select" data-correct="mich">
+                                <option value="">Select</option>
+                                <option value="mich">mich</option>
+                                <option value="mir">mir</option>
+                                <option value="dich">dich</option>
+                            </select>
+                        </li>
+                        <li>Du ___ auf das Fest. (freuen)
+                            <select class="answer-select" data-correct="dich">
+                                <option value="">Select</option>
+                                <option value="dich">dich</option>
+                                <option value="dir">dir</option>
+                                <option value="sich">sich</option>
+                            </select>
+                        </li>
+                        <li>Er ___ auf den Stuhl. (setzen)
+                            <select class="answer-select" data-correct="sich">
+                                <option value="">Select</option>
+                                <option value="sich">sich</option>
+                                <option value="ihm">ihm</option>
+                                <option value="mich">mich</option>
+                            </select>
+                        </li>
+                        <li>Wir ___ an den Sommer. (erinnern)
+                            <select class="answer-select" data-correct="uns">
+                                <option value="">Select</option>
+                                <option value="uns">uns</option>
+                                <option value="euch">euch</option>
+                                <option value="sich">sich</option>
+                            </select>
+                        </li>
+                        <li>Ihr ___ jeden Morgen. (beeilen)
+                            <select class="answer-select" data-correct="euch">
+                                <option value="">Select</option>
+                                <option value="euch">euch</option>
+                                <option value="uns">uns</option>
+                                <option value="dich">dich</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li>Ich wasche <em>mich</em> jeden Tag.</li>
+                            <li>Du freust <em>dich</em> auf das Fest.</li>
+                            <li>Er setzt <em>sich</em> auf den Stuhl.</li>
+                            <li>Wir erinnern <em>uns</em> an den Sommer.</li>
+                            <li>Ihr beeilt <em>euch</em> jeden Morgen.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise2">
+                <h3>Exercise 2: Pick the Reflexive Pronoun (Dative)</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Ich kaufe ___ ein Buch.
+                            <select class="answer-select" data-correct="mir">
+                                <option value="">Select</option>
+                                <option value="mir">mir</option>
+                                <option value="mich">mich</option>
+                                <option value="dir">dir</option>
+                            </select>
+                        </li>
+                        <li>Du gönnst ___ eine Pause.
+                            <select class="answer-select" data-correct="dir">
+                                <option value="">Select</option>
+                                <option value="dir">dir</option>
+                                <option value="dich">dich</option>
+                                <option value="sich">sich</option>
+                            </select>
+                        </li>
+                        <li>Sie stellt ___ ein Haus vor.
+                            <select class="answer-select" data-correct="sich">
+                                <option value="">Select</option>
+                                <option value="sich">sich</option>
+                                <option value="ihr">ihr</option>
+                                <option value="mich">mich</option>
+                            </select>
+                        </li>
+                        <li>Wir holen ___ Wasser.
+                            <select class="answer-select" data-correct="uns">
+                                <option value="">Select</option>
+                                <option value="uns">uns</option>
+                                <option value="euch">euch</option>
+                                <option value="sich">sich</option>
+                            </select>
+                        </li>
+                        <li>Ihr merkt ___ die Nummer.
+                            <select class="answer-select" data-correct="euch">
+                                <option value="">Select</option>
+                                <option value="euch">euch</option>
+                                <option value="uns">uns</option>
+                                <option value="dir">dir</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li>Ich kaufe <em>mir</em> ein Buch.</li>
+                            <li>Du gönnst <em>dir</em> eine Pause.</li>
+                            <li>Sie stellt <em>sich</em> ein Haus vor.</li>
+                            <li>Wir holen <em>uns</em> Wasser.</li>
+                            <li>Ihr merkt <em>euch</em> die Nummer.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise3">
+                <h3>Exercise 3: Accusative or Dative?</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Ich wasche ___ .
+                            <select class="answer-select" data-correct="mich">
+                                <option value="">Select</option>
+                                <option value="mich">mich</option>
+                                <option value="mir">mir</option>
+                                <option value="sich">sich</option>
+                            </select>
+                        </li>
+                        <li>Ich wasche ___ die Hände.
+                            <select class="answer-select" data-correct="mir">
+                                <option value="">Select</option>
+                                <option value="mir">mir</option>
+                                <option value="mich">mich</option>
+                                <option value="dir">dir</option>
+                            </select>
+                        </li>
+                        <li>Du freust ___ über den Brief.
+                            <select class="answer-select" data-correct="dich">
+                                <option value="">Select</option>
+                                <option value="dich">dich</option>
+                                <option value="dir">dir</option>
+                                <option value="euch">euch</option>
+                            </select>
+                        </li>
+                        <li>Er kauft ___ ein Auto.
+                            <select class="answer-select" data-correct="sich">
+                                <option value="">Select</option>
+                                <option value="sich">sich</option>
+                                <option value="ihn">ihn</option>
+                                <option value="ihm">ihm</option>
+                            </select>
+                        </li>
+                        <li>Wir setzen ___ auf die Couch.
+                            <select class="answer-select" data-correct="uns">
+                                <option value="">Select</option>
+                                <option value="uns">uns</option>
+                                <option value="euch">euch</option>
+                                <option value="sich">sich</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li>Ich wasche <em>mich</em>.</li>
+                            <li>Ich wasche <em>mir</em> die Hände.</li>
+                            <li>Du freust <em>dich</em> über den Brief.</li>
+                            <li>Er kauft <em>sich</em> ein Auto.</li>
+                            <li>Wir setzen <em>uns</em> auf die Couch.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise4">
+                <h3>Exercise 4: Reflexive or Not?</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Sie ___ die Haare. (kämmen)
+                            <select class="answer-select" data-correct="kämmt sich">
+                                <option value="">Select</option>
+                                <option value="kämmt sich">kämmt sich</option>
+                                <option value="kämmt">kämmt</option>
+                                <option value="kämmt mir">kämmt mir</option>
+                            </select>
+                        </li>
+                        <li>Ich ___ das Essen. (kochen)
+                            <select class="answer-select" data-correct="koche">
+                                <option value="">Select</option>
+                                <option value="koche">koche</option>
+                                <option value="koche mich">koche mich</option>
+                                <option value="koche mir">koche mir</option>
+                            </select>
+                        </li>
+                        <li>Er ___ ein Hemd an. (ziehen)
+                            <select class="answer-select" data-correct="zieht sich">
+                                <option value="">Select</option>
+                                <option value="zieht sich">zieht sich</option>
+                                <option value="zieht">zieht</option>
+                                <option value="zieht mir">zieht mir</option>
+                            </select>
+                        </li>
+                        <li>Wir ___ die Tasche. (tragen)
+                            <select class="answer-select" data-correct="tragen">
+                                <option value="">Select</option>
+                                <option value="tragen">tragen</option>
+                                <option value="tragen uns">tragen uns</option>
+                                <option value="tragen sich">tragen sich</option>
+                            </select>
+                        </li>
+                        <li>Ihr ___ auf den Film. (freuen)
+                            <select class="answer-select" data-correct="freut euch">
+                                <option value="">Select</option>
+                                <option value="freut euch">freut euch</option>
+                                <option value="freut">freut</option>
+                                <option value="freut mir">freut mir</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li>Sie <em>kämmt sich</em> die Haare.</li>
+                            <li>Ich <em>koche</em> das Essen.</li>
+                            <li>Er <em>zieht sich</em> ein Hemd an.</li>
+                            <li>Wir <em>tragen</em> die Tasche.</li>
+                            <li>Ihr <em>freut euch</em> auf den Film.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise5">
+                <h3>Exercise 5: Mixed Story</h3>
+                <p>Fill in the correct reflexive pronoun or verb form.</p>
+                <div class="examples">
+                    <p>Gestern ___ (1) ich ___ früh. (aufstehen) Ich ___ (2) ___ ein Brot. (kaufen) Danach ___ (3) ich ___ . (waschen) ___ (4) du ___ gut? (fühlen) Wir ___ (5) ___ auf das Fest. (freuen)</p>
+                    <ol class="example-list">
+                        <li><select class="answer-select" data-correct="bin … aufgestanden">
+                            <option value="">Select</option>
+                            <option value="habe … aufgestanden">habe … aufgestanden</option>
+                            <option value="bin … aufgestanden">bin … aufgestanden</option>
+                            <option value="habe … mich aufgestanden">habe … mich aufgestanden</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="habe … mir">
+                            <option value="">Select</option>
+                            <option value="habe … mir">habe … mir</option>
+                            <option value="habe … mich">habe … mich</option>
+                            <option value="bin … mir">bin … mir</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="habe … mich">
+                            <option value="">Select</option>
+                            <option value="habe … mich">habe … mich</option>
+                            <option value="habe … mir">habe … mir</option>
+                            <option value="bin … mich">bin … mich</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="Fühlst … dich">
+                            <option value="">Select</option>
+                            <option value="Fühlst … dich">Fühlst … dich</option>
+                            <option value="Fühlst … dir">Fühlst … dir</option>
+                            <option value="Fühlst … mich">Fühlst … mich</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="freuen … uns">
+                            <option value="">Select</option>
+                            <option value="freuen … uns">freuen … uns</option>
+                            <option value="freuen … euch">freuen … euch</option>
+                            <option value="freuen … mir">freuen … mir</option>
+                        </select></li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong><br>Gestern <em>bin</em> ich früh <em>aufgestanden</em>. Ich <em>habe</em> <em>mir</em> ein Brot gekauft. Danach <em>habe</em> ich <em>mich</em> gewaschen. <em>Fühlst</em> du <em>dich</em> gut? Wir <em>freuen</em> <em>uns</em> auf das Fest.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips -->
+        <section id="tips">
+            <h2>Tips to Master Reflexive Verbs and Pronouns</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Spot the Action</strong>: Ask “Am I doing this to myself?”—if yes, use a reflexive pronoun.</li>
+                    <li><strong>Case Clue</strong>: No extra object? Accusative (<em>mich</em>). Extra object? Dative (<em>mir</em>).</li>
+                    <li><strong>Daily Practice</strong>: Say <em>Ich wasche mich</em> in the shower, <em>Ich freue mich</em> when happy.</li>
+                    <li><strong>Pair Verbs</strong>: Link <em>freuen-sich</em>, <em>kaufen-mir</em>—repeat them.</li>
+                    <li><strong>Listen Up</strong>: Catch <em>sich</em> in songs or shows—it’s everywhere!</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Final Thoughts -->
+        <section id="final-thoughts">
+            <h2>You’re Ready!</h2>
+            <p>
+                This guide gives you everything on reflexive verbs and pronouns—rules, examples, and exercises. You’re ready to use them like a pro! Next, you could mix reflexives with Perfekt or tackle prepositional verbs—your call!
+            </p>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="dative.html" class="see-also-rect">German Dative</a>
+                <a href="welcherdieser.html" class="see-also-rect">Interrogativ- & Demonstrativartikel</a>
+                <a href="partizip2.html" class="see-also-rect">Perfekt & Partizip II</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="partizip2.html" class="next-btn">Next: Perfekt & Partizip II →</a>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Dark/Light mode toggle
+            const modeToggle = document.getElementById('mode-toggle');
+            const body = document.body;
+            modeToggle.addEventListener('click', function() {
+                body.classList.toggle('dark-mode');
+                const isDark = body.classList.contains('dark-mode');
+                modeToggle.querySelector('svg').setAttribute('d', isDark ? 
+                    'M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z' : 
+                    'M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z');
+            });
+
+            // Check Answers functionality
+            document.querySelectorAll('.check-answers').forEach(button => {
+                button.addEventListener('click', function() {
+                    const exercise = this.closest('.subsection');
+                    const selects = exercise.querySelectorAll('.answer-select');
+                    selects.forEach(select => {
+                        const correctAnswer = select.getAttribute('data-correct');
+                        const userAnswer = select.value;
+                        if (userAnswer === correctAnswer) {
+                            select.style.border = '2px solid #2e7d32';
+                        } else if (userAnswer !== '') {
+                            select.style.border = '2px solid #d32f2f';
+                        } else {
+                            select.style.border = '1px solid #ccc';
+                        }
+                    });
+                });
+            });
+
+            // Show Answers functionality
+            document.querySelectorAll('.show-answers').forEach(button => {
+                button.addEventListener('click', function() {
+                    const exercise = this.closest('.subsection');
+                    const answers = exercise.querySelector('.answers');
+                    if (answers.classList.contains('hidden')) {
+                        answers.classList.remove('hidden');
+                    } else {
+                        answers.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

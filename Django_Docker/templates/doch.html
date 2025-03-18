@@ -1,0 +1,463 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}German A2: Using Doch After Yes/No Questions{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/dative.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+                <a href="index.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="javascript:history.back()" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>German A2: Using <em>Doch</em> After Yes/No Questions</h1>
+            <p>
+                At the A2 level, you’re learning to talk about daily life, ask questions, and respond naturally. One cool word that makes your German sound better is <strong>doch</strong>—especially after yes/no questions (<em>Ja/Nein-Fragen</em>). This guide explains what <em>doch</em> means, how to use it after yes/no questions, and gives you tons of examples and practice. It’s simple, fun, and perfect for A2 learners. Let’s go!
+            </p>
+        </section>
+
+        <!-- What is Doch? -->
+        <section id="what-is-doch">
+            <h2>What is <em>Doch</em>?</h2>
+            <p><em>Doch</em> is a small but powerful word in German. It can mean “yes” or “but” depending on how you use it. After a yes/no question, <em>doch</em> says “Yes, actually, I do!”—it’s a way to disagree with a negative question or confirm something surprising. It’s like saying “Oh, but I do!” in English.</p>
+            <div class="subsection">
+                <h3>When to Use <em>Doch</em> After Yes/No Questions</h3>
+                <ul class="example-list">
+                    <li>Use <em>doch</em> when someone asks a negative yes/no question (with <em>nicht</em>), and you want to say “Yes, I do” or “Yes, it is.”</li>
+                    <li>It flips the “no” idea in the question to “yes.”</li>
+                    <li>It’s casual and common in everyday German.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section id="how-it-works">
+            <h2>How It Works</h2>
+            <div class="subsection">
+                <h3>Step 1: Spot the Negative Question</h3>
+                <p>A yes/no question with <em>nicht</em> expects a “no” answer. For example:</p>
+                <ul class="example-list">
+                    <li><em>Hast du nicht Hunger?</em> (Aren’t you hungry?)</li>
+                    <li><em>Gefällt dir der Film nicht?</em> (Don’t you like the movie?)</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>Step 2: Answer with <em>Doch</em></h3>
+                <p>If you <strong>disagree</strong> with the negative idea (you ARE hungry, you DO like it), say <em>doch</em> plus a short explanation.</p>
+                <ul class="example-list">
+                    <li><em>Doch, ich habe Hunger.</em> (Yes, I am hungry.)</li>
+                    <li><em>Doch, der Film gefällt mir.</em> (Yes, I like the movie.)</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>Step 3: Keep It Simple</h3>
+                <p>You can just say <em>doch</em> alone if the context is clear:</p>
+                <ul class="example-list">
+                    <li><em>Hast du nicht Hunger?</em> → <em>Doch!</em> (Yes, I do!)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Example Sentences -->
+        <section id="examples">
+            <h2>Tons of Example Sentences</h2>
+            <div class="subsection">
+                <h3>Everyday Situations</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Bist du nicht müde?</em> (Aren’t you tired?)<br><em>Doch, ich bin müde.</em> (Yes, I am tired.)</li>
+                        <li><em>Hast du keine Zeit?</em> (Don’t you have time?)<br><em>Doch, ich habe Zeit.</em> (Yes, I have time.)</li>
+                        <li><em>Regnet es nicht?</em> (Isn’t it raining?)<br><em>Doch, es regnet.</em> (Yes, it’s raining.)</li>
+                        <li><em>Magst du das Essen nicht?</em> (Don’t you like the food?)<br><em>Doch, ich mag das Essen.</em> (Yes, I like the food.)</li>
+                        <li><em>Kommst du nicht morgen?</em> (Aren’t you coming tomorrow?)<br><em>Doch, ich komme morgen.</em> (Yes, I’m coming tomorrow.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>At School or Work</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Verstehst du das nicht?</em> (Don’t you understand this?)<br><em>Doch, ich verstehe das.</em> (Yes, I understand it.)</li>
+                        <li><em>Hast du den Stift nicht?</em> (Don’t you have the pen?)<br><em>Doch, ich habe den Stift.</em> (Yes, I have the pen.)</li>
+                        <li><em>Arbeitest du nicht heute?</em> (Aren’t you working today?)<br><em>Doch, ich arbeite heute.</em> (Yes, I’m working today.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>With Friends</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Willst du nicht mitkommen?</em> (Don’t you want to come along?)<br><em>Doch, ich will mitkommen.</em> (Yes, I want to come along.)</li>
+                        <li><em>Spielst du nicht Fußball?</em> (Don’t you play soccer?)<br><em>Doch, ich spiele Fußball.</em> (Yes, I play soccer.)</li>
+                        <li><em>Trinkst du keinen Kaffee?</em> (Don’t you drink coffee?)<br><em>Doch, ich trinke Kaffee.</em> (Yes, I drink coffee.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Short Answers</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Bist du nicht hier?</em> (Aren’t you here?)<br><em>Doch!</em> (Yes, I am!)</li>
+                        <li><em>Schmeckt es dir nicht?</em> (Doesn’t it taste good to you?)<br><em>Doch!</em> (Yes, it does!)</li>
+                        <li><em>Hast du das nicht gemacht?</em> (Didn’t you do that?)<br><em>Doch!</em> (Yes, I did!)</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Doch Feels Natural -->
+        <section id="natural">
+            <h2>Why <em>Doch</em> Feels Natural</h2>
+            <p>Without <em>doch</em>, you might say <em>Ja, ich habe Hunger</em>—it’s correct but sounds stiff. <em>Doch</em> adds a friendly, “Oh, but I do!” vibe—like you’re correcting the question’s assumption.</p>
+            <div class="examples">
+                <h3>Compare</h3>
+                <ul class="example-list">
+                    <li><em>Hast du nicht Hunger?</em>
+                        <ul>
+                            <li><em>Nein, ich habe keinen Hunger.</em> (No, I’m not hungry—agrees with the negative.)</li>
+                            <li><em>Doch, ich habe Hunger.</em> (Yes, I’m hungry—disagrees with the negative.)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Watch Out -->
+        <section id="watch-out">
+            <h2>Watch Out!</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Positive Questions</strong>: Don’t use <em>doch</em> with questions without <em>nicht</em>.
+                        <ul><li><em>Hast du Hunger?</em> → <em>Ja, ich habe Hunger.</em> (Not <em>Doch</em>—it’s wrong here.)</li></ul>
+                    </li>
+                    <li><strong>Short <em>Doch</em></strong>: Use it alone only if everyone knows what you mean.
+                        <ul><li><em>Hast du nicht geschlafen?</em> → <em>Doch!</em> (Yes, I did sleep—clear context.)</li></ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Exercises -->
+        <section id="practice">
+            <h2>Creative Exercises with Multiple-Choice Options</h2>
+
+            <div class="subsection" id="exercise1">
+                <h3>Exercise 1: Pick the Right Answer with <em>Doch</em></h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Bist du nicht müde?</em>
+                            <select class="answer-select" data-correct="Doch, ich bin müde.">
+                                <option value="">Select</option>
+                                <option value="Doch, ich bin müde.">Doch, ich bin müde.</option>
+                                <option value="Nein, ich bin müde.">Nein, ich bin müde.</option>
+                                <option value="Ja, ich bin nicht müde.">Ja, ich bin nicht müde.</option>
+                            </select>
+                        </li>
+                        <li><em>Hast du keine Zeit?</em>
+                            <select class="answer-select" data-correct="Doch, ich habe Zeit.">
+                                <option value="">Select</option>
+                                <option value="Nein, ich habe keine Zeit.">Nein, ich habe keine Zeit.</option>
+                                <option value="Doch, ich habe Zeit.">Doch, ich habe Zeit.</option>
+                                <option value="Ja, ich habe keine Zeit.">Ja, ich habe keine Zeit.</option>
+                            </select>
+                        </li>
+                        <li><em>Magst du den Film nicht?</em>
+                            <select class="answer-select" data-correct="Doch, ich mag den Film.">
+                                <option value="">Select</option>
+                                <option value="Doch, ich mag den Film.">Doch, ich mag den Film.</option>
+                                <option value="Nein, ich mag den Film.">Nein, ich mag den Film.</option>
+                                <option value="Ja, ich mag nicht den Film.">Ja, ich mag nicht den Film.</option>
+                            </select>
+                        </li>
+                        <li><em>Regnet es nicht?</em>
+                            <select class="answer-select" data-correct="Doch, es regnet.">
+                                <option value="">Select</option>
+                                <option value="Nein, es regnet nicht.">Nein, es regnet nicht.</option>
+                                <option value="Doch, es regnet.">Doch, es regnet.</option>
+                                <option value="Ja, es regnet nicht.">Ja, es regnet nicht.</option>
+                            </select>
+                        </li>
+                        <li><em>Willst du nicht mitkommen?</em>
+                            <select class="answer-select" data-correct="Doch, ich will mitkommen.">
+                                <option value="">Select</option>
+                                <option value="Doch, ich will mitkommen.">Doch, ich will mitkommen.</option>
+                                <option value="Nein, ich will mitkommen.">Nein, ich will mitkommen.</option>
+                                <option value="Ja, ich will nicht mitkommen.">Ja, ich will nicht mitkommen.</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Doch, ich bin müde.</em></li>
+                            <li><em>Doch, ich habe Zeit.</em></li>
+                            <li><em>Doch, ich mag den Film.</em></li>
+                            <li><em>Doch, es regnet.</em></li>
+                            <li><em>Doch, ich will mitkommen.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise2">
+                <h3>Exercise 2: Short <em>Doch</em> or Full Answer?</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Hast du nicht Hunger?</em>
+                            <select class="answer-select" data-correct="Doch!">
+                                <option value="">Select</option>
+                                <option value="Doch!">Doch!</option>
+                                <option value="Nein, ich habe Hunger.">Nein, ich habe Hunger.</option>
+                                <option value="Ja, ich habe nicht Hunger.">Ja, ich habe nicht Hunger.</option>
+                            </select>
+                        </li>
+                        <li><em>Verstehst du das nicht?</em>
+                            <select class="answer-select" data-correct="Doch, ich verstehe das.">
+                                <option value="">Select</option>
+                                <option value="Nein, ich verstehe das nicht.">Nein, ich verstehe das nicht.</option>
+                                <option value="Doch, ich verstehe das.">Doch, ich verstehe das.</option>
+                                <option value="Ja, ich verstehe das nicht.">Ja, ich verstehe das nicht.</option>
+                            </select>
+                        </li>
+                        <li><em>Gefällt dir das nicht?</em>
+                            <select class="answer-select" data-correct="Doch!">
+                                <option value="">Select</option>
+                                <option value="Doch!">Doch!</option>
+                                <option value="Nein, es gefällt mir.">Nein, es gefällt mir.</option>
+                                <option value="Ja, es gefällt mir nicht.">Ja, es gefällt mir nicht.</option>
+                            </select>
+                        </li>
+                        <li><em>Kommst du nicht morgen?</em>
+                            <select class="answer-select" data-correct="Doch, ich komme morgen.">
+                                <option value="">Select</option>
+                                <option value="Nein, ich komme morgen nicht.">Nein, ich komme morgen nicht.</option>
+                                <option value="Doch, ich komme morgen.">Doch, ich komme morgen.</option>
+                                <option value="Ja, ich komme nicht morgen.">Ja, ich komme nicht morgen.</option>
+                            </select>
+                        </li>
+                        <li><em>Trinkst du keinen Tee?</em>
+                            <select class="answer-select" data-correct="Doch!">
+                                <option value="">Select</option>
+                                <option value="Doch!">Doch!</option>
+                                <option value="Nein, ich trinke Tee.">Nein, ich trinke Tee.</option>
+                                <option value="Ja, ich trinke keinen Tee.">Ja, ich trinke keinen Tee.</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Doch!</em></li>
+                            <li><em>Doch, ich verstehe das.</em></li>
+                            <li><em>Doch!</em></li>
+                            <li><em>Doch, ich komme morgen.</em></li>
+                            <li><em>Doch!</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise3">
+                <h3>Exercise 3: <em>Doch</em> or Not?</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Bist du nicht hier?</em>
+                            <select class="answer-select" data-correct="Doch, ich bin hier.">
+                                <option value="">Select</option>
+                                <option value="Doch, ich bin hier.">Doch, ich bin hier.</option>
+                                <option value="Ja, ich bin hier.">Ja, ich bin hier.</option>
+                                <option value="Nein, ich bin nicht hier.">Nein, ich bin nicht hier.</option>
+                            </select>
+                        </li>
+                        <li><em>Hast du Hunger?</em> (Positive question)
+                            <select class="answer-select" data-correct="Ja, ich habe Hunger.">
+                                <option value="">Select</option>
+                                <option value="Doch, ich habe Hunger.">Doch, ich habe Hunger.</option>
+                                <option value="Ja, ich habe Hunger.">Ja, ich habe Hunger.</option>
+                                <option value="Nein, ich habe Hunger.">Nein, ich habe Hunger.</option>
+                            </select>
+                        </li>
+                        <li><em>Spielst du nicht Fußball?</em>
+                            <select class="answer-select" data-correct="Doch, ich spiele Fußball.">
+                                <option value="">Select</option>
+                                <option value="Doch, ich spiele Fußball.">Doch, ich spiele Fußball.</option>
+                                <option value="Ja, ich spiele nicht Fußball.">Ja, ich spiele nicht Fußball.</option>
+                                <option value="Nein, ich spiele Fußball.">Nein, ich spiele Fußball.</option>
+                            </select>
+                        </li>
+                        <li><em>Schmeckt es dir nicht?</em>
+                            <select class="answer-select" data-correct="Doch, es schmeckt mir.">
+                                <option value="">Select</option>
+                                <option value="Nein, es schmeckt mir nicht.">Nein, es schmeckt mir nicht.</option>
+                                <option value="Doch, es schmeckt mir.">Doch, es schmeckt mir.</option>
+                                <option value="Ja, es schmeckt mir nicht.">Ja, es schmeckt mir nicht.</option>
+                            </select>
+                        </li>
+                        <li><em>Willst du Kaffee?</em> (Positive question)
+                            <select class="answer-select" data-correct="Ja, ich will Kaffee.">
+                                <option value="">Select</option>
+                                <option value="Ja, ich will Kaffee.">Ja, ich will Kaffee.</option>
+                                <option value="Doch, ich will Kaffee.">Doch, ich will Kaffee.</option>
+                                <option value="Nein, ich will Kaffee.">Nein, ich will Kaffee.</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Doch, ich bin hier.</em></li>
+                            <li><em>Ja, ich habe Hunger.</em></li>
+                            <li><em>Doch, ich spiele Fußball.</em></li>
+                            <li><em>Doch, es schmeckt mir.</em></li>
+                            <li><em>Ja, ich will Kaffee.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise4">
+                <h3>Exercise 4: Mini-Dialogue</h3>
+                <p>Fill in with <em>doch</em> or another answer.</p>
+                <div class="examples">
+                    <p>A: <em>Hast du nicht geschlafen?</em><br>B: ___ (1), ich habe geschlafen.<br>A: <em>Bist du nicht müde?</em><br>B: ___ (2)!<br>A: <em>Willst du keinen Kuchen?</em><br>B: ___ (3), ich will Kuchen.</p>
+                    <ol class="example-list">
+                        <li><select class="answer-select" data-correct="Doch">
+                            <option value="">Select</option>
+                            <option value="Doch">Doch</option>
+                            <option value="Nein">Nein</option>
+                            <option value="Ja">Ja</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="Doch">
+                            <option value="">Select</option>
+                            <option value="Doch">Doch</option>
+                            <option value="Nein">Nein</option>
+                            <option value="Ja">Ja</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="Doch">
+                            <option value="">Select</option>
+                            <option value="Doch">Doch</option>
+                            <option value="Nein">Nein</option>
+                            <option value="Ja">Ja</option>
+                        </select></li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong><br>A: <em>Hast du nicht geschlafen?</em> B: <em>Doch</em>, ich habe geschlafen.<br>A: <em>Bist du nicht müde?</em> B: <em>Doch</em>!<br>A: <em>Willst du keinen Kuchen?</em> B: <em>Doch</em>, ich will Kuchen.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips -->
+        <section id="tips">
+            <h2>Tips for A2 Learners</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Listen for <em>Nicht</em></strong>: If the question has <em>nicht</em>, <em>doch</em> is your friend!</li>
+                    <li><strong>Practice Short <em>Doch</em></strong>: Say <em>Doch!</em> to friends—it’s quick and cool.</li>
+                    <li><strong>Daily Chat</strong>: Ask <em>Hast du nicht Hunger?</em>—answer <em>Doch, ich habe Hunger.</em></li>
+                    <li><strong>Flip the Negative</strong>: Think “No, wait, yes!”—that’s <em>doch</em>.</li>
+                    <li><strong>Sing It</strong>: <em>Doch, doch, doch!</em>—make it stick!</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Final Thoughts -->
+        <section id="final-thoughts">
+            <h2>You’re Ready!</h2>
+            <p>
+                This A2 guide makes <em>doch</em> after yes/no questions super simple with examples and exercises. You’re ready to sound natural in German conversations! Want more A2 fun? Try <em>doch</em> in other uses or tackle simple Perfekt next—your choice!
+            </p>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="dative.html" class="see-also-rect">German Dative</a>
+                <a href="welcherdieser.html" class="see-also-rect">Interrogativ- & Demonstrativartikel</a>
+                <a href="partizip2.html" class="see-also-rect">Perfekt & Partizip II</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="welcherdieser.html" class="next-btn">Next: Interrogativ- & Demonstrativartikel →</a>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Dark/Light mode toggle
+            const modeToggle = document.getElementById('mode-toggle');
+            const body = document.body;
+            modeToggle.addEventListener('click', function() {
+                body.classList.toggle('dark-mode');
+                const isDark = body.classList.contains('dark-mode');
+                modeToggle.querySelector('svg').setAttribute('d', isDark ? 
+                    'M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z' : 
+                    'M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z');
+            });
+
+            // Check Answers functionality
+            document.querySelectorAll('.check-answers').forEach(button => {
+                button.addEventListener('click', function() {
+                    const exercise = this.closest('.subsection');
+                    const selects = exercise.querySelectorAll('.answer-select');
+                    selects.forEach(select => {
+                        const correctAnswer = select.getAttribute('data-correct');
+                        const userAnswer = select.value;
+                        if (userAnswer === correctAnswer) {
+                            select.style.border = '2px solid #2e7d32';
+                        } else if (userAnswer !== '') {
+                            select.style.border = '2px solid #d32f2f';
+                        } else {
+                            select.style.border = '1px solid #ccc';
+                        }
+                    });
+                });
+            });
+
+            // Show Answers functionality
+            document.querySelectorAll('.show-answers').forEach(button => {
+                button.addEventListener('click', function() {
+                    const exercise = this.closest('.subsection');
+                    const answers = exercise.querySelector('.answers');
+                    if (answers.classList.contains('hidden')) {
+                        answers.classList.remove('hidden');
+                    } else {
+                        answers.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

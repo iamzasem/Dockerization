@@ -1,0 +1,448 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}German Articles{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/adjectives.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+                <a href="index.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="a1-topics.html" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Main Introduction -->
+        <section id="intro">
+            <h1>German Adjectives: A Beginner’s Guide</h1>
+            <p>
+                Welcome to this guide on German adjectives! Whether you’re just starting out or brushing up on the basics, this page will help you understand what adjectives are, how to use them, and how their endings work in German. We’ll start with the essentials—explaining adjectives and giving you a list of common ones—before moving into the trickier part: adjective endings. With examples, tables, and practice questions, you’ll be ready to describe the world in German in no time!
+            </p>
+          
+        </section>
+
+        <!-- What Are Adjectives? -->
+        <section id="intro-adjectives">
+            <h2>What Are Adjectives?</h2>
+            <p>
+                Adjectives are words that describe or give more information about nouns. They tell us about the qualities, quantities, or characteristics of people, places, things, or ideas. For example, in English, we say "a big dog," "a red car," or "a happy child." The words "big," "red," and "happy" are adjectives because they add details to the nouns "dog," "car," and "child."
+            </p>
+            <p>
+                In German, adjectives do the same job, but they have a special twist: their endings can change depending on where they are in a sentence and what noun they’re describing. Don’t worry about that just yet—we’ll get to endings later. For now, let’s focus on what adjectives are and how they work in simple sentences.
+            </p>
+            <p>
+                Adjectives can describe all kinds of things, like:
+            </p>
+            <ul>
+                <li><strong>Size</strong>: "big" (groß), "small" (klein)</li>
+                <li><strong>Color</strong>: "blue" (blau), "green" (grün)</li>
+                <li><strong>Quality</strong>: "good" (gut), "bad" (schlecht)</li>
+                <li><strong>Feelings</strong>: "happy" (glücklich), "sad" (traurig)</li>
+                <li><strong>Age</strong>: "new" (neu), "old" (alt)</li>
+            </ul>
+            <p>
+                Here are some basic examples in German:
+            </p>
+            <ul>
+                <li><em>Der Hund ist groß.</em> (The dog is big.)</li>
+                <li><em>Die Blume ist rot.</em> (The flower is red.)</li>
+                <li><em>Das Kind ist glücklich.</em> (The child is happy.)</li>
+            </ul>
+            <p>
+                In these sentences, the adjectives come after the verb "ist" (is) and don’t need any extra endings. This is the easiest way to start using adjectives in German, and we’ll practice it more before tackling endings.
+            </p>
+        </section>
+
+        <!-- Common German Adjectives -->
+        <section id="common-adjectives">
+            <h2>Common German Adjectives</h2>
+            <p>
+                To get you started, here’s a list of common German adjectives you’ll hear and use a lot. They’re grouped by category to make them easier to learn, and each comes with its English translation. Try saying them out loud or using them in simple sentences like the ones above!
+            </p>
+            <h3>Size</h3>
+            <ul>
+                <li>groß (big)</li>
+                <li>klein (small)</li>
+                <li>hoch (tall)</li>
+                <li>niedrig (low)</li>
+            </ul>
+            <h3>Color</h3>
+            <ul>
+                <li>rot (red)</li>
+                <li>blau (blue)</li>
+                <li>grün (green)</li>
+                <li>gelb (yellow)</li>
+            </ul>
+            <h3>Quality</h3>
+            <ul>
+                <li>gut (good)</li>
+                <li>schlecht (bad)</li>
+                <li>schön (beautiful)</li>
+                <li>hässlich (ugly)</li>
+            </ul>
+            <h3>Feelings</h3>
+            <ul>
+                <li>glücklich (happy)</li>
+                <li>traurig (sad)</li>
+                <li>müde (tired)</li>
+                <li>aufregend (exciting)</li>
+            </ul>
+            <h3>Age</h3>
+            <ul>
+                <li>neu (new)</li>
+                <li>alt (old)</li>
+                <li>jung (young)</li>
+                <li>älter (older)</li>
+            </ul>
+            <p>
+                <strong>Tip</strong>: Many adjectives have opposites (like "big" and "small" or "good" and "bad"). Learning them in pairs can help you remember them better!
+            </p>
+        </section>
+
+        <!-- Using Adjectives in Sentences -->
+        <section id="using-adjectives">
+            <h2>Using Adjectives in Sentences</h2>
+            <p>
+                Before we get to endings, let’s practice using adjectives in simple sentences. When an adjective comes after verbs like <em>sein</em> (to be) or <em>werden</em> (to become), it doesn’t need any endings. These are called <strong>predicative adjectives</strong>, and they’re perfect for beginners because they’re so straightforward.
+            </p>
+            <p>
+                Here are some examples:
+            </p>
+            <ul>
+                <li><em>Der Hund ist groß.</em> (The dog is big.)</li>
+                <li><em>Die Katze ist schön.</em> (The cat is beautiful.)</li>
+                <li><em>Das Haus ist neu.</em> (The house is new.)</li>
+                <li><em>Die Kinder sind glücklich.</em> (The children are happy.)</li>
+            </ul>
+            <p>
+                Notice how the adjective stays the same no matter what noun it’s describing. Whether the noun is masculine (der Hund), feminine (die Katze), neuter (das Haus), or plural (die Kinder), the adjective doesn’t change when it’s after "ist."
+            </p>
+            <p>
+                More examples to try:
+            </p>
+            <ul>
+                <li><em>Das Auto ist schnell.</em> (The car is fast.)</li>
+                <li><em>Die Blume ist rot.</em> (The flower is red.)</li>
+                <li><em>Der Mann ist müde.</em> (The man is tired.)</li>
+            </ul>
+            <p>
+                This is a great way to start speaking German with adjectives. Once you’re comfortable with this, we’ll move on to using adjectives with endings before nouns.
+            </p>
+        </section>
+
+        <!-- Adjective Endings in German -->
+        <section id="key-points">
+            <h2>Adjective Endings in German</h2>
+            <p>
+                Now that you know what adjectives are and how to use them in simple sentences, let’s talk about adjective endings. When an adjective comes <em>before</em> a noun (like "a big dog" instead of "the dog is big"), it often needs an ending. The ending depends on three things:
+            </p>
+            <ul>
+                <li><strong>Gender</strong>: Is the noun masculine, feminine, or neuter?</li>
+                <li><strong>Number</strong>: Is it singular or plural?</li>
+                <li><strong>Case</strong>: Is it nominative, accusative, dative, or genitive?</li>
+            </ul>
+            <p>
+                Plus, the ending changes depending on whether the noun has:
+            </p>
+            <ol>
+                <li>A <strong>definite article</strong> (der, die, das – "the")</li>
+                <li>An <strong>indefinite article</strong> (ein, eine – "a" or "an")</li>
+                <li><strong>No article</strong> (just the noun and adjective)</li>
+            </ol>
+            <p>
+                Don’t worry if this sounds complicated! We’ll break it down with tables and examples using simple words like <em>groß</em> (big), <em>klein</em> (small), <em>schön</em> (beautiful), and <em>neu</em> (new), and nouns like <em>Hund</em> (dog), <em>Katze</em> (cat), <em>Haus</em> (house), and <em>Auto</em> (car).
+            </p>
+
+            <div class="subsection">
+                <h3>1. After Definite Articles</h3>
+                <p>
+                    With a definite article (der, die, das), the adjective usually takes <strong>-e</strong> or <strong>-en</strong>.
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Case</th>
+                            <th>Masculine</th>
+                            <th>Feminine</th>
+                            <th>Neuter</th>
+                            <th>Plural</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nominative</td>
+                            <td>-e</td>
+                            <td>-e</td>
+                            <td>-e</td>
+                            <td>-en</td>
+                        </tr>
+                        <tr>
+                            <td>Accusative</td>
+                            <td>-en</td>
+                            <td>-e</td>
+                            <td>-e</td>
+                            <td>-en</td>
+                        </tr>
+                        <tr>
+                            <td>Dative</td>
+                            <td>-en</td>
+                            <td>-en</td>
+                            <td>-en</td>
+                            <td>-en</td>
+                        </tr>
+                        <tr>
+                            <td>Genitive</td>
+                            <td>-en</td>
+                            <td>-en</td>
+                            <td>-en</td>
+                            <td>-en</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="examples">
+                    <p><strong>Examples</strong></p>
+                    <ul>
+                        <li><em>der große Hund</em> (the big dog – nominative, masculine)</li>
+                        <li><em>die schöne Katze</em> (the beautiful cat – nominative, feminine)</li>
+                        <li><em>das kleine Haus</em> (the small house – nominative, neuter)</li>
+                        <li><em>die neuen Autos</em> (the new cars – nominative, plural)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>2. After Indefinite Articles</h3>
+                <p>
+                    With an indefinite article (ein, eine), the endings show more variety in the nominative case.
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Case</th>
+                            <th>Masculine</th>
+                            <th>Feminine</th>
+                            <th>Neuter</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nominative</td>
+                            <td>-er</td>
+                            <td>-e</td>
+                            <td>-es</td>
+                        </tr>
+                        <tr>
+                            <td>Accusative</td>
+                            <td>-en</td>
+                            <td>-e</td>
+                            <td>-es</td>
+                        </tr>
+                        <tr>
+                            <td>Dative</td>
+                            <td>-en</td>
+                            <td>-en</td>
+                            <td>-en</td>
+                        </tr>
+                        <tr>
+                            <td>Genitive</td>
+                            <td>-en</td>
+                            <td>-en</td>
+                            <td>-en</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="examples">
+                    <p><strong>Examples</strong></p>
+                    <ul>
+                        <li><em>ein großer Hund</em> (a big dog – nominative, masculine)</li>
+                        <li><em>eine schöne Katze</em> (a beautiful cat – nominative, feminine)</li>
+                        <li><em>ein kleines Haus</em> (a small house – nominative, neuter)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>3. Without Articles</h3>
+                <p>
+                    With no article, the adjective endings are more distinct to show gender and case.
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Case</th>
+                            <th>Masculine</th>
+                            <th>Feminine</th>
+                            <th>Neuter</th>
+                            <th>Plural</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nominative</td>
+                            <td>-er</td>
+                            <td>-e</td>
+                            <td>-es</td>
+                            <td>-e</td>
+                        </tr>
+                        <tr>
+                            <td>Accusative</td>
+                            <td>-en</td>
+                            <td>-e</td>
+                            <td>-es</td>
+                            <td>-e</td>
+                        </tr>
+                        <tr>
+                            <td>Dative</td>
+                            <td>-em</td>
+                            <td>-er</td>
+                            <td>-em</td>
+                            <td>-en</td>
+                        </tr>
+                        <tr>
+                            <td>Genitive</td>
+                            <td>-es</td>
+                            <td>-er</td>
+                            <td>-es</td>
+                            <td>-er</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="examples">
+                    <p><strong>Examples</strong></p>
+                    <ul>
+                        <li><em>großer Hund</em> (big dog – nominative, masculine)</li>
+                        <li><em>schöne Katze</em> (beautiful cat – nominative, feminine)</li>
+                        <li><em>kleines Haus</em> (small house – nominative, neuter)</li>
+                        <li><em>neue Autos</em> (new cars – nominative, plural)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practice Questions -->
+        <section id="practice">
+            <h2>Practice Questions</h2>
+            <p>
+                Let’s test what you’ve learned! We’ll start with simple sentences using adjectives without endings, then move to choosing the right endings.
+            </p>
+
+            <div class="subsection">
+                <h3>Exercise 1: Using Adjectives Without Endings</h3>
+                <p>Fill in the blanks with the correct adjective (no endings needed).</p>
+                <ol>
+                    <li>Die Sonne ist ____ (hell).</li>
+                    <button class="toggle-btn">Show Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> hell</p></div>
+                    <li>Das Buch ist ____ (interessant).</li>
+                    <button class="toggle-btn">Show Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> interessant</p></div>
+                    <li>Die Kinder sind ____ (glücklich).</li>
+                    <button class="toggle-btn">Show Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> glücklich</p></div>
+                    <li>Das Essen ist ____ (lecker).</li>
+                    <button class="toggle-btn">Show Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> lecker</p></div>
+                </ol>
+            </div>
+
+            <div class="subsection">
+                <h3>Exercise 2: Choosing the Right Endings</h3>
+                <p>Add the correct ending to the adjective in parentheses.</p>
+                <ol>
+                    <li>Ich sehe ____ (groß) Hund. (Accusative, masculine, definite article)</li>
+                    <button class="toggle-btn">Show Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> den großen Hund</p></div>
+                    <li>Das ist ____ (klein) Haus. (Nominative, neuter, definite article)</li>
+                    <button class="toggle-btn">Show Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> das kleine Haus</p></div>
+                    <li>Ich habe ____ (neu) Auto. (Nominative, neuter, indefinite article)</li>
+                    <button class="toggle-btn">Show Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> ein neues Auto</p></div>
+                    <li>____ (schön) Katze schläft. (Nominative, feminine, no article)</li>
+                    <button class="toggle-btn">Show Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> Schöne Katze</p></div>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Tips for Learning -->
+        <section id="tips">
+            <h2>Tips for Learning German Adjectives</h2>
+            <ul>
+                <li><strong>Start Simple</strong>: Learn a few adjectives and use them after "ist" (e.g., "Das Haus ist groß").</li>
+                <li><strong>Build Vocabulary</strong>: Memorize the list of common adjectives—try flashcards!</li>
+                <li><strong>Add Endings Later</strong>: Once you’re comfortable with basic sentences, practice endings one step at a time.</li>
+                <li><strong>Practice Daily</strong>: Even 5 minutes a day helps you improve.</li>
+            </ul>
+        </section>
+
+        <!-- Final Thoughts -->
+        <section id="final-thoughts">
+            <h2>Final Thoughts</h2>
+            <p>
+                German adjectives are a fun way to make your sentences more colorful. Start with the basics, enjoy describing things, and don’t stress about endings—they’ll come with practice. <em>Viel Spaß!</em> (Have fun!)
+            </p>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="nouns.html" class="see-also-btn">German Nouns</a>
+                <a href="articles.html" class="see-also-btn">German Articles</a>
+                <a href="cases.html" class="see-also-btn">German Cases</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="cases.html" class="next-btn">Next: German Cases →</a>
+        </div>
+    </main>
+
+    <!-- JavaScript for interactivity -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('.toggle-btn');
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const hiddenContent = this.nextElementSibling;
+                    if (hiddenContent.classList.contains('hidden')) {
+                        hiddenContent.classList.remove('hidden');
+                        this.textContent = 'Hide Answer';
+                    } else {
+                        hiddenContent.classList.add('hidden');
+                        this.textContent = 'Show Answer';
+                    }
+                });
+            });
+
+            const modeToggle = document.getElementById('mode-toggle');
+            const body = document.body;
+            modeToggle.addEventListener('click', function() {
+                body.classList.toggle('dark-mode');
+                const isDark = body.classList.contains('dark-mode');
+                modeToggle.querySelector('svg').innerHTML = isDark ? 
+                    '<path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>' : 
+                    '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>';
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

@@ -1,0 +1,543 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}German Verbs with Prepositions{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/verbenmitpreposition.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+                <a href="index.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="a1-topics.html" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>German Verbs with Prepositions</h1>
+            <p>
+                A clear guide to **German verbs with prepositions** (*Verben mit Präpositionen*), featuring 25 common verbs, their prepositions, cases, and meanings, with exercises and resources for practice.
+            </p>
+        </section>
+
+        <!-- Understanding -->
+        <section id="understanding">
+            <h2>Understanding Verbs with Prepositions in German</h2>
+            <p>Many German verbs pair with specific prepositions to form fixed expressions that alter their meaning. These combinations require a specific case (accusative, dative, or genitive) for the following noun or pronoun. For example, *warten* means "to wait," but *warten auf* means "to wait for." The case depends on the preposition.</p>
+            <div class="subsection">
+                <h3>Key Points</h3>
+                <ul class="example-list">
+                    <li><strong>Fixed Pairings</strong>: Verb and preposition are a unit (e.g., *warten auf*).</li>
+                    <li><strong>Case Matters</strong>: Accusative, dative, or genitive is set by the preposition.</li>
+                    <li><strong>Word Order</strong>: Preposition precedes the object; verb goes to the end in subordinate clauses.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- List of Verbs -->
+        <section id="list">
+            <h2>List of 25 Common Verbs with Prepositions</h2>
+            <div class="table-container">
+                <table>
+                    <tr><th>Verb</th><th>Preposition</th><th>Case</th><th>Meaning</th><th>Example Sentence</th></tr>
+                    <tr><td><strong>warten auf</strong></td><td>auf</td><td>Accusative</td><td>to wait for</td><td><em>Ich warte auf den Zug.</em> (I wait for the train.)</td></tr>
+                    <tr><td><strong>sich freuen auf</strong></td><td>auf</td><td>Accusative</td><td>to look forward to</td><td><em>Sie freut sich auf den Film.</em> (She looks forward to the movie.)</td></tr>
+                    <tr><td><strong>sich interessieren für</strong></td><td>für</td><td>Accusative</td><td>to be interested in</td><td><em>Er interessiert sich für Musik.</em> (He’s interested in music.)</td></tr>
+                    <tr><td><strong>fragen nach</strong></td><td>nach</td><td>Dative</td><td>to ask about/for</td><td><em>Ich frage nach dem Preis.</em> (I ask about the price.)</td></tr>
+                    <tr><td><strong>sprechen über</strong></td><td>über</td><td>Accusative</td><td>to talk about</td><td><em>Wir sprechen über die Schule.</em> (We talk about school.)</td></tr>
+                    <tr><td><strong>denken an</strong></td><td>an</td><td>Dative</td><td>to think about</td><td><em>Ich denke an dich.</em> (I think about you.)</td></tr>
+                    <tr><td><strong>helfen mit</strong></td><td>mit</td><td>Dative</td><td>to help with</td><td><em>Ich helfe dir mit der Arbeit.</em> (I help you with the work.)</td></tr>
+                    <tr><td><strong>danken für</strong></td><td>für</td><td>Dative</td><td>to thank for</td><td><em>Er dankt mir für das Geschenk.</em> (He thanks me for the gift.)</td></tr>
+                    <tr><td><strong>sich erinnern an</strong></td><td>an</td><td>Accusative</td><td>to remember</td><td><em>Sie erinnert sich an den Tag.</em> (She remembers the day.)</td></tr>
+                    <tr><td><strong>antworten auf</strong></td><td>auf</td><td>Accusative</td><td>to answer to</td><td><em>Ich antworte auf die Frage.</em> (I answer the question.)</td></tr>
+                    <tr><td><strong>gehören zu</strong></td><td>zu</td><td>Dative</td><td>to belong to</td><td><em>Das gehört zu meinem Plan.</em> (That belongs to my plan.)</td></tr>
+                    <tr><td><strong>sich ärgern über</strong></td><td>über</td><td>Accusative</td><td>to be annoyed about</td><td><em>Er ärgert sich über den Fehler.</em> (He’s annoyed about the mistake.)</td></tr>
+                    <tr><td><strong>aufpassen auf</strong></td><td>auf</td><td>Accusative</td><td>to look after</td><td><em>Sie passt auf die Kinder auf.</em> (She looks after the kids.)</td></tr>
+                    <tr><td><strong>ankommen auf</strong></td><td>auf</td><td>Accusative</td><td>to depend on</td><td><em>Es kommt auf die Zeit an.</em> (It depends on the time.)</td></tr>
+                    <tr><td><strong>bitten um</strong></td><td>um</td><td>Accusative</td><td>to ask for</td><td><em>Ich bitte um Hilfe.</em> (I ask for help.)</td></tr>
+                    <tr><td><strong>sich kümmern um</strong></td><td>um</td><td>Accusative</td><td>to take care of</td><td><em>Er kümmert sich um den Hund.</em> (He takes care of the dog.)</td></tr>
+                    <tr><td><strong>lachen über</strong></td><td>über</td><td>Accusative</td><td>to laugh about</td><td><em>Wir lachen über den Witz.</em> (We laugh about the joke.)</td></tr>
+                    <tr><td><strong>schreiben an</strong></td><td>an</td><td>Accusative</td><td>to write to</td><td><em>Ich schreibe an meine Freundin.</em> (I write to my friend.)</td></tr>
+                    <tr><td><strong>teilnehmen an</strong></td><td>an</td><td>Dative</td><td>to participate in</td><td><em>Sie nimmt an dem Kurs teil.</em> (She participates in the course.)</td></tr>
+                    <tr><td><strong>zweifeln an</strong></td><td>an</td><td>Dative</td><td>to doubt</td><td><em>Ich zweifle an seiner Geschichte.</em> (I doubt his story.)</td></tr>
+                    <tr><td><strong>beginnen mit</strong></td><td>mit</td><td>Dative</td><td>to begin with</td><td><em>Wir beginnen mit der Arbeit.</em> (We begin with the work.)</td></tr>
+                    <tr><td><strong>abhängen von</strong></td><td>von</td><td>Dative</td><td>to depend on</td><td><em>Das hängt von dir ab.</em> (That depends on you.)</td></tr>
+                    <tr><td><strong>verstehen von</strong></td><td>von</td><td>Dative</td><td>to understand about</td><td><em>Er versteht viel von Autos.</em> (He understands a lot about cars.)</td></tr>
+                    <tr><td><strong>träumen von</strong></td><td>von</td><td>Dative</td><td>to dream of</td><td><em>Ich träume von einem Urlaub.</em> (I dream of a vacation.)</td></tr>
+                    <tr><td><strong>sich verlieben in</strong></td><td>in</td><td>Accusative</td><td>to fall in love with</td><td><em>Sie verliebt sich in ihn.</em> (She falls in love with him.)</td></tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- Uses -->
+        <section id="uses">
+            <h2>Uses of Verbs with Prepositions</h2>
+            <div class="subsection">
+                <h3>Everyday Actions</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Ich warte auf meine Schwester.</em> (I wait for my sister.)</li>
+                        <li><em>Wir helfen mit dem Projekt.</em> (We help with the project.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Emotional States</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Sie freut sich auf das Fest.</em> (She looks forward to the party.)</li>
+                        <li><em>Er lacht über den Film.</em> (He laughs about the movie.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Questions and Responses</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Ich frage nach dem Weg.</em> (I ask about the way.)</li>
+                        <li><em>Sie antwortet auf meine Nachricht.</em> (She replies to my message.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Ownership or Connection</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Das gehört zu meiner Sammlung.</em> (That belongs to my collection.)</li>
+                        <li><em>Er kümmert sich um die Katze.</em> (He takes care of the cat.)</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Examples -->
+        <section id="examples">
+            <h2>Detailed Examples</h2>
+            <div class="examples">
+                <ol class="example-list">
+                    <li><em>Ich warte auf den Bus, weil er verspätet ist.</em>  
+                        (I wait for the bus because it’s late.)</li>
+                    <li><em>Wir freuen uns auf das Wochenende mit Freunden.</em>  
+                        (We look forward to the weekend with friends.)</li>
+                    <li><em>Sie interessiert sich für Bücher und Filme.</em>  
+                        (She’s interested in books and movies.)</li>
+                    <li><em>Er fragt nach deinem neuen Job.</em>  
+                        (He asks about your new job.)</li>
+                    <li><em>Ich denke an meine Familie in Deutschland.</em>  
+                        (I think about my family in Germany.)</li>
+                    <li><em>Sie dankt ihm für die Blumen.</em>  
+                        (She thanks him for the flowers.)</li>
+                    <li><em>Er erinnert sich an seinen ersten Schultag.</em>  
+                        (He remembers his first school day.)</li>
+                    <li><em>Wir passen auf das Haus auf, während sie weg sind.</em>  
+                        (We look after the house while they’re away.)</li>
+                    <li><em>Ich bitte um einen Gefallen.</em>  
+                        (I ask for a favor.)</li>
+                    <li><em>Sie träumt von einer Reise nach Italien.</em>  
+                        (She dreams of a trip to Italy.)</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Exercises -->
+        <section id="practice">
+            <h2>Exercises to Master Verbs with Prepositions</h2>
+            <div class="subsection" id="exercise1">
+                <h3>Exercise 1: Choose the Correct Preposition</h3>
+                <p>Fill in the blank with the right preposition from the list.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Ich warte ___ den Zug.  
+                            <select class="answer-select" data-correct="auf">
+                                <option value="">Select</option>
+                                <option value="auf">auf</option>
+                                <option value="mit">mit</option>
+                                <option value="an">an</option>
+                            </select>
+                        </li>
+                        <li>Sie freut sich ___ das Konzert.  
+                            <select class="answer-select" data-correct="auf">
+                                <option value="">Select</option>
+                                <option value="über">über</option>
+                                <option value="auf">auf</option>
+                                <option value="für">für</option>
+                            </select>
+                        </li>
+                        <li>Er hilft mir ___ dem Projekt.  
+                            <select class="answer-select" data-correct="mit">
+                                <option value="">Select</option>
+                                <option value="mit">mit</option>
+                                <option value="auf">auf</option>
+                                <option value="über">über</option>
+                            </select>
+                        </li>
+                        <li>Wir sprechen ___ das Wetter.  
+                            <select class="answer-select" data-correct="über">
+                                <option value="">Select</option>
+                                <option value="für">für</option>
+                                <option value="über">über</option>
+                                <option value="an">an</option>
+                            </select>
+                        </li>
+                        <li>Ich denke ___ meine Freunde.  
+                            <select class="answer-select" data-correct="an">
+                                <option value="">Select</option>
+                                <option value="an">an</option>
+                                <option value="auf">auf</option>
+                                <option value="mit">mit</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>auf</em></li>
+                            <li><em>auf</em></li>
+                            <li><em>mit</em></li>
+                            <li><em>über</em></li>
+                            <li><em>an</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection" id="exercise2">
+                <h3>Exercise 2: Match Verb and Preposition</h3>
+                <p>Match the verb to its correct preposition from the list.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Sich interessieren ___  
+                            <select class="answer-select" data-correct="für">
+                                <option value="">Select</option>
+                                <option value="für">für</option>
+                                <option value="auf">auf</option>
+                            </select>
+                        </li>
+                        <li>Antworten ___  
+                            <select class="answer-select" data-correct="auf">
+                                <option value="">Select</option>
+                                <option value="auf">auf</option>
+                                <option value="über">über</option>
+                            </select>
+                        </li>
+                        <li>Sich kümmern ___  
+                            <select class="answer-select" data-correct="um">
+                                <option value="">Select</option>
+                                <option value="um">um</option>
+                                <option value="an">an</option>
+                            </select>
+                        </li>
+                        <li>Träumen ___  
+                            <select class="answer-select" data-correct="von">
+                                <option value="">Select</option>
+                                <option value="von">von</option>
+                                <option value="mit">mit</option>
+                            </select>
+                        </li>
+                        <li>Teilnehmen ___  
+                            <select class="answer-select" data-correct="an">
+                                <option value="">Select</option>
+                                <option value="an">an</option>
+                                <option value="für">für</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>für</em></li>
+                            <li><em>auf</em></li>
+                            <li><em>um</em></li>
+                            <li><em>von</em></li>
+                            <li><em>an</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection" id="exercise3">
+                <h3>Exercise 3: Translate into German</h3>
+                <p>Translate using verbs from the list.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>I’m waiting for the train.  
+                            <select class="answer-select" data-correct="Ich warte auf den Zug.">
+                                <option value="">Select</option>
+                                <option value="Ich warte auf den Zug.">Ich warte auf den Zug.</option>
+                                <option value="Ich warte mit dem Zug.">Ich warte mit dem Zug.</option>
+                            </select>
+                        </li>
+                        <li>She thanks him for the book.  
+                            <select class="answer-select" data-correct="Sie dankt ihm für das Buch.">
+                                <option value="">Select</option>
+                                <option value="Sie dankt ihm für das Buch.">Sie dankt ihm für das Buch.</option>
+                                <option value="Sie dankt ihm mit dem Buch.">Sie dankt ihm mit dem Buch.</option>
+                            </select>
+                        </li>
+                        <li>We’re talking about the trip.  
+                            <select class="answer-select" data-correct="Wir sprechen über die Reise.">
+                                <option value="">Select</option>
+                                <option value="Wir sprechen über die Reise.">Wir sprechen über die Reise.</option>
+                                <option value="Wir sprechen an die Reise.">Wir sprechen an die Reise.</option>
+                            </select>
+                        </li>
+                        <li>He depends on his parents.  
+                            <select class="answer-select" data-correct="Er hängt von seinen Eltern ab.">
+                                <option value="">Select</option>
+                                <option value="Er hängt von seinen Eltern ab.">Er hängt von seinen Eltern ab.</option>
+                                <option value="Er hängt an seinen Eltern ab.">Er hängt an seinen Eltern ab.</option>
+                            </select>
+                        </li>
+                        <li>I dream of a big house.  
+                            <select class="answer-select" data-correct="Ich träume von einem großen Haus.">
+                                <option value="">Select</option>
+                                <option value="Ich träume von einem großen Haus.">Ich träume von einem großen Haus.</option>
+                                <option value="Ich träume an einem großen Haus.">Ich träume an einem großen Haus.</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Ich warte auf den Zug.</em></li>
+                            <li><em>Sie dankt ihm für das Buch.</em></li>
+                            <li><em>Wir sprechen über die Reise.</em></li>
+                            <li><em>Er hängt von seinen Eltern ab.</em></li>
+                            <li><em>Ich träume von einem großen Haus.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection" id="exercise4">
+                <h3>Exercise 4: Fill in with Correct Case</h3>
+                <p>Add the correct article in the right case (e.g., *den*, *dem*, *die*).</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Ich warte auf ___ Bus.  
+                            <select class="answer-select" data-correct="den">
+                                <option value="">Select</option>
+                                <option value="den">den</option>
+                                <option value="dem">dem</option>
+                                <option value="die">die</option>
+                            </select>
+                        </li>
+                        <li>Sie freut sich auf ___ Urlaub.  
+                            <select class="answer-select" data-correct="den">
+                                <option value="">Select</option>
+                                <option value="den">den</option>
+                                <option value="dem">dem</option>
+                                <option value="die">die</option>
+                            </select>
+                        </li>
+                        <li>Er hilft ___ Kindern mit den Hausaufgaben.  
+                            <select class="answer-select" data-correct="den">
+                                <option value="">Select</option>
+                                <option value="den">den</option>
+                                <option value="dem">dem</option>
+                                <option value="die">die</option>
+                            </select>
+                        </li>
+                        <li>Wir denken an ___ Sommer.  
+                            <select class="answer-select" data-correct="den">
+                                <option value="">Select</option>
+                                <option value="den">den</option>
+                                <option value="dem">dem</option>
+                                <option value="die">die</option>
+                            </select>
+                        </li>
+                        <li>Ich antworte auf ___ E-Mail.  
+                            <select class="answer-select" data-correct="die">
+                                <option value="">Select</option>
+                                <option value="den">den</option>
+                                <option value="dem">dem</option>
+                                <option value="die">die</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>den</em> (Accusative)</li>
+                            <li><em>den</em> (Accusative)</li>
+                            <li><em>den</em> (Dative)</li>
+                            <li><em>den</em> (Dative)</li>
+                            <li><em>die</em> (Accusative)</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection" id="exercise5">
+                <h3>Exercise 5: Create Your Own Sentences</h3>
+                <p>Write sentences using these verbs from the list.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Sich freuen auf  
+                            <select class="answer-select" data-correct="Ich freue mich auf den Sommer.">
+                                <option value="">Select</option>
+                                <option value="Ich freue mich auf den Sommer.">Ich freue mich auf den Sommer.</option>
+                                <option value="Ich freue mich mit den Sommer.">Ich freue mich mit den Sommer.</option>
+                            </select>
+                        </li>
+                        <li>Helfen mit  
+                            <select class="answer-select" data-correct="Sie hilft mir mit dem Kochen.">
+                                <option value="">Select</option>
+                                <option value="Sie hilft mir mit dem Kochen.">Sie hilft mir mit dem Kochen.</option>
+                                <option value="Sie hilft mir auf dem Kochen.">Sie hilft mir auf dem Kochen.</option>
+                            </select>
+                        </li>
+                        <li>Lachen über  
+                            <select class="answer-select" data-correct="Wir lachen über den lustigen Film.">
+                                <option value="">Select</option>
+                                <option value="Wir lachen über den lustigen Film.">Wir lachen über den lustigen Film.</option>
+                                <option value="Wir lachen an den lustigen Film.">Wir lachen an den lustigen Film.</option>
+                            </select>
+                        </li>
+                        <li>Sich verlieben in  
+                            <select class="answer-select" data-correct="Er verliebt sich in seine Nachbarin.">
+                                <option value="">Select</option>
+                                <option value="Er verliebt sich in seine Nachbarin.">Er verliebt sich in seine Nachbarin.</option>
+                                <option value="Er verliebt sich an seine Nachbarin.">Er verliebt sich an seine Nachbarin.</option>
+                            </select>
+                        </li>
+                        <li>Abhängen von  
+                            <select class="answer-select" data-correct="Das Ergebnis hängt von deinem Einsatz ab.">
+                                <option value="">Select</option>
+                                <option value="Das Ergebnis hängt von deinem Einsatz ab.">Das Ergebnis hängt von deinem Einsatz ab.</option>
+                                <option value="Das Ergebnis hängt an deinem Einsatz ab.">Das Ergebnis hängt an deinem Einsatz ab.</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Ich freue mich auf den Sommer.</em></li>
+                            <li><em>Sie hilft mir mit dem Kochen.</em></li>
+                            <li><em>Wir lachen über den lustigen Film.</em></li>
+                            <li><em>Er verliebt sich in seine Nachbarin.</em></li>
+                            <li><em>Das Ergebnis hängt von deinem Einsatz ab.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips -->
+        <section id="tips">
+            <h2>Tips for Mastery</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Learn as Units</strong>: Memorize the verb and preposition together (e.g., *warten auf*).</li>
+                    <li><strong>Focus on Cases</strong>: Practice accusative vs. dative with each preposition.</li>
+                    <li><strong>Use Flashcards</strong>: Write the pair on one side, meaning on the other.</li>
+                    <li><strong>Speak It</strong>: Use these in daily conversations or practice sentences.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Resources for Extra Practice -->
+        <section id="resources">
+            <h2>Resources for Extra Practice</h2>
+            <div class="resource-links">
+                <div class="resource-card">
+                    <p><strong>YouTube - Learn German with Anja</strong><br>Lessons on verbs with prepositions.</p>
+                    <a href="https://www.youtube.com/@LearnGermanwithAnja" class="resource-btn">Visit Learn German with Anja</a>
+                </div>
+                <div class="resource-card">
+                    <p><strong>German.net</strong><br>Exercises for prepositions and verbs.</p>
+                    <a href="https://german.net/exercises/prepositions/" class="resource-btn">Visit German.net</a>
+                </div>
+                <div class="resource-card">
+                    <p><strong>YouTube - Your German Teacher</strong><br>In-depth grammar videos.</p>
+                    <a href="https://www.youtube.com/@YourGermanTeacher" class="resource-btn">Visit Your German Teacher</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="damitumzu.html" class="see-also-rect">German Damit and Um...zu</a>
+                <a href="konjunktivII.html" class="see-also-rect">Konjunktiv II: Hätten, Wären, Würden</a>
+                <a href="partizip2.html" class="see-also-rect">Perfekt & Partizip II</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="partizip2.html" class="next-btn">Next: Perfekt & Partizip II →</a>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Dark/Light mode toggle
+            const modeToggle = document.getElementById('mode-toggle');
+            const body = document.body;
+            modeToggle.addEventListener('click', function() {
+                body.classList.toggle('dark-mode');
+                const isDark = body.classList.contains('dark-mode');
+                modeToggle.querySelector('svg').setAttribute('d', isDark ? 
+                    'M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z' : 
+                    'M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z');
+            });
+
+            // Check Answers functionality
+            document.querySelectorAll('.check-answers').forEach(button => {
+                button.addEventListener('click', function() {
+                    const exercise = this.closest('.subsection');
+                    const selects = exercise.querySelectorAll('.answer-select');
+                    selects.forEach(select => {
+                        const correctAnswer = select.getAttribute('data-correct');
+                        const userAnswer = select.value;
+                        if (userAnswer === correctAnswer) {
+                            select.style.border = '2px solid #2e7d32';
+                        } else if (userAnswer !== '') {
+                            select.style.border = '2px solid #d32f2f';
+                        } else {
+                            select.style.border = '1px solid #ccc';
+                        }
+                    });
+                });
+            });
+
+            // Show Answers functionality
+            document.querySelectorAll('.show-answers').forEach(button => {
+                button.addEventListener('click', function() {
+                    const exercise = this.closest('.subsection');
+                    const answers = exercise.querySelector('.answers');
+                    if (answers.classList.contains('hidden')) {
+                        answers.classList.remove('hidden');
+                    } else {
+                        answers.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

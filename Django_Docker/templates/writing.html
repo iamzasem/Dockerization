@@ -1,0 +1,397 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}German Writing{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/writing.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+                <a href="index.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="javascript:history.back()" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>German Writing: A Simple Guide to Letters and Essays for Beginners</h1>
+            <p>
+                Writing in German is a great way to practice your skills and communicate clearly. Whether you’re writing a simple sentence, a friendly letter, or a short essay, German has rules and styles that are easy to learn with practice. This guide will cover everything beginners need to know about German writing, focusing on <strong>basic sentence writing</strong>, <strong>letters</strong> (both informal and formal), and <strong>essays</strong>. We’ll keep it simple, with examples and tips so you can start writing confidently—no need to look anywhere else!
+            </p>
+        </section>
+
+        <!-- Why Writing Matters -->
+        <section id="key-points">
+            <h2>Why Writing Matters</h2>
+            <div class="subsection">
+                <p>Writing helps you:</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>Practice grammar, vocab, and sentence structure.</li>
+                        <li>Express yourself—like sending a note to a friend or explaining an idea.</li>
+                        <li>Prepare for real-life tasks, like emails or school assignments.</li>
+                    </ul>
+                    <p>
+                        German writing follows some rules (like word order and cases), but it’s not as hard as it seems. Let’s break it down step by step.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Basics of German Writing -->
+        <section id="basics">
+            <h2>1. Basics of German Writing</h2>
+            <div class="subsection">
+                <h3>Sentence Writing</h3>
+                <p>German sentences follow the rules we’ve covered before (like verb second in main clauses). Here’s a quick refresher:</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><strong>Verb Second (V2):</strong> The verb is the second "piece" in a main sentence.</li>
+                        <li><em>Ich gehe zur Schule.</em> (I go to school.)</li>
+                        <li><em>Heute gehe ich zur Schule.</em> (Today, I go to school.)</li>
+                        <li><strong>Time, Manner, Place (TMP):</strong> Extra info comes in this order.</li>
+                        <li><em>Ich gehe morgen schnell zum Park.</em> (I go tomorrow quickly to the park.)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Capitalization</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><strong>Nouns:</strong> Always capitalized (e.g., <em>Hund</em> – dog, <em>Buch</em> – book).</li>
+                        <li><strong>Start of Sentences:</strong> Capitalized, like English (e.g., <em>Der Hund bellt.</em> – The dog barks.)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Punctuation</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>Same as English: periods (.), commas (,), question marks (?), etc.</li>
+                        <li>Use commas before subordinate clauses (e.g., <em>Ich bleibe, weil es regnet.</em> – I stay because it rains.)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Practice Sentences</h3>
+                <p>Try writing these:</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>Die Katze schläft auf dem Tisch.</em> (The cat sleeps on the table.)</li>
+                        <li><em>Ich sehe jeden Tag den Hund.</em> (I see the dog every day.)</li>
+                        <li><em>Wir spielen im Garten mit dem Ball.</em> (We play in the garden with the ball.)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Writing Letters -->
+        <section id="letters">
+            <h2>2. Writing Letters in German</h2>
+            <div class="subsection">
+                <p>Letters can be <strong>informal</strong> (to friends or family) or <strong>formal</strong> (to teachers, companies, etc.). Here’s how to write both.</p>
+            </div>
+            <div class="subsection">
+                <h3>Informal Letters</h3>
+                <p>These are casual and friendly, like writing to a pen pal.</p>
+                <div class="subsection">
+                    <h4>Structure</h4>
+                    <div class="examples">
+                        <ol class="example-list">
+                            <li><strong>Date:</strong> Top right (e.g., <em>15. März 2025</em> – March 15, 2025).</li>
+                            <li><strong>Greeting:</strong> Start with <em>Hallo</em> or <em>Liebe/Lieber</em> (Dear, feminine/masculine).</li>
+                            <li><strong>Body:</strong> Write short, simple sentences about your life or questions.</li>
+                            <li><strong>Closing:</strong> End with <em>Tschüss</em>, <em>Liebe Grüße</em>, or <em>Bis bald</em> (See you soon).</li>
+                            <li><strong>Signature:</strong> Your name.</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="subsection">
+                    <h4>Example Informal Letter</h4>
+                    <div class="examples">
+                        <pre>
+Berlin, den 15. März 2025
+
+Hallo Max,
+
+wie geht es dir? Ich bin gut. Ich wohne jetzt in Berlin und lerne Deutsch. Die Stadt ist groß und schön. Gestern bin ich im Park spazieren gegangen. Was machst du heute?
+
+Liebe Grüße,
+Anna
+                        </pre>
+                        <p><strong>Translation:</strong> "Berlin, March 15, 2025. Hi Max, how are you? I’m good. I live in Berlin now and learn German. The city is big and beautiful. Yesterday, I went for a walk in the park. What are you doing today? Best regards, Anna."</p>
+                    </div>
+                </div>
+                <div class="subsection">
+                    <h4>Tips</h4>
+                    <div class="examples">
+                        <ul class="example-list">
+                            <li>Use <em>du</em> (informal "you").</li>
+                            <li>Keep it chatty and short.</li>
+                            <li>Add a question to keep the conversation going.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Formal Letters</h3>
+                <p>These are polite and structured, like applying for a job or asking a teacher something.</p>
+                <div class="subsection">
+                    <h4>Structure</h4>
+                    <div class="examples">
+                        <ol class="example-list">
+                            <li><strong>Your Address:</strong> Top left (e.g., <em>Anna Müller, Hauptstraße 10, 10115 Berlin</em>).</li>
+                            <li><strong>Recipient’s Address:</strong> Below yours, one line down.</li>
+                            <li><strong>Date:</strong> Top right.</li>
+                            <li><strong>Greeting:</strong> <em>Sehr geehrte Frau/Herr</em> (Dear Ms./Mr.) + last name.</li>
+                            <li><strong>Body:</strong> Polite sentences, clear purpose.</li>
+                            <li><strong>Closing:</strong> <em>Mit freundlichen Grüßen</em> (Sincerely) or <em>Hochachtungsvoll</em> (Respectfully).</li>
+                            <li><strong>Signature:</strong> Your full name.</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="subsection">
+                    <h4>Example Formal Letter</h4>
+                    <div class="examples">
+                        <pre>
+Anna Müller
+Hauptstraße 10
+10115 Berlin
+
+Herrn Peter Schmidt
+Schillerstraße 5
+80331 München
+
+Berlin, den 15. März 2025
+
+Sehr geehrter Herr Schmidt,
+
+ich schreibe Ihnen, weil ich eine Frage habe. Ich möchte an Ihrem Deutschkurs teilnehmen. Der Kurs beginnt am 1. April. Können Sie mir mehr Informationen schicken?
+
+Vielen Dank im Voraus. Ich freue mich auf Ihre Antwort.
+
+Mit freundlichen Grüßen,
+Anna Müller
+                        </pre>
+                        <p><strong>Translation:</strong> "Anna Müller, Hauptstraße 10, 10115 Berlin. Mr. Peter Schmidt, Schillerstraße 5, 80331 Munich. Berlin, March 15, 2025. Dear Mr. Schmidt, I am writing to you because I have a question. I would like to participate in your German course. The course starts on April 1. Can you send me more information? Thank you in advance. I look forward to your reply. Sincerely, Anna Müller."</p>
+                    </div>
+                </div>
+                <div class="subsection">
+                    <h4>Tips</h4>
+                    <div class="examples">
+                        <ul class="example-list">
+                            <li>Use <em>Sie</em> (formal "you," capitalized).</li>
+                            <li>Be polite and direct—state your purpose clearly.</li>
+                            <li>Avoid slang or casual words.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Writing Essays -->
+        <section id="essays">
+            <h2>3. Writing Essays in German</h2>
+            <div class="subsection">
+                <p>An essay is a short piece of writing about a topic, like "My Family" or "Why I Learn German." For beginners, keep it simple with an intro, body, and conclusion.</p>
+            </div>
+            <div class="subsection">
+                <h3>Structure</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><strong>Introduction (Einleitung):</strong> Say what you’ll write about (1-2 sentences).</li>
+                        <li><strong>Body (Hauptteil):</strong> Give details or examples (3-5 sentences).</li>
+                        <li><strong>Conclusion (Schluss):</strong> Sum it up (1-2 sentences).</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Example Essay: "Meine Familie"</h3>
+                <div class="examples">
+                    <pre>
+Meine Familie
+
+Ich möchte über meine Familie schreiben. Meine Familie ist nicht sehr groß, aber wir sind glücklich.
+
+Ich wohne mit meiner Mutter und meinem Bruder in einem Haus. Meine Mutter heißt Maria und arbeitet als Lehrerin. Mein Bruder ist 15 Jahre alt und geht zur Schule. Wir haben auch einen Hund. Er heißt Max und spielt gern im Garten. Manchmal besuchen wir meine Oma in der Stadt.
+
+Ich liebe meine Familie, weil wir viel zusammen machen. Es ist schön, eine Familie zu haben.
+                    </pre>
+                    <p><strong>Translation:</strong> "My Family. I want to write about my family. My family is not very big, but we are happy. I live with my mother and my brother in a house. My mother is called Maria and works as a teacher. My brother is 15 years old and goes to school. We also have a dog. His name is Max and he likes to play in the garden. Sometimes we visit my grandma in the city. I love my family because we do a lot together. It’s nice to have a family."</p>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Another Example: "Warum ich Deutsch lerne"</h3>
+                <div class="examples">
+                    <pre>
+Warum ich Deutsch lerne
+
+Ich lerne Deutsch, weil es eine schöne Sprache ist. Außerdem möchte ich Deutschland besuchen.
+
+Deutsch ist nicht so schwer, wie viele denken. Ich lerne jeden Tag neue Wörter und Grammatik. Meine Lehrerin hilft mir viel. Ich möchte eines Tages in Berlin wohnen und mit Deutschen sprechen. Die Kultur und die Geschichte sind auch interessant.
+
+Am Ende ist Deutsch lernen Spaß. Ich freue mich auf mehr!
+                    </pre>
+                    <p><strong>Translation:</strong> "Why I Learn German. I learn German because it’s a beautiful language. Also, I want to visit Germany. German isn’t as hard as many think. I learn new words and grammar every day. My teacher helps me a lot. I want to live in Berlin one day and speak with Germans. The culture and history are interesting too. In the end, learning German is fun. I look forward to more!"</p>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Tips</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>Use simple sentences (e.g., <em>Ich wohne...</em>, <em>Mein Bruder ist...</em>).</li>
+                        <li>Stick to one idea per sentence.</li>
+                        <li>Repeat key words (like <em>Familie</em>) to stay on topic.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Writing Practice -->
+        <section id="practice">
+            <h2>Writing Practice</h2>
+            <div class="subsection">
+                <h3>Exercise 1: Write Sentences</h3>
+                <p>Write 5 simple sentences about your day. Example:</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>Ich esse heute Brot.</em> (I eat bread today.)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Exercise 2: Informal Letter</h3>
+                <p>Write a short letter to a friend named Lisa. Tell her about your week and ask a question.</p>
+                <div class="examples">
+                    <p><strong>Starter:</strong></p>
+                    <pre>
+Hamburg, den 15. März 2025
+Hallo Lisa,
+wie geht’s? Ich...
+                    </pre>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Exercise 3: Formal Letter</h3>
+                <p>Write a letter to a teacher (Frau Weber) asking about a German book. Use the formal structure.</p>
+                <div class="examples">
+                    <p><strong>Starter:</strong></p>
+                    <pre>
+[Ihr Name]
+[Ihre Adresse]
+
+Frau Weber
+[Adresse]
+
+[Ort], den 15. März 2025
+
+Sehr geehrte Frau Weber,
+ich schreibe Ihnen, weil...
+                    </pre>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Exercise 4: Mini Essay</h3>
+                <p>Write a 5-7 sentence essay about "Mein Hobby." Start with:</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>Mein Hobby ist...</em></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Common Mistakes -->
+        <section id="mistakes">
+            <h2>Common Mistakes to Avoid</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Verb Position:</strong> Keep the verb second in main clauses (not <em>Ich den Hund sehe</em>, but <em>Ich sehe den Hund</em>).</li>
+                    <li><strong>Capitalization:</strong> Don’t forget to capitalize nouns (e.g., <em>hund</em> → <em>Hund</em>).</li>
+                    <li><strong>Word Order:</strong> Use TMP for extra info (not <em>Ich gehe im Park schnell</em>, but <em>Ich gehe schnell im Park</em>).</li>
+                    <li><strong>Formal vs. Informal:</strong> Use <em>Sie</em> in formal letters, <em>du</em> with friends.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Tips -->
+        <section id="tips">
+            <h2>Tips to Get Better at Writing</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Start Small:</strong> Write 2-3 sentences a day (e.g., <em>Ich bin müde. Ich trinke Wasser.</em>).</li>
+                    <li><strong>Copy Examples:</strong> Rewrite the letters or essays here with your own details.</li>
+                    <li><strong>Check Cases:</strong> Match prepositions to the right case (e.g., <em>mit dem Hund</em>, not <em>mit den Hund</em>).</li>
+                    <li><strong>Read Aloud:</strong> Say your sentences to catch mistakes and practice pronunciation too.</li>
+                    <li><strong>Use a Dictionary:</strong> Look up words (like on <a href="https://www.dict.cc/" target="_blank">dict.cc</a>) to grow your vocab.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Final Thoughts -->
+        <section id="final-thoughts">
+            <h2>Wrapping Up</h2>
+            <p>
+                You’ve got everything to start writing in German! From simple sentences to friendly letters and short essays, you know the structure, rules, and tricks to make it work. Try the exercises, write a little every day, and soon you’ll be writing like a pro. <em>Viel Erfolg beim Schreiben!</em> (Good luck with writing!)
+            </p>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="nouns.html" class="see-also-btn">German Nouns</a>
+                <a href="structure.html" class="see-also-btn">German Sentence Structure</a>
+                <a href="listening.html" class="see-also-btn">German Listening</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="listening.html" class="next-btn">Next: German Listening →</a>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('.toggle-btn');
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const hiddenContent = this.nextElementSibling;
+                    if (hiddenContent.classList.contains('hidden')) {
+                        hiddenContent.classList.remove('hidden');
+                    } else {
+                        hiddenContent.classList.add('hidden');
+                    }
+                });
+            });
+
+            const modeToggle = document.getElementById('mode-toggle');
+            const body = document.body;
+            modeToggle.addEventListener('click', function() {
+                body.classList.toggle('dark-mode');
+                const isDark = body.classList.contains('dark-mode');
+                modeToggle.querySelector('svg').setAttribute('d', isDark ? 
+                    'M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z' : 
+                    'M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z');
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

@@ -1,0 +1,618 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}German Als: The Deep Guide in Nebensätze and Hauptsätze{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/als.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+                <a href="index.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="javascript:history.back()" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>German Als: The Deep Guide in Nebensätze and Hauptsätze</h1>
+            <p>
+                <strong>Als</strong> is a versatile word in German with distinct uses depending on context and clause type. It can act as a <strong>subordinating conjunction</strong> ("when" for one-time past events), a <strong>comparative particle</strong> ("than"), or a <strong>preposition</strong> ("as"). This guide explores each use, its grammar, nuances, and contrasts (e.g., <em>als</em> vs. <em>wenn</em>), with examples and exercises to solidify your understanding. Let’s get started!
+            </p>
+        </section>
+
+        <!-- Als as When -->
+        <section id="als-when">
+            <h2>1. Als as a Subordinating Conjunction in Nebensätze ("When")</h2>
+            <div class="subsection">
+                <h3>What It Means</h3>
+                <ul class="example-list">
+                    <li><strong>Definition</strong>: <em>Als</em> means "when" and refers to <strong>one-time events in the past</strong>. It’s tied to specific moments, not repeated actions.</li>
+                    <li><strong>Tone</strong>: Factual, pinpointing a single occurrence.</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>Grammar and Structure</h3>
+                <ul class="example-list">
+                    <li><strong>Clause Type</strong>: Subordinate (Nebensatz).</li>
+                    <li><strong>Word Order</strong>: Verb goes to the <strong>end</strong> of the clause.</li>
+                    <li><strong>Tenses</strong>: Used with past tenses—Präteritum, Perfekt, or Plusquamperfekt.</li>
+                    <li><strong>Punctuation</strong>: Comma before <em>als</em> when it follows the main clause; no comma if it starts the sentence.</li>
+                    <li><strong>Structure</strong>:
+                        <ul>
+                            <li>Main clause (V2) + <em>als</em> + subordinate clause (verb at end)—<em>Ich war glücklich, als ich ihn sah.</em> (I was happy when I saw him.)</li>
+                            <li><em>Als</em> + subordinate clause (verb at end) + main clause (V2)—<em>Als ich ihn sah, war ich glücklich.</em> (When I saw him, I was happy.)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>When to Use</h3>
+                <ul class="example-list">
+                    <li><strong>Single Past Events</strong>: Describes a specific moment that happened once.</li>
+                    <li><strong>Narrative</strong>: Common in storytelling or recounting past experiences.</li>
+                </ul>
+                <p><strong>Deep Description</strong>: <em>Als</em> is a time machine—it zooms into a single point in history. Unlike <em>wenn</em> (which handles repeated past events or conditions), <em>als</em> is precise and non-repetitive. It’s the go-to for “that one time when…” stories, locking the action into the past with a clear beginning and end.</p>
+            </div>
+            <div class="subsection">
+                <h3>Examples</h3>
+                <div class="examples">
+                    <h4>Daily Life</h4>
+                    <ol class="example-list">
+                        <li><em>Ich war müde, als ich nach Hause kam.</em> (I was tired when I got home.)</li>
+                        <li><em>Sie lachte, als sie das hörte.</em> (She laughed when she heard that.)</li>
+                        <li><em>Es regnete, als wir ankamen.</em> (It rained when we arrived.)</li>
+                        <li><em>Er rief an, als ich schlief.</em> (He called when I was sleeping.)</li>
+                        <li><em>Als ich jung war, spielte ich viel.</em> (When I was young, I played a lot.)</li>
+                    </ol>
+                    <h4>Past Tenses</h4>
+                    <ol class="example-list">
+                        <li><em>Ich habe geweint, als ich das sah.</em> (I cried when I saw that—Perfekt.)</li>
+                        <li><em>Sie war froh, als sie gewonnen hatte.</em> (She was happy when she had won—Plusquamperfekt.)</li>
+                        <li><em>Als er sprach, hörten alle zu.</em> (When he spoke, everyone listened—Präteritum.)</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Als as Than -->
+        <section id="als-than">
+            <h2>2. *Als* as a Comparative Particle ("Than")</h2>
+            <div class="subsection">
+                <h3>What It Means</h3>
+                <ul class="example-list">
+                    <li><strong>Definition</strong>: <em>Als</em> means "than" in comparisons, contrasting two things (e.g., bigger <em>than</em>, faster <em>than</em>).</li>
+                    <li><strong>Tone</strong>: Analytical, relational—sets up a hierarchy.</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>Grammar and Structure</h3>
+                <ul class="example-list">
+                    <li><strong>Clause Type</strong>: Can appear in Hauptsätze (main clauses) or Nebensätze (subordinate clauses).</li>
+                    <li><strong>Word Order</strong>:
+                        <ul>
+                            <li>In Hauptsätze: Normal V2 order, <em>als</em> follows the comparative adjective—<em>Er ist größer als ich.</em> (He is taller than I.)</li>
+                            <li>In Nebensätze: Verb at end if part of a subordinate structure—<em>Ich weiß, dass er größer ist als ich.</em> (I know that he’s taller than I.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Punctuation</strong>: No comma unless part of a larger clause structure.</li>
+                    <li><strong>Structure</strong>: Subject + verb + comparative adjective + <em>als</em> + object of comparison.</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>When to Use</h3>
+                <ul class="example-list">
+                    <li><strong>Comparisons</strong>: With Komparativ (<em>-er</em>) forms of adjectives or <em>mehr/weniger</em> (more/less).</li>
+                    <li><strong>Daily Contrast</strong>: Common in statements about differences.</li>
+                </ul>
+                <p><strong>Deep Description</strong>: <em>Als</em> as "than" is the glue of comparison—it pits one thing against another, highlighting superiority, inferiority, or difference. It’s essential with adjectives like <em>schneller</em> (faster), <em>kleiner</em> (smaller), or phrases like <em>mehr als</em> (more than). It’s direct and sticks close to the adjective, unlike English where "than" can drift further in a sentence.</p>
+            </div>
+            <div class="subsection">
+                <h3>Examples</h3>
+                <div class="examples">
+                    <h4>Hauptsätze</h4>
+                    <ol class="example-list">
+                        <li><em>Sie ist schneller als er.</em> (She’s faster than he is.)</li>
+                        <li><em>Das Buch ist teurer als das Heft.</em> (The book is more expensive than the notebook.)</li>
+                        <li><em>Ich habe mehr Geld als du.</em> (I have more money than you.)</li>
+                        <li><em>Er läuft besser als ich.</em> (He runs better than I do.)</li>
+                        <li><em>Das Auto ist größer als das Fahrrad.</em> (The car is bigger than the bike.)</li>
+                    </ol>
+                    <h4>Nebensätze</h4>
+                    <ol class="example-list">
+                        <li><em>Ich denke, dass sie schlauer ist als er.</em> (I think that she’s smarter than he is.)</li>
+                        <li><em>Er weiß, dass das Haus teurer ist als die Wohnung.</em> (He knows that the house is more expensive than the apartment.)</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Als as As -->
+        <section id="als-as">
+            <h2>3. *Als* as a Preposition in Hauptsätze ("As")</h2>
+            <div class="subsection">
+                <h3>What It Means</h3>
+                <ul class="example-list">
+                    <li><strong>Definition</strong>: <em>Als</em> means "as," indicating a role, function, or identity.</li>
+                    <li><strong>Tone</strong>: Descriptive, defining—assigns a temporary or situational label.</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>Grammar and Structure</h3>
+                <ul class="example-list">
+                    <li><strong>Clause Type</strong>: Hauptsätze (main clauses).</li>
+                    <li><strong>Word Order</strong>: Normal V2 order; <em>als</em> + noun (no verb shift).</li>
+                    <li><strong>Case</strong>: Usually accusative (e.g., <em>als Lehrer</em> – as a teacher).</li>
+                    <li><strong>Punctuation</strong>: No comma unless part of a larger structure.</li>
+                    <li><strong>Structure</strong>: Subject + verb + <em>als</em> + noun.</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>When to Use</h3>
+                <ul class="example-list">
+                    <li><strong>Roles/Occupations</strong>: Describes someone acting "as" something (e.g., a job).</li>
+                    <li><strong>Temporary States</strong>: Highlights a specific context or function.</li>
+                </ul>
+                <p><strong>Deep Description</strong>: <em>Als</em> as a preposition is a label maker—it tags someone or something with a role or identity for a moment. It’s distinct from <em>wie</em> (like/similar to), which compares without assigning a function. Think of it as “in the capacity of”—it’s common in professional or situational contexts, always in the main clause.</p>
+            </div>
+            <div class="subsection">
+                <h3>Examples</h3>
+                <div class="examples">
+                    <h4>Professions</h4>
+                    <ol class="example-list">
+                        <li><em>Er arbeitet als Lehrer.</em> (He works as a teacher.)</li>
+                        <li><em>Sie begann als Ärztin.</em> (She started as a doctor.)</li>
+                        <li><em>Ich helfe als Assistent.</em> (I help as an assistant.)</li>
+                    </ol>
+                    <h4>Situational Roles</h4>
+                    <ol class="example-list">
+                        <li><em>Er trat als Held auf.</em> (He appeared as a hero.)</li>
+                        <li><em>Das dient als Beispiel.</em> (That serves as an example.)</li>
+                    </ol>
+                    <h4>Daily Use</h4>
+                    <ol class="example-list">
+                        <li><em>Ich benutze es als Tisch.</em> (I use it as a table.)</li>
+                        <li><em>Sie sieht ihn als Freund.</em> (She sees him as a friend.)</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nuances -->
+        <section id="nuances">
+            <h2>Deep Details and Nuances</h2>
+            <div class="subsection">
+                <h3>1. <em>Als</em> vs. <em>Wenn</em> (When)</h3>
+                <ul class="example-list">
+                    <li><strong>Als</strong>: One-time past events in Nebensätze—<em>Als ich ihn sah, war ich froh.</em> (When I saw him, I was happy—once.)</li>
+                    <li><strong>Wenn</strong>: Repeated past events or conditions (present/future)—<em>Wenn ich ihn sah, war ich froh.</em> (Whenever I saw him, I was happy—repeated.)</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>2. <em>Als</em> vs. <em>Wie</em> (As/Like)</h3>
+                <ul class="example-list">
+                    <li><strong>Als</strong>: Role/function in Hauptsätze—<em>Er arbeitet als Lehrer.</em> (He works as a teacher—job.)</li>
+                    <li><strong>Wie</strong>: Similarity/comparison—<em>Er arbeitet wie ein Lehrer.</em> (He works like a teacher—manner.)</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>3. Tense Restrictions</h3>
+                <ul class="example-list">
+                    <li><em>Als</em> (when) avoids present/future—use <em>wenn</em> instead.</li>
+                    <li>Wrong: <em>Als ich komme, bin ich froh.</em> (Use <em>Wenn ich komme…</em>)</li>
+                    <li>Right: <em>Als ich kam, war ich froh.</em> (Past only.)</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>4. Comparative Flexibility</h3>
+                <ul class="example-list">
+                    <li><em>Als</em> (than) can compare nouns, pronouns, or clauses.</li>
+                    <li><em>Er ist größer als ich.</em> (He’s taller than I.)</li>
+                    <li><em>Das ist besser, als ich dachte.</em> (That’s better than I thought.)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Examples -->
+        <section id="examples">
+            <h2>Tons of Example Sentences</h2>
+            <div class="subsection">
+                <h3><em>Als</em> in Nebensätze ("When")</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Ich war zehn, als wir umgezogen sind.</em> (I was ten when we moved.)</li>
+                        <li><em>Sie schrie, als sie das Geschenk sah.</em> (She shouted when she saw the gift.)</li>
+                        <li><em>Es war still, als er sprach.</em> (It was quiet when he spoke.)</li>
+                        <li><em>Als ich aufwachte, war es dunkel.</em> (When I woke up, it was dark.)</li>
+                        <li><em>Wir haben gelacht, als der Film anfing.</em> (We laughed when the movie started.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3><em>Als</em> in Hauptsätze/Nebensätze ("Than")</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Er ist älter als ich.</em> (He’s older than I am.)</li>
+                        <li><em>Das Haus ist schöner als das andere.</em> (The house is nicer than the other one.)</li>
+                        <li><em>Ich habe weniger Zeit als du.</em> (I have less time than you.)</li>
+                        <li><em>Sie weiß, dass er schneller läuft als ich.</em> (She knows that he runs faster than I do.)</li>
+                        <li><em>Das kostet mehr, als ich dachte.</em> (That costs more than I thought.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3><em>Als</em> in Hauptsätze ("As")</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Sie arbeitet als Köchin.</em> (She works as a cook.)</li>
+                        <li><em>Er kam als Gast.</em> (He came as a guest.)</li>
+                        <li><em>Ich benutze das als Decke.</em> (I use that as a blanket.)</li>
+                        <li><em>Das gilt als Beweis.</em> (That counts as proof.)</li>
+                        <li><em>Er sieht sie als Schwester.</em> (He sees her as a sister.)</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercises -->
+        <section id="practice">
+            <h2>Creative Exercises with Multiple-Choice Options</h2>
+            <div class="subsection" id="exercise1">
+                <h3>Exercise 1: <em>Als</em> as "When" (Nebensätze)</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Ich war froh, ___ ich ihn sah.
+                            <select class="answer-select" data-correct="als">
+                                <option value="">Select</option>
+                                <option value="als">als</option>
+                                <option value="wenn">wenn</option>
+                                <option value="deshalb">deshalb</option>
+                            </select>
+                        </li>
+                        <li>___ sie ankam, regnete es.
+                            <select class="answer-select" data-correct="Als">
+                                <option value="">Select</option>
+                                <option value="Als">Als</option>
+                                <option value="Wenn">Wenn</option>
+                                <option value="Wie">Wie</option>
+                            </select>
+                        </li>
+                        <li>Er lachte, ___ er das hörte.
+                            <select class="answer-select" data-correct="als">
+                                <option value="">Select</option>
+                                <option value="als">als</option>
+                                <option value="wenn">wenn</option>
+                                <option value="trotzdem">trotzdem</option>
+                            </select>
+                        </li>
+                        <li>___ ich jung war, spielte ich viel.
+                            <select class="answer-select" data-correct="Als">
+                                <option value="">Select</option>
+                                <option value="Als">Als</option>
+                                <option value="Wenn">Wenn</option>
+                                <option value="Deshalb">Deshalb</option>
+                            </select>
+                        </li>
+                        <li>Sie weinte, ___ sie das sah.
+                            <select class="answer-select" data-correct="als">
+                                <option value="">Select</option>
+                                <option value="als">als</option>
+                                <option value="wenn">wenn</option>
+                                <option value="wie">wie</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>als</em></li>
+                            <li><em>Als</em></li>
+                            <li><em>als</em></li>
+                            <li><em>Als</em></li>
+                            <li><em>als</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection" id="exercise2">
+                <h3>Exercise 2: <em>Als</em> as "Than" (Hauptsätze/Nebensätze)</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Er ist größer ___ ich.
+                            <select class="answer-select" data-correct="als">
+                                <option value="">Select</option>
+                                <option value="als">als</option>
+                                <option value="wenn">wenn</option>
+                                <option value="wie">wie</option>
+                            </select>
+                        </li>
+                        <li>Das Buch ist teurer ___ das Heft.
+                            <select class="answer-select" data-correct="als">
+                                <option value="">Select</option>
+                                <option value="als">als</option>
+                                <option value="als wenn">als wenn</option>
+                                <option value="deshalb">deshalb</option>
+                            </select>
+                        </li>
+                        <li>Ich weiß, dass sie schneller ist ___ er.
+                            <select class="answer-select" data-correct="als">
+                                <option value="">Select</option>
+                                <option value="als">als</option>
+                                <option value="wenn">wenn</option>
+                                <option value="wie">wie</option>
+                            </select>
+                        </li>
+                        <li>Sie hat mehr Geld ___ du.
+                            <select class="answer-select" data-correct="als">
+                                <option value="">Select</option>
+                                <option value="als">als</option>
+                                <option value="wenn">wenn</option>
+                                <option value="trotzdem">trotzdem</option>
+                            </select>
+                        </li>
+                        <li>Das ist besser, ___ ich dachte.
+                            <select class="answer-select" data-correct="als">
+                                <option value="">Select</option>
+                                <option value="als">als</option>
+                                <option value="wenn">wenn</option>
+                                <option value="wie">wie</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>als</em></li>
+                            <li><em>als</em></li>
+                            <li><em>als</em></li>
+                            <li><em>als</em></li>
+                            <li><em>als</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection" id="exercise3">
+                <h3>Exercise 3: <em>Als</em> as "As" (Hauptsätze)</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Er arbeitet ___ Lehrer.
+                            <select class="answer-select" data-correct="als">
+                                <option value="">Select</option>
+                                <option value="als">als</option>
+                                <option value="wie">wie</option>
+                                <option value="wenn">wenn</option>
+                            </select>
+                        </li>
+                        <li>Sie begann ___ Ärztin.
+                            <select class="answer-select" data-correct="als">
+                                <option value="">Select</option>
+                                <option value="als">als</option>
+                                <option value="wie">wie</option>
+                                <option value="deshalb">deshalb</option>
+                            </select>
+                        </li>
+                        <li>Ich benutze es ___ Tisch.
+                            <select class="answer-select" data-correct="als">
+                                <option value="">Select</option>
+                                <option value="als">als</option>
+                                <option value="wie">wie</option>
+                                <option value="wenn">wenn</option>
+                            </select>
+                        </li>
+                        <li>Das dient ___ Beispiel.
+                            <select class="answer-select" data-correct="als">
+                                <option value="">Select</option>
+                                <option value="als">als</option>
+                                <option value="wie">wie</option>
+                                <option value="trotzdem">trotzdem</option>
+                            </select>
+                        </li>
+                        <li>Er sieht sie ___ Freundin.
+                            <select class="answer-select" data-correct="als">
+                                <option value="">Select</option>
+                                <option value="als">als</option>
+                                <option value="wie">wie</option>
+                                <option value="wenn">wenn</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>als</em></li>
+                            <li><em>als</em></li>
+                            <li><em>als</em></li>
+                            <li><em>als</em></li>
+                            <li><em>als</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection" id="exercise4">
+                <h3>Exercise 4: Mixed <em>Als</em> Story</h3>
+                <p>Fill in with the correct use of <em>als</em>.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>___ ich ihn sah, war ich froh.
+                            <select class="answer-select" data-correct="Als">
+                                <option value="">Select</option>
+                                <option value="Als">Als</option>
+                                <option value="Wenn">Wenn</option>
+                                <option value="Wie">Wie</option>
+                            </select>
+                        </li>
+                        <li>Er ist größer ___ ich.
+                            <select class="answer-select" data-correct="als">
+                                <option value="">Select</option>
+                                <option value="als">als</option>
+                                <option value="wenn">wenn</option>
+                                <option value="wie">wie</option>
+                            </select>
+                        </li>
+                        <li>Er arbeitet ___ Lehrer.
+                            <select class="answer-select" data-correct="als">
+                                <option value="">Select</option>
+                                <option value="als">als</option>
+                                <option value="wie">wie</option>
+                                <option value="wenn">wenn</option>
+                            </select>
+                        </li>
+                        <li>___ wir ankamen, war es spät.
+                            <select class="answer-select" data-correct="Als">
+                                <option value="">Select</option>
+                                <option value="Als">Als</option>
+                                <option value="Wenn">Wenn</option>
+                                <option value="Deshalb">Deshalb</option>
+                            </select>
+                        </li>
+                        <li>Das Haus ist schöner ___ das andere.
+                            <select class="answer-select" data-correct="als">
+                                <option value="">Select</option>
+                                <option value="als">als</option>
+                                <option value="wenn">wenn</option>
+                                <option value="wie">wie</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Als</em></li>
+                            <li><em>als</em></li>
+                            <li><em>als</em></li>
+                            <li><em>Als</em></li>
+                            <li><em>als</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips -->
+        <section id="tips">
+            <h2>Deep Tips to Master *Als*</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>When Test</strong>: <em>Als</em> = one-time past (<em>Als ich kam…</em>); <em>wenn</em> = repeated/conditional (<em>Wenn ich komme…</em>).</li>
+                    <li><strong>Than Clue</strong>: After <em>-er</em> or <em>mehr/weniger</em>, use <em>als</em> (<em>schneller als</em>).</li>
+                    <li><strong>As Check</strong>: Role/function = <em>als</em> (<em>als Lehrer</em>); similarity = <em>wie</em> (<em>wie ein Lehrer</em>).</li>
+                    <li><strong>Verb Last</strong>: In Nebensätze with <em>als</em> (when), push the verb to the end—<em>als ich kam</em>.</li>
+                    <li><strong>Daily Use</strong>: Narrate with <em>als</em> (<em>Als ich aß…</em>), compare with <em>als</em> (<em>besser als</em>), or label with <em>als</em> (<em>als Freund</em>).</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Final Thoughts -->
+        <section id="final-thoughts">
+            <h2>You’re Ready!</h2>
+            <p>
+                This deep guide covers <em>als</em> in Nebensätze and Hauptsätze—meanings, rules, examples, and exercises. You’re ready to use it like a native! Next, you could explore <em>wenn</em> further, mix <em>als</em> with Konjunktiv, or tackle prepositions—your choice!
+            </p>
+        </section>
+
+        <!-- Resources -->
+        <section id="resources">
+            <h2>Resources for Extra Practice</h2>
+            <div class="see-also-links">
+                <a href="https://www.goethe.de/de/spr/ueb.html" class="see-also-rect">
+                    Goethe A1/A2 Wortliste<br><em>Als</em> in context.<br><br>
+                    <button class="resource-btn">Visit Goethe Wortliste</button>
+                </a>
+                <a href="https://www.youtube.com/c/easygerman" class="see-also-rect">
+                    YouTube – EASY German<br>Hear <em>als</em> in action.<br><br>
+                    <button class="resource-btn">Visit EASY German</button>
+                </a>
+                <a href="https://www.schubert-verlag.de/" class="see-also-rect">
+                    Schubert Verlag<br>Free <em>als</em> exercises.<br><br>
+                    <button class="resource-btn">Visit Schubert Verlag</button>
+                </a>
+            </div>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="deshalbtrotzdem.html" class="see-also-rect">Deshalb & Trotzdem</a>
+                <a href="genetivname.html" class="see-also-rect">Genitive with Names</a>
+                <a href="wenn.html" class="see-also-rect">German Wenn</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="wenn.html" class="next-btn">Next: Wenn →</a>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Dark/Light mode toggle
+            const modeToggle = document.getElementById('mode-toggle');
+            const body = document.body;
+            modeToggle.addEventListener('click', function() {
+                body.classList.toggle('dark-mode');
+                const isDark = body.classList.contains('dark-mode');
+                modeToggle.querySelector('svg').setAttribute('d', isDark ? 
+                    'M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z' : 
+                    'M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z');
+            });
+
+            // Check Answers functionality
+            document.querySelectorAll('.check-answers').forEach(button => {
+                button.addEventListener('click', function() {
+                    const exercise = this.closest('.subsection');
+                    const selects = exercise.querySelectorAll('.answer-select');
+                    selects.forEach(select => {
+                        const correctAnswer = select.getAttribute('data-correct');
+                        const userAnswer = select.value;
+                        if (userAnswer === correctAnswer) {
+                            select.style.border = '2px solid #2e7d32';
+                        } else if (userAnswer !== '') {
+                            select.style.border = '2px solid #d32f2f';
+                        } else {
+                            select.style.border = '1px solid #ccc';
+                        }
+                    });
+                });
+            });
+
+            // Show Answers functionality
+            document.querySelectorAll('.show-answers').forEach(button => {
+                button.addEventListener('click', function() {
+                    const exercise = this.closest('.subsection');
+                    const answers = exercise.querySelector('.answers');
+                    if (answers.classList.contains('hidden')) {
+                        answers.classList.remove('hidden');
+                    } else {
+                        answers.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

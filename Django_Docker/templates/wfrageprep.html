@@ -1,0 +1,541 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}W-Fragen with Prepositions in German{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/wfrageprep.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+                <a href="index.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="a1-topics.html" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>W-Fragen with Prepositions in German</h1>
+            <p>
+                A straightforward guide to W-Fragen mit Präpositionen, explaining how to form questions with prepositions, featuring 25 common examples, exercises, and resources for practice.
+            </p>
+        </section>
+
+        <!-- Understanding -->
+        <section id="understanding">
+            <h2>Understanding W-Fragen with Prepositions in German</h2>
+            <p>W-Fragen are "wh-" questions starting with words like 'wer' (who), 'was' (what), 'wo' (where), 'wann' (when), 'wie' (how), 'warum' (why), or 'welch-' (which). When paired with verbs requiring prepositions (e.g., 'warten auf'), the preposition is included in the question. The case depends on the preposition.</p>
+            <div class="subsection">
+                <h3>Key Points</h3>
+                <ul class="example-list">
+                    <li><strong>Structure</strong>: Preposition + W-word (e.g., 'auf wen', 'an was').</li>
+                    <li><strong>Case Matters</strong>: Preposition sets the case (e.g., 'auf' → accusative, 'mit' → dative).</li>
+                    <li><strong>Word Order</strong>: Verb second, subject follows (e.g., 'Worauf wartest du?').</li>
+                    <li><strong>Common W-Words</strong>: 'worauf', 'womit', 'an wen', etc.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section id="how-it-works">
+            <h2>How W-Fragen with Prepositions Work</h2>
+            <p>Combine the preposition with a W-word to ask about the verb’s object:</p>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Verb + Preposition</strong>: 'warten auf' (to wait for).</li>
+                    <li><strong>Question</strong>: 'Worauf wartest du?' (What are you waiting for?)</li>
+                    <li><strong>Answer</strong>: 'Ich warte auf den Bus.' (I’m waiting for the bus.)</li>
+                </ul>
+            </div>
+            <p>The W-word varies by answer type:</p>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Wer</strong> (who): 'Auf wen wartest du?' (Who are you waiting for?)</li>
+                    <li><strong>Was</strong> (what): 'Worauf wartest du?' (What are you waiting for?)</li>
+                    <li><strong>Wo</strong> (where): 'Worauf' (on what), 'Womit' (with what).</li>
+                </ul>
+            </div>
+        </section>
+
+                <!-- List of W-Fragen -->
+                <section id="list">
+                    <h2>List of 25 Common W-Fragen with Prepositions</h2>
+                    <div class="table-container">
+                        <table>
+                            <tr><th>Verb</th><th>Preposition</th><th>Case</th><th>W-Frage</th><th>Sample Answer</th></tr>
+                            <tr><td><strong>warten auf</strong></td><td>auf</td><td>Accusative</td><td><em>Worauf wartest du?</em></td><td><em>Ich warte auf meine Freunde.</em> (I wait for my friends.)</td></tr>
+                            <tr><td><strong>sich freuen auf</strong></td><td>auf</td><td>Accusative</td><td><em>Worauf freust du dich?</em></td><td><em>Ich freue mich auf das Konzert.</em> (I’m looking forward to the concert.)</td></tr>
+                            <tr><td><strong>sich interessieren für</strong></td><td>für</td><td>Accusative</td><td><em>Wofür interessierst du dich?</em></td><td><em>Ich interessiere mich für Kunst.</em> (I’m interested in art.)</td></tr>
+                            <tr><td><strong>fragen nach</strong></td><td>nach</td><td>Dative</td><td><em>Wonach fragst du?</em></td><td><em>Ich frage nach der Adresse.</em> (I ask about the address.)</td></tr>
+                            <tr><td><strong>sprechen über</strong></td><td>über</td><td>Accusative</td><td><em>Worüber sprichst du?</em></td><td><em>Ich spreche über meine Arbeit.</em> (I talk about my work.)</td></tr>
+                            <tr><td><strong>denken an</strong></td><td>an</td><td>Dative</td><td><em>An wen denkst du?</em></td><td><em>Ich denke an meinen Bruder.</em> (I think about my brother.)</td></tr>
+                            <tr><td><strong>helfen mit</strong></td><td>mit</td><td>Dative</td><td><em>Womit hilfst du?</em></td><td><em>Ich helfe mit der Planung.</em> (I help with the planning.)</td></tr>
+                            <tr><td><strong>danken für</strong></td><td>für</td><td>Dative</td><td><em>Wofür dankst du?</em></td><td><em>Ich danke für die Einladung.</em> (I thank for the invitation.)</td></tr>
+                            <tr><td><strong>sich erinnern an</strong></td><td>an</td><td>Accusative</td><td><em>Woran erinnerst du dich?</em></td><td><em>Ich erinnere mich an die Party.</em> (I remember the party.)</td></tr>
+                            <tr><td><strong>antworten auf</strong></td><td>auf</td><td>Accusative</td><td><em>Worauf antwortest du?</em></td><td><em>Ich antworte auf die Nachricht.</em> (I answer the message.)</td></tr>
+                            <tr><td><strong>gehören zu</strong></td><td>zu</td><td>Dative</td><td><em>Wozu gehört das?</em></td><td><em>Das gehört zu meiner Aufgabe.</em> (That belongs to my task.)</td></tr>
+                            <tr><td><strong>sich ärgern über</strong></td><td>über</td><td>Accusative</td><td><em>Worüber ärgerst du dich?</em></td><td><em>Ich ärgere mich über die Verspätung.</em> (I’m annoyed about the delay.)</td></tr>
+                            <tr><td><strong>aufpassen auf</strong></td><td>auf</td><td>Accusative</td><td><em>Auf wen passt du auf?</em></td><td><em>Ich passe auf meinen Bruder auf.</em> (I look after my brother.)</td></tr>
+                            <tr><td><strong>ankommen auf</strong></td><td>auf</td><td>Accusative</td><td><em>Worauf kommt es an?</em></td><td><em>Es kommt auf die Details an.</em> (It depends on the details.)</td></tr>
+                            <tr><td><strong>bitten um</strong></td><td>um</td><td>Accusative</td><td><em>Worum bittest du?</em></td><td><em>Ich bitte um einen Rat.</em> (I ask for advice.)</td></tr>
+                            <tr><td><strong>sich kümmern um</strong></td><td>um</td><td>Accusative</td><td><em>Worum kümmerst du dich?</em></td><td><em>Ich kümmere mich um die Kinder.</em> (I take care of the children.)</td></tr>
+                            <tr><td><strong>lachen über</strong></td><td>über</td><td>Accusative</td><td><em>Worüber lachst du?</em></td><td><em>Ich lache über die Geschichte.</em> (I laugh about the story.)</td></tr>
+                            <tr><td><strong>schreiben an</strong></td><td>an</td><td>Accusative</td><td><em>An wen schreibst du?</em></td><td><em>Ich schreibe an meine Lehrerin.</em> (I write to my teacher.)</td></tr>
+                            <tr><td><strong>teilnehmen an</strong></td><td>an</td><td>Dative</td><td><em>Woran nimmst du teil?</em></td><td><em>Ich nehme an der Veranstaltung teil.</em> (I participate in the event.)</td></tr>
+                            <tr><td><strong>zweifeln an</strong></td><td>an</td><td>Dative</td><td><em>Woran zweifelst du?</em></td><td><em>Ich zweifle an der Entscheidung.</em> (I doubt the decision.)</td></tr>
+                            <tr><td><strong>beginnen mit</strong></td><td>mit</td><td>Dative</td><td><em>Womit beginnst du?</em></td><td><em>Ich beginne mit einem Buch.</em> (I begin with a book.)</td></tr>
+                            <tr><td><strong>abhängen von</strong></td><td>von</td><td>Dative</td><td><em>Wovon hängt es ab?</em></td><td><em>Es hängt von der Situation ab.</em> (It depends on the situation.)</td></tr>
+                            <tr><td><strong>verstehen von</strong></td><td>von</td><td>Dative</td><td><em>Wovon verstehst du etwas?</em></td><td><em>Ich verstehe etwas von Technik.</em> (I understand something about technology.)</td></tr>
+                            <tr><td><strong>träumen von</strong></td><td>von</td><td>Dative</td><td><em>Wovon träumst du?</em></td><td><em>Ich träume von einer Reise.</em> (I dream of a trip.)</td></tr>
+                            <tr><td><strong>sich verlieben in</strong></td><td>in</td><td>Accusative</td><td><em>In wen verliebst du dich?</em></td><td><em>Ich verliebe mich in meinen Kollegen.</em> (I fall in love with my colleague.)</td></tr>
+                        </table>
+                    </div>
+                </section>
+
+        <!-- Uses -->
+        <section id="uses">
+            <h2>Uses of W-Fragen with Prepositions</h2>
+            <div class="subsection">
+                <h3>Asking About Objects</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Worauf wartest du?</em> (What are you waiting for?)</li>
+                        <li><em>Womit hilfst du?</em> (What are you helping with?)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Asking About People</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Auf wen passt du auf?</em> (Who are you looking after?)</li>
+                        <li><em>An wen denkst du?</em> (Who are you thinking about?)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Clarifying Details</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Wofür interessierst du dich?</em> (What are you interested in?)</li>
+                        <li><em>Worüber sprichst du?</em> (What are you talking about?)</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Examples -->
+        <section id="examples">
+            <h2>Detailed Examples</h2>
+            <div class="examples">
+                <ol class="example-list">
+                    <li><em>Worauf wartest du heute?</em>  
+                        - <em>Ich warte auf den Bus.</em> (I’m waiting for the bus.)</li>
+                    <li><em>Worauf freust du dich am meisten?</em>  
+                        - <em>Ich freue mich auf den Urlaub.</em> (I’m looking forward to the vacation.)</li>
+                    <li><em>Wonach fragst du immer?</em>  
+                        - <em>Ich frage nach dem Weg.</em> (I ask about the way.)</li>
+                    <li><em>An wen denkst du gerade?</em>  
+                        - <em>Ich denke an meine Schwester.</em> (I think about my sister.)</li>
+                    <li><em>Womit beginnst du den Tag?</em>  
+                        - <em>Ich beginne mit einem Kaffee.</em> (I begin with a coffee.)</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Exercises -->
+        <section id="practice">
+            <h2>Exercises to Master W-Fragen with Prepositions</h2>
+            <div class="subsection" id="exercise1">
+                <h3>Exercise 1: Choose the Correct W-Frage</h3>
+                <p>Select the right question word with preposition.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>___ wartest du?  
+                            <select class="answer-select" data-correct="Worauf">
+                                <option value="">Select</option>
+                                <option value="Worauf">Worauf</option>
+                                <option value="Womit">Womit</option>
+                                <option value="An wen">An wen</option>
+                            </select>
+                        </li>
+                        <li>___ freust du dich?  
+                            <select class="answer-select" data-correct="Worauf">
+                                <option value="">Select</option>
+                                <option value="Wofür">Wofür</option>
+                                <option value="Worauf">Worauf</option>
+                                <option value="Wonach">Wonach</option>
+                            </select>
+                        </li>
+                        <li>___ hilfst du deiner Mutter?  
+                            <select class="answer-select" data-correct="Womit">
+                                <option value="">Select</option>
+                                <option value="Womit">Womit</option>
+                                <option value="Worüber">Worüber</option>
+                                <option value="Auf wen">Auf wen</option>
+                            </select>
+                        </li>
+                        <li>___ spricht er?  
+                            <select class="answer-select" data-correct="Worüber">
+                                <option value="">Select</option>
+                                <option value="Worüber">Worüber</option>
+                                <option value="Wovon">Wovon</option>
+                                <option value="An wen">An wen</option>
+                            </select>
+                        </li>
+                        <li>___ denkst du oft?  
+                            <select class="answer-select" data-correct="An wen">
+                                <option value="">Select</option>
+                                <option value="An wen">An wen</option>
+                                <option value="Auf wen">Auf wen</option>
+                                <option value="Worum">Worum</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Worauf</em></li>
+                            <li><em>Worauf</em></li>
+                            <li><em>Womit</em></li>
+                            <li><em>Worüber</em></li>
+                            <li><em>An wen</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection" id="exercise2">
+                <h3>Exercise 2: Match Verb and W-Frage</h3>
+                <p>Match the verb to its correct W-Frage.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Sich freuen auf  
+                            <select class="answer-select" data-correct="Worauf freust du dich?">
+                                <option value="">Select</option>
+                                <option value="Worauf freust du dich?">Worauf freust du dich?</option>
+                                <option value="Wofür freust du dich?">Wofür freust du dich?</option>
+                            </select>
+                        </li>
+                        <li>Antworten auf  
+                            <select class="answer-select" data-correct="Worauf antwortest du?">
+                                <option value="">Select</option>
+                                <option value="Worauf antwortest du?">Worauf antwortest du?</option>
+                                <option value="Womit antwortest du?">Womit antwortest du?</option>
+                            </select>
+                        </li>
+                        <li>Fragen nach  
+                            <select class="answer-select" data-correct="Wonach fragst du?">
+                                <option value="">Select</option>
+                                <option value="Wonach fragst du?">Wonach fragst du?</option>
+                                <option value="Wofür fragst du?">Wofür fragst du?</option>
+                            </select>
+                        </li>
+                        <li>Denken an  
+                            <select class="answer-select" data-correct="An wen denkst du?">
+                                <option value="">Select</option>
+                                <option value="An wen denkst du?">An wen denkst du?</option>
+                                <option value="Auf wen denkst du?">Auf wen denkst du?</option>
+                            </select>
+                        </li>
+                        <li>Träumen von  
+                            <select class="answer-select" data-correct="Wovon träumst du?">
+                                <option value="">Select</option>
+                                <option value="Wovon träumst du?">Wovon träumst du?</option>
+                                <option value="Womit träumst du?">Womit träumst du?</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Worauf freust du dich?</em></li>
+                            <li><em>Worauf antwortest du?</em></li>
+                            <li><em>Wonach fragst du?</em></li>
+                            <li><em>An wen denkst du?</em></li>
+                            <li><em>Wovon träumst du?</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection" id="exercise3">
+                <h3>Exercise 3: Translate into German</h3>
+                <p>Translate these questions using the list.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>What are you waiting for?  
+                            <select class="answer-select" data-correct="Worauf wartest du?">
+                                <option value="">Select</option>
+                                <option value="Worauf wartest du?">Worauf wartest du?</option>
+                                <option value="Womit wartest du?">Womit wartest du?</option>
+                            </select>
+                        </li>
+                        <li>Who are you writing to?  
+                            <select class="answer-select" data-correct="An wen schreibst du?">
+                                <option value="">Select</option>
+                                <option value="An wen schreibst du?">An wen schreibst du?</option>
+                                <option value="Auf wen schreibst du?">Auf wen schreibst du?</option>
+                            </select>
+                        </li>
+                        <li>What are you talking about?  
+                            <select class="answer-select" data-correct="Worüber sprichst du?">
+                                <option value="">Select</option>
+                                <option value="Worüber sprichst du?">Worüber sprichst du?</option>
+                                <option value="Wovon sprichst du?">Wovon sprichst du?</option>
+                            </select>
+                        </li>
+                        <li>What do you depend on?  
+                            <select class="answer-select" data-correct="Wovon hängt es ab?">
+                                <option value="">Select</option>
+                                <option value="Wovon hängt es ab?">Wovon hängt es ab?</option>
+                                <option value="Worauf hängt es ab?">Worauf hängt es ab?</option>
+                            </select>
+                        </li>
+                        <li>What are you interested in?  
+                            <select class="answer-select" data-correct="Wofür interessierst du dich?">
+                                <option value="">Select</option>
+                                <option value="Wofür interessierst du dich?">Wofür interessierst du dich?</option>
+                                <option value="Womit interessierst du dich?">Womit interessierst du dich?</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Worauf wartest du?</em></li>
+                            <li><em>An wen schreibst du?</em></li>
+                            <li><em>Worüber sprichst du?</em></li>
+                            <li><em>Wovon hängt es ab?</em></li>
+                            <li><em>Wofür interessierst du dich?</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection" id="exercise4">
+                <h3>Exercise 4: Form Questions</h3>
+                <p>Create W-Fragen based on the answers.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>'Ich warte auf den Zug.'  
+                            <select class="answer-select" data-correct="Worauf wartest du?">
+                                <option value="">Select</option>
+                                <option value="Worauf wartest du?">Worauf wartest du?</option>
+                                <option value="Womit wartest du?">Womit wartest du?</option>
+                            </select>
+                        </li>
+                        <li>'Sie freut sich auf das Fest.'  
+                            <select class="answer-select" data-correct="Worauf freut sie sich?">
+                                <option value="">Select</option>
+                                <option value="Worauf freut sie sich?">Worauf freut sie sich?</option>
+                                <option value="Wofür freut sie sich?">Wofür freut sie sich?</option>
+                            </select>
+                        </li>
+                        <li>'Er hilft mit dem Kochen.'  
+                            <select class="answer-select" data-correct="Womit hilft er?">
+                                <option value="">Select</option>
+                                <option value="Womit hilft er?">Womit hilft er?</option>
+                                <option value="Worüber hilft er?">Worüber hilft er?</option>
+                            </select>
+                        </li>
+                        <li>'Wir denken an unsere Freunde.'  
+                            <select class="answer-select" data-correct="An wen denkt ihr?">
+                                <option value="">Select</option>
+                                <option value="An wen denkt ihr?">An wen denkt ihr?</option>
+                                <option value="Auf wen denkt ihr?">Auf wen denkt ihr?</option>
+                            </select>
+                        </li>
+                        <li>'Ich träume von einem Auto.'  
+                            <select class="answer-select" data-correct="Wovon träumst du?">
+                                <option value="">Select</option>
+                                <option value="Wovon träumst du?">Wovon träumst du?</option>
+                                <option value="Womit träumst du?">Womit träumst du?</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Worauf wartest du?</em></li>
+                            <li><em>Worauf freut sie sich?</em></li>
+                            <li><em>Womit hilft er?</em></li>
+                            <li><em>An wen denkt ihr?</em></li>
+                            <li><em>Wovon träumst du?</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection" id="exercise5">
+                <h3>Exercise 5: Answer the Questions</h3>
+                <p>Respond to these W-Fragen with full sentences.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Worauf wartest du?</em>  
+                            <select class="answer-select" data-correct="Ich warte auf meine Schwester.">
+                                <option value="">Select</option>
+                                <option value="Ich warte auf meine Schwester.">Ich warte auf meine Schwester.</option>
+                                <option value="Ich warte mit meine Schwester.">Ich warte mit meine Schwester.</option>
+                            </select>
+                        </li>
+                        <li><em>Wofür dankst du?</em>  
+                            <select class="answer-select" data-correct="Ich danke für das Geschenk.">
+                                <option value="">Select</option>
+                                <option value="Ich danke für das Geschenk.">Ich danke für das Geschenk.</option>
+                                <option value="Ich danke auf das Geschenk.">Ich danke auf das Geschenk.</option>
+                            </select>
+                        </li>
+                        <li><em>Woran erinnerst du dich?</em>  
+                            <select class="answer-select" data-correct="Ich erinnere mich an den Sommer.">
+                                <option value="">Select</option>
+                                <option value="Ich erinnere mich an den Sommer.">Ich erinnere mich an den Sommer.</option>
+                                <option value="Ich erinnere mich auf den Sommer.">Ich erinnere mich auf den Sommer.</option>
+                            </select>
+                        </li>
+                        <li><em>Worum kümmerst du dich?</em>  
+                            <select class="answer-select" data-correct="Ich kümmere mich um die Katze.">
+                                <option value="">Select</option>
+                                <option value="Ich kümmere mich um die Katze.">Ich kümmere mich um die Katze.</option>
+                                <option value="Ich kümmere mich an die Katze.">Ich kümmere mich an die Katze.</option>
+                            </select>
+                        </li>
+                        <li><em>Worüber lachst du?</em>  
+                            <select class="answer-select" data-correct="Ich lache über den Witz.">
+                                <option value="">Select</option>
+                                <option value="Ich lache über den Witz.">Ich lache über den Witz.</option>
+                                <option value="Ich lache an den Witz.">Ich lache an den Witz.</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Ich warte auf meine Schwester.</em></li>
+                            <li><em>Ich danke für das Geschenk.</em></li>
+                            <li><em>Ich erinnere mich an den Sommer.</em></li>
+                            <li><em>Ich kümmere mich um die Katze.</em></li>
+                            <li><em>Ich lache über den Witz.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips -->
+        <section id="tips">
+            <h2>Tips for Mastery</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Pair with Verbs</strong>: Learn the GA as a unit, then add the W-word.</li>
+                    <li><strong>Practice Cases</strong>: Match the W-word to the preposition’s case (e.g., 'auf' → 'worauf').</li>
+                    <li><strong>Ask Yourself</strong>: Use these questions in daily practice (e.g., 'Worauf warte ich?').</li>
+                    <li><strong>Listen Up</strong>: Notice these in German conversations or media.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Resources for Extra Practice -->
+        <section id="resources">
+            <h2>Resources for Extra Practice</h2>
+            <div class="resource-links">
+                <div class="resource-card">
+                    <p><strong>YouTube - Deutsch mit Marija</strong><br>Lessons on question formation.</p>
+                    <a href="https://www.youtube.com/@deutschmitmarija" class="resource-btn">Visit Deutsch mit Marija</a>
+                </div>
+                <div class="resource-card">
+                    <p><strong>Deutsch Lernen (Lingolia)</strong><br>Guides on W-Fragen with prepositions.</p>
+                    <a href="https://deutsch.lingolia.com/en/grammar/sentence-structure/questions" class="resource-btn">Visit Lingolia</a>
+                </div>
+                <div class="resource-card">
+                    <p><strong>YouTube - Easy German</strong><br>Real-life examples of questions.</p>
+                    <a href="https://www.youtube.com/@EasyGerman" class="resource-btn">Visit Easy German</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="damitumzu.html" class="see-also-rect">German Damit and Um...zu</a>
+                <a href="konjunktivII.html" class="see-also-rect">Konjunktiv II: Hätten, Wären, Würden</a>
+                <a href="verbenmitprepositionen.html" class="see-also-rect">Verbs with Prepositions</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="partizip2.html" class="next-btn">Next: Perfekt & Partizip II →</a>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Dark/Light mode toggle
+            const modeToggle = document.getElementById('mode-toggle');
+            const body = document.body;
+            modeToggle.addEventListener('click', function() {
+                body.classList.toggle('dark-mode');
+                const isDark = body.classList.contains('dark-mode');
+                modeToggle.querySelector('svg').setAttribute('d', isDark ? 
+                    'M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z' : 
+                    'M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z');
+            });
+
+            // Check Answers functionality
+            document.querySelectorAll('.check-answers').forEach(button => {
+                button.addEventListener('click', function() {
+                    const exercise = this.closest('.subsection');
+                    const selects = exercise.querySelectorAll('.answer-select');
+                    selects.forEach(select => {
+                        const correctAnswer = select.getAttribute('data-correct');
+                        const userAnswer = select.value;
+                        if (userAnswer === correctAnswer) {
+                            select.style.border = '2px solid #2e7d32';
+                        } else if (userAnswer !== '') {
+                            select.style.border = '2px solid #d32f2f';
+                        } else {
+                            select.style.border = '1px solid #ccc';
+                        }
+                    });
+                });
+            });
+
+            // Show Answers functionality
+            document.querySelectorAll('.show-answers').forEach(button => {
+                button.addEventListener('click', function() {
+                    const exercise = this.closest('.subsection');
+                    const answers = exercise.querySelector('.answers');
+                    if (answers.classList.contains('hidden')) {
+                        answers.classList.remove('hidden');
+                    } else {
+                        answers.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

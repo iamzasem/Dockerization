@@ -1,0 +1,503 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}German Was für ein(e) and Welche(r): The Easy Guide{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/Interrogativartikel.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+                <a href="index.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="javascript:history.back()" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>German Was für ein(e) and Welche(r): The Easy Guide</h1>
+            <p>
+                <strong>"Was für ein(e)"</strong> and <strong>"welche(r)"</strong> are fun ways to ask about stuff in German—like what something is like or which one it is. They’re perfect for questions (like "What kind of dog?") and sometimes sneak into regular sentences too. We’ll keep it simple with examples you’ll love and playful exercises to try. No tricky stuff—just the basics to chat and ask away!
+            </p>
+        </section>
+
+        <!-- Was für ein(e) -->
+        <section id="was-fuer">
+            <h2>1. Was für ein(e) – "What kind of…?"</h2>
+            <div class="subsection">
+                <h3>What It’s For</h3>
+                <p>It’s like asking, "What’s this thing like?" or "What type is it?"—you want to know more, like if it’s big, small, fun, or boring. Example: <em>Was für ein Hund?</em> means "What kind of dog?" (Fluffy? Mean? Tiny?)</p>
+            </div>
+            <div class="subsection">
+                <h3>How It Works</h3>
+                <ul class="example-list">
+                    <li>Say <em>was für</em> plus <em>ein</em> (for boys’ things), <em>eine</em> (for girls’ things), or nothing (for lots of things), then the word.</li>
+                    <li>Boy stuff (like "dog" = <em>Hund</em>): <em>Was für ein Hund?</em></li>
+                    <li>Girl stuff (like "bag" = <em>Tasche</em>): <em>Was für eine Tasche?</em></li>
+                    <li>Lots of stuff (like "people" = <em>Leute</em>): <em>Was für Leute?</em></li>
+                    <li>In questions: <em>Was für ein(e)</em> + thing + action—like <em>Was für ein Buch liest du?</em> (What kind of book are you reading?)</li>
+                    <li>In normal talk (not super common): It’s like "Wow, what a…!"—<em>Das ist was für ein Tag!</em> (What a day!)</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>When You Use It</h3>
+                <p>Asking about stuff: Great for finding out what something’s like. Talking big: Adds a “whoa!” feeling in regular sentences.</p>
+            </div>
+            <div class="subsection">
+                <h3>Examples to Get It</h3>
+                <div class="examples">
+                    <h4>Questions</h4>
+                    <ol class="example-list">
+                        <li><em>Was für ein Hund läuft da?</em> (What kind of dog is running there?—big? small?)</li>
+                        <li><em>Was für eine Tasche hast du?</em> (What kind of bag do you have?—fancy? old?)</li>
+                        <li><em>Was für Leute kommen?</em> (What kind of people are coming?—nice? loud?)</li>
+                    </ol>
+                    <h4>Normal Sentences</h4>
+                    <ol class="example-list">
+                        <li><em>Das ist was für ein Hund!</em> (That’s what kind of dog!—cool or crazy!)</li>
+                        <li><em>Er hat was für ein Auto!</em> (He’s got what kind of car!—amazing!)</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Welche(r) -->
+        <section id="welcher">
+            <h2>2. Welche(r) – "Which…?"</h2>
+            <div class="subsection">
+                <h3>What It’s For</h3>
+                <p>It’s like asking, "Which one?"—you’re picking something specific from a bunch, like choosing a favorite. Example: <em>Welcher Hund?</em> means "Which dog?" (This one? That one?)</p>
+            </div>
+            <div class="subsection">
+                <h3>How It Works</h3>
+                <ul class="example-list">
+                    <li>Say <em>welcher</em> (for boys’ things), <em>welche</em> (for girls’ things or lots of things), or <em>welches</em> (for kid stuff), then the word.</li>
+                    <li>Boy stuff (like "dog" = <em>Hund</em>): <em>Welcher Hund?</em></li>
+                    <li>Girl stuff (like "bag" = <em>Tasche</em>): <em>Welche Tasche?</em></li>
+                    <li>Kid stuff (like "child" = <em>Kind</em>): <em>Welches Kind?</em></li>
+                    <li>Lots of stuff (like "people" = <em>Leute</em>): <em>Welche Leute?</em></li>
+                    <li>In questions: <em>Welche(r)</em> + thing + action—like <em>Welches Buch liest du?</em> (Which book are you reading?)</li>
+                    <li>In normal talk (not super usual): It’s like wondering out loud—<em>Er liest welches Buch?</em> (He’s reading which book?—huh?)</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>When You Use It</h3>
+                <p>Asking to pick: Perfect when you want one exact answer. Wondering: Adds a “which one?” vibe in regular talk.</p>
+            </div>
+            <div class="subsection">
+                <h3>Examples to Get It</h3>
+                <div class="examples">
+                    <h4>Questions</h4>
+                    <ol class="example-list">
+                        <li><em>Welcher Hund läuft da?</em> (Which dog is running there?—that one or this one?)</li>
+                        <li><em>Welche Tasche hast du?</em> (Which bag do you have?—the red one? blue one?)</li>
+                        <li><em>Welches Kind spielt da?</em> (Which child is playing there?—yours? mine?)</li>
+                    </ol>
+                    <h4>Normal Sentences</h4>
+                    <ol class="example-list">
+                        <li><em>Das ist welcher Hund?</em> (That’s which dog?—like "Which one is this?")</li>
+                        <li><em>Sie hat welche Tasche!</em> (She’s got which bag!—surprised.)</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Look -->
+        <section id="quick-look">
+            <h2>Quick Look: Was für ein(e) vs. Welche(r)</h2>
+            <div class="table-container">
+                <table>
+                    <tr><th>What It Asks</th><th><em>Was für ein(e)</em></th><th><em>Welche(r)</em></th></tr>
+                    <tr><td><strong>What You Want</strong></td><td>What it’s like (type)</td><td>Which one (specific)</td></tr>
+                    <tr><td><strong>Example</strong></td><td><em>Was für ein Hund?</em> (Fluffy?)</td><td><em>Welcher Hund?</em> (That one?)</td></tr>
+                    <tr><td><strong>Answer</strong></td><td>"A big one!"</td><td>"The black one!"</td></tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- Tips -->
+        <section id="tips">
+            <h2>Easy Tips to Remember</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Was für ein(e)</strong>: Think "What’s it like?"—use <em>ein</em> for one thing, skip it for lots.</li>
+                    <li><strong>Welche(r)</strong>: Think "Which one?"—no <em>ein</em>, just <em>welcher/welche/welches</em>.</li>
+                    <li><strong>Boy, Girl, Kid</strong>:
+                        <ul>
+                            <li>Boys (like <em>Hund</em>) = <em>ein/welcher</em>.</li>
+                            <li>Girls (like <em>Tasche</em>) = <em>eine/welche</em>.</li>
+                            <li>Kids (like <em>Kind</em>) = <em>ein/welches</em>.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Examples -->
+        <section id="examples">
+            <h2>Tons of Fun Examples</h2>
+            <div class="subsection">
+                <h3><em>Was für ein(e)</em> – Questions</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Was für ein Hund ist das?</em> (What kind of dog is that?—cute? wild?)</li>
+                        <li><em>Was für eine Jacke trägst du?</em> (What kind of jacket are you wearing?—warm?)</li>
+                        <li><em>Was für ein Essen magst du?</em> (What kind of food do you like?—spicy?)</li>
+                        <li><em>Was für Leute sind deine Freunde?</em> (What kind of people are your friends?—fun?)</li>
+                        <li><em>Was für ein Spiel spielst du?</em> (What kind of game are you playing?—hard?)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3><em>Was für ein(e)</em> – Normal Talk</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        < Warrning:<em>Das ist was für ein Wetter!</em> (This is what kind of weather!—wow!)</li>
+                        <li><em>Sie hat was für eine Tasche!</em> (She’s got what kind of bag!—fancy!)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3><em>Welche(r)</em> – Questions</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Welcher Hund ist dein?</em> (Which dog is yours?—this one?)</li>
+                        <li><em>Welche Jacke trägst du?</em> (Which jacket are you wearing?—the blue one?)</li>
+                        <li><em>Welches Essen magst du?</em> (Which food do you like?—pizza?)</li>
+                        <li><em>Welche Leute sind deine Freunde?</em> (Which people are your friends?—those ones?)</li>
+                        <li><em>Welches Spiel spielst du?</em> (Which game are you playing?—that one?)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3><em>Welche(r)</em> – Normal Talk</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Das ist welches Wetter?</em> (This is which weather?—huh?)</li>
+                        <li><em>Er hat welches Auto!</em> (He’s got which car!—what?!)</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercises -->
+        <section id="practice">
+            <h2>Playful Exercises to Practice</h2>
+            <div class="subsection" id="exercise1">
+                <h3>Exercise 1: <em>Was für ein(e)</em> – Questions</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>___ Hund hast du? (What kind?)
+                            <select class="answer-select" data-correct="Was für ein">
+                                <option value="">Pick!</option>
+                                <option value="Was für ein">Was für ein</option>
+                                <option value="Welcher">Welcher</option>
+                            </select>
+                        </li>
+                        <li>___ Tasche willst du? (What kind?)
+                            <select class="answer-select" data-correct="Was für eine">
+                                <option value="">Pick!</option>
+                                <option value="Was für eine">Was für eine</option>
+                                <option value="Welche">Welche</option>
+                            </select>
+                        </li>
+                        <li>___ Leute kennst du? (What kind?)
+                            <select class="answer-select" data-correct="Was für">
+                                <option value="">Pick!</option>
+                                <option value="Was für">Was für</option>
+                                <option value="Welche">Welche</option>
+                            </select>
+                        </li>
+                        <li>___ Essen machst du? (What kind?)
+                            <select class="answer-select" data-correct="Was für ein">
+                                <option value="">Pick!</option>
+                                <option value="Was für ein">Was für ein</option>
+                                <option value="Welches">Welches</option>
+                            </select>
+                        </li>
+                        <li>___ Tag ist morgen? (What kind?)
+                            <select class="answer-select" data-correct="Was für ein">
+                                <option value="">Pick!</option>
+                                <option value="Was für ein">Was für ein</option>
+                                <option value="Welcher">Welcher</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check It!</button>
+                    <button class="toggle-btn show-answers">Show Me!</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Was für ein</em></li>
+                            <li><em>Was für eine</em></li>
+                            <li><em>Was für</em></li>
+                            <li><em>Was für ein</em></li>
+                            <li><em>Was für ein</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection" id="exercise2">
+                <h3>Exercise 2: <em>Welche(r)</em> – Questions</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>___ Hund hast du? (Which?)
+                            <select class="answer-select" data-correct="Welcher">
+                                <option value="">Pick!</option>
+                                <option value="Welcher">Welcher</option>
+                                <option value="Was für ein">Was für ein</option>
+                            </select>
+                        </li>
+                        <li>___ Tasche willst du? (Which?)
+                            <select class="answer-select" data-correct="Welche">
+                                <option value="">Pick!</option>
+                                <option value="Welche">Welche</option>
+                                <option value="Was für eine">Was für eine</option>
+                            </select>
+                        </li>
+                        <li>___ Leute kennst du? (Which?)
+                            <select class="answer-select" data-correct="Welche">
+                                <option value="">Pick!</option>
+                                <option value="Welche">Welche</option>
+                                <option value="Was für">Was für</option>
+                            </select>
+                        </li>
+                        <li>___ Essen machst du? (Which?)
+                            <select class="answer-select" data-correct="Welches">
+                                <option value="">Pick!</option>
+                                <option value="Welches">Welches</option>
+                                <option value="Was für ein">Was für ein</option>
+                            </select>
+                        </li>
+                        <li>___ Tag ist morgen? (Which?)
+                            <select class="answer-select" data-correct="Welcher">
+                                <option value="">Pick!</option>
+                                <option value="Welcher">Welcher</option>
+                                <option value="Was für ein">Was für ein</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check It!</button>
+                    <button class="toggle-btn show-answers">Show Me!</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Welcher</em></li>
+                            <li><em>Welche</em></li>
+                            <li><em>Welche</em></li>
+                            <li><em>Welches</em></li>
+                            <li><em>Welcher</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection" id="exercise3">
+                <h3>Exercise 3: Pick the Right One</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>___ Hund läuft da? (What kind?)
+                            <select class="answer-select" data-correct="Was für ein">
+                                <option value="">Pick!</option>
+                                <option value="Was für ein">Was für ein</option>
+                                <option value="Welcher">Welcher</option>
+                            </select>
+                        </li>
+                        <li>___ Hund läuft da? (Which?)
+                            <select class="answer-select" data-correct="Welcher">
+                                <option value="">Pick!</option>
+                                <option value="Welcher">Welcher</option>
+                                <option value="Was für ein">Was für ein</option>
+                            </select>
+                        </li>
+                        <li>___ Jacke magst du? (What kind?)
+                            <select class="answer-select" data-correct="Was für eine">
+                                <option value="">Pick!</option>
+                                <option value="Was für eine">Was für eine</option>
+                                <option value="Welche">Welche</option>
+                            </select>
+                        </li>
+                        <li>___ Jacke magst du? (Which?)
+                            <select class="answer-select" data-correct="Welche">
+                                <option value="">Pick!</option>
+                                <option value="Welche">Welche</option>
+                                <option value="Was für eine">Was für eine</option>
+                            </select>
+                        </li>
+                        <li>Das ist ___ Tag! (What kind?)
+                            <select class="answer-select" data-correct="was für ein">
+                                <option value="">Pick!</option>
+                                <option value="was für ein">was für ein</option>
+                                <option value="welcher">welcher</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check It!</button>
+                    <button class="toggle-btn show-answers">Show Me!</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Was für ein</em></li>
+                            <li><em>Welcher</em></li>
+                            <li><em>Was für eine</em></li>
+                            <li><em>Welche</em></li>
+                            <li><em>was für ein</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection" id="exercise4">
+                <h3>Exercise 4: Fun Story</h3>
+                <p>Fill in with <em>was für ein(e)</em> or <em>welche(r)</em>.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>___ Hund hast du? (What kind?)
+                            <select class="answer-select" data-correct="Was für ein">
+                                <option value="">Pick!</option>
+                                <option value="Was für ein">Was für ein</option>
+                                <option value="Welcher">Welcher</option>
+                            </select>
+                        </li>
+                        <li>___ Hund hast du? (Which?)
+                            <select class="answer-select" data-correct="Welcher">
+                                <option value="">Pick!</option>
+                                <option value="Welcher">Welcher</option>
+                                <option value="Was für ein">Was für ein</option>
+                            </select>
+                        </li>
+                        <li>___ Tasche ist das? (What kind?)
+                            <select class="answer-select" data-correct="Was für eine">
+                                <option value="">Pick!</option>
+                                <option value="Was für eine">Was für eine</option>
+                                <option value="Welche">Welche</option>
+                            </select>
+                        </li>
+                        <li>___ Leute kommen heute? (Which?)
+                            <select class="answer-select" data-correct="Welche">
+                                <option value="">Pick!</option>
+                                <option value="Welche">Welche</option>
+                                <option value="Was für">Was für</option>
+                            </select>
+                        </li>
+                        <li>Das ist ___ Wetter! (What kind?)
+                            <select class="answer-select" data-correct="was für ein">
+                                <option value="">Pick!</option>
+                                <option value="was für ein">was für ein</option>
+                                <option value="welches">welches</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check It!</button>
+                    <button class="toggle-btn show-answers">Show Me!</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Was für ein</em></li>
+                            <li><em>Welcher</em></li>
+                            <li><em>Was für eine</em></li>
+                            <li><em>Welche</em></li>
+                            <li><em>was für ein</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Tips -->
+        <section id="final-tips">
+            <h2>Super Easy Tips</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Was für ein(e)</strong>: Asking "What’s it like?"—use <em>ein/eine</em> for one thing, skip it for lots.</li>
+                    <li><strong>Welche(r)</strong>: Asking "Which one?"—no extra words, just pick!</li>
+                    <li><strong>Practice</strong>: Say <em>Was für ein Hund?</em> (What kind?) and <em>Welcher Hund?</em> (Which one?)—feel the difference!</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- You’re Ready -->
+        <section id="ready">
+            <h2>You’re Ready!</h2>
+            <p>
+                This easy guide keeps <em>was für ein(e)</em> and <em>welche(r)</em> simple with fun examples and exercises. You’re ready to ask about anything! Want more? Try simple verbs next or keep asking stuff—up to you!
+            </p>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>More Fun Stuff</h2>
+            <div class="see-also-links">
+                <a href="als.html" class="see-also-rect">German Als</a>
+                <a href="deshalbtrotzdem.html" class="see-also-rect">Deshalb & Trotzdem</a>
+                <a href="verbs.html" class="see-also-rect">Simple Verbs</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="verbs.html" class="next-btn">Next: Simple Verbs →</a>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Dark/Light mode toggle
+            const modeToggle = document.getElementById('mode-toggle');
+            const body = document.body;
+            modeToggle.addEventListener('click', function() {
+                body.classList.toggle('dark-mode');
+                const isDark = body.classList.contains('dark-mode');
+                modeToggle.querySelector('svg').setAttribute('d', isDark ? 
+                    'M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z' : 
+                    'M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z');
+            });
+
+            // Check Answers functionality
+            document.querySelectorAll('.check-answers').forEach(button => {
+                button.addEventListener('click', function() {
+                    const exercise = this.closest('.subsection');
+                    const selects = exercise.querySelectorAll('.answer-select');
+                    selects.forEach(select => {
+                        const correctAnswer = select.getAttribute('data-correct');
+                        const userAnswer = select.value;
+                        if (userAnswer === correctAnswer) {
+                            select.style.border = '2px solid #2e7d32';
+                        } else if (userAnswer !== '') {
+                            select.style.border = '2px solid #d32f2f';
+                        } else {
+                            select.style.border = '1px solid #ccc';
+                        }
+                    });
+                });
+            });
+
+            // Show Answers functionality
+            document.querySelectorAll('.show-answers').forEach(button => {
+                button.addEventListener('click', function() {
+                    const exercise = this.closest('.subsection');
+                    const answers = exercise.querySelector('.answers');
+                    if (answers.classList.contains('hidden')) {
+                        answers.classList.remove('hidden');
+                    } else {
+                        answers.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

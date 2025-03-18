@@ -1,0 +1,462 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}German Weil: The Complete Guide to “Because”{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/dative.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+                <a href="index.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="javascript:history.back()" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>German <em>Weil</em>: The Complete Guide to “Because”</h1>
+            <p>
+                The word <strong>weil</strong> means “because” in German and is one of the easiest ways to explain why something happens. It’s super common in everyday speech and writing. This guide explains how to use <em>weil</em>, shows its special word order, gives you loads of examples, and includes exercises to practice—including one where you fix a jumbled sentence. It’s clear, fun, and perfect for mastering <em>weil</em>. Let’s go!
+            </p>
+        </section>
+
+        <!-- What is Weil? -->
+        <section id="what-is-weil">
+            <h2>What is <em>Weil</em>?</h2>
+            <p><em>Weil</em> is a subordinating conjunction—it connects a main sentence (Hauptsatz) with a reason or explanation (Nebensatz). It answers the question “Why?” and always changes the word order in the sentence that follows it.</p>
+            <div class="subsection">
+                <h3>How It Works</h3>
+                <ul class="example-list">
+                    <li><strong>Main Clause</strong>: The first part—normal word order (subject + verb).</li>
+                    <li><strong>Weil Clause</strong>: The reason part—verb goes to the <strong>end</strong>.</li>
+                    <li><strong>Formula</strong>: Main clause + <em>weil</em> + subject + other stuff + verb.</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>Word Order Rule</h3>
+                <p>In a <em>weil</em> clause, the <strong>conjugated verb</strong> jumps to the end.</p>
+                <ul class="example-list">
+                    <li>Normal sentence: <em>Ich bin müde.</em> (I am tired.)</li>
+                    <li>With <em>weil</em>: <em>Ich bin müde, weil ich lange gearbeitet habe.</em> (I’m tired because I worked a long time.)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Using Weil in Sentences -->
+        <section id="using-weil">
+            <h2>Using <em>Weil</em> in Sentences</h2>
+            <div class="subsection">
+                <h3>Structure Examples</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Ich bleibe zu Hause, weil es regnet.</em>
+                            <ul>
+                                <li>Main: <em>Ich bleibe zu Hause</em> (normal order).</li>
+                                <li>Weil: <em>weil es regnet</em> (verb <em>regnet</em> at the end).</li>
+                            </ul>
+                        </li>
+                        <li><em>Er kommt nicht, weil er krank ist.</em>
+                            <ul>
+                                <li>Main: <em>Er kommt nicht</em>.</li>
+                                <li>Weil: <em>weil er krank ist</em> (verb <em>ist</em> at the end).</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Punctuation</h3>
+                <p>Use a <strong>comma</strong> before <em>weil</em> to separate the main clause and the <em>weil</em> clause.</p>
+                <ul class="example-list">
+                    <li><em>Ich lerne Deutsch, weil es Spaß macht.</em> (I’m learning German because it’s fun.)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Example Sentences -->
+        <section id="examples">
+            <h2>Tons of Example Sentences</h2>
+            <div class="subsection">
+                <h3>Daily Life</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Ich bin müde, weil ich schlecht geschlafen habe.</em> (I’m tired because I slept badly.)</li>
+                        <li><em>Sie ist glücklich, weil sie Urlaub hat.</em> (She’s happy because she’s on vacation.)</li>
+                        <li><em>Wir essen jetzt, weil wir Hunger haben.</em> (We’re eating now because we’re hungry.)</li>
+                        <li><em>Ich trinke Wasser, weil es heiß ist.</em> (I’m drinking water because it’s hot.)</li>
+                        <li><em>Er bleibt drinnen, weil es kalt ist.</em> (He’s staying inside because it’s cold.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>School and Work</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Ich lerne viel, weil ich eine Prüfung habe.</em> (I’m studying a lot because I have an exam.)</li>
+                        <li><em>Sie ist spät, weil der Bus nicht gekommen ist.</em> (She’s late because the bus didn’t come.)</li>
+                        <li><em>Wir arbeiten schnell, weil der Chef es will.</em> (We’re working fast because the boss wants it.)</li>
+                        <li><em>Ich bin nervös, weil ich morgen präsentieren muss.</em> (I’m nervous because I have to present tomorrow.)</li>
+                        <li><em>Er hat keine Hausaufgaben, weil er krank war.</em> (He has no homework because he was sick.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Friends and Fun</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Ich lache, weil der Witz lustig ist.</em> (I’m laughing because the joke is funny.)</li>
+                        <li><em>Wir gehen ins Kino, weil der Film gut ist.</em> (We’re going to the cinema because the movie is good.)</li>
+                        <li><em>Sie tanzt, weil die Musik toll ist.</em> (She’s dancing because the music is great.)</li>
+                        <li><em>Ich rufe dich an, weil ich dich vermisse.</em> (I’m calling you because I miss you.)</li>
+                        <li><em>Er spielt Fußball, weil er fit bleiben will.</em> (He’s playing soccer because he wants to stay fit.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Past Tense (Perfekt)</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Ich bin spät gekommen, weil ich den Wecker nicht gehört habe.</em> (I came late because I didn’t hear the alarm.)</li>
+                        <li><em>Sie hat geweint, weil sie den Film traurig fand.</em> (She cried because she found the movie sad.)</li>
+                        <li><em>Wir haben gewonnen, weil wir hart trainiert haben.</em> (We won because we trained hard.)</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips for Using Weil -->
+        <section id="tips-using-weil">
+            <h2>Tips for Using <em>Weil</em></h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Verb at the End</strong>: Always push the verb to the end of the <em>weil</em> clause.
+                        <ul><li><em>Ich bin froh, weil ich Urlaub habe.</em> (Not <em>weil ich habe Urlaub</em>—wrong!)</li></ul>
+                    </li>
+                    <li><strong>Comma</strong>: Don’t forget it before <em>weil</em>.</li>
+                    <li><strong>Short or Long</strong>: <em>Weil</em> works with short reasons (<em>weil es regnet</em>) or long ones (<em>weil ich gestern viel gearbeitet habe</em>).</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>Compare with “Denn”</h3>
+                <p><em>Denn</em> also means “because,” but it keeps normal word order and is less common in speech.</p>
+                <ul class="example-list">
+                    <li><em>Ich bin müde, denn ich habe schlecht geschlafen.</em> (Verb stays in second position.)</li>
+                    <li><em>Weil</em> is more casual and flexible—stick with it for now!</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Exercises -->
+        <section id="practice">
+            <h2>Creative Exercises with Multiple-Choice Options</h2>
+
+            <div class="subsection" id="exercise1">
+                <h3>Exercise 1: Pick the Correct <em>Weil</em> Sentence</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Why are you tired?
+                            <select class="answer-select" data-correct="Ich bin müde, weil ich wenig geschlafen habe.">
+                                <option value="">Select</option>
+                                <option value="Ich bin müde, weil ich lange geschlafen habe.">Ich bin müde, weil ich lange geschlafen habe.</option>
+                                <option value="Ich bin müde, weil ich wenig geschlafen habe.">Ich bin müde, weil ich wenig geschlafen habe.</option>
+                                <option value="Ich bin müde, weil ich wenig habe geschlafen.">Ich bin müde, weil ich wenig habe geschlafen.</option>
+                            </select>
+                        </li>
+                        <li>Why is she happy?
+                            <select class="answer-select" data-correct="Sie ist glücklich, weil sie einen Preis gewonnen hat.">
+                                <option value="">Select</option>
+                                <option value="Sie ist glücklich, weil sie einen Preis gewonnen hat.">Sie ist glücklich, weil sie einen Preis gewonnen hat.</option>
+                                <option value="Sie ist glücklich, weil sie hat einen Preis gewonnen.">Sie ist glücklich, weil sie hat einen Preis gewonnen.</option>
+                                <option value="Sie ist glücklich, weil sie einen Preis hat gewonnen.">Sie ist glücklich, weil sie einen Preis hat gewonnen.</option>
+                            </select>
+                        </li>
+                        <li>Why are we staying home?
+                            <select class="answer-select" data-correct="Wir bleiben zu Hause, weil es regnet.">
+                                <option value="">Select</option>
+                                <option value="Wir bleiben zu Hause, weil es regnet.">Wir bleiben zu Hause, weil es regnet.</option>
+                                <option value="Wir bleiben zu Hause, weil es regnet ist.">Wir bleiben zu Hause, weil es regnet ist.</option>
+                                <option value="Wir bleiben zu Hause, weil es ist regnet.">Wir bleiben zu Hause, weil es ist regnet.</option>
+                            </select>
+                        </li>
+                        <li>Why is he late?
+                            <select class="answer-select" data-correct="Er ist spät, weil er den Bus verpasst hat.">
+                                <option value="">Select</option>
+                                <option value="Er ist spät, weil er den Bus verpasst hat.">Er ist spät, weil er den Bus verpasst hat.</option>
+                                <option value="Er ist spät, weil er hat den Bus verpasst.">Er ist spät, weil er hat den Bus verpasst.</option>
+                                <option value="Er ist spät, weil er den Bus hat verpasst.">Er ist spät, weil er den Bus hat verpasst.</option>
+                            </select>
+                        </li>
+                        <li>Why are you laughing?
+                            <select class="answer-select" data-correct="Ich lache, weil der Witz lustig ist.">
+                                <option value="">Select</option>
+                                <option value="Ich lache, weil der Witz lustig ist.">Ich lache, weil der Witz lustig ist.</option>
+                                <option value="Ich lache, weil der Witz ist lustig.">Ich lache, weil der Witz ist lustig.</option>
+                                <option value="Ich lache, weil der Witz lustig hat.">Ich lache, weil der Witz lustig hat.</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Ich bin müde, weil ich wenig geschlafen habe.</em></li>
+                            <li><em>Sie ist glücklich, weil sie einen Preis gewonnen hat.</em></li>
+                            <li><em>Wir bleiben zu Hause, weil es regnet.</em></li>
+                            <li><em>Er ist spät, weil er den Bus verpasst hat.</em></li>
+                            <li><em>Ich lache, weil der Witz lustig ist.</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise2">
+                <h3>Exercise 2: Choose the Right Word Order</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Ich lerne Deutsch, ___ ich es mag.
+                            <select class="answer-select" data-correct="weil">
+                                <option value="">Select</option>
+                                <option value="weil">weil</option>
+                                <option value="weil mag ich es">weil mag ich es</option>
+                                <option value="weil ich mag es">weil ich mag es</option>
+                            </select>
+                        </li>
+                        <li>Sie ist müde, ___ sie viel gearbeitet hat.
+                            <select class="answer-select" data-correct="weil">
+                                <option value="">Select</option>
+                                <option value="weil">weil</option>
+                                <option value="weil hat sie viel gearbeitet">weil hat sie viel gearbeitet</option>
+                                <option value="weil sie hat viel gearbeitet">weil sie hat viel gearbeitet</option>
+                            </select>
+                        </li>
+                        <li>Wir gehen nicht raus, ___ es regnet.
+                            <select class="answer-select" data-correct="weil">
+                                <option value="">Select</option>
+                                <option value="weil">weil</option>
+                                <option value="weil regnet es">weil regnet es</option>
+                                <option value="weil es regnet ist">weil es regnet ist</option>
+                            </select>
+                        </li>
+                        <li>Er ruft an, ___ er dich vermisst.
+                            <select class="answer-select" data-correct="weil">
+                                <option value="">Select</option>
+                                <option value="weil">weil</option>
+                                <option value="weil vermisst er dich">weil vermisst er dich</option>
+                                <option value="weil er dich hat vermisst">weil er dich hat vermisst</option>
+                            </select>
+                        </li>
+                        <li>Ich esse jetzt, ___ ich Hunger habe.
+                            <select class="answer-select" data-correct="weil">
+                                <option value="">Select</option>
+                                <option value="weil">weil</option>
+                                <option value="weil habe ich Hunger">weil habe ich Hunger</option>
+                                <option value="weil ich habe Hunger">weil ich habe Hunger</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li>Ich lerne Deutsch, <em>weil</em> ich es mag.</li>
+                            <li>Sie ist müde, <em>weil</em> sie viel gearbeitet hat.</li>
+                            <li>Wir gehen nicht raus, <em>weil</em> es regnet.</li>
+                            <li>Er ruft an, <em>weil</em> er dich vermisst.</li>
+                            <li>Ich esse jetzt, <em>weil</em> ich Hunger habe.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise3">
+                <h3>Exercise 3: Fix the Jumbled Sentence</h3>
+                <p>Here’s a wrong sentence with <em>weil</em>. Rearrange the words to make it correct.</p>
+                <div class="examples">
+                    <p><strong>Wrong Sentence</strong>: <em>Ich bin froh,mm weil habe ich Urlaub.</em><br>
+                    <strong>Words</strong>: Ich / bin / froh / , / weil / habe / ich / Urlaub / .<br>
+                    <strong>Task</strong>: Put them in the right order.</p>
+                    <select class="answer-select" data-correct="Ich bin froh, weil ich Urlaub habe.">
+                        <option value="">Select</option>
+                        <option value="Ich bin froh, weil habe ich Urlaub.">Ich bin froh, weil habe ich Urlaub.</option>
+                        <option value="Ich bin froh, weil ich Urlaub habe.">Ich bin froh, weil ich Urlaub habe.</option>
+                        <option value="Ich bin froh, weil ich habe Urlaub.">Ich bin froh, weil ich habe Urlaub.</option>
+                    </select>
+                    <button class="toggle-btn check-answers">Check Answer</button>
+                    <button class="toggle-btn show-answers">Show Answer</button>
+                    <div class="hidden answers">
+                        <p><strong>Answer:</strong> <em>Ich bin froh, weil ich Urlaub habe.</em><br>
+                        <strong>Explanation:</strong> Main clause (<em>Ich bin froh</em>) is fine. In the <em>weil</em> clause, the verb <em>habe</em> must go to the end (<em>weil ich Urlaub habe</em>), not after <em>weil</em> (<em>weil habe ich</em> is wrong).</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise4">
+                <h3>Exercise 4: Mixed <em>Weil</em> Story</h3>
+                <p>Fill in with the correct <em>weil</em> clause.</p>
+                <div class="examples">
+                    <p>Ich bin heute spät, ___ (1) ich den Bus verpasst habe. Ich lerne viel, ___ (2) ich eine Prüfung habe. Meine Freundin ist froh, ___ (3) sie Urlaub hat. Wir lachen, ___ (4) der Film lustig ist. Er bleibt zu Hause, ___ (5) es regnet.</p>
+                    <ol class="example-list">
+                        <li><select class="answer-select" data-correct="weil">
+                            <option value="">Select</option>
+                            <option value="weil">weil</option>
+                            <option value="weil habe ich den Bus verpasst">weil habe ich den Bus verpasst</option>
+                            <option value="weil ich den Bus habe verpasst">weil ich den Bus habe verpasst</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="weil">
+                            <option value="">Select</option>
+                            <option value="weil">weil</option>
+                            <option value="weil ich habe eine Prüfung">weil ich habe eine Prüfung</option>
+                            <option value="weil habe ich eine Prüfung">weil habe ich eine Prüfung</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="weil">
+                            <option value="">Select</option>
+                            <option value="weil">weil</option>
+                            <option value="weil hat sie Urlaub">weil hat sie Urlaub</option>
+                            <option value="weil sie hat Urlaub">weil sie hat Urlaub</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="weil">
+                            <option value="">Select</option>
+                            <option value="weil">weil</option>
+                            <option value="weil ist der Film lustig">weil ist der Film lustig</option>
+                            <option value="weil der Film lustig hat">weil der Film lustig hat</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="weil">
+                            <option value="">Select</option>
+                            <option value="weil">weil</option>
+                            <option value="weil regnet es">weil regnet es</option>
+                            <option value="weil es ist regnet">weil es ist regnet</option>
+                        </select></li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong><br>
+                        Ich bin heute spät, <em>weil</em> ich den Bus verpasst habe. Ich lerne viel, <em>weil</em> ich eine Prüfung habe. Meine Freundin ist froh, <em>weil</em> sie Urlaub hat. Wir lachen, <em>weil</em> der Film lustig ist. Er bleibt zu Hause, <em>weil</em> es regnet.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips to Master Weil -->
+        <section id="tips">
+            <h2>Tips to Master <em>Weil</em></h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Verb Last</strong>: Train yourself—<em>weil</em> = verb to the end!</li>
+                    <li><strong>Daily Why</strong>: Say <em>Ich bin müde, weil…</em>—add your reason.</li>
+                    <li><strong>Comma Habit</strong>: Write <em>Ich bin froh,</em>—then <em>weil…</em></li>
+                    <li><strong>Listen</strong>: Catch <em>weil</em> in songs or chats—<em>Weil ich dich liebe…</em></li>
+                    <li><strong>Compare</strong>: Try <em>Ich bin froh, denn ich habe Urlaub</em>—see the difference?</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Final Thoughts -->
+        <section id="final-thoughts">
+            <h2>You’re Ready!</h2>
+            <p>
+                This guide covers <em>weil</em> completely—rules, examples, and exercises, including a fun jumbled sentence fix. You’re ready to explain “why” like a German! Next, you could explore other conjunctions like <em>dass</em> or mix <em>weil</em> with Perfekt—your choice!
+            </p>
+        </section>
+
+        <!-- Resources for Extra Practice -->
+        <section id="resources">
+            <h2>Resources for Extra Practice</h2>
+            <div class="see-also-links">
+                <a href="https://www.goethe.de/de/spr/ueb.html" class="see-also-rect">
+                    Goethe A1/A2 Wortliste<br>Verbs in context.<br><br>
+                    <button class="resource-btn">Visit Goethe Wortliste</button>
+                </a>
+                <a href="https://www.youtube.com/c/easygerman" class="see-also-rect">
+                    YouTube – EASY German<br>Hear verbs in real talk.<br><br>
+                    <button class="resource-btn">Visit EASY German</button>
+                </a>
+                <a href="https://www.schubert-verlag.de/" class="see-also-rect">
+                    Schubert Verlag<br>Free verb exercises.<br><br>
+                    <button class="resource-btn">Visit Schubert Verlag</button>
+                </a>
+            </div>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="dative.html" class="see-also-rect">German Dative</a>
+                <a href="welcherdieser.html" class="see-also-rect">Interrogativ- & Demonstrativartikel</a>
+                <a href="partizip2.html" class="see-also-rect">Perfekt & Partizip II</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="reflexive.html" class="next-btn">Next: Reflexive Verbs and Pronouns →</a>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Dark/Light mode toggle
+            const modeToggle = document.getElementById('mode-toggle');
+            const body = document.body;
+            modeToggle.addEventListener('click', function() {
+                body.classList.toggle('dark-mode');
+                const isDark = body.classList.contains('dark-mode');
+                modeToggle.querySelector('svg').setAttribute('d', isDark ? 
+                    'M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z' : 
+                    'M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z');
+            });
+
+            // Check Answers functionality
+            document.querySelectorAll('.check-answers').forEach(button => {
+                button.addEventListener('click', function() {
+                    const exercise = this.closest('.subsection');
+                    const selects = exercise.querySelectorAll('.answer-select');
+                    selects.forEach(select => {
+                        const correctAnswer = select.getAttribute('data-correct');
+                        const userAnswer = select.value;
+                        if (userAnswer === correctAnswer) {
+                            select.style.border = '2px solid #2e7d32';
+                        } else if (userAnswer !== '') {
+                            select.style.border = '2px solid #d32f2f';
+                        } else {
+                            select.style.border = '1px solid #ccc';
+                        }
+                    });
+                });
+            });
+
+            // Show Answers functionality
+            document.querySelectorAll('.show-answers').forEach(button => {
+                button.addEventListener('click', function() {
+                    const exercise = this.closest('.subsection');
+                    const answers = exercise.querySelector('.answers');
+                    if (answers.classList.contains('hidden')) {
+                        answers.classList.remove('hidden');
+                    } else {
+                        answers.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

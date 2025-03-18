@@ -1,0 +1,352 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}German Nouns{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/nouns.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+                <a href="index.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="javascript:history.back()" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>German Nouns Explained</h1>
+            <p>
+                A noun is a word that names something. It can be a person (like "child"), a place (like "school"), a thing (like "table"), or an idea (like "peace"). In German, nouns do the same job, but they have some special rules. Don’t worry—I’ll make them easy to understand!
+            </p>
+          
+        </section>
+
+        <!-- 5 Important Things -->
+        <section id="key-points">
+            <h2>5 Important Things About German Nouns</h2>
+
+            <div class="subsection">
+                <h3>1. Nouns Have Genders</h3>
+                <p>
+                    In English, nouns don’t have genders (except for words like "man" or "woman"). In German, every noun is either masculine, feminine, or neuter. This changes the little words (called articles) you use with them.
+                </p>
+                <div class="examples">
+                    <p><strong>Examples:</strong></p>
+                    <ul class="example-list">
+                        <li>Masculine: <em>der Tisch</em> (the table)</li>
+                        <li>Feminine: <em>die Lampe</em> (the lamp)</li>
+                        <li>Neuter: <em>das Fenster</em> (the window)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>2. Nouns Start with a Capital Letter</h3>
+                <p>
+                    In German, every noun begins with a big letter, even in the middle of a sentence. This is different from English, where only names get capitals.
+                </p>
+                <div class="examples">
+                    <p><strong>Examples:</strong></p>
+                    <ul class="example-list">
+                        <li><em>Ich sehe den Tisch.</em> (I see the table.) – "Tisch" is capitalized.</li>
+                        <li><em>Die Lampe leuchtet.</em> (The lamp is shining.) – "Lampe" gets a big "L"!</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>3. Articles Match the Gender</h3>
+                <p>
+                    Articles are words like "the" or "a" that go before nouns. In German, they change depending on the noun’s gender.
+                </p>
+                <div class="examples">
+                    <p><strong>"The" Articles:</strong></p>
+                    <ul class="example-list">
+                        <li>Masculine: <em>der</em> – <em>der Tisch</em> (the table)</li>
+                        <li>Feminine: <em>die</em> – <em>die Lampe</em> (the lamp)</li>
+                        <li>Neuter: <em>das</em> – <em>das Fenster</em> (the window)</li>
+                        <li>Plural (all genders): <em>die</em> – <em>die Tische</em> (the tables)</li>
+                    </ul>
+                    <p><strong>"A" Articles:</strong></p>
+                    <ul class="example-list">
+                        <li>Masculine: <em>ein</em> – <em>ein Tisch</em> (a table)</li>
+                        <li>Feminine: <em>eine</em> – <em>eine Lampe</em> (a lamp)</li>
+                        <li>Neuter: <em>ein</em> – <em>ein Fenster</em> (a window)</li>
+                    </ul>
+                </div>
+                <button class="toggle-btn">See Sentence Examples</button>
+                <div class="hidden">
+                    <p><strong>Examples:</strong></p>
+                    <ul class="example-list">
+                        <li><em>Der Hund läuft.</em> (The dog runs.) → <em>Ein Hund läuft.</em> (A dog runs.)</li>
+                        <li><em>Die Katze sitzt.</em> (The cat sits.) → <em>Eine Katze sitzt.</em> (A cat sits.)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>4. Plurals Have Different Endings</h3>
+                <p>
+                    In English, we often add "-s" to make plurals (like "tables"). German has many ways to show more than one, and you’ll need to learn them with each noun.
+                </p>
+                <div class="examples">
+                    <p><strong>Examples:</strong></p>
+                    <ul class="example-list">
+                        <li>Add -e: <em>der Tisch</em> → <em>die Tische</em> (tables)</li>
+                        <li>Add -er: <em>das Kind</em> → <em>die Kinder</em> (children)</li>
+                        <li>Add -en: <em>die Frau</em> → <em>die Frauen</em> (women)</li>
+                        <li>Add -s: <em>das Auto</em> → <em>die Autos</em> (cars)</li>
+                        <li>No change: <em>der Lehrer</em> → <em>die Lehrer</em> (teachers)</li>
+                        <li>Vowel change: <em>der Mann</em> → <em>die Männer</em> (men)</li>
+                    </ul>
+                </div>
+               
+            </div>
+
+            <div class="subsection">
+                <h3>5. Cases Show What Nouns Do</h3>
+                <p>
+                    German has four cases. They tell you what job the noun has in a sentence. The articles change with each case, and sometimes the noun does too.
+                </p>
+                <div class="examples">
+                    <p><strong>The Four Cases:</strong></p>
+                    <ul class="example-list">
+                        <li>Nominative: The subject (who does something). <em>Der Hund läuft.</em> (The dog runs.)</li>
+                        <li>Accusative: The object (what is seen or taken). <em>Ich sehe den Hund.</em> (I see the dog.)</li>
+                        <li>Dative: The receiver (to whom something is given). <em>Ich gebe dem Hund einen Ball.</em> (I give the dog a ball.)</li>
+                        <li>Genitive: Shows ownership (like "of"). <em>Das Spielzeug des Hundes.</em> (The toy of the dog.)</li>
+                    </ul>
+                    <p>For now, practice nominative and accusative—they’re the easiest to start with!</p>
+                </div>
+              
+            </div>
+        </section>
+
+        <!-- How-To Questions -->
+        <section id="how-to">
+            <h2>How-To Questions</h2>
+
+            <div class="subsection">
+                <h3>How Do I Know a Noun’s Gender?</h3>
+                <p>
+                    You can’t always guess, so learn each noun with its article: <em>der Tisch</em>, <em>die Lampe</em>, <em>das Fenster</em>. Here are some hints:
+                </p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>Feminine: Words ending in -ung (<em>die Zeitung</em> = newspaper), -heit (<em>die Freiheit</em> = freedom).</li>
+                        <li>Neuter: Words ending in -chen (<em>das Mädchen</em> = girl), -lein (<em>das Häuschen</em> = little house).</li>
+                        <li>Masculine: Words ending in -er (<em>der Lehrer</em> = teacher).</li>
+                        <li>Example: <em>Die Schule</em> (the school) – Many places are feminine!</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>How Do I Make Plurals?</h3>
+                <p>
+                    Learn the plural with the noun. Here are more examples:
+                </p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>Der Stuhl</em> → <em>die Stühle</em> (chairs)</li>
+                        <li><em>Das Buch</em> → <em>die Bücher</em> (books)</li>
+                        <li><em>Die Blume</em> → <em>die Blumen</em> (flowers)</li>
+                        <li><em>Das Haus</em> → <em>die Häuser</em> (houses)</li>
+                    </ul>
+                    <p>Tip: Use a notebook to write nouns and their plurals.</p>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>What Are Cases For?</h3>
+                <p>
+                    Cases show a noun’s role. Look how articles change:
+                </p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>Masculine: <em>der Tisch</em> (nom.) → <em>den Tisch</em> (acc.) → <em>dem Tisch</em> (dat.)</li>
+                        <li>Feminine: <em>die Lampe</em> (nom./acc.) → <em>der Lampe</em> (dat.)</li>
+                        <li>Neuter: <em>das Fenster</em> (nom./acc.) → <em>dem Fenster</em> (dat.)</li>
+                    </ul>
+                    <p><strong>Examples:</strong></p>
+                    <ul class="example-list">
+                        <li><em>Ich sehe den Tisch.</em> (I see the table.)</li>
+                        <li><em>Ich gebe dem Kind ein Buch.</em> (I give the child a book.)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>Do Nouns Change in Cases?</h3>
+                <p>
+                    Usually, only the article changes. But:
+                </p>
+                <div class="examples">
+                    <p><strong>Genitive:</strong> Add -s or -es to masculine/neuter nouns:</p>
+                    <ul class="example-list">
+                        <li><em>Der Hund</em> → <em>des Hundes</em> (the dog’s)</li>
+                        <li><em>Das Haus</em> → <em>des Hauses</em> (the house’s)</li>
+                    </ul>
+                    <p><strong>Dative Plural:</strong> Add -n if the plural doesn’t end in -n or -s:</p>
+                    <ul class="example-list">
+                        <li><em>Die Tische</em> → <em>den Tischen</em> (to the tables)</li>
+                        <li><em>Die Autos</em> → <em>den Autos</em> (to the cars, no extra -n)</li>
+                    </ul>
+                    <p><strong>Example:</strong> <em>Ich helfe den Kindern.</em> (I help the children.)</p>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>Are There Strange Nouns?</h3>
+                <p>
+                    Yes, a few! <em>Der Herr</em> (gentleman) becomes <em>den Herrn</em> in accusative. These are rare, so don’t worry yet.
+                </p>
+            </div>
+
+            <div class="subsection">
+                <h3>How Do I Use Articles?</h3>
+                <p>
+                    Match them to the noun’s gender and case:
+                </p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>Der Vogel fliegt.</em> (The bird flies.) → <em>Ein Vogel fliegt.</em> (A bird flies.)</li>
+                        <li><em>Die Blume wächst.</em> (The flower grows.) → <em>Eine Blume wächst.</em> (A flower grows.)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>Can I Skip Articles?</h3>
+                <p>
+                    Yes, sometimes:
+                </p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>Jobs: <em>Ich bin Lehrer.</em> (I am a teacher.)</li>
+                        <li>General ideas: <em>Hunde sind nett.</em> (Dogs are nice.)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>What Are Compound Nouns?</h3>
+                <p>
+                    German puts words together to make new ones:
+                </p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>Haus</em> (house) + <em>Tür</em> (door) = <em>Haustür</em> (front door)</li>
+                        <li><em>Sonne</em> (sun) + <em>Blume</em> (flower) = <em>Sonnenblume</em> (sunflower)</li>
+                    </ul>
+                    <p>The gender comes from the last word: <em>Die Sonnenblume</em> (feminine from Blume).</p>
+                </div>
+              
+            </div>
+
+            <div class="subsection">
+                <h3>How Do I Remember Genders?</h3>
+                <p>
+                    Say the noun with its article: <em>der Tisch, die Tische</em>. Use pictures: Draw a table with "der" next to it. Practice daily with a few nouns.
+                </p>
+            </div>
+
+            <div class="subsection">
+                <h3>What If I Use the Wrong Gender?</h3>
+                <p>
+                    It’s okay! If you say <em>das Tisch</em> instead of <em>der Tisch</em>, people will still understand. Keep practicing!
+                </p>
+            </div>
+        </section>
+
+        <!-- Practice Examples -->
+        <section id="practice">
+            <h2>Try These Examples</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><em>Der Hund spielt mit dem Ball.</em> (The dog plays with the ball.)</li>
+                    <li><em>Eine Katze sieht die Vögel.</em> (A cat sees the birds.)</li>
+                    <li><em>Das Kind malt ein Haus.</em> (The child draws a house.)</li>
+                    <li><em>Ich gebe den Blumen Wasser.</em> (I give the flowers water.)</li>
+                </ul>
+            </div>
+            <button class="toggle-btn">Translate Yourself</button>
+            <div class="hidden">
+                <p>Try translating these into German or English on your own first, then check your answers!</p>
+            </div>
+        </section>
+
+        <!-- Tips -->
+        <section id="tips">
+            <h2>How to Get Better</h2>
+            <p>
+                Learn 5 nouns a day with their articles and plurals (<em>der Tisch, die Tische</em>). Make simple sentences: <em>Ich sehe den Hund.</em> (I see the dog.) Try combining words: <em>Apfelbaum</em> (apple tree).
+            </p>
+           
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="articles.html" class="see-also-btn">German Articles</a>
+                <a href="adjectives.html" class="see-also-btn">German Adjectives</a>
+                <a href="conjugation.html" class="see-also-btn">German Conjugation</a>
+                <a href="cases.html" class="see-also-btn">German Cases</a>
+                <a href="prepositions.html" class="see-also-btn">German Prepositions</a>
+                <a href="structure.html" class="see-also-btn">Sentence Structure</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="articles.html" class="next-btn">Next: German Articles →</a>
+        </div>
+    </main>
+
+    <script>
+        // Inline JavaScript for toggle functionality and dark/light mode
+        document.addEventListener('DOMContentLoaded', function() {
+            // Toggle content
+            const buttons = document.querySelectorAll('.toggle-btn');
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const hiddenContent = this.nextElementSibling;
+                    if (hiddenContent.classList.contains('hidden')) {
+                        hiddenContent.classList.remove('hidden');
+                    } else {
+                        hiddenContent.classList.add('hidden');
+                    }
+                });
+            });
+
+            // Dark/Light mode toggle
+            const modeToggle = document.getElementById('mode-toggle');
+            const body = document.body;
+            modeToggle.addEventListener('click', function() {
+                body.classList.toggle('dark-mode');
+                const isDark = body.classList.contains('dark-mode');
+                modeToggle.querySelector('svg').setAttribute('d', isDark ? 
+                    'M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z' : 
+                    'M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z');
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

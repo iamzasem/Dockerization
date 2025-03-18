@@ -1,0 +1,759 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}German Prepositions{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/prepositions.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+                <a href="index.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="javascript:history.back()" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>German Prepositions: A Simple and Complete Guide for Beginners</h1>
+            <p>
+                Prepositions are small words like "in," "with," or "for" that tell you how nouns connect to the rest of the sentence—like where something is, when it happens, or who it’s for. In German, prepositions are super important because they decide which <strong>case</strong> (nominative, accusative, dative, or genitive) a noun uses. This guide will explain everything about German prepositions in a way that’s easy for beginners to understand. We’ll cover the main types, give tons of examples, and include practice so you’ll master them without needing another article. Let’s get started!
+            </p>
+        </section>
+
+        <!-- What Are Prepositions? -->
+        <section id="key-points">
+            <h2>What Are Prepositions?</h2>
+            <div class="subsection">
+                <p>
+                    Prepositions show relationships between things in a sentence. For example:
+                </p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>"I’m <strong>in</strong> the house." (Where am I? In the house.)</li>
+                        <li>"I play <strong>with</strong> my dog." (Who am I playing with? My dog.)</li>
+                    </ul>
+                    <p>
+                        In German, prepositions control the case of the noun that follows them—usually <strong>accusative</strong>, <strong>dative</strong>, or <strong>genitive</strong>, and sometimes either accusative or dative depending on the situation. Don’t worry—we’ll break it down step by step with simple words like <em>Hund</em> (dog), <em>Haus</em> (house), <em>Mann</em> (man), and <em>Frau</em> (woman).
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Types of German Prepositions -->
+        <section id="types">
+            <h2>Types of German Prepositions</h2>
+            <div class="subsection">
+                <p>
+                    German prepositions fall into four groups based on the case they use:
+                </p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><strong>Accusative Prepositions</strong> – For action or movement.</li>
+                        <li><strong>Dative Prepositions</strong> – For location or static situations.</li>
+                        <li><strong>Two-Way Prepositions</strong> – Can use accusative (movement) or dative (location).</li>
+                        <li><strong>Genitive Prepositions</strong> – For possession or fancier sentences.</li>
+                    </ul>
+                    <p>
+                        We’ll explain each group with examples and show how articles (like <em>der</em>, <em>den</em>, <em>dem</em>) change.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Accusative Prepositions -->
+        <section id="accusative">
+            <h2>1. Accusative Prepositions</h2>
+            <div class="subsection">
+                <h3>What They’re For</h3>
+                <p>These prepositions always use the <strong>accusative case</strong>. They often involve movement or action—like going somewhere or doing something for someone.</p>
+            </div>
+            <div class="subsection">
+                <h3>List of Accusative Prepositions</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>durch</em> – through</li>
+                        <li><em>für</em> – for</li>
+                        <li><em>gegen</em> – against</li>
+                        <li><em>ohne</em> – without</li>
+                        <li><em>um</em> – around, at (time)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>How They Work</h3>
+                <p>The noun after these prepositions takes accusative articles:</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>Masculine: <em>den</em>, <em>einen</em></li>
+                        <li>Feminine: <em>die</em>, <em>eine</em></li>
+                        <li>Neuter: <em>das</em>, <em>ein</em></li>
+                        <li>Plural: <em>die</em></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Examples</h3>
+                <div class="examples">
+                    <p><strong><em>durch</em> (through):</strong></p>
+                    <ul class="example-list">
+                        <li>Ich gehe <em>durch den Park</em>. (I walk through the park.)</li>
+                        <li>Sie läuft <em>durch die Straße</em>. (She runs through the street.)</li>
+                        <li>Wir fahren <em>durch das Tor</em>. (We drive through the gate.)</li>
+                    </ul>
+                    <p><strong><em>für</em> (for):</strong></p>
+                    <ul class="example-list">
+                        <li>Das Geschenk ist <em>für den Mann</em>. (The gift is for the man.)</li>
+                        <li>Ich kaufe Milch <em>für die Katze</em>. (I buy milk for the cat.)</li>
+                        <li>Er arbeitet <em>für das Geschäft</em>. (He works for the shop.)</li>
+                    </ul>
+                    <p><strong><em>gegen</em> (against):</strong></p>
+                    <ul class="example-list">
+                        <li>Der Ball fliegt <em>gegen den Baum</em>. (The ball flies against the tree.)</li>
+                        <li>Sie kämpft <em>gegen die Regeln</em>. (She fights against the rules.)</li>
+                        <li>Er lehnt sich <em>gegen das Auto</em>. (He leans against the car.)</li>
+                    </ul>
+                    <p><strong><em>ohne</em> (without):</strong></p>
+                    <ul class="example-list">
+                        <li>Ich gehe <em>ohne den Mantel</em>. (I go without the coat.)</li>
+                        <li>Sie isst <em>ohne die Gabel</em>. (She eats without the fork.)</li>
+                        <li>Wir reisen <em>ohne das Gepäck</em>. (We travel without the luggage.)</li>
+                    </ul>
+                    <p><strong><em>um</em> (around, at for time):</strong></p>
+                    <ul class="example-list">
+                        <li>Wir laufen <em>um den See</em>. (We run around the lake.)</li>
+                        <li>Sie tanzt <em>um die Ecke</em>. (She dances around the corner.)</li>
+                        <li>Ich komme <em>um das Haus</em>. (I come around the house.)</li>
+                        <li>Er trifft mich <em>um sieben Uhr</em>. (He meets me at seven o’clock.)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Key Point</h3>
+                <p>Accusative prepositions often show <strong>direction</strong> or <strong>purpose</strong>. If you see one, the next noun is accusative—easy!</p>
+            </div>
+        </section>
+
+        <!-- Dative Prepositions -->
+        <section id="dative">
+            <h2>2. Dative Prepositions</h2>
+            <div class="subsection">
+                <h3>What They’re For</h3>
+                <p>These prepositions always use the <strong>dative case</strong>. They’re usually about <strong>location</strong> (where something is) or <strong>relationships</strong> (like "with" or "from").</p>
+            </div>
+            <div class="subsection">
+                <h3>List of Dative Prepositions</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>aus</em> – from, out of</li>
+                        <li><em>bei</em> – at, with, near</li>
+                        <li><em>mit</em> – with</li>
+                        <li><em>nach</em> – to (places), after</li>
+                        <li><em>seit</em> – since (time)</li>
+                        <li><em>von</em> – from, by</li>
+                        <li><em>zu</em> – to (people or places)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>How They Work</h3>
+                <p>The noun after these prepositions takes dative articles:</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>Masculine: <em>dem</em>, <em>einem</em></li>
+                        <li>Feminine: <em>der</em>, <em>einer</em></li>
+                        <li>Neuter: <em>dem</em>, <em>einem</em></li>
+                        <li>Plural: <em>den</em> (+ <strong>-n</strong> to nouns if they don’t end in -n or -s)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Examples</h3>
+                <div class="examples">
+                    <p><strong><em>aus</em> (from, out of):</strong></p>
+                    <ul class="example-list">
+                        <li>Ich komme <em>aus dem Haus</em>. (I come from the house.)</li>
+                        <li>Sie trinkt <em>aus der Tasse</em>. (She drinks out of the cup.)</li>
+                        <li>Er nimmt das Spiel <em>aus dem Schrank</em>. (He takes the game out of the cupboard.)</li>
+                    </ul>
+                    <p><strong><em>bei</em> (at, with, near):</strong></p>
+                    <ul class="example-list">
+                        <li>Ich bin <em>bei dem Arzt</em>. (I’m at the doctor’s.)</li>
+                        <li>Sie wohnt <em>bei der Oma</em>. (She lives with the grandma.)</li>
+                        <li>Das Buch liegt <em>bei dem Tisch</em>. (The book is near the table.)</li>
+                    </ul>
+                    <p><strong><em>mit</em> (with):</strong></p>
+                    <ul class="example-list">
+                        <li>Ich spiele <em>mit dem Hund</em>. (I play with the dog.)</li>
+                        <li>Er fährt <em>mit der Freundin</em>. (He drives with the friend.)</li>
+                        <li>Wir essen <em>mit den Kindern</em>. (We eat with the children.)</li>
+                    </ul>
+                    <p><strong><em>nach</em> (to, after):</strong></p>
+                    <ul class="example-list">
+                        <li>Ich gehe <em>nach dem Park</em>. (I go to the park.)</li>
+                        <li>Wir fahren <em>nach der Schule</em>. (We go to the school.)</li>
+                        <li>Er kommt <em>nach dem Essen</em>. (He comes after the meal.)</li>
+                    </ul>
+                    <p><strong><em>seit</em> (since):</strong></p>
+                    <ul class="example-list">
+                        <li>Ich wohne <em>seit dem Sommer</em> hier. (I’ve lived here since the summer.)</li>
+                        <li>Sie arbeitet <em>seit der Woche</em> dort. (She’s worked there since the week.)</li>
+                        <li>Er ist <em>seit dem Morgen</em> wach. (He’s been awake since the morning.)</li>
+                    </ul>
+                    <p><strong><em>von</em> (from, by):</strong></p>
+                    <ul class="example-list">
+                        <li>Das Geschenk ist <em>von dem Mann</em>. (The gift is from the man.)</li>
+                        <li>Der Brief kommt <em>von der Lehrerin</em>. (The letter comes from the teacher.)</li>
+                        <li>Es ist ein Bild <em>von den Freunden</em>. (It’s a picture by the friends.)</li>
+                    </ul>
+                    <p><strong><em>zu</em> (to):</strong></p>
+                    <ul class="example-list">
+                        <li>Ich gehe <em>zu dem Laden</em>. (I go to the shop.)</li>
+                        <li>Sie läuft <em>zu der Schule</em>. (She runs to the school.)</li>
+                        <li>Wir besuchen <em>zu dem Freund</em>. (We visit the friend.)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Key Point</h3>
+                <p>Dative prepositions often show <strong>where</strong> something is or <strong>who</strong> it’s with. Look for <em>dem</em> or <em>der</em> after these words.</p>
+            </div>
+        </section>
+
+        <!-- Two-Way Prepositions -->
+        <section id="two-way">
+            <h2>3. Two-Way Prepositions</h2>
+            <div class="subsection">
+                <h3>What They’re For</h3>
+                <p>These prepositions can use <strong>accusative</strong> or <strong>dative</strong>, depending on what’s happening:</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><strong>Accusative</strong>: For <strong>movement</strong> (going somewhere).</li>
+                        <li><strong>Dative</strong>: For <strong>location</strong> (staying somewhere).</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>List of Two-Way Prepositions</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>an</em> – at, on</li>
+                        <li><em>auf</em> – on, onto</li>
+                        <li><em>hinter</em> – behind</li>
+                        <li><em>in</em> – in, into</li>
+                        <li><em>neben</em> – next to</li>
+                        <li><em>über</em> – over, above</li>
+                        <li><em>unter</em> – under</li>
+                        <li><em>vor</em> – in front of</li>
+                        <li><em>zwischen</em> – between</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>How They Work</h3>
+                <div class="examples">
+                    <p><strong>Movement (Accusative):</strong> Going toward something.</p>
+                    <ul class="example-list">
+                        <li>Articles: <em>den</em>, <em>die</em>, <em>das</em>, <em>einen</em>, etc.</li>
+                    </ul>
+                    <p><strong>Location (Dative):</strong> Staying in one spot.</p>
+                    <ul class="example-list">
+                        <li>Articles: <em>dem</em>, <em>der</em>, <em>den</em>, <em>einem</em>, etc.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Examples</h3>
+                <div class="examples">
+                    <p><strong><em>an</em> (at, on):</strong></p>
+                    <ul class="example-list">
+                        <li>Movement: Ich hänge das Bild <em>an den Haken</em>. (I hang the picture on the hook.)</li>
+                        <li>Location: Das Bild hängt <em>an dem Haken</em>. (The picture hangs on the hook.)</li>
+                    </ul>
+                    <p><strong><em>auf</em> (on, onto):</strong></p>
+                    <ul class="example-list">
+                        <li>Movement: Ich lege das Buch <em>auf den Tisch</em>. (I put the book on the table.)</li>
+                        <li>Location: Das Buch liegt <em>auf dem Tisch</em>. (The book is on the table.)</li>
+                    </ul>
+                    <p><strong><em>hinter</em> (behind):</strong></p>
+                    <ul class="example-list">
+                        <li>Movement: Der Hund läuft <em>hinter den Baum</em>. (The dog runs behind the tree.)</li>
+                        <li>Location: Der Hund steht <em>hinter dem Baum</em>. (The dog stands behind the tree.)</li>
+                    </ul>
+                    <p><strong><em>in</em> (in, into):</strong></p>
+                    <ul class="example-list">
+                        <li>Movement: Ich gehe <em>in den Garten</em>. (I go into the garden.)</li>
+                        <li>Location: Ich bin <em>in dem Garten</em>. (<em>im Garten</em>) (I’m in the garden.)</li>
+                    </ul>
+                    <p><strong><em>neben</em> (next to):</strong></p>
+                    <ul class="example-list">
+                        <li>Movement: Ich stelle den Stuhl <em>neben den Tisch</em>. (I put the chair next to the table.)</li>
+                        <li>Location: Der Stuhl steht <em>neben dem Tisch</em>. (The chair is next to the table.)</li>
+                    </ul>
+                    <p><strong><em>über</em> (over, above):</strong></p>
+                    <ul class="example-list">
+                        <li>Movement: Der Vogel fliegt <em>über den Fluss</em>. (The bird flies over the river.)</li>
+                        <li>Location: Der Vogel ist <em>über dem Fluss</em>. (The bird is above the river.)</li>
+                    </ul>
+                    <p><strong><em>unter</em> (under):</strong></p>
+                    <ul class="example-list">
+                        <li>Movement: Die Katze kriecht <em>unter den Tisch</em>. (The cat crawls under the table.)</li>
+                        <li>Location: Die Katze liegt <em>unter dem Tisch</em>. (The cat lies under the table.)</li>
+                    </ul>
+                    <p><strong><em>vor</em> (in front of):</strong></p>
+                    <ul class="example-list">
+                        <li>Movement: Ich stelle das Auto <em>vor den Laden</em>. (I park the car in front of the shop.)</li>
+                        <li>Location: Das Auto steht <em>vor dem Laden</em>. (The car is in front of the shop.)</li>
+                    </ul>
+                    <p><strong><em>zwischen</em> (between):</strong></p>
+                    <ul class="example-list">
+                        <li>Movement: Er legt das Buch <em>zwischen die Stühle</em>. (He puts the book between the chairs.)</li>
+                        <li>Location: Das Buch liegt <em>zwischen den Stühlen</em>. (The book is between the chairs.)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Key Point</h3>
+                <p>Ask: <strong>"Is there movement?"</strong></p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>Yes → accusative (e.g., <em>in den Park</em>)</li>
+                        <li>No → dative (e.g., <em>in dem Park</em>)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Genitive Prepositions -->
+        <section id="genitive">
+            <h2>4. Genitive Prepositions</h2>
+            <div class="subsection">
+                <h3>What They’re For</h3>
+                <p>These prepositions use the <strong>genitive case</strong> and often show possession or reason. They’re less common for beginners but good to know.</p>
+            </div>
+            <div class="subsection">
+                <h3>List of Genitive Prepositions</h3>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>trotz</em> – despite</li>
+                        <li><em>wegen</em> – because of</li>
+                        <li><em>während</em> – during</li>
+                        <li><em>statt</em> – instead of</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>How They Work</h3>
+                <p>The noun takes genitive articles:</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>Masculine: <em>des</em>, <em>eines</em></li>
+                        <li>Feminine: <em>der</em>, <em>einer</em></li>
+                        <li>Neuter: <em>des</em>, <em>eines</em></li>
+                        <li>Plural: <em>der</em></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Examples</h3>
+                <div class="examples">
+                    <p><strong><em>trotz</em> (despite):</strong></p>
+                    <ul class="example-list">
+                        <li><em>Trotz des Regens</em> gehe ich raus. (Despite the rain, I go out.)</li>
+                        <li><em>Trotz der Arbeit</em> lacht sie. (Despite the work, she laughs.)</li>
+                    </ul>
+                    <p><strong><em>wegen</em> (because of):</strong></p>
+                    <ul class="example-list">
+                        <li><em>Wegen des Sturms</em> bleibe ich drinnen. (Because of the storm, I stay inside.)</li>
+                        <li><em>Wegen der Kinder</em> komme ich später. (Because of the children, I come later.)</li>
+                    </ul>
+                    <p><strong><em>während</em> (during):</strong></p>
+                    <ul class="example-list">
+                        <li><em>Während des Films</em> schlafe ich. (During the film, I sleep.)</li>
+                        <li><em>Während der Pause</em> esse ich. (During the break, I eat.)</li>
+                    </ul>
+                    <p><strong><em>statt</em> (instead of):</strong></p>
+                    <ul class="example-list">
+                        <li><em>Statt des Kaffees</em> trinke ich Tee. (Instead of the coffee, I drink tea.)</li>
+                        <li><em>Statt der Pizza</em> esse ich Suppe. (Instead of the pizza, I eat soup.)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Key Point</h3>
+                <p>Genitive prepositions sound formal. Beginners can often use <em>von</em> (dative) instead (e.g., <em>wegen des Regens</em> → <em>von dem Regen</em>).</p>
+            </div>
+        </section>
+
+        <!-- Quick Reference Tables -->
+        <section id="tables">
+            <h2>Quick Reference Tables</h2>
+            <div class="subsection">
+                <h3>Accusative Prepositions</h3>
+                <div class="examples">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Preposition</th>
+                                <th>Meaning</th>
+                                <th>Example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>durch</td>
+                                <td>through</td>
+                                <td>durch den Wald</td>
+                            </tr>
+                            <tr>
+                                <td>für</td>
+                                <td>for</td>
+                                <td>für die Katze</td>
+                            </tr>
+                            <tr>
+                                <td>gegen</td>
+                                <td>against</td>
+                                <td>gegen den Baum</td>
+                            </tr>
+                            <tr>
+                                <td>ohne</td>
+                                <td>without</td>
+                                <td>ohne den Schirm</td>
+                            </tr>
+                            <tr>
+                                <td>um</td>
+                                <td>around, at</td>
+                                <td>um den See, um 8 Uhr</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Dative Prepositions</h3>
+                <div class="examples">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Preposition</th>
+                                <th>Meaning</th>
+                                <th>Example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>aus</td>
+                                <td>from, out of</td>
+                                <td>aus dem Haus</td>
+                            </tr>
+                            <tr>
+                                <td>bei</td>
+                                <td>at, with</td>
+                                <td>bei dem Arzt</td>
+                            </tr>
+                            <tr>
+                                <td>mit</td>
+                                <td>with</td>
+                                <td>mit dem Hund</td>
+                            </tr>
+                            <tr>
+                                <td>nach</td>
+                                <td>to, after</td>
+                                <td>nach dem Park</td>
+                            </tr>
+                            <tr>
+                                <td>seit</td>
+                                <td>since</td>
+                                <td>seit dem Sommer</td>
+                            </tr>
+                            <tr>
+                                <td>von</td>
+                                <td>from, by</td>
+                                <td>von dem Mann</td>
+                            </tr>
+                            <tr>
+                                <td>zu</td>
+                                <td>to</td>
+                                <td>zu dem Laden</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Two-Way Prepositions</h3>
+                <div class="examples">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Preposition</th>
+                                <th>Accusative (Movement)</th>
+                                <th>Dative (Location)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>an</td>
+                                <td>an den Haken</td>
+                                <td>an dem Haken</td>
+                            </tr>
+                            <tr>
+                                <td>auf</td>
+                                <td>auf den Tisch</td>
+                                <td>auf dem Tisch</td>
+                            </tr>
+                            <tr>
+                                <td>hinter</td>
+                                <td>hinter den Baum</td>
+                                <td>hinter dem Baum</td>
+                            </tr>
+                            <tr>
+                                <td>in</td>
+                                <td>in den Garten</td>
+                                <td>in dem Garten (<em>im</em>)</td>
+                            </tr>
+                            <tr>
+                                <td>neben</td>
+                                <td>neben den Tisch</td>
+                                <td>neben dem Tisch</td>
+                            </tr>
+                            <tr>
+                                <td>über</td>
+                                <td>über den Fluss</td>
+                                <td>über dem Fluss</td>
+                            </tr>
+                            <tr>
+                                <td>unter</td>
+                                <td>unter den Tisch</td>
+                                <td>unter dem Tisch</td>
+                            </tr>
+                            <tr>
+                                <td>vor</td>
+                                <td>vor den Laden</td>
+                                <td>vor dem Laden</td>
+                            </tr>
+                            <tr>
+                                <td>zwischen</td>
+                                <td>zwischen die Stühle</td>
+                                <td>zwischen den Stühlen</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Genitive Prepositions</h3>
+                <div class="examples">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Preposition</th>
+                                <th>Meaning</th>
+                                <th>Example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>trotz</td>
+                                <td>despite</td>
+                                <td>trotz des Regens</td>
+                            </tr>
+                            <tr>
+                                <td>wegen</td>
+                                <td>because of</td>
+                                <td>wegen des Sturms</td>
+                            </tr>
+                            <tr>
+                                <td>während</td>
+                                <td>during</td>
+                                <td>während des Films</td>
+                            </tr>
+                            <tr>
+                                <td>statt</td>
+                                <td>instead of</td>
+                                <td>statt des Kaffees</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practice Time -->
+        <section id="practice">
+            <h2>Practice Time!</h2>
+            <p>Try these exercises to get comfortable with prepositions. Answers are below each one.</p>
+            <div class="subsection">
+                <h3>Exercise 1: Fill in the Preposition</h3>
+                <p>Pick the right preposition from the list.</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>Ich gehe ____ den Park. (through)</li>
+                    </ul>
+                    <button class="toggle-btn">See Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> durch (<em>durch den Park</em>)</p></div>
+                    <ul class="example-list">
+                        <li>Das ist ____ die Kinder. (for)</li>
+                    </ul>
+                    <button class="toggle-btn">See Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> für (<em>für die Kinder</em>)</p></div>
+                    <ul class="example-list">
+                        <li>Er wohnt ____ dem Bahnhof. (near)</li>
+                    </ul>
+                    <button class="toggle-btn">See Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> bei (<em>bei dem Bahnhof</em>)</p></div>
+                    <ul class="example-list">
+                        <li>Wir spielen ____ dem Ball. (with)</li>
+                    </ul>
+                    <button class="toggle-btn">See Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> mit (<em>mit dem Ball</em>)</p></div>
+                    <ul class="example-list">
+                        <li>Sie fährt ____ den See. (around)</li>
+                    </ul>
+                    <button class="toggle-btn">See Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> um (<em>um den See</em>)</p></div>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Exercise 2: Choose the Case</h3>
+                <p>Fill in the correct article (<em>den, dem, des, die</em>, etc.) based on the preposition.</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>Ich komme <em>aus</em> ____ Haus.</li>
+                    </ul>
+                    <button class="toggle-btn">See Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> dem (<em>aus dem Haus</em>, dative)</p></div>
+                    <ul class="example-list">
+                        <li>Er läuft <em>gegen</em> ____ Wand.</li>
+                    </ul>
+                    <button class="toggle-btn">See Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> die (<em>gegen die Wand</em>, accusative)</p></div>
+                    <ul class="example-list">
+                        <li>Wir sind <em>bei</em> ____ Lehrer.</li>
+                    </ul>
+                    <button class="toggle-btn">See Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> dem (<em>bei dem Lehrer</em>, dative)</p></div>
+                    <ul class="example-list">
+                        <li>Das ist <em>für</em> ____ Mann.</li>
+                    </ul>
+                    <button class="toggle-btn">See Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> den (<em>für den Mann</em>, accusative)</p></div>
+                    <ul class="example-list">
+                        <li><em>Trotz</em> ____ Wetters gehe ich.</li>
+                    </ul>
+                    <button class="toggle-btn">See Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> des (<em>trotz des Wetters</em>, genitive)</p></div>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Exercise 3: Two-Way Prepositions</h3>
+                <p>Fill in <em>den</em> or <em>dem</em> based on movement or location.</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li>Ich gehe <em>in</em> ____ Garten. (I go into the garden.)</li>
+                    </ul>
+                    <button class="toggle-btn">See Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> den (<em>in den Garten</em>, accusative)</p></div>
+                    <ul class="example-list">
+                        <li>Ich bin <em>in</em> ____ Garten. (I’m in the garden.)</li>
+                    </ul>
+                    <button class="toggle-btn">See Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> dem (<em>in dem Garten</em>, dative)</p></div>
+                    <ul class="example-list">
+                        <li>Er legt das Buch <em>auf</em> ____ Tisch. (He puts the book on the table.)</li>
+                    </ul>
+                    <button class="toggle-btn">See Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> den (<em>auf den Tisch</em>, accusative)</p></div>
+                    <ul class="example-list">
+                        <li>Das Buch liegt <em>auf</em> ____ Tisch. (The book is on the table.)</li>
+                    </ul>
+                    <button class="toggle-btn">See Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> dem (<em>auf dem Tisch</em>, dative)</p></div>
+                    <ul class="example-list">
+                        <li>Sie steht <em>vor</em> ____ Haus. (She stands in front of the house.)</li>
+                    </ul>
+                    <button class="toggle-btn">See Answer</button>
+                    <div class="hidden"><p><strong>Answer:</strong> dem (<em>vor dem Haus</em>, dative)</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips -->
+        <section id="tips">
+            <h2>Tips to Master Prepositions</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Learn by Case:</strong> Start with accusative (<em>durch, für</em>), then dative (<em>mit, zu</em>), then two-way.</li>
+                    <li><strong>Movement vs. Location:</strong> For two-way prepositions, ask "Am I going there?" (accusative) or "Am I staying there?" (dative).</li>
+                    <li><strong>Practice Sentences:</strong> Make your own with easy words like <em>Hund</em> or <em>Buch</em>.</li>
+                    <li><strong>Memorize Lists:</strong> Repeat the prepositions until they stick.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Final Thoughts -->
+        <section id="final-thoughts">
+            <h2>You’re Ready!</h2>
+            <p>
+                You now know all the key German prepositions—accusative, dative, two-way, and even a taste of genitive. With these examples and exercises, you’ve got everything to use them right. Keep practicing, and soon you’ll spot the cases without thinking. <em>Viel Spaß!</em> (Have fun!)
+            </p>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="nouns.html" class="see-also-btn">German Nouns</a>
+                <a href="cases.html" class="see-also-btn">German Cases</a>
+                <a href="articles.html" class="see-also-btn">German Articles</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="articles.html" class="next-btn">Next: German Articles →</a>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('.toggle-btn');
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const hiddenContent = this.nextElementSibling;
+                    if (hiddenContent.classList.contains('hidden')) {
+                        hiddenContent.classList.remove('hidden');
+                    } else {
+                        hiddenContent.classList.add('hidden');
+                    }
+                });
+            });
+
+            const modeToggle = document.getElementById('mode-toggle');
+            const body = document.body;
+            modeToggle.addEventListener('click', function() {
+                body.classList.toggle('dark-mode');
+                const isDark = body.classList.contains('dark-mode');
+                modeToggle.querySelector('svg').setAttribute('d', isDark ? 
+                    'M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z' : 
+                    'M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z');
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

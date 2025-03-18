@@ -1,0 +1,792 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}German Perfekt and Partizip II{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/partizip2.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+                <a href="index.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="a1-topics.html" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>German Perfekt and Partizip II: The Ultimate Simple Guide</h1>
+            <p>
+                The <strong>Perfekt</strong> tense is how Germans talk about the past in everyday life—like saying “I have eaten” or “She has gone” in English. It’s made with two parts: a helping verb (<em>haben</em> or <em>sein</em>) and the <strong>Partizip II</strong> (past participle) of the main verb. This guide explains it all step-by-step, with loads of examples and exercises, so you’ll master it without needing another article or video. Let’s go!
+            </p>
+        </section>
+
+        <!-- What is Perfekt? -->
+        <section id="perfekt">
+            <h2>What is the Perfekt Tense?</h2>
+            <p>The Perfekt tense is the German way to say something happened and is done—like “I’ve just finished this” or “We went to the park.” It’s used in casual speech (unlike Präteritum, which is more for writing).</p>
+            <div class="subsection">
+                <h3>How It Works</h3>
+                <p><strong>Formula:</strong> Helping verb (<em>haben</em> or <em>sein</em> in present tense) + Partizip II (at the end).</p>
+                <p><strong>Two Helpers:</strong></p>
+                <ul class="example-list">
+                    <li><em>Haben</em> (to have): Used with most verbs.</li>
+                    <li><em>Sein</em> (to be): Used with verbs of movement or change of state (more on this later).</li>
+                </ul>
+                <p><strong>Quick Example:</strong></p>
+                <ul class="example-list">
+                    <li><em>Ich habe gegessen.</em> (I have eaten.)<br><em>habe</em> (helping verb) + <em>gegessen</em> (Partizip II of <em>essen</em>).</li>
+                    <li><em>Ich bin gegangen.</em> (I have gone.)<br><em>bin</em> (helping verb) + <em>gegangen</em> (Partizip II of <em>gehen</em>).</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- What is Partizip II? -->
+        <section id="partizip2">
+            <h2>What is Partizip II?</h2>
+            <p>The <strong>Partizip II</strong> is the past participle—the special past form of a verb used in Perfekt. It’s like “eaten” or “gone” in English. How you make it depends on whether the verb is regular, irregular, or separable.</p>
+        </section>
+
+        <!-- Helping Verbs -->
+        <section id="helping-verbs">
+            <h2>Step 1: The Helping Verbs</h2>
+            <div class="subsection">
+                <h3>Haben (Most Verbs)</h3>
+                <p>Used with verbs that don’t involve movement or a change of state.</p>
+                <div class="table-container">
+                    <table>
+                        <tr><th>Subject</th><th>Haben</th></tr>
+                        <tr><td>ich</td><td>habe</td></tr>
+                        <tr><td>du</td><td>hast</td></tr>
+                        <tr><td>er/sie/es</td><td>hat</td></tr>
+                        <tr><td>wir</td><td>haben</td></tr>
+                        <tr><td>ihr</td><td>habt</td></tr>
+                        <tr><td>sie/Sie</td><td>haben</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Sein (Movement or Change)</h3>
+                <p>Used with verbs of motion (e.g., go, run) or change (e.g., become, die).</p>
+                <div class="table-container">
+                    <table>
+                        <tr><th>Subject</th><th>Sein</th></tr>
+                        <tr><td>ich</td><td>bin</td></tr>
+                        <tr><td>du</td><td>bist</td></tr>
+                        <tr><td>er/sie/es</td><td>ist</td></tr>
+                        <tr><td>wir</td><td>sind</td></tr>
+                        <tr><td>ihr</td><td>seid</td></tr>
+                        <tr><td>sie/Sie</td><td>sind</td></tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Forming Partizip II -->
+        <section id="forming">
+            <h2>Step 2: Forming Partizip II</h2>
+            <div class="subsection">
+                <h3>1. Regular Verbs (Weak Verbs)</h3>
+                <p><strong>Rule:</strong> Add <em>ge-</em> to the start + <em>-t</em> to the stem (if it ends in <em>-d</em> or <em>-t</em>, add <em>-et</em>).</p>
+                <p><strong>Pattern:</strong> <em>ge-</em> + stem + <em>-t</em> or <em>-et</em>.</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><strong>machen</strong> (to make) → <em>gemacht</em>
+                            <ul>
+                                <li><em>Ich habe einen Kuchen gemacht.</em> (I have made a cake.)</li>
+                                <li><em>Du hast das Bett gemacht.</em> (You have made the bed.)</li>
+                            </ul>
+                        </li>
+                        <li><strong>lernen</strong> (to learn) → <em>gelernt</em>
+                            <ul>
+                                <li><em>Wir haben Deutsch gelernt.</em> (We have learned German.)</li>
+                                <li><em>Sie hat viel gelernt.</em> (She has learned a lot.)</li>
+                            </ul>
+                        </li>
+                        <li><strong>warten</strong> (to wait) → <em>gewartet</em>
+                            <ul>
+                                <li><em>Er hat auf mich gewartet.</em> (He has waited for me.)</li>
+                                <li><em>Ihr habt lange gewartet.</em> (You all have waited a long time.)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>2. Irregular Verbs (Strong Verbs)</h3>
+                <p><strong>Rule:</strong> Add <em>ge-</em> to the start + change the stem (vowel often shifts) + usually <em>-en</em> (no <em>-t</em>).</p>
+                <p><strong>Pattern:</strong> <em>ge-</em> + changed stem + <em>-en</em>.</p>
+                <p><strong>Note:</strong> You need to memorize these—they don’t follow a simple rule.</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><strong>essen</strong> (to eat) → <em>gegessen</em>
+                            <ul>
+                                <li><em>Ich habe Pizza gegessen.</em> (I have eaten pizza.)</li>
+                                <li><em>Er hat einen Apfel gegessen.</em> (He has eaten an apple.)</li>
+                            </ul>
+                        </li>
+                        <li><strong>gehen</strong> (to go) → <em>gegangen</em> (<em>sein</em>)
+                            <ul>
+                                <li><em>Ich bin zur Schule gegangen.</em> (I have gone to school.)</li>
+                                <li><em>Wir sind ins Kino gegangen.</em> (We have gone to the cinema.)</li>
+                            </ul>
+                        </li>
+                        <li><strong>trinken</strong> (to drink) → <em>getrunken</em>
+                            <ul>
+                                <li><em>Du hast Wasser getrunken.</em> (You have drunk water.)</li>
+                                <li><em>Sie haben Saft getrunken.</em> (They have drunk juice.)</li>
+                            </ul>
+                        </li>
+                        <li><strong>schreiben</strong> (to write) → <em>geschrieben</em>
+                            <ul>
+                                <li><em>Ich habe einen Brief geschrieben.</em> (I have written a letter.)</li>
+                                <li><em>Er hat eine E-Mail geschrieben.</em> (He has written an email.)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>3. Mixed Verbs (Bit of Both)</h3>
+                <p><strong>Rule:</strong> Add <em>ge-</em> + change stem slightly + <em>-t</em>.</p>
+                <p><strong>Note:</strong> These blend regular and irregular patterns.</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><strong>denken</strong> (to think) → <em>gedacht</em>
+                            <ul>
+                                <li><em>Ich habe an dich gedacht.</em> (I have thought about you.)</li>
+                                <li><em>Sie hat lange gedacht.</em> (She has thought for a long time.)</li>
+                            </ul>
+                        </li>
+                        <li><strong>bringen</strong> (to bring) → <em>gebracht</em>
+                            <ul>
+                                <li><em>Er hat ein Geschenk gebracht.</em> (He has brought a gift.)</li>
+                                <li><em>Wir haben Essen gebracht.</em> (We have brought food.)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>4. Separable Verbs</h3>
+                <p><strong>Rule:</strong> Add <em>ge-</em> between the prefix and stem + follow regular/irregular rules.</p>
+                <p><strong>Pattern:</strong> Prefix + <em>ge-</em> + stem + ending.</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><strong>aufstehen</strong> (to get up) → <em>aufgestanden</em> (<em>sein</em>)
+                            <ul>
+                                <li><em>Ich bin früh aufgestanden.</em> (I have gotten up early.)</li>
+                                <li><em>Ihr seid spät aufgestanden.</em> (You all have gotten up late.)</li>
+                            </ul>
+                        </li>
+                        <li><strong>einkaufen</strong> (to shop) → <em>eingekauft</em>
+                            <ul>
+                                <li><em>Wir haben Brot eingekauft.</em> (We have shopped for bread.)</li>
+                                <li><em>Sie hat Milch eingekauft.</em> (She has shopped for milk.)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>5. Modal Verbs</h3>
+                <p><strong>Rule:</strong> Add <em>ge-</em> + stem + <em>-t</em>, but in Perfekt, they often pair with an infinitive.</p>
+                <p><strong>Note:</strong> Double infinitive structure is common.</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><strong>können</strong> (to be able to) → <em>gekonnt</em>
+                            <ul>
+                                <li><em>Ich habe das gekonnt.</em> (I have been able to do that.)</li>
+                                <li><em>Ich habe schwimmen gekonnt.</em> (I have been able to swim—double infinitive.)</li>
+                            </ul>
+                        </li>
+                        <li><strong>müssen</strong> (to have to) → <em>gemusst</em>
+                            <ul>
+                                <li><em>Du hast das gemusst.</em> (You have had to do that.)</li>
+                                <li><em>Wir haben gehen müssen.</em> (We have had to go.)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Haben vs. Sein -->
+        <section id="haben-sein">
+            <h2>When to Use Haben vs. Sein</h2>
+            <div class="subsection">
+                <h3>Use Haben</h3>
+                <p>Most verbs: Actions, states, or things you do.</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>Ich habe gespielt.</em> (I have played.)</li>
+                        <li><em>Sie hat gelacht.</em> (She has laughed.)</li>
+                        <li><em>Wir haben gekocht.</em> (We have cooked.)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Use Sein</h3>
+                <p>Verbs of <strong>movement</strong> (e.g., go, run, come) or <strong>change of state</strong> (e.g., become, die).</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>Ich bin gelaufen.</em> (I have run.)</li>
+                        <li><em>Er ist gestorben.</em> (He has died.)</li>
+                        <li><em>Wir sind geworden.</em> (We have become.)</li>
+                    </ul>
+                </div>
+                <p><strong>Trick to Remember:</strong> <em>Sein</em> verbs often answer “Where did I go?” or “What did I become?”</p>
+                <ul class="example-list">
+                    <li><em>Ich bin ins Haus gegangen.</em> (I went into the house—movement.)</li>
+                    <li><em>Sie ist müde geworden.</em> (She became tired—change.)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Example Sentences -->
+        <section id="examples">
+            <h2>Tons of Example Sentences</h2>
+            <div class="subsection">
+                <h3>Regular Verbs with Haben</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Ich habe heute gearbeitet.</em> (I have worked today.)</li>
+                        <li><em>Du hast das Spiel gewonnen.</em> (You have won the game.)</li>
+                        <li><em>Er hat die Tür geöffnet.</em> (He has opened the door.)</li>
+                        <li><em>Sie hat den Film geliebt.</em> (She has loved the movie.)</li>
+                        <li><em>Wir haben im Park gespielt.</em> (We have played in the park.)</li>
+                        <li><em>Ihr habt laut gelacht.</em> (You all have laughed loudly.)</li>
+                        <li><em>Sie haben das Essen gekocht.</em> (They have cooked the food.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Irregular Verbs with Haben</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Ich habe ein Buch gelesen.</em> (I have read a book.)</li>
+                        <li><em>Du hast den Kaffee getrunken.</em> (You have drunk the coffee.)</li>
+                        <li><em>Er hat das Lied gesungen.</em> (He has sung the song.)</li>
+                        <li><em>Sie hat den Brief geschrieben.</em> (She has written the letter.)</li>
+                        <li><em>Wir haben die Stadt gesehen.</em> (We have seen the city.)</li>
+                        <li><em>Ihr habt viel gesprochen.</em> (You all have spoken a lot.)</li>
+                        <li><em>Sie haben das Fenster gebrochen.</em> (They have broken the window.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Verbs with Sein</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Ich bin zur Schule gegangen.</em> (I have gone to school.)</li>
+                        <li><em>Du bist schnell gelaufen.</em> (You have run fast.)</li>
+                        <li><em>Er ist nach Hause gekommen.</em> (He has come home.)</li>
+                        <li><em>Sie ist müde geworden.</em> (She has become tired.)</li>
+                        <li><em>Wir sind im Park gewesen.</em> (We have been in the park.)</li>
+                        <li><em>Ihr seid hoch gesprungen.</em> (You all have jumped high.)</li>
+                        <li><em>Sie sind gestorben.</em> (They have died.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Separable Verbs</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Ich habe angerufen.</em> (I have called.)</li>
+                        <li><em>Du bist ausgegangen.</em> (You have gone out.)</li>
+                        <li><em>Er hat eingekauft.</em> (He has shopped.)</li>
+                        <li><em>Sie ist aufgestanden.</em> (She has gotten up.)</li>
+                        <li><em>Wir haben abgewaschen.</em> (We have washed up.)</li>
+                        <li><em>Ihr seid mitgekommen.</em> (You all have come along.)</li>
+                        <li><em>Sie haben vorgelesen.</em> (They have read aloud.)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Modal Verbs</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Ich habe das gewollt.</em> (I have wanted that.)</li>
+                        <li><em>Du hast es gekonnt.</em> (You have been able to do it.)</li>
+                        <li><em>Er hat gehen müssen.</em> (He has had to go.)</li>
+                        <li><em>Sie hat spielen dürfen.</em> (She has been allowed to play.)</li>
+                        <li><em>Wir haben es gesollt.</em> (We have been supposed to do it.)</li>
+                        <li><em>Ihr habt es gemocht.</em> (You all have liked it.)</li>
+                        <li><em>Sie haben helfen können.</em> (They have been able to help.)</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sentence Structure -->
+        <section id="structure">
+            <h2>Sentence Structure</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Main Clause</strong>: Helping verb in second position, Partizip II at the end.
+                        <ul><li><em>Ich habe gestern ein Buch gelesen.</em> (I have read a book yesterday.)</li></ul>
+                    </li>
+                    <li><strong>With Objects</strong>: Objects go before Partizip II.
+                        <ul><li><em>Sie hat den Hund gefüttert.</em> (She has fed the dog.)</li></ul>
+                    </li>
+                    <li><strong>Questions</strong>: Helping verb first, Partizip II last.
+                        <ul><li><em>Hast du das gemacht?</em> (Have you done that?)</li></ul>
+                    </li>
+                    <li><strong>Negation</strong>: <em>Nicht</em> before Partizip II.
+                        <ul><li><em>Ich habe nicht geschlafen.</em> (I have not slept.)</li></ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Exercises -->
+        <section id="practice">
+            <h2>Creative Exercises with Multiple-Choice Options</h2>
+
+            <div class="subsection" id="exercise1">
+                <h3>Exercise 1: Pick the Helping Verb</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Ich ___ zur Schule gegangen.
+                            <select class="answer-select" data-correct="bin">
+                                <option value="">Select</option>
+                                <option value="habe">habe</option>
+                                <option value="bin">bin</option>
+                                <option value="hast">hast</option>
+                            </select>
+                        </li>
+                        <li>Du ___ ein Lied gesungen.
+                            <select class="answer-select" data-correct="hast">
+                                <option value="">Select</option>
+                                <option value="hast">hast</option>
+                                <option value="bist">bist</option>
+                                <option value="habe">habe</option>
+                            </select>
+                        </li>
+                        <li>Er ___ das Fenster geöffnet.
+                            <select class="answer-select" data-correct="hat">
+                                <option value="">Select</option>
+                                <option value="hat">hat</option>
+                                <option value="ist">ist</option>
+                                <option value="bin">bin</option>
+                            </select>
+                        </li>
+                        <li>Sie ___ schnell gelaufen.
+                            <select class="answer-select" data-correct="ist">
+                                <option value="">Select</option>
+                                <option value="habe">habe</option>
+                                <option value="ist">ist</option>
+                                <option value="hat">hat</option>
+                            </select>
+                        </li>
+                        <li>Wir ___ im Park gespielt.
+                            <select class="answer-select" data-correct="haben">
+                                <option value="">Select</option>
+                                <option value="haben">haben</option>
+                                <option value="sind">sind</option>
+                                <option value="habt">habt</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li>Ich <em>bin</em> zur Schule gegangen.</li>
+                            <li>Du <em>hast</em> ein Lied gesungen.</li>
+                            <li>Er <em>hat</em> das Fenster geöffnet.</li>
+                            <li>Sie <em>ist</em> schnell gelaufen.</li>
+                            <li>Wir <em>haben</em> im Park gespielt.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise2">
+                <h3>Exercise 2: Form the Partizip II</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Ich habe das Buch ___ (lesen).
+                            <select class="answer-select" data-correct="gelesen">
+                                <option value="">Select</option>
+                                <option value="gelesen">gelesen</option>
+                                <option value="gelest">gelest</option>
+                                <option value="geleset">geleset</option>
+                            </select>
+                        </li>
+                        <li>Du bist früh ___ (aufstehen).
+                            <select class="answer-select" data-correct="aufgestanden">
+                                <option value="">Select</option>
+                                <option value="aufgestanden">aufgestanden</option>
+                                <option value="aufgesteht">aufgesteht</option>
+                                <option value="aufgestammt">aufgestammt</option>
+                            </select>
+                        </li>
+                        <li>Er hat das Spiel ___ (gewinnen).
+                            <select class="answer-select" data-correct="gewonnen">
+                                <option value="">Select</option>
+                                <option value="gewonnen">gewonnen</option>
+                                <option value="gewinnt">gewinnt</option>
+                                <option value="gewinnent">gewinnent</option>
+                            </select>
+                        </li>
+                        <li>Sie haben die Tür ___ (machen).
+                            <select class="answer-select" data-correct="gemacht">
+                                <option value="">Select</option>
+                                <option value="gemacht">gemacht</option>
+                                <option value="gemach">gemach</option>
+                                <option value="gemachet">gemachet</option>
+                            </select>
+                        </li>
+                        <li>Wir sind ins Kino ___ (gehen).
+                            <select class="answer-select" data-correct="gegangen">
+                                <option value="">Select</option>
+                                <option value="gegangen">gegangen</option>
+                                <option value="gegan">gegan</option>
+                                <option value="gegangt">gegangt</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li>Ich habe das Buch <em>gelesen</em>.</li>
+                            <li>Du bist früh <em>aufgestanden</em>.</li>
+                            <li>Er hat das Spiel <em>gewonnen</em>.</li>
+                            <li>Sie haben die Tür <em>gemacht</em>.</li>
+                            <li>Wir sind ins Kino <em>gegangen</em>.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise3">
+                <h3>Exercise 3: Regular vs. Irregular</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Ich habe lange ___ (warten).
+                            <select class="answer-select" data-correct="gewartet">
+                                <option value="">Select</option>
+                                <option value="gewartet">gewartet</option>
+                                <option value="gewarten">gewarten</option>
+                                <option value="gewart">gewart</option>
+                            </select>
+                        </li>
+                        <li>Du hast viel ___ (trinken).
+                            <select class="answer-select" data-correct="getrunken">
+                                <option value="">Select</option>
+                                <option value="getrunken">getrunken</option>
+                                <option value="getrinkt">getrinkt</option>
+                                <option value="getrankt">getrankt</option>
+                            </select>
+                        </li>
+                        <li>Er hat das Auto ___ (waschen).
+                            <select class="answer-select" data-correct="gewaschen">
+                                <option value="">Select</option>
+                                <option value="gewaschen">gewaschen</option>
+                                <option value="gewascht">gewascht</option>
+                                <option value="gewasche">gewasche</option>
+                            </select>
+                        </li>
+                        <li>Sie hat Deutsch ___ (lernen).
+                            <select class="answer-select" data-correct="gelernt">
+                                <option value="">Select</option>
+                                <option value="gelernt">gelernt</option>
+                                <option value="gelern">gelern</option>
+                                <option value="gelernent">gelernent</option>
+                            </select>
+                        </li>
+                        <li>Wir haben laut ___ (lachen).
+                            <select class="answer-select" data-correct="gelacht">
+                                <option value="">Select</option>
+                                <option value="gelacht">gelacht</option>
+                                <option value="gelachen">gelachen</option>
+                                <option value="gelachet">gelachet</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li>Ich habe lange <em>gewartet</em>.</li>
+                            <li>Du hast viel <em>getrunken</em>.</li>
+                            <li>Er hat das Auto <em>gewaschen</em>.</li>
+                            <li>Sie hat Deutsch <em>gelernt</em>.</li>
+                            <li>Wir haben laut <em>gelacht</em>.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise4">
+                <h3>Exercise 4: Separable Verbs</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Ich habe meine Mutter ___ (anrufen).
+                            <select class="answer-select" data-correct="angerufen">
+                                <option value="">Select</option>
+                                <option value="angerufen">angerufen</option>
+                                <option value="angeruft">angeruft</option>
+                                <option value="angecalled">angecalled</option>
+                            </select>
+                        </li>
+                        <li>Du bist heute ___ (ausgehen).
+                            <select class="answer-select" data-correct="ausgegangen">
+                                <option value="">Select</option>
+                                <option value="ausgegangen">ausgegangen</option>
+                                <option value="ausgegangt">ausgegangt</option>
+                                <option value="ausgeht">ausgeht</option>
+                            </select>
+                        </li>
+                        <li>Er hat im Laden ___ (einkaufen).
+                            <select class="answer-select" data-correct="eingekauft">
+                                <option value="">Select</option>
+                                <option value="eingekauft">eingekauft</option>
+                                <option value="eingekaufen">eingekaufen</option>
+                                <option value="eingeauft">eingeauft</option>
+                            </select>
+                        </li>
+                        <li>Sie ist früh ___ (aufwachen).
+                            <select class="answer-select" data-correct="aufgewacht">
+                                <option value="">Select</option>
+                                <option value="aufgewacht">aufgewacht</option>
+                                <option value="aufgewachen">aufgewachen</option>
+                                <option value="aufgewakt">aufgewakt</option>
+                            </select>
+                        </li>
+                        <li>Wir haben das Buch ___ (vorlesen).
+                            <select class="answer-select" data-correct="vorgelesen">
+                                <option value="">Select</option>
+                                <option value="vorgelesen">vorgelesen</option>
+                                <option value="vorgeleset">vorgeleset</option>
+                                <option value="vorgelest">vorgelest</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li>Ich habe meine Mutter <em>angerufen</em>.</li>
+                            <li>Du bist heute <em>ausgegangen</em>.</li>
+                            <li>Er hat im Laden <em>eingekauft</em>.</li>
+                            <li>Sie ist früh <em>aufgewacht</em>.</li>
+                            <li>Wir haben das Buch <em>vorgelesen</em>.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise5">
+                <h3>Exercise 5: Modal Verbs</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Ich habe das ___ (wollen).
+                            <select class="answer-select" data-correct="gewollt">
+                                <option value="">Select</option>
+                                <option value="gewollt">gewollt</option>
+                                <option value="gewollen">gewollen</option>
+                                <option value="gewollet">gewollet</option>
+                            </select>
+                        </li>
+                        <li>Du hast es ___ (können).
+                            <select class="answer-select" data-correct="gekonnt">
+                                <option value="">Select</option>
+                                <option value="gekonnt">gekonnt</option>
+                                <option value="gekönnt">gekönnt</option>
+                                <option value="gekannt">gekannt</option>
+                            </select>
+                        </li>
+                        <li>Er hat gehen ___ (müssen).
+                            <select class="answer-select" data-correct="gemusst">
+                                <option value="">Select</option>
+                                <option value="gemusst">gemusst</option>
+                                <option value="gemüsst">gemüsst</option>
+                                <option value="gemust">gemust</option>
+                            </select>
+                        </li>
+                        <li>Sie hat spielen ___ (dürfen).
+                            <select class="answer-select" data-correct="gedurft">
+                                <option value="">Select</option>
+                                <option value="gedurft">gedurft</option>
+                                <option value="gedürft">gedürft</option>
+                                <option value="gedarft">gedarft</option>
+                            </select>
+                        </li>
+                        <li>Wir haben es ___ (sollen).
+                            <select class="answer-select" data-correct="gesollt">
+                                <option value="">Select</option>
+                                <option value="gesollt">gesollt</option>
+                                <option value="gesollen">gesollen</option>
+                                <option value="gesollet">gesollet</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li>Ich habe das <em>gewollt</em>.</li>
+                            <li>Du hast es <em>gekonnt</em>.</li>
+                            <li>Er hat gehen <em>gemusst</em>.</li>
+                            <li>Sie hat spielen <em>gedurft</em>.</li>
+                            <li>Wir haben es <em>gesollt</em>.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="exercise6">
+                <h3>Exercise 6: Mixed Perfekt Story</h3>
+                <p>Fill in the blanks with the correct Perfekt form.</p>
+                <div class="examples">
+                    <p>Gestern ___ (1) ich früh ___ (aufstehen). Ich ___ (2) ein Buch ___ (lesen). Danach ___ (3) ich zur Schule ___ (gehen). Dort ___ (4) ich meine Freunde ___ (treffen). Wir ___ (5) viel ___ (lachen).</p>
+                    <ol class="example-list">
+                        <li><select class="answer-select" data-correct="bin … aufgestanden">
+                            <option value="">Select</option>
+                            <option value="bin … aufgestanden">bin … aufgestanden</option>
+                            <option value="habe … aufgestanden">habe … aufgestanden</option>
+                            <option value="bin … aufgesteht">bin … aufgesteht</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="habe … gelesen">
+                            <option value="">Select</option>
+                            <option value="habe … gelesen">habe … gelesen</option>
+                            <option value="bin … gelesen">bin … gelesen</option>
+                            <option value="habe … gelest">habe … gelest</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="bin … gegangen">
+                            <option value="">Select</option>
+                            <option value="bin … gegangen">bin … gegangen</option>
+                            <option value="habe … gegangen">habe … gegangen</option>
+                            <option value="bin … gegangt">bin … gegangt</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="habe … getroffen">
+                            <option value="">Select</option>
+                            <option value="habe … getroffen">habe … getroffen</option>
+                            <option value="bin … getroffen">bin … getroffen</option>
+                            <option value="habe … getroff">habe … getroff</option>
+                        </select></li>
+                        <li><select class="answer-select" data-correct="haben … gelacht">
+                            <option value="">Select</option>
+                            <option value="haben … gelacht">haben … gelacht</option>
+                            <option value="sind … gelacht">sind … gelacht</option>
+                            <option value="haben … gelachen">haben … gelachen</option>
+                        </select></li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong> Gestern <em>bin</em> ich früh <em>aufgestanden</em>. Ich <em>habe</em> ein Buch <em>gelesen</em>. Danach <em>bin</em> ich zur Schule <em>gegangen</em>. Dort <em>habe</em> ich meine Freunde <em>getroffen</em>. Wir <em>haben</em> viel <em>gelacht</em>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips -->
+        <section id="tips">
+            <h2>Tips to Master Perfekt and Partizip II</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Sing It</strong>: Chant <em>ge-macht, ge-gessen, ge-gangen</em>—make it a song!</li>
+                    <li><strong>Helper Test</strong>: Ask “Did I go somewhere?”—if yes, <em>sein</em>; if no, <em>haben</em>.</li>
+                    <li><strong>Daily Sentences</strong>: Say 5 Perfekt sentences each day—<em>Ich habe gegessen…</em></li>
+                    <li><strong>Flashcards</strong>: Write verbs on one side, Partizip II on the other—flip and learn.</li>
+                    <li><strong>Verb Pairs</strong>: Practice <em>machen-gemacht</em> vs. <em>gehen-gegangen</em>—spot patterns.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Final Thoughts -->
+        <section id="final-thoughts">
+            <h2>You’re Ready!</h2>
+            <p>
+                This guide gives you everything—Perfekt structure, Partizip II rules, examples galore, and exercises to lock it in. You’re ready to talk about the past like a pro! Want to level up? Try mixing Perfekt with Wechselpräpositionen or tackle Plusquamperfekt—your call!
+            </p>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="dative.html" class="see-also-rect">German Dative</a>
+                <a href="akkusative.html" class="see-also-rect">German Accusative</a>
+                <a href="wechsel.html" class="see-also-rect">Wechselpräpositionen</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="wechsel.html" class="next-btn">Next: Wechselpräpositionen →</a>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Dark/Light mode toggle
+            const modeToggle = document.getElementById('mode-toggle');
+            const body = document.body;
+            modeToggle.addEventListener('click', function() {
+                body.classList.toggle('dark-mode');
+                const isDark = body.classList.contains('dark-mode');
+                modeToggle.querySelector('svg').setAttribute('d', isDark ? 
+                    'M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z' : 
+                    'M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z');
+            });
+
+            // Check Answers functionality
+            document.querySelectorAll('.check-answers').forEach(button => {
+                button.addEventListener('click', function() {
+                    const exercise = this.closest('.subsection');
+                    const selects = exercise.querySelectorAll('.answer-select');
+                    selects.forEach(select => {
+                        const correctAnswer = select.getAttribute('data-correct');
+                        const userAnswer = select.value;
+                        if (userAnswer === correctAnswer) {
+                            select.style.border = '2px solid #2e7d32';
+                        } else if (userAnswer !== '') {
+                            select.style.border = '2px solid #d32f2f';
+                        } else {
+                            select.style.border = '1px solid #ccc';
+                        }
+                    });
+                });
+            });
+
+            // Show Answers functionality
+            document.querySelectorAll('.show-answers').forEach(button => {
+                button.addEventListener('click', function() {
+                    const exercise = this.closest('.subsection');
+                    const answers = exercise.querySelector('.answers');
+                    if (answers.classList.contains('hidden')) {
+                        answers.classList.remove('hidden');
+                    } else {
+                        answers.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

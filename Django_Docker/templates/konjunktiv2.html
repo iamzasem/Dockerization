@@ -1,0 +1,709 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}German Konjunktiv II with Modal Verbs: The Deep Guide{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/konjunktiv2.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+                <a href="index.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="javascript:history.back()" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>German Konjunktiv II with Modal Verbs: The Deep Guide</h1>
+            <p>
+                <strong>Konjunktiv II</strong> (Subjunctive II) is the mood of possibilities, wishes, and “what ifs” in German. When paired with <strong>modal verbs</strong> (<em>können, müssen, dürfen, wollen, mögen, sollen</em>), it expresses hypothetical abilities, obligations, permissions, desires, or suggestions—things that <em>could</em> happen but aren’t real (yet). This guide explores each modal verb’s Konjunktiv II form, its uses, and nuances, with plenty of examples and exercises to lock it in. Let’s get started!
+            </p>
+        </section>
+
+        <!-- What is Konjunktiv II with Modal Verbs -->
+        <section id="what-is">
+            <h2>What is Konjunktiv II with Modal Verbs?</h2>
+            <p>Konjunktiv II turns modal verbs into a “would” or “could” vibe, often imagining unreal scenarios or softening requests. It’s common with <em>wenn</em> (if) clauses, polite suggestions, or speculative statements.</p>
+            <h3>Key Features</h3>
+            <ul class="example-list">
+                <li><strong>Irregular Forms</strong>: Most modal verbs tweak their stems in Konjunktiv II (e.g., <em>können</em> → <em>könnte</em>, <em>müssen</em> → <em>müsste</em>).</li>
+                <li><strong>Structure</strong>: Konjunktiv II modal + infinitive (e.g., <em>Ich könnte kommen</em> – I could come).</li>
+                <li><strong>Verb Position</strong>: Modal in second position (main clause) or end (subordinate clause); infinitive at the end.</li>
+                <li><strong>Uses</strong>: Hypotheticals, politeness, advice, unreal past.</li>
+            </ul>
+        </section>
+
+        <!-- Conjugation -->
+        <section id="conjugation">
+            <h2>Conjugation of Modal Verbs in Konjunktiv II</h2>
+            <p>Here’s how the six modal verbs change in Konjunktiv II (based on Präteritum stems with umlauts or adjustments):</p>
+            <div class="subsection">
+                <h3>1. <em>Können</em> (to be able to) → <em>könnte</em> (could)</h3>
+                <div class="table-container">
+                    <table>
+                        <tr><th>Person</th><th>Conjugation</th><th>Example</th></tr>
+                        <tr><td>ich</td><td>könnte</td><td>Ich könnte helfen. (I could help.)</td></tr>
+                        <tr><td>du</td><td>könntest</td><td>Du könntest kommen. (You could come.)</td></tr>
+                        <tr><td>er/sie/es</td><td>könnte</td><td>Er könnte es machen. (He could do it.)</td></tr>
+                        <tr><td>wir</td><td>könnten</td><td>Wir könnten spielen. (We could play.)</td></tr>
+                        <tr><td>ihr</td><td>könntet</td><td>Ihr könntet laufen. (You all could run.)</td></tr>
+                        <tr><td>sie/Sie</td><td>könnten</td><td>Sie könnten warten. (They could wait.)</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>2. <em>Müssen</em> (to have to) → <em>müsste</em> (would have to)</h3>
+                <div class="table-container">
+                    <table>
+                        <tr><th>Person</th><th>Conjugation</th><th>Example</th></tr>
+                        <tr><td>ich</td><td>müsste</td><td>Ich müsste gehen. (I would have to go.)</td></tr>
+                        <tr><td>du</td><td>müsstest</td><td>Du müsstest lernen. (You would have to learn.)</td></tr>
+                        <tr><td>er/sie/es</td><td>müsste</td><td>Sie müsste arbeiten. (She’d have to work.)</td></tr>
+                        <tr><td>wir</td><td>müssten</td><td>Wir müssten helfen. (We’d have to help.)</td></tr>
+                        <tr><td>ihr</td><td>müsstet</td><td>Ihr müsstet kochen. (You’d have to cook.)</td></tr>
+                        <tr><td>sie/Sie</td><td>müssten</td><td>Sie müssten warten. (They’d have to wait.)</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>3. <em>Dürfen</em> (to be allowed to) → <em>dürfte</em> (might/may)</h3>
+                <div class="table-container">
+                    <table>
+                        <tr><th>Person</th><th>Conjugation</th><th>Example</th></tr>
+                        <tr><td>ich</td><td>dürfte</td><td>Ich dürfte spielen. (I might be allowed to play.)</td></tr>
+                        <tr><td>du</td><td>dürftest</td><td>Du dürftest bleiben. (You might stay.)</td></tr>
+                        <tr><td>er/sie/es</td><td>dürfte</td><td>Er dürfte kommen. (He might come.)</td></tr>
+                        <tr><td>wir</td><td>dürften</td><td>Wir dürften tanzen. (We might dance.)</td></tr>
+                        <tr><td>ihr</td><td>dürftet</td><td>Ihr dürftet schauen. (You might watch.)</td></tr>
+                        <tr><td>sie/Sie</td><td>dürften</td><td>Sie dürften reisen. (They might travel.)</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>4. <em>Wollen</em> (to want to) → <em>wollte</em> (would want to)</h3>
+                <div class="table-container">
+                    <table>
+                        <tr><th>Person</th><th>Conjugation</th><th>Example</th></tr>
+                        <tr><td>ich</td><td>wollte</td><td>Ich wollte essen. (I would want to eat.)</td></tr>
+                        <tr><td>du</td><td>wolltest</td><td>Du wolltest lesen. (You’d want to read.)</td></tr>
+                        <tr><td>er/sie/es</td><td>wollte</td><td>Sie wollte singen. (She’d want to sing.)</td></tr>
+                        <tr><td>wir</td><td>wollten</td><td>Wir wollten gehen. (We’d want to go.)</td></tr>
+                        <tr><td>ihr</td><td>wolltet</td><td>Ihr wolltet spielen. (You’d want to play.)</td></tr>
+                        <tr><td>sie/Sie</td><td>wollten</td><td>Sie wollten lernen. (They’d want to learn.)</td></tr>
+                    </table>
+                </div>
+                <p><strong>Note</strong>: <em>Wollte</em> is identical to Präteritum but context (e.g., <em>wenn</em>) shows it’s Konjunktiv II.</p>
+            </div>
+            <div class="subsection">
+                <h3>5. <em>Mögen</em> (to like to) → <em>möchte</em> (would like to)</h3>
+                <div class="table-container">
+                    <table>
+                        <tr><th>Person</th><th>Conjugation</th><th>Example</th></tr>
+                        <tr><td>ich</td><td>möchte</td><td>Ich möchte das Buch. (I’d like the book.)</td></tr>
+                        <tr><td>du</td><td>möchtest</td><td>Du möchtest den Film. (You’d like the movie.)</td></tr>
+                        <tr><td>er/sie/es</td><td>möchte</td><td>Er möchte Fußball. (He’d like soccer.)</td></tr>
+                        <tr><td>wir</td><td>möchten</td><td>Wir möchten die Musik. (We’d like the music.)</td></tr>
+                        <tr><td>ihr</td><td>möchtet</td><td>Ihr möchtet das Essen. (You’d like the food.)</td></tr>
+                        <tr><td>sie/Sie</td><td>möchten</td><td>Sie möchten die Stadt. (They’d like the city.)</td></tr>
+                    </table>
+                </div>
+                <p><strong>Special</strong>: <em>Möchte</em> often stands alone (no infinitive) for polite requests.</p>
+            </div>
+            <div class="subsection">
+                <h3>6. <em>Sollen</em> (to be supposed to) → <em>sollte</em> (should)</h3>
+                <div class="table-container">
+                    <table>
+                        <tr><th>Person</th><th>Conjugation</th><th>Example</th></tr>
+                        <tr><td>ich</td><td>sollte</td><td>Ich sollte lernen. (I should study.)</td></tr>
+                        <tr><td>du</td><td>solltest</td><td>Du solltest kommen. (You should come.)</td></tr>
+                        <tr><td>er/sie/es</td><td>sollte</td><td>Sie sollte helfen. (She should help.)</td></tr>
+                        <tr><td>wir</td><td>sollten</td><td>Wir sollten arbeiten. (We should work.)</td></tr>
+                        <tr><td>ihr</td><td>solltet</td><td>Ihr solltet schlafen. (You should sleep.)</td></tr>
+                        <tr><td>sie/Sie</td><td>sollten</td><td>Sie sollten gehen. (They should go.)</td></tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Uses -->
+        <section id="uses">
+            <h2>Uses of Konjunktiv II with Modal Verbs</h2>
+            <div class="subsection">
+                <h3>1. Hypothetical Situations</h3>
+                <p>With <em>wenn</em> (if) to imagine unreal scenarios.</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>Wenn ich Zeit hätte, könnte ich kommen.</em> (If I had time, I could come.)</li>
+                        <li><em>Wenn er wollte, müsste er nicht arbeiten.</em> (If he wanted, he wouldn’t have to work.)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>2. Polite Requests or Suggestions</h3>
+                <p>Softens directness for courtesy.</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>Könntest du mir helfen?</em> (Could you help me?)</li>
+                        <li><em>Du solltest das machen.</em> (You should do that—advice.)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>3. Unreal Past</h3>
+                <p>Describes what could’ve happened but didn’t.</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>Ich hätte das gekonnt.</em> (I could have done that—Konjunktiv II with <em>haben</em>.)</li>
+                        <li><em>Sie hätte das gedurft.</em> (She might have been allowed to do that.)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>4. Speculation</h3>
+                <p>Guesses about possibilities.</p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><em>Er dürfte krank sein.</em> (He might be sick.)</li>
+                        <li><em>Das könnte wahr sein.</em> (That could be true.)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deep Details and Nuances -->
+        <section id="nuances">
+            <h2>Deep Details and Nuances</h2>
+            <div class="subsection">
+                <h3>1. Formation</h3>
+                <ul class="example-list">
+                    <li>Based on Präteritum stems with umlauts or tweaks:</li>
+                    <li><em>können</em> → <em>könnte</em> (adds umlaut).</li>
+                    <li><em>müssen</em> → <em>müsste</em> (umlaut + <em>-te</em>).</li>
+                    <li><em>wollen</em> → <em>wollte</em> (no change, context-dependent).</li>
+                    <li><strong>Exception</strong>: <em>mögen</em> → <em>möchte</em> (unique form, often standalone).</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>2. Double Infinitive</h3>
+                <p>In Perfekt/Plusquamperfekt Konjunktiv II, modal + infinitive + <em>haben</em>:</p>
+                <ul class="example-list">
+                    <li><em>Ich hätte kommen können.</em> (I could have come—<em>hätte</em> + <em>kommen</em> + <em>können</em>.)</li>
+                    <li><em>Sie hätte bleiben müssen.</em> (She would have had to stay.)</li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>3. Word Order</h3>
+                <ul class="example-list">
+                    <li><strong>Main Clause</strong>: Modal second, infinitive last—<em>Ich könnte helfen.</em></li>
+                    <li><strong>Wenn Clause</strong>: Modal at end—<em>Wenn ich helfen könnte…</em></li>
+                    <li><strong>Questions</strong>: Modal first—<em>Könntest du kommen?</em></li>
+                </ul>
+            </div>
+            <div class="subsection">
+                <h3>4. <em>Möchte</em> vs. <em>Wollte</em></h3>
+                <ul class="example-list">
+                    <li><em>Möchte</em>: Polite wish (<em>Ich möchte Kaffee</em> – I’d like coffee).</li>
+                    <li><em>Wollte</em>: Hypothetical intent (<em>Ich wollte kommen</em> – I’d want to come, with <em>wenn</em>).</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Example Sentences -->
+        <section id="examples">
+            <h2>Tons of Example Sentences</h2>
+            <div class="subsection">
+                <h3><em>Können</em> (Could)</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Ich könnte dir helfen, wenn du willst.</em> (I could help you if you want.)</li>
+                        <li><em>Könntest du das machen?</em> (Could you do that?)</li>
+                        <li><em>Er könnte schneller laufen.</em> (He could run faster.)</li>
+                        <li><em>Wir könnten morgen gehen.</em> (We could go tomorrow.)</li>
+                        <li><em>Hättet ihr das gekonnt?</em> (Could you have done that?)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3><em>Müssen</em> (Would Have To)</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Ich müsste lernen, wenn ich Zeit hätte.</em> (I’d have to study if I had time.)</li>
+                        <li><em>Müsstest du das tun?</em> (Would you have to do that?)</li>
+                        <li><em>Sie müsste früher kommen.</em> (She’d have to come earlier.)</li>
+                        <li><em>Wir müssten das ändern.</em> (We’d have to change that.)</li>
+                        <li><em>Hätten sie das gemusst?</em> (Would they have had to do that?)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3><em>Dürfen</em> (Might/May)</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Ich dürfte gehen, wenn ich fertig bin.</em> (I might go if I’m done.)</li>
+                        <li><em>Dürftest du das nehmen?</em> (Might you take that?)</li>
+                        <li><em>Er dürfte hier sein.</em> (He might be here—speculation.)</li>
+                        <li><em>Wir dürften das sehen.</em> (We might watch that.)</li>
+                        <li><em>Hätte sie das gedurft?</em> (Might she have been allowed to do that?)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3><em>Wollen</em> (Would Want To)</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Ich wollte reisen, wenn ich Geld hätte.</em> (I’d want to travel if I had money.)</li>
+                        <li><em>Wolltest du das sagen?</em> (Would you want to say that?)</li>
+                        <li><em>Sie wollte es kaufen.</em> (She’d want to buy it.)</li>
+                        <li><em>Wir wollten bleiben.</em> (We’d want to stay.)</li>
+                        <li><em>Hätten sie das gewollt?</em> (Would they have wanted that?)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3><em>Mögen</em> (Would Like To)</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Ich möchte einen Tee.</em> (I’d like a tea.)</li>
+                        <li><em>Möchtest du mitkommen?</em> (Would you like to come along?)</li>
+                        <li><em>Er möchte das Spiel.</em> (He’d like the game.)</li>
+                        <li><em>Wir möchten die Stadt sehen.</em> (We’d like to see the city.)</li>
+                        <li><em>Möchtet ihr das Essen?</em> (Would you like the food?)</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3><em>Sollen</em> (Should)</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><em>Ich sollte lernen, wenn ich Zeit hätte.</em> (I should study if I had time.)</li>
+                        <li><em>Solltest du das tun?</em> (Should you do that?)</li>
+                        <li><em>Sie sollte helfen.</em> (She should help.)</li>
+                        <li><em>Wir sollten früher gehen.</em> (We should go earlier.)</li>
+                        <li><em>Hätten sie das sollen?</em> (Should they have done that?)</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercises -->
+        <section id="practice">
+            <h2>Creative Exercises with Multiple-Choice Options</h2>
+            <div class="subsection" id="exercise1">
+                <h3>Exercise 1: Conjugation of Konjunktiv II</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Ich ___ dir helfen. (<em>können</em>)
+                            <select class="answer-select" data-correct="könnte">
+                                <option value="">Select</option>
+                                <option value="könnte">könnte</option>
+                                <option value="kann">kann</option>
+                                <option value="konnte">konnte</option>
+                            </select>
+                        </li>
+                        <li>Du ___ das machen. (<em>müssen</em>)
+                            <select class="answer-select" data-correct="müsstest">
+                                <option value="">Select</option>
+                                <option value="musst">musst</option>
+                                <option value="müsstest">müsstest</option>
+                                <option value="musste">musste</option>
+                            </select>
+                        </li>
+                        <li>Er ___ hier bleiben. (<em>dürfen</em>)
+                            <select class="answer-select" data-correct="dürfte">
+                                <option value="">Select</option>
+                                <option value="darf">darf</option>
+                                <option value="dürfte">dürfte</option>
+                                <option value="durfte">durfte</option>
+                            </select>
+                        </li>
+                        <li>Wir ___ das kaufen. (<em>wollen</em>)
+                            <select class="answer-select" data-correct="wollten">
+                                <option value="">Select</option>
+                                <option value="wollten">wollten</option>
+                                <option value="wollen">wollen</option>
+                                <option value="würde">würde</option>
+                            </select>
+                        </li>
+                        <li>Ihr ___ das Spiel. (<em>mögen</em>)
+                            <select class="answer-select" data-correct="möchtet">
+                                <option value="">Select</option>
+                                <option value="mögt">mögt</option>
+                                <option value="möchtet">möchtet</option>
+                                <option value="mochtet">mochtet</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>könnte</em></li>
+                            <li><em>müsstest</em></li>
+                            <li><em>dürfte</em></li>
+                            <li><em>wollten</em></li>
+                            <li><em>möchtet</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection" id="exercise2">
+                <h3>Exercise 2: Hypothetical Situations</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Wenn ich Zeit hätte, ___ ich kommen. (<em>können</em>)
+                            <select class="answer-select" data-correct="könnte">
+                                <option value="">Select</option>
+                                <option value="könnte">könnte</option>
+                                <option value="kann">kann</option>
+                                <option value="würde">würde</option>
+                            </select>
+                        </li>
+                        <li>Wenn du wolltest, ___ du nicht arbeiten. (<em>müssen</em>)
+                            <select class="answer-select" data-correct="müsstest">
+                                <option value="">Select</option>
+                                <option value="müsstest">müsstest</option>
+                                <option value="musst">musst</option>
+                                <option value="müsste">müsste</option>
+                            </select>
+                        </li>
+                        <li>Wenn er fertig wäre, ___ er gehen. (<em>dürfen</em>)
+                            <select class="answer-select" data-correct="dürfte">
+                                <option value="">Select</option>
+                                <option value="dürfte">dürfte</option>
+                                <option value="darf">darf</option>
+                                <option value="durfte">durfte</option>
+                            </select>
+                        </li>
+                        <li>Wenn wir Geld hätten, ___ wir reisen. (<em>wollen</em>)
+                            <select class="answer-select" data-correct="wollten">
+                                <option value="">Select</option>
+                                <option value="wollten">wollten</option>
+                                <option value="wollen">wollen</option>
+                                <option value="würde">würde</option>
+                            </select>
+                        </li>
+                        <li>Wenn ich du wäre, ___ ich helfen. (<em>sollen</em>)
+                            <select class="answer-select" data-correct="sollte">
+                                <option value="">Select</option>
+                                <option value="sollte">sollte</option>
+                                <option value="soll">soll</option>
+                                <option value="müsste">müsste</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>könnte</em></li>
+                            <li><em>müsstest</em></li>
+                            <li><em>dürfte</em></li>
+                            <li><em>wollten</em></li>
+                            <li><em>sollte</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection" id="exercise3">
+                <h3>Exercise 3: Polite Requests</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>___ du mir helfen? (<em>können</em>)
+                            <select class="answer-select" data-correct="Könntest">
+                                <option value="">Select</option>
+                                <option value="Könntest">Könntest</option>
+                                <option value="Kannst">Kannst</option>
+                                <option value="Könnte">Könnte</option>
+                            </select>
+                        </li>
+                        <li>___ du das tun? (<em>müssen</em>)
+                            <select class="answer-select" data-correct="Müsstest">
+                                <option value="">Select</option>
+                                <option value="Müsstest">Müsstest</option>
+                                <option value="Musst">Musst</option>
+                                <option value="Müsste">Müsste</option>
+                            </select>
+                        </li>
+                        <li>___ ich das nehmen? (<em>dürfen</em>)
+                            <select class="answer-select" data-correct="Dürfte">
+                                <option value="">Select</option>
+                                <option value="Dürfte">Dürfte</option>
+                                <option value="Darf">Darf</option>
+                                <option value="Dürftest">Dürftest</option>
+                            </select>
+                        </li>
+                        <li>___ du mitkommen? (<em>mögen</em>)
+                            <select class="answer-select" data-correct="Möchtest">
+                                <option value="">Select</option>
+                                <option value="Möchtest">Möchtest</option>
+                                <option value="Magst">Magst</option>
+                                <option value="Möchte">Möchte</option>
+                            </select>
+                        </li>
+                        <li>___ du das machen? (<em>sollen</em>)
+                            <select class="answer-select" data-correct="Solltest">
+                                <option value="">Select</option>
+                                <option value="Solltest">Solltest</option>
+                                <option value="Sollst">Sollst</option>
+                                <option value="Sollte">Sollte</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>Könntest</em></li>
+                            <li><em>Müsstest</em></li>
+                            <li><em>Dürfte</em></li>
+                            <li><em>Möchtest</em></li>
+                            <li><em>Solltest</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection" id="exercise4">
+                <h3>Exercise 4: Unreal Past</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Ich ___ das machen ___. (<em>können</em>, Perfekt)
+                            <select class="answer-select" data-correct="hätte … gekonnt">
+                                <option value="">Select</option>
+                                <option value="hätte … gekonnt">hätte … gekonnt</option>
+                                <option value="habe … gekonnt">habe … gekonnt</option>
+                                <option value="könnte … gekonnt">könnte … gekonnt</option>
+                            </select>
+                        </li>
+                        <li>Du ___ bleiben ___. (<em>müssen</em>, Perfekt)
+                            <select class="answer-select" data-correct="hättest … gemusst">
+                                <option value="">Select</option>
+                                <option value="hättest … gemusst">hättest … gemusst</option>
+                                <option value="hast … gemusst">hast … gemusst</option>
+                                <option value="müsstest … gemusst">müsstest … gemusst</option>
+                            </select>
+                        </li>
+                        <li>Er ___ das nehmen ___. (<em>dürfen</em>, Perfekt)
+                            <select class="answer-select" data-correct="hätte … gedurft">
+                                <option value="">Select</option>
+                                <option value="hätte … gedurft">hätte … gedurft</option>
+                                <option value="hat … gedurft">hat … gedurft</option>
+                                <option value="dürfte … gedurft">dürfte … gedurft</option>
+                            </select>
+                        </li>
+                        <li>Wir ___ das kaufen ___. (<em>wollen</em>, Perfekt)
+                            <select class="answer-select" data-correct="hätten … gewollt">
+                                <option value="">Select</option>
+                                <option value="hätten … gewollt">hätten … gewollt</option>
+                                <option value="haben … gewollt">haben … gewollt</option>
+                                <option value="wollten … gewollt">wollten … gewollt</option>
+                            </select>
+                        </li>
+                        <li>Sie ___ helfen ___. (<em>sollen</em>, Perfekt)
+                            <select class="answer-select" data-correct="hätten … sollen">
+                                <option value="">Select</option>
+                                <option value="hätten … sollen">hätten … sollen</option>
+                                <option value="haben … sollen">haben … sollen</option>
+                                <option value="sollten … sollen">sollten … sollen</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>hätte … gekonnt</em></li>
+                            <li><em>hättest … gemusst</em></li>
+                            <li><em>hätte … gedurft</em></li>
+                            <li><em>hätten … gewollt</em></li>
+                            <li><em>hätten … sollen</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection" id="exercise5">
+                <h3>Exercise 5: Mixed Modal Story</h3>
+                <p>Fill in with Konjunktiv II forms.</p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li>Wenn ich Zeit hätte, ___ ich dir helfen (<em>können</em>).
+                            <select class="answer-select" data-correct="könnte">
+                                <option value="">Select</option>
+                                <option value="könnte">könnte</option>
+                                <option value="kann">kann</option>
+                                <option value="würde">würde</option>
+                            </select>
+                        </li>
+                        <li>Du ___ das nicht tun, wenn du nicht willst (<em>müssen</em>).
+                            <select class="answer-select" data-correct="müsstest">
+                                <option value="">Select</option>
+                                <option value="müsstest">müsstest</option>
+                                <option value="musst">musst</option>
+                                <option value="müsste">müsste</option>
+                            </select>
+                        </li>
+                        <li>Er ___ hier bleiben, wenn er fertig ist (<em>dürfen</em>).
+                            <select class="answer-select" data-correct="dürfte">
+                                <option value="">Select</option>
+                                <option value="dürfte">dürfte</option>
+                                <option value="darf">darf</option>
+                                <option value="durfte">durfte</option>
+                            </select>
+                        </li>
+                        <li>Ich ___ einen Kaffee (<em>mögen</em>).
+                            <select class="answer-select" data-correct="möchte">
+                                <option value="">Select</option>
+                                <option value="möchte">möchte</option>
+                                <option value="mag">mag</option>
+                                <option value="wollte">wollte</option>
+                            </select>
+                        </li>
+                        <li>Wir ___ früher gehen, wenn wir könnten (<em>sollen</em>).
+                            <select class="answer-select" data-correct="sollten">
+                                <option value="">Select</option>
+                                <option value="sollten">sollten</option>
+                                <option value="sollen">sollen</option>
+                                <option value="müssten">müssten</option>
+                            </select>
+                        </li>
+                    </ol>
+                    <button class="toggle-btn check-answers">Check Answers</button>
+                    <button class="toggle-btn show-answers">Show Answers</button>
+                    <div class="hidden answers">
+                        <p><strong>Answers:</strong></p>
+                        <ol>
+                            <li><em>könnte</em></li>
+                            <li><em>müsstest</em></li>
+                            <li><em>dürfte</em></li>
+                            <li><em>möchte</em></li>
+                            <li><em>sollten</em></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips -->
+        <section id="tips">
+            <h2>Deep Tips to Master Konjunktiv II with Modal Verbs</h2>
+            <div class="examples">
+                <ul class="example-list">
+                    <li><strong>Stem Shift</strong>: Memorize <em>könnte, müsste, dürfte, wollte, möchte, sollte</em>—say them aloud!</li>
+                    <li><strong>Wenn Clue</strong>: <em>Wenn</em> often signals Konjunktiv II—<em>Wenn ich könnte…</em></li>
+                    <li><strong>Politeness</strong>: Use <em>könntest, dürfte, möchte</em> for soft requests—<em>Möchtest du…?</em></li>
+                    <li><strong>Past Trick</strong>: Add <em>hätte</em> + infinitive for “could have”—<em>Ich hätte kommen können.</em></li>
+                    <li><strong>Daily Use</strong>: Imagine “what if”—<em>Ich könnte reisen</em>—or suggest <em>Du solltest lernen.</em></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Final Thoughts -->
+        <section id="final-thoughts">
+            <h2>You’re Ready!</h2>
+            <p>
+                This deep guide covers Konjunktiv II with modal verbs—forms, uses, examples, and exercises. You’re ready to dream, suggest, and speculate in German! Next, you could explore Konjunktiv I or mix this with indirect questions—your choice!
+            </p>
+        </section>
+
+        <!-- Resources -->
+        <section id="resources">
+            <h2>Resources for Extra Practice</h2>
+            <div class="see-also-links">
+                <a href="https://www.goethe.de/de/spr/ueb.html" class="see-also-rect">
+                    Goethe A1/A2 Wortliste<br>Konjunktiv II in context.<br><br>
+                    <button class="resource-btn">Visit Goethe Wortliste</button>
+                </a>
+                <a href="https://www.youtube.com/c/easygerman" class="see-also-rect">
+                    YouTube – EASY German<br>Hear Konjunktiv II in talk.<br><br>
+                    <button class="resource-btn">Visit EASY German</button>
+                </a>
+                <a href="https://www.schubert-verlag.de/" class="see-also-rect">
+                    Schubert Verlag<br>Free Konjunktiv II exercises.<br><br>
+                    <button class="resource-btn">Visit Schubert Verlag</button>
+                </a>
+            </div>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="indirect.html" class="see-also-rect">Indirect Questions</a>
+                <a href="werden.html" class="see-also-rect">German Werden</a>
+                <a href="wenn.html" class="see-also-rect">German Wenn</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="konjunktiv1.html" class="next-btn">Next: Konjunktiv I →</a>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Dark/Light mode toggle
+            const modeToggle = document.getElementById('mode-toggle');
+            const body = document.body;
+            modeToggle.addEventListener('click', function() {
+                body.classList.toggle('dark-mode');
+                const isDark = body.classList.contains('dark-mode');
+                modeToggle.querySelector('svg').setAttribute('d', isDark ? 
+                    'M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z' : 
+                    'M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z');
+            });
+
+            // Check Answers functionality
+            document.querySelectorAll('.check-answers').forEach(button => {
+                button.addEventListener('click', function() {
+                    const exercise = this.closest('.subsection');
+                    const selects = exercise.querySelectorAll('.answer-select');
+                    selects.forEach(select => {
+                        const correctAnswer = select.getAttribute('data-correct');
+                        const userAnswer = select.value;
+                        if (userAnswer === correctAnswer) {
+                            select.style.border = '2px solid #2e7d32';
+                        } else if (userAnswer !== '') {
+                            select.style.border = '2px solid #d32f2f';
+                        } else {
+                            select.style.border = '1px solid #ccc';
+                        }
+                    });
+                });
+            });
+
+            // Show Answers functionality
+            document.querySelectorAll('.show-answers').forEach(button => {
+                button.addEventListener('click', function() {
+                    const exercise = this.closest('.subsection');
+                    const answers = exercise.querySelector('.answers');
+                    if (answers.classList.contains('hidden')) {
+                        answers.classList.remove('hidden');
+                    } else {
+                        answers.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

@@ -1,0 +1,386 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}German Articles{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/conjugation.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+                <a href="index.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="javascript:history.back()" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <h1>German Present Tense Conjugation: A Beginner’s Guide</h1>
+            <p>
+                In German, <strong>conjugation</strong> means changing a verb to match the subject (who is doing the action). In the present tense, verbs adjust their endings or forms based on subjects like <em>ich</em> (I), <em>du</em> (you, informal singular), <em>er/sie/es</em> (he/she/it), <em>wir</em> (we), <em>ihr</em> (you, informal plural), and <em>sie/Sie</em> (they/you formal). There are two main types of verbs in German present tense: <strong>regular verbs</strong>, which follow a predictable pattern, and <strong>irregular verbs</strong>, which have unique changes that you need to memorize.
+            </p>
+            <p>
+                This guide focuses <strong>only on the present tense</strong> and includes:
+            </p>
+            <ul>
+                <li>A detailed explanation of <strong>regular verb conjugation</strong>.</li>
+                <li>An explanation of <strong>irregular verb conjugation</strong>, including common patterns and exceptions.</li>
+                <li><strong>20 examples of regular verbs</strong> and <strong>20 examples of irregular verbs</strong> with conjugations and sentences.</li>
+                <li><strong>Practice questions</strong> to test your skills.</li>
+            </ul>
+            <p>Let’s dive in!</p>
+        </section>
+
+        <!-- Regular Verbs Section -->
+        <section id="regular-verbs">
+            <h2>1. Regular Verbs in Present Tense</h2>
+            <p>
+                Regular verbs in German are easy to conjugate because they follow a consistent pattern. Here’s how it works:
+            </p>
+            <ol>
+                <li><strong>Find the stem</strong>: Take the infinitive form of the verb (e.g., <em>spielen</em> = to play) and remove the <strong>-en</strong> ending. This leaves you with the stem (<em>spiel-</em>).</li>
+                <li><strong>Add endings</strong>: Attach the appropriate ending to the stem based on the subject.</li>
+            </ol>
+            <h3>Regular Verb Conjugation Pattern</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Ending</th>
+                        <th>Example: spielen (to play)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>ich (I)</td><td>-e</td><td>spiele</td></tr>
+                    <tr><td>du (you, informal singular)</td><td>-st</td><td>spielst</td></tr>
+                    <tr><td>er/sie/es (he/she/it)</td><td>-t</td><td>spielt</td></tr>
+                    <tr><td>wir (we)</td><td>-en</td><td>spielen</td></tr>
+                    <tr><td>ihr (you, informal plural)</td><td>-t</td><td>spielt</td></tr>
+                    <tr><td>sie/Sie (they/you formal)</td><td>-en</td><td>spielen</td></tr>
+                </tbody>
+            </table>
+            <h3>Notes on Regular Verbs</h3>
+            <ul>
+                <li>The <strong>-en</strong> ending stays the same as the infinitive for <em>wir</em> and <em>sie/Sie</em>.</li>
+                <li>For verbs ending in <strong>-ten</strong> or <strong>-den</strong> (like <em>arbeiten</em> = to work), add an extra <strong>-e-</strong> before the <strong>-st</strong> and <strong>-t</strong> endings (e.g., <em>du arbeitest</em>, <em>er arbeitet</em>).</li>
+                <li>For verbs ending in <strong>-eln</strong> or <strong>-ern</strong> (like <em>wandern</em> = to hike), the <em>ich</em> form often drops the <strong>-e-</strong> in the stem (e.g., <em>ich wandre</em>), but this is optional for beginners.</li>
+            </ul>
+            <h3>20 Regular Verb Examples with Conjugations and Sentences</h3>
+            <ul>
+                <li><strong>spielen</strong> (to play)
+                    <ul><li>Ich <strong>spiele</strong> Fußball. (I play soccer.)</li><li>Du <strong>spielst</strong> mit Freunden. (You play with friends.)</li></ul>
+                </li>
+                <li><strong>lernen</strong> (to learn)
+                    <ul><li>Ich <strong>lerne</strong> Deutsch. (I learn German.)</li><li>Du <strong>lernst</strong> schnell. (You learn quickly.)</li></ul>
+                </li>
+                <li><strong>arbeiten</strong> (to work)
+                    <ul><li>Ich <strong>arbeite</strong> im Büro. (I work in the office.)</li><li>Du <strong>arbeitest</strong> viel. (You work a lot.)</li></ul>
+                </li>
+                <li><strong>wohnen</strong> (to live)
+                    <ul><li>Ich <strong>wohne</strong> in Berlin. (I live in Berlin.)</li><li>Du <strong>wohnst</strong> hier. (You live here.)</li></ul>
+                </li>
+                <li><strong>hören</strong> (to listen)
+                    <ul><li>Ich <strong>höre</strong> Musik. (I listen to music.)</li><li>Du <strong>hörst</strong> das Lied. (You listen to the song.)</li></ul>
+                </li>
+                <li><strong>tanzen</strong> (to dance)
+                    <ul><li>Ich <strong>tanze</strong> gern. (I dance gladly.)</li><li>Du <strong>tanzst</strong> gut. (You dance well.)</li></ul>
+                </li>
+                <li><strong>fragen</strong> (to ask)
+                    <ul><li>Ich <strong>frage</strong> den Lehrer. (I ask the teacher.)</li><li>Du <strong>fragst</strong> mich. (You ask me.)</li></ul>
+                </li>
+                <li><strong>antworten</strong> (to answer)
+                    <ul><li>Ich <strong>antworte</strong> sofort. (I answer immediately.)</li><li>Du <strong>antwortest</strong> langsam. (You answer slowly.)</li></ul>
+                </li>
+                <li><strong>malen</strong> (to paint)
+                    <ul><li>Ich <strong>male</strong> ein Bild. (I paint a picture.)</li><li>Du <strong>malst</strong> ein Haus. (You paint a house.)</li></ul>
+                </li>
+                <li><strong>zeichnen</strong> (to draw)
+                    <ul><li>Ich <strong>zeichne</strong> einen Baum. (I draw a tree.)</li><li>Du <strong>zeichnest</strong> einen Hund. (You draw a dog.)</li></ul>
+                </li>
+                <li><strong>kochen</strong> (to cook)
+                    <ul><li>Ich <strong>koche</strong> Suppe. (I cook soup.)</li><li>Du <strong>kochst</strong> Pasta. (You cook pasta.)</li></ul>
+                </li>
+                <li><strong>backen</strong> (to bake)
+                    <ul><li>Ich <strong>backe</strong> einen Kuchen. (I bake a cake.)</li><li>Du <strong>backst</strong> Kekse. (You bake cookies.)</li></ul>
+                </li>
+                <li><strong>putzen</strong> (to clean)
+                    <ul><li>Ich <strong>putze</strong> das Zimmer. (I clean the room.)</li><li>Du <strong>putzt</strong> die Küche. (You clean the kitchen.)</li></ul>
+                </li>
+                <li><strong>waschen</strong> (to wash)
+                    <ul><li>Ich <strong>wasche</strong> meine Hände. (I wash my hands.)</li><li>Du <strong>wäschst</strong> das Geschirr. (You wash the dishes.)</li></ul>
+                </li>
+                <li><strong>öffnen</strong> (to open)
+                    <ul><li>Ich <strong>öffne</strong> die Tür. (I open the door.)</li><li>Du <strong>öffnest</strong> ein Buch. (You open a book.)</li></ul>
+                </li>
+                <li><strong>schließen</strong> (to close)
+                    <ul><li>Ich <strong>schließe</strong> das Fenster. (I close the window.)</li><li>Du <strong>schließt</strong> die Tür. (You close the door.)</li></ul>
+                </li>
+                <li><strong>helfen</strong> (to help)
+                    <ul><li>Ich <strong>helfe</strong> dir. (I help you.)</li><li>Du <strong>hilfst</strong> mir. (You help me.)</li></ul>
+                </li>
+                <li><strong>lieben</strong> (to love)
+                    <ul><li>Ich <strong>liebe</strong> Schokolade. (I love chocolate.)</li><li>Du <strong>liebst</strong> deinen Hund. (You love your dog.)</li></ul>
+                </li>
+                <li><strong>hassen</strong> (to hate)
+                    <ul><li>Ich <strong>hasse</strong> Gemüse. (I hate vegetables.)</li><li>Du <strong>hasst</strong> Lärm. (You hate noise.)</li></ul>
+                </li>
+                <li><strong>reisen</strong> (to travel)
+                    <ul><li>Ich <strong>reise</strong> nach Italien. (I travel to Italy.)</li><li>Du <strong>reist</strong> nach Frankreich. (You travel to France.)</li></ul>
+                </li>
+            </ul>
+            <p><strong>Key Point</strong>: Regular verbs are predictable! Once you know the endings (-e, -st, -t, -en, -t, -en), you can conjugate any regular verb.</p>
+        </section>
+
+        <!-- Irregular Verbs Section -->
+        <section id="irregular-verbs">
+            <h2>2. Irregular Verbs in Present Tense</h2>
+            <p>
+                Irregular verbs don’t follow the regular pattern fully. They often change their <strong>stem vowel</strong> for <em>du</em> and <em>er/sie/es</em>, while the other forms (<em>ich, wir, ihr, sie/Sie</em>) may look more regular. Some irregular verbs, like <em>sein</em> (to be), have completely unique forms.
+            </p>
+            <h3>Irregular Verb Patterns</h3>
+            <ul>
+                <li><strong>e → i</strong>: <em>nehmen</em> (to take) → <em>du nimmst</em>.</li>
+                <li><strong>e → ie</strong>: <em>sehen</em> (to see) → <em>du siehst</em>.</li>
+                <li><strong>a → ä</strong>: <em>fahren</em> (to drive) → <em>du fährst</em>.</li>
+                <li><strong>Unique forms</strong>: Verbs like <em>sein</em> and <em>haben</em> don’t follow any pattern and must be memorized.</li>
+            </ul>
+            <h3>Example of an Irregular Verb</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Conjugation: sehen (to see)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>ich</td><td>sehe</td></tr>
+                    <tr><td>du</td><td>siehst</td></tr>
+                    <tr><td>er/sie/es</td><td>sieht</td></tr>
+                    <tr><td>wir</td><td>sehen</td></tr>
+                    <tr><td>ihr</td><td>seht</td></tr>
+                    <tr><td>sie/Sie</td><td>sehen</td></tr>
+                </tbody>
+            </table>
+            <p>The vowel changes from <em>e</em> to <em>ie</em> for <em>du</em> and <em>er/sie/es</em>.</p>
+            <h3>20 Irregular Verb Examples with Conjugations and Sentences</h3>
+            <ul>
+                <li><strong>sein</strong> (to be)
+                    <ul><li>Ich <strong>bin</strong> müde. (I am tired.)</li><li>Du <strong>bist</strong> hier. (You are here.)</li></ul>
+                </li>
+                <li><strong>haben</strong> (to have)
+                    <ul><li>Ich <strong>habe</strong> Zeit. (I have time.)</li><li>Du <strong>hast</strong> Hunger. (You have hunger.)</li></ul>
+                </li>
+                <li><strong>gehen</strong> (to go)
+                    <ul><li>Ich <strong>gehe</strong> zur Schule. (I go to school.)</li><li>Du <strong>gehst</strong> nach Hause. (You go home.)</li></ul>
+                </li>
+                <li><strong>sehen</strong> (to see)
+                    <ul><li>Ich <strong>sehe</strong> einen Film. (I see a movie.)</li><li>Du <strong>siehst</strong> mich. (You see me.)</li></ul>
+                </li>
+                <li><strong>lesen</strong> (to read)
+                    <ul><li>Ich <strong>lese</strong> ein Buch. (I read a book.)</li><li>Du <strong>liest</strong> die Zeitung. (You read the newspaper.)</li></ul>
+                </li>
+                <li><strong>essen</strong> (to eat)
+                    <ul><li>Ich <strong>esse</strong> Pizza. (I eat pizza.)</li><li>Du <strong>isst</strong> einen Apfel. (You eat an apple.)</li></ul>
+                </li>
+                <li><strong>nehmen</strong> (to take)
+                    <ul><li>Ich <strong>nehme</strong> den Bus. (I take the bus.)</li><li>Du <strong>nimmst</strong> mein Buch. (You take my book.)</li></ul>
+                </li>
+                <li><strong>fahren</strong> (to drive)
+                    <ul><li>Ich <strong>fahre</strong> zur Arbeit. (I drive to work.)</li><li>Du <strong>fährst</strong> schnell. (You drive fast.)</li></ul>
+                </li>
+                <li><strong>sprechen</strong> (to speak)
+                    <ul><li>Ich <strong>spreche</strong> Deutsch. (I speak German.)</li><li>Du <strong>sprichst</strong> Englisch. (You speak English.)</li></ul>
+                </li>
+                <li><strong>schreiben</strong> (to write)
+                    <ul><li>Ich <strong>schreibe</strong> einen Brief. (I write a letter.)</li><li>Du <strong>schreibst</strong> eine Nachricht. (You write a message.)</li></ul>
+                </li>
+                <li><strong>trinken</strong> (to drink)
+                    <ul><li>Ich <strong>trinke</strong> Wasser. (I drink water.)</li><li>Du <strong>trinkst</strong> Kaffee. (You drink coffee.)</li></ul>
+                </li>
+                <li><strong>singen</strong> (to sing)
+                    <ul><li>Ich <strong>singe</strong> ein Lied. (I sing a song.)</li><li>Du <strong>singst</strong> laut. (You sing loudly.)</li></ul>
+                </li>
+                <li><strong>schwimmen</strong> (to swim)
+                    <ul><li>Ich <strong>schwimme</strong> im Meer. (I swim in the sea.)</li><li>Du <strong>schwimmst</strong> im Pool. (You swim in the pool.)</li></ul>
+                </li>
+                <li><strong>finden</strong> (to find)
+                    <ul><li>Ich <strong>finde</strong> meinen Schlüssel. (I find my key.)</li><li>Du <strong>findest</strong> Geld. (You find money.)</li></ul>
+                </li>
+                <li><strong>beginnen</strong> (to begin)
+                    <ul><li>Ich <strong>beginne</strong> jetzt. (I begin now.)</li><li>Du <strong>beginnst</strong> später. (You begin later.)</li></ul>
+                </li>
+                <li><strong>geben</strong> (to give)
+                    <ul><li>Ich <strong>gebe</strong> dir ein Geschenk. (I give you a gift.)</li><li>Du <strong>gibst</strong> mir ein Buch. (You give me a book.)</li></ul>
+                </li>
+                <li><strong>wissen</strong> (to know)
+                    <ul><li>Ich <strong>weiß</strong> die Antwort. (I know the answer.)</li><li>Du <strong>weißt</strong> alles. (You know everything.)</li></ul>
+                </li>
+                <li><strong>laufen</strong> (to run)
+                    <ul><li>Ich <strong>laufe</strong> im Park. (I run in the park.)</li><li>Du <strong>läufst</strong> schnell. (You run fast.)</li></ul>
+                </li>
+                <li><strong>schlafen</strong> (to sleep)
+                    <ul><li>Ich <strong>schlafe</strong> gut. (I sleep well.)</li><li>Du <strong>schläfst</strong> lange. (You sleep long.)</li></ul>
+                </li>
+                <li><strong>treffen</strong> (to meet)
+                    <ul><li>Ich <strong>treffe</strong> meine Freunde. (I meet my friends.)</li><li>Du <strong>triffst</strong> deinen Lehrer. (You meet your teacher.)</li></ul>
+                </li>
+            </ul>
+            <p><strong>Key Point</strong>: Irregular verbs often change their stem vowel for <em>du</em> and <em>er/sie/es</em>. Memorize these changes, as they don’t follow the regular pattern.</p>
+        </section>
+
+        <!-- Practice Questions -->
+        <section id="practice">
+            <h2>Practice Questions</h2>
+            <p>Let’s test your conjugation skills with a mix of regular and irregular verbs! Fill in the correct present tense form of the verb in parentheses.</p>
+            <div class="subsection">
+                <h3>Exercise 1: Regular Verbs</h3>
+                <ol>
+                    <li>Ich __________ (spielen) mit meinem Hund. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> spiele</p></div></li>
+                    <li>Du __________ (lernen) für die Schule. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> lernst</p></div></li>
+                    <li>Er __________ (arbeiten) im Laden. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> arbeitet</p></div></li>
+                    <li>Wir __________ (wohnen) in einem Haus. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> wohnen</p></div></li>
+                    <li>Ihr __________ (hören) Musik. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> hört</p></div></li>
+                    <li>Sie __________ (tanzen) zusammen. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> tanzen</p></div></li>
+                    <li>Ich __________ (fragen) meine Mutter. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> frage</p></div></li>
+                    <li>Du __________ (antworten) schnell. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> antwortest</p></div></li>
+                    <li>Er __________ (malen) die Wand. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> malt</p></div></li>
+                    <li>Wir __________ (zeichnen) ein Bild. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> zeichnen</p></div></li>
+                    <li>Ihr __________ (kochen) heute Abend. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> kocht</p></div></li>
+                    <li>Sie __________ (backen) Brot. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> backen</p></div></li>
+                    <li>Ich __________ (putzen) die Fenster. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> putze</p></div></li>
+                    <li>Du __________ (waschen) dein Auto. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> wäschst</p></div></li>
+                    <li>Er __________ (öffnen) das Fenster. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> öffnet</p></div></li>
+                    <li>Wir __________ (schließen) die Tür. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> schließen</p></div></li>
+                    <li>Ihr __________ (helfen) eurer Schwester. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> helft</p></div></li>
+                    <li>Sie __________ (lieben) Tiere. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> lieben</p></div></li>
+                    <li>Ich __________ (hassen) Kälte. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> hasse</p></div></li>
+                    <li>Du __________ (reisen) gern. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> reist</p></div></li>
+                </ol>
+            </div>
+            <div class="subsection">
+                <h3>Exercise 2: Irregular Verbs</h3>
+                <ol>
+                    <li>Ich __________ (sein) Student. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> bin</p></div></li>
+                    <li>Du __________ (haben) ein Handy. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> hast</p></div></li>
+                    <li>Er __________ (gehen) ins Kino. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> geht</p></div></li>
+                    <li>Wir __________ (sehen) den Himmel. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> sehen</p></div></li>
+                    <li>Ihr __________ (lesen) Bücher. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> lest</p></div></li>
+                    <li>Sie __________ (essen) Kuchen. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> essen</p></div></li>
+                    <li>Ich __________ (nehmen) meine Tasche. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> nehme</p></div></li>
+                    <li>Du __________ (fahren) mit dem Zug. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> fährst</p></div></li>
+                    <li>Er __________ (sprechen) laut. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> spricht</p></div></li>
+                    <li>Wir __________ (schreiben) E-Mails. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> schreiben</p></div></li>
+                    <li>Ihr __________ (trinken) Saft. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> trinkt</p></div></li>
+                    <li>Sie __________ (singen) im Chor. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> singen</p></div></li>
+                    <li>Ich __________ (schwimmen) im See. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> schwimme</p></div></li>
+                    <li>Du __________ (finden) dein Handy. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> findest</p></div></li>
+                    <li>Er __________ (beginnen) die Arbeit. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> beginnt</p></div></li>
+                    <li>Wir __________ (geben) Geschenke. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> geben</p></div></li>
+                    <li>Ihr __________ (wissen) viel. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> wisst</p></div></li>
+                    <li>Sie __________ (laufen) im Wald. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> laufen</p></div></li>
+                    <li>Ich __________ (schlafen) jetzt. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> schlafe</p></div></li>
+                    <li>Du __________ (treffen) mich später. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> triffst</p></div></li>
+                </ol>
+            </div>
+            <div class="subsection">
+                <h3>Exercise 3: Mixed Regular and Irregular Verbs</h3>
+                <ol>
+                    <li>Ich __________ (spielen) Gitarre. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> spiele</p></div></li>
+                    <li>Du __________ (sein) nett. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> bist</p></div></li>
+                    <li>Er __________ (lernen) Spanisch. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> lernt</p></div></li>
+                    <li>Wir __________ (haben) Spaß. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> haben</p></div></li>
+                    <li>Ihr __________ (gehen) zur Party. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> geht</p></div></li>
+                    <li>Sie __________ (sehen) die Blumen. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> sehen</p></div></li>
+                    <li>Ich __________ (arbeiten) heute. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> arbeite</p></div></li>
+                    <li>Du __________ (lesen) ein Magazin. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> liest</p></div></li>
+                    <li>Er __________ (essen) Suppe. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> isst</p></div></li>
+                    <li>Wir __________ (wohnen) zusammen. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> wohnen</p></div></li>
+                    <li>Ihr __________ (nehmen) den Zug. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> nehmt</p></div></li>
+                    <li>Sie __________ (fahren) ins Büro. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> fahren</p></div></li>
+                    <li>Ich __________ (sprechen) mit dir. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> spreche</p></div></li>
+                    <li>Du __________ (schreiben) einen Text. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> schreibst</p></div></li>
+                    <li>Er __________ (trinken) Tee. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> trinkt</p></div></li>
+                    <li>Wir __________ (singen) ein Lied. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> singen</p></div></li>
+                    <li>Ihr __________ (schwimmen) gern. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> schwimmt</p></div></li>
+                    <li>Sie __________ (finden) Lösungen. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> finden</p></div></li>
+                    <li>Ich __________ (beginnen) früh. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> beginne</p></div></li>
+                    <li>Du __________ (geben) mir Wasser. <button class="toggle-btn">Show Answer</button><div class="answer hidden"><p><strong>Answer:</strong> gibst</p></div></li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Final Thoughts -->
+        <section id="final-thoughts">
+            <h2>Final Thoughts</h2>
+            <p>
+                <strong>Regular Verbs</strong>: Stick to the pattern (-e, -st, -t, -en, -t, -en), and you’ll master them quickly.<br>
+                <strong>Irregular Verbs</strong>: Focus on memorizing the stem vowel changes (e.g., <em>e → i</em>, <em>a → ä</em>) and unique forms like <em>sein</em> and <em>haben</em>.<br>
+                <strong>Practice</strong>: Use these verbs in sentences, make flashcards, or try speaking them aloud to build confidence.
+            </p>
+            <p>
+                Learning German conjugation takes time, but with regular practice, you’ll get there. Keep going, and <em>viel Spaß beim Lernen!</em> (Have fun learning!)
+            </p>
+        </section>
+
+        <!-- See Also -->
+        <section id="see-also">
+            <h2>See Also</h2>
+            <div class="see-also-links">
+                <a href="nouns.html" class="see-also-btn">German Nouns</a>
+                <a href="articles.html" class="see-also-btn">German Articles</a>
+                <a href="adjectives.html" class="see-also-btn">German Adjectives</a>
+                <a href="cases.html" class="see-also-btn">German Cases</a>
+            </div>
+        </section>
+
+        <!-- Next Page Button -->
+        <div class="next-page">
+            <a href="past-tense.html" class="next-btn">Next: German Past Tense →</a>
+        </div>
+    </main>
+
+    <!-- JavaScript for interactivity -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('.toggle-btn');
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const hiddenContent = this.nextElementSibling;
+                    if (hiddenContent.classList.contains('hidden')) {
+                        hiddenContent.classList.remove('hidden');
+                        this.textContent = 'Hide Answer';
+                    } else {
+                        hiddenContent.classList.add('hidden');
+                        this.textContent = 'Show Answer';
+                    }
+                });
+            });
+
+            const modeToggle = document.getElementById('mode-toggle');
+            const body = document.body;
+            modeToggle.addEventListener('click', function() {
+                body.classList.toggle('dark-mode');
+                const isDark = body.classList.contains('dark-mode');
+                modeToggle.querySelector('svg').innerHTML = isDark ? 
+                    '<path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>' : 
+                    '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>';
+            });
+        });
+    </script>
+</body>
+{% endblock body %}

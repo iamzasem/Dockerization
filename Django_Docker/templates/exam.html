@@ -1,0 +1,971 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}German Exam Preparation{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'css/exam.css' %}">
+<body>
+    <main>
+        <!-- Navigation and Mode Toggle -->
+        <div class="top-bar">
+            <div class="nav-buttons">
+                <a href="german.html" class="nav-btn home-btn" title="Home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </a>
+                <a href="javascript:history.back()" class="nav-btn back-btn" title="Back">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </a>
+            </div>
+            <button id="mode-toggle" class="mode-toggle" title="Toggle Dark/Light Mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Main Heading -->
+        <section id="intro">
+            <h1>German Exam Preparation</h1>
+            <div class="level-buttons">
+                <button class="level-btn active" data-level="a1">A1</button>
+                <button class="level-btn" data-level="a2">A2</button>
+                <button class="level-btn" data-level="b1">B1</button>
+            </div>
+        </section>
+
+        <!-- A1 Content -->
+        <section id="a1-content" class="level-content">
+            <h2>German A1 Exam Preparation: A Complete Guide for Goethe-Zentrum</h2>
+            <p>
+                Preparing for the <strong>Goethe-Zentrum A1 exam</strong> is your first big step into the German language, and it’s totally doable with the right plan! The A1 level, based on the <strong>Common European Framework of Reference for Languages (CEFR)</strong>, is for beginners. It tests basic skills: <strong>reading</strong>, <strong>listening</strong>, <strong>writing</strong>, and <strong>speaking</strong>. The Goethe-Zentrum (Goethe Institute) exam, called <strong>"Goethe-Zertifikat A1: Start Deutsch 1"</strong>, checks if you can handle simple everyday situations—like introducing yourself or asking for directions. This super long guide will walk you through each part of the exam, give you practical tips, and share extra resources (YouTube videos, articles, and more) to ace it. Let’s make this fun and easy—los geht’s!
+            </p>
+
+            <div class="subsection">
+                <h3>What is the Goethe-Zertifikat A1 Exam?</h3>
+                <p>The Goethe A1 exam proves you can:</p>
+                <ul class="example-list">
+                    <li>Understand and use simple phrases.</li>
+                    <li>Talk about yourself, family, and basic needs.</li>
+                    <li>Read signs, forms, and short texts.</li>
+                    <li>Write basic messages.</li>
+                </ul>
+                <div class="examples">
+                    <p><strong>Exam Structure:</strong></p>
+                    <ul class="example-list">
+                        <li><strong>Total Time:</strong> About 65 minutes (plus speaking).</li>
+                        <li><strong>Parts:</strong>
+                            <ol>
+                                <li><strong>Listening (Hören)</strong> – 20 minutes, 25 points.</li>
+                                <li><strong>Reading (Lesen)</strong> – 25 minutes, 25 points.</li>
+                                <li><strong>Writing (Schreiben)</strong> – 20 minutes, 25 points.</li>
+                                <li><strong>Speaking (Sprechen)</strong> – About 15 minutes, 25 points (done separately, often in pairs).</li>
+                            </ol>
+                        </li>
+                        <li><strong>Passing Score:</strong> 60% overall (60 out of 100 points).</li>
+                    </ul>
+                    <p>You need to prepare for all four skills, so let’s break it down with tips and practice ideas for each.</p>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>1. Listening (Hören) Preparation</h3>
+                <p><strong>What to Expect:</strong></p>
+                <ul class="example-list">
+                    <li><strong>Duration:</strong> 20 minutes.</li>
+                    <li><strong>Tasks:</strong> 3 parts with short audio clips (e.g., announcements, conversations).
+                        <ul>
+                            <li><strong>Part 1:</strong> Match pictures to what you hear (6 questions).</li>
+                            <li><strong>Part 2:</strong> True/false questions (6 questions).</li>
+                            <li><strong>Part 3:</strong> Multiple-choice questions (6 questions).</li>
+                        </ul>
+                    </li>
+                    <li><strong>Level:</strong> Simple dialogues about daily life—phone numbers, times, directions.</li>
+                </ul>
+                <p><strong>Tips to Ace Listening:</strong></p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><strong>Start with Slow Audio:</strong> Listen to beginner podcasts or videos where people speak clearly. Focus on catching key words like <em>Hallo</em>, <em>danke</em>, or numbers (1–100).
+                            <ul>
+                                <li><strong>Practice:</strong> Repeat <em>Ich heiße Anna</em> (My name is Anna) from a video until you hear every word.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Learn Everyday Vocab:</strong> Memorize words you’ll hear a lot: <em>Bahnhof</em> (station), <em>Uhr</em> (o’clock), <em>links</em> (left), <em>rechts</em> (right).
+                            <ul>
+                                <li><strong>Trick:</strong> Make flashcards with 10 words a day—say them out loud.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Practice Numbers and Times:</strong> The exam loves asking about schedules (e.g., <em>Wann fährt der Zug?</em> – When does the train leave?). Practice 1–100 and times like <em>halb drei</em> (2:30).
+                            <ul>
+                                <li><strong>Exercise:</strong> Write 5 times (e.g., 8:15) and say them in German.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Shadow Listening:</strong> Play a short audio, pause after each sentence, and repeat it. This trains your ear and mouth together.
+                            <ul>
+                                <li><strong>Example:</strong> Hear <em>Wo ist der Supermarkt?</em> (Where is the supermarket?), then say it.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Mock Tests:</strong> Use Goethe’s official practice materials (linked below) to hear real exam-style clips. Time yourself—20 minutes—and check answers.</li>
+                    </ol>
+                    <p><strong>Practice Resources:</strong></p>
+                    <ul class="example-list">
+                        <li><div class="link-box"><strong>Goethe Practice Materials:</strong> Free sample tests on the Goethe website. <a href="https://www.goethe.de/en/spr/kup/prf/prf/sd1.html" target="_blank">[Goethe A1 Sample Test]</a></div></li>
+                        <li><div class="link-box"><strong>YouTube:</strong> “Learn German with Anja” – Her A1 listening videos are slow and clear. <a href="https://www.youtube.com/@GermanwithAnja" target="_blank">[Learn German with Anja]</a></div></li>
+                        <li><div class="link-box"><strong>App:</strong> “Deutsch lernen A1” – Audio exercises for beginners.</div></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>2. Reading (Lesen) Preparation</h3>
+                <p><strong>What to Expect:</strong></p>
+                <ul class="example-list">
+                    <li><strong>Duration:</strong> 25 minutes.</li>
+                    <li><strong>Tasks:</strong> 3 parts with short texts (e.g., emails, ads, signs).
+                        <ul>
+                            <li><strong>Part 1:</strong> Match texts to situations (5 questions).</li>
+                            <li><strong>Part 2:</strong> True/false based on a text (5 questions).</li>
+                            <li><strong>Part 3:</strong> Multiple-choice about a longer text (5 questions).</li>
+                        </ul>
+                    </li>
+                    <li><strong>Level:</strong> Simple stuff—posters, notes, or forms.</li>
+                </ul>
+                <p><strong>Tips to Ace Reading:</strong></p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><strong>Build Basic Vocab:</strong> Focus on A1 words: <em>Familie</em> (family), <em>Wohnung</em> (apartment), <em>Arbeit</em> (work), <em>Essen</em> (food).
+                            <ul>
+                                <li><strong>Exercise:</strong> Read 10 words daily from a list (e.g., Goethe’s A1 vocab list).</li>
+                            </ul>
+                        </li>
+                        <li><strong>Practice Signs and Forms:</strong> Look at German signs online (e.g., <em>Ausgang</em> – exit, <em>Eingang</em> – entrance). Fill out fake forms with your name, address, etc.
+                            <ul>
+                                <li><strong>Trick:</strong> Write <em>Name: [your name], Adresse: [your street]</em> 5 times.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Scan for Key Words:</strong> Don’t read every word—look for clues like <em>wann</em> (when), <em>wo</em> (where), <em>was</em> (what).
+                            <ul>
+                                <li><strong>Practice:</strong> Read a short ad (e.g., <em>Wohnung zu vermieten</em> – Apartment for rent) and underline key words.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Use Picture Clues:</strong> Part 1 has pictures—match them to texts by guessing context (e.g., a train pic with <em>Zug</em> – train).
+                            <ul>
+                                <li><strong>Exercise:</strong> Find 3 German ads online and match them to pics.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Time Yourself:</strong> Do Goethe sample reading tests in 25 minutes. Check what you miss and learn those words.</li>
+                    </ol>
+                    <p><strong>Practice Resources:</strong></p>
+                    <ul class="example-list">
+                        <li><div class="link-box"><strong>Goethe Practice Tests:</strong> Official A1 reading samples. <a href="https://www.goethe.de/en/spr/kup/prf/prf/sd1.html" target="_blank">[Goethe A1 Sample Test]</a></div></li>
+                        <li><div class="link-box"><strong>YouTube:</strong> “Easy German” – Watch A1 vocab videos with subtitles. <a href="https://www.youtube.com/@EasyGerman" target="_blank">[Easy German]</a></div></li>
+                        <li><div class="link-box"><strong>Article:</strong> “A1 Reading Tips” on Deutsch Lernen. <a href="https://www.deutsch-lernen.com/" target="_blank">[Deutsch Lernen]</a></div></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>3. Writing (Schreiben) Preparation</h3>
+                <p><strong>What to Expect:</strong></p>
+                <ul class="example-list">
+                    <li><strong>Duration:</strong> 20 minutes.</li>
+                    <li><strong>Tasks:</strong> 2 parts.
+                        <ul>
+                            <li><strong>Part 1:</strong> Fill out a form (e.g., name, address, phone)—5 points.</li>
+                            <li><strong>Part 2:</strong> Write a short message (e.g., 20–30 words)—10 points.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Level:</strong> Super basic—like a note to a friend or a simple email.</li>
+                </ul>
+                <p><strong>Tips to Ace Writing:</strong></p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><strong>Master Personal Info:</strong> Memorize how to write: <em>Name, Adresse, Telefonnummer, Geburtsdatum</em> (birthday). Practice with your real info.
+                            <ul>
+                                <li><strong>Exercise:</strong> Fill out a fake form 5 times—<em>Ich heiße [name], wohne in [city]</em>.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Learn Simple Sentences:</strong> Focus on A1 grammar: present tense (<em>ich gehe</em>), articles (<em>der, die, das</em>), prepositions (<em>in, mit</em>).
+                            <ul>
+                                <li><strong>Examples:</strong> <em>Ich wohne in Berlin. Ich mag Pizza.</em> (I live in Berlin. I like pizza.)</li>
+                            </ul>
+                        </li>
+                        <li><strong>Practice Short Messages:</strong> Write notes like: <em>Hallo Maria, wie geht es dir? Ich bin gut. Bis morgen!</em> (Hi Maria, how are you? I’m good. See you tomorrow!)
+                            <ul>
+                                <li><strong>Trick:</strong> Keep it 20–30 words—count them!</li>
+                            </ul>
+                        </li>
+                        <li><strong>Use Templates:</strong> For Part 2, memorize a structure: Greeting (<em>Hallo</em>), question (<em>Wie geht’s?</em>), info (<em>Ich bin...</em>), goodbye (<em>Tschüss</em>).
+                            <ul>
+                                <li><strong>Exercise:</strong> Write 3 messages to a fake friend.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Check Spelling:</strong> Watch out for <em>ß</em> (straße), umlauts (<em>ä, ö, ü</em>), and capitals (<em>Haus</em>, not <em>haus</em>).
+                            <ul>
+                                <li><strong>Practice:</strong> Copy 5 sentences from a Goethe sample and check.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <p><strong>Practice Resources:</strong></p>
+                    <ul class="example-list">
+                        <li><div class="link-box"><strong>Goethe Writing Samples:</strong> See real A1 tasks. <a href="https://www.goethe.de/en/spr/kup/prf/prf/sd1.html" target="_blank">[Goethe A1 Sample Test]</a></div></li>
+                        <li><div class="link-box"><strong>YouTube:</strong> “Deutsch für Euch” – Writing tips for A1. <a href="https://www.youtube.com/@DeutschFuerEuch" target="_blank">[Deutsch für Euch]</a></div></li>
+                        <li><div class="link-box"><strong>Article:</strong> “How to Write A1 Messages” on Learn German Easily. <a href="https://learngermaneasily.com/" target="_blank">[Learn German Easily]</a></div></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>4. Speaking (Sprechen) Preparation</h3>
+                <p><strong>What to Expect:</strong></p>
+                <ul class="example-list">
+                    <li><strong>Duration:</strong> 15 minutes (in pairs or small groups).</li>
+                    <li><strong>Tasks:</strong> 3 parts.
+                        <ul>
+                            <li><strong>Part 1:</strong> Introduce yourself (e.g., name, where you’re from)—2 minutes.</li>
+                            <li><strong>Part 2:</strong> Ask and answer questions with cards (e.g., <em>Wann gehst du zur Arbeit?</em>)—5 minutes.</li>
+                            <li><strong>Part 3:</strong> Make a simple request (e.g., <em>Kann ich Wasser haben?</em>)—5 minutes.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Level:</strong> Basic chit-chat—slow and clear.</li>
+                </ul>
+                <p><strong>Tips to Ace Speaking:</strong></p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><strong>Practice Introducing Yourself:</strong> Memorize: <em>Hallo, ich heiße [name]. Ich komme aus [place]. Ich wohne in [city].</em>
+                            <ul>
+                                <li><strong>Exercise:</strong> Say it 10 times to a mirror—smile!</li>
+                            </ul>
+                        </li>
+                        <li><strong>Learn Question Words:</strong> Know <em>wer</em> (who), <em>was</em> (what), <em>wo</em> (where), <em>wann</em> (when), <em>wie</em> (how).
+                            <ul>
+                                <li><strong>Practice:</strong> Ask <em>Wo wohnst du?</em> (Where do you live?) and answer <em>Ich wohne in...</em></li>
+                            </ul>
+                        </li>
+                        <li><strong>Use Flashcards:</strong> Write A1 topics (family, hobbies, daily routine) on cards. Pick one, talk for 1 minute.
+                            <ul>
+                                <li><strong>Example:</strong> <em>Ich mag Fußball. Ich spiele am Wochenende.</em></li>
+                            </ul>
+                        </li>
+                        <li><strong>Shadow Native Speakers:</strong> Watch a Goethe A1 speaking video, repeat every sentence. Copy their tone.
+                            <ul>
+                                <li><strong>Try:</strong> <em>Guten Tag, wie geht es Ihnen?</em> (Good day, how are you?)</li>
+                            </ul>
+                        </li>
+                        <li><strong>Record Yourself:</strong> Say <em>Ich bin [name]. Ich lerne Deutsch.</em> Record it, listen, fix mistakes.
+                            <ul>
+                                <li><strong>Goal:</strong> Clear and loud—no mumbling!</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <p><strong>Practice Resources:</strong></p>
+                    <ul class="example-list">
+                        <li><div class="link-box"><strong>Goethe Speaking Samples:</strong> Official examples. <a href="https://www.goethe.de/en/spr/kup/prf/prf/sd1.html" target="_blank">[Goethe A1 Sample Test]</a></div></li>
+                        <li><div class="link-box"><strong>YouTube:</strong> “Get Germanized” – A1 speaking practice. <a href="https://www.youtube.com/@MeisterLehnsherr" target="_blank">[Get Germanized]</a></div></li>
+                        <li><div class="link-box"><strong>App:</strong> “Tandem” – Chat with native speakers for free.</div></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>General A1 Exam Tips</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><strong>Know the Format:</strong> Study the Goethe A1 layout (linked above). No surprises on test day!</li>
+                        <li><strong>Time Management:</strong>
+                            <ul>
+                                <li>Listening: 20 min—don’t overthink, move on.</li>
+                                <li>Reading: 25 min—scan fast.</li>
+                                <li>Writing: 20 min—plan 5 min, write 15 min.</li>
+                                <li>Speaking: 15 min—keep it short and clear.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Daily Practice:</strong> 30 minutes: 10 min listening, 10 min reading, 5 min writing, 5 min speaking.
+                            <ul>
+                                <li><strong>Routine:</strong> Morning vocab, evening audio.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Mock Exams:</strong> Do 2–3 full Goethe practice tests. Score yourself—aim for 60+ points.</li>
+                        <li><strong>Stay Calm:</strong> Exam day: Breathe, sip water, and smile—you’ve got this!</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>Additional Exam Help Links</h3>
+                <p><strong>Official Goethe Resources:</strong></p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><div class="link-box"><strong>Goethe A1 Info Page:</strong> Full details and downloads. <a href="https://www.goethe.de/en/spr/kup/prf/prf/sd1.html" target="_blank">[Goethe A1 Exam]</a></div></li>
+                        <li><div class="link-box"><strong>Vocabulary List:</strong> A1 words you need. <a href="https://www.goethe.de/pro/relaunch/prf/de/A1_Wortliste_2018.pdf" target="_blank">[Goethe A1 Wortliste]</a></div></li>
+                    </ul>
+                </div>
+                <p><strong>YouTube Channels:</strong></p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><div class="link-box"><strong>Learn German with Anja:</strong> A1 tips and practice. <a href="https://www.youtube.com/@GermanwithAnja" target="_blank">[Learn German with Anja]</a> – Watch “A1 Exam Prep” playlist.</div></li>
+                        <li><div class="link-box"><strong>Easy German:</strong> Real-life A1 conversations. <a href="https://www.youtube.com/@EasyGerman" target="_blank">[Easy German]</a> – Try “A1 Phrases” videos.</div></li>
+                        <li><div class="link-box"><strong>Deutsch für Euch:</strong> Step-by-step A1 skills. <a href="https://www.youtube.com/@DeutschFuerEuch" target="_blank">[Deutsch für Euch]</a> – Check “A1 Goethe Tips.”</div></li>
+                    </ul>
+                </div>
+                <p><strong>Articles and Websites:</strong></p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><div class="link-box"><strong>Schubert Verlag:</strong> Free A1 exercises. <a href="https://www.schubert-verlag.de/aufgaben/uebungen_a1/a1_uebungen_index.htm" target="_blank">[Schubert Verlag A1]</a></div></li>
+                        <li><div class="link-box"><strong>Lingoda A1 Tips:</strong> Exam strategies. <a href="https://www.lingoda.com/en/content/goethe-a1-exam-preparation/" target="_blank">[Lingoda A1 Prep]</a></div></li>
+                        <li><div class="link-box"><strong>Deutsch Akademie:</strong> A1 practice tests. <a href="https://www.deutschakademie.de/en/goethe-exam-a1" target="_blank">[Deutsch Akademie]</a></div></li>
+                    </ul>
+                </div>
+                <p><strong>Apps:</strong></p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><div class="link-box"><strong>Busuu:</strong> A1 lessons with speaking practice.</div></li>
+                        <li><div class="link-box"><strong>Memrise:</strong> A1 vocab flashcards.</div></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>Wrapping Up</h3>
+                <p>
+                    You’re ready to crush the Goethe-Zertifikat A1 exam! Focus on listening to simple audio, reading signs and notes, writing short messages, and speaking clearly about yourself. Use the tips—practice daily, shadow videos, and try mock tests. The resources here (Goethe samples, YouTube, apps) are your secret weapons. Start small, stay steady, and you’ll pass with flying colors. <em>Viel Erfolg!</em> (Good luck!)
+                </p>
+            </div>
+        </section>
+
+        <!-- A2 Content -->
+        <section id="a2-content" class="level-content" style="display: none;">
+            <h2>German A2 Exam Preparation: A Complete Guide for Goethe-Zentrum</h2>
+            <p>
+                Getting ready for the <strong>Goethe-Zentrum A2 exam</strong> is your next exciting step in mastering German! The A2 level, part of the <strong>Common European Framework of Reference for Languages (CEFR)</strong>, builds on A1 and tests your ability to handle slightly more complex everyday situations—like talking about your hobbies, shopping, or past events. The Goethe A2 exam, officially called <strong>"Goethe-Zertifikat A2"</strong>, checks your skills in <strong>reading</strong>, <strong>listening</strong>, <strong>writing</strong>, and <strong>speaking</strong>. This super detailed guide will break down each section, give you practical tips tailored for A2, and share extra resources (YouTube videos, articles, and more) to help you succeed. Let’s make it clear, fun, and doable—auf geht’s!
+            </p>
+
+            <div class="subsection">
+                <h3>What is the Goethe-Zertifikat A2 Exam?</h3>
+                <p>The Goethe A2 exam shows you can:</p>
+                <ul class="example-list">
+                    <li>Understand and use common phrases and sentences.</li>
+                    <li>Talk about your life, work, and experiences in simple terms.</li>
+                    <li>Read short texts like emails, ads, or instructions.</li>
+                    <li>Write basic letters or messages.</li>
+                </ul>
+                <div class="examples">
+                    <p><strong>Exam Structure:</strong></p>
+                    <ul class="example-list">
+                        <li><strong>Total Time:</strong> About 100 minutes (plus speaking).</li>
+                        <li><strong>Parts:</strong>
+                            <ol>
+                                <li><strong>Listening (Hören)</strong> – 30 minutes, 25 points.</li>
+                                <li><strong>Reading (Lesen)</strong> – 30 minutes, 25 points.</li>
+                                <li><strong>Writing (Schreiben)</strong> – 30 minutes, 25 points.</li>
+                                <li><strong>Speaking (Sprechen)</strong> – About 15 minutes, 25 points (in pairs or groups).</li>
+                            </ol>
+                        </li>
+                        <li><strong>Passing Score:</strong> 60% overall (60 out of 100 points).</li>
+                    </ul>
+                    <p>A2 steps up from A1 with longer texts, trickier audio, and more grammar (like past tense). Let’s dive into each part with tips and practice ideas.</p>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>1. Listening (Hören) Preparation</h3>
+                <p><strong>What to Expect:</strong></p>
+                <ul class="example-list">
+                    <li><strong>Duration:</strong> 30 minutes.</li>
+                    <li><strong>Tasks:</strong> 4 parts with audio clips (e.g., conversations, announcements, messages).
+                        <ul>
+                            <li><strong>Part 1:</strong> Match statements to speakers (6 questions).</li>
+                            <li><strong>Part 2:</strong> True/false questions (6 questions).</li>
+                            <li><strong>Part 3:</strong> Multiple-choice questions (6 questions).</li>
+                            <li><strong>Part 4:</strong> Fill in blanks or short answers (6 questions).</li>
+                        </ul>
+                    </li>
+                    <li><strong>Level:</strong> Everyday topics—travel plans, shopping, work schedules—with clearer but faster speech than A1.</li>
+                </ul>
+                <p><strong>Tips to Ace Listening:</strong></p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><strong>Tune Your Ears to Faster Speech:</strong> Listen to A2-level podcasts or videos. Focus on catching main ideas, not every word.
+                            <ul>
+                                <li><strong>Practice:</strong> Play <em>Was machst du am Wochenende?</em> (What do you do on weekends?) and repeat it.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Expand Your Vocab:</strong> Learn A2 words: <em>Urlaub</em> (vacation), <em>einkaufen</em> (to shop), <em>gestern</em> (yesterday), <em>Arzt</em> (doctor).
+                            <ul>
+                                <li><strong>Trick:</strong> Use flashcards—20 new words weekly, say them aloud.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Master Past Tense Clues:</strong> A2 includes simple past (<em>war</em>, <em>hatte</em>). Listen for these in audio (e.g., <em>Ich war im Kino</em> – I was at the cinema).
+                            <ul>
+                                <li><strong>Exercise:</strong> Write 5 past sentences (e.g., <em>Gestern habe ich gegessen</em>) and listen for similar ones.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Practice Announcements:</strong> Train station or airport clips are common. Learn phrases like <em>Der Zug fährt um 14 Uhr</em> (The train leaves at 2 p.m.).
+                            <ul>
+                                <li><strong>Try:</strong> Find a German train announcement online and note key times.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Do Mock Listening Tests:</strong> Use Goethe’s A2 practice audio (linked below). Time yourself—30 minutes—and review mistakes.</li>
+                    </ol>
+                    <p><strong>Practice Resources:</strong></p>
+                    <ul class="example-list">
+                        <li><div class="link-box"><strong>Goethe Practice Materials:</strong> Free A2 listening samples. <a href="https://www.goethe.de/en/spr/kup/prf/prf/sd2.html" target="_blank">[Goethe A2 Sample Test]</a></div></li>
+                        <li><div class="link-box"><strong>YouTube:</strong> “Learn German with Anja” – A2 listening exercises. <a href="https://www.youtube.com/@GermanwithAnja" target="_blank">[Learn German with Anja]</a></div></li>
+                        <li><div class="link-box"><strong>App:</strong> “Pimsleur German” – Audio lessons for A2 ears.</div></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>2. Reading (Lesen) Preparation</h3>
+                <p><strong>What to Expect:</strong></p>
+                <ul class="example-list">
+                    <li><strong>Duration:</strong> 30 minutes.</li>
+                    <li><strong>Tasks:</strong> 3 parts with texts (e.g., emails, articles, notices).
+                        <ul>
+                            <li><strong>Part 1:</strong> Match texts to questions or pics (5 questions).</li>
+                            <li><strong>Part 2:</strong> True/false or yes/no questions (5 questions).</li>
+                            <li><strong>Part 3:</strong> Multiple-choice about a longer text (5 questions).</li>
+                        </ul>
+                    </li>
+                    <li><strong>Level:</strong> Short articles, ads, or personal messages—more details than A1.</li>
+                </ul>
+                <p><strong>Tips to Ace Reading:</strong></p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><strong>Grow Your A2 Vocab:</strong> Focus on topics: <em>Hobby</em> (hobby), <em>Wetter</em> (weather), <em>Reise</em> (travel), <em>Gesundheit</em> (health).
+                            <ul>
+                                <li><strong>Exercise:</strong> Read 15 A2 words daily from Goethe’s list (linked below).</li>
+                            </ul>
+                        </li>
+                        <li><strong>Practice Everyday Texts:</strong> Read German emails, menus, or ads online. Look for words like <em>billig</em> (cheap) or <em>geöffnet</em> (open).
+                            <ul>
+                                <li><strong>Trick:</strong> Find a German restaurant menu and circle 5 words you know.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Spot Grammar in Action:</strong> Watch for accusative/dative cases (<em>Ich gehe in den Park</em>), past tense (<em>Ich habe gegessen</em>), and connectors (<em>weil</em>, <em>aber</em>).
+                            <ul>
+                                <li><strong>Practice:</strong> Read a short text and underline 3 grammar bits.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Skim and Scan:</strong> Don’t read everything—look for answers to <em>wer</em>, <em>was</em>, <em>wann</em> (who, what, when).
+                            <ul>
+                                <li><strong>Exercise:</strong> Skim a Goethe A2 sample text in 2 minutes—find the main idea.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Mock Reading Tests:</strong> Do Goethe A2 practice tests in 30 minutes. Check answers and learn new words from mistakes.</li>
+                    </ol>
+                    <p><strong>Practice Resources:</strong></p>
+                    <ul class="example-list">
+                        <li><div class="link-box"><strong>Goethe Practice Tests:</strong> Official A2 reading samples. <a href="https://www.goethe.de/en/spr/kup/prf/prf/sd2.html" target="_blank">[Goethe A2 Sample Test]</a></div></li>
+                        <li><div class="link-box"><strong>YouTube:</strong> “Easy German” – A2 reading with subtitles. <a href="https://www.youtube.com/@EasyGerman" target="_blank">[Easy German]</a></div></li>
+                        <li><div class="link-box"><strong>Article:</strong> “A2 Reading Strategies” on Deutsch Akademie. <a href="https://www.deutschakademie.de/en/goethe-exam-a2" target="_blank">[Deutsch Akademie]</a></div></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>3. Writing (Schreiben) Preparation</h3>
+                <p><strong>What to Expect:</strong></p>
+                <ul class="example-list">
+                    <li><strong>Duration:</strong> 30 minutes.</li>
+                    <li><strong>Tasks:</strong> 2 parts.
+                        <ul>
+                            <li><strong>Part 1:</strong> Reply to a message (e.g., 30–40 words)—10 points.</li>
+                            <li><strong>Part 2:</strong> Write a short letter or email (e.g., 40–50 words)—15 points.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Level:</strong> Informal messages—like replying to a friend or asking about a course.</li>
+                </ul>
+                <p><strong>Tips to Ace Writing:</strong></p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><strong>Nail A2 Grammar:</strong> Use present (<em>ich gehe</em>), simple past (<em>ich war</em>), and modals (<em>ich kann</em>).
+                            <ul>
+                                <li><strong>Exercise:</strong> Write <em>Ich habe gestern im Park gespielt</em> 5 times.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Practice Short Replies:</strong> Reply to prompts like: <em>Hallo, wie war dein Wochenende?</em> (Hi, how was your weekend?)
+                            <ul>
+                                <li><strong>Example:</strong> <em>Hallo, mein Wochenende war super. Ich war im Kino. Und du?</em></li>
+                                <li><strong>Trick:</strong> Keep it 30–40 words—count them!</li>
+                            </ul>
+                        </li>
+                        <li><strong>Write Simple Letters:</strong> Structure: Greeting (<em>Hallo Anna</em>), info (<em>Ich möchte...</em>), question (<em>Was denkst du?</em>), goodbye (<em>Tschüss</em>).
+                            <ul>
+                                <li><strong>Practice:</strong> Write <em>Hallo, ich möchte Deutsch lernen. Der Kurs ist in Berlin. Wann beginnt er? Bis bald!</em> (40–50 words).</li>
+                            </ul>
+                        </li>
+                        <li><strong>Memorize Connectors:</strong> Use <em>und</em> (and), <em>aber</em> (but), <em>weil</em> (because) to link ideas.
+                            <ul>
+                                <li><strong>Exercise:</strong> Write 3 sentences with <em>weil</em> (e.g., <em>Ich lerne, weil es Spaß macht</em>).</li>
+                            </ul>
+                        </li>
+                        <li><strong>Check Your Work:</strong> Look for capitals (<em>Haus</em>), umlauts (<em>für</em>), and verb endings (<em>ich gehe</em>, not <em>ich gehen</em>).
+                            <ul>
+                                <li><strong>Try:</strong> Write a reply, then fix 3 mistakes.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <p><strong>Practice Resources:</strong></p>
+                    <ul class="example-list">
+                        <li><div class="link-box"><strong>Goethe Writing Samples:</strong> Real A2 tasks. <a href="https://www.goethe.de/en/spr/kup/prf/prf/sd2.html" target="_blank">[Goethe A2 Sample Test]</a></div></li>
+                        <li><div class="link-box"><strong>YouTube:</strong> “Deutsch für Euch” – A2 writing walkthroughs. <a href="https://www.youtube.com/@DeutschFuerEuch" target="_blank">[Deutsch für Euch]</a></div></li>
+                        <li><div class="link-box"><strong>Article:</strong> “A2 Writing Tips” on Learn German Easily. <a href="https://learngermaneasily.com/" target="_blank">[Learn German Easily]</a></div></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>4. Speaking (Sprechen) Preparation</h3>
+                <p><strong>What to Expect:</strong></p>
+                <ul class="example-list">
+                    <li><strong>Duration:</strong> 15 minutes (in pairs or small groups).</li>
+                    <li><strong>Tasks:</strong> 3 parts.
+                        <ul>
+                            <li><strong>Part 1:</strong> Introduce yourself and answer questions (e.g., <em>Wo wohnst du?</em>)—4 minutes.</li>
+                            <li><strong>Part 2:</strong> Ask and answer about a topic (e.g., hobbies, plans)—6 minutes.</li>
+                            <li><strong>Part 3:</strong> Plan something together (e.g., a trip)—5 minutes.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Level:</strong> Short chats with simple sentences and some past tense.</li>
+                </ul>
+                <p><strong>Tips to Ace Speaking:</strong></p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><strong>Perfect Your Intro:</strong> Memorize: <em>Hallo, ich bin [name]. Ich wohne in [city]. Ich arbeite/studiere als [job]. Ich mag [hobby].</em>
+                            <ul>
+                                <li><strong>Exercise:</strong> Say it 10 times—smooth and loud.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Practice Questions and Answers:</strong> Learn to ask: <em>Was machst du gern?</em> (What do you like to do?) and answer: <em>Ich spiele Fußball.</em>
+                            <ul>
+                                <li><strong>Try:</strong> Ask 5 questions to a mirror, then answer them.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Use Past Tense:</strong> Say stuff like <em>Gestern war ich im Park</em> (Yesterday I was in the park).
+                            <ul>
+                                <li><strong>Practice:</strong> Tell 3 things you did yesterday.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Plan Together:</strong> Practice phrases: <em>Wann treffen wir uns?</em> (When do we meet?) or <em>Ich möchte ins Kino gehen</em> (I’d like to go to the cinema).
+                            <ul>
+                                <li><strong>Exercise:</strong> Pretend-plan a day with a friend—5 sentences.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Speak with Confidence:</strong> Record yourself saying <em>Ich lerne Deutsch, weil es interessant ist.</em> Listen, tweak, repeat.
+                            <ul>
+                                <li><strong>Tip:</strong> Smile—it makes you sound friendlier!</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <p><strong>Practice Resources:</strong></p>
+                    <ul class="example-list">
+                        <li><div class="link-box"><strong>Goethe Speaking Samples:</strong> Official A2 examples. <a href="https://www.goethe.de/en/spr/kup/prf/prf/sd2.html" target="_blank">[Goethe A2 Sample Test]</a></div></li>
+                        <li><div class="link-box"><strong>YouTube:</strong> “Get Germanized” – A2 speaking drills. <a href="https://www.youtube.com/@MeisterLehnsherr" target="_blank">[Get Germanized]</a></div></li>
+                        <li><div class="link-box"><strong>App:</strong> “HelloTalk” – Practice with native speakers.</div></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>General A2 Exam Tips</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><strong>Understand the Format:</strong> Study Goethe’s A2 structure (linked above). Know what’s coming!</li>
+                        <li><strong>Manage Your Time:</strong>
+                            <ul>
+                                <li>Listening: 30 min—skip tough ones, guess if needed.</li>
+                                <li>Reading: 30 min—skim first, then answer.</li>
+                                <li>Writing: 30 min—5 min plan, 25 min write.</li>
+                                <li>Speaking: 15 min—short, clear answers.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Daily Routine:</strong> 1 hour: 15 min listening, 15 min reading, 15 min writing, 15 min speaking.
+                            <ul>
+                                <li><strong>Plan:</strong> Morning vocab, afternoon audio, evening practice test.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Mock Exams:</strong> Do 2–3 full A2 Goethe tests. Aim for 60+ points—track progress.</li>
+                        <li><strong>Relax on Exam Day:</strong> Breathe deep, bring water, and trust your prep—you’re ready!</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>Additional Exam Help Links</h3>
+                <p><strong>Official Goethe Resources:</strong></p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><div class="link-box"><strong>Goethe A2 Info Page:</strong> Details and downloads. <a href="https://www.goethe.de/en/spr/kup/prf/prf/sd2.html" target="_blank">[Goethe A2 Exam]</a></div></li>
+                        <li><div class="link-box"><strong>Vocabulary List:</strong> A2 words to know. <a href="https://www.goethe.de/pro/relaunch/prf/de/A2_Wortliste_2018.pdf" target="_blank">[Goethe A2 Wortliste]</a></div></li>
+                    </ul>
+                </div>
+                <p><strong>YouTube Channels:</strong></p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><div class="link-box"><strong>Learn German with Anja:</strong> A2 tips and exercises. <a href="https://www.youtube.com/@GermanwithAnja" target="_blank">[Learn German with Anja]</a> – Watch “A2 Exam Prep” videos.</div></li>
+                        <li><div class="link-box"><strong>Easy German:</strong> A2-level street chats. <a href="https://www.youtube.com/@EasyGerman" target="_blank">[Easy German]</a> – Try “A2 Conversations.”</div></li>
+                        <li><div class="link-box"><strong>Deutsch für Euch:</strong> A2 skills breakdown. <a href="https://www.youtube.com/@DeutschFuerEuch" target="_blank">[Deutsch für Euch]</a> – Check “A2 Goethe Guide.”</div></li>
+                    </ul>
+                </div>
+                <p><strong>Articles and Websites:</strong></p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><div class="link-box"><strong>Schubert Verlag:</strong> Free A2 exercises. <a href="https://www.schubert-verlag.de/aufgaben/uebungen_a2/a2_uebungen_index.htm" target="_blank">[Schubert Verlag A2]</a></div></li>
+                        <li><div class="link-box"><strong>Lingoda A2 Prep:</strong> Exam strategies. <a href="https://www.lingoda.com/en/content/goethe-a2-exam-preparation/" target="_blank">[Lingoda A2 Tips]</a></div></li>
+                        <li><div class="link-box"><strong>Deutsch Lernen:</strong> A2 practice tests. <a href="https://www.deutsch-lernen.com/" target="_blank">[Deutsch Lernen]</a></div></li>
+                    </ul>
+                </div>
+                <p><strong>Apps:</strong></p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><div class="link-box"><strong>Duolingo:</strong> A2-level lessons with speaking.</div></li>
+                        <li><div class="link-box"><strong>Babbel:</strong> A2 grammar and vocab practice.</div></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>Wrapping Up</h3>
+                <p>
+                    You’re all set to rock the Goethe-Zertifikat A2 exam! Focus on listening to faster audio, reading short articles, writing simple letters, and speaking about your life with confidence. Use these tips—practice daily, try mock tests, and lean on the resources (Goethe samples, YouTube, apps). You’ve got the tools to pass and move up to B1. Keep it steady, and you’ll shine. <em>Viel Glück!</em> (Good luck!)
+                </p>
+            </div>
+        </section>
+
+        <!-- B1 Content -->
+        <section id="b1-content" class="level-content" style="display: none;">
+            <h2>German B1 Exam Preparation: A Complete Guide for Goethe-Zentrum</h2>
+            <p>
+                Preparing for the <strong>Goethe-Zentrum B1 exam</strong> is a big leap forward in your German journey! The B1 level, part of the <strong>Common European Framework of Reference for Languages (CEFR)</strong>, is for intermediate learners who can handle everyday conversations, express opinions, and talk about past and future plans. The Goethe B1 exam, officially called <strong>"Goethe-Zertifikat B1"</strong>, tests your <strong>reading</strong>, <strong>listening</strong>, <strong>writing</strong>, and <strong>speaking</strong> skills at a more advanced level than A2. This super detailed guide will break down each section, give you tailored tips for B1, and provide extra resources (YouTube videos, articles, and more) to help you succeed. It’s going to be thorough, clear, and motivating—let’s get started!
+            </p>
+
+            <div class="subsection">
+                <h3>What is the Goethe-Zertifikat B1 Exam?</h3>
+                <p>The Goethe B1 exam proves you can:</p>
+                <ul class="example-list">
+                    <li>Understand and discuss familiar topics like work, school, or travel.</li>
+                    <li>Express opinions, dreams, and experiences in simple terms.</li>
+                    <li>Read and write longer texts—like articles or letters.</li>
+                    <li>Handle most daily situations independently.</li>
+                </ul>
+                <div class="examples">
+                    <p><strong>Exam Structure:</strong></p>
+                    <ul class="example-list">
+                        <li><strong>Total Time:</strong> About 2 hours 45 minutes (plus speaking).</li>
+                        <li><strong>Parts:</strong>
+                            <ol>
+                                <li><strong>Reading (Lesen)</strong> – 65 minutes, 30 points.</li>
+                                <li><strong>Listening (Hören)</strong> – 40 minutes, 30 points.</li>
+                                <li><strong>Writing (Schreiben)</strong> – 60 minutes, 30 points.</li>
+                                <li><strong>Speaking (Sprechen)</strong> – About 15 minutes, 30 points (in pairs).</li>
+                            </ol>
+                        </li>
+                        <li><strong>Passing Score:</strong> 60% overall (60 out of 100 points). You can pass individual modules if you score 60% in each.</li>
+                    </ul>
+                    <p>B1 ramps up the challenge with longer texts, faster audio, and more complex grammar (like subjunctive). Here’s how to prepare for each part.</p>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>1. Reading (Lesen) Preparation</h3>
+                <p><strong>What to Expect:</strong></p>
+                <ul class="example-list">
+                    <li><strong>Duration:</strong> 65 minutes.</li>
+                    <li><strong>Tasks:</strong> 3 parts with texts (e.g., articles, emails, forum posts).
+                        <ul>
+                            <li><strong>Part 1:</strong> Match headings or questions to short texts (6 questions).</li>
+                            <li><strong>Part 2:</strong> Multiple-choice about a longer text (5 questions).</li>
+                            <li><strong>Part 3:</strong> True/false or detailed questions about a text (9 questions).</li>
+                        </ul>
+                    </li>
+                    <li><strong>Level:</strong> Newspaper snippets, personal letters—topics like health, travel, or society.</li>
+                </ul>
+                <p><strong>Tips to Ace Reading:</strong></p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><strong>Boost Your B1 Vocab:</strong> Learn words for opinions (<em>meiner Meinung nach</em> – in my opinion), conditions (<em>wenn</em> – if), and daily life (<em>Freizeit</em> – free time, <em>Umwelt</em> – environment).
+                            <ul>
+                                <li><strong>Exercise:</strong> Study 20 B1 words daily from Goethe’s list (linked below).</li>
+                            </ul>
+                        </li>
+                        <li><strong>Practice Longer Texts:</strong> Read German news (e.g., <em>Die Zeit</em> simple articles), blogs, or emails. Look for main ideas and details.
+                            <ul>
+                                <li><strong>Trick:</strong> Read a 200-word article and write 3 key points in German.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Handle Grammar:</strong> Watch for past tenses (<em>Perfekt</em>: <em>Ich habe gelernt</em>), subjunctive (<em>Ich würde</em> – I would), and relative clauses (<em>der Mann, der dort wohnt</em> – the man who lives there).
+                            <ul>
+                                <li><strong>Practice:</strong> Find 5 sentences with <em>weil</em> or <em>dass</em> in a text.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Skim and Scan Like a Pro:</strong> Skim for the gist in 2 minutes, then scan for answers to <em>warum</em> (why), <em>wie</em> (how), <em>was</em> (what).
+                            <ul>
+                                <li><strong>Exercise:</strong> Time yourself—read a Goethe B1 sample in 10 minutes, answer 5 questions.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Mock Reading Tests:</strong> Do Goethe B1 practice tests in 65 minutes. Review wrong answers and learn those words or grammar rules.</li>
+                    </ol>
+                    <p><strong>Practice Resources:</strong></p>
+                    <ul class="example-list">
+                        <li><div class="link-box"><strong>Goethe Practice Tests:</strong> Official B1 reading samples. <a href="https://www.goethe.de/en/spr/kup/prf/prf/b1.html" target="_blank">[Goethe B1 Sample Test]</a></div></li>
+                        <li><div class="link-box"><strong>YouTube:</strong> “Easy German” – B1-level texts with explanations. <a href="https://www.youtube.com/@EasyGerman" target="_blank">[Easy German]</a></div></li>
+                        <li><div class="link-box"><strong>Article:</strong> “B1 Reading Tips” on Deutsch Lernen. <a href="https://www.deutsch-lernen.com/" target="_blank">[Deutsch Lernen]</a></div></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>2. Listening (Hören) Preparation</h3>
+                <p><strong>What to Expect:</strong></p>
+                <ul class="example-list">
+                    <li><strong>Duration:</strong> 40 minutes.</li>
+                    <li><strong>Tasks:</strong> 4 parts with audio (e.g., interviews, phone calls, radio clips).
+                        <ul>
+                            <li><strong>Part 1:</strong> True/false about short clips (6 questions).</li>
+                            <li><strong>Part 2:</strong> Multiple-choice about a longer talk (6 questions).</li>
+                            <li><strong>Part 3:</strong> Match statements to speakers (6 questions).</li>
+                            <li><strong>Part 4:</strong> Detailed questions or fill-ins (6 questions).</li>
+                        </ul>
+                    </li>
+                    <li><strong>Level:</strong> Conversations about work, plans, or opinions—faster and less repetitive than A2.</li>
+                </ul>
+                <p><strong>Tips to Ace Listening:</strong></p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><strong>Get Used to Natural Speed:</strong> Listen to B1 podcasts or videos (e.g., German news snippets). Focus on understanding the topic, not every word.
+                            <ul>
+                                <li><strong>Practice:</strong> Play <em>Was denkst du über...?</em> (What do you think about...?) and repeat.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Learn B1 Vocab:</strong> Know words like <em>Vorschlag</em> (suggestion), <em>Problem</em> (problem), <em>Zukunft</em> (future), <em>Erfahrung</em> (experience).
+                            <ul>
+                                <li><strong>Trick:</strong> Make audio flashcards—record 15 words, listen, and repeat.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Catch Past and Future:</strong> B1 uses <em>Perfekt</em> (<em>Ich habe besucht</em>) and future (<em>Ich werde gehen</em>). Listen for these in context.
+                            <ul>
+                                <li><strong>Exercise:</strong> Write 5 past/future sentences, find them in audio.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Practice Real-Life Audio:</strong> Train for radio or phone calls—phrases like <em>Können Sie mir helfen?</em> (Can you help me?) or <em>Das ist eine gute Idee</em> (That’s a good idea).
+                            <ul>
+                                <li><strong>Try:</strong> Find a German weather report online and note 3 details.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Mock Listening Tests:</strong> Use Goethe B1 audio samples (linked below). Do them in 40 minutes, check answers, and redo tough parts.</li>
+                    </ol>
+                    <p><strong>Practice Resources:</strong></p>
+                    <ul class="example-list">
+                        <li><div class="link-box"><strong>Goethe Practice Materials:</strong> Free B1 listening clips. <a href="https://www.goethe.de/en/spr/kup/prf/prf/b1.html" target="_blank">[Goethe B1 Sample Test]</a></div></li>
+                        <li><div class="link-box"><strong>YouTube:</strong> “Learn German with Anja” – B1 listening practice. <a href="https://www.youtube.com/@GermanwithAnja" target="_blank">[Learn German with Anja]</a></div></li>
+                        <li><div class="link-box"><strong>App:</strong> “DW Learn German” – B1 audio lessons.</div></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>3. Writing (Schreiben) Preparation</h3>
+                <p><strong>What to Expect:</strong></p>
+                <ul class="example-list">
+                    <li><strong>Duration:</strong> 60 minutes.</li>
+                    <li><strong>Tasks:</strong> 2 parts.
+                        <ul>
+                            <li><strong>Part 1:</strong> Write an email or message (about 80 words)—15 points.</li>
+                            <li><strong>Part 2:</strong> Express an opinion in a short text (about 80 words)—15 points.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Level:</strong> Semi-formal emails (e.g., to a friend or colleague) and opinions on topics like travel or work.</li>
+                </ul>
+                <p><strong>Tips to Ace Writing:</strong></p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><strong>Master B1 Grammar:</strong> Use <em>Perfekt</em> (<em>Ich habe gearbeitet</em>), subjunctive (<em>Ich würde kommen</em>), and connectors (<em>deshalb</em>, <em>trotzdem</em> – therefore, nevertheless).
+                            <ul>
+                                <li><strong>Exercise:</strong> Write <em>Ich bin gestern ins Kino gegangen</em> 5 times.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Practice Emails:</strong> Structure: Greeting (<em>Hallo/Liebe</em>), reason (<em>Ich schreibe, weil...</em>), details, question (<em>Was meinst du?</em>), closing (<em>Liebe Grüße</em>).
+                            <ul>
+                                <li><strong>Example:</strong> <em>Hallo Paul, ich schreibe, weil ich Urlaub plane. Ich möchte nach München fahren. Was meinst du? Liebe Grüße, [name]</em> (80 words).</li>
+                                <li><strong>Trick:</strong> Write 3 emails—keep them 80 words.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Express Opinions:</strong> Use phrases: <em>Meiner Meinung nach</em> (In my opinion), <em>Ich finde</em> (I think), <em>Es ist wichtig</em> (It’s important).
+                            <ul>
+                                <li><strong>Practice:</strong> Write <em>Ich finde, Deutsch lernen ist nützlich, weil es viele Möglichkeiten gibt</em> (80 words).</li>
+                            </ul>
+                        </li>
+                        <li><strong>Link Ideas:</strong> Connect with <em>und</em>, <em>aber</em>, <em>weil</em>, <em>deshalb</em>. Avoid repetition.
+                            <ul>
+                                <li><strong>Exercise:</strong> Write 5 sentences with <em>deshalb</em> (e.g., <em>Ich lerne viel, deshalb bin ich besser</em>).</li>
+                            </ul>
+                        </li>
+                        <li><strong>Edit Carefully:</strong> Check grammar (<em>habe</em>, not <em>haben</em>), cases (<em>mit dem Freund</em>), and spelling (<em>straße</em>).
+                            <ul>
+                                <li><strong>Try:</strong> Write an email, then fix 5 errors.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <p><strong>Practice Resources:</strong></p>
+                    <ul class="example-list">
+                        <li><div class="link-box"><strong>Goethe Writing Samples:</strong> Real B1 tasks. <a href="https://www.goethe.de/en/spr/kup/prf/prf/b1.html" target="_blank">[Goethe B1 Sample Test]</a></div></li>
+                        <li><div class="link-box"><strong>YouTube:</strong> “Deutsch für Euch” – B1 writing tutorials. <a href="https://www.youtube.com/@DeutschFuerEuch" target="_blank">[Deutsch für Euch]</a></div></li>
+                        <li><div class="link-box"><strong>Article:</strong> “B1 Writing Guide” on Lingoda. <a href="https://www.lingoda.com/en/content/goethe-b1-exam-preparation/" target="_blank">[Lingoda B1 Tips]</a></div></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>4. Speaking (Sprechen) Preparation</h3>
+                <p><strong>What to Expect:</strong></p>
+                <ul class="example-list">
+                    <li><strong>Duration:</strong> 15 minutes (in pairs).</li>
+                    <li><strong>Tasks:</strong> 3 parts.
+                        <ul>
+                            <li><strong>Part 1:</strong> Talk about yourself (e.g., work, hobbies)—3 minutes.</li>
+                            <li><strong>Part 2:</strong> Discuss a topic with your partner (e.g., travel plans)—6 minutes.</li>
+                            <li><strong>Part 3:</strong> Plan something together (e.g., a party)—6 minutes.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Level:</strong> Conversations with opinions, past events, and suggestions.</li>
+                </ul>
+                <p><strong>Tips to Ace Speaking:</strong></p>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><strong>Polish Your Intro:</strong> Memorize: <em>Hallo, ich bin [name]. Ich komme aus [place]. Ich arbeite/studiere als [job]. Ich wohne in [city] und mag [hobby].</em>
+                            <ul>
+                                <li><strong>Exercise:</strong> Say it 10 times—clear and confident.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Express Opinions:</strong> Practice: <em>Ich denke, dass...</em> (I think that...), <em>Für mich ist...</em> (For me, it’s...), <em>Ich würde lieber...</em> (I’d rather...).
+                            <ul>
+                                <li><strong>Try:</strong> Say <em>Ich finde, Reisen ist toll, weil man viel sieht</em> 5 times.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Talk About Past and Future:</strong> Use <em>Perfekt</em> (<em>Ich habe gestern gearbeitet</em>) and future (<em>Ich werde morgen lernen</em>).
+                            <ul>
+                                <li><strong>Practice:</strong> Tell 3 past events and 3 future plans.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Plan with a Partner:</strong> Learn: <em>Was meinst du?</em> (What do you think?), <em>Lass uns...</em> (Let’s...), <em>Ich schlage vor...</em> (I suggest...).
+                            <ul>
+                                <li><strong>Exercise:</strong> Pretend-plan a trip—<em>Lass uns nach Berlin fahren. Wann passt es dir?</em></li>
+                            </ul>
+                        </li>
+                        <li><strong>Speak Fluently:</strong> Record <em>Ich lerne Deutsch, weil es mir Spaß macht und nützlich ist.</em> Fix pauses or stumbles.
+                            <ul>
+                                <li><strong>Tip:</strong> Speak loud—pretend you’re on stage!</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <p><strong>Practice Resources:</strong></p>
+                    <ul class="example-list">
+                        <li><div class="link-box"><strong>Goethe Speaking Samples:</strong> Official B1 examples. <a href="https://www.goethe.de/en/spr/kup/prf/prf/b1.html" target="_blank">[Goethe B1 Sample Test]</a></div></li>
+                        <li><div class="link-box"><strong>YouTube:</strong> “Get Germanized” – B1 speaking practice. <a href="https://www.youtube.com/@MeisterLehnsherr" target="_blank">[Get Germanized]</a></div></li>
+                        <li><div class="link-box"><strong>App:</strong> “Tandem” – Chat with natives for B1 fluency.</div></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>General B1 Exam Tips</h3>
+                <div class="examples">
+                    <ol class="example-list">
+                        <li><strong>Know the Format Inside Out:</strong> Study Goethe’s B1 layout (linked above). No shocks on test day!</li>
+                        <li><strong>Time Management:</strong>
+                            <ul>
+                                <li>Reading: 65 min—15 min per part, 5 min review.</li>
+                                <li>Listening: 40 min—don’t dwell, guess if stuck.</li>
+                                <li>Writing: 60 min—10 min plan, 50 min write.</li>
+                                <li>Speaking: 15 min—keep answers 30–60 seconds.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Daily Practice Plan:</strong> 90 minutes: 20 min reading, 20 min listening, 30 min writing, 20 min speaking.
+                            <ul>
+                                <li><strong>Routine:</strong> Morning grammar, afternoon audio, evening mock test.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Mock Exams:</strong> Do 3–4 full B1 Goethe tests. Score 60+ points per section—track improvement.</li>
+                        <li><strong>Stay Cool:</strong> Exam day: Arrive early, breathe, and trust your work—you’ve prepared!</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>Additional Exam Help Links</h3>
+                <p><strong>Official Goethe Resources:</strong></p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><div class="link-box"><strong>Goethe B1 Info Page:</strong> Full details and downloads. <a href="https://www.goethe.de/en/spr/kup/prf/prf/b1.html" target="_blank">[Goethe B1 Exam]</a></div></li>
+                        <li><div class="link-box"><strong>Vocabulary List:</strong> B1 words you need. <a href="https://www.goethe.de/pro/relaunch/prf/de/B1_Wortliste_2018.pdf" target="_blank">[Goethe B1 Wortliste]</a></div></li>
+                    </ul>
+                </div>
+                <p><strong>YouTube Channels:</strong></p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><div class="link-box"><strong>Learn German with Anja:</strong> B1 tips and drills. <a href="https://www.youtube.com/@GermanwithAnja" target="_blank">[Learn German with Anja]</a> – Watch “B1 Exam Prep” playlist.</div></li>
+                        <li><div class="link-box"><strong>Easy German:</strong> B1-level chats on the street. <a href="https://www.youtube.com/@EasyGerman" target="_blank">[Easy German]</a> – Try “B1 Conversations.”</div></li>
+                        <li><div class="link-box"><strong>Deutsch für Euch:</strong> B1 skills explained. <a href="https://www.youtube.com/@DeutschFuerEuch" target="_blank">[Deutsch für Euch]</a> – Check “B1 Goethe Tips.”</div></li>
+                    </ul>
+                </div>
+                <p><strong>Articles and Websites:</strong></p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><div class="link-box"><strong>Schubert Verlag:</strong> Free B1 exercises. <a href="https://www.schubert-verlag.de/aufgaben/uebungen_b1/b1_uebungen_index.htm" target="_blank">[Schubert Verlag B1]</a></div></li>
+                        <li><div class="link-box"><strong>Lingoda B1 Prep:</strong> Exam strategies. <a href="https://www.lingoda.com/en/content/goethe-b1-exam-preparation/" target="_blank">[Lingoda B1 Guide]</a></div></li>
+                        <li><div class="link-box"><strong>Deutsch Akademie:</strong> B1 practice tests. <a href="https://www.deutschakademie.de/en/goethe-exam-b1" target="_blank">[Deutsch Akademie]</a></div></li>
+                    </ul>
+                </div>
+                <p><strong>Apps:</strong></p>
+                <div class="examples">
+                    <ul class="example-list">
+                        <li><div class="link-box"><strong>Busuu:</strong> B1 lessons with speaking practice.</div></li>
+                        <li><div class="link-box"><strong>Memrise:</strong> B1 vocab and phrases.</div></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>Wrapping Up</h3>
+                <p>
+                    You’re ready to conquer the Goethe-Zertifikat B1 exam! Focus on reading longer texts, listening to natural speech, writing emails and opinions, and speaking fluently about your life. Use these tips—practice daily, tackle mock tests, and tap into the resources (Goethe samples, YouTube, apps). You’ve got the skills to pass and step into the intermediate world of German. Keep pushing, and you’ll nail it. <em>Alles Gute!</em> (All the best!)
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- JavaScript for Toggling Levels -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.level-btn');
+            const contents = document.querySelectorAll('.level-content');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    buttons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+                    contents.forEach(content => content.style.display = 'none');
+                    const level = button.getAttribute('data-level');
+                    document.getElementById(`${level}-content`).style.display = 'block';
+                });
+            });
+
+            const modeToggle = document.getElementById('mode-toggle');
+            modeToggle.addEventListener('click', () => {
+                document.body.classList.toggle('dark-mode');
+                localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+            });
+
+            if (localStorage.getItem('darkMode') === 'true') {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
+</body>
+{% endblock body %}
